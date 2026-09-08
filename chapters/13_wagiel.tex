@@ -1,0 +1,940 @@
+\documentclass[output=paper]{langscibook}
+\ChapterDOI{10.5281/zenodo.22078593}
+
+\iffalse
+\usepackage[linguistics]{forest}
+\forestset{
+default preamble={for tree={s sep=10mm, inner sep=0, l=0}},
+fairly nice empty nodes/.style={
+        delay={where content={}{shape=coordinate,
+              for siblings={anchor=north}}{}},
+for tree={s sep=4mm}},
+}
+\fi 
+
+\author{Marcin Wągiel\affiliation{Masaryk University in Brno, University of Wrocław, Leibniz-ZAS in Berlin}}
+\title{Numerals and their kin: The view from Slavic}
+\abstract{In this paper, I focus on the meaning of numerals, i.e., lexical items that express a relationship with numbers. I discuss different functions of numerals including their quantifying and arithmetical use and compare various attempts to capture the relationship between those functions. Furthermore, I examine several types of complex numerical expressions such as ordinals, multiplicatives, taxonomic and group numerals in Slavic and beyond. Finally, I investigate data concerning Slavic label numerals, i.e., expressions used to identify entities via association with a number and propose a morpho-semantic analysis of such expressions. The core of the proposal is that the arithmetical meaning is the numerals' underlying semantic core from which both the quantifying and the label meaning are derived.
+	
+	\keywords{numerals, cardinals, numerical expressions, labels}
+}
+
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[13]%%chapternumber
+}{}
+
+\begin{document}
+	\maketitle
+	
+	\section{Introduction}	Numerals are funny words. On the one hand, it seems that they share some core component that justifies grouping them together as if they formed a single category, a practice common in both descriptive and theoretic approaches to language.\footnote{This intuition dates back at least to the Neo-Latin grammarian tradition, which distinguished between three subclasses within the category \textit{nomen}, i.e., \textit{nomen substantivum}, \textit{nomen adjectivum} and \textit{nomen numerale}. At the same time, different linguistic traditions, including descriptive grammars of Slavic, have proposed conflicting classifications of what counts as a numeral; thus, \textit{\dots and their kin} in the title of this paper.}  
+ On the other hand, though, morphologically and syntactically they form a very heterogeneous class of expressions with different items often exhibiting distinct properties. This is the case not only when one compares various subclasses of numerals, e.g., cardinals, ordinals and multiplicatives, but also often within the subclass of cardinals different items have adjectival, nominal, or both nominal and adjectival features while in some languages they seem to behave as verbs \citep{donohue2005numerals,ionin_matushansky2018cardinals}.
+ 
+	In generative linguistics, a lot of work has been focused on establishing the syntactic status of numerals, with different approaches differing in whether they are lexical or functional categories or whether they are heads or maximal projections. These questions have been studied thoroughly with respect to Slavic numerals, with their well-known idiosyncratic properties \citep[e.g.,][]{pesetsky1982paths,babby1987case,franks1994parametric,rutkowski2002syntax,klockmann2012polish}. 
+
+	On the other hand, since the early days of analytic philosophy and formal semantics much attention has been dedicated to capturing numerals' meaning. At least since \citet{frege1884grundlagen}, it has been recognized that this is far from trivial. Intuitively, it seems straightforward that numerals are linguistic expressions that somehow describe a numeric quantity. However, beyond this vague characterization it is much less obvious how to state exactly what they actually are. 
+	
+	In this paper, I will discuss the main formal approaches to the meaning of numerals. In doing so, I will focus on two aspects that only recently attracted due attention in the literature. Specifically, I will investigate different uses of basic numerals such as \textit{five} and the behavior of various types of derivationally complex numerical expressions in Slavic. The two sets of data indicate that basic numerals and numerical expressions in general are semantically complex. I will argue that a proper approach to their meaning should describe a compositional mechanism deriving different functions from the underlying arithmetical meaning. 
+	
+	The paper is outlined as follows. In \sectref{sec:basic-numerals-and-their-various-flavors}, I discuss various functions of basic numerals. \sectref{sec:theories-of-cardinals} provides an overview of semantic approaches to their quantifying function, as in \textit{five cats}. \sectref{sec:relating-cardinalities-and-number-concepts} explores the relationship between the quantifying meaning and the ability of numerals to refer to numbers as abstract arithmetical concepts. In \sectref{sec:complex-numerical-expressions}, I review the literature on Slavic complex numerical expressions which presents evidence calling for a compositional treatment. \sectref{sec:case-study-numerals-as-labels} is a case study exploring the so-far neglected label use of numerals. \sectref{sec:conclusion} concludes the paper.
+	
+	\section{Basic numerals and their various flavors}\label{sec:basic-numerals-and-their-various-flavors}
+	
+	Let us start with basic numerals like English \textit{five}. One of the challenges in capturing their meaning is that they can be used in very different ways \citep{bultinck2005numerous,geurts2006take}. Consider \REF{ex:uses}. It turns out that a simple word such as \textit{five} is in fact quite tricky. Of course, it can be used to count entities denoted by the modified NP when it appears prenominally \REF{ex:uses-quantifying} but that is not the only function it can have. When it combines with a measure word \REF{ex:uses-measure}, it designates a quantity of a substance rather than a plurality of objects. It can also appear in a predicative context \REF{ex:uses-predicative} or as part of a measure phrase \REF{ex:uses-predicative-measure}. And that is not it since it can also be used to refer to an abstract arithmetical concept \REF{ex:uses-arithmetical} or to label an entity \REF{ex:uses-label}.
+	
+		\ea\label{ex:uses} \ea Five cats meowed.\label{ex:uses-quantifying}
+	\ex Five liters of milk got spilled.\label{ex:uses-measure}
+	\ex These are five cats.\label{ex:uses-predicative}
+	\ex That cat is five years old.\label{ex:uses-predicative-measure}
+	\ex Five is a Fibonacci number.\label{ex:uses-arithmetical}
+	\ex Player number five twisted her ankle.\label{ex:uses-label} 
+	\z
+	\z
+	
+	\noindent Below, I will briefly discuss how the measure, predicative and arithmetical function of numerals relate to their most deeply studied quantifying use. % \footnote{For discussion of numeral NPs as measure phrases, see \citet{matushansky_ionin-thisvolume-measurement}.} 
+    A thorough investigation into properties of the label function will be undertaken in \sectref{sec:case-study-numerals-as-labels}.
+	
+	\subsection{Quantifying vs. measure use}\label{sec:quantifying-vs-measure-use}
+
+The mainstream research has been primarily focused on the quantifying use of numerals \REF{ex:uses-quantifying}. This seems justified since counting objects is perhaps the first thing that comes to mind when we think about expressions such as \textit{five}. However, when a numeral appears in a measure phrase \REF{ex:uses-measure}, it seems to involve measuring within a certain dimension, e.g., volume, rather than counting objects. 
+
+Intuitively, the difference between counting and measuring is that the former is about specifying how many discrete objects of a certain kind there are, whereas the latter determines some quantity in relevant measure units. Admittedly, some proposals attempt to reduce measuring to a particular type of counting based on the individuation in terms of quantity  \citep{Lyons1977,matushansky_zwarts2017making}. Consequently, measuring would simply be counting units determined by measure words. An opposing approach treats counting as a form of measuring, i.e., measuring a quantity of a plural individual in terms of natural or object units \citep{Krifka1989,krifka1995common}. Yet, there is also the third account which views counting and measuring as two independent operations \citep{rothstein2017semantics}.
+
+The contrast between the two functions becomes clear when one considers classifier constructions involving container nouns \REF{ex:container}. Such expressions are ambiguous between a measure (content) and counting (container) interpretation \citep[e.g.,][]{landman2004indefinites,grimshaw2007boxes,partee_borschev2012sortal}. On the measure reading of \REF{ex:container-ambiguity}, Tomek flushed wine to the quantity of two bottles. On the counting reading, on the other hand, he did something quite spectacular since two actual bottles containing wine went down. Moreover, derivational morphology seems to be sensitive to the distinction since the suffix \textit{-ful} selects only for the measure sense of a container noun \REF{ex:container-measure}--\REF{ex:container-counting} \citep{rothstein2011counting}.
+
+\ea\label{ex:container} \ea Tomek flushed two bottles of wine through the toilet.\label{ex:container-ambiguity}
+\ex Romek added two \{ glasses / glassfuls \} of wine to the soup.\label{ex:container-measure}
+\ex Marek brought two \{ glasses / \#glassfuls \} of wine for our guests.\label{ex:container-counting}
+\z
+\z
+
+\noindent Another argument for distinguishing counting and measuring as two distinct operations comes from distinct restrictions on the domain of quantification \citep{wagiel2018subatomic}. Though both measuring and counting quantify over entities that need to be disjoint \citep{landman2016iceberg}, only the latter requires objects individuated as coherent integrated wholes. To realize the contrast, imagine someone has spilled some wine on the table in such a way that there are two separate blobs $a$ and $b$ whose volume is exactly one and a half milliliters each. In such a scenario, \REF{ex:measuring-integrity} is true despite the fact that one of the three milliliters must be split between a portion of $a$ and a portion of $b$. On the other hand, \REF{ex:counting-integrity} is simply false. This contrast shows that measuring, unlike counting, ignores individuation in terms of integrity.
+
+\ea\label{ex:measuring-counting-integrity} \textsc{Scenario:} There are exactly two 1.5 ml blobs of wine on the table.
+\ea There are three milliliters of wine on the table. \hfill \textsc{true}\label{ex:measuring-integrity}
+\ex There are three objects on the table.\hfill \textsc{false}\label{ex:counting-integrity}
+\z
+\z
+
+\noindent Though monotonic systems of measurement track certain part-whole relations \citep{schwarzschild2002grammar}, they are not sensitive to the spatial arrangement of parts making up a whole. This suggests that despite sharing a common core counting and measuring are two distinct things.
+
+	\subsection{Quantifying vs. predicative use}\label{sec:quantifying-vs-predicative-use}
+
+It is well known that cardinals used as quantifiers have both lower and doubly bounded readings.\footnote{For an overview of the literature on numerals and scalar implicatures, see, e.g., \citet{spector2013bare}.} For instance, \textit{five cats} in \REF{ex:at-least-quantifying-in-fact} allows for an \textit{at least} reading, as witnessed by the compatibility with the \textit{in fact} clause. Similarly, \REF{ex:at-least-quantifying-must} is typically interpreted in a way that Tomek must take at least three cards.
+
+\ea\label{ex:at-least-quantifying} \ea Five cats live in the barn; in fact, six cats live there.\label{ex:at-least-quantifying-in-fact}
+\ex Tomek must take three cards.\label{ex:at-least-quantifying-must}
+\z
+\z
+
+\noindent However, numeral NPs in predicate position systematically lack a lower-bounded interpretation \citep{partee87,landman2003predicate,geurts2006take}. For instance, \REF{ex:at-least-predicative} can only get the \textit{exactly} reading. This is further corroborated by the infelicity of \REF{ex:at-least-predicative-in-fact}. 
+
+\ea \ea[]{These are five cats.}\label{ex:at-least-predicative} 
+\ex[\#]{The guests are three filmmakers; in fact, they are four filmmakers.}\label{ex:at-least-predicative-in-fact}
+\z
+\z
+
+\noindent Furthermore, it was observed that also bare cardinals can appear as predicates in predicate position \REF{ex:bare-predicative} \citep{rothstein2017semantics}. This resembles the behavior of adjectives rather than determiners.
+
+\ea\label{ex:bare-predicative} \ea The apostles are twelve.\label{ex:bare-predicative-apostles}
+\ex The planets are eight.\label{ex:bare-predicative-planets}
+\z
+\z
+
+\noindent Similar to numeral NPs, bare cardinals in predicate position lack an \textit{at least} reading. Thus, \REF{ex:bare-predicative-apostles} and \REF{ex:bare-predicative-planets} are true if there are exactly twelve apostles and exactly eight planets, respectively. Moreover, sentences such as \REF{ex:bare-predicative-in-fact} are infelicitous.
+
+\ea[\#]{My reasons for saying this are four; in fact they are five.}\label{ex:bare-predicative-in-fact}
+\z
+
+\noindent The contrasts discussed above indicate that the meaning of the predicative use of cardinals differs from their semantics in the quantifying function.   
+
+\subsection{Quantifying vs. arithmetical use}\label{sec:quantifying-vs-arithmetical-use}
+\largerpage
+
+It is not always the case that numerals designate a plurality or measure. In \REF{ex:uses-arithmetical}, \textit{five} refers to an abstract number concept rather than to a collection of entities. In this use, numerals behave differently than in their quantifying function \citep{bultinck2005numerous,rothstein2017semantics,wagiel_caha2020universal}. Specifically, arithmetical concepts can have special properties such as being prime \REF{ex:arithmetical-prime} and they can occur in mathematical statements \REF{ex:arithmetical-math} and dedicated grammatical constructions \REF{ex:arithmetical-construction}. Finally, when compared, the dimension of comparison is based on their relative ordering rather than, e.g., on the physical size \REF{ex:arithmetical-comparison}. 
+
+\ea \ea Five is prime.\label{ex:arithmetical-prime}
+\ex Ten divided by five equals two.\label{ex:arithmetical-math}
+\ex Hanna can count up to five.\label{ex:arithmetical-construction}
+\ex Five is bigger than four.\label{ex:arithmetical-comparison}
+\z
+\z
+
+\noindent This behavior contrasts with quantifying numerals. \REF{ex:quantifying-prime} is odd since being prime is not a property that can be attributed to a collection of things. Similarly, expressions denoting a plurality of entities are illicit in constructions calling for a numeric value such as \REF{ex:quantifying-math}--\REF{ex:quantifying-construction} and \REF{ex:quantifying-comparison} has different truth conditions than \REF{ex:arithmetical-comparison}, e.g., it would not be true if one compared five cherries with four watermelons.
+
+\ea\label{ex:quantifying-arithmetical-properties} \ea[\#]{Five things are prime.}\label{ex:quantifying-prime}
+\ex[\#]{Ten things divided by five things equals two things.}\label{ex:quantifying-math}
+\ex[\#]{Hanna can count up to five things.}\label{ex:quantifying-construction}
+\ex[\#]{Five things are bigger than four things.}\label{ex:quantifying-comparison}
+\z
+\z
+
+\noindent Furthermore, numerals referring to number concepts are incompatible with modifiers such as \textit{more than} and \textit{at least} \REF{ex:arithmetical-modifiers}. Finally, the arithmetical function is always associated with an \textit{exactly} reading \REF{ex:arithmetical-implicatures}.
+
+\ea\label{ex:arithmetical-modifiers-implicatures} \ea[\#]{More than five is prime.}\label{ex:arithmetical-modifiers}
+\ex[\#]{Two multiplied by five equals ten, if not more.}\label{ex:arithmetical-implicatures}
+\z
+\z
+
+\noindent As we saw, numerals can be used in various ways each of which has different semantic characteristics. In the next two sections, I will review major approaches to their quantifying meaning and compare how they account for at least some aspects of the flexibility discussed above.
+
+	\section{Theories of cardinals}\label{sec:theories-of-cardinals}
+	
+	Given the variety of uses discussed in the previous section, any quest for \textit{the} meaning of cardinal numerals is probably a misunderstanding. Rather, a theory of cardinals should be able to capture the relationship between meanings of cardinals in their various functions. And yet, the mainstream research has been mainly focused on the quantifying use often ignoring how it relates to other uses (with \citepossalt{bylinina_nouwen2020numeral} systematic inquiry being a notable exception).
+	
+	\subsection{Cardinals as determiners}\label{sec:cardinals-as-determiners}
+	
+Let us start with the earliest and most prominent account of the meaning of cardinal numerals, namely the Generalized Quantifiers (GQ) approach (\citealt{barwise_cooper1981generalized}; though it can be traced back via Montague to Frege). The intuition behind this analysis is that \textit{five} is in fact a determiner similar to \textit{some}, \textit{most} or \textit{all}, as suggested by its occurrence in prenominal position \REF{ex:determiners}.
+	
+	\ea \{ Some / Most / All / Five \} cats meowed.\label{ex:determiners}
+	\z
+	
+	\noindent In the GQ theory, a determiner expresses a particular relation holding between two sets (type $\langle\langle e,t\rangle,\langle\langle e,t\rangle,t\rangle\rangle$), i.e., a set denoted by the NP and a set denoted by the VP. In \REF{ex:determiners}, \textit{some} yields the truth value True if the intersection between the set of cats and the set of entities that meowed is non-empty \REF{ex:some-quantifier}. Similarly, \textit{five} returns True if the cardinality of the set of cats that meowed equals 5 \REF{ex:five-quantifier}.
+	
+	\ea \ea \sib{some} $=\lambda P \lambda Q[P \cap Q\neq\varnothing]$\label{ex:some-quantifier}
+	\ex \sib{five} $=\lambda P \lambda Q[|P \cap Q|=5]$\label{ex:five-quantifier}
+	\z
+	\z
+
+\noindent The GQ approach aims to develop a unified analysis of all quantified DPs. Further, it can be enriched with a type-shifting mechanism which allows for systematic mapping between different semantic types \citep{partee87}. Consequently, the theory can account for predicative uses of numeral NPs like \REF{ex:uses-predicative} by lowering the type of a general quantifier ($\langle\langle e,t\rangle,t\rangle$) to the type of a predicate ($\langle e,t\rangle$).
+
+However, for some time it has been realized that the GQ approach is most probably not a good way of capturing what cardinals are \citep[e.g.,][]{krifka1999least,landman2003predicate}. In the next sections, I will discuss the well-known problems with the GQ account and main alternative approaches.
+
+\subsection{Cardinals as predicates}\label{sec:cardinals-as-predicates}
+
+There are several problems with the GQ approach to cardinals. First of all, there is a well-known asymmetry between DPs with numerals and DPs with regular determiners in predicate position. For instance, DPs headed by \textit{every} cannot be used predicatively \REF{ex:quantifiers-predicate-every}. Similarly, \REF{ex:quantifiers-predicate-most} is infelicitous on a non-partitive interpretation. Given the felicity of \REF{ex:uses-predicative}, repeated here as \REF{ex:uses-predicative-2}, and other sentences discussed in \sectref{sec:quantifying-vs-predicative-use}, this fact is puzzling \citep[][]{landman2003predicate}.
+
+\ea \ea[\#]{Hanna is every filmmaker at the party.}\label{ex:quantifiers-predicate-every}
+\ex[\#]{The guests are \{ most / some \} filmmakers.}\label{ex:quantifiers-predicate-most}
+\ex[]{These are five cats.}\label{ex:uses-predicative-2}
+\z
+\z
+
+\noindent Furthermore, \REF{ex:quantifiers-predicate-bare} shows that bare determiners cannot be used predicatively. This contrasts with \REF{ex:bare-predicative}, in which the cardinal patterns with adjectives \REF{ex:adjectives-predicate}. Since there is no standard type-shifting rule allowing for mapping the type of determiners ($\langle\langle e,t\rangle,\langle\langle e,t\rangle,t\rangle\rangle$) onto the type of predicates ($\langle e,t\rangle$), the predicative use of bare cardinals is unaccounted for. But even if such a rule were postulated, it would still fail to explain the contrast between cardinals and determiners. 
+
+\ea \ea[\#]{My reasons for saying this are \{ most / all / every \}.}\label{ex:quantifiers-predicate-bare}
+\ex[]{My reasons for saying this are \{ serious / personal / five \}.}\label{ex:adjectives-predicate}
+\z
+\z
+
+\noindent The last problem concerns the fact that cardinals can appear along with bona fide determiners within a single DP \citep[e.g.,][]{rothstein2017semantics}. From a GQ perspective, the compatibility of \textit{five} with the definite article \REF{ex:cardinals-the} and \textit{every} \REF{ex:cardinals-every} is unexpected and raises questions regarding the semantic contribution of each of the elements.
+
+\ea\label{ex:cardinals-the-every} \ea The five cats that I saw meowed.\label{ex:cardinals-the}
+\ex Every two students got to share a hotel room.\label{ex:cardinals-every} 
+\z
+\z
+
+\noindent The evidence discussed above motivated an alternative approach, which treats cardinals as predicates \citep{landman2003predicate,landman2004indefinites}. Within this framework, cardinals get an interpretation very similar to that of intersective adjectives, specifically they express a cardinality property. For this approach to work, it is required to distinguish between two types of entities within the domain of individuals, namely atoms, i.e., singular entities, and pluralities \citep{link83}. While atoms are minimal elements of a nominal denotation, pluralities are formed from atoms via a pluralization operation * which closes the predicate under sum, i.e., takes a set of atomic entities and returns that set extended with all the pluralities that can be formed by summing the atoms. In addition, the two types of individuals are associated with each other via a part-whole relation defined in terms of mereological parthood, e.g., an atomic entity $a$ is part of a plurality $a \oplus b$.\footnote{For an introduction to mereological theories of plurality, see, e.g., \citet{champollion_krifka2016mereology}.} 
+
+According to the semantics in \REF{ex:five-predicate}, \textit{five} denotes a set of pluralities each of which contains $5$ atomic entities. Similar to intersective adjectives, cardinals combine with NPs they modify via Predicate Modification  \citep{heim_kratzer1998semantics}. Therefore, when \textit{five} is composed with \textit{cats} \REF{ex:five-cats-predicate}, the resulting phrase denotes the intersection of a set of pluralities of cats and a set of plural individuals that consist of five atomic entities, i.e., a set of sums of five cats. 
+
+	\ea \ea \sib{five} $=\lambda x[\#(x)=5]$\label{ex:five-predicate}
+	\ex \sib{five cats} $=\lambda x[\textsc{*cat}(x) \wedge \#(x)=5]$\label{ex:five-cats-predicate}
+	\z
+	\z
+
+\noindent The approach discussed above gives a straightforward explanation for the contrasts between cardinals and determiners like \textit{every} and \textit{most} in predicate position as well as the felicity of constructions such as \REF{ex:cardinals-the-every}. However, it faces some challenges as well.
+
+\subsection{Cardinals as predicate modifiers}\label{sec:cardinals-as-predicate-modifiers}
+
+A problem with treating cardinals as cardinal properties is that cross-linguistically the use of bare cardinals in predicate position is very restricted \citep[33--34]{ionin_matushansky2018cardinals}. For instance, in Russian \REF{ex:russian-predicate} is ungrammatical. Similarly, Dutch \REF{ex:dutch-predicate} can only mean that the children are two years old and not that they are two in number. And even in English the predicative use of bare cardinals is heavily restrained, as witnessed by the fact that examples such as \REF{ex:english-predicate} are highly degraded. If cardinals are assigned type $\langle e,t\rangle$, then this is rather startling. 
+
+		\ea[*]{\gll Deti byli \{ dva / {dvoe \}}.\\
+		children were {} two {} two\textsc{.gndr}\\
+		\glt Intended: `The children were two in number.' \hfill (Russian)}\label{ex:russian-predicate}
+	\z    
+
+	\ea[$\#$]{\gll De kinderen zijn twee.\\
+		the children are two\\
+		\glt Intended: `The children are two in number.' \hfill (Dutch)}\label{ex:dutch-predicate}
+	\z
+
+    \ea[??]{The chairs in this room are twelve.}\label{ex:english-predicate}
+    \z
+
+\noindent Another issue concerns the fact that what counts as `one' seems to be highly dependent on the meaning of the modified NP. Arguably, atoms should be defined relative to a particular property rather than in absolute terms. To see why, let us consider partitive constructions \REF{ex:partitives} \citep[see][]{chierchia2010mass,wagiel2018subatomic}. Here, \REF{ex:partitives-plural} is weird since the numeral NP seems to designate a pair of body parts that disappeared, i.e., it is not referring to two subsets of boys. Yet, in \REF{ex:partitives-group} quantification over subgroups of boys is possible. Importantly, neither \textit{parts of the boys} nor \textit{parts of the group} denote entities that are atomic in any absolute sense since each can consist of parts that themselves fall into the extension of the corresponding phrase. This suggests that the cardinal determines what counts as `one' relative to the denotation of the modified NP and it is not obvious how this fact could be captured if cardinals were interpreted simply as intersective predicates.
+
+\ea\label{ex:partitives} \textsc{Scenario:} While hiking at night, a group of boys divided into five teams to explore a vast area but only three teams arrived at the meeting point.
+\ea[\#]{Two parts of the boys went missing.}\label{ex:partitives-plural}  
+\ex[]{Two parts of the group went missing.}\label{ex:partitives-group} 
+\z
+\z
+
+\noindent An alternative to treating cardinals as cardinal properties is to analyze them as predicate modifiers (type $\langle\langle e,t\rangle,\langle e,t\rangle\rangle$) equipped with a pluralization operation * and a measure function $\#(P)$ \citep{Krifka1989,krifka1995common}. In \REF{ex:five-modifier-krifka}, * closes the predicate under sum, i.e., takes a set of atomic entities and returns that set extended with all the pluralities one can form by summing atoms. On the other hand, the operation $\#$ returns for a property $P$ a measure function that yields pluralities of five individuals having that property. In other words, \textit{five} maps pluralities of entities onto the natural number $5$.\footnote{This is a slight simplification since in fact \citet{Krifka1989} postulates a special operation \textsc{nu} for measuring pluralities in terms of `natural units' they consist of, whereas \citet{krifka1995common} proposes \textsc{ou} for measuring the number of `object units' realizing a particular kind.} When the cardinal combines with an NP, we obtain a set of relevant plural individuals (type $\langle e,t\rangle$). For instance, \textit{five cats} denotes a set of pluralities of cats each of which consists of five cats \REF{ex:five-cats-modifier-krifka}. Thus, what counts as `one' in this system is relativized to the denotation of the NP, and this together with some additional assumptions allows for capturing partitives like \REF{ex:partitives} where reference to absolute atoms is problematic \citep[see also][]{chierchia2010mass,wagiel2018subatomic}. 
+
+	\ea \ea \sib{five} $=\lambda P_{\langle e,t\rangle} \lambda x_e[\text{*}P(x) \wedge \#(P)(x)=5]$\label{ex:five-modifier-krifka}
+	\ex \sib{five cats} $=\lambda x_e[\textsc{*cat}(x) \wedge \#(\textsc{cat})(x)=5]$\label{ex:five-cats-modifier-krifka}
+	\z
+	\z
+
+\noindent Another option is to treat cardinals as predicate modifiers providing the cardinality of a partition of a plural entity \citep{ionin_matushansky2006composition,ionin_matushansky2018cardinals}. A partition of a plurality $x$ is a cover of $x$, i.e., a set of entities such that the sum of all those entities forms $x$; in addition, it is a cover whose cells do not overlap, i.e., do not share any parts \citep[see][]{gillon1987readings,schwarzschild1996pluralities}. In \REF{ex:five-modifier-im}, $S$ is a partition $\Pi$ of an individual $x$ and the cardinality of $S$ equals $5$. The cardinal combines with the NP via Function Application and the result is of type $\langle e,t\rangle$. For instance, \textit{five cats} gets the meaning in \REF{ex:five-cats-modifier-im}, i.e., it denotes a set of pluralities divisible into 5 non-overlapping entities each of which has a property of being a cat.\footnote{The system is devised this way to provide a unified analysis of both simple and complex numerals like \textit{five hundred}. % For a more detailed discussion, see \citet{matushansky_ionin-thisvolume-measurement}.
+}
+
+\ea \ea \sib{five} $=\lambda P_{\langle e,t\rangle} \lambda x_e\exists S_{\langle e,t\rangle}[\Pi(S)(x) \wedge |S|=5 \wedge \forall s \in S [P(s)]]$\label{ex:five-modifier-im}
+\ex \sib{five cats} $=\lambda x_e\exists S_{\langle e,t\rangle}[\Pi(S)(x) \wedge |S|=5 \wedge \forall s \in S [$\sib{cat}$(s)]]$\label{ex:five-cats-modifier-im}
+\z
+\z
+
+\noindent Notice, however, that both approaches discussed above require the denotation of NPs the cardinal combines with to be singular, i.e., to consist only of atoms. It is postulated that the source of plurality is the numeral and the plural marking on the noun is, e.g., due to agreement with no semantic interpretation. Supporting evidence comes from expressions such as \REF{ex:zero-1.0} where the plural is not associated with a plurality \citep{Krifka1989,bylinina_nouwen2018zero} and from languages like Finnish and Turkish which display the singular/plural distinction but in which unlike in, say, English cardinals systematically require singular NPs \REF{ex:turkish-singular}. 
+
+\vspace{-0.5ex}
+
+\begin{multicols}{2}
+
+	\ea\label{ex:zero-1.0} \ea zero students\label{ex:zero}
+	\ex 1.0 students\label{ex:1.0}\\{\phantom{\_}}
+	\z
+	\z
+
+\columnbreak
+
+	\ea{\gll üç  \{ çocuk / \minsp{*} {çocuklar \}}\\
+		three {} child {} {} children\\
+		\glt `three children' \hfill (Turkish)}\label{ex:turkish-singular}
+	\z
+
+\end{multicols}
+
+\vspace{-1.0ex}
+
+\noindent Finally, analyzing cardinals as predicate modifiers makes it easier to account for restrictions on bare cardinals in predicate position \REF{ex:dutch-predicate}--\REF{ex:english-predicate}, by appealing to the well-described peculiarities of the copula which would allow for a type-shift only under particular circumstances \citep[33--34]{ionin_matushansky2018cardinals}. 
+
+	\subsection{Cardinals as degree quantifiers}\label{sec:cardinals-as-degree-quantifiers}
+	
+	The last approach to be discussed here builds on two observations regarding the behavior of cardinals. The first one is that sentences with existential modals \REF{ex:numeral-modal} are ambiguous \citep{kennedy2013scalar,kennedy2015de-fregean}. On the strong reading, \REF{ex:numeral-modal-assertion} means that Hanna is allowed to eat five cookies and she is not allowed to eat more. The strong reading is probably the most natural interpretation of \REF{ex:numeral-modal-assertion}. There is, however, also a weak reading which merely states that eating five cookies by Hanna is allowed without saying anything about eating other quantities of cookies. This interpretation becomes more prominent in questions \REF{ex:numeral-modal-question}.
+
+	\ea\label{ex:numeral-modal} \ea Hanna is allowed to eat five cookies.\label{ex:numeral-modal-assertion}
+	\ex Is Hanna allowed to eat five cookies?\label{ex:numeral-modal-question}
+	\z
+	\z
+	
+	\noindent The second observation is that numerals can take scope independently of the rest of the NP. The evidence comes from decimals \citep{kennedy_stanley2009average}. Crucially, \REF{ex:decimal-average} does not entail the existence of families with 2.1 cats. This contrasts with \REF{ex:decimal-normal} which is infelicitous due to such an entailment.
+	
+	\ea\label{ex:decimal} \ea[]{The average Polish family has 2.1 cats.}\label{ex:decimal-average}
+	\ex[\#]{A normal Polish family has 2.1 cats.}\label{ex:decimal-normal}
+	\z
+	\z
+	
+	\noindent This suggests that after all cardinals are quantifiers. We already saw that the analysis of \textit{five} as a determiner is most probably incorrect and clearly treating it as a quantifier over individuals (type $\langle\langle e,t\rangle,t\rangle$) would not make much sense. However, an interesting idea is to interpret cardinals as quantifiers over degrees, i.e., expressions of type $\langle\langle d,t\rangle,t\rangle$ \citep{kennedy2013scalar,kennedy2015de-fregean}. Degrees (type $d$) are objects similar to individuals (type $e$) with the crucial difference that the domain of degrees $D_d$, unlike the domain of individuals $D_e$, is ordered.\footnote{For more discussion and an introduction to degree semantics, see, e.g., \citet[][Ch. 3]{morzycki2016modification}.} Hence, on the degree quantifier analysis \textit{five} denotes a set of degree properties whose maximal value equals 5 \REF{ex:five-degree}. A sentence with a numeral NP is then interpreted as in \REF{ex:five-cats-degree}, e.g., the maximal number of entities that Hanna had and that are cats is 5.
+	
+	\ea \ea \sib{five} $=\lambda D_{\langle d,t\rangle}[\cnst{max}(D)=5]$\label{ex:five-degree}
+\ex \sib{Hanna had five cats} $=$ $=\cnst{max}\{n\ |\ \exists x[\textsc{had}(x)(\textsc{hanna}) \wedge \text{*}\textsc{cat}(x) \wedge \#(x)=n)\}=5$\label{ex:five-cats-degree}
+\z
+\z
+	
+	\noindent The analysis of cardinals as degree quantifiers provides a promising perspective to explain interactions between modals and modified cardinals such as \textit{more than five} and \textit{at least five} \citep{nouwen2010two}. In the next section, I will discuss the arithmetical function of numerals and how it relates to the theories described so far.
+
+\section{Relating cardinalities and number concepts}\label{sec:relating-cardinalities-and-number-concepts}
+
+    The theories of numerals discussed in the previous section focus on the quantifying function. However, we already saw in \sectref{sec:quantifying-vs-arithmetical-use} that numerals can also be used to refer to abstract number concepts.
+ 
+	\subsection{Numerals as names of numbers}\label{sec:numerals-as-names-of-numbers}
+	
+	In the arithmetical function, numerals seem to behave as proper names of number concepts (type $n$) or, alternatively, degrees (type $d$).\footnote{I assume here that there is no difference between the two notions and following the widespread convention in the literature on the arithmetical use of numerals I will simply use the label $n$.} From this perspective, the arithmetical meaning of \textit{five} is simply the number 5 \REF{ex:five-number}. Expressions such as \textit{prime} would then denote properties of numbers (type $\langle n,t\rangle$), e.g., the extension of \REF{ex:prime-number} would be the set $\{2,3,5,7,11,13,\dots\}$. On the other hand, expressions used to formulate mathematical statements such as \textit{plus}, \textit{times}, \textit{divided by} and \textit{equals} seem to describe relations between number concepts. For instance, \REF{ex:plus-number} is interpreted in terms of addition of two numeric values.
+	
+		\ea \ea \sib{five} $=5$\label{ex:five-number}
+\ex \sib{prime} $=\lambda n_n[\textsc{prime}(n)]$\label{ex:prime-number}
+\ex \sib{plus} $=\lambda n_n\lambda m_n[n+m]$\label{ex:plus-number}
+\z
+\z
+
+\noindent The key question concerns the relationship between names of numbers, i.e., the arithmetical use, and meanings of cardinals used in the quantifying function. In the next sections, I will discuss two possible approaches to this issue.
+
+\subsection{Deriving number concepts from cardinalities}\label{sec:deriving-number-concepts-from-cardinalities}
+
+The mainstream view is to take the quantifying meaning as basic, be it the predicate, predicate modifier or degree quantifier analysis, and to derive the arithmetical meaning from it. Let us discuss three variants of that view. 
+	
+	As we already saw in \sectref{sec:cardinals-as-predicates}, on the predicate analysis cardinals denote a cardinal property \REF{ex:five-et}. \citet{rothstein2017semantics} assumes this semantics to be basic.\footnote{In fact, this is a slight simplification since the theory distinguishes typally between lower numerals and `lexical powers', i.e., multiplicands such as \textit{hundred} in \textit{five hundred}.} The arithmetical meaning is then derived via a special type-shifting operation ${}^{\cap}$ which when applied to a cardinal property yields a proper name of a number \REF{ex:five-n}.
+		
+		\ea \ea \sib{five}$_{\langle e,t\rangle}=\lambda x_e[\#(x)=5]$\label{ex:five-et}
+        \ex \sib{five}$_{n}= {}^{\cap}$\sib{five}$_{\langle e,t\rangle}=5$\label{ex:five-n}
+        \z
+        \z
+		
+		\noindent The proposal is motivated by an analogy with adjectival and nominal uses of expressions describing properties such as \textit{white} and \textit{wise} $\sim$ \textit{wisdom}. It builds on \citeposst{chierchia1985formal} theory of predication according to which every property has an entity correlate derived by ${}^{\cap}$. For example, the predicate \textit{white} can be turned into the name of the property of being white. Similarly, ${}^{\cap}$ turns \textit{five} into the name of the property of being five in number. The reverse shift is also possible via ${}^{\cup}$. 
+		
+		However, as argued by \citet[31--33]{ionin_matushansky2018cardinals} the above analogy is problematic since an arithmetical statement such as those in \sectref{sec:quantifying-vs-arithmetical-use} requires an argument to be the number 5 itself rather than the name of the property of being five in number. One can add that though from a philosophical perspective it is unclear what numbers ultimately are, from a linguistic point of view it is crucial that while there are many contexts in which, e.g., \textit{wisdom} and \textit{being wise} seem to be entirely synonymous \REF{ex:wise-wisdom}, there are few (if any) contexts in which \textit{five} and \textit{being five in number} are equivalent \REF{ex:five-being-five-in-number}. 
+        
+        \ea\label{ex:wise-wisdom} \ea[]{Being wise is the art of knowing what to overlook.}
+        \ex[]{Wisdom is the art of knowing what to overlook.}
+        \z
+        \z
+                
+        \ea\label{ex:five-being-five-in-number} \ea[]{Five is the fourth prime number.}
+        \ex[\#]{Being five in number is the fourth prime number.}
+        \z
+        \z        
+
+        \noindent Consequently, in order to derive the arithmetical function \citet[][26--27]{ionin_matushansky2018cardinals} propose a null nominalizing suffix \cnst{nomnum}, which applied to a predicate modifier, turns it into a numeric singular term. More specifically, for any cardinal numeral it yields the corresponding cardinality. An empirical argument for such an account comes from the fact that numerals as names of numbers typically display full morpho-syntactic uniformity suggesting they are derived expressions. On the other hand, cardinals in the quantifying function often show variation with respect to $\phi$-features, e.g., grammatical gender.
+ 
+	Another approach is \citeposst{kennedy2015de-fregean} proposal to derive the arithmetical meaning from the quantifying one by the standard type-shifting operations \cnst{be} and \cnst{iota} defined in \REF{ex:be-iota} \citep{partee87}. \cnst{be} takes a quantifier and returns a property, whereas \cnst{iota} yields the unique entity of which the relevant property is true.
+	
+		\ea \label{ex:be-iota} \ea \cnst{be} $=\lambda\mathcal{P}_{\langle\langle e,t\rangle,t\rangle}\lambda x_e[\mathcal{P}(\lambda y_e[y=x])]$\label{ex:be}
+        \ex \cnst{iota} $= \lambda P_{\langle e,t\rangle}\iota x[P(x)]$\label{ex:iota}
+        \z
+        \z
+
+\noindent Generalizing the type-shifts defined above so that they can also apply to quantifiers over degrees and properties of degrees (or numbers), respectively, allows to derive the arithmetical meaning by applying \cnst{be} and \cnst{iota} consecutively to the degree quantifier semantics. Specifically, when \cnst{be} applies to a set of degree properties whose maximal value equals 5 \REF{ex:five-degree}, the result in \REF{ex:be-five} is the singleton set $\{5\}$. The subsequent application of \cnst{iota} yields the number 5 \REF{ex:iota-be-five}. 
+
+		\ea \ea \cnst{be}(\sib{five}) $=\lambda n_n[n=5]$\label{ex:be-five}
+        \ex \cnst{iota}(\cnst{be}(\sib{five})) $= \cnst{iota}(\lambda n_n[n=5]) = 5$\label{ex:iota-be-five}
+        \z
+        \z
+
+\noindent An advantageous feature of this approach is that it allows for relating the quantifying and the arithmetical meanings using standard and independently motivated type-shifting machinery. Importantly, however, by doing so it can only derive the arithmetical function from the quantifying one but not vice versa. We will see that this restriction, shared with \citeauthor{ionin_matushansky2018cardinals}'s approach, makes a problematic prediction concerning morphological marking. In the next section, I will discuss accounts that derive cardinalities from the arithmetical meaning. 
+	
+	\subsection{Deriving cardinalities from number concepts}\label{sec:deriving-cardinalities-from-number-concepts}
+
+    In opposition to the view that the quantifying function of numerals is basic, a number of approaches build on a contrary intuition, namely that underlyingly numerals are simply names of number concepts \citep[e.g.,][]{scha1981distributive,Krifka1989,scontras2014semantics,wagiel2018subatomic}. According to that alternative view, cardinals in prenominal position are in fact syntactically and semantically complex 
+
+An early theory of cardinals postulating that they are derived from number concepts was developed by \citet{scha1981distributive}. This system distinguishes between numbers, numerals and numerical determiners. The first simply denote number concepts. On the other hand, the \textsc{numeral} head shifts an integer (type $n$) to a cardinal predicate while the numerical D head transforms such a cardinal predicate into a determiner with a GQ-style semantics \REF{ex:d-numeral-number}.\footnote{The exact denotation of the numerical determiner depends on whether the whole sentence gets a collective, distributive or cover reading, i.e., there is a distinct D for each interpretation.}
+
+\ea $[\ \textsc{d}_{\langle\langle e,t\rangle,\langle\langle e,t\rangle,t\rangle\rangle}\ [\ \textsc{numeral}_{\langle e,t\rangle}\ [\ \textsc{number}_n\ \textit{five}\ ]\ ]\ ]$\label{ex:d-numeral-number}
+\z
+
+\noindent A related idea is the core of the system developed by \citet{hackl2000comparative} who makes use of a covert quantificational operator \cnst{many} to turn a number concept into a determiner \REF{ex:many}. On this approach, the quantifying cardinal is accompanied by an additional null element that ensures the shift \REF{ex:five-many}. The result combines with the denotation of the NP to form a generalized quantifier.
+
+		\ea \ea \sib{\cnst{many}} $=\lambda n_n\lambda P_{\langle e,t\rangle}\lambda Q_{\langle e,t\rangle}\exists x_e[\#(x)=n \wedge P(x) \wedge Q(x)]$\label{ex:many}
+        \ex \sib{five cats} $=$ \sib{[ [ 5 \cnst{many} ] cats ]}\label{ex:five-many}
+        \z
+        \z
+
+\noindent Another proposal on how to derive the quantifying meaning from the arithmetical one dates back to \citet{krifka1995common}. On this view, all numerals are assumed to underlyingly designate number concepts but they also involve an additional classifier element that depending on a language can be either overt or covert. There are several variants of this approach but what they all share is that the classifier element takes an integer and returns a counting device equipped with an appropriate measure function \REF{ex:cl} \citep{scontras2014semantics,wagiel2018subatomic}. For instance, in the derivation of the phrase \textit{five cats} the arithmetical entity is first turned into a quantifying predicate modifier, which then combines with the NP \REF{ex:five-cl}.
+
+		\ea \ea \sib{\cnst{cl}} $= \lambda n_n\lambda P_{\langle e,t\rangle}\lambda x_e[\text{*}P(x) \wedge  \#(P)(x)=n]$\label{ex:cl}
+        \ex \sib{five cats} $=$ \sib{[ [ 5 \cnst{cl} ] cats ]} $= \lambda x_e[\text{*}\textsc{cat}(x) \wedge \#(x)=5]$\label{ex:five-cl}
+        \z
+        \z
+
+\noindent In yet another variant of the approach, the classifier semantics turns a numeric value into a predicate \citep{sudo2016semantic}. The classifier takes a number and yields a cardinal property (type $\langle e,t\rangle$) rather than a predicate modifier. It can also introduce a special presupposition concerning the nature of the referents of the modified noun. The resulting expression then combines with the NP via Predicate Modification. 
+
+From a theoretical perspective both types of the relationship between the arithmetical and quantifying function, i.e., the derivation from the quantifying meaning to the arithmetical meaning and vice versa, seem plausible. Thus, the question which one is correct is an empirical issue. In the next section, I will discuss morphological evidence useful in determining the direction of the derivation.
+
+	\subsection{Morphological evidence}\label{sec:morphological-evidence}
+	
+	Many languages distinguish formally between so-called counting, i.e., arithmetical, and attributive, i.e., quantifying, numerals \citep{hurford1998interaction,hurford2001languages}. For instance, in Mandarin the form \textit{èr} `two' is used in arithmetical environments whereas \textit{liǎng} `two' is an attributive cardinal appearing in the quantifying use. Likewise, the Maltese \textit{tnejn} `two' indicates the arithmetical function while \textit{żewġ} `two' has the quantifying meaning. Though the distinction is typically restricted to a subset of numerals in a language and there are a number of patterns of how the two forms can differ, it is a relatively widespread phenomenon across languages.
+	
+	Interestingly, the two families of theories discussed above make different predictions regarding the morphological make-up of numerals cross-\-lin\-guistically. On the assumption that morphology expresses meaning, if the arithmetical function is derived from the quantifying function, see \sectref{sec:deriving-number-concepts-from-cardinalities}, then we would expect that across languages a pattern with arithmetical numerals being morphologically more complex than quantifying cardinals should be relatively widespread. This is because an additional affix is expected to introduce a shift from a counting device to a number concept. On the other hand, if the quantifying function is derived from the arithmetical one, see \sectref{sec:deriving-cardinalities-from-number-concepts}, then we would expect an inverse pattern to be common. Namely, quantifying cardinals should include an additional morpheme encoding a shift from number concepts to quantifying modifiers.
+	
+	It turns out that the cross-linguistically widespread asymmetry attested, e.g., in many obligatory classifier languages, is of the latter type \citep{wagiel_caha2020universal,wagiel2023grammatical}.	For instance, bare numerals in Japanese cannot modify NPs and require an additional element, namely a classifier \REF{ex:japanese-quantifying}.\footnote{Typically, classifiers also introduce certain restrictions on the referents of the NP, e.g., being a round or a flat object, a plant, a big animal etc. This aspect of their meaning can be captured by accommodating various presuppositions about the nature of the denoted  entities \citep{sudo2016semantic}.} However, such an element is illicit in an arithmetical environment like \REF{ex:japanese-arithmetical} despite the fact that \textit{ko} being a general classifier could be used to indicate any type of inanimate entity.
+
+	\ea \ea{\gll \{ \minsp{*} go-no / {go-ko-no \}} ringo\\
+		{} {} five-\textsc{gen} {} five-\textsc{clf}-\textsc{gen} apple\\
+		\glt `five apples'}\label{ex:japanese-quantifying}
+	\ex{\gll juu waru \{ go-wa / \minsp{\#} {go-ko-wa \}} ni-da.\\
+		ten divided {} five-\textsc{top} {} {} five-\textsc{clf}-\textsc{top} two-\textsc{cop}\\
+		\glt `Ten divided by five equals two.' \hfill (Japanese)}\label{ex:japanese-arithmetical}
+	\z
+	\z
+
+	\noindent Therefore, it seems that the approaches that derive the arithmetical semantics from the quantifying one make incorrect predictions with respect to meaning/ form correspondences regarding numerals cross-linguistically.\footnote{For an analysis of the rare German pattern \textit{ein-s} $\sim$ \textit{ein} `one', see \citet{wagiel_caha2020universal}.} 
+ 
+    To conclude, the patterns examined above suggest that the arithmetical meaning of numerals is the basic one and that other uses are derived from it, and thus supporting the approaches discussed in \sectref{sec:deriving-cardinalities-from-number-concepts} and challenging those in \sectref{sec:deriving-number-concepts-from-cardinalities}. In the next section, I will discuss complex numerical expressions in Slavic and suggest how this type of evidence can provide further hints on which of the two ways of relating number concepts and cardinalities discussed so far is on the right track.
+	
+	\section{Complex numerical expressions}\label{sec:complex-numerical-expressions}
+
+    While the mainstream semantic research focuses on basic cardinal numerals, there is a growing body of formal literature acknowledging that they are in fact only a subset of various numerical expressions. This fact has been well known in Slavic descriptive traditions. Since Slavic languages have a rich morphology, it is not surprising that one can find abundant formal complexity also in numerals. In this section, I will briefly review recent developments in the study of different types of derivationally and semantically complex numerical expressions. 
+	\subsection{Ordinals}\label{sec:ordinals}
+	
+	The cross-linguistically most widespread type of derived numerical expressions are ordinal numerals, i.e., forms like English \textit{fifth} and Russian \textit{pjatyj} `fifth'. Intuitively, ordinals represent position or rank in a sequential order. Modulo suppletion, e.g., \textit{one} $\sim$ \textit{first}, if a language distinguishes morphologically a class of ordinals, they are always derived by an additional affix \citep{stolz_veselinova2013ordinal}. 
+ 
+	Perhaps somewhat surprisingly, the semantics of ordinals has been typically linked to superlatives. Cross-linguistically, the two types of expressions often share identical or related morphemes \citep{hurford1987language,veselinova1998suppletion}\footnote{Notice that this is also the case in some Slavic languages. For instance, Polish \textit{pierw-szy} and Ukrainian \textit{per-šyj}, both `first', contain the comparative markers \textit{-szy} and \textit{-šyj} which also appear in superlatives, e.g., \textit{naj-star-szy} and \textit{naj-star-šyj}, both `the oldest', respectively.} and have the same syntax \citep{barbiers2007indefinite}. Furthermore, the acquistion of ordinals seems to be influenced by superlative morphology \citep{meyer_et-al2018ordinals}. Even more importantly, ordinals, just like superlatives, give rise to an ambiguity between an absolute and a comparative interpretation \citep{bhatt2006covert,sharvit2010infinitival}. On the absolute reading of \REF{ex:superlatives}, John gave Mary a telescope that is older than all other telescopes. On a comparative reading, however, he might have given her a relatively new telescope than happens to be older than the telescopes other people gave her, i.e., John's gift is compared to other gifts rather than to telescopes in general. Similarly, \REF{ex:ordinals} can mean either that Mary got a telescope that was older than other telescopes, or that John's telescope was the first Mary has received.
+	
+	\ea\label{ex:superlatives-ordinals} \ea John gave Mary the oldest telescope.\label{ex:superlatives}
+	\ex John gave Mary the first telescope. \hfill\label{ex:ordinals}
+	\z
+	\z
+
+\noindent However, ordinals, unlike superlatives, do not give rise to so-called upstairs \textit{de dicto} readings in sentences with intensional operators such as \textit{want} \citep{bylinina_et-al2015insitu}. For instance, \REF{ex:superlatives-de-dicto} can have a comparative interpretation which makes it true in the scenario below. Yet, that reading is unavailable for \REF{ex:ordinals-de-dicto}.
+	
+		\eanoraggedright\label{ex:superlatives-ordinals-de-dicto} \textsc{Scenario:} There are many trains throughout the day. John wants to take a train. Any of the trains between 3 pm and 4 pm is fine for him. Similarly, Bill and Steve want to take a train, and they are fine as long as the departure time is between 5 pm and 6 pm and between 7 pm and 8 pm, respectively. These people do not know anything about one another.
+		\ea John wants to take the earliest train. \hfill \textsc{true}\label{ex:superlatives-de-dicto}
+	\ex John wants to take the first train. \hfill \textsc{false}\label{ex:ordinals-de-dicto}
+	\z
+	\z
+	
+	\noindent As a result, \citet{bylinina_et-al2015insitu} argue that superlatives and ordinals differ with respect to where they are interpreted. According to that proposal, while superlatives involve movement, ordinals are always interpreted \textit{in situ}.
+	
+	\subsection{Group numerals}\label{sec:group-numerals}
+	
+	One of the key topics in the literature on plurality regards distributive and collective interpretations of sentences including plural DPs \REF{ex:collective} \citep[][]{scha1981distributive,link83,landman1989groupsi,landman2000events,schwarzschild1996pluralities}. For instance, \REF{ex:collective-numeral} is ambiguous between a reading on which a total of three letters were written, i.e., a distributive interpretation, and a reading on which only one letter was written, i.e., a collective interpretation. The source of the ambiguity has often been located inside the VP (\citealt{hoeksema1983plurality,link1984hydras,schwarzschild1991meaning}; \citealt[Ch. 7]{lasersohn1995plurality}). 
+
+	\ea\label{ex:collective} \ea The boys wrote a letter.
+	\ex Three boys wrote a letter.\label{ex:collective-numeral}
+	\z
+	\z
+	
+\noindent Interestingly, Slavic languages have special numerical expressions which force a collective interpretation of the whole sentence. For instance, consider \REF{ex:collective-czech} \citep{docekal2012atoms,docekal2013numerals}.\footnote{In the formal semantic literature, expressions such as \textit{trojice} `group of three' are also referred to as denumeral group nouns (due to their nominal-like behavior) and collective numerals. However, since the traditional Slavic linguistics uses the latter term for a different type of complex numerals (see \sectref{sec:gender-sensitive-numerals}), in order to avoid potential confusion I will not use it here.} While \REF{ex:collective-czech-tri} patterns with \REF{ex:collective-numeral} in that it is ambiguous between a distributive and a collective reading, \REF{ex:collective-czech-trojice} rules out the distributive interpretation, and thus the sole possible reading is that only one letter was written.
+
+		\ea\label{ex:collective-czech} \ea{\gll Tři chlapci napsali dopis.\\
+		three boys wrote letter\textsc{.acc}\\ \hfill \ding{51}\textsc{coll}, \ding{51}\textsc{distr} 
+		\glt `Three boys wrote a letter.'}\label{ex:collective-czech-tri}
+	\ex{\gll Trojice chlapců napsala dopis.\\
+		three\textsc{.grp} boys\textsc{.gen} wrote letter\textsc{.acc}\\ \hfill \ding{51}\textsc{coll}, \# \textsc{distr}
+		\glt `A group of three boys wrote a letter.' \hfill (Czech)}\label{ex:collective-czech-trojice}
+	\z
+	\z
+	
+\noindent Since the difference between the two sentences boils down to the alternation between the basic cardinal numeral \textit{tři} `three' and the morphologically complex derived form \textit{trojice} `group of three', the suffix \textit{-ice} was proposed to be a morphological reflex of a semantic operation forcing a collective interpretation, specifically the group-forming operator $\uparrow$ proposed by \citet{landman1989groupsi}.\footnote{The affix \textit{-oj-} appears only in complex numerical expressions derived from the roots for 2--3 and is usually assumed to have a purely structural function, i.e., it marks non-basic stems.} 
+
+Importantly, group numerals cannot be used to refer to number concepts \REF{ex:collective-czech-arithmetic}. This fact is surprising if the arithmetic meaning were derived from the quantifying one, see \sectref{sec:deriving-number-concepts-from-cardinalities}. Despite the collective meaning component, NPs with group numerals denote pluralities and one would expect that the same shift that is posited to turn the quantificational meaning of a basic numeral into the name of a number concept should be applicable also in this case, contrary to facts. 
+	
+			\ea\label{ex:collective-czech-arithmetic} \ea[\#]{\gll Trojice je prvočíslo.\\
+		three\textsc{.grp} is prime.number\\
+		\glt Intended: `Three is prime.'}\label{ex:collective-czech-prime}
+	\ex[\#]{\gll Šestice děleno trojicí je dvojice.\\
+		six\textsc{.grp} divided three\textsc{.grp.ins} is two\textsc{.grp}\\
+		\glt Intended: `Six divided by three is two.' \hfill (Czech)}\label{ex:collective-czech-math}
+	\z
+	\z
+
+	\noindent Group numerals were identified also in other Slavic languages. In particular, Polish \textit{trójka} `group of three' patterns with \REF{ex:collective-czech-trojice} \citep{wagiel2015sums} and similar examples include Slovak \textit{trojica}, Bosnian/Croatian/Montenegrin/Serbian (BCMS) \textit{trojka} and Russian \textit{trojka}, all `group of three'.\footnote{Russian shows a strong tendency to lexicalize group numerals, e.g., \textit{trojka} is also a word for a carriage drawn by a team of three horses abreast and a special tribunal in the 30s.} The existence of the discussed phenomenon in Slavic is unexpected since it is typically postulated to hold cross-linguistically that if a language has a scopal quantifier, it is a quantifier forcing a distributive interpretation \citep{gil1992scopal}.\footnote{Hebrew has expressions that resemble Slavic group numerals, e.g., \textit{šlišiya} `threesome of'. However, they were reported to differ in that they do not force a collective reading \citep{gil1992scopal}.} Hence, the Slavic data discussed above compel to revise that generalization. In any case, a systematic theory-driven cross-linguistic research of group numerals has not been carried out so far. 
+ 
+		\subsection{\textit{Both}}\label{sec:both} 
+	
+	An interesting feature of many languages is that alongside a regular basic numeral corresponding to English \textit{two} there is also another form corresponding to \textit{both}. In an early GQ account, \textit{both} was analyzed as a quantificational determiner with the same meaning as \textit{the two} \citep{barwise_cooper1981generalized}. However, the two expressions are not equivalent since \textit{both} is incompatible with collective predicates \REF{ex:both-collective} and cannot appear inside partitives \REF{ex:both-partitive} \citep{ladusaw1982semantic}. The same behavior is also attested in Slavic \REF{ex:both-russian} \citep{lazorczyk-pancheva2009from}.
+
+	\ea\label{ex:both} \ea \{ The two / \#Both \} students are a happy couple.\label{ex:both-collective}
+	\ex One of \{ the two / \#both \} children sneezed.\label{ex:both-partitive}
+	\z
+	\z
+
+		\ea\label{ex:both-russian} \ea[\#]{\gll Obe ženščiny prišli vmeste.\\
+		both woman\textsc{.gen} came together\\
+		\glt Intended: `Both women came together.'}\label{ex:both-collective-russian}
+	    \ex[]{\gll Kto iz {\.e}tix \{ dvoix / \minsp{*} {oboix \}} sdelal to, čto xotel otec?\\
+		who of these\textsc{.gen} {} two\textsc{.gen} {} {} both\textsc{.gen} did this what wanted father\\
+		\glt `Which of these two did what his father wanted?' \hfill (Russian)}\label{ex:both-partitive-russian}
+	\z
+	\z
+
+	\noindent The data presented above led to proposals postulating that \textit{both}, unlike basic cardinals, involves an additional distributive component \citep[e.g.,][]{ladusaw1982semantic,landman1989groupsi}.\footnote{For recent research on distributive numerals, see \citet{gil2013numeral}, \citet{cable2014distributive} and  \citet{wohlmuth2019atomicity}.} Interestingly, however, there is yet another respect in which the two differ. Specifically, \textit{both} and its counterparts in other languages cannot be used to refer to a number concept in an arithmetical environment \REF{ex:both-polish}.
+	
+			\ea\label{ex:both-polish} \ea[\#]{\gll Oba to liczba parzysta.\\
+		both that number even\\
+		\glt Intended: `Both is an even number.'}\label{ex:both-polish-arithmetic}
+	\ex[\#]{\gll Dziesięć dzielone przez oba równa się pięć.\\
+		ten divided by both\textsc{.acc} equals \textsc{refl} five\\
+		\glt Intended: `Ten divided by both equals five.' \hfill (Polish)}\label{ex:both-polish-math}
+	\z
+	\z
+	
+	\noindent As group numerals, \textit{both} and its Slavic equivalents pose a challenge for approaches deriving the arithmetical function from the allegedly basic quantifying meaning.
+	
+	\subsection{Taxonomic numerals}\label{sec:taxonomic-numerals}
+	
+	A unique property of some Slavic languages is that they have taxonomic numerals. Like group numerals, they are derived by a special suffix which triggers a non-trivial semantic effect. Unlike basic numerals, such expressions do not quantify over object-level entities, i.e., tokens of a type, but rather over subkinds of a particular kind corresponding to the meaning of the modified noun.\footnote{For an introduction to the kind/object distinction, see, e.g., \citet{krifka_et_al1995introduction}.} For instance, let us consider the taxonomic numeral \textit{dvojí} `two kinds of' in Czech \citep{docekal2012atoms,docekal2013numerals,grimm_docekal2021counting}. \REF{ex:taxonomic-czech-dvoji-housle} does not refer to two musical instruments but rather to two types of violin, e.g., a set of classical violins and a set of electric violins. Likewise, \REF{ex:taxonomic-czech-dvoji-vino} denotes two kinds of the beverage, e.g., white and red wine, irrespective of the amount.\footnote{Note that \REF{ex:taxonomic-czech} would be more faithfully translated as `violins of two kinds' and `wine of two kinds', but for consistency I follow the convention adopted in \citet{docekal2012atoms,docekal2013numerals}.}
+	
+	\ea\label{ex:taxonomic-czech} \ea{\gll dvojí housle\\
+		two\textsc{.tax} violin\\ 
+		\glt `two kinds of violin'}\label{ex:taxonomic-czech-dvoji-housle}
+	\ex{\gll dvojí víno\\
+		two\textsc{.tax} wine\\
+		\glt `two kinds of wine' \hfill (Czech)}\label{ex:taxonomic-czech-dvoji-vino}
+	\z
+	\z
+	
+	\noindent Unlike basic numerals, taxonomic numerals specify the domain of quantification to be within the realm of kinds exclusively. Therefore, the suffix \textit{-í} was proposed to introduce a quantificational operation dedicated to counting subkinds, specifically the \textsc{ku} (for `kind unit') operation proposed by \citet{krifka1995common}.
+	
+	Though taxonomic numerals seem to be best preserved in Czech, Polish \textit{dwojaki} and \textit{dwoisty}, Bulgarian \textit{dvojak} and Russian \textit{dvojakij}, all `twofold', are arguably expressions of a similar type. However, there appear to be certain differences with respect to their distribution and behavior that have not been described sufficiently so far. Crucially, none of the taxonomic numerals can be used to refer to an abstract number concept.
+	
+		\subsection{Aggregate numerals}
+	
+	Another intriguing type of Slavic derivationally complex numerical expressions is sometimes referred to as aggregate numerals, e.g., forms such as Czech \textit{dvoje} `two collections' \citep{docekal2012atoms,docekal2013numerals} as well as BCMS \textit{dvoji} \citep{lucic2015observations}. Like group numerals, they are derived by a special suffix which triggers a non-trivial semantic effect and lack the arithmetical meaning. While basic numerals simply count atomic individuals in the denotation of the modified NP, aggregate numerals are used to quantify over collections of entities that typically form a particular spatial configuration. For instance, \REF{ex:aggregate-czech-dvoje-karty} refers to two aggregates of cards, e.g., two decks of cards and \REF{ex:collective-czech-dvoje-boty} denotes two pairs of shoes.
+	
+	\ea\label{ex:aggregate-czech} \ea{\gll dvoje karty\\
+		two\textsc{.aggr} cards\\ 
+		\glt `two sets of cards'}\label{ex:aggregate-czech-dvoje-karty}
+	\ex{\gll dvoje boty\\
+		two\textsc{.aggr} shoes\\
+		\glt `two pairs of shoes' \hfill (Czech)}\label{ex:collective-czech-dvoje-boty}
+	\z
+	\z
+
+\noindent Aggregate numerals are not limited to Slavic. Similar expressions seem to have existed in Latin, e.g., \textit{trēs} `three' $\sim$ \textit{trīnī} `three collections' \citep{ojeda1997semantics}, and Estonian uses pluralized numerals for this purpose, e.g., \textit{kaks} `two' $\sim$ \textit{kahed} `two collections' \citep{norris2018morphosyntax}. However, it is the Slavic data which was taken as evidence for the relevance of mereotopology in natural language, specifically the significance of topological relations holding between atomic members of a plurality within a part-whole structure.\footnote{For an introduction to mereotopology, see \cite[Ch. 4]{grimm2012number}, \cite[Ch. 6]{wagiel2018subatomic}.} In particular, the suffix \textit{-e} in \REF{ex:aggregate-czech} is sensitive to how parts making up a whole are arranged, and thus it was proposed to introduce a semantic operation dedicated to counting clusters, i.e., topologically structured spatial groupings of entities \citep{grimm_docekal2021counting}.
+
+	\subsection{Gender-sensitive numerals}\label{sec:gender-sensitive-numerals}
+	
+	All Slavic languages mark grammatical gender on low numerals whereas some of them, e.g., Bulgarian, Polish and Slovak, distinguish between virile (personal masculine) and non-virile forms also in higher numerals \citep{cinque-krapova2007note,pancheva2018how,wagiel2023grammatical}. However, what is probably even more interesting is the existence of complex expressions which I will refer here to as gender-sensitive numerals.\footnote{In traditional Slavic linguistics such forms are typically termed ``collective numerals''. In order to avoid confusion with expressions discussed in \sectref{sec:group-numerals}, I will not use that term.} Such expressions introduce non-trivial restrictions with respect to the natural gender of individuals making up a plurality.
+	
+	Let us consider Polish gender-sensitive numerals such as \textit{troje} `three (at least one male and at least one female)' \citep{wagiel2014boys,wagiel2015sums}. Unlike virile and non-virile cardinals in \REF{ex:gender-polish-trzech}--\REF{ex:gender-polish-trzy}, they do not show grammatical gender agreement with modified NPs. Instead, they are neuter \REF{ex:gender-polish-troje}. And yet they introduce a gender-related effect. While \REF{ex:gender-polish-trzech} denotes a plurality of either males or students whose natural gender is not known to the speaker and \REF{ex:gender-polish-trzy} refers to three females, \REF{ex:gender-polish-troje} is interpreted as designating a mixed-gender group.
+
+	\ea\label{ex:gender-polish} \ea{\gll tych trzech studentów\\
+		these\textsc{.v} three\textsc{.v} students\textsc{.gen.v}\\ 
+		\glt `these three students (male or indeterminate)'}\label{ex:gender-polish-trzech}
+	\ex{\gll te trzy studentki\\
+		these\textsc{.nv} three\textsc{.nv} students\textsc{.nom.nv}\\
+		\glt `these three female students'}\label{ex:gender-polish-trzy}
+	\ex{\gll to troje studentów\\
+		this\textsc{.n} three\textsc{.gndr.n} students\textsc{.gen.v}\\
+		\glt `these three students (at least one male and one female)' \hfill (Polish)}\label{ex:gender-polish-troje}
+	\z
+	\z
+
+    \noindent Based on the evidence above, numerals such as Polish \textit{troje} were proposed to introduce a presupposition that a designated plurality is heterogeneous and consists of both male and female individuals. Though similar expressions seem to be only attested in BCMS, e.g., \textit{dvoje}, `two (one male and one female)', there are also other types of gender-sensitive numerals in Slavic. For instance, BCMS \textit{dvojica} and Russian \textit{dvoe}, both `two (male)', presuppose a homogeneous group consisting of male individuals only \citep{kim2009structure,lucic2015observations,khrizman2020cardinal}. Interestingly, none of the gender-sensitive numerals can be used to refer to a number concept.
+	
+	\subsection{Indefinite numerals}\label{sec:indefinite-numerals}
+	
+	Another intriguing class of numerical expressions concerns indefinite numerals such as English \textit{several} \citep{kayne2007several}. Similar quantifiers appear in all branches of Slavic, e.g., compare Czech \textit{několik}, Russian \textit{neskol'ko}, Bulgarian \textit{nyakolko} and BCMS \textit{nekoliko}, all `several'. Particularly interesting data come from Polish, which distinguishes between two different expressions of this type, specifically \textit{kilka} `several, a few' and \textit{ileś (tam)} `some, some amount'. While the former is only compatible with count NPs and designates a cardinality between 3 and 9, the latter also combines with mass NPs and can indicate any quantity \citep{wagiel2020several}. 
+
+In terms of morphosyntax and many aspects of semantics, \textit{several} and its Slavic equivalents pattern with cardinals. However, one crucial respect in which the two differ is that indefinite numerals do not fit contexts calling for number concepts, see \REF{ex:arithmetical-several} and \REF{ex:arithmetical-kilka-iles} \citep{schwarzschild2002grammar,wagiel2020several}. Despite the fact that one can easily imagine the intended meaning and paraphrase it using the existential quantifier \REF{ex:arithmetical-several-paraphrase}, this is not what one gets in \REF{ex:arithmetical-several} and \REF{ex:arithmetical-kilka-iles}.
+
+\ea\label{ex:several} \ea[\#]{Four plus several is less than ten.}\label{ex:arithmetical-several}
+	\ex[]{There is a number \textit{n} such that four plus \textit{n} is less than ten.}\label{ex:arithmetical-several-paraphrase}
+    \z
+    \z
+
+	\ea[\#]{\gll Cztery plus \{ kilka / {ileś (tam) \}} to mniej niż dziesięć.\\
+	four plus {} several {} some this less than ten\\
+	\glt Intended: `Four plus several/some is less than ten.' \hfill (Polish)}\label{ex:arithmetical-kilka-iles}
+    \z
+
+	\noindent Polish indefinite numerals were analyzed as complex expressions with an incorporated measure function and choice function. The difference between \textit{kilka} and \textit{ileś (tam)} is due to a different type of set the choice function selects a number from and a different kind of built-in measure function \citep{wagiel2020several}.
+	
+	\subsection{Multipliers}\label{sec:multipliers}
+	
+	In many languages there is an understudied class of numerical expressions sometimes referred to as multipliers, e.g., English \textit{double}. Though Germanic and Romance languages have borrowed their multipliers from Latin, in Slavic they are morphologically transparent and one can easily notice that they are derived from numerical roots by various affixes, e.g., compare Polish \textit{podwójny}, Russian \textit{dvojnoj} and Czech \textit{dvojitý}, all `double'.
+	
+	Interestingly, multipliers display non-trivial quantificational behavior. Specifically, they do not quantify over whole entities or events, as basic cardinals would, but rather over parts thereof \citep{wagiel2018subatomic,wagiel2020entities}. For instance, \REF{ex:multiplier-bcs-kruna} denotes a set of singular objects having a complex internal structure. Each of those objects is a crown but crucially it also has two parts that could be considered as having the property of being a crown themselves, e.g., entities such as the ancient Egyptian Pschent or the papal tiara. Similarly, \REF{ex:multiplier-bcs-ubistvo} refers to a murdering event with two victims. But this means that there were two parts of that event each of which could be described as a murder in its own right.
+	
+				\ea\label{ex:multiplier-bcs} \ea{\gll dvostruka kruna\\
+		two\textsc{.mult.f} crown\textsc{.n}\\
+		\glt `double crown'}\label{ex:multiplier-bcs-kruna}
+	\ex{\gll dvostruko ubistvo\\
+		two\textsc{.mult.n} murder\textsc{.n}\\
+		\glt `double murder' \hfill (BCMS)}\label{ex:multiplier-bcs-ubistvo}
+	\z
+	\z
+	
+	\noindent The behavior of multipliers stems from the phenomenon of subatomic quantification \citep{wagiel2018subatomic}. According to the proposal, grammar is sensitive to the arrangement of parts within a singular entity. Certain expressions, e.g., proportional partitives and multipliers, can access subatomic part-whole structures and quantify over parts conceptualized as contiguous objects within a whole.
+	
+	\subsection{Multiplicatives}\label{sec:multiplicatives}
+ 
+    Yet another class of frequent though surprisingly understudied numerical expressions consists of multiplicatives \citep[but see][]{landman2006indefinite,donazzan2013oncounting,kayne2015once}. They include adverbial expressions such as English \textit{twice} and \textit{two times} which are primarily used to quantify over events but can also appear in comparatives and equatives. Multiplicatives are attested in all Slavic languages with BCMS \textit{dvaput} and Czech \textit{dvakrát} `two times' being representative examples. 
+	
+    Intuitively, multiplicatives are part of a broader class of adverbs of quantification which includes frequency adverbs like English \textit{often} \citep{abeille_et-al2004adverbs,doetjes2007adverbs}. However, close examination reveals interesting differences between them, e.g., in terms of degree modification \citep{docekal_wagiel2018event}. For instance, \REF{ex:event-dvakrat} is ambiguous between the quantified-event and the quanti\-fied-degree reading. On the former interpretation, there were two events of increasing the demand and the total value of the increase is unknown whereas on the latter there was a twofold increase in the demand irrespective of the number of events on which it increased. Crucially, \REF{ex:event-casto} lacks the quantified-degree reading.
+
+		\ea \ea{\gll Poptávka po dotacích vzrostla dvakrát.\label{ex:event-dvakrat}\\
+		demand after subsidies\textsc{.loc} increased\textsc{.pfv} twice\\ \hfill \ding{51}\textsc{event}, \ding{51}\textsc{deg}
+		\glt `The demand for subsidies increased (by) two times.'}
+	\ex{\gll Poptávka po dotacích rostla často.\label{ex:event-casto}\\
+		demand after subsidies\textsc{.loc} increased\textsc{.ipfv} often\\ \hfill \ding{51}\textsc{event}, \#\textsc{deg}
+		\glt `The demand for subsidies increased often.' \hfill (Czech)}
+	\z
+	\z
+
+    \noindent In addition, while multiplicatives are perfectly fine in comparatives and equatives, frequency adjectives are infelicitous in such constructions \REF{ex:event-comparative}. 
+
+		\ea {\gll Petr je \{ dvakrát / \minsp{\#} často \} vyšší než Marie.\label{ex:event-comparative}\\
+		Petr is {} twice {} {} often {} taller than Marie\\
+		\glt `Petr is two times taller than Marie.' \hfill (Czech)}
+		\z
+	
+	\noindent Unlike all other types of numerical expressions discussed so far, multiplicatives can be used in arithmetical environments provided that they express multiplication. However, not all multiplicatives can do that. For instance, Polish has two sets of multiplicatives but only one is felicitous in \REF{ex:event-arithmetical} which suggests that the element \textit{razy} `times' is a homonymous form for a multiplicative morpheme used to quantify over events and an expression of an arithmetical relation.
+	
+			\ea {\gll \{ Dwa razy / \minsp{\#} Dwukrotnie \} trzy równa się sześć.\label{ex:event-arithmetical}\\
+		{} two times {} {} twice {} three equals \textsc{refl} six\\
+		\glt `Two times three equals six.' \hfill (Polish)}
+		\z
+	
+	\noindent Though multiplicatives are key to understanding event and degree quantification, so far they have received little attention compared to cardinals.
+	
+		\subsection{Frequency numerals}\label{sec:frequency-numerals}
+	
+	Finally, in many languages there are expressions I will refer to as frequency numerals, i.e., multiplicative adjectives equivalent to English \textit{two-time}. Slavic is no exception here and Polish \textit{dwukrotny}, Czech \textit{dvojnásobný} and Russian \textit{dvukratnyj}, all `two-time', are representative examples of the class in question. 
+	
+	At first sight, it seems that frequency numerals such as \textit{two-time} are expressions of the same type as frequency adjectives like \textit{occasional} and \textit{frequent} \citep{zimmermann2003pluractionality,schafer2007frequency,gehrke_mcnally2015distributional}. However, while \textit{occasional} can have the adverbial reading, \textit{two-time} patterns with \textit{frequent} in that it lacks such an interpretation. For instance, while \REF{ex:frequency-adjectives-occasional} means that occasionally a sailor strolled by, both \REF{ex:frequency-adjectives-frequent} and \REF{ex:multiplicatives-two-time} cannot be understood that way.
+
+	\ea \ea An occasional sailor strolled by. \hfill \ding{51}\textsc{adverbial}\label{ex:frequency-adjectives-occasional}
+	\ex A frequent sailor strolled by. \hfill \#\textsc{adverbial}\label{ex:frequency-adjectives-frequent} 
+	\ex A two-time senator strolled by. \hfill \#\textsc{adverbial}\label{ex:multiplicatives-two-time}
+	\z
+	\z
+	
+	\noindent Further, frequency numerals fail to combine with sortal nouns and require role nouns denoting socially salient capacities that can be acquired repetitively, e.g., positions with a term and award recipients. That is because they quantify over conventionalized events of acquiring a property, e.g., via a ceremony \REF{ex:polish-multiplicatives}.
+	
+	\ea \label{ex:polish-multiplicatives} \ea{\gll Jan to dwukrotny \{ mistrz / \minsp{\#} człowiek \}.\label{ex:polish-multiplicatives-two-time}\\
+		Jan this two-time {} champion {} {} man {}\\
+		\glt `Jan is a two-time champion.'}
+	\ex{\gll Jan został \{ mistrzem / \minsp{\#} człowiekiem \} dwa razy.\label{ex:multiplicative-became}\\
+		Jan became {} champion\textsc{.ins} {} {} man\textsc{.ins} {} two times\\
+		\glt `Jan became a champion twice.' \hfill (Polish)}
+	\z
+	\z
+
+\noindent Let us now summarize what the complex numerical expressions data show us.
+	
+\subsection{Summary}\label{sec:summary}
+
+Complex numerical expressions give rise to various non-trivial semantic effects. The dataset reviewed in this section is far larger and more diverse than typically analyzed in the semantic literature, see \sectref{sec:theories-of-cardinals}. And yet, there is an intuition that a general theory of numerals should cover all of the examined cases. Therefore, I believe that the relevance of the discussed Slavic data is twofold.
+
+First, morphological transparency of the discussed forms clearly shows that (unless suppletion is involved) all complex numerical expressions share a common component, i.e., a numerical root designating a number. That number is somehow employed in counting but what exactly is counted may vary depending on the type of numeral, e.g., whole objects in the case of basic cardinals, parts in the case of multipliers and subkinds in the case of taxonomic numerals. Hence, a theory of numerals should aim at providing a general mechanism for capturing not only the behavior of basic numerals but also other numerical expressions. 
+
+Second, despite sharing an element designating a number, none of the complex numerical expressions can be used to refer to number concepts, i.e., the arithmetical function is never available except for basic numerals. This fact is problematic for the approaches deriving the arithmetical meaning from the quantifying one, see \sectref{sec:deriving-number-concepts-from-cardinalities}. The reason is that they shift a counting-device semantics to a number name. But if so, why can that shift not be also applied in other types of counting expressions, e.g., taxonomic or indefinite numerals, or \textit{both}? Semantically, they do not seem to differ radically from basic cardinals (they all count something) to justify the unavailability of the shifting. If, on the other hand, the arithmetical meaning is basic, one expects to derive various quantificational flavors from it. Therefore, it would not be surprising that only basic numerals can have the arithmetical function while other types of numerical expressions lack it. 
+
+Based on the two conclusions reached above, in the next section I will propose an analysis of yet another type of numerical expressions, namely label numerals.
+
+	\section{Case study: Numerals as labels}\label{sec:case-study-numerals-as-labels}
+
+Let us now return to the label use of numerals introduced in \REF{ex:uses-label}, repeated here as \REF{ex:uses-label-1}, and discuss how it relates to the quantifying and arithmetical function.
+ 	
+	\ea	Player number five twisted her ankle.\label{ex:uses-label-1}
+	\z
+	
+	\noindent So far, the label meaning has received little attention in the literature (see \citealt[167--168]{hurford1987language}; \citealt[37--42]{wiese2003numbers}; \citealt[119--129]{bultinck2005numerous}). I will demonstrate that not only is this function conceptually different from other functions discussed in \sectref{sec:basic-numerals-and-their-various-flavors} but also that the distinction is reflected in grammar. I will argue that the label function is derived from the arithmetical meaning and I will propose a morpho-semantic account that allows for deriving both the form and the meaning of dedicated label numerals in Slavic. The proposed analysis will combine standard compositional semantics with a Nanosyntax model of morphology.
+
+    \subsection{Label uses are distinct}\label{sec:label-uses-are-distinct}
+	
+ Label numerals provide means for identification of an object via its association with a unique number, which allows for the recognition of that object among other entities. This mechanism is sometimes referred to as \textsc{nominal number assignment} \citep[37--38]{wiese2003numbers}. A set of numbers are consistent labels as long as the numerals corresponding to distinct numbers in that set are uniquely used for each distinct object. This can be achieved by one-to-one mapping between a set of labeled entities and a given set of numbers. Importantly, the actual values of the numbers represented by label numerals are irrelevant since they do not indicate quantity, order or any other type of measurement. Furthermore, the set of labels can change over time, e.g., it can grow as new entities are labeled. The only thing that matters is that at a given time every labeled entity is associated with a unique number.
+
+    It is clear that from a conceptual point of view the label function differs from the quantifying and the arithmetical meaning. Importantly, however, the distinction is also encoded in grammar. First, numerals used as labels do not allow for modification by numeral modifiers and prequantifiers \REF{ex:label-modification}. Moreover, label constructions do not give rise to scalar implicatures. For instance, in the context of \REF{ex:label-scalar}, taking tram number six would not guarantee getting to the university.
+
+\ea\label{ex:label-tests} \ea[\#]{Tram \{ more than / at least / all \} number five has left.}\label{ex:label-modification}
+\ex[]{You must take tram number five to get to the university. \hfill \#\textsc{at least}}\label{ex:label-scalar}
+\z
+\z
+
+\noindent The data in \REF{ex:label-tests} differ from the quantifying function and pattern with the properties of the arithmetical use of numerals discussed in \sectref{sec:quantifying-vs-arithmetical-use}. However, these two functions can be distinguished linguistically as well. For instance, English constructions with numerals used as labels differ from other count NPs in that they are ungrammatical with the indefinite article \REF{ex:grammar-article-label}. On the other hand, names of number concepts cannot appear without the definite article \REF{ex:grammar-article-arithmetical} \citep[for a detailed discussion of English phrases such as \textit{number five}, see][124--129]{bultinck2005numerous}. 
+	
+	\ea\label{ex:grammar-article} \ea[]{Kim took (*a) tram number five.}\label{ex:grammar-article-label} 
+	\ex[*]{(The) number five is odd.}\label{ex:grammar-article-arithmetical} 
+	\z
+	\z
+
+    \noindent Above, I argued that the label meaning of numerals is both conceptually and linguistically different from the quantifying and the arithmetical function. In the following two sections, I will discuss further evidence for the relevance of the label function as well as its relationship with the other two discussed meanings.
+
+	\subsection{Evidence from co-lexicalizations}\label{sec:evidence-from-co-lexicalizations}
+	
+		In many languages, an additional expression can be optionally used alongside the numeral in order to indicate its quantifying, arithmetical or label use. Sometimes, the same lexical item can introduce all of the functions above. For instance, English employs a single noun, namely \textit{number}, to indicate cardinality, to designate a mathematical object and to signal that an entity is identified via association with a relevant integer \REF{ex:polysemy-english}. 
+	
+		\ea\label{ex:polysemy-english} \ea The cats are five in number.\label{ex:polysemy-english-q}
+		\ex The number five is odd.\label{ex:polysemy-english-a}
+	\ex Tram number five left.\label{ex:polysemy-english-l}
+	\z
+	\z
+
+\noindent While English shows full co-lexicalization, i.e., the noun \textit{number} can be used to indicate all three functions, more often lexicons develop a different word for at least one of the functions in question. For instance, Bulgarian exhibits a pattern with no co-lexicalization, i.e., each of the discussed functions is signalled by a morphologically distinct expression, specifically \textit{broj} is for quantification, \textit{čislo} is for arithmetic and \textit{nomer} is for the label function, all `number'. 
+
+Though ways in which meanings and forms correspond to each other vary, it seems that they do not vary in an unrestricted manner. The co-lexicalization patterns found in Slavic are summarized in \tabref{tab:co-lexicalization-of-number}. Interestingly, the pattern that is not attested in the sample is a case of non-contiguous co-lexicalization where the quantifying and label function are expressed with the same form while the arithmetical function is expressed by a different lexical item. Perhaps surprisingly, this result resembles the well-known *ABA principle \citep{bobaljik2012universals}.
+
+	\begin{table}
+		\caption{Co-lexicalization of `number'}
+		\label{tab:co-lexicalization-of-number}
+		\begin{tabular}{llll} 
+			\lsptoprule
+			\textsc{language} & \textsc{quantifying} & \textsc{arithmetical} & \textsc{label} \\ 
+			\midrule
+			BCMS       & A broj   & A broj   & A broj\\
+			Polish     & A liczba & A liczba & B numer\\
+			Slovak     & A počet  & B číslo  & B číslo\\
+			Bulgarian  & A broj   & B čislo  & C nomer\\
+			unattested & A        & B        & A\\
+			\lspbottomrule
+		\end{tabular}
+	\end{table}
+
+Examining permissible patterns of co-lexicalization is rarely considered evidence in formal semantics. However, I believe that looking at how certain parts of the lexicon are structured can be instructive. Arguably, it can reveal that some meanings have more in common than others and in some cases that certain categories, though theoretically possible, are empirically unrealized.\footnote{This way of viewing data has been successful in lexicology (see \citealt{hage1997unthinkable} on kinship terms).} Consequently, one can gain valuable insights regarding what those meanings are.
+
+On the assumption that co-lexicalization does in fact reflect the relationship between concepts, the data in \tabref{tab:co-lexicalization-of-number} suggest that while the quantifying and the label meaning are unrelated, they both seem to stem from the arithmetical function. The reason is that if both the quantifying and the label meaning are derived from the arithmetical meaning, the attested co-lexicalization patterns are unsurprising since the unrelated derived functions are not expected to be expressed by a single term that is different from the one expressing the underlying meaning (ABA). On the other hand, if the quantifying meaning were basic, then one would expect to find the ABA pattern instead of the Czech and Slovak ABB.
+
+Whether a language which has a term for the quantifying and the label function to the exclusion of the arithmetical function can be found is an empirical issue. So far, the Slavic co-lexicalization data suggest a strong relationship between the label and the arithmetical meaning and no relationship between the label and the quantifying meaning. Let us now move to Slavic label numerals.
+	
+	\subsection{Derived label numerals}\label{sec:derived-label-numerals}
+
+An interesting property of Slavic languages is that they have specialized label numerals. Such dedicated expressions are derived with the suffixes \textit{-ka} and \textit{-ica}. \tabref{tab:cardinal-and-label-five} gives the label forms for the numerals corresponding to 5 across Slavic. 
+
+	\begin{table}[h!]	
+	\caption{Cardinal and label `five' in Slavic}
+\label{tab:cardinal-and-label-five}
+\begin{tabular}{llll}
+\lsptoprule
+\textsc{language} & \textsc{number} & \textsc{cardinal} & \textsc{label}       \\ \midrule
+Czech      & 5 & pět      & pětka        \\
+Polish     & 5 & pięć     & piątka       \\
+Russian    & 5 & pjat'    & pjaterka     \\
+Slovenian  & 5 & pet      & petka/petica \\
+BCMS       & 5 & pet      & petica       \\ 
+\lspbottomrule
+\end{tabular}
+	\end{table}
+
+Though there are a number of interesting differences in their productivity and distribution, e.g., Polish derives label forms with \textit{-ka} up to 999 while Russian has them only for 2--10, 20 and 30, all Slavic label numerals are morphosyntactically nominal expressions used to refer to objects that can be identified via nominal number assignment. Though very often they appear bare, the noun specifying what entity is labeled can optionally precede the label numeral \REF{ex:label-czech}. In the absence of the noun this information is typically provided by the context.
+
+\ea{\gll \minsp{(} Tramvaj) pět-ka vyjede na novou trať v listopadu.\\
+{} tram five-\textsc{lbl} will.go.out on new\textsc{.acc} track\textsc{.acc} in November\textsc{.loc}\\
+\glt `Tram number five will head out on the new track in November.' \hfill (Czech)}\label{ex:label-czech}
+\z
+
+\noindent Similar to classifier constructions and other complex numerical expressions, recall \sectref{sec:morphological-evidence} and \sectref{sec:complex-numerical-expressions}, Slavic label numerals exhibit uniform behavior in that they cannot be felicitously used in mathematical statements like \REF{ex:arithmetical}. This, in turn, indicates that their semantics is more intricate than the arithmetical meaning. 
+
+	\ea\label{ex:arithmetical} \ea[]{\gll Dva-krát pět se rovná deset.\\
+	two-times five \textsc{refl} equals ten\\
+	\glt `Two times five equals ten.'}
+	\ex[\#]{\gll Dvoj-ka krát pět-ka {se rovná} desít-ka.\\
+	five-\textsc{lbl} times two-\textsc{lbl} equals ten-\textsc{lbl}\\
+	\glt Intended: `Two times five equals ten.' \hfill (Czech)}\label{ex:arithmetical-czech}
+    \z
+    \z
+
+\noindent Thus, Slavic label numerals are both morphologically and semantically complex. Let us now propose an account that will capture their morpho-semantics and the relationship between the arithmetical meaning, quantification and labeling.
+
+	\subsection{Analysis}\label{sec:analysis}
+
+In \sectref{sec:basic-numerals-and-their-various-flavors} and \ref{sec:relating-cardinalities-and-number-concepts}, we saw the theoretical relevance of the fact that numerals are often ambiguous. In order to account for the relationship between the three uses of basic numerals this paper focuses on, i.e., their arithmetical, quantifying and label function, I develop a morpho-semantic system combining a standard inventory of formal semantics with the Nanosyntax model of morphology \citep[see][]{wagiel_caha2020universal}. The core of the proposal is that the quantifying and the label function are both derived from the arithmetical meaning which is taken to be basic. 
+
+I propose the ingredients in \REF{form:ingredients} as a set of morpho-semantic components that numeral expressions conveying the relevant functions are formed of. Specifically, I postulate the bottom-most \textsc{NumP}$_n$ (for `number') layer along with two additional heads, namely \textsc{Cl} (for `classifier') and \textsc{Lbl} (for `label').
+
+\ea\label{form:ingredients} \ea \sib{\textsc{NumP}$_n$}$_n = n$\label{form:nump}
+\ex \sib{\textsc{Cl}}$_{\stb{n,\stb{\stb{e,t},\stb{e,t}}}}=\lambda n\lambda P\lambda x[\text{*}P(x) \wedge \#(P)(x)=n]$\label{form:cl}
+\ex \sib{\textsc{Lbl}}$_{\stb{n,\stb{\stb{e,t},e}}} = \lambda n\lambda P\iota x[P(x) \wedge \cnst{label}(n,x)]$\label{form:lbl}
+\z 
+\z 
+
+\noindent The meaning of \textsc{NumP}$_n$ is simply an abstract number concept (type $n$) \REF{form:nump}. The subscript indicates that \textsc{NumP}$_n$ is lexically encoded. Though for the purpose of this paper I assume that it is the basic structural component of each numeral, I do not claim that it is primitive. It might very well be further decomposed into a number of features.\footnote{This is indicated by the triangle in \figref{tree:quantifying-function} and \ref{tree:label-function}. For arguments why one would want to further decompose \textsc{NumP}$_n$, see \citet{wagiel_caha2020universal}.} On the other hand, the components \textsc{Cl} and \textsc{Lbl} are interpreted as shifts from $n$ to a more complex type. 
+
+I will assume here that \textsc{Cl} is interpreted as a function from a number concept to a predicate modifier devised for counting individuals (type $\stb{n,\stb{\stb{e,t},\stb{e,t}}}$) \REF{form:cl}.\footnote{For the purpose of this paper, it is not important what the exact interpretation of \textsc{Cl} is. The proposed system is compatible with other theories of quantifying numerals discussed in \sectref{sec:theories-of-cardinals} as long as it is possible to shift the primitive type $n$ to a type for the quantifying function.} \textsc{Cl} takes a number and yields an expression with the built-in pluralization operation ${}^*$ and measure function $\#(P)$, see \sectref{sec:cardinals-as-predicate-modifiers}. In cases such as English \textit{five} or Czech \textit{pět} `five', \textsc{Cl} is already incorporated in the structure of a numeral but in some other languages it is encoded in an additional morpheme, e.g., a classifier.
+
+On the other hand, \textsc{Lbl} is a labeling device (type $\stb{n,\stb{\stb{e,t},e}}$) which selects a number and returns a function from properties to unique individuals such that they have the relevant property and are labeled with the corresponding number by the \cnst{label} operation \REF{form:lbl}. \textsc{Lbl} is typically introduced by a free morpheme like \textit{number} or a specialized affix like the Czech suffix \textit{-ka}, as discussed in \sectref{sec:evidence-from-co-lexicalizations}--\ref{sec:derived-label-numerals}.  
+
+As a result of combining the components in \REF{form:ingredients}, we obtain the structures in \figref{tree:quantifying-function} and \ref{tree:label-function}. \figref{tree:quantifying-function} represents the meaning of the quantifying function of a numeral corresponding to 5 whereas \figref{tree:label-function} depicts the parallel label function. 
+
+\begin{figure}
+\RawFloats
+\centering
+\begin{minipage}[b]{0.49\textwidth}
+\centering
+    \begin{forest} 
+    for tree={s sep=10mm, inner sep=0, l=0}
+        [\textsc{ClP}$_{\stb{\stb{e,t},\stb{e,t}}}$\\
+        \scriptsize{$\lambda P \lambda x[\text{*}P(x) \wedge \#(P)(x)=5]$} [\textsc{Cl}$_{\stb{n,\stb{\stb{e,t},\stb{e,t}}}}$\\
+        \scriptsize{$\lambda n\lambda P \lambda x[\text{*}P(x) \wedge \#(P)(x)=n]$}] [\textsc{NumP}$_{5\ n}$\\\scriptsize{5}  [{ .\ \ .\ \ . },roof] ] ]  
+    \end{forest} %\\ \vspace{-0.1in}
+    \caption{The quantifying function}
+    \label{tree:quantifying-function}
+\end{minipage}
+\begin{minipage}[b]{0.49\textwidth}
+\centering
+    \begin{forest} 
+    for tree={s sep=10mm, inner sep=0, l=0}
+        [\textsc{LblP}$_{\stb{\stb{e,t},e}}$\\
+        \scriptsize{$\lambda P\iota x[P(x) \wedge \cnst{label}(5,x)]$} [\textsc{Lbl}$_{\stb{n,\stb{\stb{e,t},e}}}$\\
+        \scriptsize{$\lambda n\lambda P\iota x[P(x) \wedge \cnst{label}(n,x)]$}] [\textsc{NumP}$_{5\ n}$\\\scriptsize{5}  [{ .\ \ .\ \ . },roof] ] ]   
+        \end{forest} %\\ \vspace{-0.1in}
+    \caption{The label function}
+    \label{tree:label-function}
+\end{minipage}
+\end{figure}
+
+When a quantifying numeral, e.g., Czech \textit{pět} `five', and a label expression, e.g., Czech \textit{číslo pět} `number five', combine with an NP, we obtain denotations as in \REF{form:denotations}. In particular, \REF{form:five-players} denotes a set of pluralities of players such that each plurality in that set consists of five players. On the other hand, \REF{form:player-number-five} refers to the contextually unique player identified via their association with the number $5$.
+
+\ea\label{form:denotations} \ea \sib{pět hráčů}$_{\stb{e,t}} = \lambda x[{}^*\textsc{player}(x) \wedge \#(\textsc{player})(x)=5]$\label{form:five-players}
+\ex \sib{hráč číslo pět}$_{e} = \iota x[\textsc{player}(x) \wedge \cnst{label}(5,x)]$\label{form:player-number-five}
+\z 
+\z
+
+\noindent But how to account for the fact that \textit{pět} `five' can be used to express both the quantifying and the arithmetical meaning? This ambiguity can be captured as a consequence of a core property of late insertion, namely that lexical entries are not tailor-made for one specific use.\footnote{For an introduction to late insertion models such as Distributed Morphology and Nanosyntax, see, e.g., \citet{bobaljik2017distributed} and \citet{baunaz_lander2018nanosyntax}, respectively.} In Nanosyntax, a lexical entry pairs a well-formed syntactic structure with phonology. For instance, let us assign to the numeral \textit{pět} the lexical entry in \figref{tree:lexical-entry-czech-pet}. When syntax builds a structure interpreted as the quantifying meaning, as in \figref{tree:quantifying-function}, the entry in \figref{tree:lexical-entry-czech-pet} can be used to lexicalize it. Consequently, the structure or, more precisely, its top-most phrasal node is pronounced by /\textit{pjɛt}/, as indicated by the big circle in \figref{tree:lexicalizations}.
+
+\vspace{-1.0ex}
+
+\begin{figure}[h!]
+\RawFloats
+\centering
+\begin{minipage}[b]{0.49\textwidth}
+\centering
+    \begin{forest}
+    for tree={s sep=10mm, inner sep=0, l=0}
+    [\textsc{ClP} [\textsc{Cl}] [\textsc{NumP}$_5$  [{ .\ \ .\ \ . },roof] ] ]{ \draw (.east) node[right]{$\,\Leftrightarrow\,$ /\textit{pjɛt}/}; }   \end{forest} %\\ \vspace{-0.1in}
+    \caption{Lexical entry}
+    \label{tree:lexical-entry-czech-pet}
+\end{minipage}
+\begin{minipage}[b]{0.49\textwidth}
+\centering
+    \begin{forest} 
+    for tree={s sep=10mm, inner sep=0, l=0}
+    [\textsc{Cl}P,tikz={\node [draw,circle,inner sep=-0pt,fit to=tree,label=east:\textit{pět}] {};} [\textsc{Cl}] [\textsc{NumP}$_5$,tikz={\node [draw,circle,inner sep=-1pt,fit to=tree] {};}  [{ .\ \ .\ \ . },roof] ] ]   \end{forest} %\\ \vspace{0.2in}
+    \caption{Lexicalizations}
+    \label{tree:lexicalizations}
+\end{minipage}
+\end{figure}
+
+Crucially, however, when syntax builds a structure interpreted as the arithmetical meaning, i.e., the sole \textsc{NumP}$_5$, it can also be pronounced by \figref{tree:lexical-entry-czech-pet}, as indicated by the small circle in \figref{tree:lexicalizations}. This is due to the Superset Principle, defined in \REF{def:superset} \citep{starke2009nanosyntax}, which states that a lexical entry can be used to pronounce a particular structure iff it contains that structure as a sub-part (either proper or improper). As a result, the Czech numeral \textit{pět} `five' is ambiguous between the quantifying and the arithmetical meaning since both circled structures in \figref{tree:lexicalizations} are contained in the tree in \figref{tree:lexical-entry-czech-pet}.
+
+\ea The Superset Principle \citep{starke2009nanosyntax}\\
+A lexically stored tree matches a syntactic node iff the lexically stored tree contains the syntactic node.\label{def:superset}
+\z
+
+\noindent Let us now consider how the label meaning arises. For this purpose, I will demonstrate how specialized label numerals such as Czech \textit{pětka} `number five' are derived. Since \textit{pět} `five' is stored as \figref{tree:lexical-entry-czech-pet}, and thus cannot express the label meaning, the \textsc{Lbl} component needs to be spelled out by a separate entry, e.g., as the suffix \textit{-ka} in \figref{tree:czech-label-suffix}. Notice that the semantics of \textsc{Lbl} is not compatible with the quantifying meaning and requires type $n$ as its input \REF{form:lbl}. Thanks to the Superset Principle \REF{def:superset}, \textit{pět} can also pronounce the arithmetical meaning, i.e., the sole \textsc{NumP}$_5$, as indicated by the small circle in \figref{tree:lexicalizations}. However, in order for this structure to apply at the \textsc{LblP} node, \textsc{NumP}$_5$ must move from its base-position. In \figref{tree:czech-label-numeral-movement}, the lower copy of the displaced element is shaded.\footnote{In Nanosyntax, the movement in \figref{tree:czech-label-numeral-movement} is driven by the need to lexicalize the phrasal \textsc{LblP} node by
+the lexical entry in \figref{tree:czech-label-suffix}. For a detailed explanation of how precisely the movement in \figref{tree:czech-label-numeral-movement} is triggered, see \citet{baunaz_lander2018nanosyntax} and \citet{caha_et-al2019fine}.} After the \textsc{NumP}$_5$ is moved, \figref{tree:czech-label-suffix} matches the lower \textsc{LblP}, as shown in \figref{tree:czech-label-numeral-spellout}, where the label suffix \textit{-ka} is inserted at the relevant node.
+
+\begin{figure}
+\RawFloats
+\centering
+\begin{minipage}[b]{1.0\textwidth}
+\centering
+    \begin{forest}
+    for tree={s sep=10mm, inner sep=0, l=0}
+        [\textsc{LblP}  [\textsc{Lbl}]] { \draw (.east) node[right]{$\,\Leftrightarrow\,$ \textit{ka}}; }
+    \end{forest} %\\ \vspace{0.2in}
+    \caption{Czech label suffix}
+    \label{tree:czech-label-suffix}
+\end{minipage}
+~
+
+\iffalse 
+\begin{minipage}[b]{1.0\textwidth}
+\centering
+\vspace{1.0ex}
+    \begin{forest}
+        [\textsc{LblP} [\textsc{NumP}$_5$,tikz={\node [draw,circle,inner sep=-1pt,fit to=tree,label=west:\textit{pět}] {};}  [{ .\ \ .\ \ . },roof,name=tgt] ] [\textsc{Lbl}P,s sep=15mm [\textsc{Lbl}] [\textsc{NumP}$_5$,tikz={\node [draw,circle,inner sep=-1pt,fit to=tree,fill=lightgray,opacity=0.2] {};} [{ .\ \ .\ \ . },roof,name=src] ] ] ]   \draw[->, dashed] (src) to[out=south west,in=south] (tgt);
+    \end{forest} \\ \vspace{-2.0ex}
+    \caption{Movement}
+    \label{tree:czech-label-numeral-movement}
+\end{minipage}
+\begin{minipage}[b]{1.0\textwidth}
+\centering
+\vspace{1.0ex}
+    \begin{forest}
+        [\textsc{LblP} [\textsc{NumP}$_5$,tikz={\node [draw,circle,inner sep=-1pt,fit to=tree,label=below:\textit{pět}] {};} [{ .\ \ .\ \ . },roof] ] [\textsc{LblP},tikz={\node [draw,circle,inner sep=-1pt,fit to=tree,label=below:\textit{ka}] {};}  [\textsc{Lbl}] ]  ]
+    \end{forest}
+    \caption{Spellout}
+    \label{tree:czech-label-numeral-spellout}
+\end{minipage}
+\fi 
+
+\begin{minipage}[b]{0.49\textwidth}
+\centering
+\vspace{1.0ex}
+    \begin{forest}
+    for tree={s sep=10mm, inner sep=0, l=0}
+% >>     fairly nice empty nodes/.style={
+% >>             delay={where content={}{shape=coordinate,
+% >>                   for siblings={anchor=north}}{}},
+% >>     for tree={s sep=4mm}}
+        [\textsc{LblP} [\textsc{NumP}$_5$,tikz={\node [draw,circle,inner sep=-1pt,fit to=tree,label=west:\textit{pět}] {};}  [{ .\ \ .\ \ . },roof,name=tgt] ] [\textsc{Lbl}P,s sep=15mm [\textsc{Lbl}] [\textsc{NumP}$_5$,tikz={\node [draw,circle,inner sep=-1pt,fit to=tree,fill=lightgray,opacity=0.2] {};} [{ .\ \ .\ \ . },roof,name=src] ] ] ]   \draw[->, dashed] (src) to[out=south west,in=south] (tgt);
+    \end{forest} \\ \vspace{-2.0ex}
+    \caption{Movement}
+    \label{tree:czech-label-numeral-movement}
+\end{minipage}
+\begin{minipage}[b]{0.49\textwidth}
+\centering
+    \begin{forest}
+    for tree={s sep=10mm, inner sep=0, l=0}
+        [\textsc{LblP} [\textsc{NumP}$_5$,tikz={\node [draw,circle,inner sep=-1pt,fit to=tree,label=below:\textit{pět}] {};} [{ .\ \ .\ \ . },roof] ] [\textsc{LblP},tikz={\node [draw,circle,inner sep=-1pt,fit to=tree,label=below:\textit{ka}] {};}  [\textsc{Lbl}] ]  ]
+    \end{forest}
+    \caption{Spellout}
+    \label{tree:czech-label-numeral-spellout}
+\end{minipage}
+\end{figure}
+ 
+
+The proposed analysis has several advantages. First of all, it provides a unified approach that captures the relationship between the arithmetical, the quantifying and the label meaning. Second, it explains when and how a numeral can be ambiguous between different meanings. Finally, it gives a detailed account for the meaning/form correspondences both in cardinal and in label numerals. 
+
+	\section{Conclusion}\label{sec:conclusion}
+	
+In this paper, I explored the semantics of numerals in Slavic and beyond. I discussed various functions that basic numerals can have as well as different approaches to capturing the relationships between these functions. Furthermore, I examined many types of complex numerical expressions that only recently attracted attention in the literature. I also provided novel evidence in favor of the view suggesting that the arithmetical meaning is basic while other functions are derived from it. Finally, I explored the so-far understudied label function and proposed a morpho-semantic analysis of Slavic derived label numerals that could be further extended to other types of complex numerical expressions.
+	
+	\section*{Abbreviations}
+
+	\begin{tabularx}{.5\textwidth}{@{}lX@{}}
+		\textsc{acc}&{accusative}\\
+		\textsc{aggr}&{aggregate numeral}\\
+		\textsc{clf}&{classifier}\\
+		\textsc{cop}&{copula}\\
+		\textsc{f}&{feminine}\\
+		\textsc{gen}&{genitive}\\
+		\textsc{gndr}&{gender-sensitive numeral}\\
+        \textsc{grp}&{group numeral}\\
+		\textsc{ins}&{instrumental}\\
+		\textsc{ipfv}&{imperfective}\\
+		\textsc{lbl}&{label numeral}\\
+	\end{tabularx}%
+	\begin{tabularx}{.5\textwidth}{@{}lX@{}}
+		\textsc{loc}&{locative}\\
+		\textsc{mult}&{multiplier}\\
+		\textsc{n}&{neuter}\\
+		\textsc{nbr}&{number-denoting numeral}\\
+		\textsc{nom}&{nominative}\\
+        \textsc{nv}&{non-virile}\\
+		\textsc{pfv}&{perfective}\\
+		\textsc{refl}&{reflexive pronoun}\\
+		\textsc{tax}&{taxonomic numeral}\\
+		\textsc{top}&{topic}\\
+		\textsc{v}&{virile}\\
+		%{}&{}\\
+	\end{tabularx}
+	
+\section*{Acknowledgements}
+
+I would like to sincerely thank the anonymous reviewers as well as Lisa Bylinina, Pavel Caha, Katie Fraser, Jovana Gajić, Nina Haslinger, Ora Matushansky, Rick Nouwen, Marina Pantcheva, Dolf Rami, Viola Schmitt, Yasu Sudo, Peter Sutton, Lucia Vlášková and Kata Wohlmuth for their judgments, insightful comments and inspiring discussions. All errors are, of course, my own responsibility. The research was supported by a Czech Science Foundation (GAČR) grant to the Department of Czech Language at the Masaryk University in Brno (GA24-10073S).
+% I am also grateful for the support of the Centre for Corpus and Experimental Research on Slavic Languages ``Slavicus'' (SEI) at the University of Wrocław.
+ 
+	\sloppy
+	\printbibliography[heading=subbibliography,notkeyword=this]
+
+    
+\end{document}

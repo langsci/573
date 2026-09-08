@@ -1,0 +1,1095 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.22078587}
+\author{Adrian Stegovec\orcid{0000-0002-7317-1025}\affiliation{University of Connecticut}}
+\title{Lessons from Slovenian imperatives}
+\abstract{Slovenian is unique among Slavic languages in allowing imperatives to occur as embedded clauses. This is used as a backdrop for an examination of issues concerning imperative meaning, use, and the relationship between imperative forms and functions. The main takeaways are that Slovenian embedded imperatives are true imperatives and that clauses with subjects beyond second person and inclusive first person can be semantically and functionally equivalent to imperatives.   
+
+\keywords{clause typing, form-function mismatches, imperatives, modality, performativity, root phenomena, subject obviation, surrogate imperatives}}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[10]%%chapternumber
+}{}
+
+
+\begin{document}
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction: Imperative issues}
+\label{steg:sec:intro}
+\largerpage
+
+\is{truth-conditions}
+\is{truth-values}
+\is{major clause types}
+\is{declaratives}
+\is{questions}
+\is{imperatives}
+\is{utterance}
+\is{\emph{That's (not) true}-test}
+Assigning truth-conditions to sentences is one of the foundations formal semantics rests on. But a complication arises with the notions of truth-conditions and truth-values when considering sentences beyond declaratives. Among the three major clause types: declaratives, questions, and imperatives, there is a clear contrast between declaratives and the other two. While the truth of a declarative clause can be accepted or questioned, as illustrated by the exchange in (\ref{ex:declarative}) for Slovenian and English (in the translations), the same kind of response is not felicitous when the initial utterance is a question, as in (\ref{ex:question}), or an imperative, as in (\ref{ex:imperative}) (see \cite[][4.3]{kaufmannBOOK} on the \emph{That's (not) true}-test applied in (\ref{ex:clause-types})).\footnote{Examples are glossed using Leipzig glossing rules. Unmarked number, case, gender, and tense values are omitted from glosses unless relevant; e.g.\ 1, 2, 3 with no number information corresponds to first, second, and third person singular. Additional conventions: referential indexes of subjects in pro-prop languages are marked on the verb/auxiliary marked for person, clitic pronouns are glossed with just their grammatical information so they can be easily distinguished from their strong counterparts (e.g.\ \textsc{3m.dat} = `him.\textsc{dat}'), \textsc{c} = complementizer without an English counterpart, \textsc{q} = question particle, and \textsc{prtc} = discourse-related particle.}$^,$\footnote{All examples are in Slovenian (or English) unless explicitly indicated otherwise. Slovenian examples presented without a specified source are based on my own native speaker intuitions and checked with at least one more native speaker of Slovenian.}  
+%\ea 
+%     \ea[]{A: You played the guitar. \hfill B: That's (not) true!}
+%     \ex[]{A: Did you play the guitar. \hfill B: \#That's (not) true!}
+%     \ex[]{A: Play the guitar! \hfill B: \#That's (not) true!\label{ex:imperative}}
+%\z\z   
+\ea \label{ex:clause-types}
+\ea[]{\gll A:\, Igral si kitaro. {\hspace*{7.1ex}} B:\, Res je! / Ni res!\\
+           {} played.\textsc{m} \textsc{aux.2} guitar.\textsc{f.acc} {} {} true \textsc{aux.3} / \textsc{neg.3} true\\
+        \glt \phantom{A:~}`You played the guitar.' \hfill `That's (not) true!'\hspace*{7ex}\label{ex:declarative}}
+\ex[]{\gll A:\, Si igral kitaro? {\hspace*{7.25ex}} B:\, \#Res je! / \#Ni res!\\
+           {} \textsc{aux.2} played.\textsc{m}  guitar.\textsc{f.acc} {} {} \phantom{\#}true \textsc{aux.3} / \phantom{\#}\textsc{neg.3} true\\ 
+        \glt \phantom{A:~}`Did you play the guitar?' \hfill `That's (not) true!'\phantom{\#}\hspace*{5ex}\label{ex:question}} 
+\ex[]{\gll A:\, Igraj kitaro! {\hspace*{12.25ex}} B:\, \#Res je! / \#Ni res!\\
+           {} play.\textsc{imp.2}  guitar.\textsc{f.acc} {} {} \phantom{\#}true \textsc{aux.3} / \phantom{\#}\textsc{neg.3} true\\ 
+        \glt \phantom{A:~}`Play the guitar!' \hfill `That's (not) true!'\phantom{\#}\hspace*{5ex}\label{ex:imperative}}          
+\z\z        
+
+\noindent It is thus not particularly useful to study the meaning of non-declaratives in terms of truth-conditions and truth-values. 
+A more useful approach, in the case of questions, is to instead consider the felicity of \is{question-answer pairs}question-answer pairs, where at least answers normally have truth-conditions (see \citealt{dayal16}: Ch.~1 for an accessible overview; also see \citetv{chapters/09_simik} for the case of polar questions in Slavic). Unfortunately, there is no immediately obvious counterpart to question-answer pairs in the case of imperatives. This is one of the reasons why the semantic contribution of imperatives is sometimes argued to be outside of the realm of truth-condition semantics (see e.g.\ \cite[][1792]{han11}, and \cite{kaufmannBOOK,kaufmann21} for discussion and arguments for an alternative view).   
+
+Imperatives further stand out when it comes to the possibility of appearing in \is{complement clauses}complement clauses under \is{attitude verbs}attitude verbs. Declaratives and questions are fairly ubiquitous as complement clauses, restricted primarily by the choice of matrix predicate.\footnote{To the extent that all languages allow some kind of clausal embedding (see \cite{pullumscholz10}: \S5 for an overview of potential counter-examples), declarative complement clauses are always available (although they may not always be finite: e.g.\ in \il{Imbabura Quechua}Imbabura Quechua [Quechuan; Ecuador], only non-finite clauses can be embedded; \cite{cole82}: 33). In contrast, questions are cross-linguistically more restricted as complement clauses: languages that allow complement clause declaratives but not questions exist (see e.g.\ \cite{zu18}: 161 on \il{Newari}Newari [Tibeto-Burman; Nepal]), whereas languages with the reverse configuration to my knowledge do not exist.} This is illustrated for Italian and \il{English}English (in the translations) in (\ref{ex:embedding}).
+\ea \label{ex:embedding}
+\ea[]{\gll Mi hanno detto che suonavi la chitarra.\\
+           \textsc{1.dat} have.\textsc{3pl} told that played.\textsc{2} the.\textsc{f} guitar.\textsc{f}\\
+      \glt `They told me that you were playing the guitar.'\label{ex:embedding-decl}} 
+\ex[]{\gll Mi hanno chiesto se suonavi la chitarra.\\
+           \textsc{1.dat} have.\textsc{3pl} asked if played.\textsc{2} the.\textsc{f} guitar.\textsc{f}\\
+      \glt `They asked me if you were playing the guitar.'\label{ex:embedding-q}\\\hfill (\il{Italian}Italian; Irene Amato p.c.)}     
+\z\z
+In the case of imperatives the state of affairs is very different, as imperatives are far from ubiquitous in this context. In fact, \is{imperative complement clauses}imperative complement clauses are rare enough cross-linguistically to have been claimed in the past to be completely unattested \parencite[see e.g.][]{Sadock.Zwicky1985,han98,han00}. The resistance of imperatives to occur as complement clauses \is{ban on embedded imperatives}is illustrated in (\ref{ex:embedding-eng}) for English and in (\ref{ex:embedding-ita}) for Italian. Note though that it is perfectly felicitous to report a previously uttered imperative by alternative means, as illustrated in the translation of (\ref{ex:embedding-ita}).\footnote{Although the ungrammaticality of \REF{ex:embedding-eng} has been used to argue that English completely disallows imperatives in complement clauses, the situation is more complicated. Imperative complement clauses are actually allowed in (colloquial) English as long as the complementizer \textit{that} is not present/expressed \parencite{crnic-trinhSUB,crnic-trinhNELS}; since \textit{that} is obligatory with finite clauses under the verb \emph{order}, an imperative is always impossible in this case.}
+
+\ea[*]{\label{ex:embedding-eng}They ordered you that play the guitar.\\\hfill (\il{English}English; based on \cite{crnic-trinhSUB}: 125 (33b))}
+\z
+
+\ea[*]{\label{ex:embedding-ita}
+\gll Ti hanno ordinato che suona la chitarra.\\
+\textsc{2.dat} have.\textsc{3pl} ordered that play.\textsc{imp.2} the.\textsc{f} guitar.\textsc{f}\\
+\glt Intended: `They ordered you to play the guitar.'\\\hfill (\il{Italian}Italian; Irene Amato p.c.)}
+\z
+
+\noindent The incompatibility of imperatives with clausal embedding is often attributed directly to their unique meaning. The idea is that, somehow, imperatives are more intrinsically tied to their characteristic discourse function than the other two major clause types, which makes imperative clauses felicitous only as unembedded utterances (see e.g.\ \cite{Sadock.Zwicky1985,han98,han00}).
+
+What complicates the plausibility of this idea is that some languages actually allow imperatives in complement clauses. Slovenian is a notable case, as shown in (\ref{ex:embedding-slo}) (equivalent to the ungrammatical English and Italian examples above).
+\ea\gll Ukazali so ti, da igraj kitaro.\\
+           ordered.\textsc{m.pl} \textsc{aux.3pl} \textsc{2.dat} that play.\textsc{imp.2} guitar.\textsc{f}\\
+        \glt `They ordered you to play the guitar.'\label{ex:embedding-slo}
+\z
+
+\noindent Additionally, clauses with a non-imperative verb can express the intended meaning of an imperative in (\ref{ex:embedding-eng}) and (\ref{ex:embedding-ita}) even in languages that ban imperatives in complement clauses. The alternative verb form is very often an infinitive or subjunctive; this is illustrated for Italian in (\ref{ex:surrogates-italian-a}) (infinitive) and (\ref{ex:surrogates-italian-b}) (subjunctive).\footnote{The subjunctive is often reported as the primary alternative verb form used in Italian in this context (see e.g.\ \cite{han98}: 112 (184c)). However, Irene Amato informs me that infinitives are strongly preferred and that the subjunctive (at least in her variety) requires an overt subject in this context and seems to be further conditioned by the choice of embedding predicate. There thus seems to be speaker variation regarding the use of the subjunctive here, hence the `\%'.} 
+\ea \label{ex:surrogates-italian}
+\ea[]{\gll Ti hanno ordinato di suonare la chitarra.\\
+            \textsc{2.dat} have.\textsc{3pl} ordered of play.\textsc{inf} the.\textsc{f} guitar.\textsc{f}\\\label{ex:surrogates-italian-a}}
+\ex[\%]{\gll Ti hanno ordinato che suoni la chitarra.\\
+            \textsc{2.dat} have.\textsc{3pl} ordered that play.\textsc{sbjv.2} the.\textsc{f} guitar.\textsc{f}\\     
+        \glt `They ordered you to play the guitar.'\label{ex:surrogates-italian-b}\\\hfill (Italian; Irene Amato p.c.)}        
+\z\z
+The question here is whether such clauses have the same semantic and pragmatic contribution as imperatives. If they do, the ban against imperative complement clauses can be seen as a morphosyntactic restriction rather than a ban against complement clauses with ``imperative meaning'', whatever that turns out to be. 
+
+%However, even though (\ref{ex:embedding-slo}), (\ref{ex:surrogates-italian-a}) and (\ref{ex:surrogates-italian-b}) are translation equivalents, and can report a previously uttered imperative, finding an answer is not a trivial task. 
+What makes this question difficult to answer is that, even outside of cases like (\ref{ex:surrogates-italian}), clauses without imperative verbs can have the discourse function of imperatives: for example, \is{modalized declaratives}modalized declaratives like \emph{You must play the guitar!} (\cite{ninan05,kaufmannBOOK}, i.a.). Pinning down the characteristic discourse function of imperatives is also not a straightforward task, since they can be used for a number of distinct speech acts beyond orders or commands, such as: warnings, invitations, and wishes, to name a few. In short, it is not obvious whether imperatives have a semantics and discourse function that clearly sets them apart from other clause types, nor is their discourse function easily definable.    
+
+The issue of imperative complement clauses and their counterparts in languages where they are prohibited can also be approached from a flipped perspective. That is, it could be that Slovenian complement clause imperatives are only apparent imperatives, which use an imperative verb form without the semantics and discourse function of true imperatives. If this is the case, then Slovenian does not pose a problem for the approach to the complement clause ban that attributes it specifically to the characteristic discourse function of imperatives.   
+
+%\textcolor{red}{Should this even be here?}
+%Complement clauses are not the only environment that can prevent the use of an imperative form, which may also be paradigmatically restricted or incompatible with negation, among other factors, each subject to cross-linguistic variation.
+Slovenian offers a unique opportunity to explore the relationship between imperative forms and functions, and the core meaning of imperatives. Slovenian not only allows imperative verbs in embedded clauses, it also uses a construction distinct from imperatives for subjects beyond second and first person inclusive that seems to otherwise have all the same characteristic semantic and pragmatic properties as imperatives.
+
+In order to examine this issue, I first review the complicated relationship between imperative forms and functions in \sectref{sec:background}. I then establish in \sectref{sec:status} the existence of embedded imperatives in Slovenian, focusing on its outlier status in Slavic and the Slovenian clauses in question being truly imperative. In \sectref{sec:lessons}, I argue that the construction used in Slovenian for imperative-like functions outside second and first person inclusive subjects should be considered a natural class together with imperatives. In \sectref{sec:implications}, I review the main types of theories of imperative meaning by putting them to the test against the Slovenian data, and discuss some modifications that can be made to them to accommodate for Slovenian. \sectref{sec:discussion} concludes the chapter. 
+  
+\section{Setting the stage: Imperative forms and functions}
+\label{sec:background}
+
+To properly tackle the issue of embedded imperatives in Slovenian we need to first review the complex relationship between imperative functions and imperative forms. There is a wide range of speech acts that imperatives can be used for that goes beyond the canonical ones, such as commands and directions (\sectref{subsec:functional-diversity}), and on the flip side the speech acts imperatives can be used for are not limited to imperatives, although some alternative constructions can only be used for those speech acts when the use of an imperative is somehow prohibited (\sectref{subsec:surrogate}). In fact, there seems to be a double dissociation between imperative forms and functions that arises both language internally and cross-linguistically -- this makes it necessary to clearly establish the difference between imperative verbs, imperative clauses, and imperative speech acts (\sectref{subsec:act-clause-form}).
+
+\subsection{The functional diversity of imperatives}
+\label{subsec:functional-diversity}
+
+Imperatives can be used for speech acts that fit a fairly standard characterization of \is{directive speech acts}directive speech acts \citep[see][11 and \sectref{subsec:surrogate}]{searle76}, such as orders, requests, and warnings, where the speaker
+attempts to make the addressee act in a particular way. Slovenian imperatives are no exception, as illustrated in (\ref{ex:slo-basic-speech-acts}).%
+
+\ea \label{ex:slo-basic-speech-acts}
+\ea[]{\gll Nehaj se smejati! Ukazujem ti!\\ 
+           stop.\textsc{imp.2} \textsc{refl} laugh.\textsc{inf} ordering.\textsc{1} \textsc{2.dat}\\ \hfill \is{order speech act}\textsc{order}% 
+        \glt `Stop laughing! I'm ordering you!'}
+\ex[]{\gll Pomagaj mi re\v{s}iti kri\v{z}anko.\\
+           help.\textsc{imp.2} \textsc{1.dat} solve.\textsc{inf} crossword.\textsc{f.acc}\\ \hfill \is{request speech act}\textsc{request}%
+        \glt `Help me solve the crossword puzzle.'}
+\ex[]{\gll Ne igraj se z ognjem!\\
+           \textsc{neg} play.\textsc{imp.2} \textsc{refl} with fire.\textsc{inst}\\ \hfill \is{warning speech act}\textsc{warning}% 
+        \glt `Don't play with fire!'}
+\z\z
+
+\noindent However, it is well known that imperatives can be used for a much wider range of speech acts that may not fit as straightforwardly under the umbrella of directive speech acts (see \citealt{schmerling82,davies86,wilsonsperber88,han99,kaufmann21}, i.a.). An example of this kind of use of imperatives is with what \citet{condoravdi-lauer12cssp} call \is{speaker disinterested advice}\textsc{speaker disinterested advice}: a speech act with which the speaker only provides information on how to achieve something without attempting to make the addressee act in a particular way. An imperative used like this in Slovenian is illustrated in the exchange in (\ref{ex:imp-advice}).
+\begin{exe}
+\ex \label{ex:imp-advice}
+\begin{xlist}
+\exi{A:}[]{\gll \v{C}e bom delal potico, kako naredim, da se ne sprime?\\
+                if will.\textsc{1} make.\textsc{m} potica.\textsc{f.acc} how make.\textsc{1} that \textsc{refl} not stick.\textsc{3}\\ 
+            \glt `If I make potica, how do I get it not to stick?'}
+\exi{B:}[]{\gll Model namasti in potresi z moko.\\
+                model.\textsc{m.acc} grease.\textsc{imp.2} and sprinkle.\textsc{imp.2} with flour.\textsc{f.inst}\\ 
+            \glt `Grease the mold and sprinkle it with flour.'\hfill \is{advice speech act}\textsc{advice}}%
+\end{xlist}
+\end{exe}
+
+\noindent Another class of speech acts that imperatives can be used for which falls outside typical directive speech acts are \is{permission speech act}\textsc{permissions} \citep[see][]{portner07,kaufmannBOOK,oikonomou16}, which can be broadly described as giving the addressee additional permissible options rather than constraining their actions. These can be divided into more specific speech acts based on how clear it is that the addressee desires to carry out the action, and how much the speaker is reluctant to allow for the addressee to carry it out. For example, with an \is{invitation speech act}\textsc{invitation} such as (\ref{ex:imp-invitation}), there is a perceived bias against the addressee carrying out a desired action and the speaker explicitly negates this prohibition with an imperative. 
+
+\ea \gll Vzemi \v{s}e en kos torte.\\
+         take.\textsc{imp.2pl} also one.\textsc{m.acc} piece.\textsc{m.acc} cake.\textsc{f.gen}\\ \hfill \textsc{invitation}%
+    \glt `Take another slice of the cake.' \label{ex:imp-invitation}
+\z
+
+\noindent Conversely, in exchanges such as (\ref{ex:imp-acquiescence}), an example of \is{acquiescence speech act}\textsc{acquiescence} \citep{finteliatridou17}, the imperative conveys that the speaker will merely not object to the addressee carrying out the action if the addressee chooses to do so.
+\begin{exe}
+\ex \label{ex:imp-acquiescence} 
+\begin{xlist}
+\exi{A:}[]{\gll A lahko dobim \v{s}e en kos?\\
+           \textsc{q} can get.\textsc{1} also one.\textsc{m.acc} piece.\textsc{m.acc}\\
+         \glt `Can I get another slice?'}
+\exi{B:}[]{\gll Pojej celo torto, \v{c}e ho\v{c}e\v{s}\\
+                eat.\textsc{imp.2} whole.\textsc{f.acc} cake.\textsc{f.acc} if want.\textsc{2}\\ \hfill \textsc{acquiescence}%
+        \glt `Eat the whole cake, if you want.'}
+\end{xlist}
+\end{exe}
+
+\noindent Lastly, in instances of \is{concession speech act}\textsc{concession} such as (\ref{ex:imp-concession}), the speaker and addressee disagree regarding the latter's desire to carry out the action, and the imperative signals the speaker allowing it to be carried out with a high degree of reluctance.%  
+
+\ea\gll Pa pojej kar celo prekleto torto!\\
+         \textsc{prtc} eat.\textsc{imp.2} what whole.\textsc{f.acc} damn.\textsc{f.acc} cake.\textsc{f.acc}\\\hfill \textsc{concession}%
+    \glt `Well, eat the whole damn cake then!' \label{ex:imp-concession}    
+\z
+
+\noindent The clearest example of non-directive speech acts imperatives can be used for are \is{wish speech act}\textsc{wishes} \citep[][]{kaufmannBOOK}, exemplified for Slovenian with (\ref{ex:imp-wish}). With wishes the addressee (or anyone else) may objectively not be able to make the speaker's desired state of events come true. Thus, wishes cannot be viewed as a speaker's attempt to make the addressee do something or make something happen.
+
+\ea\gll Hitro se pozdravi!\\
+         fast  \textsc{refl} heal.\textsc{imp.2}\\\hfill \textsc{wish}%
+     \glt `Get well soon!' \label{ex:imp-wish}
+\z
+
+\noindent Following \citet{condoravdi-lauer12cssp}, I refer to the ability of imperatives to be used for this wide variety of speech acts -- directive and beyond -- as \is{functional diversity of imperatives}\textsc{functional diversity} (in \citealt{schwagerDISS} and \citealt{kaufmannBOOK} the term used for the same concept is \textsc{functional inhomogeneity}).\footnote{Imperatives can be used for additional distinct speech acts not illustrated in this section; see \citet[][Ch.~4--5]{kaufmannBOOK}, \citet[][\S3.2]{kaufmann21}, and the references above. Crucially, Slovenian imperatives can (to my knowledge) be used for all those additional speech acts as well.}  Due to its universality \citep[see][]{kaufmann21}, I will take functional diversity -- and the specific speech acts imperatives can be used for -- as a key identifying trait of imperative clauses.\footnote{Exceptions do exist, but only in the sense that an imperative may not be used for a non-directive speech act when another construction must be used for that specific speech act. For example, in Greek subjunctive clauses are used for wishes instead of imperatives \citep{oikonomou16}; interestingly, subjunctives are also surrogate imperatives in \il{Greek}Greek (cf.~\sectref{subsec:surrogate}).}
+
+\subsection{What is a surrogate imperative form?}
+\label{subsec:surrogate}
+
+We saw that imperatives can be used for speech acts beyond directive speech acts. The flip side of this is that the speech acts imperatives can be used for are not limited to imperatives. Most importantly, not even directive speech acts, defined as in (\ref{ex:searle}), are exclusive to imperatives. Consider (\ref{ex:sa-imperative}) in relation to (\ref{ex:sa-non-imperative}).  
+\begin{exe}
+\ex \label{ex:searle} \emph{Directive Speech Act}\\ 
+An attempt by the speaker to get the addressee to do something. 
+
+~\hfill (based on \citealt{searle69}: 72, \citeyear{searle76}: 11)
+\ex \label{ex:sa-imperative} Close the window! \hfill (imperative)%
+\ex \label{ex:sa-non-imperative}
+\begin{xlist}
+\ex \label{ex:sa-mod} You should close the window! \hfill (modalized declarative)%
+\ex \label{ex:sa-quest} Can you close the window? \hfill (question)%
+%\ex Close the window, maybe?
+\ex \label{ex:sa-indirect} That window won't close itself. \hfill (declarative)%
+\end{xlist}
+\end{exe}
+Like the imperative in (\ref{ex:sa-imperative}), the three sentences in (\ref{ex:sa-non-imperative}) can be used as directive speech acts where the speaker attempts to make the addressee open the window.  
+
+Note that in (\ref{ex:sa-imperative})--(\ref{ex:sa-non-imperative}) all four options are matrix clauses that can be used as a directive speech act. This is in contrast with cases where an imperative cannot be used for seemingly morphosyntactic reasons, forcing the use of an alternative verb form or construction. A well known case is the \is{ban on negative imperatives}\textsc{ban on negative imperatives} (\citealt{zanuttini91,zanuttini97,rivero94,riveroterzi95,han98,han00}, i.a.), where in a number of languages an alternative verb form must be used instead of the expected imperative in negative imperative clauses. 
+
+The restriction can be even more specific. For example, in many Slavic languages including \il{Bosnian/Croatian/Serbian (BCS)}Bosnian/Croatian/Serbian (BCS hereafter), an imperative verb is prohibited with negation only in the perfective aspect.\footnote{Different varieties of BCS do not seem to differ 
+ much with respect to the phenomena discussed in this chapter (although see footnote \ref{ftn:kajkavian}). However, for the sake of consistency, I use the names of the varieties used by the original authors when discussing their work or using their examples.} This is shown in (\ref{ex:bcs-surr}), where a negative imperative is possible with imperfective aspect (see~(\ref{ex:bcs-neg-impf})), but not with perfective aspect (see~(\ref{ex:bcs-neg-pfv})). In the latter case, the construction in (\ref{ex:bcs-neg-surr}), which \citet{despic20} dubs the \is{analytic imperatives}\textsc{analytic imperative}, must be used, where imperative inflection surfaces on the negation and the verb is an infinitive.
+\ea\label{ex:bcs-surr}
+\ea[]{\label{ex:bcs-neg-impf}
+\gll Ne jedi tu jabuku!\\
+     not eat.\textsc{imp.2} that.\textsc{f.acc} apple.\textsc{f.acc}\\
+\glt `Don't eat that apple!' ($\sim$\,`Don't keep eating that apple.')}     
+\ex[*]{\label{ex:bcs-neg-pfv}
+\gll Ne pojedi tu jabuku!\\
+     not \textsc{pfv}.eat.\textsc{imp.2} that.\textsc{f.acc} apple.\textsc{f.acc}\\
+\glt Intended: `Don't eat that apple!' ($\sim$\,`Don't eat up that apple.')}
+\ex[]{\label{ex:bcs-neg-surr}
+\gll Nemoj pojesti tu jabuku!\\
+     not.\textsc{imp.2} \textsc{pfv}.eat.\textsc{inf} that.\textsc{f.acc} apple.\textsc{f.acc}\\
+\glt `Don't eat that apple!' ($\sim$\,`Don't eat up that apple.')\\\hfill (BCS; \citealt[175]{despic20})}
+\z\z
+
+\noindent I will use the term \is{surrogate imperatives}\textsc{surrogate imperatives} \citep[following][]{zanuttini91,zanuttini97,rivero94} for verb forms and constructions that must be used to perform any of the characteristic imperative speech acts when an imperative is unavailable. Surrogate imperatives may be required for a number of reasons, including purely paradigmatic ones. For example, in Slovenian, the paradigm of imperative verbs includes 1st person non-singular subjects and all 2nd person subjects, while English only has imperative verbs for 2nd person subjects. Thus, a surrogate imperative form is used in English with 1st person plural subjects: \emph{Let's all go!}
+
+As discussed in the introduction, one grammatical context in which surrogate imperatives are usually required is in complement clauses under attitude verbs (\citealt{zanuttini91,zanuttini97,rivero94,han98,han00}, i.a.). This will be considered in detail below in relation to the availability of complement clause imperatives in Slovenian, as no surrogate imperative is required then, even though it is commonly assumed that such contexts are inherently incompatible with imperatives and should thus universally force the use of surrogate imperatives.
+
+\subsection{Imperative speech acts, clauses, and verb forms}
+\label{subsec:act-clause-form}
+
+It should be clear by now that the relationship between the speech acts imperatives are used for and imperatives is not a one-to-one relationship. As we saw in the previous section, clauses that are clearly not imperatives can be used for the same types of speech acts. This is even more obvious when we consider languages that lack dedicated imperative verb forms or constructions. One such example is \il{Ngalakan}Ngalakan [Gunwinyguan; Australia], where future tense verbs or the unmarked present verb forms must be used for speech acts where imperatives are used in other languages, as shown in (\ref{ex:ngalakan}) with a present tense verb.  
+
+\ea \label{ex:ngalakan}
+\gll ŋi\~n-waken ṛere-kaʔ\\
+     \textsc{2sg}-return.\textsc{prs} camp-\textsc{all}\\
+\ea `Go home!'
+\ex `You are going home.'\hfill (Ngalakan; \citealt[39]{aikhenvald10})
+\z
+\z
+
+\noindent In addition to present and future forms, verbs unmarked
+for tense, verbs encoding potential and intentional modalities, or irrealis verb forms can be used instead of imperatives in languages that lack them \citep[][38--44]{aikhenvald10}.
+
+Even in a language that does not lack imperative verbs, other specialized constructions may be employed for speech acts otherwise canonically performed with imperatives. For example, as illustrated in (\ref{ex:directive-inf}), in \il{Russian}Russian (see e.g.\ \citealt{fortuin01}: 441--449, \citealt{aikhenvald10}: 281) and \il{Slovenian}Slovenian, \is{directive infinitive}a matrix infinitival clause can be used to express an order, request, or warning -- the core directive functions.
+
+\ea \label{ex:directive-inf}
+\ea\gll Otnesti ee von!\\
+     take.\textsc{inf} her.\textsc{acc} out\\
+\glt `Take her away!'\hfill (Russian; \citealt[281]{aikhenvald10})
+\ex\gll Otpret usta!\\
+     open.\textsc{inf} mouth.\textsc{f.acc}\\
+\glt `Open your mouth!'\hfill (Slovenian)
+\z\z
+
+\noindent Note that these are not surrogate imperative forms, as they are used alongside, not instead of imperatives. Although, in languages where matrix infinitives can be used for some subset of speech acts that imperatives are typically used for, they often have restrictions on their use distinct from imperatives (see \citealt{aikhenvald10}: 281--283 for additional examples and discussion).\footnote{These restrictions are not limited to types of speech acts they can be used for. For example, \citet{zpp24} show that directive infinitives in Italian are incompatible with most indexical elements appearing appearing inside of them. Restrictions like this point towards directive infinitives not being merely imperatives in disguise.}
+
+More importantly, concerning the relationship between imperative forms and imperative functions, imperative verbs can be used for clearly non-imperative functions, beyond even those that were subsumed above under the label of functional diversity. For example, in \il{Russian}Russian an imperative verb may be used in \is{conditional imperative construction}conditional constructions like (\ref{ex:imp-rus-cond}) (see e.g.\ \citealt{jakab05,aikhenvald10}: 237). 
+
+\ea \label{ex:imp-rus-cond}
+\gll Bud' on p'janim, on pel by grom\v{c}e.\\
+     be.\textsc{imp.2} he drunk.\textsc{inst} he sang \textsc{mod} louder\\
+\glt `If he were drunk, he would sing more loudly.'\hfill (Russian; \citealt[301]{jakab05})
+\z
+
+\noindent Interestingly, the imperative verb in these constructions is always in the 2nd person singular forms, regardless of the subject (in (\ref{ex:imp-rus-cond}) the subject is 3rd person).
+
+A more surprising environment where imperative verbs are used without any imperative function are so-called \is{exocentric verb-noun compounds}\textsc{exocentric verb-noun compounds} \citep{progovac12}. In these compounds, neither the verb not the noun are the head of the compound, but the verb very often appears in imperative form, as shown in (\ref{ex:vn-serb}) with \il{Serbian}Serbian examples (see \citealt{progovac12} for more examples from other Slavic, Germanic, Romance, and several non-Indo-European languages). Additionally, as the \il{Slovenian}Slovenian examples in (\ref{ex:vn-slo}) show, imperative verbs in exocentric compounds are not limited to verb-noun configurations.
+
+\begin{exe}
+%\begin{multicols}{2}
+\ex \label{ex:vn-serb}
+\begin{xlist}
+\ex 
+\gll cepi-dlaka\\
+     split.\textsc{imp.2}-hair\\
+\glt `hairsplitter'    
+\ex
+\gll deri-ko\v{z}a\\
+     rip.\textsc{imp.2}-skin\\
+\glt `person who rips you off'\hfill (Serbian; \citealt[51]{progovac12})
+
+\end{xlist}
+\ex \label{ex:vn-slo}
+\begin{xlist}
+\ex
+\gll reci pi\v{s}i\\
+     say.\textsc{imp.2} write.\textsc{imp.2}\\
+\glt `surprising (amount or fact)'      
+\ex
+\gll ne-bodi-ga-treba\\
+     not-be.\textsc{imp.2}-\textsc{3m.acc}-need\\
+\glt `a good-for-nothing'\hfill (Slovenian)
+\end{xlist}
+%\end{multicols}
+\end{exe}
+
+\noindent In fact, there are several more examples cross-linguistically, where imperative verbs are used for obviously non-imperative functions, very often involving modality of some kind \citep[see][Ch.~7]{aikhenvald10}.
+
+Given the nature of the discussion in the continuation of the chapter, it is important to acknowledge the double dissociation between imperative forms (clauses using imperative verbs or dedicated imperative constructions) and imperative functions established in this section and summarized in Table \ref{tab:form-function}. %With \textsc{canonical imperative} I refer to cases with perfect alignment between imperative form and imperative function, whereas the other two relevant combinations in the table concern the two possible mismatches between imperative forms and functions.
+
+\begin{table}
+	\caption{Dissociation between imperative forms and functions}
+	\label{tab:form-function}
+	{\small\begin{tabularx}{\textwidth}{lXX}
+		\lsptoprule
+                & imperative form      & non-imperative form   \\
+		\midrule
+imperative      & \textsc{canonical imperatives} &$\bullet$ modalized declaratives \\
+function        &                                &$\bullet$ surrogate imperatives  \\
+                &                                &$\bullet$ present forms (Ngalakan) \\
+                &                                &$\bullet$ directive infinitives \\
+                &                                &\phantom{$\bullet$} \dots        \\[1ex]
+non-imperative  &$\bullet$ conditionals (Russian)&\cellcolor{gray!50}\\
+function        &$\bullet$ exocentric VN compounds &\cellcolor{gray!50}\\
+                &$\bullet$ various modal uses    &\cellcolor{gray!50}\\
+                &\phantom{$\bullet$} \dots       &\cellcolor{gray!50}\\
+		\lspbottomrule
+	\end{tabularx}}
+\end{table}
+
+To avoid confusion below, I use the term \textsc{imperative} without a modifier to refer to canonical imperatives, which are imperative in both form and function. 
+For speech acts imperatives can perform, including not strictly directive ones (see \sectref{subsec:functional-diversity}), I will use the term \is{imperative speech acts}\textsc{imperative speech acts}.
+Finally, I use \is{imperative verbs}\textsc{imperative verb/form} and \is{imperative clauses}\textsc{imperative clause} to refer respectively to a dedicated verb paradigm/construction used in canonical imperatives, and to a clause used for the full range of imperative speech acts. This will be particularly important in relation to the hypothesis, presented below, that a clause can be imperative without containing an imperative verb in the case of surrogate imperatives.
+
+\section{A closer look at embedded imperatives}
+\label{sec:status}
+
+This section is primarily concerned with the existence of imperative verbs in embedded clauses, both cross-linguistically (\sectref{subsec:emb-imp}) and specifically in Slovenian (\sectref{subsec:slo-emb-imp}). The latter will be contrasted with other Slavic languages, which all prohibit imperative verbs in embedded clauses (\sectref{subsec:cross-slavic}). In the last part of this section (\sectref{subsec:characteristic-semantics}), I establish that Slovenian embedded imperatives are not merely superficially imperative, but pattern with canonical imperatives in terms of their characteristic semantic and pragmatic behavior.
+
+\subsection{Embedded imperatives exist}
+\label{subsec:emb-imp}
+
+\is{embedded imperatives} %add "Cogntion" to subject index for this page
+
+Due to their absence in the well-studied major languages of Europe, embedded imperatives have been claimed to be universally unavailable in the past \citep[see e.g.][]{Sadock.Zwicky1985,han98,han00}. However, what exactly should be encompassed by this ban is often not made explicit, so let us first consider a simple syntactic conception of embedding, where any imperative clause properly contained within another syntactic constituent counts as an embedded clause. 
+
+As \citet{kaufmann21} points out, due to the quite general availability of conjunction and disjunction of imperatives (see (\ref{ex:emb-coor})), coordination is usually considered excluded from the ban on imperative embedding, and imperatives as \is{conditional imperatives}consequents of conditionals (see (\ref{ex:emb-cond})) are also excluded for similar reasons.   
+
+\ea\label{ex:simple-embedded-imps}
+\ea \label{ex:emb-coor} Call your grandmother and/or fill the birdfeeder, please.
+\ex \label{ex:emb-cond} If you get lost, call me.\hfill (\il{English}English; \citealt{kaufmann21})
+\z\z
+
+\noindent Available analyses of clausal coordination and conditionals leave enough room to count the imperatives in (\ref{ex:simple-embedded-imps}) as matrix clauses. For example, since coordination retains the syntactic distribution of the coordinated constituents and arguably their category, coordinated matrix clauses together still count as a matrix clause. Similarly, if-clauses can be analyzed as adjuncts to the consequent clause \citep[see][646--647]{bhattpancheva06}, which would mean that the imperative clause in (\ref{ex:emb-cond}) still counts as a matrix clause. Thus, to capture what I believe is the core idea behind the ban on embedded imperatives, a stricter definition of embedded imperatives is necessary: an imperative clause properly contained in another clause or a noun phrase counts as an embedded imperative.  
+
+Crucially, even under this stricter definition, which works for the cases normally considered to demonstrate the ban on embedded imperatives (e.g.\ (\ref{ex:embedding-eng})--(\ref{ex:embedding-ita})), counterexamples can be found when the language sample is extended to include non-European languages, dead languages, colloquial varieties, and understudied languages. Some notable examples of languages that permit imperatives to occur in a variety of embedded clauses are: \il{Korean}Korean \citep{portner07,pak-portner-zanuttini08}, \il{Japanese}Japanese \citep{oshima06,schwagerDISS}, \il{Old Scandinavian}Old Scandinavian \citep{roegnvaldssonMS}, \il{Ancient Greek}Ancient Greek \citep{medeirosDISS}, \il{Colloquial German}colloquial German \citep{schwagerDISS,kaufmann-poschmannLang}, \il{Mbyá}Mbyá [Tupi-Guarani; Argentina, Brazil, Paraguay, and Uruguay] \citep{thomasNELS}, \il{Chukchi}Chukchi [Chukotko-Kamchatkan; Russia] \citep{naumov18}, \il{mari}Mari [Uralic; Russia] \citep{burukina24}, and even \il{Colloquial English}colloquial English \citep{crnic-trinhSUB,crnic-trinhNELS}, although the last case is somewhat controversial.
+
+This increased awareness of the typological availability of embedded imperatives has helped establish a new consensus where, while imperative embedding is not as liberal as the embedding of other clause types, it does exists as an option in many languages (see \citealt{kaufmann21} for a brief overview).
+What is most important for present purposes, however, is that embedded imperatives can also be found right under our noses, in a well-studied Slavic language: \il{Slovenian}Slovenian. %In the following section I review the phenomenon of embedded imperatives in Slovenian, including evidence that embedded imperatives are not only imperative in form, but also in their characteristic semantic and pragmatic functions.
+
+
+\subsection{Embedded imperatives in Slovenian}
+\label{subsec:slo-emb-imp}
+\largerpage
+
+In \il{Slovenian}Slovenian imperatives are not limited to matrix clauses and liberally appear as embedded clauses \citep{sheppardgolden02,bdvorak05,rus05,dvorakzimm08,stegoveckaufmann,starkl23}. Imperative verbs can occur in Slovenian at least inside complement clauses of verbs of speech, adnominal complement clauses, argument clauses, and (restrictive) relative clauses, as long as certain semantic requirements are met (more on this below).
+
+A basic example of an imperative complement clause is illustrated in (\ref{ex:imp-slo}). The baseline matrix imperative clause in (\ref{ex:imp-slo-matx}) can be reported as indirect speech under a verb of speech, as in (\ref{ex:imp-slo-emb}), using the \emph{da} complementizer, which is used also with finite indicative complement clauses.\footnote{In \REF{ex:imp-slo-emb} and below, I use modal constructions with \emph{should} in translations when imperatives are impossible or unnatural in English, as this is usually the most natural way to paraphrase them.} Aside from the presence of the complementizer and the resulting change in the position of the 2nd position clitics (in this case \emph{mi}), the matrix and embedded imperative clauses are identical.%
+\ea \label{ex:imp-slo}\il{Slovenian}
+\ea[]{\gll Kupi mi avto.\\
+             buy.\textsc{imp.2} \textsc{1.dat} car.\textsc{m.acc}\\ 
+        \glt `Buy me a car.'\label{ex:imp-slo-matx}}
+    \ex[]{\gll Rekla ti je, da mi kupi avto.\\
+             said.\textsc{f} \textsc{2.dat} \textsc{aux.3} that \textsc{1.dat} buy.\textsc{imp.2} car.\textsc{m.acc}\\
+        \glt `She told you that you should buy me a car.'\label{ex:imp-slo-emb}\\\hfill (based on \citealt{sheppardgolden02}: 251)} 
+\z\z 
+\il{Slovenian} %add "Latin" to language index for this page        
+
+\noindent Since the most common environment in which embedded imperatives occur in Slovenian is as complement clauses under verbs of speech, one could say that these are in fact \is{direct quotations}direct quotations. It is quite easy to show why this is not the case. The first issue for this analysis is that the complementizer \emph{da} is required with embedded imperatives in Slovenian (see (\ref{ex:imp-slo-emb})), which would make this the only context in which \emph{da} can be used with a direct quotation. 
+
+Furthermore, a 3rd person pronoun inside the embedded imperative can be co-referential with the subject of the matrix clause in (\ref{ex:dir-quot-ref}), which should not be possible with a direct quotation, as the subject is the original speaker and thus the pronoun should be a 1st person one in a direct quotation. Similarly, a pronoun inside the imperative clause can be a \is{quantifier-variable binding}variable bound by a quantifier in the matrix clause, as in (\ref{ex:dir-quot-qbind}), which should be impossible with a direct quotation.    
+%\ea[]{\gll Rekla ti je: (*da) ``Kupi mi avto!''\\
+%	said.\textsc{f} \textsc{2.dat} \textsc{aux.3} \phantom{(*}that buy.\textsc{imp.2} \textsc{1.dat} car.\textsc{m.acc}\\
+%      \glt `She told you: ``Buy me a car!'''\label{ex:dir-quot-a}} 
+\ea \il{Slovenian}\label{ex:dir-quot}
+\ea[]{\gll Rekla ti je$_i$, da ji$_i$ kupi avto.\\
+     said.\textsc{f} \textsc{2.dat} \textsc{aux.3} that \textsc{3f.dat} buy.\textsc{imp.2}  car.\textsc{m.acc}\\
+     \glt `She$_i$ told you that you should buy her$_i$ a car!'
+     \glt (cf.~She$_i$ told you: ``You should buy her$_{k,*i}$/me$_i$ a car.'')\label{ex:dir-quot-ref}} 
+\ex[]{\gll Noben$_i$ ti ni prosil, da ga$_i$ povabi.\\
+      no~one \textsc{2.dat} \textsc{neg.3} asked.\textsc{m} that \textsc{3m.dat} invite.\textsc{imp.2}\\
+     \glt `No one$_i$ asked you to invite him/them$_i$.'\label{ex:dir-quot-qbind}}      
+\z\z   
+
+\noindent Another way in which embedded imperatives pattern with other complement clauses is in that they allow syntactic extraction out of them, as shown in (\ref{ex:extraction-wh}) with \is{wh-movement}wh-movement, and (\ref{ex:extraction-foc}) with \is{focus movement}focus movement (the focused constituent is in italics).
+
+\ea\label{ex:extraction} \il{Slovenian}
+\ea \gll Koga$_i$ sem rekel, da pokli\v{c}i $t_i$?\\
+         who \textsc{aux.1} said.\textsc{m} that call.\textsc{imp.2} {}\\
+     \glt `Who did I say you should call?' \label{ex:extraction-wh}    
+\ex \gll \emph{Markota}$_i$ sem rekel, da pokli\v{c}i $t_i$.\\
+         Marko.\textsc{acc} \textsc{aux.1} said.\textsc{m} that call.\textsc{imp.2} {}\\
+     \glt `It was Marko that said you should call.'\\\hfill \citep[643]{stegoveckaufmann}\label{ex:extraction-foc}
+\z\z
+
+\noindent It is also not the case that embedded imperatives under verbs of speech can only report previously uttered imperatives. An utterance like (\ref{ex:utterance-1}) can later be reported with an imperative, as in (\ref{ex:utterance-2}), where the addressee is `Peter' from (\ref{ex:utterance-1}). 
+
+\ea \label{ex:utterance} \il{Slovenian}
+\ea
+\gll Peter bi moral poslu\v{s}ati.\\
+     Peter would should.\textsc{m} listen.\textsc{inf}\\
+\glt `Peter should listen.'  \label{ex:utterance-1}   
+\ex 
+\gll Rekel je, da poslu\v{s}aj.\\
+     said.\textsc{m} \textsc{aux.3} that listen.\textsc{imp.2}\\     
+\glt `He said that you should listen.'\hfill \citep[643]{stegoveckaufmann}\label{ex:utterance-2}
+\z\z
+
+\noindent Lastly, embedded imperatives in Slovenian are not limited to speech reports. For example, they can occur in relative clauses, as in (\ref{ex:imp-rel}), and even in embedded questions, as in (\ref{ex:imp-emb-q}). Neither involve reporting a previously uttered imperative.
+
+\ea \il{Slovenian}
+\gll To je film, ki si ga oglej \v{c}imprej.\\
+     this \textsc{aux.3} film.\textsc{m} which \textsc{refl.dat} \textsc{3m.acc} watch.\textsc{imp.2} a.s.a.p\\
+\glt `This is a film which you should see as soon as you can.'\\\hfill \citep[251]{sheppardgolden02}  \label{ex:imp-rel}
+\z
+
+\ea \il{Slovenian}\label{ex:imp-emb-q}
+	\ea 
+	\gll Bo\v{s} \v{z}e zvedel, ko bo \v{c}as, kam se postavi.\\
+	     will.\textsc{2} already find.out.\textsc{m} when will.\textsc{3} time where \textsc{refl} put.\textsc{imp.2}\\
+	 \glt `You'll find out when it's time where to stand.' 
+	\ex 
+\gll Bo\v{s} videl, ko pride\v{s} v mesto, kam zavij.\\
+will.\textsc{2} see.\textsc{m} when arrive.\textsc{2} in town where turn.\textsc{imp.2}\\
+\glt `You'll see when you get into town where to turn.'	 
+\z\z
+
+\noindent What I present here is only a sample of the evidence against the direct quotation analysis; more evidence is discussed in the numerous previous works on embedded imperatives in Slovenian \citep[see][]{sheppardgolden02,bdvorak05,rus05,dvorakzimm08,stegoveckaufmann}. However, what has been established so far is only that imperative verb forms can appear in embedded clauses in Slovenian. Whether or not this makes these clauses imperative in the same sense as their matrix counterparts still needs to be established. But before we get to that, it is important to situate Slovenian inside the broader Slavic picture when it comes to embedded imperatives. %We will see that already the fact that imperative verb forms can appear in embedded clauses in Slovenian is striking from this cross-linguistic perspective.
+
+
+
+
+\subsection{The lack of embedded imperatives across Slavic}
+\label{subsec:cross-slavic}
+
+In the language most closely related to Slovenian, BCS, imperatives are excluded from complement clauses under verbs of speech, which is shown in (\ref{ex:imp-bcs-emb}) (they are also excluded from all other embedded environments where they are possible in Slovenian).\footnote{\label{ftn:kajkavian}Some \il{Kajkavian}Kajkavian dialects of \il{Croatian}Croatian are an exception, as they allow imperatives in complement clauses \citep{galic19}. These are also the dialects that are geographically closest to Slovenian.} Thus, in order to report the matrix imperative in (\ref{ex:imp-bcs-matx}) as indirect speech, the verb must surface in its indicative form, as shown in (\ref{ex:imp-bcs-sur}).\footnote{This does not mean that the verb is actually indicative. \il{Serbian}Serbian specifically is known to realize as indicative of a number of different constructions (see e.g.\ \cite{zec87,kaufmannetal23}).}
+
+\ea \label{ex:imp-bcs} \il{Bosnian/Croatian/Serbian (BCS)}
+\ea[]{\gll Kupi mi auto!\\
+	buy.\textsc{imp.2} \textsc{1.dat} car.\textsc{m/n.acc}\\ 
+	\glt `Buy me a car!'\label{ex:imp-bcs-matx}}
+\ex[*]{\gll Rekla ti je da mi kupi auto!\\
+	said.\textsc{f} \textsc{2.dat} \textsc{aux.3} that \textsc{1.dat} buy.\textsc{imp.2} car.\textsc{m/n.acc}\\\label{ex:imp-bcs-emb}}
+	%\glt `She told you that you should buy me a car!'}     
+\ex[]{\gll Rekla ti je da mi kupi\v{s} auto!\\
+	said.\textsc{f} \textsc{2.dat} \textsc{aux.3} that \textsc{1.dat} buy.\textsc{2} car.\textsc{m/n.acc}\\
+	\glt `She told you that you should buy me a car!'\\\hfill (BCS; Ivana Jovovi\'c p.c.)\label{ex:imp-bcs-sur}} 
+\z\z 
+
+\noindent In another language from the South Slavic branch, \il{Macedonian}Macedonian, we see the same kind of pattern arising with the imperative verb being substituted for an indicative verb the indirect speech report, as illustrated in (\ref{ex:imp-mac}).%\footnote{\textcolor{red}{Something about ``da'' not really being a complementizer, and being a subjunctive particle, but that also is parallel with Serbian.}} 
+\ea \label{ex:imp-mac}
+\ea[]{\gll Kupi mi avtomobil!\\
+	buy.\textsc{imp.2} \textsc{1.dat} car.\textsc{m.acc}\\ 
+	\glt `Buy me a car!'\label{ex:imp-mac-matx}}
+\ex[*]{\gll Ti ka\'za da mi kupi avtomobil!\\
+	 \textsc{2.dat} said.\textsc{3} \textsc{c.sbjv} \textsc{1.dat} buy.\textsc{imp.2} car.\textsc{m.acc}\\\label{ex:imp-mac-emb}}
+	%\glt `(S)He told you that you should buy me a car!'}     
+\ex[]{\gll Ti ka\'z{}a da mi kupi\v{s} avtomobil!\\
+	\textsc{2.dat} said.\textsc{3} \textsc{c.sbjv} \textsc{1.dat} buy.\textsc{2} car.\textsc{m.acc}\\
+	\glt `(S)he told you that you should buy me a car!'\label{ex:imp-mac-sur}\\\hfill (Macedonian; Metodi Efremov p.c.)}
+\z\z 
+
+\noindent The picture across the other branches of Slavic more or less matches what we saw in BCS and Macedonian, with differences mainly arising regarding the types of verb forms and clause types used to replace imperatives in embedded environments. \il{Czech}Czech nicely illustrates this, allowing multiple options in the embedded clause where the imperative is not possible. As seen in (\ref{ex:imp-cz}), imperatives cannot be complement clauses regardless of the choice of complementizer.%\footnote{\textcolor{red}{Footnote about imperatives in relative clauses.}}
+\ea \label{ex:imp-cz} \il{Czech}
+\ea[]{\gll Kup mi auto!\\
+	buy.\textsc{imp.2} \textsc{1.dat} car.\textsc{m.acc}\\ 
+	\glt `Buy me a car!'\label{ex:imp-cz-matx}}
+\ex[*]{\gll Řekla ti, \minsp{\{} že / ať / aby\} kup mi auto.\\
+	said.\textsc{f} \textsc{2.dat} {} that {} \textsc{c.imp} {} \textsc{c.sbjv} buy.\textsc{imp.2} \textsc{1.dat} car.\textsc{m.acc}\\
+	\glt Intended: `She told you that you should buy me a car.'\label{ex:imp-cz-emb}\\\hfill (Czech; Radek \v{S}im\'ik p.c.)}
+\z\z 
+
+\noindent In order to report (\ref{ex:imp-cz-matx}), one must either use a \textit{periphrastic imperative}, formed with a special type of complementizer and a present indicative verb, as in (\ref{ex:imp-cz-sur-a}), of a subjunctive complementizer and past participle verb, as in (\ref{ex:imp-cz-sur-b}).%\footnote{\textcolor{red}{Something about the terminology and complementizers in Czech (REFS). Maybe something about the historical origin (similar to `naj') and `aby' being inflected with the conditional form of `be', which is relevant below.}}
+\ea \label{ex:imp-cz-sur} \il{Czech}
+\ea[]{\gll Řekla ti, ať mi koupíš auto.\\
+	said.\textsc{f} \textsc{2.dat} \textsc{c.imp} \textsc{1sg.dat} buy.\textsc{2}  car.\textsc{m.acc}\\\label{ex:imp-cz-sur-a}}
+\ex[]{\gll Řekla ti, abys mi koupil auto.\\
+	said.\textsc{f} \textsc{2.dat} \textsc{c.sbjv.2} \textsc{1.dat} buy.\textsc{ptcp.m}  car.\textsc{m.acc}\\
+	\glt `She told you that you should buy me a car.'\\\hfill (Czech; Radek \v{S}im\'ik p.c.)\label{ex:imp-cz-sur-b}} 
+\z\z
+
+\noindent \il{Polish}Polish is similar in that it exhibits the ban on embedded imperatives, as shown in (\ref{ex:imp-pol}), and uses more than one strategy to report imperatives: a subjunctive complementizer with a past participle verb, as in (\ref{ex:imp-pol-sur-a}) (cf.~Czech (\ref{ex:imp-cz-sur-b})), or an infinitival complement, as in (\ref{ex:imp-pol-sur-b}), although the later requires changing the matrix verb from \emph{powiedzie\'c} to \emph{kaza\'c}, as only the latter takes infinitival complements.%    
+\ea \label{ex:imp-pol}
+\ea[]{\gll Kup mi samoch\'od!\\
+         buy.\textsc{imp.2} \textsc{1.dat} car.\textsc{m.acc}\\
+     \glt `Buy me a car!'\label{ex:imp-pol-matx}} 
+    \ex[*]{\gll Powiedzia\l a ci \.ze kup mi samoch\'od!\\
+                said.\textsc{f} \textsc{2.dat} that buy.\textsc{imp.2} \textsc{2.dat} car.\textsc{m.acc}\\\label{ex:imp-pol-emb}}
+            %\glt `She told you that you should buy me a car.'}        
+\ex[]{\gll Powiedzia\l a ci \.zeby\'s kupi\l{} mi samoch\'od!\\
+	said.\textsc{f} \textsc{2.dat} \textsc{c.sbjv.2} buy.\textsc{ptcp.m} \textsc{2.dat} car.\textsc{m.acc}\\
+	\glt `She told you that you should buy me a car.'\label{ex:imp-pol-sur-a}\\\hfill (Polish; Marcin Dadan p.c.)}
+\z\z
+
+    \ea[]{\gll Kaza\l a ci kupi\'c mi samoch\'od!\\
+    	told.\textsc{f} \textsc{2.dat} buy.\textsc{inf} \textsc{2.dat} car.\textsc{m.acc}\\
+    	\glt `She told you to buy me a car.'\hfill (Polish; Marcin Dadan p.c.)\label{ex:imp-pol-sur-b}}   
+\z
+
+\noindent Using a subjunctive complementizer and past participle verb instead of the embedded imperative is also the strategy used in \il{Russian}Russian, %\footnote{\textcolor{red}{Explain that it is a frozen form and just like the Czech one often described as conditional.}} 
+ as illustrated in (\ref{ex:imp-rus}), as is also the use of an infinitival complement when the matrix predicate allows it.
+ 
+\ea \label{ex:imp-rus}
+\ea[]{\gll Kupi mne ma\v{s}inu!\\
+	buy.\textsc{imp.2} me.\textsc{dat} car.\textsc{f.acc}\\
+	\glt `Buy me a car!'\label{ex:imp-rus-matx}} 
+\ex[*]{\gll Ona skazala tebe, \minsp{\{} \v{c}to / \v{c}toby\} \minsp{(} ty) kupi mne ma\v{s}inu!\\
+	she said.\textsc{f} you.\textsc{dat} {} that {} \textsc{c.sbjv}  {} you buy.\textsc{imp.2} me.\textsc{dat} car.\textsc{f.acc}\\\label{ex:imp-rus-emb}}
+	%\glt `She told you that you should buy me a car.'}    
+\ex[]{\gll Ona skazala tebe, \v{c}toby ty kupil mne ma\v{s}inu!\\
+	she said.\textsc{f} you.\textsc{dat} \textsc{c.sbjv}  you buy.\textsc{ptcp.m} me.\textsc{dat} car.\textsc{f.acc}\\
+	\glt `She told you that you should buy me a car.'\label{ex:imp-rus-sur}\\\hfill (Russian; p.c.\ Ksenia Bogomolets, Irina Burukina)}
+\z\z
+ 
+\noindent Although I have only presented examples with complement clauses under verbs of speech for reasons of space, Slovenian is unique among Slavic languages in allowing imperatives in embedded clauses. In the embedded environments where they are prohibited, surrogate imperative constructions must be employed.
+%\textcolor{red}{This is an acquisition problem too. How would a child be able to tell these two forms that can be used to report each other and are identical apart. But suppose that some universal principle would prevent embedding of imperatives with ``true'' imperative semantics, that way we could say that that's what guides the children. We will see mostly in the continuation that this alternative also does not work. In (almost) all respects, embedded imperative have the same semantic and pragmatic restrictions on their use as matrix imperatives, with the only differences coming from what we expect to see as a result of indirect speech reports.}
+%The issue of surface realization also relates in a different way to \textsc{surrogate imperatives} \citep{zanuttini97,isac15}: alternative forms or constructions used when imperatives are unavailable. This is what we saw above as a strategy to express imperative function in embedded clauses when the language does not allow embedded imperatives. The question is what allows surrogate imperatives to take over like this; in other words, what is the relationship between them and true imperatives? Could they have a common underlying source? Once we take a closer look at Slovenian true and surrogate imperatives, we can return to this issue, as well as the issue of the source of the ban on embedded imperatives.
+
+Given the pervasiveness of the use of surrogate imperatives in embedded contexts across Slavic, one could entertain the possibility that Slovenian is no different. Given the double dissociation between imperative forms and functions established in \sectref{subsec:act-clause-form}, one could say that none of the complement clauses used to report imperatives across Slavic, including Slovenian, are not actually imperative in the semantic sense. As an anonymous reviewer suggests, it is conceivable that Slovenian has a verbal mood that is obligatory in imperative clauses, but also available in other clause types, including non-imperative embedded clauses. This would mean that Slovenian actually has no dedicated imperative forms, but also that embedded imperatives are not really imperatives in Slovenian. 
+
+In order to address this possibility, I review in the next section what are considered to be semantic and pragmatic hallmarks of imperative clauses that go beyond their characteristic discourse function, and show that embedded imperatives in Slovenian are not only imperative in their form, but also in their characteristic semantic and pragmatic contribution.
+
+%\textcolor{red}{Another way to reinterpret the data would involve saying that the verbs in the embedded clause are only superficially imperative, realizing a underlying non-imperative construction without the characteristic syntax and semantics of imperative clauses. This possibility will be addressed over the following two sections, where we will see that the semantic and pragmatic restrictions on the use of imperatives align across matrix and embedded uses, differing only in ways which are to be expected from matrix vs.\ embedded contexts.} 
+
+\subsection{Are embedded imperatives truly imperative?}
+\label{subsec:characteristic-semantics}
+
+As discussed in the introduction, unlike declaratives, imperatives resist accepting or questioning their truth: i.e.\ the \emph{That's (not) true}-test. While applying this test in the case of embedded imperatives is not as straightforward as with matrix imperatives, a contrast can be detected in Slovenian when an embedded imperative is compared to an alternative construction that can also be used to report previous imperative utterances in speech reports. 
+
+Consider the two complement clauses in (\ref{ex:imp-emb-thats}) and (\ref{ex:mod-emb-thats}), where the former uses an imperative verb and the latter a necessity modal and infinitive verb. Both can be used to report a previous imperative utterance, but differ in terms of what kind of responses from the addressee they are compatible with. Thus, with the embedded imperative in (\ref{ex:imp-emb-thats}), an addressee may only question the truth of someone uttering the imperative (e.g.\ with (\ref{ex:thats-matx})), but it feels very unnatural to question the truth of the embedded clause (e.g.\ with (\ref{ex:thats-emb})); in this case, that the addressee is truly obligated to tidy up their room. In contrast, both responses in (\ref{ex:thats}) are completely felicitous in the case of the embedded modal construction in (\ref{ex:mod-emb-thats}). 
+
+\ea \il{Slovenian}
+\ea \label{ex:imp-emb-thats}
+\gll Rekel je, da pospravi sobo.\\
+     said \textsc{aux.3} that tidy.up.\textsc{imp.2} room.\textsc{f.acc}\\     
+\ex \label{ex:mod-emb-thats}
+\gll Rekel je, da mora\v{s} pospraviti sobo.\\
+     said \textsc{aux.3} that must.\textsc{2} tidy.up.\textsc{inf} room.\textsc{f.acc}\\ 
+\glt `He said that you should tidy up your room.'     
+\z\z
+
+\ea\label{ex:thats}
+\ea \label{ex:thats-matx}
+\gll Ni res, da je to rekel.\\
+     \textsc{neg.3} true that \textsc{aux.3} this.\textsc{n.acc} said.\textsc{m}\\
+\glt `It's not true that he said that.'     
+\ex \label{ex:thats-emb}
+\gll Ni res, da moram pospraviti sobo.\\
+    \textsc{neg.3} true that must.\textsc{1} tidy.up.\textsc{inf} room.\textsc{f.acc}\\
+\glt `It's not true that I should tidy up my room.'   \z\z  
+
+\noindent An objection to this contrast could be that what is negated in (\ref{ex:thats-emb}) does not exactly correspond to the meaning of the complement clause in (\ref{ex:imp-emb-thats}). That is a fair objection, but also related to the point I am trying to make, which is that embedded imperatives in Slovenian are more than some special modal or subjunctive construction. More importantly, it is also telling that when the response to either (\ref{ex:imp-emb-thats}) or (\ref{ex:mod-emb-thats}) is a simple `That's not true!', the response is ambiguous in the case of (\ref{ex:mod-emb-thats}), but not in the case of (\ref{ex:imp-emb-thats}), where it seems not possible to construct a reading where only the truth of the complement clause is rejected.  
+
+Another characteristic property of imperatives is that they commit the speaker to endorsing the action expressed by them \citep[][]{kaufmannBOOK,condoravdi-lauer12cssp,condoravdi-lauer17}.\footnote{The discussion of speaker commitment is simplified here for expository purposes \citep[for more detailed discussion, see][]{kaufmannBOOK,kaufmann16,condoravdi-lauer12cssp}, mostly regarding how it relates to the functional diversity of imperatives (see \sectref{subsec:functional-diversity}). For example, a concession signals that the speaker actually wishes for the opposite of the prejacent, and with an advice a speaker may not have any personal interest in the prejacent coming true. What is important is that speaker distancing (see below) remains infelicitous across the different speech acts, so the issue is how to correctly characterize what exactly the speaker publicly commits to when an imperative is uttered such that it precludes distancing follow ups; see \citet{kaufmannBOOK,kaufmann16} and \citet{condoravdi-lauer12cssp} for different approaches to the issue, as well as \sectref{subsec:perspective}.} Thus, acts of \textsc{distancing} by the speaker are infelicitous, as shown in (\ref{ex:dist-no}). Note that with the modal expression in (\ref{ex:dist-yes}), which can otherwise also be used performatively like an imperative, the distancing act is allowed.%\footnote{\textcolor{red}{Something about why I don't use a different paraphrase for distancing. I assume in all cases a reading where it's not the case that the speaker changed their mind between the two statements.}} 
+
+\ea \label{ex:dist} \il{English}
+    \ea[]{Leave! \#But I don't want you to leave. \label{ex:dist-no}}
+    \ex[]{You should leave. But I don't want you to leave. \label{ex:dist-yes}\\\hfill (English; based on \citealt{kaufmannBOOK}: 159, \citeyear{kaufmann21}: 18, \citealt{stegovec19}: 70)}  
+\z\z 
+
+\noindent The distancing ban is observed in Slovenian, as shown in (\ref{ex:slo-dist-matx}), although with an embedded imperative like (\ref{ex:slo-dist-emb}) distancing by the actual speaker is possible.
+
+\ea \il{Slovenian}
+    \ea[]{\gll Pojdi! \#Ampak no\v{c}em da gre\v{s}.\\
+               go.\textsc{imp.2} \phantom{\#}but \textsc{neg}.want.\textsc{1} that go.\textsc{2}\\
+           \glt `Go! \#But I don't want you to go.'\label{ex:slo-dist-matx}}
+    \ex[]{\gll Rekel je, da pojdi, ampak no\v{c}em, da gre\v{s}.\\
+                said.\textsc{m} \textsc{aux.3} that go.\textsc{imp.2} but \textsc{neg}.want.\textsc{1} that go.\textsc{2}\\
+            \glt `He said you should go! But I don't want you to go.'\\\hfill (based on \citealt{stegovec19}: 59--60)\label{ex:slo-dist-emb}}
+\z\z         
+
+\noindent This does not mean that embedded imperatives do not exhibit the distancing ban. As shown in (\ref{ex:slo-dist-emb2}), distancing by the original speaker is not possible   \citep{stegoveckaufmann}. Although this is not the analysis I ultimately endorse, the pattern can be viewed as the speaker endorsement component of imperative meaning behaving like a \is{shifted indexicals}\textsc{shifted indexical} \citep{schlenkerPLEA} in that it is anchored to the original context of the utterance rather than the actual one.\footnote{Interestingly, under this characterization of the speaker distancing pattern, all other indexical elements in the embedded clause are interpreted with respect to the actual context and are thus not shifted, which would suggest that the \is{shift together}\textsc{shift together} principle \citep{anand-nevins04} is violated in this case \citep[see][]{stegoveckaufmann}. Depending on how important one considers the universality of shift together, this can be taken as evidence against a shifted indexical analysis of the speaker endorsement component.}      
+\ea[]{\il{Slovenian} 
+\gll    Rekel je, da pojdi \#ampak, da no\v{c}e, da gre\v{s}.\\
+    	said.\textsc{m} \textsc{aux.3} that go.\textsc{imp.2}  \phantom{\#}but that \textsc{neg}.want.\textsc{3} that go.\textsc{2}\\
+    	\glt `He said you should go but that he doesn't want you to go.'\label{ex:slo-dist-emb2}\\\hfill (based on \citealt{stegovec19}: 60)}    
+\z 
+
+\noindent An anonymous reviewer suggests (\ref{ex:slo-dist-emb2}) merely shows that there can be no distancing by the original speaker in the original utterance, so this carries over to any speech reports of the original utterance. One complication under this view is that embedded imperatives do not have to report utterances that were originally imperatives (see (\ref{ex:utterance})), and another is that there exist conditions on the use of embedded imperatives that go beyond those imposed on them in the original context, as we will see with the final property of imperatives I will consider.   
+
+The use of imperatives is crucially restricted to contexts where the action they describe is a possible action. For example, a matrix imperative like (\ref{ex:slo-decisive-matx}) cannot be felicitously uttered in case the addressee had already made a right or left turn, thus settling the decision problem that the imperative is meant to resolve \citep[][159--162]{kaufmannBOOK}. This restriction carries over to embedded imperatives, which means that (\ref{ex:slo-decisive-emb}) feels awkward if used in a situation where a turn had already been made. In contrast, the same awkwardness does not arise in the same situation if the embedded clause is a modal+infinitive construction, as in (\ref{ex:slo-decisive-emb-2}).% 
+
+\eanoraggedright\label{ex:slo-decisive} \il{Slovenian}
+\textit{Scenario:} A person in the passenger seat is reminding the driver of the path that the GPS app on the passenger's phone indicated they should take.
+\ea \label{ex:slo-decisive-matx}
+\gll Zavij levo.\\
+     turn.\textsc{imp.2} left\\
+\glt `Turn left.'     
+\ex \label{ex:slo-decisive-emb}
+\gll Zemljevid je pokazal, da zavij levo.\\
+     map.\textsc{m} \textsc{aux.3} showed.\textsc{m} that turn.\textsc{imp.2} left\\
+\ex \label{ex:slo-decisive-emb-2}
+\gll Zemljevid je pokazal, da mora\v{s} zaviti levo.\\
+     map.\textsc{m} \textsc{aux.3} showed.\textsc{m} that should.\textsc{2} turn.\textsc{inf} left\\
+\glt `The map indicated that you should turn left.'   \z\z  
+
+\noindent Note here, in relation to the discussion around (\ref{ex:slo-dist-emb2}), that the \is{decision problem}decision problem must be unresolved at the point when (\ref{ex:slo-decisive-emb}) is uttered for it to be felicitous \citep[see also][647]{stegoveckaufmann}. This means that it is not sufficient to say that all the conditions on the felicitous use of embedded imperatives are tied to the original utterance they report. Otherwise (\ref{ex:slo-decisive-emb}) would be felicitous as a report after a turn had already been taken, as long as the map instructed the speech act participants to do so before the turn could be taken -- but this is not the case.
+
+To conclude this section, I should note that even though I only considered embedded imperatives in speech reports, imperatives in Slovenian also retain these characteristic properties in other embedded contexts, such as relative clauses \citep[for the latter, see][]{kaufmannstegovec19}. This leads me to conclude that embedded imperatives in Slovenian are not merely imperative in their form, but also in their characteristic semantic contribution. In the next section, I take things even further and argue that a paradigmatically restricted surrogate imperative form in Slovenian also meets the semantic and pragmatic criteria reviewed in this section in spite of not having an imperative form.
+
+
+\section{The status of surrogate imperatives in Slovenian}
+\label{sec:lessons}
+
+Slovenian uses a surrogate imperative construction in both matrix and embedded clauses to perform imperative speech acts with subjects that are not \snd{} and inclusive \fst{} (\sectref{subsec:directives}). This construction, in complementary distribution with imperative verbs, has the same characteristic restrictions on its use as canonical imperatives, which suggests that it forms a natural class of directive clauses together with imperatives (\sectref{subsec:distancing-naj}). This connection between the two types of clauses also reveals new insights into the phenomenon of subject obviation (\sectref{subsec:obviation}), which in turn allows us to reevaluate the ban on imperative questions as well as the exceptions to the ban observed in Slovenian (\sectref{subsec:typing}).       
+
+\subsection{Beyond addressee subjects}
+\label{subsec:directives}
+
+Canonically, imperative verbs are defined as dedicated verb forms used for directing the addressee to carry out the described action. As such, they are limited to 2nd person subjects and inflection (if they are inflected at all). But the role of the addressee in imperatives can be separated into two roles: (i) the individual meant to perform the action described by the verb -- the \textsc{subject}, and (ii) the individual meant to make sure that the action described is realized -- the \textsc{controller} \citep{belnapetal01,kaufmann21}. In a canonical imperative these roles align, but the question is whether they have to: is it an inherent requirement of imperatives that addressees must be involved as subjects, controllers, or both?
+
+Many recent analyses of imperatives assume that the addressee must at least be the controller in an imperative speech act (\citealt[][]{portnerSALT,portner07,zanuttini08,zpp12}, i.a.), which allows for non-\snd{} subjects, but means the addressee must still be involved as the controller.  This view is supported by the behavior of English imperatives with overt non-\snd{} subjects, like (\ref{ex:nobody}), where quantification is nonetheless understood to range over the addressees in that context. More importantly, an example like (\ref{ex:everyone}), where a \snd{} pronoun can be bound by the quantifier, suggests the connection to the addressee is more than a pragmatic principle \citep[see][]{zanuttini08,zpp12}.
+
+\ea \ea[]{Nobody move, this is a robbery!\label{ex:nobody}}
+    \ex[]{Everyone$_i$ put your$_i$ hands up!\label{ex:everyone}\\\hfill \il{English}(English; based on \citealt[190--191]{zanuttini08})}
+\z\z     
+
+\noindent The privileged role of the addressee is also key in the proposal of \textcite{speastenny03}, where imperatives are a clause type directly tied to the addressee perspective, as well as \citeauthor{searle76}'s definition of directive speech acts (see \sectref{subsec:surrogate}), where the addressee is always the controller (in the current terminology). The ``addressee perspective'' position of \citeauthor{speastenny03} has been widely criticized (see e.g.\ \citealt{gaertner-steinbach06,zu18}), and I provide further arguments against it (based on observations from \citealt{Stegovec2017,stegovec19}) in Sections \ref{subsec:typing} and \ref{subsec:deriving-obviation}. 
+
+In contrast, I will not dispute the claim that the addressee is at least prioritized as a controller or subject in canonical imperatives. I will merely show that some clauses with main verbs outside of the canonical imperative paradigm can be part of the same natural class as imperatives in terms of their characteristic semantic and pragmatic properties. This claim is going to be based on data from a case of paradigmatically restricted surrogate imperatives in Slovenian.
+
+Slovenian imperative verbs are restricted to \snd{} subjects (imperatives in a narrow sense) and inclusive \fst{} subjects (or \textsc{exhortatives}; see \cite{zanuttini08,zpp12}). The imperative paradigm is thus restricted to clauses where the subject refers to an individual or group that includes the addressee. In order to perform a directive speech act where the directed individual or group does not include the addressee, an alternative construction must be used in Slovenian, which I call the \is{\emph{naj}-subjunctive (Slovenian)}\textsc{\emph{naj}-subjunctive} (also called the \textsc{optative} construction or the \textsc{analytic imperative}); see Table \ref{tab:slovenian-directives} for a summary of the distribution of imperative verbs and \emph{naj}-subjunctives in relation to the person of the subject.%
+\begin{table}
+	\caption{Paradigm of directives in \il{Slovenian}Slovenian}
+	\label{tab:slovenian-directives}
+	{\small\begin{tabularx}{\textwidth}{X lll}
+		\lsptoprule
+\emph{Help!}       & singular             & dual                  & plural \\
+		\midrule
+\rowcolor{gray!20}
+\fst\,(\excl)      &*\textit{naj} pomaga-m&*\textit{naj} pomaga-va&*\textit{naj} pomaga-mo\\
+\rowcolor{gray!20}
+                   &  `I should help!'    &`we two should help!'  & `we should help!' \\
+\fst\,(\incl)      &   ---------          &  pomaga-\textit{j}-va & pomaga-\textit{j}-mo\\
+                   &                      & `let's us two help!'&  `let's help!'     \\
+\snd               & pomaga-\textit{j}    &  pomaga-\textit{j}-ta & pomaga-\textit{j}-te\\
+                   & `help!'              &  `help (you two)!'    & `help (you all)!'   \\
+\trd               & \textit{naj} pomaga  & \textit{naj} pomaga-ta&\textit{naj} pomaga-jo\\
+                   &  `(s)he should help!'&`them two should help!'& `they should help!' \\
+		\lspbottomrule
+	\end{tabularx}}
+\end{table}
+
+The \emph{naj}-subjunctive involves the uninflected particle \emph{naj}, which gives it its name, and a main verb from the present tense paradigm inflected for person and number. Note that in matrix contexts the \emph{naj}-subjunctive cannot be used with exclusive \fst{} subjects; we will see below that this is not a paradigmatic restriction.
+
+Imperatives and \emph{naj}-subjunctives pattern together in all aspects concerning their meaning and use, with the exception of the subjects they are used with. The first indication of this is that a \emph{naj}-subjunctive is the most accurate way to report an imperative as indirect speech in the scenario in (\ref{ex:imp-to-naj}), where the original speaker becomes the addressee, and vice versa in (\ref{ex:naj-to-imp}), where the referent of the \trd{} subject in the original utterance becomes the addressee. 
+
+\ea \il{Slovenian}\label{ex:imp-to-naj}\ea{\gll {Pero$_i$ $\Rightarrow$ Luka$_k$:} Poberi$_k$ me$_i$ ob osmih.\\
+          {} pick.up.\textsc{imp.2} \textsc{1.acc} at eight.\textsc{loc}\\
+          \glt\phantom{Pero$_i$ $\Rightarrow$ Luka$_k$:} `Pick$_k$ me$_i$ up at eight!'} 
+    \ex{\gll {Luka$_k$ $\Rightarrow$ Pero$_i$:} Rekel si$_i$ da naj te$_i$ poberem$_k$ ob osmih.\\
+               {} said.\textsc{m} \textsc{aux.2} that \textsc{sbjv} \textsc{2.acc} pick.up.\textsc{1} at eight.\textsc{loc}\\
+           \glt\phantom{Luka$_k$ $\Rightarrow$ Pero$_i$:} `You$_i$ said that I$_k$ should pick you$_i$ up at eight!'\label{ex:emb-naj}}
+\z\z
+
+\ea \label{ex:naj-to-imp}\ea{\gll {Pero$_i$ $\Rightarrow$ Tone$_j$:} Naj me$_i$ pobere$_k$ ob osmih.\\
+	{} \textsc{sbjv} \textsc{1.acc} pick.up.\textsc{3}  at eight.\textsc{loc}\\
+	\glt\phantom{Pero$_i$ $\Rightarrow$ Luka$_k$:} `He$_k$ should pick me$_i$ up at eight!'} 
+\ex{\gll {Tone$_j$ $\Rightarrow$ Luka$_k$:} Rekel je$_i$ da ga$_i$ poberi$_k$ ob osmih.\\
+	{} said.\textsc{m} \textsc{aux.3} that \textsc{3m.acc} pick.up.\textsc{imp.2} at eight.\textsc{loc}\\
+	\glt\phantom{Luka$_k$ $\Rightarrow$ Pero$_i$:} `He$_i$ said that you$_k$ should pick him$_i$ up at eight!'}
+\z\z
+
+\noindent Note also that the \emph{naj}-subjunctive in (\ref{ex:emb-naj}) has a \fst{} singular subject, which means the lack of exclusive \fst{} directives in Table \ref{tab:slovenian-directives} is not a paradigmatic gap, but rather a contextual restriction on the subjects of directives that seems to arise in matrix environments only. I return to this restriction in \sectref{subsec:obviation}. 
+
+Crucially, the parallelism in their usage is not limited to directive speech act. \emph{Naj}-subjunctive can be used across the same range of speech acts subsumed under functional diversity. This is illustrated in (\ref{ex:naj-diversity}) for advices, concessions, and wishes with examples matching the imperative ones from \sectref{subsec:functional-diversity}: (\ref{ex:naj-diversity-advice}) corresponds to (\ref{ex:imp-advice}), (\ref{ex:naj-diversity-concession}) corresponds to (\ref{ex:imp-concession}), and (\ref{ex:naj-diversity-wish}) corresponds to (\ref{ex:imp-wish}).
+
+\ea \il{Slovenian}\label{ex:naj-diversity}
+\ea \label{ex:naj-diversity-advice}
+\gll Naj potrese model z moko.\\
+     \textsc{sbjv} sprinkle.\textsc{3} model.\textsc{m.acc} with flour.\textsc{f.inst}\\ \hfill\textsc{advice}%
+\glt `(S)he should sprinkle the mold with flour.'      
+\ex \label{ex:naj-diversity-concession}
+\gll Pa naj poje kar celo torto!\\
+     \textsc{prtc} \textsc{sbjv} eat.\textsc{3} what whole.\textsc{f.acc} cake.\textsc{f.acc}\\ \hfill \textsc{concession}% 
+\glt `Well, (s)he can eat the whole cake then!'     
+\ex \label{ex:naj-diversity-wish}
+\gll Naj se hitro pozdravi!\\
+     \textsc{sbjv} \textsc{refl} fast heal.\textsc{3}\\ \hfill \textsc{wish}%
+\glt `May (s)he get well soon!'     
+\z\z
+
+\noindent Imperatives and \emph{naj}-subjunctives can thus be used for the same speech acts even though the subjects of \emph{naj}-subjunctives never refer to the addressee or a group containing the addressee. This is comparable to directive subjunctives in \il{Italian}Italian and \trd{} imperatives in \il{Bhojpuri}Bhojpuri [Indo-Aryan, India/Nepal] discussed by \citet{zpp12}, in that the addressee is not expressed by the subject. \citeauthor{zpp12} posit that such constructions still involve the addressee in the role of what I call the controller, and can all be roughly paraphrased as `You see to it that X', where X is the action described by the clause in question. 
+However, \emph{naj}-subjunctives can easily express wishes/curses like (\ref{ex:naj-wish}) or performative declarations like (\ref{ex:naj-decl}), where the controller cannot be the addressee, as they would have no ability to ensure that the desired state of affairs comes true. In fact, even imperatives can be used in acts of conjuring or calling into existence like the Biblical (\ref{ex:let-there-imp}), which can also be paraphrased as \emph{naj}-subjunctives like (\ref{ex:let-there-naj}).\footnote{The imperative is from the official translation, while the \emph{naj}-subjunctive is used in colloquial paraphrases of the Bible, like the song \emph{`Osmi dan'} [The Eighth Day] by the band \emph{Pankrti}.}  
+
+\ea \il{Slovenian}\label{ex:naj-noaddr}\ea{\gll Naj te strela udari!\\
+               \textsc{sbjv} \textsc{2.acc} lightning hit.\textsc{3}\\
+           \glt `I hope/wish you get hit by lightning!'\label{ex:naj-wish}}
+    \ex{\gll Naj se igre za\v{c}nejo!\\
+               \textsc{sbjv} \textsc{refl} games begin.\textsc{3pl}\\ 
+           \glt `Let the games begin!'\label{ex:naj-decl}} 
+\z\z   
+\ea\label{ex:let-there}\ea{\gll Bodi svetloba!\\
+               be.\textsc{imp.2} light\\
+           \glt `Let there be light'\label{ex:let-there-imp}}
+    \ex{\gll Naj bo nebo in naj bo zemlja!\\
+               \textsc{sbjv} will.be.\textsc{3} sky and \textsc{sbjv} will.be.\textsc{3} earth\\
+           \glt `Let there be sky and let there be earth!'\label{ex:let-there-naj}} 
+\z\z 
+Wishes and similar speech acts illustrated in (\ref{ex:naj-noaddr})--(\ref{ex:let-there}) at the very least complicate the picture that the addressee must always be the controller, and \citeauthor{zpp12} acknowledge this, leaving open the issue of what they call ``true optative meanings''. What is important for the argument at hand is that once again we see parallelism between imperatives and \emph{naj}-subjunctives in this respect as well.  
+
+To sum up, \emph{naj}-subjunctives can be used for all the same speech acts as imperatives in both matrix and embedded contexts (although only select examples were shown for space reasons). However, given the double dissociation between imperative form and and function (see \sectref{subsec:act-clause-form}), one could extend this to \emph{naj}-subjunctives and suggest that they are some kind of modalized declarative (cf.\ \emph{May you get hit by lightning!}). However, as we will see in the next section, \emph{naj}-subjunctives pattern with imperatives rather than modal expressions also when it comes to characteristic semantic and pragmatic behavior. 
+
+\subsection{Speaker distancing and \emph{naj}-subjunctives}
+\label{subsec:distancing-naj}
+
+Recall from \sectref{subsec:characteristic-semantics} that the use of an imperative commits the speaker to endorsing the action expressed by the imperative, which prohibits any follow ups expressing a distancing from the speaker regarding the endorsement.
+Crucially, \emph{naj}-subjunctives show exactly the same pattern with respect to distancing as imperatives, which is illustrated in (\ref{ex:slo-dist-naj}): no speaker distancing is allowed in matrix contexts (see (\ref{ex:slo-dist-naj-matx})), while in embedded contexts, distancing is allowed for the actual speaker (see (\ref{ex:slo-dist-naj-emb})), but not the original speaker (see (\ref{ex:slo-dist-naj-emb2})).
+\ea \il{Slovenian}\label{ex:slo-dist-naj}
+\ea{\gll Naj grejo! \#Ampak no\v{c}em da grejo.\\
+	\textsc{sbjv} go.\textsc{3pl} \phantom{\#}but \textsc{neg}.want.\textsc{1} that go.\textsc{3pl}\\
+	\glt `They should go! \#But I don't want them to go.'\label{ex:slo-dist-naj-matx}}
+\ex{\gll Rekel je, da naj grejo, ampak no\v{c}em, da grejo.\\
+	said.\textsc{m} \textsc{aux.3} that \textsc{sbjv} go.\textsc{3l} but \textsc{neg}.want.\textsc{1} that go.\textsc{3pl}\\
+	\glt `He said they should go, but I don't want them to go.'\label{ex:slo-dist-naj-emb}}
+\ex{\gll Rekel je, da naj grejo \#ampak, da no\v{c}e, da grejo.\\
+    	said.\textsc{m} \textsc{aux.3} that \textsc{sbjv} go.\textsc{3pl} \phantom{\#}but that \textsc{neg}.want.\textsc{3} that go.\textsc{3pl}\\
+    	\glt `He said they should go but he doesn't want them to go.'\label{ex:slo-dist-naj-emb2}\\\hfill \citep[based on][60]{stegovec19}}  
+\z\z 
+The speaker endorsement component of imperative meaning is thus present also with the surrogate \emph{naj}-subjunctive forms across matrix and embedded contexts. 
+
+Furthermore, although I do not present the relevant examples here for space reasons, the restriction observed with imperatives concerning possible actions in the actual context (see (\ref{ex:slo-decisive}) in \sectref{subsec:characteristic-semantics}), also holds for \emph{naj}-subjunctives, as do all other restrictions on the use of imperatives I am aware of. For this reason, I refer to imperatives and \emph{naj}-subjunctives together as \is{directives}\textsc{directives} or \is{directive clauses}\textsc{directive clauses} for the rest of this chapter, operating under the working hypothesis that the two types of clauses form a natural class that is obscured by superficial differences. As we will see in the following section, there is an additional restriction on the subjects of imperatives and \emph{naj}-imperatives that can be only fully understood once the two types of clauses are considered together as a natural class. 
+
+%Let us then define a class of speech acts which includes imperative speech acts and comparable speech acts where the subject or controller is not an addressee, as well as a class of clauses with that canonical speech act function:\footnote{They may have the same non-canonical functions as imperatives (wish, advice, invitation, etc.).}  
+%\ea \textsc{Directive Speech Act}\\ The speaker attempts to make an individual or group of individuals ensure that
+%the non-modal content of the utterance is realized.
+%\ex \textsc{Directives}\\ Clauses whose canonical function is that of a directive speech act.\footnote{Compare to Searle's definition (1976: 11): ``The illocutionary point of these consists in the fact that they are attempts [\dots] by the speaker to get the hearer to do something.''}
+%\z
+
+\subsection{Subject obviation}
+\label{subsec:obviation}
+
+This section establishes the existence of \is{subject obviation}\textsc{subject obviation} (\citealt{bouchard82,picallo85,kempchinsky86,kempchinsky09,farkas92}, i.a.) in Slovenian directives. The canonical case of subject obviation is observed with Romance subjunctive clauses and refers to the restriction where the subject of an embedded subjunctive clause cannot co-refer with the matrix subject, as shown in (\ref{ex:obv-spa}).    
+
+\ea{  \gll Queremos$_i$ que \minsp{\{} ganen$_k$ / *ganemos$_i$\}.\\
+           want.\textsc{1pl} that {} win.\textsc{sbjv.3pl} {} \phantom{*}win.\textsc{sbjv.1pl}\\
+       \glt (Intended:) `We$_i$ want them$_k$ / us$_i$ to win.'\label{ex:obv-spa}\hfill (\il{Spanish}Spanish; \citealt[662]{quer06})} 
+\z
+
+\noindent Subject obviation is also found in several Slavic languages despite the lack of subjunctive verbal paradigms \citep[see][]{socanac17}. Example (\ref{ex:obv-srb}) illustrates this for Serbian \citep[see][]{zec87,farkas92,socanac17,kaufmannetal23}.
+
+\ea{\gll Ivan$_i$ je naredio da ode$_{k,*i}$.\\
+           Ivan \textsc{aux.3} ordered.\textsc{m} that leave.\textsc{3}\\
+       \glt `Ivan$_i$ ordered him$_{k}$ to leave.'\\(Unavailable: `Ivan$_i$ ordered himself$_{i}$ to leave.') \label{ex:obv-srb}\hfill (\il{Serbian}Serbian; \citealt[85]{socanac17})}
+\z
+
+\noindent Subject obviation is crucially also observed in Slovenian with \emph{naj}-subjunctives and imperatives in complement clauses \citep{Stegovec2017,stegovec19}, as shown in (\ref{ex:obv-slo}).
+
+\ea\label{ex:obv-slo} 
+\ea[]{\gll Rekel je$_i$, da naj igra$_{k,*i}$ bolje.\\
+           said.\textsc{m} \textsc{aux.3} that \textsc{sbjv} play.\textsc{3} better\\
+       \glt `He$_i$ said that he$_{k}$ should play better.'\\(Unavailable: `He$_i$ said that he$_{i}$ should play better.')\label{ex:obv-slo-naj}}
+\ex[*]{\gll Rekel si$_i$, da igraj$_{i}$ bolje.\\
+	said.\textsc{m} \textsc{aux.2} that play.\textsc{imp.2} better\\
+	\glt Intended: `You$_i$ said that you$_{i}$ should play better.'\label{ex:obv-slo-imp}\\\hfill (\il{Slovenian}based on \citealt[51--52]{stegovec19})}
+\z\z 
+
+\noindent The lack of matrix \emph{naj}-subjunctives with exclusive \fst{} subjects can now also be reevaluated from the perspective of subject obviation. As shown in (\ref{ex:obv-slo-naj1}), an embedded \emph{naj}-subjunctive with a \fst{} subject is only grammatical if the matrix subject is not also \fst{} due to the subject obviation effect.
+
+\ea{\gll Rekel \minsp{\{} je$_i$ / *sem$_k$\}, da naj igram$_{k}$ bolje.\\
+	said.\textsc{m} {} \textsc{aux.3} {} \phantom{*}\textsc{aux.1} that \textsc{sbjv} play.\textsc{1} better\\
+	\glt (Intended:) `He$_i$ / I$_k$ said that I$_k$ should play better.'\label{ex:obv-slo-naj1}\\\hfill(\il{Slovenian}based on \citealt[52]{stegovec19})}
+\z
+
+\noindent What we see with matrix \emph{naj}-subjunctives can also be considered subject obviation: in (\ref{ex:obv-slo-naj1}) the subject of the \emph{naj}-subjunctive may not refer back to the original speaker of the directive (the matrix subject), and in a matrix \emph{naj}-subjunctive like (\ref{ex:obv-slo-naj2}), the subject also may not refer to the speaker of the directive.\footnote{\label{ftn:obv-obv}The restriction can actually be lifted in a small set of contexts, such as when the speaker shifts the responsibility of ensuring the prejacent solely to the addressee: e.g.\ \emph{You have the alarm, I need you to wake me up} (see \cite{stegovec19}: 74n33 and also \cite{oikonomou16}: 167–169 on \il{Greek}Greek), or \emph{I better be the first one on the list tomorrow (when dissatisfied with my position on the waiting
+list)} \citep[][16]{kaufmannetal23}. Another example is when ensuring the prejacent is not up to the speaker or the addressee (Ema \v{S}tarkl p.c.): e.g.\ \emph{I better win at some point (when playing Uno)}. These in fact add further support for the analysis of subject obviation presented in \sectref{subsec:deriving-obviation}, where it comes about as a binding restriction against a syntactically present perspectival center: they all exemplify a perspective shift similar to the one observed in questions (cf.~\sectref{subsec:typing}).}
+
+\ea[*]{\gll Naj igram(o) bolje!\\
+\textsc{sbjv} play.\textsc{1(pl)} better\\
+\glt Intended: `I/We should play better.'\label{ex:obv-slo-naj2}\hfill (\il{Slovenian}based on \citealt[55]{stegovec19})}
+\z
+
+\noindent Note that the obviation effect cannot be merely due to the oddness of the act of self-direction. In a scenario where a speaker may direct oneself, for example by uttering an imperative when looking in a mirror, it is still infelicitous to report that with (\ref{ex:obv-slo-naj1}) or for the speaker to instead utter (\ref{ex:obv-slo-naj2}). Conversely, the same scenario can be reported felicitously with a modal+infinitive construction like (\ref{ex:obv-modal-emb}) and the speaker may also felicitously utter (\ref{ex:obv-modal-matx}) to encourage oneself. 
+
+\ea \ea{\gll Rekel sem$_k$, da moram$_{k}$ bolje igrati.\\
+	said.\textsc{m} \textsc{aux.1} that must.\textsc{1} better play.\textsc{inf}\\
+	\glt `I$_k$ said that I$_k$ should play better.'\label{ex:obv-modal-emb}}
+   \ex{\gll Moram bolje igrati!\\
+              must.\textsc{1} better play.\textsc{inf}\\
+            \glt `I should play better!'\label{ex:obv-modal-matx}\hfill (\il{Slovenian}based on \citealt[52]{stegovec19})} 
+\z\z
+
+\noindent The obviation effect is thus a grammatical effect limited to specific types of matrix and complement clauses, such as subjunctives and imperatives, and we can summarize the classic and matrix versions of subject obviation as follows:
+
+\eanoraggedright \textsc{Subject Obviation}\\
+The subject of the complement clause may not co-refer with the subject of the matrix attitude verb.
+\z
+
+\eanoraggedright \textsc{Matrix Subject Obviation}\\
+The matrix subject may not refer to the speaker.
+\z
+
+\noindent In fact, they can be unified into a single phenomenon \citep[][]{Stegovec2017,stegovec19} given that matrix subjects and speakers are in each case the attitude holder:
+
+\eanoraggedright \is{generalized subject obviation}\textsc{Generalized (Subject) Obviation}\\
+The subject may not co-refer with the attitude holder.
+\z   
+
+\noindent We will see next that even in matrix directives the attitude holder can be changed from the speaker to the addressee, which in turn changes the obviation pattern in the same way it changes in embedded directives with the change of the matrix subject. More importantly, the phenomenon that will be examined from this perspective is the unavailability of imperative questions, which means it will open up the possibility to re-examine the traditional view of core clause types.  
+
+\subsection{Interrogative flip and implications for clause typing}
+\label{subsec:typing}
+
+%The parallel behavior of imperatives and surrogate imperative subjunctives regarding speaker distancing and subject obviation has implications for theories of clause typing, in relation to the question of whether imperatives and subjunctives are distinct clause types.
+
+Theories of clause types, such as \poscite{Sadock.Zwicky1985}, which see the major clause types -- declaratives, questions, and imperatives -- as mutually exclusive, predict that no clause can be an imperative and a question at the same time. At first glance, that prediction seems to hold not only for Slovenian, as illustrated in (\ref{ex:imp-q}) for both polar and constituent questions, but seemingly universally.
+
+\ea\label{ex:imp-q}
+\ea[*]{\gll Igraj(te) bolje?\\
+	play.\textsc{imp.2(pl)} \textsc{refl}\\
+	\glt Intended: `Should you (all) play better?'\label{ex:imp-q-pol}} 
+\ex[*]{\gll Kaj igraj(te)?\\
+	what play.\textsc{imp.2(pl)}\\
+	\glt Intended: `What should you (all) play?'\label{ex:imp-q-wh}\hfill \il{Slovenian}\citep[based on][73]{stegovec19}} 
+\z\z
+
+\noindent In Slovenian, the examples in (\ref{ex:imp-q-pol}) and (\ref{ex:imp-q-wh}) are identified as questions by their characteristic question intonation and, in the case of (\ref{ex:imp-q-wh}), the fronted wh-phrase. Additionally, they are meant to be interpreted as seeking information from the addressee, as indicated by the suggested intended meanings. 
+
+ Importantly, the absoluteness of the ban against imperative questions has been challenged, as imperatives may occur in echo or rhetorical questions \citep[][]{kaufmann-poschmannLang}, and even so-called \textsc{rising imperatives} in English \citep[][]{rudin18}, which are imperatives used with rising question intonation, although they are not true information seeking questions.\footnote{\citet{rudin18} argues that rising imperatives lack any sort of speaker commitment (see \sectref{subsec:characteristic-semantics}). This is interesting from the perspective of what happens to speaker commitment in Slovenian imperative directives, where the commitment requirement shifts to the addressee, also responsible for the change in the subject obviation pattern \citep{Stegovec2017,stegovec19}. The contexts in which subject obviation can be lifted discussed in footnote \ref{ftn:obv-obv} are also relevant here.} This means that the clause type incompatibility may still hold for imperatives and questions, although it must be limited to true information seeking questions. As we will see, even this weaker position is still too strong, as  imperatives in Slovenian may under the right circumstances occur in true information seeking questions.
+
+To substantiate this we must first go back to \emph{naj}-subjunctives, which cannot have exclusive \fst{} subjects in matrix contexts due to obviation (blocked co-reference between the subject and the speaker). Note though that unlike imperatives, \emph{naj}-subjunctives are perfectly acceptable as questions, as shown in (\ref{ex:naj-q}), and furthermore that as matrix questions they allow exclusive \fst{} subjects. 
+
+\ea \label{ex:naj-q} 
+\ea{\gll Naj igram(o) bolje?\\
+	\textsc{sbjv} play.\textsc{1(pl)} better\\
+	\glt `Should I/we play better?'\label{ex:naj-q-pol}}  
+\ex{\gll Kaj naj igram(o)?\\
+	what \textsc{sbjv} play.\textsc{1(pl)}\\
+	\glt `What should I/we play?'\label{ex:naj-q-wh}\hfill \citep[based on][72]{stegovec19}}  
+\z\z
+
+\noindent This is actually expected from the perspective of generalized obviation, where a change in attitude holder predicts a change in the obviation pattern even in matrix directives. This is because with other matrix phenomena sensitive to perspective and the identity of the attitude holder, information seeking questions switch the attitude holder from speaker to addressee \citep{garrett01,faller02,speastenny03,zu18}; this is commonly known as the \is{interrogative flip}\textsc{interrogative flip} \citep{tenny06}. This means that in the questions in (\ref{ex:naj-q}), there is no co-reference between the \fst{} subjects and the attitude holder -- the addressee. 
+
+If the restriction against \fst{} matrix \emph{naj}-directives is indeed due to the prohibited co-reference between the speaker and the subject, this also opens up the possibility that the unacceptability of the imperative questions in (\ref{ex:imp-q}) is not a matter of conflicting clause types, but actually a conspiracy involving generalized obviation, interrogative flip, and paradigmatic restrictions on imperative subjects. Namely, in questions the attitude holder is the addressee, and an imperative subject in Slovenian is either \snd{} or inclusive \fst. This means the imperative subject has to be co-referential with the attitude holder in information seeking questions, which is a configuration excluded by generalized obviation. 
+
+If this alternative view of the absence of imperative questions is correct, we expect imperative questions to be possible if somehow the attitude holder can be made to be anything but the addressee. I will show next that this indeed becomes possible in \is{sequential scope marking questions}\is{scope marking questions}\textsc{sequential scope marking questions} \citep[][]{dayal00}, which are sequences of constituent questions like (\ref{ex:scope-marking}) that despite being two matrix questions pattern in many respects with long distance questions.\footnote{Note that not all scope marking questions are like this. In some languages, like German, scope marking questions do involve syntactic embedding; see \citet{dayal93,dayal00} for discussion.}
+
+\ea \il{English}What do you think? What should we buy?\label{ex:scope-marking}\hfill \citep[][39]{dayal16}
+\z
+
+\noindent In other words, the sequence of questions in (\ref{ex:scope-marking}) is closer in meaning to the long distance question in (\ref{ex:embedded-q}) than the superficially similar sequence in (\ref{ex:two-qs}).
+
+\ea \il{English}
+    \ea What do you think (that) we should buy?\label{ex:embedded-q}
+    \ex Where did you go? What did you buy?\label{ex:two-qs}\hfill \citep[][39]{dayal16}
+\z\z   
+
+\noindent This can be shown by considering the appropriate answers to the questions. The scope marking question and the long distance question both anticipate a single answer like (\ref{ex:embedded-q}) rather than two answers, while the only felicitous response to the sequence of questions in (\ref{ex:two-qs}) are the two answers in (\ref{ex:double-a}).   
+
+\ea \il{English}
+    \ea \label{ex:single-a} I think we should buy cheese. \hfill (answer to (\ref{ex:scope-marking}) and (\ref{ex:embedded-q}))
+    \ex \label{ex:double-a} I went to the store. I bought cheese. \hfill (answer to (\ref{ex:two-qs}))\smallskip\\\hfill \citep[based on][39--40]{dayal16}
+\z\z 
+
+\noindent Slovenian also allows for sequential scope marking questions, with interesting consequences for the availability of imperative questions. In a context like (\ref{ex:context-scope}) a question like (\ref{ex:slo-ldq-imp}), with wh-extraction out of an imperative complement clause, is felicitous -- which already qualifies as a type of imperative question. More importantly, a scope marking question sequence like (\ref{ex:slo-smq-imp}) is also felicitous.
+
+\eanoraggedright\il{Slovenian}\textit{Scenario:} Paula sends me to the liquor store to buy some drinks for her party, and I go there with Marcin. By the time we get there, I've forgotten what I'm supposed to buy, so I call Paula on the phone to ask her. Marcin, who didn't hear our phone call, can then ask me:\label{ex:context-scope}
+\ea{\gll Kaj je rekla, da kupi?\\
+     what \textsc{aux.3} said.\textsc{f} that buy.\textsc{imp.2}\\ \hfill (long distance wh-extraction)
+      \glt `What did she say you should buy?'\label{ex:slo-ldq-imp}}
+\ex{\gll Kaj je rekla? Kaj kupi?\\
+	what \textsc{aux.3} said.\textsc{f} what buy.\textsc{imp.2}\\ \hfill (scope marking)
+	\glt `What did she say? What should you buy?'\label{ex:slo-smq-imp}\hfill \citep[][155]{Stegovec2017}}       
+\z\z
+
+\noindent Crucially, the second question in (\ref{ex:slo-smq-imp}) is not an embedded clause. For example, like in comparable English examples, variable binding across the two questions is impossible (see (\ref{ex:slo-binding-no})),\footnote{Ema \v{S}tarkl (p.c.) finds the variable-bound interpretation of (\ref{ex:slo-binding-no}) possible. This means there could be variation across dialects concerning the matrix/embedded status of the second clause in scope marking configurations comparable to what is observed cross-linguistically \citep[][]{dayal93,dayal00}: Ema speaks an eastern dialect (Celje), while I speak a western dialect (Nova Gorica). Since this is not a major point in this chapter, I leave exploring this possibility for future work.} unlike with long distance wh-questions (see (\ref{ex:slo-binding-yes})).
+
+\ea \il{Slovenian}
+\ea{\gll Kaj je vsak$_i$ rekel? Kaj mora$_{*i,k}$ kupiti?\\
+	what \textsc{aux.3} everyone said.\textsc{m} what must.\textsc{3} buy.\textsc{inf}\\ 
+	\glt `What did everyone$_i$ say? What should he$_{*i,k}$ buy?'\label{ex:slo-binding-no}}
+\ex{\gll Kaj je vsak$_i$ rekel, da mora$_i$ kupiti?\\
+     what \textsc{aux.3} everyone said.\textsc{m} that must.\textsc{3} buy.\textsc{inf}\\ 
+      \glt `What did everyone$_i$ say he$_i$ should buy?'\label{ex:slo-binding-yes}}       
+\z\z
+
+\noindent The second question in (\ref{ex:slo-smq-imp}) must therefore be a \textit{bona fide} information seeking matrix imperative question. If no clause could simultaneously be an information seeking question and an imperative, as expected from \poscite{Sadock.Zwicky1985} theory, then (\ref{ex:slo-smq-imp}) should not be possible. But, if questions in other contexts cannot be imperatives because of the interrogative flip combined with generalized obviation, then this is exactly what we expect, as the attitude holder in the second question in (\ref{ex:slo-smq-imp}) is not the addressee but the subject of the first question. 
+
+This also predicts that in sequential scope marking configurations, co-reference between the subject of the first question and the subject of the second question, when the latter is a directive, should never be possible. This prediction is borne out, as we see with the \emph{naj}-subjunctive in (\ref{ex:sm-obv-naj}) and the imperative in (\ref{ex:sm-obv-imp}). 
+%\ea \ea[]{\gll Kaj je$_i$ rekla, da naj kupi$_{k,*i}$?\\
+%	what \textsc{aux.3} said.\textsc{f} that \textsc{sbjv} buy.\textsc{3}\\ 
+%	\glt `What did she$_i$ say that she$_{k,*i}$ should buy?'} 
+%\ex[*]{\gll Kaj si$_i$ rekla, da kupi$_{i}$?\\
+%	what \textsc{aux.2} said.\textsc{f} that buy.\textsc{imp.2}\\ 
+%	\glt `What did you$_i$ say that you$_i$ should buy?'}  
+%\z\z 
+\ea \ea[]{\gll Kaj je$_i$ rekla? Kaj naj kupi$_{k,*i}$?\\
+	what \textsc{aux.3} said.\textsc{f} what \textsc{sbjv} buy.\textsc{3}\\ 
+	\glt `What did she$_i$ say? What should she$_{k,*i}$ buy?'\label{ex:sm-obv-naj}} 
+    \ex[*]{\gll Kaj si$_i$ rekla? Kaj kupi$_{i}$?\\
+    	what \textsc{aux.2} said.\textsc{f} what buy.\textsc{imp.2}\\ 
+    	\glt `What did you$_i$ say? What should you$_i$ buy?'\label{ex:sm-obv-imp}\hfill \citep[][168]{Stegovec2017}}  
+\z\z     
+
+\noindent In conclusion, we again see here imperatives and \emph{naj}-subjunctives behaving as a natural class. The generalized obviation analysis of the ban on imperative questions is contingent on this: in the baseline matrix exclusive \fst{} directives (\emph{naj}-subjunctives) are disallowed and inclusive \fst{} and \snd{} directives (imperatives) are allowed, while in questions the former are allowed and the latter are disallowed. More importantly, the existence of imperative questions calls into question a mutual exclusion theory of major clause types, as well as analyses such as \poscite{speastenny03} which directly link major clause types to either a speaker or an addressee perspective, and we saw that at least imperatives are flexible with respect to perspective (i.e.\ the change in attitude holder). All these generalizations will crucially have to be taken into account when considering the appropriate formal analysis of the Slovenian data in the next section.      
+   
+%\subsection{Summing up}
+%\label{subsec:sumup}
+    
+\section{Consequences for the analysis of imperatives}
+\label{sec:implications}
+
+Before we can tackle the significance of the Slovenian data from the previous two sections for the analysis of imperatives, we must consider what types of theories of imperative semantics we have at our disposal (\sectref{subsec:imperative-semantics}). I will then suggest that the empirical generalizations from Slovenian most naturally fit a performative modal theory of imperatives (\sectref{subsec:performative}), which will form the basis of the final analysis based on centered modal operators (\sectref{subsec:perspective}) and binding restrictions induced by syntactically encoded perspectival centers (\sectref{subsec:deriving-obviation}). 
+
+\subsection{A brief overview of analyses of imperative semantics}
+\label{subsec:imperative-semantics}
+
+ In this section, I provide a brief overview of theories of imperative meaning, focusing on properties relevant for the phenomena discussed in this chapter. For more comprehensive overviews, the reader is directed to: \citet{kaufmannBOOK,kaufmann21,kaufmann24} and \citet{charlow14}. In my discussion, I follow the categorization of theories suggested by \textcite{finteliatridou17} and expanded by \textcite{kaufmannNCI}, considering first what they call \is{minimal theories of imperative semantics}\textsc{minimal theories} of imperatives. 
+
+In short, minimal theories \citep[e.g.][]{portnerSALT,portner07,barker12,finteliatridou17} treat imperatives as non-modal objects and rely on imperative specific discourse principles to derive the canonical discourse functions of imperatives. The ``minimal'' part here refers to the simple denotational semantics imperatives receive in such theories; for example, in \poscite{portner07} approach, imperatives merely denote a property restricted to the addressee, as in (\ref{ex:prop}).
+
+\ea \label{ex:prop}
+\sib{leave!}${}=\lambda x : x$ is the addressee . $x$ leaves
+\z
+
+\noindent On its own, this minimal denotation cannot explain why imperatives, compared to delaratives, have the unique functions they do, so the trade-off is that the dynamic semantics/pragmatics associated with imperatives must be enriched. In other words, what is needed is a more elaborate theory of the \is{context change potential}\textsc{context change potential} \citep{Heim1982,groenendijkstokhof91,Kamp1993} of imperatives. Such a theory must explain what aspect of context imperatives specifically change upon their use and how they accomplish this.     
+
+\textcite{portnerSALT,portner07}, the proponent of perhaps the most well known minimal theory of imperatives, couches his theory in a version of the classic theory of major clause types. Each of the three major clause types has a distinct semantic type: declaratives are propositions, questions are sets of propositions, and finally imperatives are properties. The characteristic discourse functions each of them can have are then modeled in terms of three basic discourse processes of context updating: (i) declaratives update information about the world (the \is{Common Ground}\textsc{Common Ground}; \cite{Stalnaker1978,stalnaker02}), (ii) questions update information about the issues to be resolved (the \is{Question Stack/Set}\textsc{Question Stack/Set}; \cite{ginzburg95a,ginzburg95b,Roberts2012}), and (iii) imperatives specifically update information about what to do, which is encoded in the \is{To-Do Lists}\textsc{To-Do List} of each discourse participant \citep{portnerSALT,portner07}. 
+A To-Do List is pretty much what it sounds like: a list of what the discourse participant has to do. It is modeled in \citeauthor{portner07}'s theory as a discourse object, specifically: an ordering source (see \cite{kaufmann21} for discussion of similar discourse objects postulated in other theories of imperatives). As an ordering source, the To-Do list is a set of propositions, in this case created by saturating the properties that imperatives denote (see (\ref{ex:prop})) with the entity associated with the To-Do List.
+
+One of the main advantages of minimal theories is that they can easily model the functional diversity of imperatives. This is because of the underspecified denotational content of imperatives, which is by itself not limited to any particular discourse function, but which is supplemented by a richer discourse component that adjusts the canonical force of imperatives (updating To-Do Lists) to different subtypes of imperative uses. See also \textcite{finteliatridou17} on how a minimal theory can straightforwardly model acquiescence and indifference uses, which can be rather tricky to account for in other theories.  
+
+However, minimal theories also face a few unique challenges when it comes to Slovenian. The first challenge is imperatives in indirect speech reports. Recall that in a minimal theory imperative force comes about only post-compositionally when an imperative is uttered. But when an imperative is inside an indirect speech report, what is uttered is a declarative, so the theory has to be complicated to also handle imperative complement clauses (see \cite{portner07} on applying his To-Do List theory to Korean imperatives in indirect speech reports). A bigger challenge is posed by imperative questions. Minimal theories need some way of linking imperatives and questions to appropriate discourse processes, but how does that work if a clause is both a question and an imperative? \textcite{portnerSALT,portner07} specifically bases the linking procedure on the three major clause types (of distinct semantic types), and as discussed in \sectref{subsec:typing}, imperative questions are highly problematic for three-way major clause type theories.      
+
+Although it is entirely possible that a minimal theory can be adjusted to accommodate for Slovenian, we will see that the remaining two types of theories can achieve this with very minor adjustments. The first are \is{strong theories of imperative semantics}\textsc{strong theories} \citep[e.g.][]{schwagerDISS,kaufmannBOOK,grosz09nels,condoravdi-lauer12cssp}, which seek to derive the canonical meaning and function of imperatives from a modal layer in the semantics of the imperative and general, as opposed to imperative-specific, discourse principles. The trade-off relationship between the denotational component and discourse principles is reversed here with respect to minimal theories: the denotation of imperatives is enriched with a modal component, while the discourse principles governing the effect of imperatives on the context are the same general principles that are used with declaratives. 
+The other group is \is{intermediate theories of imperative semantics}\textsc{intermediate theories} \citep[e.g.][]{portner97,roberts15,oikonomou16}, which differ from strong theories mainly in not treating imperative marking as the realization of a specific modal element, but rather assume that imperative marking is merely licensed by modal operators. This allows more flexibility in modeling the different types of modality imperatives can express. 
+
+Since the fine grained differences in the predictions made by different strong and intermediate theories do not play a role in the phenomena discussed in this chapter, I only discuss one specific strong theory in detail below. Namely, \poscite{kaufmannBOOK} \is{performative modal analysis of imperative semantics}\textsc{performative modal analysis} which not only avoids the challenges that minimal theories have with embedded imperatives and imperative questions, but also provides a good basis for deriving the generalized obviation effect.
+
+\subsection{The performative modal analysis}
+\label{subsec:performative}
+
+The performative modal approach of \textcite{kaufmannBOOK} (building on \cite{lewis79permission,schwagerDISS,ninan05}) takes as a starting point the fact that modal expressions like (\ref{ex:should-leave}) can be used performatively just like imperatives; cf.~(\ref{ex:leave}).
+
+\ea \il{English}
+    \ea[]{You must call me!\label{ex:should-leave}}
+    \ex[]{Call me!\label{ex:leave}\hfill \citep[][45, 91]{kaufmannBOOK}}
+\z\z    
+
+\noindent The proposal is that at least at the at-issue level imperatives are \is{modal expressions}modal expressions \is{conversational backgrounds}\citep[modeled in the approach of][]{kratzer81,Kratzer1991,kratzer12}, so the imperative operator (\textsc{imp}), hypothesized to scope over the prejacent and be expressed as imperative marking, is equivalent in its denotation to a necessity modal like \emph{must}:\footnote{Although not crucial for the analysis I adopt later, the issue of the modal force is a major point of discussion in the literature on modal analyses of imperatives. For example, \citet{kaufmannBOOK} argues that, in the absence of explicit modification, the modal force of imperative operators is always universal, \citet{oikonomou16}, on the other hand, argues that even unmodified imperatives have existential force, \citet{medeirosDISS} argues that imperatives are weak necessity modals, while \citet{grosz09nels} takes them to be variable in quantificational force.} 
+\ea\label{ex:imp-op} \sib{must}$^c={}$\sib{\textsc{imp}}$^c=\lambda f \,.\, \lambda g \,.\, \lambda p \,.\, \lambda w \,.\, (\forall w'\in O(f,g,w))[p(w')]$
+\ea {$f=$ \is{modal base}modal base (the body of information)}
+\ex {$g=$ \is{ordering source}ordering source (criteria for comparing worlds compliant with $f$)}
+\ex {where $O(f,g,w)$ is defined as the set of worlds conforming to $f$ at $w$ (i.e., in $\bigcap f(w)$) that are the best according to $g$ at $w$.}
+\z\z
+
+\noindent Crucially a modal expression like (\ref{ex:should-leave}) can, but does not have to, be used \is{performativity}performatively, whereas an imperative counterpart like (\ref{ex:leave}) can only be used performatively. \textcite{kaufmannBOOK} argues that this asymmetry is due to a difference at the 
+ non-at-issue level: imperatives, but not plain modal expressions, trigger presuppositions that are only satisfied if the expression is used in a performative way. The presuppositions associated with imperatives are listed in (\ref{ex:presupp}) (based on the informal phrasing used in \cite{kaufmannstegovec19}).
+ 
+\eanoraggedright \label{ex:presupp}
+\eanoraggedright \is{Practicality (presupposition)}\textsc{Practicality:} Imperatives are used to address decision problems, spe\-cifically, the
+question of `what should the addressee do?'
+\ex \is{Answerhood (presupposition)}\textsc{Answerhood:} Imperatives have to provide an answer to such a contextually given decision problem, that is, the state of affairs named in an imperative has to single out as optimal a course of action from a set of chooseable alternatives.
+\ex \is{Endorsement (presupposition)}\textsc{Endorsement:} Imperatives commit the speaker to the endorsement of that choice (speakers cannot use imperatives to single out actions as optimal according to other sources they might disagree with).
+\z\z  
+
+\noindent Practicality presupposes that at the moment of utterance a decision problem is unresolved (e.g.\ `the addressee leaves' or `the addressee doesn't leave'), while Answerhood presupposes that the imperative provides an answer to the decision problem. Together these prevent imperatives from being felicitous when a decision problem has already been resolved (see (\ref{ex:slo-decisive}) in \sectref{subsec:characteristic-semantics}). Related to this, the Endorsement presupposition is responsible for the speaker commitment effect and consequently the ban on speaker distancing (see (\ref{ex:dist})--(\ref{ex:slo-dist-emb2}) in \sectref{subsec:characteristic-semantics}). 
+
+ In sum, if any of the presuppositions is not met, using the imperative results in presupposition failure and thus infelicity. The need to meet all three presuppositions is also what limits imperatives to uses where a  \emph{That's (not) true} follow-up is infelicitous, creating the impression that imperatives lack truth-values (see \cite[][4.3]{kaufmannBOOK} for discussion). This contrasts with \citeauthor{portnerSALT}'s (\citeyear{portnerSALT,portner07}) approach, where the lack of truth-values is taken at face value and is one of the reasons imperatives are taken to be properties rather than propositions.    
+
+For current purposes, what is most important is that explaining embedded uses of imperatives becomes fairly straightforward under the performative modal analysis, as it basically amounts to the embedding of a modal expression and the performative aspect can be retained in embedded contexts due to it being part of the prosuppositional component of meaning (see \cite[][Ch.\,6]{kaufmannBOOK}; \citeyear{kaufmann21}: 5.1; \cite{stegoveckaufmann}  for more detailed discussion). However, what still remains unexplained in relation to Slovenian is the generalized subject obviation effect, and related to this, how this analysis extends to \emph{naj}-subjunctives.
+
+\subsection{Centered modality and individual anchors}
+\label{subsec:perspective}
+
+The analysis presented in this section is a condensed version of the proposals in \citet{Stegovec2017,stegovec19}. I will postpone discussion of the broader implications of the analysis for the questions raised in the chapter's introduction until \sectref{sec:discussion}, focusing here mostly on a simplified version of the key technical assumptions.
+
+The analysis in question primarily builds on the parallelism between speaker distancing and subject obviation. Namely, the individual with which the subject of the directive may not co-refer in the case of the obviation effect is also the individual to whom the distancing ban applies to: 
+
+\ea \ea \emph{Matrix directives}\\ no speaker distancing, no co-reference with speaker
+    \ex \emph{Embedded directives}\\ no matrix subject distancing, no co-reference with matrix subject
+\z\z 
+
+\noindent One way in which this parallel can be interpreted is that the individual to whom the imperative commitments are anchored is syntactically encoded as a pronoun in directive clauses and this allows it to interact with the binding principles. Since the presence of this pronoun must somehow be tied to the characteristic semantic and pragmatic properties of imperatives, a natural way to enforce its presence is to make it a requirement of the imperative modal operator.
+%In other words, the ``endorser'', which changes depending on the matrix versus embedded use, behaves as if it is syntactically present for the purposes of binding.  
+%\textcolor{red}{Do I have data from interrogative flip?}
+%\ea \textcolor{red}{Naj grem? Ampak no\v{c}em iti. / \#Ampak no\v{c}e\v{s} da grem. (Reverse --- distancing first?)}
+%\z 
+
+The gist of the idea is that the modal component of imperatives is a bit more complex than in corresponding modal expressions, and more parallel to what has been proposed for the semantics of subjunctive mood. For example, \textcite{quer98,quer01} suggests that the semantics of subjunctives involves a shift in the model of evaluation of the proposition, where truth is relativized to models within a context and to individuals -- \is{individual anchors}\textsc{individual anchors} (see also \cite{farkas92b,giannakidou98} for related ideas). \is{centered modality}In matrix contexts, the individual anchor is the speaker, while in embedded contexts the individual anchor is the matrix subject. The proposal is that directive semantics (unifying imperatives and \emph{naj}-subjunctives) is the result of a directive modal operator (\textsc{dir}), whose semantic type requires it to combine with an individual type element (i.e.\ the individual anchor). The denotation of the \textsc{dir} operator is presented in (\ref{ex:dir})--(\ref{ex:dir-fg}), which you will note is only a minor modification of the denotation of \textsc{imp} from (\ref{ex:imp-op}). 
+
+\ea\label{ex:dir} \sib{\textsc{dir}}$^c=\lambda f \,.\, \lambda g \,.\, \lambda p \,.\, \lambda x\,.\, \lambda w \,.\, (\forall w'\in O(f_x,g_x,w))[p(w')]$
+\z
+
+\ea\label{ex:dir-fg} \ea \textsc{Centered modal base:}\\ {$f_x=$ the body of information available to $x$}
+\ex \textsc{Centered ordering source:}\\ {$g_x=$ criteria for comparing worlds compliant with $f_x$ \emph{endorsed} by $x$}
+\ex {where $O(f_x,g_x,w)$ is defined as the set of worlds conforming to $f_x$ at $w$ that are the best according to $g_x$ at $w$.}
+\z\z    
+
+\noindent The key changes from \textsc{imp} are: (i) the operator is not limited to imperatives, (ii) the modal base and ordering source are centered to an individual variable $x$, (iii) Endorsement is part of the ordering source. The latter capitalizes on the idea that subject obviation and the distancing ban are connected, and also the difference observed in Slovenian embedded directives between speaker distancing and the restriction to unresolved decision problems (cf.~Practicality \& Answerhood in (\ref{ex:presupp})). Recall from \sectref{subsec:characteristic-semantics} that while speaker commitment is always tied to the original speaker (i.e.\ the attitude holder), the unresolved decision problem requirement is tied to the actual context. In other words, the Practicality and Answerhood presuppositions must be met at the point of utterance even in a speech report, but Endoresement will always be tied to the original speaker.
+
+It should be noted that the idea of centered modality is not novel \citep[see among many others][]{hacquardDISS,hacquard10nals,stephenson07}, but the difference is that in the case of directives the individual to which the conversational modal backgrounds are centered must be syntactically realized in the same way an argument or a verb would be.
+Specifically, the individual variable $x$ must be filled in via lambda abstraction, which is argued to be achieved via a silent \is{PRO}PRO element.
+
+
+\subsection{Deriving generalized subject obviation}
+\label{subsec:deriving-obviation}
+
+The introduction of PRO into the structure has significant consequences for binding possibilities, ultimately yielding generalized subject obviation, which puts this analysis in the realm of analyses that derive subject obviation as a syntactic binding restriction \citep[e.g.][]{picallo85,kempchinsky86,kempchinsky09,rizzi90b,progovac93,bianchi01}.\footnote{\textcite{kaufmann19} also assumes the individual anchor is part of directive semantics, but not realized syntactically, deriving obviation instead as a discourse effect. Interestingly, some languages do seem to overtly realize a version of perspectival PRO; see \citet{burukina23b} on Mari.} However, this particular approach draws an explicit parallel between \is{control infinitives}control infinitives and embedded directives, the PRO in a directive is controlled by the attitude holder, as illustrated in (\ref{ex:persp-control}), just as it is controlled in an infinitival control complement clause, illustrated in (\ref{ex:control}).\footnote{\label{ftn:control}Although I leave out the details for space reasons, the mechanism by which the attitude holder ends up controlling PRO in \citet{Stegovec2017,stegovec19} is \textsc{self-ascription} of a property denoted by the complement clause \citep[following][]{lewis79,chierchia87,pearson12,pearson16}.} 
+
+\ea \label{ex:cntrl} \ea[]{He$_i$ said [\textsubscript{CP} that [ PRO$_i$ [ \textsc{dir} [\textsubscript{TP} $\langle$\emph{you$_k$}$\rangle$ [\textsubscript{VP} leave.\textsc{imp.2} ]]]]]\label{ex:persp-control}}
+    \ex[]{He$_i$ expected [\textsubscript{CP} [\textsubscript{TP} PRO$_i$ [ to [\textsubscript{VP} win ]]]]\label{ex:control}} 
+\z\z 
+
+\noindent As the PRO in (\ref{ex:persp-control}) is not an argument in the traditional sense, like PRO in (\ref{ex:control}), and it essentially encodes the attitude holder, or the person whose perspective is being reported, this type of control configuration may be called \is{perspectival control}\textsc{perspectival control} and the silent pronoun in question a \is{perspectival PRO}\textsc{perspectival PRO}.
+
+The result of having perspectival PRO in the structure is also that it is a potential binder for the principles of \is{Binding Theory}\textsc{Binding Theory} \citep{chomsky81}. In this case, what is relevant is \is{Binding Principle B}\textsc{Principle B}, which in the case of control infinitives like (\ref{ex:prinb-inf}) prevents co-reference between PRO and an object pronoun within its binding domain (indicated by the wavy underline). By analogy, the perspectival PRO in the embedded imperative in (\ref{ex:prinb-imp}) induces a Principle B violation when co-referential with the subject pronoun.\footnote{The exact nature of the binding domain is not crucial for the account as long as the CP is comprised of two binding domains: one containing the subject and objects, and the other containing the subject and perspectival PRO. In \textcite{stegovec19} this is implemented in terms of Principle B being phase-bound, the two domains being the $v$P and the CP phase respectively \citep{chomsky00}. The privileged status of the subject as being in both binding domains can be attributed to its base position at the edge of the $v$P phase which makes it visible from the CP phase.}
+
+\ea \label{ex:prinb}\ea[*]{He$_i$ promised [\coloruwave{gray}{\,PRO$_i$ to shave him$_i$} ]\label{ex:prinb-inf}}
+    \ex[*]{He$_i$ said [ that\coloruwave{gray}{\,PRO$_i$ \textsc{dir} [ $\langle$\emph{you}$_i\rangle$} help.\textsc{imp} him ]]\label{ex:prinb-imp}}
+\z\z 
+
+\noindent The principle is similar with matrix directives, the difference is only in how PRO ends up being controlled. Without a matrix attitude verb, this takes place by way of \is{attitude operators}\textsc{attitude operators} \citep[see e.g.][]{pearson12}, causing PRO to refer to the speaker in non-questions (via the \is{Commit operator}\textsc{Commit} operator) and the addressee in questions (via the \is{Ask operator}\textsc{Ask} operator). This results in plain directives disallowing exclusive \fst{} subjects (co-reference between speaker and subject pronoun), as illustrated in (\ref{ex:commit}), and directives in questions disallowing \snd{} and inclusive \fst{} subjects (co-reference between addressee and subject pronoun), as illustrated in (\ref{ex:ask}).
+
+\ea \label{ex:commit}\ea[]{[ \textsc{Commit}(speaker$_i$) [\coloruwave{gray}{\,PRO$_i$ \textsc{dir} [ $\langle$\emph{you}$_k\rangle$} leave.\textsc{imp} ]]] \hfill (\textit{Pojdi!})}
+\ex[*]{[ \textsc{Commit}(speaker$_i$) [\coloruwave{gray}{\,PRO$_i$ \textsc{dir} [ $\langle$\emph{I}$_i\rangle$} leave.\textsc{1} ]]] \hfill (\textit{*Naj grem!})}
+\z\z
+\ea \label{ex:ask}\ea[]{[ \textsc{Ask}(addressee$_k$) [ PRO$_k$ \textsc{dir} [ \emph{pro}$_i$ leave.\textsc{1} ]] \hfill (\textit{Naj grem?})}
+\ex[*]{[ \textsc{Ask}(addressee$_k$) [ PRO$_k$ \textsc{dir} [ \emph{pro}$_k$ leave.\textsc{imp.2} ]] \hfill (\textit{*Pojdi?})}
+\z\z 
+
+\noindent Recall also that directives are imperatives in Slovenian only with \snd{} and inclusive \fst{} subjects. Because of this a binding violation will always occur with imperative questions. As discussed above in \sectref{subsec:typing}, this makes impossible the use of imperatives in matrix questions. However, it also predicts that the ban will be voided even in questions should the \textsc{Ask} operator be absent, since then the perspectival PRO may also refer to entities other than the addressee. This is, in fact, what we see in sequential scope marking questions.
+
+Because the questions in a sequential scope marking sequence are not in a syntactic subordination relation, one must adopt a \is{indirect dependency (approach to scope marking questions)}\textsc{indirect dependency} analysis of scope marking \textcite{dayal93,dayal00,dayal16}. In this analysis the two questions combine only at the level of semantics through standard functional application at the level of sets of (centered) propositions: the two question CPs combine with each other as shown in \figref{ex:scope-tree}, with CP$_1$ quantifying over CP$_2$, as in (\ref{ex:scope-tree-2}). 
+
+\begin{figure}
+    \centering
+     \begin{forest} M [CP$_3$ [CP$_1$ [what$_j$] [C$'$ [did $\langle$\emph{he}$_i\rangle$ say $t_j$,roof]]] [CP$_2$ [what$_k$] [C$'$ [PRO$_i$ \textsc{dir} $\langle$\emph{you$_l$}$\rangle$ buy.\textsc{imp} $t_k$,roof]]]]
+	    \end{forest}
+    \caption{An \textsc{indirect dependency} analysis of wh-scope marking}
+    \label{ex:scope-tree}
+\end{figure}
+
+\ea\label{ex:scope-tree-2}
+{\sib{CP$_3$}$=\lambda T_{\stb{\stb{e,\stb{e,t}},t}} \,.\,$\sib{CP$_1$} (\sib{CP$_2$})}\smallskip
+\z     
+
+\noindent Without going into unnecessary details, the gist of the analysis is that \figref{ex:scope-tree} has more in common semantically with embedded questions than with matrix ones.\footnote{For a more detailed discussion of this analysis see \textcite{Stegovec2017}, and for an accessible overview of the indirect dependency analysis of scope marking questions in the context of a broader theory of the semantics of questions see \textcite[][Ch.\ 2]{dayal16}.} The way CP$_1$ quantifies over CP$_2$ is analogous to how the attitude verb \emph{say} quantifies over clausal complements in (\ref{ex:cntrl})--(\ref{ex:prinb}), which is also how the attitude holder comes to control PRO (more precisely it self-identifies as PRO; see footnote \ref{ftn:control} and \cite{lewis79,chierchia87,pearson12,pearson16}). The result is that PRO in the second question co-refers with the subject of the first question, just as it does with the matrix subject in embedded directives. This contrasts with matrix questions, where \textsc{Ask} causes PRO to always refer to the addressee.   
+
+In sum, the updated performative modal analysis, though the assumption that the centered modal operator requires the presence of a perspectival PRO, can connect a number of seemingly unconnected empirical generalizations: generalized subject obviation, speaker distancing asymmetries, the absence of imperative questions, as well as the existence of imperative questions in very specific contexts. More importantly, other than the introduction of perspectival PRO, the other assumptions are all based on independently proposed analyses of control infinitives, speech act/attitude operators, and scope marking questions.     
+
+
+
+\section{Conclusion, implications, and open questions}
+\label{sec:discussion}
+
+Imperatives in Slovenian can occur in unexpected contexts, such as embedded clauses and, under certain conditions, even information seeking questions. I argued that these clauses are not merely superficially imperative, but that they retain the characteristic semantic and pragmatic properties of imperatives, such as the speaker distancing ban, failure to pass the \emph{That's (not) true}-test, and their use being restricted to contexts where they provide a solution to an unresolved decision problem. If my assessment is on the right track, this calls for a re-evaluation of some widely held beliefs about imperatives. For example, it cannot be that the characteristic meaning of imperatives is directly tied to them being limited to matrix contexts. Similarly, if imperatives are one of the main clause types, then the existence of imperative questions tells us that a theory of clause types cannot be based on the mutual exclusivity of the main clause types. 
+
+However, my discussion of embedded imperatives was mostly limited to imperatives as complement clauses under attitude verbs. Another key instance of embedded imperatives in Slovenian is imperatives in relative clauses. For a detailed discussion of the unique restrictions observed with imperative relative clauses in Slovenian, the reader is directed to \citet{kaufmannstegovec19}. 
+
+The other main claim was that \emph{naj}-subjunctives in Slovenian behave semantically and pragmatically like imperatives. The only difference is that they are paradigmatically limited to subjects that imperatives cannot be used with: exclusive \fst{} and \trd{} subjects. Importantly, the full pattern of generalized subject obviation can only be observed once imperatives and \emph{naj}-subjunctives are considered together. I argued based on this that they should be analyzed as involving the same modal operator as the source of their characteristic meaning.    
+
+This proposal opens up the possibility that other surrogate imperative constructions may only superficially differ from imperatives. That is, they may involve the same kind of modal operator as imperatives, but differ in their morphosyntactic realization. The first place to look for more evidence for this position would be by examining the surrogate imperatives used in complement clauses in languages where embedded imperatives are unavailable, such as the majority of other Slavic languages (see \sectref{subsec:cross-slavic}). In fact, this kind of position has already been independently proposed in the past by \citet{kempchinsky86,kempchinsky09} for \il{Spanish}Spanish, \citet{socanac17} and \citet{kaufmannetal23} for \il{Serbian}Serbian, and \citet{socanac17} for Slavic more broadly. The prediction is that such clauses should also retain the aspects of imperative meaning that I reviewed in \sectref{subsec:characteristic-semantics}.
+
+Of course, one can also take the exact opposite analytical path, and use the cross-linguistic rarity of embedded imperatives, coupled with subjunctives often substituting imperatives in this context, to argue that Slovenian embedded imperatives are actually underlyingly a type of subjunctive clause \citep[as argued by][]{starkl23}. Under this type of analysis one then has to explain how subjunctives can attain the characteristic semantic and pragmatic properties of imperatives in the relevant contexts. If I am correct, then embedded imperatives may be cross-linguistically more pervasive than previously thought, they are merely disguised as surrogate forms. If the alternative analysis is correct, then many imperative clauses might actually be only wearing an imperative disguise. The hope is that more extensive cross-linguistic comparative research on the subject can help us develop a way to better tease apart these two analytical options.
+        
+
+\section*{Abbreviations}
+
+\begin{tabularx}{.5\textwidth}{@{}lQ}
+	\textsc{1}&first person\\	
+    \textsc{2}&second person\\
+	\textsc{3}&third person\\
+	\textsc{all}&allative\\
+    \textsc{aux}&auxiliary\\
+	\textsc{acc}&accusative\\
+	\textsc{c}&complementizer\\
+    \textsc{dat}&dative\\
+    \textsc{dir}&directive\\
+	\textsc{f}&feminine\\
+	\textsc{gen}&genitive\\
+	\textsc{imp}&imperative\\
+	\textsc{inf}&infinitive\\
+	\textsc{inst}&instrumental\\
+\end{tabularx}%
+\begin{tabularx}{.5\textwidth}{lQ@{}}
+	\textsc{loc}&locative\\
+    \textsc{m}&masculine\\
+    \textsc{mod}&modal\\
+	\textsc{n}&neuter\\	
+    \textsc{neg}&negation\\
+    \textsc{pfv}&perfective\\ 
+    \textsc{pl}&plural\\
+	\textsc{prtc}&particle\\
+	\textsc{ptcp}&participle\\
+	\textsc{q}&question marker\\
+	\textsc{prs}&present tense\\
+	\textsc{refl}&reflexive\\
+	\textsc{sbjv}&subjunctive\\
+	\textsc{sg}&singular\\
+%	&\\ % this dummy row achieves correct vertical alignment of both tables
+\end{tabularx}
+
+\section*{Acknowledgments}
+%Place your acknowledgements here and funding information here.
+I would like to thank three anonymous reviewers and the editors of this volume, Berit Gehrke and Radek \v{S}im\'ik, for their valuable comments, feedback, and patience. Additionally, I would like to thank Paula Fenger, Ema \v{S}tarkl, and Magda Kaufmann for discussion, comments, and suggestions at different stages of this project. Magda in particular has helped me greatly over the years, as a teacher, co-author, and author of many works on imperatives that keep informing my work on the subject. All remaining errors in the chapter are my own. 
+
+\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+
+\end{document}

@@ -1,0 +1,775 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.22078579}
+\author{Ljudmila Geist\orcid{0000-0001-7907-4958}\affiliation{University of Stuttgart}}
+% REPLACE THE ABOVE WITH YOU AND YOUR CO-AUTHORS, YOUR AFFILIATIONS, AND YOUR ORCID NUMBERS
+% rules for affiliation: If there's an official English version, use that (find out on the official website of the university); if not, use the original
+% orcid doesn't appear printed; it's metainformation used for later indexing
+
+\SetupAffiliations{mark style=none}
+% comment in (i.e. remove the % sign at the beginning of the line) the above line if you are a single author or all authors have the same affiliation
+
+%\lehead{Šimík, Gehrke, Lenertová, Meyer, Szucsich \& Zaleska}
+% in case the running head with authors exceeds one line (which is the case in this example document), use one the above method to turn it into a single line; otherwise comment the line above out with % and ignore it
+
+\title{Indefiniteness and specificity in Slavic languages}
+% REPLACE THE ABOVE WITH YOUR PAPER TITLE
+% provide a shorter version of your title in case it doesn't fit a single line in the running head
+% in this form: \title[short title]{full title}
+
+\abstract{This chapter focuses on the expression of indefiniteness and specificity in Slavic. Although Slavic languages do not have a general unmarked indefinite article like Germanic or Romance languages, they employ several markers of indefiniteness such as indefinite pronouns. Indefinite pronouns have been commonly assumed to mark different types of specificity. I summarize formal approaches to some indefiniteness markers in Russian and other Slavic languages and argue that specificity distinctions marked by different indefiniteness markers can be captured by the concept of referential anchoring. This chapter also gives an overview of research on emerging indefinite articles in different Slavic languages and provides a case study on the emergence of the indefinite determiner \textit{odin} `one' in Russian. By applying the notion of referential anchoring to the analysis of \textit{odin}, I show that this notion is useful as a general framework for modelling the contribution of indefiniteness markers of different kinds.
+
+\keywords{indefiniteness, specificity, indefinite article, indefinite pronoun, emergence of the indefinite article, epistemic indefinites}
+}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[6]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+% \input{template-osl.tex}
+% Just comment out the line above (place % at its beginning) and start writing your own document
+% WRITE DIRECTLY HERE, INTO main.tex, DO NOT START YOUR OWN tex FILE!
+
+% START WRITING HERE
+
+\section{Expression of Indefiniteness}
+
+The category of indefiniteness has traditionally been understood as a category complementary to definiteness. Although definite NPs have some feature +definite that qualifies them for a definite interpretation, indefinite NPs should lack this feature and are interpreted as {\textminus}definite. There is a debate in the literature about what this distinguishing feature should be (see the overview in \citealt{Abbott2006,Heim2011,Brasoveanu.Farkas2016}, \citetv{chapters/02_borik}). Two main suggestions have been made: the traditionally assumed feature is uniqueness \citep{Russell1905,Roberts2003}, another one is familiarity \citep{Christophersen1939,Kamp1981,Heim1982}.
+
+In the uniqueness approach, the definite article is assumed to indicate the existence of one and only one entity satisfying the descriptive condition. The indefinite article, by contrast, does not signal non-uniqueness. Rather, it indicates neutrality with respect to uniqueness in the sense that it requires at least one entity to fit the description. In the familiarity approach to definiteness, indefinite NPs are assumed to introduce a new referent into the discourse, while definites have an already familiar discourse referent. Whereas the referent of the indefinite is unknown to the hearer, it may be known to the speaker. Although novelty of referents and neutrality with respect to uniqueness introduced by indefinites are distinct concepts, they often go together.
+
+The category of indefiniteness has traditionally been understood as a category contributed by indefinite articles like \textit{a} in English. The formal representation of the English indefinite article has been debated. In the classical accounts of indefiniteness since Russell and Frege, which will be used as a starting point in this chapter, it has been assumed that indefinite NPs make an existential contribution to the truth conditions of clauses, i.e., they can be translated as existential quantifiers \citep{Russell1905}. For instance, the sentence in \REF{geist:ex:gertrud} can be assigned the logical form in \REF{geist:ex:gertrud-b}.
+
+\ea\label{geist:ex:gertrud}\ea Gertrud bought a bicycle.\label{geist:ex:gertrud-a}
+\ex $\exists x[\textsc{bicycle}(x)\wedge \textsc{bought}(\textsc{Gertrud}, x)]$\label{geist:ex:gertrud-b}
+\z\z
+
+\noindent\REF{geist:ex:gertrud} can be paraphrased as `There is something that is a bicycle and that was bought by Gertrud'. This logical representation of indefiniteness by existential quantification has been challenged by cross-linguistic studies that show that languages have more than one expression of indefiniteness. To capture the large variety of markers of indefinites available in different languages, the representation of indefiniteness as an existential quantification has been enriched. 
+
+This chapter focuses on indefiniteness in Slavic languages. As is well known, Slavic languages do not have a general, all-purpose, or unmarked indefinite article unlike Germanic or Romance languages. However, \citet{Haspelmath1997} shows in his influential typological study that even languages without indefinite articles have several explicit markers of indefiniteness such as indefinite pronouns. Indefinite pronouns often consist of two morphemes: a bare indefinite root, the same as the corresponding interrogative pronoun or a generic noun like English \textit{thing} or \textit{body}, and a suffix or prefix acting as a series marker, cf. English \mbox{\textit{some-},} \textit{ever}-, and \textit{any}-series. Used as determiners, indefinite pronouns may indicate more fine-grained distinctions than those marked by the indefinite article in English. \citet{Haspelmath1997} identifies nine different functions that indefinite pronouns may display in different languages and orders them in an implicational map. He provides such implicational maps for indefinite pronouns in some Slavic languages as well. \tabref{geist:tab:haspelmath} shows examples from three languages for comparison.
+
+\begin{table}
+    \centering
+    \begin{tabularx}{\textwidth}{llC@{~~}C@{~~}C@{~~}C@{~~}C@{~~}C@{~~}C@{~~}C@{~~}C}
+    \lsptoprule
+    % &&\textsc{sk}&\textsc{su}&\textsc{irr}&\textsc{q}&\textsc{cond}&\textsc{cmpr}&\textsc{fc}&\textsc{in}&\textsc{dn}\\\midrule
+    % &&\cellcolor{black!10}\textsc{sk}&\cellcolor{black!10}\textsc{su}&\cellcolor{black!10}\textsc{irr}&\cellcolor{black!10}\textsc{q}&\cellcolor{black!10}\textsc{cond}&\cellcolor{black!10}\textsc{cmpr}&\cellcolor{black!10}\textsc{fc}&\cellcolor{black!10}\textsc{in}&\cellcolor{black!10}\textsc{dn}\\
+         \multicolumn{4}{l}{Bulgarian}\\
+         &\multicolumn{4}{l}{\textit{nja-}}\\
+         &&\cellcolor{black!10}\textsc{sk}&\cellcolor{black!10}\textsc{su}&\cellcolor{black!10}\textsc{irr}&\cellcolor{black!10}\textsc{q}&\cellcolor{black!10}\textsc{cond}\\
+         &\multicolumn{4}{l}{\textit{-toidae}}\\
+         &&&&&&\cellcolor{black!10}\textsc{cond}&\cellcolor{black!10}\textsc{cmpr}&\cellcolor{black!10}\textsc{fc}&\cellcolor{black!10}\textsc{in}&\\
+         &\multicolumn{4}{l}{\textit{ni-}}\\
+         &&&&&&&&&\cellcolor{black!10}\textsc{in}&\cellcolor{black!10}\textsc{dn}\\
+         \midrule
+         \multicolumn{4}{l}{Polish}\\
+         &\multicolumn{4}{l}{\textit{-ś}}\\
+         &&\cellcolor{black!10}\textsc{sk}&\cellcolor{black!10}\textsc{su}&\cellcolor{black!10}\textsc{irr}&\cellcolor{black!10}\textsc{q}&\cellcolor{black!10}\textsc{cond}&&&\cellcolor{black!10}\textsc{in}\\
+         &\multicolumn{4}{l}{\textit{-kolwiek}}\\
+         &&&&&\cellcolor{black!10}\textsc{q}&\cellcolor{black!10}\textsc{cond}&\cellcolor{black!10}\textsc{cmpr}&\cellcolor{black!10}\textsc{fc}&\cellcolor{black!10}\textsc{in}&\\
+         &\multicolumn{4}{l}{\textit{ni-}}\\
+         &&&&&&&&&&\cellcolor{black!10}\textsc{dn}\\
+         \midrule
+         \multicolumn{4}{l}{Russian}\\
+          &\multicolumn{3}{l}{\textit{koe-}}\\
+         &&\cellcolor{black!10}\textsc{sk}\\
+         &\multicolumn{3}{l}{\textit{-to}}\\
+         &&&\cellcolor{black!10}\textsc{su}&\cellcolor{black!10}\textsc{irr}&\cellcolor{black!10}\textsc{q}&\cellcolor{black!10}\textsc{cond}&\\
+         &\multicolumn{3}{l}{\textit{-nibud'}}\\
+         &&&&\cellcolor{black!10}\textsc{irr}&\cellcolor{black!10}\textsc{q}&\cellcolor{black!10}\textsc{cond}&\\
+         &\multicolumn{3}{l}{\textit{-libo}}\\
+         &&&&\cellcolor{black!10}\textsc{irr}&\cellcolor{black!10}\textsc{q}&\cellcolor{black!10}\textsc{cond}&\cellcolor{black!10}\textsc{cmpr}&&\cellcolor{black!10}\textsc{in}&\\
+         &\multicolumn{3}{l}{\textit{-by to ni bylo}}\\
+         &&&&&&\cellcolor{black!10}\textsc{cond}&\cellcolor{black!10}\textsc{cmpr}&&\cellcolor{black!10}\textsc{in}&\\
+         &\multicolumn{4}{l}{\textit{ljuboj/ugodno}}\\
+         &&&&&&&&\cellcolor{black!10}\textsc{fc}&&\\
+         &\multicolumn{4}{l}{\textit{ni-}}\\
+         &&&&&&&&&&\cellcolor{black!10}\textsc{dn}\\
+    \lspbottomrule
+    \end{tabularx}
+    \caption{Indefiniteness markers in Bulgarian, Polish and Russian based on \citet[268, 271, 273]{Haspelmath1997}; \textsc{sk} = specific known, \textsc{su} = specific uknown, \textsc{irr} = irrealis non-specific, \textsc{q} = question, \textsc{cond} = conditional, \textsc{cmpr} = comparative, \textsc{fc} = free choice, \textsc{in} = indirect negation, \textsc{dn} = direct negation}
+    \label{geist:tab:haspelmath}
+\end{table}
+
+The comparison between the three Slavic languages reveals differences with respect to the number and use of pronominal series: In Bulgarian and Polish all functions are covered by three pronominal series, while in Russian the same functions are shared between seven pronominal series.
+
+The nine functions are identified on the basis of four distinctions. The first one concerns the question whether the indefinite can have a negative interpretation under the scope of direct and/or indirect negation: e.g., Russian and Polish have a \textit{ni-}series that must be licensed under the scope of direct negation (i.e. sentence negation). The second one is the specific vs. non-specific distinction which separates the two first functions on the left of the table from the rest. An expression can be assumed to be (scopally) specific if the speaker presupposes the existence and unique identifiability of its referent. The referent introduced by a specific indefinite is established in the discourse and is not affected by operators in the clause such as question and conditional or by modal operators subsumed under the term “irrealis” in \tabref{geist:tab:haspelmath}. The third distinction concerns the type of context in which the indefinite with non-specific meaning is licensed. As shown in \tabref{geist:tab:haspelmath}, the Russian \textit{-libo, -nibud’} and \textit{by-to-ni-bylo-}series cover different contexts in this area. The last distinction has to do with the identifiability of the referent of the indefinite expression by the speaker. It is applied only to scopally specific indefinites and divides them into those whose referent is known by the speaker and those whose referent is unknown even to the speaker, not only to the hearer. The former group is sometimes called epistemically specific and the latter one epistemically non-specific.
+
+A look at \citeauthor{Haspelmath1997}’s implicational maps for Russian in comparison to Polish and Bulgarian reveals that Russian has the largest inventory of indefinite pronouns and seems to be the only language that has a special pronominal series for the leftmost function on the implicational map, which Haspelmath calls “specific known”.
+
+Overall, \citet{Haspelmath1997} gives a useful overview over the possible distinctions of indefinite pronouns, however, his survey does not provide enough empirical information about individual pronominal series. Furthermore, other indefiniteness markers such as the indefinite article are not considered. Slavic languages are particularly interesting for in-depth studies, since first, they provide a wide range of series of indefiniteness markers, and second, an indefinite article is emerging out of the numeral for `one'. In the last decades, there have been some comprehensive studies on indefinite pronouns and on emerging indefinite articles in Slavic languages. These studies do not only contribute to a more differentiated view on the types of indefiniteness markers and their functions but also further develop formal tools to capture the fine-grained distinctions within the concept of indefiniteness. In some analyses, the representation of indefinites as existential quantifiers has been enriched while in others it has been questioned and replaced by other formal devices such as choice functions of different sorts. The goal of this chapter is to review research on indefinite pronouns and indefinite articles in the Slavic languages. 
+
+As with any overview, certain difficult decisions had to be made concerning the selection of the material. To give justice to the formal complexity of papers analysing the functions of indefinites I decided to narrow the thematic scope of this article to indefinite expressions that cover functions on the left and middle part of \citeauthor{Haspelmath1997}’s implicational map. This is a serious limitation, because important work has also been carried out on indefinite expressions covering different functions on the right side of the map such as negative pronouns and free choice items. However, I found that it is impossible to adequately present this influential work and at the same time give a detailed survey of other types of indefinite expressions. Thus I will not discuss several prominent comprehensive contributions on negative pronouns and negative polarity (see \citetv{chapters/03_docekal} for a survey; see \citealt{Blaszczak2001,Blaszczak2003} on Polish; \citealt{Docekal2011} on Czech; \citealt{Progovac1993a} on Serbo-Croatian; \citealt{Pereltsvaig2000,Pereltsvaig2004} on Russian) and the significant work on free choice indefinites in Czech -- \citet{Strachonova2016}. I urge the reader to consult these independently. Another limitation concerns the limitation in time. This chapter considers relevant literature till 2019, when it was written, but see the Epilogue for recent literature.
+
+\largerpage
+The chapter is structured as follows. In \sectref{geist:sec:2} I discuss two notions of specificity which are used to describe the differences between three types of indefiniteness markers in Russian. \sectref{geist:sec:3} presents analytical approaches to these types of indefinites provided in the literature. This section also introduces the idea of referential anchoring as a unified formal mechanism for capturing different readings of indefinite pronouns. In \sectref{geist:sec:4} I address research on indefinite pronouns used as indefinite determiners in different Slavic languages. \sectref{geist:sec:5} summarizes research on emerging indefinite articles in different Slavic languages. I also present a case study on the indefinite determiner \textit{odin} in Russian and show how the concept of referential anchoring used in the formal treatment of indefinite pronouns in the previous section can be applied in the analysis of the meaning of \textit{odin}. \sectref{geist:sec:6} concludes.   
+
+\section{Two types of specificity and three specificity markers in Russian}\label{geist:sec:2}
+
+\subsection{Two types of specificity}\label{geist:sec:2.1}
+
+This subsection introduces two types of specificity which will be used to analyse indefiniteness markers in Russian in the next subsection.
+
+Specificity is a nominal category which is independent of indefiniteness. While indefiniteness is a discourse pragmatic property of NPs, specificity is a referential category which, following \citet{Partee1970} and \citet{vonHeusinger2002}, can be assumed to apply not only to indefinite but also to definite NPs. In English, indefiniteness and specificity can be expressed separately by complex determiners such as \textit{a certain}, where the indefinite article indicates indefiniteness and the adjective \textit{certain} specificity. But in many cases, specificity is not explicitly marked and indefinite NPs are ambiguous, cf. the specific and non-specific interpretation of the indefinite \textit{a student} in the classic example from \citet{Fodor.Sag1982} in \REF{geist:ex:fodor-sag}.
+
+\ea \textit{A student in the syntax class} cheated on the final exam.\label{geist:ex:fodor-sag}
+\ea Specific interpretation of \textit{a student in the syntax class} implies that\label{geist:ex:fodor-sag-a}\\
+the speaker has a particular referent in mind.
+\ex	Non-specific interpretation of \textit{a student in the syntax class} implies that\label{geist:ex:fodor-sag-b}\\
+the speaker has no particular referent in mind.
+\z\z
+
+\noindent The type of specificity that distinguishes the reading in \REF{geist:ex:fodor-sag-a} from reading \REF{geist:ex:fodor-sag-b} has been called \textsc{epistemic specificity} \citep{Farkas2002} since it concerns speaker’s knowledge and speaker’s ignorance (or indifference) about the referent of the indefinite. This type of specificity emerges in contexts without any operator. According to \citet{Farkas1995} epistemic specificity requires the speaker (or another relevant agent) to have a uniquely identifiable individual in mind as the referent of the indefinite.\footnote{Note that an epistemically specific indefinite is not the same as an epistemic indefinite. The term \textsc{epistemic indefinite} refers to a subtype of epistemically specific indefinites, namely those which signal speaker's ignorance about the referent (see \sectref{geist:sec:4}).}
+
+Another type of specificity, the so-called \textsc{scopal specificity}, is attested in distributive contexts with extensional quantifiers such as \textit{every} but also with strong intensional operators such as modals and \textit{look for}; see \REF{geist:ex:scopal-spec-bicycle}.
+
+\ea\label{geist:ex:scopal-spec-bicycle}\ea Scopally specific interpretation of \textit{a bicycle}:\\
+Gertrud is looking for \textit{a bicycle}. It disappeared on Friday.\label{geist:ex:scopal-spec-bicycle-a}
+\ex Scopally non-specific interpretation of \textit{a bicycle}:\\
+Gertrud is looking for \textit{a bicycle}. She can’t find one for my size.\label{geist:ex:scopal-spec-bicycle-b}
+\z\z
+
+\noindent If the value of the indefinite \textit{a bicycle} is fixed independently of the domain of the operator expression \textit{looking for}, the indefinite is interpreted as specific, that is, taking wide scope \REF{geist:ex:scopal-spec-bicycle-a}. If the value of the indefinite is dependent on the domain of the operator, as in \REF{geist:ex:scopal-spec-bicycle-b}, the referent receives a non-specific interpretation, that is, it takes narrow scope. The scopally specific NP may be epistemically specific (i.e., identifiable by the speaker) or not. Under a scopally non-specific interpretation the referent of the NP is not identifiable by the speaker and hence the NP is also epistemically non-specific. Thus, while scopally non-specific NPs are also epistemically non-specific, scopally specific NPs may be epistemically specific or not.
+
+\largerpage
+Since scopally specific indefinites require additional contextual information for their interpretation and have wide scope with respect to operators in the clause, they cannot be adequately represented as plain existential quantifiers. Without any additional requirements, the existential quantifier representation is only appropriate for scopally non-specific NPs that take narrow scope. In his Quantifier Raising account \citet{May1977} tried to preserve the uniform treatment of indefinites as existential quantifiers even for scopally specific NPs. He assumes that specific indefinites are moved by Quantifier Raising to a position above the intensional operator to take wide scope. However, \citet{Fodor.Sag1982} showed that the Quantifier Raising mechanism does not work for all types of specific indefinites and suggested an ambiguity approach, according to which the indefinite article in English is ambiguous between the existential quantifier (non-specific use) and an indexical expression (specific use). Subsequent investigation of indefiniteness markers led to the conclusion that the binary distinction specific/non-specific is not sufficient to capture the fine-grained distinctions indicated by different indefiniteness markers. New devices such as choice functions \citep{Winter1997,Kratzer1998} and a domain restriction of existential quantifiers (\citealt{Portner2002}, \citealt{Schwarzschild2002a}), among others, were introduced to provide a more adequate representation of different types of specific indefinites. 
+
+To conclude, the interpretation of indefinites can vary at least with respect to two parameters: the identifiability of the referent by the speaker (epistemic specificity) and the scope relative to other operators in the clause (scopal specificity).\footnote{Besides these two specificity distinctions, \citet{vonHeusinger2011} identifies further specificity distinctions concerning partitivity, topicality, referentiality, noteworthiness and discourse prominence. Since these further specificity notions did not prominently play a role in the literature on indefinites in Slavic languages, I will not discuss them in this chapter.} In the next section I will show how these specificity notions have been used to explain the differences between pronominal series in Russian. 
+
+\subsection{Three specificity markers in Russian}\label{geist:sec:2.2}
+
+As mentioned above, Russian has more pronominal series than e.g. Bulgarian and Polish, thus the language can make more subtle distinctions, which has been challenging linguists for many years. This subsection focuses on three pronominal series in Russian: the \textit{koe-, -to} and \textit{-nibud’}-series that attracted the most attention in the literature. I will show that these series specify the reading of the indefinite with respect to the two types of specificity introduced above. I will rely on the main empirical generalizations about these pronominal series agreed upon in the literature (\citealt{Dahl1970}, \citealt{Paduceva1985}/\citeyear{Paduceva2010}, \citealt{Haspelmath1997,Pereltsvaig2004,Pereltsvaig2008,Yanovich2005,Geist2008,Kagan2011,Onea.Geist2011}; a.o.) First I will compare the wide-scope indefiniteness marker \textit{koe-} with \textit{-to}, then turn to the narrow scope indefinites with \textit{-nibud’}.
+
+\largerpage[2]
+\subsubsection{Epistemic specificity: Russian \textit{koe-} vs. \textit{-to}}
+
+\subsubsubsection{Speaker identifiability}
+
+The two indefiniteness markers \textit{koe-} and \textit{-to} differ in identifiability. The difference in interpretation of \textit{a student} in \citeauthor{Fodor.Sag1982}'s \citeyear{Fodor.Sag1982} original example in \REF{geist:ex:fodor-sag} above can be disambiguated in Russian by the use of the appropriate indefinite pronoun as in \REF{geist:ex:koe-to}.\footnote{All examples in this chapter are in English or Russian, unless explicitly indicated otherwise. The absence of an explicit source indicates that the example has been constructed by myself.}
+
+\ea\label{geist:ex:koe-to}
+\ea\label{geist:ex:koe-to-a}
+\gll \textit{Koe-kakoj} student spisyval na ėkzamene.\\
+\textsc{koe}-which student cheated on exam\\
+\glt `A student [known to the speaker] cheated on the exam.'
+\ex\label{geist:ex:koe-to-b}
+\gll \textit{Kakoj-to} student spisyval na ėkzamene.\\
+which-\textsc{to} student cheated on exam\\
+\glt `A student [not known to the speaker] cheated on the exam.'\\\hfill\citep[156]{Geist2008}
+\z\z
+
+\ea Continuation compatible with \REF{geist:ex:koe-to-b} but not with \REF{geist:ex:koe-to-a}:\label{geist:ex:koe-to-cont}\\
+\gll Ja pytajus’ vyjasnit’, kto ėto byl.\\
+I try find.out who this was\\
+\glt ‘I am trying to figure out who it was.’
+\z
+
+\noindent According to \citet[45]{Haspelmath1997}, among others, the \textit{koe-}series indicates that the speaker has a particular referent in mind, i.e., the referent of the DP is in some sense anchored to the speaker. By using the \textit{-to}-series, by contrast, the speaker conveys that he/she cannot identify the referent. This difference shows up in the combination with the continuation in \REF{geist:ex:koe-to-cont}, which indicates that the speaker cannot uniquely identify the referent. \REF{geist:ex:koe-to-cont} can only be combined with \REF{geist:ex:koe-to-b} containing \textit{-to} and not with \REF{geist:ex:koe-to-a} containing \textit{koe-}. The fact that \textit{-to}-items indicate non-identifiability of the referent by the speaker is revealed by the infelicity of \REF{geist:ex:koe-to-padu}.
+
+\largerpage[2]
+\ea[\#]{\label{geist:ex:koe-to-padu}
+\gll Ja choču spet’ \textit{kakoj-to} romans.\\
+I want sing which-\textsc{to} romantic.song\\
+\glt ‘Now I’m singing you a particular romantic song [I do not know which one it is].’\hfill \citep[211]{Paduceva2010}}
+\z
+
+\noindent The singer’s statement in \REF{geist:ex:koe-to-padu} implies that he/she already knows what romantic song he/she wants to sing, i.e., the song must be identifiable by him/her. However, \textit{kakoj-to} indicates that the singer cannot identify it, leading to a contradiction. Furthermore, \citet{Kagan2011} shows that if the indefinite description contains modifiers which contribute additional information, the \textit{-to}-marker is less acceptable. These observations support the assumption that referents of indefinites with \textit{-to} are not speaker-identifiable. Thus, the \textit{koe-}series indicates what has been called epistemic specificity while the \textit{-to}-series marks epistemic non-specificity.
+
+\subsubsubsection{Scope under intensional operators}
+
+Indefinites with \textit{-to} take wide scope with respect to intensional operators contributed by the future tense or intensional predicates such as \textit{iskat’} ‘look for’ and \textit{chotet’} ‘want’ \citep{Ioup1977,Pereltsvaig2000}. \textit{Koe-}indefinites behave similarly to \textit{-to}-indefinites in this respect \citep{Geist2008,Kagan2011}.
+
+\ea\label{geist:ex:koe-to-scope-geist}
+\gll Igor’ chočet ženit’sja na \minsp{\{} \textit{koe-kakoj} / \textit{kakoj-to}\} studentke.\\
+Igor wants marry on {} \textsc{koe}-which {} which-\textsc{to} student\\
+\glt ‘Igor wants to marry a [specific] student.’\hfill \citep[155]{Geist2008}
+\ea Continuation compatible with \REF{geist:ex:koe-to-scope-geist} $\rightarrow$ wide scope\\
+\gll On znakom s nej dva goda.\\
+he known with her two years\\
+\glt ‘He has known her for two years.’
+\ex Continuation not compatible with \REF{geist:ex:koe-to-scope-geist} $\rightarrow$ narrow scope\\
+\gll On poka ni s kem ne poznakomilsja.\\
+he still \textsc{ni} with who \textsc{neg} met\\
+\glt ‘He hasn't met anybody yet.’
+\z\z
+
+\subsubsubsection{Scope under extensional operators}
+
+In contexts with extensional quantifiers, such as with universal quantifiers, \textit{koe-} always indicates wide scope. Indefinites with \textit{-to} are more flexible. They may take wide scope, like \textit{koe-}indefinites:
+
+\ea
+\gll Petja každyj raz provožaet \minsp{\{} \textit{koe-kakuju} / \textit{kakuju-to}\} ženščinu.\\
+Petja every time escorts {} \textsc{koe}-which  {} which-\textsc{to} woman\\
+\glt ‘Petja always escorts a certain woman.’\\
+Intended reading: the same woman $\rightarrow$ wide scope\hfill \citep[56]{Kagan2011}
+\z
+
+\noindent However, \textit{-to}-indefinites may also have narrow scope.
+
+\ea\label{geist:ex:koe-to-scope-kagan2}
+\gll Petja každyj raz nachodit \minsp{\{\#} \textit{koe-kakoe} / \textit{kakoe-to}\} opravdanie.\\
+Petja every time finds {} \textsc{koe}-which {} which-\textsc{to} excuse\\
+\glt ‘Petja every time finds some excuse.’\\
+Intended reading: different excuses $\rightarrow$ narrow scope\hfill \citep[56]{Kagan2011}
+\z
+
+\noindent Under the most natural reading of \REF{geist:ex:koe-to-scope-kagan2}, Petja finds a different excuse every time. Thus, \textit{kakoe-to} triggers a distributive or co-varying/functional interpretation (see more on the functional interpretation of \textit{-to} in the next subsection). This interpretation is not available for \textit{koe-kakoe} in \REF{geist:ex:koe-to-scope-kagan2}. 
+
+\subsubsection{Scopal specificity: Russian \textit{-to} vs. \textit{-nibud'}}
+
+In this section we will introduce the narrow-scope marker \textit{-nibud’} and characterize it with respect to the parameters used in the previous subsection. We will compare it with \textit{-to}, leaving \textit{koe-} aside for simplicity. 
+
+\subsubsubsection{Speaker (non-)identifiability}
+
+\textit{-Nibud’} differs from the other two indefiniteness markers since it can only occur in the scope of some operators, e.g. the opaque predicate \textit{chotet’} ‘want’ as in \REF{geist:ex:to-nibud1}. Since it is impossible to use \textit{-nibud’-}indefinites in a simple declarative sentence, they can be called polarity determiners \citep{Pereltsvaig2000} and are dependent indefinites \citep{Farkas1997,Farkas2002,Brasoveanu.Farkas2011}. Dependent indefinites are assumed to require an appropriate licensor and to never take widest scope. The continuation indicating the non-identifiability of the referent by the speaker, which is compatible with the \textit{-to}-series, is also compatible with \textit{-nibud’}, hence both indicate epistemic non-specificity. However, the \textit{-to} marker is compatible with an interpretation of \REF{geist:ex:to-nibud1} that the student is identifiable to Igor, i.e., the student may be identifiable to a discourse participant other than the speaker \citep{Kagan2011}. In contrast, the \textit{-nibud’} marker indicates the non-identifiability of the individual to the speaker, or to any other individual for that matter.
+
+\ea\label{geist:ex:to-nibud1}
+\gll Igor’ chočet ženit’sja na \minsp{\{} \textit{kakoj-to} / \textit{kakoj-nibud’}\} studentke.\\
+Igor wants marry on {} which-\textsc{to} {} which-\textsc{nibud'} student\\
+\glt ‘Igor wants to marry a student.’\hfill \citep[155]{Geist2008}
+\z
+
+\subsubsubsection{Scope under operators and quantifiers}
+
+In \REF{geist:ex:to-nibud1} the \textit{nibud’-} variant can be continued by `he didn’t get to know any student' indicating narrow scope with respect to the modal. Indefinites accompanied by \textit{-nibud’} must have the narrowest possible scope also with respect to quantifiers, cf. \REF{geist:ex:to-nibud2}. The wide scope reading is not available. \textit{-Nibud’-}indefinites have been assumed to be non-specific (see \citealt{Dahl1970}).
+
+\ea\label{geist:ex:to-nibud2}
+\gll Každyj student v našej gruppe voschiščaetsja \textit{kakim-nibud’}   professorom.\\
+every student in our group admires which-\textsc{nibud'} professor\\
+\glt ‘Every student in our group admires a professor.’
+\ea Unavailable: the same professor for all students $\rightarrow$ wide scope
+\ex Available: different professors $\rightarrow$ narrow scope
+%\hfill (source)
+\z\z
+
+\noindent Since \textit{-to}-indefinites can also take narrow scope relative to universal quantifiers, the question arises what distinguishes them from \textit{-nibud’}. \citet{Onea.Geist2011} note that the difference lies in the type of dependency between the indefinite marked with \textit{-to} or \textit{-nibud’}, and the quantifier expression, see \REF{geist:ex:to-nibud3}.
+
+\ea\label{geist:ex:to-nibud3}
+\ea\label{geist:ex:to-nibud3a}
+\gll Každyj	rebënok	polučit	na	Roždestvo \minsp{\{\#} \textit{kakoj-nibud’} / \textit{kakoj-to}\}	podarok.\\
+every	child	will.get	for	Christmas {} which-\textsc{nibud'} {} which-\textsc{to} gift\\
+\glt ‘Every child will get a certain gift for Christmas.’
+\ex A felicitous continuation to \REF{geist:ex:to-nibud3a}\label{geist:ex:to-nibud3b}\\
+\gll A imenno tot, kotoryj on ožidaet.\\
+and namely that which he expect\\
+\glt `Namely the one which he expected.'
+%\hfill (source)
+\z\z
+
+\noindent The natural interpretation of \REF{geist:ex:to-nibud3a} is that gifts are distributed to all the children in the context. The bound variable pronoun \textit{on} ‘he’ in the continuation forces a systematic relation: different instances of the gifts must co-vary with different children. The function which assigns gifts to children is made explicit in the continuation  \REF{geist:ex:to-nibud3b}: children get not just any gift but each child receives the one he/she expected.
+
+The function requires a systematic choice of value for the variable introduced by the indefinite NP. Functions of this type that can be readily accessed or named have been called natural functions \citep[212]{Chierchia1993} or systematic functions. Interpretations which rely on systematic functions are known as functional readings (see \citealt{Kratzer1998,Schwarzschild2002a}; a.o.). In the context of such a natural or systematic function \textit{-to} is preferred over \textit{-nibud’}.
+
+\citet{Onea.Geist2011} also provide experimental evidence for the hypothesis that the functional dependency or co-variation established by \textit{to-} is systematic and often contextually determined, while the dependency established by \textit{-nibud’} is non-systematic and not determined. Thus, the semantic characteristics of the \textit{koe-}, \textit{-to}, and \textit{-nibud’} markers of indefiniteness can be summarized as in \tabref{geist:tab:scope-koe-to-nibud}.
+
+\begin{table}
+    \centering
+    \begin{tabularx}{.95\textwidth}{p{3.45cm}p{1.55cm}@{~~}X@{~~}X}
+    \lsptoprule
+         Parameter&\textit{koe-}&\textit{-to}&\textit{-nibud'}\\\midrule
+         referent identifiability by the speaker\medskip&yes&no&no\\
+         scope with respect to intensional operators\medskip&wide&wide&narrow\\
+         scope with respect to extensional operators&wide&wide or narrow\newline (functional)&narrow\newline (non-functional)\\
+    \lspbottomrule
+    \end{tabularx}
+    \caption{Properites of \textit{koe-, -to}, and \textit{-nibud’}}
+    \label{geist:tab:scope-koe-to-nibud}
+\end{table}
+
+\section{Analytical approaches to indefiniteness markers in Russian}\label{geist:sec:3}
+
+Different theoretical approaches have been used to capture the meaning of pro\-nominal indefiniteness markers in Russian. In \sectref{geist:sec:kagan-gorish-yanov} I will introduce different analyses of \textit{koe-, -to}, and \textit{-nibud’} in the literature. In \sectref{geist:sec:anchoring} I will present the formal concept of referential anchoring as a unified formal device for capturing three pronominal series. In \sectref{geist:sec:completing} I discuss new experimental findings from acceptability studies which challenge previous analyses.
+
+\subsection{Approaches by \citet{Kagan2011}, \citet{Gorishneva.Zimmermann2011}, and \citet{Yanovich2005}}\label{geist:sec:kagan-gorish-yanov}
+
+\citet{Kagan2011} develops a formal analysis of epistemic specificity indicated by \textit{koe-} and \textit{-to} in terms of speaker identifiability, which is formalized as a restriction on the set of possible worlds that represent the speaker’s view of reality. More specifically, speaker identifiability is analyzed as a condition on the relative scope of an existential quantifier that ranges over individuals and a universal quantifier that quantifies over a set of possible worlds introduced in the context. \citeauthor{Kagan2011} captures the difference between \textit{koe-} and \textit{-to} in terms of felicity conditions on their use.  
+
+\eanoraggedright Felicity Condition Imposed by \textit{koe-} and \textit{-to} Items \citep[71, 74]{Kagan2011}\smallskip\label{geist:ex:kagan}\\
+ Let $S$ be a sentence that is uttered by speaker $A$ which embeds an NP containing a \textit{koe-} or \textit{-to} item. Let $P$ be the property contributed by the content of the NP, and let $Q$ be another property. Then $S$ is felicitous iff
+ \ea For \textit{koe-}:\label{geist:ex:kagan-a}\\
+$\exists y\forall w[w\in E_{A,w^0}\rightarrow P(y,w)\wedge Q(y,w)]$
+\ex For \textit{-to}:\label{geist:ex:kagan-b}\\
+$\neg\exists y\forall w[w\in E_{A,w^0}\rightarrow P(y,w)\wedge Q(y,w)]$
+\z\z
+
+\noindent The modal base $E$ is the set of worlds that represents the speaker’s beliefs about the actual world $w^0$. The condition for \textit{koe-} in \REF{geist:ex:kagan-a} means that an NP referent is speaker-identifiable if and only if there is an individual who has the properties ascribed to its referent in every possible world within the speaker’s epistemic base $E$. The condition for \textit{-to} in \REF{geist:ex:kagan-b} is a negation of \REF{geist:ex:kagan-a}. It ensures that the speaker cannot identify an individual with properties $P$ and $Q$. \textit{-To} indicates that the properties may be satisfied by different individuals in different worlds.
+
+\citet{Kagan2011} assumes that this difference in identifiability between \textit{koe-} and \textit{-to} is based on \textsc{conventional implicatures} in the sense of \citet{Potts2007}. In his system conventional implicatures constitute a meaning dimension which is independent of the so-called at-issue meaning, or “what is said.” Conventional implicatures are secondary speaker-oriented entailments. \citet{Kagan2011} assumes that \textit{koe-} encodes the conventional implicature that the speaker can identify the referent, while \textit{-to} encodes the conventional implicature that the speaker is not able to identify the referent.
+
+One of the advantages of this approach is that it unifies epistemic specificity in terms of speaker identifiability with scopal specificity. In both cases, specificity is treated as a condition on scope, with the specific reading corresponding to the wide scope of the existential operator and the non-specific reading to the negated wide scope (narrow and intermediate scope) of the existential operator. Thus, epistemic specificity contributed by \textit{koe-} vs. \textit{-to} can be considered as a special case of scopal specificity. 
+
+\citet{Gorishneva.Zimmermann2011} suggest an analysis of \textit{koe-, -to}, and \textit{-nibud’} that enriches the existential quantifier representation by relating it to modal subjects such as the speaker or another salient subject, and by this to mental models, similarly to \citet{Kagan2011}.
+
+\citet{Yanovich2005} analyzes \textit{-to} and \textit{-nibud’} as choice-functional variables (\citealt{Kratzer1998}; among many others); see the representation of \textit{-to}:
+
+\ea \sib{-to}${}=\lambda P\,f(P)$, where the speaker knows $f$\hfill\citep[320]{Yanovich2005}\label{geist:ex:yanovich}
+\z
+
+\noindent In \REF{geist:ex:yanovich} the choice function $f$ takes some set as an argument and returns an individual member of this set. Under a choice-functional representation, indefinite NPs are analyzed as $e$-type expressions. The choice function should either stay free and be supplied by the context \citep{Kratzer1998} or be existentially closed at some compositional level \citep{Reinhart1997}. In the former case, the wide scope readings with \textit{-to} are accounted for, in the latter the narrow scope reading. However, the fact that \textit{-to} can never have narrow scope with respect to intensional operators is not explained by this analysis.
+
+Since \textit{-nibud’} can only occur in the scope of a licenser, this dependency on the licenser should be captured. To do that, \citeauthor{Yanovich2005} uses a Skolemized choice function. A Skolemization operation adds the licenser argument to a choice function making it of type $\stb{e,\stb{et,e}}$. Thus a choice from the set denoted by the argument of the choice function is relativized to that argument: the function can pick different individuals from the set for different values of the licensing variable.\largerpage
+
+\ea \sib{-nibud'}${}=\lambda x\lambda P\,f(x,P)$, where the speaker knows $f$\\\hfill\citep[316]{Yanovich2005}\label{geist:ex:yanovich2}
+\z
+
+\noindent The variable $x$ is an implicit Skolem argument of the indefinite. Yanovich relies on the descriptive generalization also made in \citet{Pereltsvaig2008}, namely that the Skolem argument $x$ (the “domain variable” in Pereltsvaig’s terms) bound by a quantifier can be of different types: object, time and world. \citet{Onea.Geist2011}, however, show that e.g. object-level variables are not appropriate domain variables for \textit{-nibud’}-indefinites. Informants accept sentences with \textit{-nibud’} and a universal quantifier ranging over objects only if some modal operator is also available in the clause.
+
+\ea\label{geist:ex:anti-yan}
+\gll \minsp{\{*(} Verojatno)\} každyj mal’čik poceloval \textit{kakuju-nibud’} odnoklassnicu.\\
+{} probable every boy kissed which-\textsc{nibud'} classmate\\
+ \glt (Intended:) ‘(Probably), every boy kissed some classmate.’
+ %\hfill (source)
+\z
+
+\noindent To account for this, the domain variable $x$ in the representation of indefinites with \textit{-nibud’} must be restricted to possible worlds or situations, as suggested by \citet{Onea.Geist2011}.  
+
+Since \citet{Yanovich2005} only analyses the pronominal series \textit{-to} and \textit{-nibud’}, it is not clear whether other series can be accounted for with the same formal device. How can the difference in identifiability between \textit{-to} and \textit{koe-} be captured in the choice-functional approach? This question left open by \citet{Yanovich2005} is answered in \citet{Geist2008}, who adjusts the choice-functional approach in order to capture differences between the three pronominal series \textit{koe-, -to}, and \textit{-nibud’}. 
+
+\subsection{Specificity as referential anchoring}\label{geist:sec:anchoring}
+
+The discussion of the three pronominal series in Russian in this chapter makes it clear that specificity has a rather fine-grained structure that cannot be adequately described via the binary feature specific/non-specific. It seems more promising to consider that the referent introduced by the indefinite NP can depend on different expressions in the clause such as quantifiers, modals or even discourse participants such as the speaker. In order to account for such dependencies \citet{Geist2008} and \citet{Onea.Geist2011} use the notion of \textsc{referential anchoring} introduced by \citet{vonHeusinger2002}. According to the concept of referential anchoring, the referent of specific and non-specific indefinites is referentially linked to some item in the discourse, its anchor. Referential anchoring can be modeled as a Skolemized or parameterized choice function in the sense of \citet{Kratzer1998} and as used by \citet{Yanovich2005} for the analysis of \textit{-nibud’} (see \sectref{geist:sec:kagan-gorish-yanov}). Skolemized choice functions, as shown in \REF{geist:ex:anchoring1a}, were used in \citet{Geist2008} to analyse all three types of indefinites in Russian. In \REF{geist:ex:anchoring1a}, $f$ is a free function variable, representing a contextually salient partial function from individuals (the subscripted anchor variable $x$) to choice functions. The Skolemized choice function $f_x$ takes some set as an argument and returns an individual member of this set functionally dependent on the argument $x$. As the representational format of choice functions leads to problems discussed in the literature, \citet{Onea.Geist2011} suggest another formalism for capturing referential anchoring, which preserves the original representation of indefinites as existential quantifiers; see \REF{geist:ex:anchoring1b}.
+\largerpage[1]
+
+\ea\label{geist:ex:anchoring1}
+\ea $\lambda P\,f_x(P)$\hfill\citep[159]{Geist2008}\label{geist:ex:anchoring1a}
+\ex $\lambda P\lambda Q\exists y[P(y)\wedge f(x)=y\wedge Q(y)]$\hfill\citep[221]{Onea.Geist2011}\label{geist:ex:anchoring1b}
+\z\z
+
+\noindent In \REF{geist:ex:anchoring1b} referential anchoring is treated as a domain narrowing mechanism: the functional dependency $f(x) = y$ is integrated into the restrictor of an existential quantifier, narrowing down the domain of quantification of the indefinite to a singleton (note that $f$ is just a function). The anchor variable can be specified as a discourse participant, e.g. the speaker, identified with the referent of another phrase in the clause or bound by a quantifier. It can be assumed that every indefinite DP takes scope below its anchor. The representation in \REF{geist:ex:anchoring1b} can be taken as a general format for the representation of pronominal series expressing not only scopal non-specificity, as suggested by \citet{Yanovich2005}, but also epistemic specificity and non-specificity. For the semantic analysis of specificity markers, \citeauthor{Onea.Geist2011} assume that indefinites are underspecified with respect to the effects of specificity, but explicit markers such as indefinite pronouns may fix different specific readings by imposing constraints on the binding of the anchor argument. They assume that \textit{koe-} lexically encodes referential anchoring of the indefinite to the speaker by the function $f$ that must be spelled out as “intends to refer to $y$ at $t$”; see the simplified representation for \textit{koe-} in \REF{geist:ex:onea-geist-koe}.
+
+\ea\label{geist:ex:onea-geist-koe}
+\sib{koe-}$^c=\lambda P\lambda Q\exists y[P(y)\wedge f(\cnst{speaker}(c))=y\wedge Q(y)]$\\\hfill (\citealt[214]{Onea.Geist2011}, simplified; for a revision see \sectref{geist:sec:5.3})
+\z
+
+\noindent The binding of the implicit argument of \textit{koe-} to the speaker yields identifiability by the speaker and necessary wide scope. The obligatory identification of the anchor with the speaker is part of the at-issue meaning of \textit{koe-}. The inference at stake cannot be cancelled, as shown in \REF{geist:ex:koe-anti-kagan}. The non-cancellability of this inference is also compatible with the analysis as a conventional implicature suggested by \citet{Kagan2011}.
+
+\ea\label{geist:ex:koe-anti-kagan}
+\gll Maša govorila s \textit{koe-kakim} professorom. \minsp{\#} No ja ego ne znaju.\\
+Mary spoke with \textsc{koe}-which professor {} but I him \textsc{neg} know\\
+\glt Intended: ‘Mary spoke with a certain professor. But I don’t know him.’\\\hfill\citep[216]{Onea.Geist2011}
+\z
+
+\noindent To capture the occurrences of \textit{-nibud’} in the above-mentioned contexts \citeauthor{Onea.Geist2011} extend \citeauthor{Yanovich2005}'s (\citeyear{Yanovich2005}) analysis of \textit{-nibud’}-indefinites, which treats them as dependent on the anchor variable $s$ which must be bound by a universal quantifier. In \citet{Onea.Geist2011} this idea is implemented as in \REF{geist:ex:onea-geist-nibud}.
+
+\ea \sib{-nibud'}${}=\lambda P\lambda Q\exists y[P(y)\wedge f(s)=y\wedge Q(y)]$\smallskip\\
+(it is presupposed that situation $s$ is not part of the actual world $w^0$)\\\hfill\citep[222]{Onea.Geist2011}
+\label{geist:ex:onea-geist-nibud}
+\z 
+
+\noindent \textit{-Nibud’} lexicalizes the constraint that the anchor must be a situation that has some modal flavor, the specification of which the authors leave for further research. This lexical entry can account for the licensing of \textit{-nibud’} in modal sentences, since the anchor, situation $s$, does not belong to the actual world. Furthermore the preference to use \textit{-nibud’} in situations which do not provide a systematic function need not be added as an additional requirement but already follows from its lexical entry: functions from situations to individuals do not seem to be systematic.
+
+Referential anchoring as domain narrowing can also be used for the representation of \textit{-to}. Different interpretational possibilities of \textit{-to}-indefinites can be captured.
+
+\ea \sib{-to}${}=\lambda P\lambda Q\exists x[P(x)\wedge f(y)=x\wedge Q(x)]$\smallskip\\
+(where $y$ is contextually determined and it is presupposed that $f$ is a systematic contextually determined function)\\\hfill\citep[221]{Onea.Geist2011}
+\label{geist:ex:onea-geist-to}
+\z
+
+\noindent The variability of the behavior of \textit{-to} with extensional operators can be explained as follows: If the anchor variable is bound by the extensional quantifier, the indefinite takes narrow scope and is interpreted as co-varying. If the anchor is bound by some higher discourse referent, which can be explicit as in \REF{geist:ex:koe-to-scope-geist} or remain implicit, the \textit{-to}-indefinite receives a wide scope interpretation. The entry in \REF{geist:ex:onea-geist-to} also immediately predicts that \textit{-to} cannot get a narrow scope reading under an intensional operator such as \textit{chotet’} ‘want’. Assuming that such operators quantify over worlds or situations, \textit{-to} cannot enter functional dependencies with such variables not only because worlds and situations were of the wrong type to be anchors for \textit{-to}, but because functions from worlds and situations to individuals are rather non-systematic.
+
+The question is now how to capture the fact that the referent of \textit{-to}-indefinites is not identifiable by the speaker. The contrast between \textit{-to} and \textit{-koe} plays a crucial role in the explanation. Like \textit{-to}, \textit{koe-} involves a systematic function, in this case “intend to refer to $x$ at $t$”. Thus, \textit{koe-} contrasts with \textit{-to} in speaker identifiability. The inference that the referent of \textit{-to}-indefinites cannot be identifiable by the speaker can be derived as a conversational implicature. Since \textit{koe-} lexically signals that the speaker is the referential anchor, it can be considered to be more informative. Therefore, if \textit{-to} is used, the hearer can infer that the conditions for \textit{koe-}, namely speaker anchoring, are not met. As was assumed in \citet{Geist2008}, the non-identifiability of \textit{-to} referents is a standard scalar implicature since \textit{koe-} logically implies \textit{-to}. This implicature can be cancelled or reinforced as in \REF{geist:ex:to-cancel}.
+
+\ea\label{geist:ex:to-cancel}
+\gll Igor’ govoril s \textit{kakoj-to} ženščinoj.\\
+Igor spoke with which-\textsc{to} woman\\
+\glt ‘Igor spoke with some woman.’
+\ea Reinforcement\\
+\gll Ja dejstvitel’no ne znaju kto ėto byl.\\
+I really \textsc{neg} know who it was\\
+\glt ‘I really don’t know who it was.’
+\ex Cancellability\\
+\gll Mne kažetsja, ja eë znaju.\\
+me seems I her know\\
+\glt ‘It seems to me that I know her.’
+%\hfill (source)
+\z\z
+
+\subsection{Completing the empirical picture: challenges for analytical approaches}\label{geist:sec:completing}
+
+The empirical data for the analyses of the three pronominal series described in the previous sections are mainly based on the intuition of native speakers and on introspection with the exception of the experimental investigation of functional readings with \textit{-to} and \textit{-nibud’}-indefinites in \citet{Onea.Geist2011}. \citet{Marti.Ionin2019} conducted further experiments in which they tested the scopal and functional properties of the Russian indefinites with \textit{koe-} and \textit{-to} in comparison to \textit{-nibud’}. Their findings complete and modify the empirical picture assumed and accounted for in the literature we described in the previous sections.
+
+\citeauthor{Marti.Ionin2019} test the interpretation of indefinites in so-called scope islands established by e.g. relative clauses in sentences with two universal quantifiers like \REF{geist:ex:marti-ionin1}. It has been observed that indefinites occurring in such scope islands may receive exceptional wide scope, i.e. their scope may reach outside the syntactic island. The authors call contexts with islands such as that in \REF{geist:ex:marti-ionin1} long-distance contexts (as opposed to local contexts like in our example \REF{geist:ex:to-nibud3}, where no island intervenes between the surface position of the indefinite and the position at which it seems to take scope). 
+
+\ea Every student read every article [that a (\textit{certain}) professor recommended].\label{geist:ex:marti-ionin1}
+\ea  `There is a professor $x$ such that for every student $y$, $y$ read every article that $x$ recommended.'\hfill [WSR]
+\ex `For every student $y$, there is a (potentially different) professor $x$, such that $y$ read every article that $x$ recommended.'\hfill [ISR]
+\ex `For every student $y$, $y$ read every article that was professor-recommended.'\hfill [NSR]\smallskip\\\hfill\citep[ex. (1)]{Marti.Ionin2019}
+\z\z
+
+\noindent To test the availability of the wide scope reading (WSR), intermediate scope reading (ISR) and narrow scope reading (NSR) for \textit{koe-} and \textit{-to}-indefinites, \citeauthor{Marti.Ionin2019} use Russian counterparts of long-distance contexts of \REF{geist:ex:marti-ionin1} such as \REF{geist:ex:marti-ionin2}. The authors also test these indefinites in local contexts without scope islands e.g., like our example \REF{geist:ex:to-nibud3}. \textit{-Nibud’}-indefinites are taken for comparison in both cases. \citeauthor{Marti.Ionin2019} assume, following previous literature, that \textit{-nibud’}-indefinites unambiguously take narrow scope and have non-functional interpretation.
+
+\ea\label{geist:ex:marti-ionin2}
+\gll Každyj student pročital každuju knigu, \minsp{[} kotoruju porekomendoval\hspace{.9cm} \minsp{\{} \textit{koe-kakoj} / \textit{kakoj-to} / \textit{kakoj-nibud’}\} professor.]\\
+every student read.\textsc{pst} every book {} which recommended {} \textsc{koe}-which {} which-\textsc{to} {} which-\textsc{nibud'} professor\\
+\glt ‘Every student read every book that some professor recommended.’\\\hfill\citep[ex. (6)]{Marti.Ionin2019}
+\z
+
+\noindent The most important findings of these experimental studies with respect to the literature are:
+
+\begin{enumerate}
+    \item The intuition that \textit{koe-}indefinites can receive widest possible scope is confirmed, i.e. \textit{koe-}indefinites can be considered as exceptional wide-scope indefinites, but, contra previous literature, both ISRs and NSRs (in local or long-distance contexts) are available for \textit{koe-}indefinites when they have functional readings (when the context supports a function).
+    \item \textit{-To}-indefinites, like \textit{koe-}indefinites, allow for exceptional wide scope readings and functional NSRs, both already mentioned in the literature. Contra the assumptions in the literature, \textit{-to}-indefinites also allow for non-functional NSRs and for functional as well as non-functional ISRs, although, functional readings still are preferred over non-functional ones. All in all, these results suggest that \textit{-to}-indefinites are unmarked indefinites.
+\end{enumerate}
+
+These findings require an update of the analytical analyses introduced above. Below I show how the referential anchoring approach sketched in \sectref{geist:sec:anchoring} can capture the experimental results. To account for functional readings of \textit{koe-}indefinites, it can be assumed that in addition to \textit{koe-}\textsubscript{1}, which binds the anchor to the speaker, there is \textit{koe-}\textsubscript{2}, whose anchor may be bound by c-commanding quantifiers and it is presupposed that the function introduced by \textit{koe-}\textsubscript{2} is a systematic contextually determined function.
+%To account for functional readings of \textit{koe-}indefinites, it can be assumed that the anchor can also be bound by c-commanding quantifiers and that it is presupposed that the function introduced by \textit{koe-} is a systematic contextually determined function.
+
+To account for the fact that \textit{-to}-indefinites can receive all possible readings, this indefinite can be treated as an unconstrained indefinite: the function in the denotation of the indefinite is not specified as systematic or not and there is only one restriction on the possible anchor: it cannot be the speaker.  If it were, \textit{koe-}\textsubscript{1} would be preferred over \textit{-to}. Any other option such as binding by other discourse participants or quantifiers in the clause should be available. What remains to be empirically tested is, what is the difference between functional readings with \textit{koe-} vs. \textit{-to}-indefinites, and how this difference can be formally accounted for.
+
+To sum up, in the last decades progress was made in the empirical and theoretical description of indefinite pronouns expressing identifiability of the referent by the speaker and their scopal behavior in Russian, a language which, according to \citet{Haspelmath1997}, displays a larger range of pronominal series than Polish, Serbian, and Bulgarian. While \citet{Kagan2011} focuses on \textit{koe-} and \textit{-to}, Yanovich on \textit{-to} and \textit{-nibud’}, all three pronominal series are compared in \citet{Geist2008}, \citet{Gorishneva.Zimmermann2011}, and \citet{Onea.Geist2011}. For a formal analysis, different devices have been used in the literature: \citet{Yanovich2005} and \citet{Geist2008} use choice functions to model specificity distinctions of indefinite pronouns. \citet{Kagan2011}, \citet{Gorishneva.Zimmermann2011}, and \citet{Onea.Geist2011} preserve the original representation of indefinites as existential quantifiers. \citet{Kagan2011} captures the fine-grained distinctions between the indefiniteness markers by pragmatic restrictions on the existential quantifier in terms of felicity conditions, while \citet{Gorishneva.Zimmermann2011} relate them to the mental model of the speaker or another salient subject. Finally, \citet{Onea.Geist2011} account for the differences using referential anchoring as a domain narrowing device. Referential anchoring is an operation that establishes a functional dependency between the referent of an indefinite DP and some other discourse item, its anchor. The major advantage of this view is that the referential anchor, modeled as an implicit argument, allows for interaction both with quantifier expressions and with discourse participants. The restrictions on the type of referential anchor may be encoded in the lexical entry of the specificity marker, or derived pragmatically from contrasts to other possible markers. Thus, the mechanism of referential anchoring provides a useful representational format for an adequate analysis of different specificity markers and can also capture the experimental findings in \citet{Marti.Ionin2019}. 
+
+\section{Epistemic specificity in other Slavic languages}\label{geist:sec:4}
+
+Indefinites signaling epistemic state of the speaker similar to the Russian \textit{-to} and \textit{koe-}series exist in different semantic and morphological flavours in many Slavic languages. Some important contributions in this domain were made by \citet{Simik2015} for Czech, \citet{Richtarcikova2015} for Slovak, and \citet{Koev2017} for Bulgarian. This work focused on so-called \textsc{epistemic indefinites} (EIs), which signal ignorance of the speaker about the identity of the referent. 
+
+% \textsc{Epistemic indefinites} (EIs) similar to the Russian \textit{-to} and \textit{koe-}-series of indefiniteness markers exist in different semantic and morphological flavors in many Slavic languages. Some important contributions were made by \citet{Simik2015} for Czech, \citet{Richtarcikova2015} for Slovak, and \citet{Koev2017} for Bulgarian EIs.
+
+In Czech epistemic indefinites formed by the suffix \textit{-si} attached to wh-words express, beyond standard indefinite meaning, ignorance about the precise identity of the referent. \citet{Simik2015} relies on the theory of referent identification suggested by \citet{Aloni.Port2013} who argue that the speaker can always identify the referent in one way or another. However, the method of identification is sometimes not the one that is contextually required for knowing the referent. Among the most common methods that are available to the speaker are visual identification, identification by reported evidence, by naming, or by description. The fact that the speaker decides to use the EI, in spite of being able to identify the referent, suggests that she does not possess the knowledge required to identify the referent in some contextually more relevant way \citep{Simik2015}.
+
+Like the Russian \textit{-to}-series, the Czech \textit{-si}-series takes wide scope with respect to intensional quantifiers and root and deontic modals. However, they differ from the \textit{-to}-series in that they can only have a wide scope interpretation with respect to extensional quantifiers. 
+
+\ea\label{geist:ex:simik1}
+\gll Každý mĕl za úkol kontaktovat \textit{kohosi} z Prahy.\\
+everybody had for task contact.\textsc{inf} who.\textsc{si} from Prague\\
+\glt ‘Everybody was supposed to contact somebody from Prague.’\hfill [$\exists$ > $\forall$]\smallskip\\\hfill\citep[429]{Simik2015}
+\z
+
+\noindent Šimík points to the interesting fact that Czech EIs are unacceptable when they cooccur with epistemic modals as shown in (26) and \textit{nějakém} must be used instead. The same “epistemic clash” seems to apply to the Russian \textit{-to}-series, which in an epistemic context should be replaced by \textit{-nibud’}.
+
+\ea[*]{\label{geist:ex:simik2}
+\gll Tom určitĕ spí na \textit{jakémsi} gauči.\\
+Tom surely sleep.\textsc{3sg} on which.\textsc{si} couch\\
+\glt Intended: ‘He must be sleeping on some couch (I don’t know which one).’\hfill\citep[436]{Simik2015}}
+\z
+
+\noindent This clash is explained in \citet{Simik2015} in the following way: Epistemic modals contribute an evidential presupposition which entails ignorance. The EIs with \textit{-si} also imply ignorance. They are licensed if the ignorance they express is non-trivial \citep{Aloni.Port2013}. They are ruled out under epistemic modals because their ignorance implication in this context is trivial. \citet{Simik2015} uses the classical representational format of indefinites as existential quantifiers to formally describe this “epistemic clash”.
+
+\citet{Richtarcikova2015} analyzes two pronominal series with the affixes \textit{voľa-} and \textit{-si} that encode lack of knowledge about the identity of the referent in Slovak. These EIs can also contribute indifference similarly to free choice items (FCIs) with \textit{-hoci} or \textit{-koľvek}; see \REF{geist:ex:richtarcikova1}.
+
+\ea\label{geist:ex:richtarcikova1}
+\gll Zobni si \minsp{\{} \textit{voľačo} / \textit{čosi} / \textit{hocičo} / \textit{čokoľvek}\} nech neodpadneš.\\
+peck \textsc{refl} {} \textsc{voľa}-what {} what-\textsc{si} {} \textsc{hoci}-what {} what-\textsc{koľvek} so \textsc{neg}.faint\\
+\glt ‘Eat something-or-other (EIs) / something-anything (FCIs) so that you don’t faint.’\hfill\citep[399]{Richtarcikova2015}
+\z
+
+\noindent However, in contrast to free choice items, which can be paraphrased as ‘anything’ and are felicitous in a context where the hearer is invited to consider all the options presented, the EIs are rather paraphrased as ‘something-or-other’ and convey a gentle suggestion without pointing to different options. EIs are less restricted in their distribution and may occur in episodic contexts without modal operators.
+
+\citeauthor{Richtarcikova2015} proposes an analysis of the two Slovak EIs in the framework of Alternatives-and-Exhaustification based on \citet{Chierchia2013}. \citeauthor{Chierchia2013} develops a unified analysis for the complete range of polarity phenomena such as negative polarity items, minimizers, N-words but also universal and existential free choice items (FCIs). The two EIs in Slovak are considered by \citeauthor{Richtarcikova2015} as a special type of existential FCIs.
+
+Although the idea of a unified polarity system developed in the Alternatives-and-Exhaustification framework is appealing, this theory is very complex. It involves a large system of different parameters posited along two dimensions: modes of exhaustification, and types of alternatives that get factored in. \citeauthor{Richtarcikova2015} uses these parameters to compare the Slovak EIs to other items that have already been analyzed with the help of \citeauthor{Chierchia2013}’s parameters such as German \textit{irgendein}, Spanish \textit{algún}, and Italian \textit{un qualche}. An interesting result of her study is that the Slovak EIs do not pattern with any of these items. She concludes that the complex theory of Alternatives-and-Exhaustification is unable to completely capture the observed characteristics of Slovak EIs.
+
+One understudied variety of EIs is analysed in \citet{Koev2017}; see \REF{geist:ex:koev1} from Bulgarian. He calls items like \textit{edi-koja si} in \REF{geist:ex:koev1} quotational indefinites (QIs). QIs in Bulgarian are made up of three parts: the indefiniteness marker \textit{edi-} (based on \textit{edin} ‘one’), a wh-stem (e.g., \textit{koj} ‘who.\textsc{m}’ or \textit{kakvo} ‘what’), and the \textit{si} marker probably diachronically related to \textit{*sit} ‘(it) be’ \citep[271]{Haspelmath1997}. QIs with similar properties are attested in Japanese wh-doublets, such as \textit{dare-dare}, English placeholder words like \textit{whatshisface} or \textit{so-and-so} and German indefinites of the form \textit{der-und-der}.
+
+\ea\label{geist:ex:koev1}
+\gll Ivan se oženi-l za \textit{edi-koja} \textit{si} student-ka.\\
+Ivan \textsc{refl} go.out-\textsc{ev} to \textsc{edi}-which \textsc{si} student-\textsc{f}\\
+\glt ‘Ivan married some student.’
+\ea The student Ivan married was mentioned to the speaker in a previous conversation.
+\ex The speaker does not know which student Ivan married.\\\hfill\citep[393]{Koev2017}
+\z\z
+
+\noindent \textit{Edi-koja si} in \REF{geist:ex:koev1} has an indefinite-like meaning, since it cannot refer back to an already given salient antecedent but rather establishes a new discourse referent. Beside the propositional meaning the sentence implies that the speaker heard a referential description of the student married by Ivan in a previous conversation. This reportative implication is due to the presence of \textit{edi-koja si}, since substituting it with the regular indefinite \textit{njakoj} ‘someone.\textsc{m}’ would remove the implication. The QI also conveys ignorance towards the identity of the referent by the speaker: \textit{edi-koja si} indicates that the speaker does not remember which student Ivan married although she was told it.
+
+The semantic and contextual properties of QIs are described in \citet{Koev2017} as follows: First, QIs differ from other indefinites since they have a mixed semantics: they range over linguistic expressions rather than individuals. Second, QIs serve reportative functions; they existentially quantify over quoted speech. Third, QIs impose restrictions on the type of expressions they range over, that is, QIs referring to persons or things can only range over referential expressions within this class, e.g. proper names, definite descriptions, or demonstratives, but not over quantificational or indefinite expressions. For that reason QIs are understood as referring to specific individuals. To account for these properties of QIs in Bulgarian, \citeauthor{Koev2017} develops a formal proposal which builds on the previous work on QIs in other languages and is grounded in a two-dimensional semantics for quotation \citep{Potts2005}.
+
+To conclude, the research on indefinite pronominal series in Slavic languages has made progress in the precise formal analyses of single pronominal series and uncovered important interactions between indefiniteness, modality and reportativity. It has extended the typology of indefinites. An additional pronominal series of epistemic indefinites known from Germanic languages and Japanese, the subtype of quotational indefinites, was identified in Bulgarian. For the analysis of epistemic indefinites, different formal devices were introduced and tested. Interestingly, the approach proposed by \citet{Chierchia2013}, which proved effective in the description of indefinite pronouns and polarity sensitive expressions in Romance and Germanic languages, appeared to be not sufficiently fine-grained to account for the interpretive subtleties of EIs in Slovak, thus these pronouns provide a challenge for \citeauthor{Chierchia2013}’s theory.
+
+\section{Emergence of indefinite articles}\label{geist:sec:5}
+
+To understand the system of indefiniteness in Slavic languages it is necessary to also take into account explicit markers of indefiniteness other than indefinite pronouns. Slavic languages do not have a well-established indefinite article. However, literature on indefiniteness in these points to the fact that Slavic languages have been developing an indefinite article out of the numeral `one' (henceforth \textsc{one}). In \sectref{geist:sec:5.1} I summarize work on the emerging indefinite articles in Macedonian \citep{Weiss2004}, Bulgarian \citep{Geist2013,Gorishneva2011,Gorishneva2013}, Polish \citep{Hwaszcz.Kedzierska2018}, Croatian \citep{Belaj.Matovac2015} and Resian \citep{Runic2019}. \sectref{geist:sec:5.2} focuses on the so-called intensifying use of the indefinite article. In \sectref{geist:sec:5.3} I present my own case study on the functions of the emerging indefinite article \textit{odin} `one' in Russian, based on observations in the previous literature (\citealt{Ionin2013,Paduceva2010}; among others). For the formal analysis of \textit{odin} I employ the mechanism of referential anchoring used in the analysis of indefinite markers in Russian in \sectref{geist:sec:anchoring}.
+
+\subsection{Functional stages of the indefinite article}\label{geist:sec:5.1}
+
+To illustrate the fact that the numeral `one' is acquiring the function of an indefiniteness marker, contexts such as \REF{geist:ex:bulg-edin1} have been used \citep{Ionin2013}. In such contexts, the regular numeral use of \textsc{one} would be odd because cardinality is not at issue. Starting with Bulgarian, it can be shown that the counterpart of \textsc{one} in this language can be used as an indefiniteness marker. To distinguish the indefinite use from the use as a numeral I will use the subscript \textsc{i} (\textsc{one\textsubscript{i}}which) for “indefinite” in the glosses.
+
+\ea\label{geist:ex:bulg-edin1}
+\gll Maria se omâži za \textit{edin} lingvist.\\
+Mary \textsc{refl} married \textsc{prep} \textsc{one\textsubscript{i}}which linguist\\
+\glt ‘Mary married a linguist.’\hfill (Bulgarian; \citealt[125]{Geist2013})
+\z
+
+\noindent Here the use of \textit{edin} as a numeral would be infelicitous, because in our culture a woman can marry only one single man. The question `How many linguists did she marry last year?', which highlights the cardinality of linguists, is inappropriate. Thus, \textit{edin} indicates indefinite reference, i.e., it is used to introduce a new referent into the discourse. The indefiniteness marker is always destressed, while numerals can bear stress.
+
+Other criteria that have been proposed for singling out the numeral function from other functions of counterparts of \textsc{one} in Slavic languages (e.g. \citealt{Geist2013} for Bulgarian; \citealt{Smelev2002} for Russian; \citealt{Weiss2004} for Macedonian \textit{eden}) are (i) combination with focus particles and (ii) restrictions on morphological number. According to the first criterion, only numerals can be combined with focus particles or modifiers which emphasize cardinality, while indefinite articles cannot. That \textit{edin} in \REF{geist:ex:bulg-edin1} is not a numeral but rather an indefinite article is confirmed in \REF{geist:ex:bulg-edin2}, where its combination with the numeral restrictor \textit{točno} ‘exactly’ is excluded. 
+
+\ea\label{geist:ex:bulg-edin2}
+\gll Maša se omâži za \minsp{(*} točno) \textit{edin} lingvist.\\
+Masha \textsc{refl} married \textsc{prep} {} exactly \textsc{one\textsubscript{i}}which linguist\\
+\glt Intended: ‘Masha married a linguist.’\hfill (Bulgarian; \citealt[125]{Geist2013})
+\z
+
+\noindent According to the second criterion, if the counterpart of \textsc{one} can be combined with count nouns in the plural, it is not a numeral, since to indicate a cardinality of \textsc{one}, the numeral and the noun must be singular. As shown in \REF{geist:ex:bulg-edin3}, \textit{edin} as an indefiniteness marker can occur with count nouns in the plural as well.
+
+\ea\label{geist:ex:bulg-edin3}
+\gll Včera vidjach \textit{edni} amerikanci, koito poznavam.\\
+yesterday saw.\textsc{1sg} \textsc{one\textsubscript{I}.pl} Americans, whom know.\textsc{1sg}\\
+\glt ‘Yesterday I saw some Americans whom I know.’\\\hfill (Bulgarian; \citealt[129]{Geist2013})
+\z
+
+\noindent In the typological literature, the development of indefinite articles out of the numeral \textsc{one} has been generally accepted to proceed through the following functional stages (adapted from \citealt{Givon1981} and \citealt{Heine1997a}):
+
+\ea Stages in the development of indefinite articles\label{geist:ex:stages}\\
+(i) numeral > (ii) presentative > (iii) specific indefinite > (iv) non-specific indefinite > (v) generalized
+\z
+
+\noindent The development from stage (i) to stage (ii) has been assumed to be triggered by discourse-pragmatic factors such as noteworthiness and referential continuity \citep{Givon1983,Wright.Givon1987}. At stage (ii) \textsc{one} introduces a new referent presumed to be unknown to the hearer and indicates the importance of the referent. This referent is then taken up as definite in subsequent discourse. At stage (iii) \textsc{one} does not just indicate discourse persistence of the NP referent, but rather speaker identifiability of the referent, i.e. epistemic and scopal specificity. At the next stage (iv) \textsc{one} is also used with non-specific indefinites, including the use in predicative position, in generic contexts as well as under the scope of negation or other operators \citep{Givon1981,Geist2013}. At the last stage (v) of generalized article, the use of \textsc{one} is extended from count nouns in the singular to other types of nouns such as plural and mass nouns. According to \citet{Wiemer2020} among all Slavic varieties, Colloquial Upper Sorbian seems to have reached the highest degree of grammaticalization, inasmuch as \textit{jen} ‘one’ is used with non-specific indefinites: It is obligatory with generic and predicative NPs \REF{geist:ex:sorbian}. But since it still does not occur with plural and mass nouns, its development towards an indefinite determiner is not complete. \citet{Runic2019} claims that the indefinite article in Resian, an endangered Slavic variety spoken in the province of Udine, has reached stage (iv) as well, since it is also used in generic contexts and with nouns having narrow scope \REF{geist:ex:resian}. 
+
+\ea\label{geist:ex:sorbian}
+\gll \textit{Jen} tigor jo jene wulke zwĕrjo.\\
+\textsc{one\textsubscript{i}}which tiger is \textsc{one\textsubscript{i}}which big animal.\textsc{nom.sg.n}\\
+\glt ‘A tiger is a big animal.’\hfill (Colloquial Upper Sorbian; \citealt{Wiemer2020})
+\z
+
+\ea\label{geist:ex:resian}
+\gll Skorë wsaka ïša ma \textit{no} televižjun, aliböj \textit{no} {radio [\dots]}\\
+almost every house has \textsc{one\textsubscript{i}}which television or \textsc{one\textsubscript{i}}which radio\\
+\glt ‘In almost every house there is either a television or a radio [\dots].’\hfill [$\forall$ > $\exists$]\smallskip\\\hfill (Resian, \citealt[297]{Runic2019})
+\z
+
+\noindent \citet{Belaj.Matovac2015} state that in other West Slavic and South Slavic languages \textsc{one} has reached at least stage (iii) of a specific indefinite. The hallmark of this stage is epistemic and scopal specificity. For example, in Bulgarian, NPs as aboutness topics can either be combined with a definite article, as shown in \REF{geist:ex:indef-art-a}, or with the indefiniteness marker \textit{edin}, see \REF{geist:ex:indef-art-b}. Since topics must be specific and bare NPs, which are necessarily non-specific, cannot occur in this position, \textit{edin} is used as a marker of epistemic specificity.
+
+\ea\label{geist:ex:indef-art}
+\ea\label{geist:ex:indef-art-a}
+\gll Žena-ta ja risuva \textit{edin} chudožnik.\\
+woman-\textsc{def} her painted \textsc{one\textsubscript{i}}which painter\\
+\glt ‘The woman was painted by a painter.’
+\ex\label{geist:ex:indef-art-b}
+\gll \minsp{\{*(} \textit{Edna})\} žena ja risuva \textit{edin} chudožnik.\\
+{} \textsc{one\textsubscript{i}}which woman her painted \textsc{one\textsubscript{i}}which painter\\
+\glt ‘A woman was painted by a painter.’
+\\\hfill (Bulgarian; \citealt[515]{Ivancev1957}; as cited in \citealt{Geist2013})
+\z\z
+
+\noindent Similarly to specific indefinites in general, Bulgarian \textit{edin}-indefinites also have wide scope with respect to modal and other operators in the clause \citep{Geist2013,Gorishneva2013}. However, some non-specific uses of \textit{edin} are also attested in the literature, indicating further development along the grammaticalization path. \citet{Geist2013} discusses examples of the generic use of \textit{edin} (see also \citealt{Weiss2004} on Macedonian). This use of \textit{edin} is further examined in \citet{Gorishneva2011}. She shows that \textit{edin} only occurs in a particular type of generic statements, those based on non-inductive reference, i.e. sentences which express rules and stereotypes; see \REF{geist:ex:stereotypes}:
+
+\ea\label{geist:ex:stereotypes}
+\gll \textit{Edna} žena vinagi šte nameri vreme za decata si.\\
+ \textsc{one\textsubscript{i}}which woman always be.\textsc{fut} find.\textsc{pf.3sg} time for children \textsc{refl}\\ 
+\glt ‘A woman will always find time for her children.’\\\hfill (Bulgarian; \citealt[85]{Gorishneva2011})
+\z
+
+\noindent An interesting case is the intensifying use of \textit{edin}. This use is not captured in implicational maps such as those represented in \REF{geist:ex:stages} above and will be discussed below.
+
+\subsection{Intensifying use of the indefinite article}\label{geist:sec:5.2}
+
+The Bulgarian \textit{edin} ‘one’ cannot appear with predicative NPs \REF{geist:ex:intens-a}; nevertheless, it can occur in predicative clauses like \REF{geist:ex:intens-b}:
+
+\ea
+\ea\label{geist:ex:intens-a}
+\gll Toj e \minsp{(*} \textit{edin}) žurnalist po profesija.\\
+he is {} \textsc{one\textsubscript{i}}which journalist by profession\\
+\glt (Intended:) ‘He is a journalist by profession.’
+\ex\label{geist:ex:intens-b}
+\gll Ivan e \textit{edin} glupak!\\
+Ivan is \textsc{one\textsubscript{i}}which fool\\
+\glt ‘Ivan is such a fool!’\hfill (Bulgarian; \citealt{Ivanova.Koval1994})
+\z\z
+
+\noindent Accoring to \citet{Ivanova.Koval1994} \textit{edin} is felicitously used with predicate nouns such as \textit{glupak} ‘fool’ or \textit{genij} ‘genius’, which involve some evaluative characterizing component. The NP in \REF{geist:ex:intens-b} has intensifying force and is correctly translated into English as such `a (big) fool'. The use of the indefinite article in the intensifying function has also been observed in German and Greek with abstract mass nouns (`hunger', `thirst', `heat', etc.), which usually occur without an article. \citet{Gorishneva2009} identifies three conditions (C1--3) for this use of the indefinite article:
+
+\begin{itemize}
+    \item[C1] The predicate noun must be gradable and provide a scalar property.\smallskip
+
+    Gradable nouns can be analyzed on a par with gradable adjectives as denoting a relation between an individual and a set of degrees viewed as a scale. For instance, the gradable noun \textit{fool} can be analyzed as relating an individual to the scale of foolishness.
+
+    \ea \sib{fool}${}=\lambda x\exists d[\textsc{fool}(d,x)\wedge d\geq d_{\text{standard}}]$\hfill\citep[42]{Gorishneva2009}
+    \z
+
+    \item[C2] The indefinite article contributes a taxonomic interpretation.\smallskip
+
+    The indefinite article used with a scalar noun leads to a subkind interpretation of the corresponding NP, similar to the sort reading of mass nouns caused by the use of the indefinite article in German, cf. \textit{Reis} ‘rice’ vs. \textit{ein Reis} ‘one sort of rice’. \citet{Gorishneva2009} characterizes the taxonomic relation analogously to \citet[74ff.]{Krifka.etal1995a} as follows: 
+
+    \ea $\cnst{subkind}(k', k)\wedge \cnst{r}(x, k')\rightarrow \cnst{r}(x, k)$\smallskip\\
+    If $k'$ is a subkind of kind $k$ and the realization relation $\cnst{r}(x, k')$ holds, i.e., the object $x$ is an instance of $k'$, then $x$ is also an instance of $k$.\\\hfill\citep[42]{Gorishneva2009}
+    \z
+
+    \item[C3] Exclamative prosody\smallskip
+
+    The exclamative prosody indicates the remarkability of the corresponding subkind. The speaker utters an exclamative ‘$x$ is an N’ where a postcopular indefinite NP denotes a subkind that is remarkable in comparison with other subkinds of $k$.  
+
+    % \ea $\forall k' [\cnst{subkind}(k', k)\wedge k'\neq k_1\rightarrow \cnst{r}(x, k_1) >_{\text{remarkable}} \cnst{r}(x, k’)]$\\\hfill\citep[46]{Gorishneva2009}
+    % \z
+    
+\end{itemize}
+
+\noindent\citet{Gorishneva2009} observes that languages such as Bulgarian, Greek, and German, which use the indefinite article in the intensificational function, also use the indefinite article with nouns in generic readings. From this she draws the generalization that the generic function of \textsc{one} is a precondition for its intensifying function since the generic use provides the taxonomic reference to subkinds, required by the intensifying \textsc{one}.
+
+\subsection{Case study: The emergence of the indefinite article in Russian}\label{geist:sec:5.3}
+
+In this section I characterize the semantic profile of the emerging indefinite article in Russian and present my formal analysis of it in terms of referential anchoring, the mechanism proved useful for the analysis of indefiniteness markers (\sectref{geist:sec:anchoring}). 
+There are some hints in the literature that Russian has been developing an indefinite article from the numeral \textit{odin} ‘one’. \citet{Paduceva2010} notes that \textit{odin} ‘one’, in addition to its use as a numeral, can be used as a marker of indefinite reference of NPs, see \REF{geist:ex:odin-padu}.
+
+\ea\label{geist:ex:odin-padu}
+\gll Byl u menja \textit{odin} prijatel’.\\
+was at me \textsc{one\textsubscript{i}}which friend\\
+\glt ‘Some time ago I had a friend.’\hfill\citep[213]{Paduceva2010}
+\z
+
+\noindent The speaker’s intension in uttering \REF{geist:ex:odin-padu} is obviously not to convey the cardinality of his/her friends but rather to indicate the existence of an individual fitting the description. A formal indicator for the existence of an indefiniteness marker \textit{odin} distinct from the numeral \textsc{one} is the plural use in \REF{geist:ex:odin-pl}.
+
+\ea\label{geist:ex:odin-pl}
+\gll Ja poznakomilas’ s \textit{odnimi} amerikancami. Oni priglasili menja v New York.\\
+I got.acquainted with \textsc{one\textsubscript{I}.pl} Americans they invited me to New York\\
+\glt ‘I got	acquainted with some Americans. They invited me to New York.’
+\z
+
+\noindent The indefiniteness marker \textit{odin} exhibits the characteristic behavior of specific indefinites since it takes widest scope, independently of the configuration it is in. In (44) it scopes out of syntactic islands such as relative clauses. If \textit{odin} is modified by the intensifiers `at least' or `exactly', which bring out the numeral reading, it patterns with other numerals in taking narrow or wide scope. In this case it does not function as an indefinite determiner.
+
+\ea
+\ea\label{geist:ex:odin-scope-a}
+\gll Maša pročitala každuju knigu, kotoruju porekomendoval \textit{odin} professor.\\
+Mary read every book which recommended \textsc{one\textsubscript{i}}which professor.\textsc{nom}\\
+\glt ‘Mary read every book that was recommended by a specific professor.’
+\ea[\ding{55}\,]{\textit{každyj} > \textit{odin}}
+\ex[\ding{51}]{\textit{odin} > \textit{každyj}}
+\z
+\ex\label{geist:ex:odin-scope-b}
+\gll Maša pročitala každuju knigu, kotoruju porekomendoval rovno \textit{odin} professor.\\
+Mary read every book which recommended exactly     
+\textsc{one} professor.\textsc{nom}\\
+\glt ‘Mary read every book that was recommended by exactly one professor.’
+\ea[\ding{51}]{\textit{každyj} > \textit{odin}}
+\ex[\ding{55}\,]{\textit{odin} > \textit{každyj}\hfill\citep[79]{Ionin2013}}
+\z\z\z
+
+\noindent The indefiniteness marker \textit{odin} in \REF{geist:ex:odin-scope-a} is only felicitous if the speaker intends to refer to a particular professor. The narrow scope reading of the indefinite is unavailable: if the speaker does not have a particular professor in mind, \textit{odin professor} in \REF{geist:ex:odin-scope-a} is undefined and the utterance is infelicitous.
+
+\citeauthor{Ionin2013} observes that \textit{odin}-indefinites carry a condition of identifiability: in order to use \textit{odin} as indefiniteness marker the speaker must be able to identify the individual under discussion. The speaker must be able to answer the question `Which X is it?' The response to this question names an identifying property that singles out the specific individual, distinguishing it from all other individuals in the set denoted by the NP. A further requirement is that the identifying property must be distinct from properties ascribed to the individual in the sentence. The speaker identifiability requirement can be illustrated in \REF{geist:ex:odin-ident}:
+\largerpage[2]
+
+\ea\label{geist:ex:odin-ident}
+\gll Ja choču počitat’ \textit{odin} žurnal.\\
+I want read \textsc{one\textsubscript{i}}which journal\\
+\glt `I want to read a journal.'
+\ea Continuation compatible with \REF{geist:ex:odin-ident}:\label{geist:ex:odin-ident-a}\\
+\gll A imenno poslednij vypusk Zdorov’ja.\\
+and namely last issue Health\\
+\glt ‘Namely, the last number of Health.’
+\ex Continuation not compatible with \REF{geist:ex:odin-ident}:\label{geist:ex:odin-ident-b}\\
+\gll Vsë ravno kakoj.\\
+all same which\\
+\glt ‘It doesn’t matter which one.’
+\z\z
+
+\noindent The continuation in \REF{geist:ex:odin-ident-a} is felicitous, because it conveys additional identifying information about the referent distinct from the property of being a journal. The continuation in \REF{geist:ex:odin-ident-b}, signaling the non-identifiability of the referent by the speaker, is excluded. 
+
+Thus, \textit{odin} as an indefinite determiner indicates speaker identifiability and has the widest possible scope. As we saw in \sectref{geist:sec:2.2} another indefinitness marker in Russian, \textit{koe-}, displays a similar behavior. Indefinite pronouns with \textit{koe-} also indicate speaker identifiability of the referent. The question now is how \textit{odin} differs from \textit{koe-kakoj}. \citet{Paduceva2010} notes that \textit{koe-} has an additional meaning component, the conspiracy component, meaning that the speaker does not intend to disclose the referent of the indefinite in the discourse. Example \REF{geist:ex:koe-odin1} highlights this additional meaning component. Here \textit{koe-kakoj} is incompatible with the continuation which immediately reveals the identity of the referent by naming it.
+
+\ea\label{geist:ex:koe-odin1}
+\gll \textit{Koe-kakoj} student spisyval na ėkzamene, \minsp{\#} a imenno Ivanov.\\
+\textsc{koe}-which student cheated on exam {} but namely Ivanov\\
+\glt Intended: ‘A student [known to the speaker] cheated on the exam, namely Ivanov.’
+\z
+
+\noindent \textit{Odin}-DPs are different, cf. \REF{geist:ex:koe-odin2}.
+
+\ea\label{geist:ex:koe-odin2}
+\gll \textit{Odin} student spisyval na ėkzamene, a imenno Ivanov.\\
+one student cheated on exam but namely Ivanov\\
+\glt ‘A student [known to the speaker] cheated on the exam, namely Ivanov.’
+\z
+
+\noindent \REF{geist:ex:koe-odin2} violates the Gricean Cooperative Principle, in particular the Maxim of Quantity. That the speaker is unwilling to reveal the identity of the referent is a conversational implicature. It can be assumed that this implicature has become conventionalized and is now part of the conventional meaning of the lexical item \textit{koe-}.
+
+The question is now how to formally represent the meaning of \textit{odin} as an indefiniteness marker. We can apply to \textit{odin} the mechanism of referential anchoring introduced in \sectref{geist:sec:anchoring}, cf. \REF{geist:ex:odin-koe-odin}. For comparison I provide the meaning of the specificity marker \textit{koe-} proposed in \sectref{geist:sec:anchoring}, in \REF{geist:ex:odin-koe-koe}, together with the conventional implicature discussed above. 
+
+\ea\label{geist:ex:odin-koe}
+\ea\label{geist:ex:odin-koe-odin}
+\sib{odin}$^c=  λP λQ \exists x[P(x) \wedge f(\cnst{speaker}(c)) = x \wedge Q(x)]$
+\ex\label{geist:ex:odin-koe-koe}
+\sib{koe-}$^c= λP λQ \exists x [P(x) \wedge f(\cnst{speaker}(c)) = x \wedge Q(x)]$\\
+{Conventional Implicature: `The speaker does not want to disclose the identity of $x$.'}
+\z\z
+
+\noindent \REF{geist:ex:odin-koe} reveals that \textit{odin} and \textit{koe-} have identical core meanings: both encode existential quantification and anchoring of the referent to the speaker. However, \textit{koe-} has an additional meaning component not available for \textit{odin}, namely the conventional implicature that the speaker does not want to disclose the identity of the referent. 
+
+One remark should be made concerning the specification of the term “the speaker” in these representations. It has been pointed out in the literature on epistemic specificity in different languages that the specification of “the speaker” may vary depending on the type of context. In the examples we have discussed so far, it is identical to the actual producer of the utterance. However, in indirect speech, the perspective can be shifted away from the actual speaker to the speaker of embedded speech; cf. an example from the Russian National Corpus: 
+
+\ea\label{geist:ex:friend}
+\gll Papa skazal, čto kostjum klouna emu odolžil \textit{odin} prijatel’ iz cirkovogo učiliščja.\\
+father said that suit clown him loaned \textsc{one\textsubscript{i}}which friend from circus school\\
+\glt ‘The father said that the suit of the clown was loaned to him by a friend from circus school.’\\\hfill
+(Russian National Corpus, E. Chaleckaya: \textit{Čelovek po imeni beda}, 2004)
+\z
+
+\noindent In \REF{geist:ex:friend} \textit{odin prijatel’} ‘one friend’ refers to a person the father can identify. Thus the referent is anchored to the father -- the speaker of the embedded speech act -- and not to the actual speaker of the whole utterance. Like indirect speech, evidentiality markers like \textit{javno} ‘apparently’ and \textit{kažetsja} ‘it seems’ as well as quotative markers like \textit{jakoby} ‘ostensibly’ can also shift the perspective away from the actual speaker. In general, such markers indicate the origin of the evidence the speaker possesses for a given assertion. 
+
+An alternative analysis of \textit{odin} as an indexical is proposed by \citet{Ionin2013}, cf. \REF{geist:ex:ionin-sem-a}. Similarly to \citet{Kagan2011} she assumes that specificity markers carry felicity conditions on their use. Ionin assumes that \textit{odin} carries a felicity condition of speaker identifiability \REF{geist:ex:ionin-sem-b}. 
+
+\eanoraggedright
+\eanoraggedright\label{geist:ex:ionin-sem-a}
+Semantics: A sentence of the form [\textit{odin} $\alpha$] $\beta$ expresses a proposition only in those utterance contexts $c$ where the speaker intends to refer to exactly one individual $y$ which is $\alpha$ in $c$ and the relevant felicity condition in \REF{geist:ex:ionin-sem-b} is fulfilled. Then [\textit{odin} $\alpha$] $\beta$ is true at an index $I$ if $y$ is $\beta$ at $I$ and false otherwise.
+\ex\label{geist:ex:ionin-sem-b}
+Pragmatics: The speaker is able to name an identifying property $\phi\in D_{\stb{s,et}}$ such that $\phi(w_c)(y) = 1$ and $\forall z[[\alpha(w_c)(z)=1$ and $z\neq y] \rightarrow\phi(w_c)(y)\neq 1]$ and $\phi\neq\alpha$ and $\alpha\neq\beta$.
+\begin{xlist}
+    \exi{}{\xspace\hfill\citep[82]{Ionin2013}}
+\end{xlist}
+\z\z
+
+\noindent \citeauthor{Ionin2013}’s analysis can successfully capture the meaning and use of \textit{odin} and provides a mechanism for comparison to markers of epistemic specificity in different languages that are also amenable to an analysis as indexicals. \citet{Ionin2013} applies it to wide scope indefinites, however, since the approach allows the addition of any kind of felicity condition, it can also potentially be extended to indefinites with variable scope such as the \textit{-to}-series but also to narrow scope indefinites like the \textit{-nibud’}-series in Russian. I believe an advantage of the proposal based on referential anchoring over \citeauthor{Ionin2013}’s is that it has a broader coverage, since it can capture more types of indefiniteness markers. It can account not only for indefinites with wide scope but also for indefinites with intermediate and narrow scope using the same basic formal mechanism. Thus, the mechanism of referential anchoring has a unifying force.
+
+To conclude \sectref{geist:sec:5}, I have shown that there is sufficient evidence to speak about indefinite articles in Slavic languages, even though they are still not fully developed grammatical items. The gradual development of indefinite articles out of the numeral by and large proceeds along the typologically attested path. However, at least one function, the so-called intensifying function of the indefinite article attested in Bulgarian must be added to the path. In most Slavic languages, the indefinite article has reached the stage of a specificity marker, for example, \textit{odin} in Russian indicates scopal and epistemic specificity. The analysis in terms of referential anchoring, developed to capture differences between indefiniteness markers, can also adequately account for the meaning and use of \textit{odin}.
+
+\section{Conclusions}\label{geist:sec:6}
+\largerpage
+In the last decades, progress has been made in the empirical and theoretical description of markers of indefiniteness and specificity in different Slavic languages. This research has uncovered important interactions between indefiniteness, mo\-da\-li\-ty, quotation and reportativity, and broadened our understanding of the typology of indefinites. Much empirical data have been provided on particular indefiniteness markers in single languages. The next step would be in-depth comparative studies and a unification of formal devices. An attempt for formal unification was made in this chapter. I have argued that specificity distinctions made by different indefiniteness markers can be captured by the concept of referential anchoring. According to this concept, it can be assumed that the referent of an indefinite is functionally dependent on some discourse participant or on another expression in the sentence. While the anchor must be familiar to both speaker and hearer, the content of the anchoring function must be unfamiliar to the hearer. However, the hearer has to accommodate the fact that there is a function. I have shown how this approach can account for various constraints associated with indefinite pronouns and the indefinite \textit{odin} `one' in Russian. My analysis suggests that the notion of referential anchoring is useful as a general framework for modelling the semantic contribution of indefinite determiners in one language. Future work will show whether this is the case cross-linguistically as well.
+
+\subsubsection*{Epilogue}
+
+The main work on this article was finished in 2019. Since then, new studies have been conducted on the topic of indefinitenss markers and the development of indefinite articles in Slavic. Although this important work could not be integrated into this chapter I want at least to mention it: \citet{Borik.etal2020} provide an experimental study of preverbal indefinites in Russian; \citet{Molinari2023,Molinari2025} offers a syntactic model for the grammaticalization of the numeral \textit{edin} ‘one’ in Bulgarian; \citet{Pekelis2023} examines the evolution of the Russian indefinite series \textit{to} and \textit{nibud’}, and \citet{Seres2024} presents a corpus-based investigation of the distribution and interpretation of ‘one’ + N combination in six Slavic languages (Russian, Ukrainian, Czech, Serbian, Macedonian, and Bulgarian).
+
+% \label{geist:sec:7}
+
+\largerpage
+\section*{Abbreviations}
+
+\begin{tabularx}{.5\textwidth}{@{}lQ}
+\textsc{1}&first person\\
+\textsc{3}&third person\\
+\DEF &definite\\
+\textsc{edi} &indefinite marker \textit{edi-}\\
+\textsc{ev} &evidential\\
+\FEM &feminine\\
+\FUT &future\\
+\INF &infinitive\\
+\textsc{koe} &indefinite marker \textit{koe-}\\
+\MASC &masculine\\
+\NEG &negation\\
+\NEUT &neuter\\
+\textsc{ni} &indefinite marker \textit{ni}\\
+\end{tabularx}%
+\begin{tabularx}{.5\textwidth}{lQ@{}}
+\textsc{nibud'} &indefinite marker \textit{-nibud'}\\
+\NOM &nominative\\
+\textsc{one\textsubscript{i}} &indefinite `one'\\
+\textsc{pf} &perfect\\
+\PL &plural\\
+\PRS &present tense\\
+\PST &past tense\\
+\textsc{prep} &preposition\\
+\REFL &reflexive\\
+\SG &singular\\
+\textsc{si} &indefinite marker \textit{-si}\\
+\textsc{to} &indefinite marker \textit{-to}\\
+&\\ % this dummy row achieves correct vertical alignment of both tables
+\end{tabularx}
+
+\section*{Acknowledgements}
+I would like to thank three anonymous reviewers for their comments I have tried to do justice to in the final draft. Special thanks go to Radek Šimík for his valuable comments and editorial work. All remaining errors are my own. My work on this chapter was funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) -- project number 445439335.
+
+%\section*{Contributions}
+%John Doe contributed to conceptualization, methodology, and validation. 
+%Jane Doe contributed to writing of the original draft, review, and editing.
+
+\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+
+\end{document}

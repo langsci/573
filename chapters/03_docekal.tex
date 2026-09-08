@@ -1,0 +1,802 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.22078573}
+
+% for newer version of TeX: 
+% xelatex -interaction nonstopmode main.tex
+
+\author{Mojmír Dočekal\orcid{0000-0002-9993-4756}\affiliation{Masaryk University} }
+% replace the above with you and your coauthors
+% rules for affiliation: If there's an official English version, use that (find out on the official website of the university); if not, use the original
+% orcid doesn't appear printed; it's metainformation used for later indexing
+
+%%% uncomment the following line if you are a single author or all authors have the same affiliation
+\SetupAffiliations{mark style=none}
+
+%% in case the running head with authors exceeds one line (which is the case in this example document), use one of the following methods to turn it into a single line; otherwise comment the line below out with % and ignore it
+% \lehead{Doe}
+% \lehead{Radek Šimík et al.}
+
+\title{Negative polarity items in Slavic}
+% replace the above with your paper title
+%%% provide a shorter version of your title in case it doesn't fit a single line in the running head
+% in this form: \title[short title]{full title}
+\abstract{This chapter describes %the 
+Slavic expressions dependent on negation. It summarizes three approaches to such expressions which appeared in the history of formal linguistic Slavistics. First, the syntactic analysis of negative dependent expressions (see \citealt{progovac1994negative} a.o.) is discussed; next the semantic approach of \citet{Blaszczak2001}; and last, the pragmatic stance of \citet{Crnic2011} is introduced. The chapter shows how Slavic data of this kind were important from the point of view of formal linguistics, and their description mirrored the changes in the general linguistic theories.
+
+\keywords{negation, negative polarity items, approaches to NPIs, Slavic, Czech}
+}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[3]%%chapternumber
+}{}
+\begin{document}
+\maketitle
+
+% Just comment out the input below when you're ready to go.
+
+\section{Introduction\label{introduction}}
+
+Negation and negative dependent or sensitive expressions belong to the core grammatical constructions of natural languages. There are no known languages that would lack expressive means to communicate negation (see \citealt{bernini2012negative} a.o., where the fact of negation being present in all natural languages is called a ``pragmatic universal''). Slavic languages are no different, of course. So there is a plethora of phenomena (many of them already described by formal linguists) concerning negation, which are perfect candidates for inclusion in this chapter. However, space and other limitations force me to narrow down the domain described in the present chapter (but see \citealt{horn1989} for the book aiming at the description of all linguistic things connected to negation). Therefore, I will limit myself to discussing various types of Slavic negative dependent expressions. And I will only mention many valuable contributions which would surely deserve appropriate space but are beyond the horizon of negative dependent expressions. 
+
+Criteria for delimiting this chapter to Slavic negative dependent expressions were as follows. I wanted to summarize such areas of Slavic negation where (i) Slavic linguistics contributed to general linguistics theories (even if now the particular approach seems to be more of a historical value) and (ii) where Slavic data, and more specifically expressions interacting with negation or which in some respect are negative themselves offer valuable insights from a typological perspective. And it seems more than reasonable that Slavic negative dependent expressions (especially negative polarity items) pass both criteria.
+
+First, the obvious thing to note is that Slavic languages do offer much more expressivity than the (still) most studied language, English. Consider the all-time favorite English polarity expression \emph{any} (other types of English polarity expressions like \emph{even one} will be discussed in \sectref{pragmatic-theories}). In the following English example, \emph{any} is licensed by clause-mate negation \REF{ex:1-a}, adversative predicate \REF{ex:1-b} (which I, for expository reasons, treat as containing negation but see \sectref{some-problems-of-purely-semantic-theories} for more details of adversative predicates) and, finally, by a possibility modal \REF{ex:1-c}. In \REF{ex:1-a} and \REF{ex:1-b} \textit{any} is usually considered as a \textsc{negative polarity item} (NPI), and the example like \REF{ex:1-c} as \textsc{free choice item} (FCI). Although it seems typologically more frequent (than the opposite pattern) that one item (like English \textit{any}) acts both as the NPI and the FCI, it is not a rule.%
+\footnote{See \citet{horn1972semantic} and 
+\citet{Haspelmath1997} for an early observation and a typologically broader picture, respectively. As one of the anonymous reviewers correctly points out, languages like Latin, Romanian, and Russian are clear examples of distinguishing FCIs from NPIs series.}
+For the sake of exposition, let us assume that at least in English, \textit{any} is an item with roughly existential semantics, and such a polarity item can be described by a unified theory.%
+\footnote{Nowadays, this seems like a standard approach, following \citet{carlson1980polarity} and then \citet{kadmon1993any}, but at least for FCIs a universal quantifier analysis was offered by \citet{dayal1998any}; a.o. Thanks to all three reviewers for reminding me of the importance of \textit{any} in research history.}
+Be that as it may, NPI and FCI are united by a licensing requirement. In all three cases, the scope of the existential NPI/FCI must be narrow relative to the scope of negation or existential modal. And, of course, the use of NPIs/FCIs leads to ungrammaticality without embedding in an appropriate environment: \REF{ex:2}. Negative polarity items are the main topic of this chapter, and as an avid reader most probably knows, they are the class of negative dependent expressions which are usually discussed the most (at least by semanticists), since their distribution can be very well-expressed in terms of entailment and other related properties of the sentences where they occur. A more formal characterization will be introduced in \sectref{syntactic-approach-of-progovac}.
+
+\newpage
+\ea\label{ex:1}\ea\label{ex:1-a} Peter didn't visit anyone.
+\ea[]{$\neg > \exists$}
+\ex[\#]{$\exists > \neg$}
+\z
+\ex\label{ex:1-b} John refused any help.
+\ea[]{$\neg\textsc{accept} > \exists$}
+\ex[\#]{$\exists > \neg\textsc{accept}$}
+\z
+\ex\label{ex:1-c} You can take any card from the deck.
+\ea[]{$\Diamond > \exists$}
+\ex[\#]{$\exists > \Diamond$}
+\z
+\z
+\z
+
+\ea\#\label{ex:2}Peter visited any student.
+\z
+
+\noindent Compare this with the Czech translation of the three environments showing the grammatical but also ungrammatical possibilities of three types of negative dependent expressions (which is still a subset of possible expressions interacting with negation in various ways, see \sectref{pragmatic-theories} for more details). The translations, in some cases intended interpretations, are approximate.\footnote{All non-English examples in this chapter are in Czech, unless explicitly indicated otherwise. Also, unless a source is provided, the Czech examples and their acceptability stem from the author's intuition.}
+
+\ea\label{ex:3} \ea \gll Petr nenavštívil \minsp{\{} ani jednoho / \minsp{\#} byť jediného / \minsp{\#} jakéhokoliv\} studenta.\\
+Petr neg.visited {} even one {} {} just one {}  {} any student.\\
+\glt Approximately: `Petr didn't visit \{even one / a single / any\} student.'
+\ex \gll Petr odmítl \minsp{\{} jakoukoliv pomoc / \minsp{\#} ani jednoho studenta / pohnout se byť o jediný centimetr\}.\\
+Petr refused {} any help {} {} even one student {} move \textsc{refl} just by one centimeter\\
+\glt Approximately: `Petr refused \{any help / any student / to budge an inch\}.'
+\ex \gll Můžeš si vzít \minsp{\{} jakoukoliv / \minsp{\#} byť jedinou / \minsp{\#} ani jednu\} kartu.\\
+can.\textsc{2sg} \textsc{refl} take {} any {} {} just one {} {} even one card\\ 
+\glt Approximately: `You can take \{any / even a single / not even one\} card.'
+\z
+\z
+
+\noindent The negative dependent expressions in Slavic come in many forms. Some seem to be vanilla NPIs but are limited to clause-mate negation (like \emph{ani} in \REF{ex:3}). Others bear presuppositions of unlikelihood (as \emph{byť jediný} in \REF{ex:3}, which resembles English NPIs like \emph{even one}), and yet others seem to prefer free choice contexts (as \emph{jakýkoliv} from \REF{ex:3}). The variation of Czech (and generally Slavic NPIs) is reflected in the patterns of their distribution. Or, to put it the other way round: the flavors of NPIs determine which contexts we can find them in, and the varieties of Slavic polarity items carve up the landscape in a different way from the more usually discussed Romance or Greek polarity expression (see \citealt{laka1990negation,giannakidou1997landscape,DalmiWitkosCeglowski2024}; a.o.).
+
+When looking at the history of approaches to Slavic negative dependent expressions, we can clearly distinguish three types of theories: (i) syntactic theories of NPIs (discussed in \sectref{syntactic-approach-of-progovac}), (ii) semantic theories (\sectref{semantic-theories}), (iii) pragmatic theories (\sectref{pragmatic-theories}). The particular details of each approach will be discussed in the respective sections. But what unites them all is the observation about the richness of Slavic expressions, which offers a much clearer picture than the sparse English \emph{any}. Moreover, the various subsystems of negative dependent expressions create beautifully intricate territories where individual subtypes compete for insertion. Consequently, their accurate description brings new data not only for the polarity agenda but also for our understanding of concurrence in grammar. In summary, various approaches to Slavic NPIs will be the main topics of the current chapter, simply because they were at the center of attention in the last 30 years of formal Slavic linguistics.
+
+But before we begin, let us quickly address a closely related phenomenon which I will describe just briefly in the current article (see \citealt{Docekal2020} for full description). Next, to semantically dependent expressions, NPIs exemplified above, there are (in all Slavic languages) negative dependent expressions, so-called \textsc{neg-words}. Neg-words are described in current standard semantic theories as syntactically, not semantically, dependent. Neg-words are syntactically indefinites but clearly distinct from specific, nonspecific, and other kinds of indefinites (see \citetv{chapters/06_geist} for an overview). But focusing on the distinction between neg-words and NPIs, the theoretical distinction (neg-words: syntax, NPIs: semantics) is operationalized using the following criterion from \citet{giannakidou2017landscape}:
+
+\eanoraggedright X qualifies as an neg-word iff:
+\eanoraggedright X can be used with structures with sentential negation or other X with meaning equivalent to $\neg$;
+\ex X provides a negative fragment answer.
+\z
+\z
+
+\noindent Especially the second part of the criterion is the most reliable diagnostic to distinguish NPIs from neg-words because neither of the 3 types of NPIs in \REF{ex:3} can be used as a fragmentary answer to a question. See (\ref{ex:4-a}B$_1$), where all three NPIs are unacceptable, contrasting with the acceptability of the neg-words in the same context, see (\ref{ex:4-a}B$_2$).
+
+\ea\label{ex:4-a}
+\begin{xlist}
+\exi{A:}[]{ \gll Kdo byl dneska večer na náměstí?\\
+who was today evening on square?\\
+\glt `Who was on the square today in the evening?'}
+\exi{B$_1$:}[\#]{ \gll \minsp{\{} Ani jeden člověk. / Byť jediný člověk. / Kdokoliv.\}\\
+{} even one human {} just one human {} anyone \\\hfill NPIs %\textsc{npi} one human\\
+\glt Approximately: `Not even one man.' / `Not a single man.' / `Anyone.'}
+\exi{B$_2$:}[]{\gll Ni-kdo.\\
+\textsc{neg-}person\\\hfill neg-word
+\glt `Nobody.'}\label{ex:4-b}
+\end{xlist}
+\z
+
+\noindent It is important to note that both the syntactic approach of \citet{progovac1994negative} and the semantic approach of \citet{Blaszczak2001} discussed in \sectref{syntactic-approach-of-progovac} and \sectref{semantic-theories} respectively do not accept the distinction between neg-words and NPIs as delineated above. And it is a problem which has caused both empirical and theoretical flaws in both approaches. But to be fair, both approaches were published before there was a solid framework for the treatment of neg-words in negative concord languages (\citealt{zeijlstra2004sentential}). Moreover, either syntactic treatment of all NPIs as in \citet{Progovac1993a} or fully semantic treatment of neg-words (and their sub-kinds as neg-pronouns) as in \citet{Blaszczak2001} were compatible with the linguistic state of art valid at the time of their publication.
+
+In this chapter, I will use the following terminology, which is based partially on \citet{Blaszczak2001} and exemplified with Czech examples in \REF{ex:6}.
+
+
+\ea\label{ex:6} \ea \textsc{neg-words}\\ \textit{nikdo} `nobody' (glossed as \textsc{neg}.person), \textit{nic} `nothing' (\textsc{neg}.thing), \textit{nikde} `nowhere' (\textsc{neg}.place)
+\ex \textsc{a-NPIs}\\ \textit{ani jeden} `not even one' (NPI-one), \textit{ani jednou} `not even once' (NPI-once) 
+\ex \textsc{k-pronouns} \\ \textit{kdokoliv} `anyone', \textit{kdekoliv} `anywhere', \textit{cokoliv} `anything' 
+\ex \textsc{b-NPIs} \\ \textit{byť jediný} (glossed/translated depending on context as `even/just/at least one'), \textit{byť jednou} (`even/just/at least once') \hfill 
+\ex \textsc{regular (weak) NPIs} \\ as Czech \textit{vůbec} `at all'
+\z
+\z
+
+
+
+\section{Three types of approaches to NPIs (from the Slavic perspective)}\label{three-types-of-approaches-to-npis-from-the-slavic-perspective}
+
+\subsection{Syntactic approach of Progovac}\label{syntactic-approach-of-progovac}
+
+Let us first start with the syntactic approach of \citet{progovac1994negative} (for a compatible approach to PPIs see  \citealt{szabolcsi2004positive}). \citeposst{Progovac1993a} approach is partially inspired by the influential work of \citet{linebarger1987negative} where some serious problems of early semantic approaches (like \citealt{fauconnier1978implication, fauconnier1980pragmatic, ladusaw1979polarity}) to NPIs were recognized. The syntactic theory of NPI licensing claims that the domains and licensors of NPIs should be described by syntactic rules: either via transformations, as in the earlier approaches of \citet{klima1964negation} or via binding, as in Progovac's work. 
+
+Progovac's work should be understood with the 1980's semantic theory of NPIs as a background. In the 1980s, the semantic theory of NPIs, in a nutshell, claimed that NPIs occur in \textsc{downward entailing} (DE) contexts. Downward entailing contexts are such that speakers can reason from sets to subsets (see \sectref{semantic-theories} for more details). Let us see this more clearly in an example: consider an example of a downward entailing context in \REF{ex:5-b} as opposed to an \textsc{upward entailing} context in \REF{ex:5-c} (and note the subset--superset relationship in \REF{ex:5-a}). In \REF{ex:5-a}, the quantifier \emph{every} allows one to draw an inference about the truth of the predicate to all subsets of dogs. The inference is valid only for the first argument of \textit{every} (natural language quantifiers have two arguments like their formalization in predicate logic with $\lambda$-abstraction, $\lambda P\lambda Q\forall x[P(x) \rightarrow Q(x)]$), since from the truth of \textit{Every dog barks} it doesn't follow that \textit{Every dog barks loudly}. On the other hand, a quantifier like \emph{some} in \REF{ex:5-c} allows inferences about the truth of the predicate from subsets (e.g., \emph{dachshund}) to supersets (\emph{dogs}), in both its arguments. The quantifier \emph{every} is then called downward entailing (in its first argument) and \emph{some} upward entailing (in both arguments). The quantifier \textit{every} is downward entailing, and because of that (in semantic theories of NPIs), it licenses NPIs: \REF{ex:5-d} while upward entailing quantifier \emph{some} does not: \REF{ex:5-e}. Quantifiers like \textit{every} and \textit{some} are then called downward and upward monotonic, respectively, since they are monotonic in the same sense as monotonically increasing or decreasing functions in mathematics.  %And because \emph{every} qualifies as a downward entailing quantifier (and because of that, according to semantic theories of NPIs), it licenses NPIs: \REF{ex:5-d} while upward entailing quantifier \emph{some} does not: \REF{ex:5-e}.
+
+\newpage
+\ea\ea\label{ex:5-a}dachshund $\subseteq$ dog
+\ex\label{ex:5-b} Every dog barks. $\models$ Every dachshund barks.
+\ex\label{ex:5-c} Some dogs barks. $\not\models$ Some dachshunds bark.
+\ex\label{ex:5-d} Every dog which won any medal barked.
+\ex\label{ex:5-e} *Some dogs which won any medal barked.
+\z
+\z
+
+\noindent The semantic approach works in simple cases like \REF{ex:5-d}, but in its basic form, it has many drawbacks. One of the first influential critiques is \citet{linebarger1987negative}, who noticed some serious problems with the semantic approach. First, Linebarger correctly pointed out that many NPI licensing contexts are not, in fact, downward entailing. Her examples involved conditionals and adversative predicates; see \sectref{some-problems-of-purely-semantic-theories} for more details and refinement of the semantic approach, which can deal with the majority of such problems. And her second line of attack concerned locality restrictions between the licensors and their NPIs. One such example is in \REF{ex:6-a}. The example cannot have the reading \REF{ex:6-c}: it is not true that Mary wears earrings to every party (to some yes but not to all) but only has the reading in \REF{ex:6-b}: there are no such earrings that Mary wears to every party. According to Linebarger, this shows that some scopal (maybe syntactic) locality constraint (requiring the NPI to be in the immediate scope of its licensor) is needed. This seems to be a valid objection that cannot be explained by a theory of NPI licensing depending only on 
+the monotonicity of its context. But see \citet{Chierchia2013} for a modern pragmatic/semantic framework that covers even these supposedly syntactic locality problems.
+
+
+\ea\ea\label{ex:6-a}Mary didn't wear any earrings to every party.
+\ex[\#]{\label{ex:6-c} $\neg\forall y[\textsc{party}(y) \rightarrow \exists x[\textsc{earring}(x) \wedge \textsc{wear at}(\textsc{Mary},x,y)]]$}
+\ex[]{\label{ex:6-b} $\neg \exists x[\textsc{earrings}(x) \wedge \forall y[\textsc{party}(y) \rightarrow \textsc{wear at}(\textsc{Mary},x,y)]]$}
+\z
+\z
+
+\noindent It is appropriate to understand \citet{Progovac1993a} on the background of (in its time very important and influential) \citeposst{linebarger1987negative} theory. Progovac bases her analysis in syntax, trying to explain NPI properties from the principles of binding theory but applied to various types of NPIs instead of the standard pronouns and anaphors. Next, \citet{Progovac1993a} was very influential in its time and still is one of few systematic analyses of Slavic NPI data. Moreover, the whole analysis does not only cover Slavic languages but also provides a general framework designed for a typologically diverse sample of languages. But let us begin with empirical claims. Progovac distinguishes three classes of polarity-sensitive expressions and claims that there are two NPI licensors: negation and an operator in Comp.\footnote{With Comp I refer to complementizers, the functional category exemplified with English \textit{that} or \textit{whether}. Complementizers are heads of embedded clauses (CPs).} The polarity operator is licensed either by syntactic movement or by DE predicate/operator from a c-commanding clause.\footnote{What falls under syntactic movement is the licencing of NPIs in questions, conditionals, and some other constructions where inversion or movement can license the existence of the polarity operator in Comp.} Progovac brings data from Bosnian/Croatian/Serbian (BCS). Nevertheless, her analysis is meant for all Slavic languages. And it is true that in the majority of Slavic languages, similar data can be found (see \sectref{semantic-theories} for analogous data from Polish, described in a different framework, though). According to Progovac (from the NPI point of view), we should distinguish the following three classes of expressions:
+
+\begin{enumerate}
+\item BCS pronouns which begin with the negative prefix \textit{ni}, e.g., \textit{ni-(t)-ko} `no one', \textit{ništa} `nothing', \textit{nikud} `nowhere' are NPIs, in our terminology neg-pronouns. Progovac, following \citet{laka1990negation}, claimed that neg-words in natural languages with negative concord should be analyzed as NPIs, which is one of the possible positions but definitely not the only one (see \sectref{introduction}). Neg-pronouns are claimed to be anaphoric, subject to Principle A: they have to be bound by negation in their governing category. Data supporting the anaphoric nature of NPIs are in \REF{1efb5bed}% after \citet[41]{progovac1994negative}
+and \REF{59ddcb44}. The Grammaticality/ungrammaticality of examples like \REF{1efb5bed}/\REF{59ddcb44} is then simply accounted for as syntactic locality licensing or, more specifically, as a failure to find an antecedent that would be local enough.\footnote{In Slavic languages, the local domain for the majority of anaphors (governed by Principle A) is a tensed clause, TP. See \citet{buring2005binding} for a good textbook on Binding Theory, which also discusses cross-linguistic data.}
+
+  \ea\label{1efb5bed}\gll Milan \minsp{*(} ne) vidi \textit{ni-šta}.\\
+  Milan {} not sees \textsc{neg}-thing\\%nothing\\
+  \glt `Milan cannot see anything.'\hfill (BCS; \citealt[41]{progovac1994negative})
+  \z
+
+  \ea[*]{\label{59ddcb44}\gll Milan ne tvrdi \minsp{[} da Marija poznaje \textit{ni(t)-koga}].\\
+  Milan not claims {} that Mary knows no-one.\textsc{acc}\\
+  \glt Intended: `Milan doesn't claim that Mary knows anyone.'\\\hfill (BCS; \citealt[41]{progovac1994negative})}
+  \z
+
+
+\item Progovac further claims that another class of BCS pronouns, beginning with the prefix \textit{i}, e.g., \textit{i-(t)-ko} `anyone', \textit{išta} `anything', \textit{ikud} `anywhere', and the like are polarity items as well, in our terminology k-pronouns. K-pronouns are, according to Progovac, anaphoric pronominals. They are subject to Principle B: they need to be free in the local clause but bound in the sentence (licensed from a higher position) -- after \citet[64]{progovac1994negative}. Environments allowing only k-pronouns, not neg-words, are (according to Progovac): questions, conditionals, adversative predicates, restrictive clauses of universal quantifiers, and superordinate negation. For all these environments, she offers a syntactic explanation of the possible occurrence of k-pronouns (and the impossibility of neg-words): an operator in Comp (in all five environments) is supposed to license k-pronouns but is too non-local for neg-words. Some examples (after \citealt{progovac1994negative}) are shown in \REF{doc:ex:progovac2}; the explanation is the same for them all (but see \cite[64]{progovac1994negative} for a full range of examples).
+
+\ea\label{doc:ex:progovac2}
+\ea\label{0c60bb59}\gll Da li Milan voli \textit{i(t)koga} / \minsp{*} \textit{ni(t)koga}?\\
+that \textsc{q} Milan loves anyone {} {} \textsc{neg}.person.\textsc{acc}\\
+\glt (Intended:) `Does Milan love anyone?'
+\ex\label{8e15c015}\gll Akor Milan povredi \textit{i(t)koga} / \minsp{*} \textit{ni(t)koga}, bi-\'{c}e kažnjen.\\
+if Milan hurts anyone.\textsc{acc} {} {} \textsc{neg}.person.\textsc{acc} be.\textsc{fut} punished\\
+\glt (Intended:) `If Milan hurts anyone, he will be punished.'
+\ex\label{55c25e1a}\gll Sumnjam da Milan voli \textit{i(t)koga} / \minsp{*} \textit{ni(t)koga}.\\
+doubt.\textsc{1.sg} that Milan loves anyone.\textsc{acc} {} {} \textsc{neg}.person.\textsc{acc}\\
+\glt `I doubt that Milan loves anyone.'
+\ex\label{7a73e0a5}\gll Svako (t)ko povredi \textit{i(t)koga} / \minsp{*} \textit{ni(t)koga}, mora bit kažnjen.\\
+everyone who injures anyone.\textsc{acc} {} {} \textsc{neg}.person.\textsc{acc} must be punished\\
+\glt `Everyone who injures anyone must be punished.'\\\hfill (BCS; \citealt{progovac1994negative})
+\z\z
+
+
+\item Finally, Progovac analyzes BCS pronouns beginning with the prefix \textit{ne}, e.g., \textit{ne-(t)-ko} `someone,' \textit{nešto} `something' as \textsc{positive polarity items} (PPIs). PPIs (\textit{ne(t)ko, nešto}, etc.) are according to her pronominals (in the sense of binding theory). They are subject to Principle B and have to be free in their governing category. Data supporting PPI analysis of \textit{ne} pronouns come from the grammaticality of these pronouns in positive sentences. Their occurrence within the scope of superordinate negation allows for possible narrow scope (added formalization, MD) with respect to a superordinate negation, yet they obligatorily take wider scope than their clausemate negation, as argued by \citet{progovac1994negative}. %(145), (141), (138)
+
+\ea\label{11f1dc0b}\gll Milan je uvredio ne(t)koga.\\
+Milan is insulted someone.\textsc{acc}\\
+\glt `Milan has insulted someone.'\hfill (BCS; \citealt{progovac1994negative})
+\z
+
+\ea\label{68bcd014}\ea\gll Marija ne smatra da je Milan uvrdio ne(t)koga.\\
+Mary not thinks that has Milan insulted someone\\
+\glt `Mary does not think that Milan insulted someone.'\\\hfill (BCS; \citealt{progovac1994negative})
+\ex $\neg \textsc{think}(\textsc{Mary},p) \wedge p= \exists x[\textsc{person}(x) \wedge \textsc{insulted}(\textsc{Milan},x)]$
+\z
+\z
+
+\ea\label{a67c72bd}\ea\gll Ne(t)ko nije došao.\\
+someone \textsc{neg}.is come\\
+\glt `Someone has not come.'\hfill (BCS; \citealt{progovac1994negative})
+\ex
+\ea Available: $\exists x[\textsc{person}(x) \wedge \neg \textsc{come}(x)]$
+\ex Unavailable: $\neg\exists x[\textsc{person}(x) \wedge \textsc{come}(x)]$
+\z\z\z
+
+\end{enumerate}
+
+\noindent To take stock: Progovac analyzes three classes of BCS expressions: neg-words, k-pronouns, and indefinite pronouns. She explains their various polarity sensitivity as a syntactic phenomenon: basically as the need of an expression to be bound either locally (neg-words) or non-locally (k-pronouns). In the third case (indefinite pronouns) as the obligation to be free locally (indefinite pronouns must be locally free but might be bound outside of their governing category). The negation acts as a binder for the first (and to some extent second class). The operator in Comp is the long-distance binder for the second class; she offers a similar analysis for English, though with parametric changes.
+
+Progovac distinguishes only two classes of English expressions: (i) PPIs and (ii) NPIs. The items she considers uncontroversial PPIs for English are \emph{some} or the temporal adverbial \emph{already}. English PPIs (analogically to Slavic data discussed above) have to be locally free (Principle B). NPIs, like \emph{any}, have to be bound locally (Principle A). There is an obvious difference between \emph{any} and \emph{ni-} BCS pronouns -- \emph{any} can be licensed across the clausal boundary (either by negation or by another DE operator). Such possibility to be licensed non-locally (against Principle A) is, according to Progovac, the result of a language variation: the English type of NPIs can raise at LF, BCS NPIs cannot.
+
+For English then, Progovac predicts that \emph{any} can be bound either by a clause-mate negation: \REF{ex:7-a} or by an OP licensed from, e.g., a root clause with predicates that are not upward-entailing: \REF{ex:7-b} -- \emph{be sorry} is a downward entailing predicate: if you are sorry that people kill animals, you are sorry that people kill pigs. This is not possible for Slavic neg-words since they cannot raise at LF; their clausemate negation must license them. English-type NPIs cannot be licensed only in a clause without negation and with a verb which is upward entailing like \REF{ex:7-c}; if you forgot keys, you forgot an object but not the other way round.%
+\footnote{I follow here \citet{krifka1995semantics} and his slightly Janus-face approach to \textit{forget}: for Krifka, the clausal argument of \textit{forget} is (at least) not upward entailing since ``If Mary forgot that a woman came yesterday, she might not have forgotten that a person came yesterday", but the NP argument of \textit{forget} is upward entailing since ``if Mary forgot a poem by Goethe, then she forgot a poem, but not necessarily vice versa" \citep[212]{krifka1995semantics}. That explains correctly why NPIs in the clausal arguments of \textit{forget} are licensed (\textit{I forgot to bring anything}), unlike in \REF{ex:7-c}. But this simply seems like a restatement of NPI licensing behavior in terms \textit{forget}'s entailment profile, as one of the anonymous reviewers correctly remarks. It would be best to thoroughly test NPI-licensing patterns of \textit{forget} across languages and then hopefully come up with the right theory of \textit{forget}, but that has to remain a project for future work. }
+This all is correct and seems like a beautiful cross-linguistically sensitive syntactic theory of NPIs.%
+\footnote{I simplify here a bit. Progovac, in fact, observes that there are some cases of acceptable \textit{any} in the non-clausal argument of non-negated root sentences, but she classifies such examples as FCI usage of \textit{any}. Her explanation was then questioned by \citet{horn1995progovac,hoeksema1996progovac}. Thanks to one of the anonymous reviewers for pointing out the debate.}
+
+\ea\label{ex:7}\ea[]{Peter didn't write any letter.\label{ex:7-a}}
+\ex[]{Peter is sorry that he said anything.\label{ex:7-b}}
+\ex[*]{Peter forgot anything.\label{ex:7-c}}
+\z\z
+
+\noindent But there are some problems. Progovac's approach predicts (as correctly pointed out by \citealt[212--213]{krifka1995semantics}) that the English-type NPI can never be licensed in the non-clausal argument of a non-negated root clause (which works as an explanation of the ungrammaticality of \REF{ex:7-c}). There is no Comp for an operator in the root clause, and there is no negation to license it either. But this prediction is wrong both for English and for Slavic languages. Consider the English example from \citet[213]{krifka1995semantics}, which was later modified by \citet{Blaszczak2001} to show that Slavic-type NPIs (neg-words) can be licensed without any proper syntactic licensor in Progovac's sense, \REF{ex:8-a}. The same point can be made for k-pronouns as well: they are licensed by adversative predicates, usually licensing NPIs; see the naturally-sounding Czech example in \REF{ex:9}. \REF{ex:9} is a positive root sentence, so according to Progovac's approach, the k-pronoun should be free in this domain.  Nevertheless, it is precisely the main predicate of the sentence which allows the grammaticality of the k-pronoun. But if the predicate is the licensor here, we have a Principle B violation pace \citet{Progovac1993a}. At least in Czech, the set of predicates that license k-pronouns by themselves seems to overlap with adversative predicates. The most frequent collocations of positive verbs occurring with k-pronouns -- from Czech National Corpus -- are verbs as \textit{zakázat} `forbid,' \textit{odmítnout} `refuse' and \textit{vyhýbat} `avoid.' But there are also many examples of licensing by positive existential modals or imperatives. Such cases are not explainable as ``inherently negative'' in the style of adversative predicates; see \citet{Strachonova2016} for many valuable data points.
+
+\ea\ea\label{ex:8-a} John lacks any sense of humor.
+\ex\label{ex:8-b} John came without any present.
+\z
+\z
+
+\ea\label{ex:9} \gll Petr odmítal jakoukoliv pomoc.\\
+Petr refused any help\\
+\glt `Petr refused any help.'%\hfill (Czech)
+\z
+
+\noindent In this section, a historically very influential syntactic theory of NPIs licensing was discussed. There are obvious shortcomings of the theory, discussed partially above and further in \sectref{semantic-theories}. Maybe the most serious problem is the attempt to unify three Slavic classes of expressions under the roof of the Binding Theory. Today it seems more reasonable to treat neg-words in syntax. One of today's standard theories of neg-words is \citet{zeijlstra2004sentential} -- different in formalization but similar to \citet{progovac1994negative} in taking locality constraints seriously as syntactic in nature. And as for k-pronouns and indefinite pronouns, they ought to be explained via some appropriate semantic or pragmatic theory (already the problems of adversative predicates pointed out the difficulty of finding a reasonable syntactic licensor for k-pronouns or English NPIs in a purely syntactic framework like \citealt{progovac1994negative}). But despite these problems, \citet{progovac1994negative} is the first serious attempt to deliver a theory of various NPI classes, starting with Slavic data but aiming at a general framework of cross-linguistically conceived polarity licensing.
+
+\subsection{Semantic theories}\label{semantic-theories}
+
+The semantic approach to NPI licensing is still the standard theory of the semantic negative dependent expressions. There are various ways of approaching the idea that NPIs are licensed purely semantically. The most widely accepted reasoning is based on the downward entailing approach of \citet{ladusaw1992expressing}, but the idea can be found in influential works of \citet{heim1984note,ladusaw1992expressing,kadmon1993any,krifka1995semantics,giannakidou1997landscape,lahiri1998focus} too. It usually starts with the observation (introduced quickly already in \sectref{introduction}) that next to negation, there are many other prototypical NPI licensing contexts. Such contexts include downward entailing quantifiers, antecedents of conditionals, the scope of the exclusive particle \emph{only}, adversative predicates, comparatives, and superlatives. All the contexts are claimed to share the property of reversing the direction of entailment. The monotonicity reasoning is demonstrated in the predicate logic implications in \REF{ex:10}. In the non-negated formula \REF{ex:10-a} (corresponding to a natural language positive sentence under \REF{ex:10-b}), the entailment goes from a subset (intersection of \emph{P} and \emph{Q}) to a superset (union of \emph{P} and \emph{Q}). In a negated formula \REF{ex:10-c} (and corresponding natural language sentence under \REF{ex:10-d}), the entailment is reversed and proceeds from a superset (union) to its subset (intersection). The same entailment reversal can be observed in the difference between upward-entailing quantifiers as \emph{some} versus downward entailing quantifiers like \emph{few} demonstrated in \REF{ex:11}.
+
+\ea\label{ex:10}\ea\label{ex:10-a} $\exists x[P(x) \wedge Q(x)] \rightarrow \exists x[P(x) \vee Q(x)]$
+\ex\label{ex:10-b} $\exists x[\textsc{red}(x) \wedge \textsc{wine}(x)] \rightarrow \exists x[\textsc{red}(x) \vee \textsc{wine}(x)]$\\
+John likes red wine. $\rightarrow$ John likes wine.\\
+John likes wine. $\not\rightarrow$ John likes red wine.
+\ex\label{ex:10-c}$\neg \exists x[P(x) \vee Q(x)] \rightarrow \neg \exists x[P(x) \wedge Q(x)]$
+\ex\label{ex:10-d} $\neg \exists x[\textsc{red}(x) \vee \textsc{wine}(x)] \rightarrow \neg \exists x[\textsc{red}(x) \wedge \textsc{wine}(x)]$\\
+John doesn't like wine. $\rightarrow$ John doesn't like red wine.\\
+John doesn't like red wine. $\not\rightarrow$ John doesn't like wine.
+\z
+\z
+
+\ea\label{ex:11}\ea Some people drank red wine. $\rightarrow$ Some people drank wine.
+\ex Some people drank wine. $\not\rightarrow$ Some people drank red wine.
+\ex Few people drank red wine. $\not\rightarrow$ Few people drank wine.
+\ex Few people drank wine. $\rightarrow$ Few people drank red wine.
+\z
+\z
+
+\noindent The semantic approach is very successful: it explains the distribution of so-called weak NPIs (like English \emph{any}; more on different types of NPIs in \sectref{types-of-npis}) via a unified semantic property. The property of NPI licensing is that they occur in downward entailing (entailment reversing) environments (but see \sectref{some-problems-of-purely-semantic-theories} for many qualifications). Despite some problems discussed below, the DE-based explanation of NPI licensing is still considered a benchmark of semantic reasoning and appears in standard textbooks on formal semantics (\citealt{portner2005meaning,Coppock.Champollion2024}; among many others). The proper formalization of DE licensing can be stated as \REF{ex:12}, and DE is defined in \REF{ex:13}, both after \citet{von1999npi}. The explanation of weak NPI acceptability in a sentence like \emph{John didn't drink any wine yesterday} (contrasted with ungrammaticality of *\emph{John drank any wine yesterday}) is as follows: \REF{ex:14} states the entailment pattern for \emph{red wine} and \emph{wine} (\emph{x} and \emph{y} from \REF{ex:13}), subset relation on sets corresponds to the entailment in \REF{ex:13} as \(\forall x[[\textsc{red}(x) \wedge \textsc{wine}(x)] \Rightarrow \textsc{wine}(x)]\). But negation (\emph{F} from \REF{ex:13}) reverses the sub-set superset relationship: \(\forall x[\neg \textsc{wine}(x) \Rightarrow \neg[\textsc{red}(x) \wedge \textsc{wine}(x)]]\). And because of this DE entailment reversal, \emph{any} is licensed as stated in \REF{ex:12}.
+
+\eanoraggedright\label{ex:12} Fauconnier-Ladusaw's Licensing condition\hfill \hfill \citep[100]{von1999npi}\\
+An NPI is only grammatical if it is in the scope of an $\alpha$ such that \sib{$\alpha$} is DE.
+\z
+
+\eanoraggedright\label{ex:13}Downward Entailment\hfill\citep[100]{von1999npi}\\
+A function $f$ of type $\langle \delta,\tau\rangle$ is downward entailing iff for all $x,y$ of type $\delta$ such that $x\Rightarrow y$: $f(y)\Rightarrow f(x)$ [`$\Rightarrow$' stands for cross-categorial entailment].
+\z
+
+\ea\label{ex:14}$\{x: x$ is a red wine$\} \subseteq \{y: y$ is a wine$\}$
+\z
+
+\subsubsection{Some problems of purely semantic theories\label{some-problems-of-purely-semantic-theories}}
+
+Even if the criterion in \REF{ex:12} is very successful, many problems appeared during years of NPI exploration. The problems have led to some ramifications (and in some cases abandonment or replacement of the criterion; see \citealt{giannakidou1997landscape,linebarger1987negative}). Very famous problems arise when we scrutinize monotonic properties of \emph{only}, conditionals, superlatives, and adversative predicates. All these expressions seem to license NPIs but do not fit the defining property of downward entailment, at least at first sight. A proper exposition of such problems goes beyond the scope of this chapter; see \citet{von1999npi} for the classic reference and \citet{gajewski2011licensing} among many others for a recent refinement.%
+\footnote{As one of the anonymous reviewers correctly notes, \citet{von1999npi} is just one of the attempts (even if very influential and empirically successful) to overcome the limitations and problems of a purely semantic approach to NPIs. Historically sorted, at least the following researchers -- \citet{heim1984note,kadmon1993any,israel_polarity_1996} -- proposed various pragmatic relativizations of the entailing conditions necessary for NPI licensing, be it contextual entailment, fixation of contexts, or integrating background knowledge of communication participants into the reasoning important for NPI licensing.}
+But let me demonstrate the nature of the problems of simple DE theory with an example. Despite the validity of the sentential logic tautology in \REF{ex:15-a}, conditionals in natural language seem not to allow the strengthening of antecedents. Consider counter-intuitive reasoning from \REF{ex:15-b} to \REF{ex:15-c}, but even if such reasoning can sound paradoxical when viewed intuitively, it would be formalized in classical logic as the correct strengthening in \REF{ex:15-a}. As a consequence, it seems that natural language conditionals do not exhibit downward entailing property, but despite that, they are one of the prototypical NPI licensors. Similar problems were observed with the other contexts mentioned above (adversative predicates, superlatives, \ldots) too. Even if the environments are not intuitively downward entailing, they license NPIs like \emph{any}: see \REF{ex:16}.
+
+\ea\label{ex:15}\ea\label{ex:15-a} $(p \rightarrow q) \rightarrow ((p \wedge r) \rightarrow q)$
+\ex\label{ex:15-b} If [you pet a dog] it will be happy. $\not\rightarrow$
+\ex\label{ex:15-c} If [you pet a dog and kick it] it will be happy.
+\z
+\z
+
+\ea\label{ex:16}\ea If you pet any dog, it will be happy.
+\ex I am sorry to give you any trouble.
+\ex Only Peter drank any tea.
+\z
+\z
+
+\noindent The analysis of the problems concerning conditionals (and other problematic environments) proceeds in the following way (after \citealt{von1999npi}). First, the basic notion of downward entailment is replaced by \textsc{Strawson downward entailment} (SDE), and SDE adds to the standard argument a presupposition of the sentence. Second, the added presupposition plus the at-issue meaning of the sentence then qualify for the downward entailing property as described in \REF{ex:13}.\footnote{The formal definition of SDE is in \REF{ex:19}.}
+For conditionals like \REF{ex:15-b}, the added presupposition would concern the current modal horizon. Modal horizons are sets of worlds that are compatible with everyday reasoning about conditionals. For \REF{ex:15-b}, possible worlds where an agens both pets and kicks a dog are beyond the current modal horizon. Consequently, adding a presupposition to the effect that the current modal horizon is compatible only with worlds where only petting a dog would cause happiness of a dog would save the downward monotonicity of conditionals and explain the grammaticality of an NPI in \REF{ex:16}. 
+
+This gives an impressionistic introduction to SDE reasoning, but let us\linebreak demonstrate the SDE on a simpler pattern since a proper treatment of reasoning in conditionals is surely beyond the scope of this article. \citet{gajewski_another_2016} offers exactly such a type of example; he discusses the cases of NPI licensing by plural definite NPs like in \REF{ex:17}. But the entailment in \REF{ex:18} is invalid since knowing that the supremum of (in the context) salient students drank beer does not tell us anything about their nationality. Exactly a similar problem as discussed above with respect to the pattern in \REF{ex:16} is encountered  -- expressions that are not DE do license NPIs.
+
+\ea\label{ex:17} The students who have any beer are sharing it. \hfill (after \citealt[ex. 2]{gajewski_another_2016})
+\z
+
+\ea\label{ex:18} The students drank beer. $\not\rightarrow$ The German students drank beer. 
+\z
+
+\noindent The exact definition of Strawson downward entailment is in \REF{ex:19}. In \REF{ex:18}, the conclusion wasn't entailed by the premise. But according to \REF{ex:19}, the presupposition of the conclusion (the existence and uniqueness presupposition of the definite description in conclusion) should be granted as a premise in the argument as demonstrated in \REF{ex:20}. Then the argument becomes valid, although the price is obvious: the entailment must take into account pragmatic notions like presupposition. Despite that, SDE has been successfully applied to many cases of NPI licensing in environments that simply are not DE, so it is a useful linguistic tool.
+
+\eanoraggedright\label{ex:19} Strawson Downward Entailment \hfill (after \citealt[104]{von1999npi})\\
+A function $f$ of type $\langle \sigma,\tau\rangle$ is Strawson-DE iff for all $x, y$ of type $\sigma$ such that $x \Rightarrow y$ and $f(x)$ \textit{is defined}: $f(y) \Rightarrow f(x)$.
+\z
+
+\ea\label{ex:20} The students drank beer.\\
+There are salient German students.\\
+$\models$ The German students drank beer. 
+\z
+
+\noindent But even if the solution via Strawson downward entailment is widely accepted today, there still remain problems that are not well-understood. One of them (important later -- see \sectref{scalar-particles-and-negation}) is the following: \citet{von1999npi} and his SDE predicts that adversative predicates as \emph{sorry, regret, amazed, difficult,} or \emph{refuse} can license NPIs because adding a (usually factive) presupposition un-masks their hidden DE properties.
+But predicates like \emph{want, glad,} or \emph{like} cannot license NPIs because they are not even SDE (they are usually analyzed as upward monotonic but see \citealt{von1999npi} for qualifications). The prediction seems to be mostly right: compare the contrast between \REF{ex:21-a} and \REF{ex:21-b}. But there is a special type of context (discussed by \cite{kadmon1993any} already) where \emph{glad} can license NPIs. Such contexts permitting NPIs under \emph{glad} have a special interpretation called ``settle for less'' by \citet{kadmon1993any}. The core description of such contexts demonstrated in the example \REF{ex:22} is the following: the speaker wanted an alternative (higher) number of tickets, but because he considered the situation so dire that even lousy tickets were the only possibility, he settled for less than he would normally want. For some reasons (not totally clear, but see \citealt{alonso2016all} for some recent insights), it seems that other adversative predicates like \emph{want, hope,} or \emph{wish} at least in English do not allow the settle-for-less reading and consequently cannot license NPIs. Nevertheless, to sum up, the current sub-section: the semantic approach (if enriched with a pragmatic notion like SDE) can deal with the majority of more complicated cases where allegedly non-downward entailing expressions license NPIs (and which were correctly pointed out already by \citet{linebarger1987negative} as not simply downward entailing).
+
+\ea \ea[]{I regret there is any idea like that.\label{ex:21-a}}
+\ex[\#]{I am glad there is any idea like that.\label{ex:21-b}}
+\z
+\z
+
+\ea\label{ex:22} I am glad that we got any tickets.
+\z
+
+\subsubsection{Types of NPIs\label{types-of-npis}}
+
+Another step in broadening the empirical coverage of semantic NPI theories was a seminal work of \citet{zwarts1998three} where various types of NPIs are, for the first time systematized, and a purely semantic explanation of their differing distribution is offered. This classification of NPIs was especially important from the perspective of Slavic languages as it inspired the most thorough semantic approach to Slavic NPIs: \citet{Blaszczak2001} and some following works of her like \citet{blaszczak2003negative} and \citet{blaszczak2008puzzle}; \citeauthor{Blaszczak2001}'s contributions are discussed in \sectref{semantic-theory-applied-to-slavic-data}. Consider the first examples of the two most prominent classes of NPIs: weak in \REF{ex:23} and strong in \REF{ex:24}. As evident, only negation and negative quantifiers license \textsc{strong NPIs} (such as \emph{until midnight} in \REF{ex:24}), while for the licensing of \textsc{weak NPIs} as \emph{any}, the downward entailing environment is enough; see \REF{ex:23}.
+
+\ea\label{ex:23}\ea[]{John didn't leave any message.}
+\ex[]{No teacher left any message.}
+\ex[]{Few teachers left any message.}
+\ex[]{At most ten teachers left any message.}
+\ex[\#]{Some teachers left any message.}
+\z
+\z
+
+
+\ea\label{ex:24}\ea[]{John didn't leave until midnight.}
+\ex[]{No teacher left until midnight.}
+\ex[\#]{Few teachers left until midnight.}
+\ex[\#]{At most ten teachers left until midnight.}
+\ex[\#]{Some teachers left until midnight.}
+\z
+\z
+
+\noindent The logical property which licenses strong NPIs share is a strengthened form of entailment reversal and usually is named \textsc{anti-additivity}.%
+\footnote{A popular alternative explanation of strong NPIs, and their behavior can be found in \citet{gajewski2011licensing}. Gajewski describes their stricter distribution via downward entailing properties but checked both in at-issue meaning and in the presupposition/implicature part of the meaning. More pragmatic approaches to NPI licensing will be presented in \sectref{pragmatic-theories}.}
+The definition of anti-additivity is in \REF{ex:25}: it represents a half of the well-known De Morgan's laws of conjunction/disjunction transformation via negation \citep[46]{tarski1994introduction}. Standard logical negation obeys De Morgan's two laws in \REF{ex:deMorgan}.
+
+\ea\label{ex:deMorgan}\ea \(\neg(p \vee q) \leftrightarrow \neg p \wedge \neg q\)  
+\ex \(\neg(p \wedge q) \leftrightarrow \neg p \vee \neg q\)
+\z
+\z
+
+\noindent Anti-additivity picks one of them, so we can view anti-additivity as a subset of negation properties. \REF{ex:26} illustrates the anti-additivity (the quantifier \textit{no} is anti-additive since negation is always anti-additive, as is clear from De Morgan's laws). But DE quantifiers like \textit{few} in \REF{ex:27} are not anti-additive -- imagine a scenario with 10 students, three of them drinking and three of them smoking, then \(\vee\) part of \REF{ex:27} is false while \(\wedge\) part of \REF{ex:27} is true. That explains why \emph{no} is licensed by the strong NPI \emph{until midnight} in \REF{ex:24} and not licensed by just downward entailing quantifier \emph{few}.%
+\footnote{As one of the reviewers correctly remarks, anti-additivity as presented in this section and its contrastive logical behavior with respect to DE is just a part of the whole picture, presented carefully and systematically in \citet{zwarts1998three}. Zwart's main idea then is that there is a hierarchy of negative strength: downward entailing < anti-additive < anti-morphic. Anti-morphicity is defined as: F is anti-morphic iff $F(\neg p) \leftrightarrow \neg F(p)$. Classical verbal negation is, of course, anti-morphic, since $\neg(\neg p) \leftrightarrow \neg\neg p$ but universal quantifiers, which are anti-additive, since $\forall x((P(x) \vee Q(x)) \rightarrow R(x)) \leftrightarrow \forall x(P(x) \rightarrow R(x)) \wedge \forall x(Q(x) \rightarrow R(x)) $, are not anti-morphic because $\neg \forall x(P(x) \rightarrow Q(x)) \not\leftrightarrow \forall x(P(x) \rightarrow \neg Q(x))$. The relative strength of the licensor is, for \citet{zwarts1998three}, picked up by weak, strong, and superstrong classes of NPIs, respectively.}
+
+\ea\label{ex:25} Anti-additive function: \(F(x \vee y) \leftrightarrow F(x) \wedge F(y)\)
+\z
+
+\ea\label{ex:26} No student smokes or drinks.\\\(\leftrightarrow\) No student smokes and no student drinks.
+\z
+
+\ea\label{ex:27} Few students smoke or drink.\\\(\not\leftrightarrow\) Few students smoke and few students drink.
+\z
+
+
+\subsubsection{The semantic theory applied to Slavic data}\label{semantic-theory-applied-to-slavic-data}
+
+\citet{Blaszczak2001} and other works by her apply this classification of NPIs to Slavic data. First, \citeauthor{Blaszczak2001} observes that, generally, k-pronouns (Polish pronouns with the suffix \emph{-kolwiek}) are licensed in prototypical NPI contexts. Such contexts include higher clause negation, questions, conditionals, the scope of downward entailing quantifiers, comparatives, adversative predicates, \emph{before}-clauses, etc. Neg-pronouns (Polish pronouns usually beginning with \emph{n-}) are generally licensed only by clause-mate negation: see \REF{ex:28} and \REF{ex:29}.
+
+\ea\label{ex:28}\ea[*]{\gll Ewa nie chciała, żeby Jan nikogo zapraszał.\\
+Eve \textsc{neg} wanted that.\textsc{sbjv} John \textsc{neg}.person invited\\
+\glt Intended: `Eve didn't want John to invite anyone.'}\hfill(Polish; \citealt[2]{blaszczak2003negative})
+\ex[]{\gll Ewa chciała, żeby Jan nie nikogo zapraszał.\\
+Eve wanted that.\textsc{sbjv} John \textsc{neg} \textsc{neg}.person invited\\
+\glt `Eve wanted John not to invite anybody.'}\hfill(Polish; \citealt[2]{blaszczak2003negative})
+\z
+\z
+
+\ea\label{ex:29}\ea \gll Czy widziałeś tam kogokolwiek?\\
+whether saw.\textsc{2sg} there anybody\\
+\glt `Have you seen anybody there?'
+\ex \gll Jeśli ktokolwiek przyjdzie, daj mi znać.\\
+if anybody comes let me know\\
+\glt `If anyone comes, let me know.'
+\ex \gll Ewa nie chciała, żeby Jan kogokolwiek zapraszał.\\
+Eve \textsc{neg} wanted that.\textsc{sbjv} John anybody invited\\
+\glt `Eve didn't want John to invite anyone.'\\\hfill (Polish; \citealt[2]{blaszczak2003negative})
+\z
+\z
+
+\noindent This is a familiar observation concerning the partial complementary distribution of two classes of Slavic pronouns, which was discussed already in \sectref{syntactic-approach-of-progovac} dedicated to the syntactic approach of \citet{progovac1994negative}. But \citeposst{Blaszczak2001} solution is different, and her critique of \citet{Progovac1993a} is correct. \citet{Blaszczak2001} criticizes syntactic approach of \citet{Progovac1993a} mainly on empirical grounds. One of her main arguments concerns the licensing of neg-pronouns by a preposition \textit{bez} `without.' The grammaticality of \REF{ex:30} is unaccounted by the syntactic approach of Progovac since there is no negation or polarity operator in Comp. But since (at least in Polish) neg-pronouns are fully licensed in the complement of \textit{bez} `without,' B{\l}aszczak concludes that the semantic approach is more in accordance with the Slavic data. For more general problems of Progovac's syntactic theory of NPI licensing, see \sectref{syntactic-approach-of-progovac}.
+
+\ea\label{ex:30}\gll Został bez nikogo.\\
+was-left.\textsc{3sg} without \textsc{neg}.person\\
+\glt `He was left without anyone.'\hfill (Polish; \citealt{blaszczak2003negative})
+\z
+
+\noindent The core of \citeposst{Blaszczak2001} proposal concerning Polish NPIs is the following:
+
+\begin{enumerate}
+% \def\labelenumi{\arabic{enumi})}
+\item
+  K-pronouns are licensed in downward entailing or anti-additive environments. So in contrast to the syntactic binding-theoretic analysis of \citet{Progovac1993a}, we see the standard semantic treatment of NPIs, which is more in accordance with the variability of NPI licensors: quantifiers, polarity operators, various types of embedding, etc., which cast doubt on any purely syntactic approaches to NPIs.
+\item
+  According to \citet{Blaszczak2001}, neg-pronouns can occur only in anti-morphic environments.%
+  \footnote{As one of the reviewers correctly points out, it is not clear whether this claim is valid even for sentences with $\geq$ 2 occurrences of neg-words, since the scopally lowest neg-word is in the anti-additive environment, but the sentence is still grammatical.}
+  The definition of the anti-morphic functor (adding one condition on top of anti-additivity) is in \REF{ex:31}. An anti-morphic function is a classical negation because it obeys both requirements of \REF{ex:31} (De Morgan's laws). And it seems that only clausal negation fits such a requirement in a natural language. And because of its nature, it also satisfies another condition in \REF{ex:32}: first negation before the equation sign in \REF{ex:32-b} corresponds to \emph{f} in \REF{ex:32-a}. But notice that anti-morphic predicatees are also negated truth-value ascribing predicates and neg-raising predicates, as in \emph{it is not true that\ldots} or \emph{x does not believe that\ldots} Both contexts will be discussed at the end of the current section.
+\end{enumerate}
+
+\noindent Applied to examples in \REF{ex:28}: a negated modal verb does not license neg-pronouns in its embedded clause, since from \(\neg \forall [P]\) it does not follow \(\forall [\neg P]\). Nevertheless, the ungrammaticality of \REF{ex:28} is not caused by the interfering modal since modals generally do not interrupt NPI licensing. Verbal negation, of course, licenses the clausemate neg-words. For k-pronouns in \REF{ex:29}, the semantic analysis predicts that they should be grammatical in anti-additive conditionals (they are, in fact, Strawson anti-additive, see \citealt{gajewski2011licensing}) or in a simple downward entailing context like a negated embedding modal verb.
+
+\ea\label{ex:31}A functor \textit{F} is anti-morphic iff:
+\ea $F(x \wedge y) \leftrightarrow F(x) \vee F(y)$
+\ex $F(x \vee y) \leftrightarrow F(x) \wedge F(y)$
+\ex $\neg(x \wedge y) \leftrightarrow \neg(x) \vee \neg(y)$
+\ex $\neg(x \vee y) \leftrightarrow \neg(x) \wedge \neg(y)$
+\z
+\z
+
+\ea\label{ex:32}\ea \label{ex:32-a}$f(\neg x) = \neg f(x)$
+\ex \label{ex:32-b}$\neg (\neg x) = \neg \neg (x)$
+\z
+\z
+
+\noindent The semantic approach is much more appropriate than the syntactic approach, especially in its treatment of k-pronouns. The set of environments where k-pronouns appear forms a natural semantic class. But there are some problems with the semantic approach too. Some of them were observed in recent general linguistic work, which usually argues for a semantic and pragmatic approach to NPIs instead of a purely semantic one (see \citealt{krifka1995semantics, gajewski2011licensing, Chierchia2013}; among many others). Nevertheless, the standard approach today is to treat neg-words as a separate class of negative dependent expressions licensed in syntax (see already \citealt{krifka1995semantics} for some insightful remarks and \citealt{zeijlstra2004sentential} for the current \textit{de facto} standard theory of neg-words). But let us discuss some empirical problems which are particularly interesting and concern Slavic data:
+
+\begin{enumerate}
+% \def\labelenumi{\arabic{enumi})}
+\item
+  As \REF{ex:33-e} shows, only NPIs are licensed in neg-raising contexts; real neg-words are not acceptable there (see \citealt{dovcekal2016experimentala} for the experimental data confirming this claim). But neg-raising predicates are anti-morphic even in their embedded clauses, so a purely semantic approach predicts that both NPIs and neg-words should be licensed there (contrary to facts). This asymmetry raises serious problems for any semantic treatment of neg-words.%
+\footnote{One of the anonymous reviewers correctly remarks that the status of neg-raising predicates as either anti-morphic or as anti-additive is, to some extent, theory-dependent. In approaches where the negation would really be present syntactically and semantically in the embedded clause, they would be anti-morphic, but for \citet{gajewski_neg-raising_2005,gajewski_neg-raising_2007}, the embedded clauses of neg-raisers are just anti-additive. \citet[305]{gajewski_neg-raising_2007} empirically supports his classification with the following entailment pattern where (for him) the first entailment is valid, but the second one is not. And since, for him, the crucial test for anti-morphicity is the entailment $f(x \wedge y) \rightarrow f(x) \vee f(y)$, he argues for the mere anti-additive status of neg-raising embedded clauses. 
+\ea John doesn’t think Mary left and John doesn’t think Bill left.\\$\rightarrow$
+John doesn’t think Mary left or Bill left.
+\z
+
+\ea John isn’t certain that Mary left and John isn’t certain that Bill left.\\$\not\rightarrow$
+John isn’t certain that Mary left or Bill left.
+\z
+
+\noindent I'm not sure whether his argument is very strong since the predicate logic implication $\neg\forall x(Px \wedge Qx) \rightarrow (\neg\forall xPx \vee \neg\forall xQx)$ is valid. 
+%But there is a possibility that modal verbs shouldn't be treated as universal quantifiers, then the validity can cease. 
+Recent work on necessity modals \citep{agha2022weak} opens up a possibility to formalize certain necessity modals not as universal quantifiers. Going in this direction would weaken Gajewski's argument even more. Nevertheless, following this route of argumentation would be intriguing but would lead us too far away from the merit of the current chapter.
+}
+\item
+  The same point holds for truth-value ascribing predicates: \REF{ex:33-a} and \REF{ex:33-b} are equivalent, but only \REF{ex:33-d} allows negative concord items. Again a purely semantic theory of neg-words is the problem here, while syntactic locality constraints fare better.%
+\footnote{\citet[Appendix to Sect. 2]{gajewski_neg-raising_2007} offers a semantic treatment of the fact that strict NPI is not licensed in the clauses embedded under \textit{it's not true that} predicates. The proposal works with the idea of presupposition-canceling properties of \textit{true}; see \citet[308--310]{gajewski_neg-raising_2007} for details. Thanks to one of the anonymous reviewers for reminding me of this passage.}
+\end{enumerate}
+
+\ea\ea[]{\label{ex:33-e} \gll Petr nechce, aby \minsp{\{} ani jeden student / \minsp{\#} nikdo\} propadl.\\
+Petr \textsc{neg}.wants \textsc{comp} {} even one student {} {} \textsc{neg}.person failed\\
+\glt (Intended:) `Petr doesn't want even one student/anyone to fail.'}
+\ex[]{\label{ex:33-a}It's not true that Petr was sleeping. $\leftrightarrow$}
+\ex[]{\label{ex:33-b} It's true that Petr wasn't sleeping.}
+\ex[*]{\label{ex:33-c}\gll Není pravda, že nikdo přišel.\\
+\textsc{neg}.is true that \textsc{neg}.person came\\
+\glt Intended: `It's not true that nobody came.'}
+\ex[]{\label{ex:33-d}\gll Je pravda, že nikdo nepřišel.\\
+is true that \textsc{neg}.person \textsc{neg}.came\\
+\glt `It's true that nobody came.'}
+\z
+\z
+
+\noindent Let us summarize the current section. The relationship between verbal negation and the morphological negation on neg-words is a syntactic phenomenon; trying to explain it in semantics leads to empirical problems. There are NPIs in Slavic languages, though, which seem to behave in the way described by \citet{Blaszczak2001}, namely as anti-morphic NPIs (Czech \emph{ani jeden} is an example of such an NPI). But the Slavic neg-words are (it seems from today's perspective) better delegated to purely syntactic rules.
+
+\newpage
+\subsection{Pragmatic theories}\label{pragmatic-theories}
+
+After summarizing two types of NPI theories applied to Slavic data in the previous sections (a syntactic theory in \sectref{syntactic-approach-of-progovac} and a semantic one in \sectref{semantic-theories}), I will focus on the last type of approach to NPIs -- a pragmatic one. The pragmatic approach has not been systematically applied to Slavic languages (at least not to the same extent as semantic and syntactic theories). But there is some work in this direction (as \citealt{tomaszewicz2013az}, \citealt{gajic18,gajic_2022}, \citealt{docekaldotlacilsubedinb} or \citealt{DocekalSafratova2019}). But let us start with the general-linguistic properties of this approach. Currently, it seems that the pragmatic theories of polarity constraints are \textit{de facto} standard, one of the recent formalizations, namely \citet{Chierchia2013}, is probably the most widely used framework in the area. One of the applications of \citet{Chierchia2013} to Slavic data can be found in \citet{gajic18}. For related work discussing exclusive particles in Polish, see \textcitetv{chapters/12_tomaszewicz}. The shared idea of all pragmatic theories of NPI is that in describing polarity effects, we have to consider both the semantic properties of the expressions under consideration and general pragmatic mechanisms as well. The formalizations usually agree on the idea that NPIs introduce alternatives, and polarity effects emerge when something goes wrong during the computation of alternatives and their inclusion into the truth conditions. The execution of these ideas can then proceed either via the postulation of exhaustification operators present in syntax (like \citealt{Chierchia2013}) or in the neo-Gricean spirit where the pragmatic mechanisms are more related to general rules of rational communication.
+
+In particular, I will follow the \textsc{neo-Gricean pragmatic approach} to NPIs as introduced by \citet{krifka1995semantics} and followed by many others (especially the work of \citealt{Crnic2011} and \citealt{alonso2016all} will be of most relevance). But for the present purposes, nothing hinges too much on the adopted framework, and it seems to me that it would be possible to reformulate the present section in the framework of \citet{Chierchia2013}. Nevertheless, let us first illustrate the typical problems pragmatic (unlike syntactic or semantic) theories can deal with. Consider the Czech \textsc{scalar particles} (SP) \emph{i} and \emph{ani}, which have a complementary distribution to some extent and resemble the complementary patterns described by \citet{Progovac1993a} and \citet{Blaszczak2001}. Until now, I have described the polarity properties of NPIs, but from now on, I will focus on scalar particles, which represent an extension of the polarity landscape we discussed so far. Czech scalar particle \emph{ani} behaves to some extent like a strong NPI requiring negation, but simple anti-additivity is not enough to license its appropriate occurrence. In the context of the familiar three books of Tolkien's \textit{Lord of the Rings,} consider its acceptability (for experimental data supporting the following judgments, see \citealt{DocekalSafratova2019}). As \REF{ex:34-a} shows, \emph{ani} cannot be licensed in downward entailing contexts only, but even the anti-additive operator is not able to license all possible occurrences of \emph{ani}: \REF{ex:34-b}. As the example shows, \emph{ani} associates only with the bottom of the scale conveyed by the scalar expression (the contextual scale being $\langle$first volume, second volume, third volume$\rangle$). Association with the top of the scale leads to \emph{ani}'s unacceptability. The need for a pragmatic explanation, intuitively put, is the following: reading the first volume is the most likely case, the second less likely, and reading the third one is the least likely.
+\emph{Ani} then requires not only a particular type of monotonicity but also ranking over the probability of alternatives where alternatives (required by \textit{ani}) come from focus computation. Similarly, as can be seen from the contrast in \REF{ex:34-c}, \emph{i} shows (at first sight) just the opposite pattern to \emph{ani}: it occurs in positive sentences, and pragmatically it can associate only with the top element of a contextual scale. When it occurs in a negated sentence, it cannot associate with the top or bottom elements of a scale; see \REF{ex:34-d}.\footnote{Example \REF{ex:34-d} is unacceptable under the scalar interpretation. But since \textit{i} can be used also as an additive particle, there can be non-scalar contexts where \REF{ex:34-d} would be acceptable. Thanks to Radek Šimík for this point.}
+Again, monotonicity alone is not enough to license its grammaticality. In summary: there are both semantic and pragmatic requirements of both \emph{i} and \emph{ani}. Technical explanation of these kinds of patterns follows in \sectref{crniux10ds-decompositional-theory-of-scalar-particles}.
+
+\ea\ea[\#]{\label{ex:34-a} \gll Málo lidí přečetlo ani \minsp{\{} první / třetí\} díl Pána prstenů\\
+few people read not.even {} first {} third volume Lord Rings\\
+\glt Intended: `Few people have even read the first/third volume of the Lord of the Rings.'}
+\ex[]{\label{ex:34-b}\gll Petr nepřečetl ani \minsp{\{} první / \minsp{\#} třetí\} díl Pána prstenů.\\
+Petr \textsc{neg}.read not.even {} first {} {} third volume Lord Rings\\
+\glt `Petr didn't read even first/third volume of the Lord of the Rings.'}
+\ex[]{\label{ex:34-c}\gll Petr přečetl i \minsp{\{\#} první / třetí\} díl Pána prstenů.\\
+Petr read even {} first / even third Lord Rings\\
+\glt `Petr read \# even the first / third volume of Lord of the Rings.'}
+\ex[\#]{\label{ex:34-d} \gll Petr nepřečetl i \minsp{\{} první / třetí\} díl Pána prstenů.\\
+Petr \textsc{neg}.read even {} first {} third volume Lord Rings\\
+\glt Intended: `Petr have even read the first/the third volume of Lord of the Rings.'}
+\z
+\z
+
+\newpage
+\subsubsection{Crnič's decompositional theory of scalar particles\label{crniux10ds-decompositional-theory-of-scalar-particles}}
+
+I will introduce the pragmatic theory of \citet{Crnic2011} where the constraints on scalar particle distribution and their semantic properties are explained via a pragmatic theory of presuppositions. The presuppositions are contributed by NPIs or scalar particles as \emph{i}/\emph{ani}. The description of scalar particles is related to \citeposst{Crnic2011} pragmatic approach to English \emph{even} as a polarity item. But especially in chapter 4 and chapter 5, where he describes scalar particles, he pays close attention to cross-linguistic variation and discusses many intriguing properties of Slovenian scalar particles. So unlike in \sectref{syntactic-approach-of-progovac} and \sectref{semantic-theories}, where I summarized two contributions to polarity research explicitly focused to (mostly) Slavic data, in this section, I will introduce a more general framework. The framework was only partially applied to Slavic data more as a form of demonstration. This, of course, has some consequences; the nice one is that Crnič's framework is an explicit formal theory of presupposition and polarity effects of NPIs/scalar particles. The worse one is that the approach still lacks proper empirical meat, and naturally concerning Slavic data (even if it offers many insights) there are many points where it has to be fine-tuned or slightly changed to be in accordance with the data. Be it as it may, another strong aspect of Crnič's theory is its further component which describes the distribution of scalar particles as determined partially by the spectrum of the relevant scalar particles in the particular language. In other words, there is a competition between various types of scalar particles, and their behavior is a result of two factors. The first factor is the calculation of presuppositions. The second factor is a competition between various expressions available for the lexical insertion.
+
+\subsubsection{Three basic types of scalar particles}\label{three-basic-types-of-scalar-particles}
+
+I will start by introducing fundamental dichotomies in the territory of scalar particles. I will deal mostly with so-called weak and strong scalar particles (e.g., German expressions \emph{sogar} and \emph{auch nur}). And I will only scratch the surface of concessive scalar particles like Slovenian \emph{magari} or Spanish \emph{siquiera}.
+
+\paragraph{Nondiscriminating scalar particles}\label{nondiscriminating-scalar-particles}
+
+The first type of scalar particles is the one associating both with strong and weak elements in their immediate surface scope. The most famous linguistic example is English \emph{even}: its strong association is free, \REF{ex:35}, and it can associate with weak expressions in non-upward monotonic embedding too: \REF{ex:36}. There are no known Slavic examples of such nondiscriminating type of \emph{even}, \citet[129]{Crnic2011} cites French \emph{même} as a second example, next to English \emph{even} (the subscript $F$ indicates focus).%
+\footnote{It remains to be worked out whether there is no example of Slavic nondiscriminating scalar particles or whether it so far remained hidden. One of the anonymous reviewers suggests that Polish \textit{nawet} `even' can be used both with strong and weak associated expressions. Similarly, in Czech the scalar particle \textit{dokonce} `even' seem to associate with both ends of the scale. Neverthelless, as natural occurences suggest, \textit{nawet} is out of the blue more acceptable with weak elements, for strong elements it usually requires some intervening modal or other operator. Czech \textit{dokonce} behaves just the other way round, it occurs most naturally with strong elements. In summary, the proper classification of promissing candidates for Slavic nondiscriminating scalar particles remains a future project.}$^,$\footnote{Out of context, \REF{ex:35} can sound a bit strange in English but as the following sentence from Sketchengine \citep{kilgarriff2014sketch} English Web 2021 shows, English \textit{even} associates with the strong scalar elements: \textit{Some workers even drank 3--4 liters of the contaminated water after mine managers failed to warn them.}}
+
+\ea \ea\label{ex:35} John drank even ten$_F$ beers.
+\ex\label{ex:36} Paul didn't drink even one$_F$ beer.
+\z
+\z
+
+\paragraph{Strong scalar particles}\label{strong-scalar-particles}
+
+The second class of particles, \textsc{strong scalar particles}, comprises particles which associate with strong scalar elements. This class is well documented for many natural languages, \citet[130]{Crnic2011} discusses German \emph{sogar} and Slovenian \emph{celo}. We can add the Czech scalar particle \emph{i} introduced already above: see a grammatical association of \emph{i} with a strong element in \REF{ex:37} where an unlikelihood presupposition of \emph{i} requires the prejacent to be less likely than the alternatives (drinking \(n<10\) beers) which intuitively is the case (formalizations below).
+
+\ea\label{ex:37} \gll \minsp{(} V těch letech) Petr vypil i deset$_F$ piv.\\
+{} in those years Petr drank even ten beers\\
+\glt `(In those years) Petr drank even ten beers.'
+\z
+
+\noindent In Crnič's theory, strong scalar particles seem to be superficially stuck in their base position when they would appear in a downward entailing environment. Otherwise, they would be grammatical contrary to natural language data, see ungrammatical \REF{ex:38-a} with the un-acceptability explaining formalization in \REF{ex:38-b}. If the scope of \emph{i} would be above negation ({[}i {[}not {[}Petr drank one\(_F\) beer{]}{]}{]}), the unlikelihood presupposition of \emph{i} would be satisfied.
+
+\ea\ea[*]{\label{ex:38-a} \gll \minsp{(} V těch letech) Petr nevypil i jedno$_F$ pivo.\\
+{} in those years Petr \textsc{neg}.drank even one beer\\
+\glt Intended: `(In those years) Petr didn't drink even one beer.'}
+\ex\label{ex:38-b} [not [i [Petr drank one$_F$ beer]]]
+\z
+\z
+
+\paragraph{Scalar particles that may associate only with weak elements}\label{scalar-particles-that-may-associate-only-with-weak-elements}
+
+The last type of particles I will write about, namely \textsc{weak scalar particles}, are particles which associate with weak elements. Unambiguous examples are German \emph{auch nur}, \emph{einmal}, English \emph{so much as} and Slovenian \emph{niti}. English \emph{even} can be used as a weak particle too, but in that case, it must be embedded under non-upward-entailing operator (other weak scalar particles can appear only in non-upward entailing contexts too but they -- unlike English \emph{even} -- are limited to such environments). Linguists approaching scalar particles from the typological perspective (like \citealt[chapters 4 \& 5]{Crnic2011} and \citealt{gast2011scalar}) sub-classify weak scalar particles according to their possible scope under negation or other non-upward-entailing operators. Most constrained are scalar particles like German \emph{einmal} and Slovenian \emph{niti}: they appear only in the immediate scope of negation. The second subtype comprises scalar particles which occur in the scope of the non-upward-entailing operator but may not occur under negation, German \emph{auch nur} or Slovenian \emph{tudi} are scalar particles of this sort. Last, there are nondiscriminating weak scalar particles, like English \emph{so much as} which may occur both in the immediate scope of negation and in other non-upward-entailing environments as well.
+
+\subsection{Application of Crnič's theory to Czech NPIs}\label{application-of-crniux10s-theory-to-czech-npis}
+
+In the previous section, \sectref{three-basic-types-of-scalar-particles}, three kinds of scalar particles were introduced. The first type of scalar particles, nondiscriminating scalar particles, was not found in Slavic languages. The second type of scalar particles, strong scalar particles, is represented by Czech \emph{i} `even,' and Slovene \emph{tudi} represents the third type of scalar particle. The current section demonstrates the application of Crnič's theory to Czech scalar particles. Both strong and weak scalar particles are represented in Czech, and the theory can be applied to both types of scalar particles. Crnič's theory is taken as a starting point but is not applied in its original form. The main goal of the current section is to show that Crnič's theory can be applied to Czech scalar particles, and the primary aspiration of this section is to open research possibilities for the future. I try to resolve some tensions between the theory and the data, but I do not claim that the theory fully applies to Czech scalar particles. The same is valid for applying Crnič's theory to Slavic languages in general. 
+
+Now, let us illustrate the classification with three types of Czech scalar particles corresponding to strong, weak, and negation-requiring weak particles respectively. Following the introductory discussion of \emph{i}, let us consider its type: \emph{i} like German \emph{sogar} requires association with strong elements: if the contextual scale is 1 to 10 beers, then only numerals contextually vaguely around 10 would make an appropriate focus associate of \emph{i}, see \REF{ex:39} with acceptable strong associate and un-acceptable weak associate.
+
+\ea\label{ex:39} \gll Petr vypil i \minsp{\{\#} jedno$_F$ pivo / deset$_F$ piv\}.\\
+Petr drank even {} one beer {} ten beers\\
+\glt `Petr drank even \#one/ten beers.'
+\z
+
+\noindent The second type of Czech scalar particles, are expressions of type \textit{byť jediný} `at least/even one,' they generally appear in Strawson downward-entailing contexts like an antecedent of conditionals, under super-ordinate negation or generally in the scope of non-upward-monotonic operators like imperatives and some adversative predicates. Depending on their embedding, their correct glossing to English is either `at least one' or `even one.' The expression seems to be frozen in cardinality, so is predestined for the weak association: consider \REF{ex:40}, unlike \textit{i} which (depending on the type of scale) can associate with different kinds of expressions. Nevertheless, the expression \textit{byť jediný} `even one' is not an idiom as witnessed by various sortal version of the numeral included in it: it can count cardinality of objects like in \REF{ex:40} but also cardinality of events (\textit{byť jednou} `even once') or cardinality of a sequence of occurrences like \textit{byť poprvé} `even for the first time'.
+
+
+\ea\label{ex:40} \gll Jestli Petr vypije byť \minsp{\{} jediné pivo / \minsp{\#} deset piv\}, tak bude tančit.\\
+if Petr drink just {} one beer {} {} ten beers then will dance\\
+\glt `If Petr drinks just one beer/\#just ten beers he will dance.'
+\z
+
+\noindent The distinction between \emph{i} and \emph{byť jediný} follows the typology of strong and weak scalar particles assumed in \citet{Crnic2011,gast2011scalar} and can be formalized as lexical items competing for lexical insertion using a pattern in \REF{ex:41}. The scale in \REF{ex:41} uses \textsc{semantically interpreted features} formalized below but intuitively understandable as follows: \textsc{even} is a feature responsible for the unlikelihood presupposition in examples like \REF{ex:37}. \textsc{solo} is a feature formalizing the presupposition of likelihood in sentences like \REF{ex:40}, where the weak scalar item is embedded in a Strawson downward entailing environment. The presuppositions of \textsc{even} and \textsc{solo} are contradictory: the first requires unlikelihood against alternatives, the second one dictates the likelihood of the prejacent. Their conflict can be resolved only in environments reversing entailment.
+
+
+\ea\label{ex:41} \ea $\langle$\textit{i, byť jediný}$\rangle$
+\ex $\langle$\textsc{[even]}, \textsc{[even]}[\textsc{solo}]$\rangle$
+\z
+\z
+
+\noindent The features \textsc{even} and \textsc{solo} are semantically interpreted in \REF{ex:42} and \REF{ex:43} following \citet[134]{Crnic2011}. The part of both formulas, \(p \triangleleft_C q\), means that in the context \emph{C} (focus induced alternatives) the proposition \emph{p} is at most as likely as the proposition \emph{q}. The mechanism works under the assumption introduced to linguistics by \citet{lahiri1998focus}: that there is a one-way relationship between logical strength and entailment. The relationship is: logically stronger propositions cannot be more likely than logically weaker propositions. Intuitively from the conjunction of two propositions \emph{It rained, and it hailed} any of the propositions follows (\((p \wedge q) \rightarrow p/(p \wedge q) \rightarrow q\)). The conjunction of the two propositions is logically stronger and less likely than any of its atomic propositions. More formally is the relationship between likelihood and entailment stated in \REF{ex:44}.
+
+\ea\label{ex:42}\sib{\textsc{even}}$^{g,c}(C, p, w)$ is defined only if $\exists q \in C[p \triangleleft_c q]$.\\
+If defined, \sib{\textsc{even}}$^{g,c}(C,p,w)=1$ iff $p(w)=1$
+\z
+
+\ea\label{ex:43}\sib{\textsc{solo}}$^{g,c}(C,p,w)$ is defined only if $\forall q \in C[q \neq p \rightarrow q \triangleleft_c p]$.\\
+If defined, \sib{\textsc{solo}}$^{g,c}(C,p,w)=1$ iff $p(w)=1$
+\z
+
+\ea\label{ex:44}If $p \rightarrow q$ then $p \triangleleft_c q$.
+\z
+
+
+\noindent I will now apply \citeposst{Crnic2011} pragmatic framework to Czech with a simple illustration of possible derivations. First, strong scalar particles as Czech \emph{i} in an appropriate context like \REF{ex:39} would obtain a correct LF like \REF{ex:45} (in pseudo-Czech). The sentence is appropriate in all contexts where drinking ten beers is less likely then drinking alternative \(n<10\)-number of beers. If the context is set up for a scale $1,\dots,10$, the presupposition of \textsc{even} is satisfied and \emph{i} can be spelled out in the structure as \REF{ex:45}.
+
+\ea\label{ex:45} [\textsc{even} C$_1$] Peter drank ten$_F$ beers.
+\z
+
+\noindent Now, let us consider weak scalar particles, for a weak scalar particle in the Strawson downward entailing context like \REF{ex:40} a possible LF in \REF{ex:46} is obtained. The presupposition of \textsc{solo} is satisfied: to drink one beer is more likely than to drink \(n>1\) beers. The presupposition of \textsc{even} (with a wider scope than the antecedent of implication) is satisfied too. Drinking one beer as a cause of dancing is less likely than drinking \(n>1\) beers as a reason for dancing intuitively. More formally: as usually, the antecedent of a conditional is Strawson downward entailing, so the weak prejacent becomes logically strong. If drinking one beer is a sufficient condition for dancing, then drinking \(n>1\) beers is a sufficient condition for dancing as well. All the contextual alternatives are entailed by the prejacent and due to \REF{ex:44} are less likely.
+
+\ea\label{ex:46}[\textsc{even} C$_1$][[if [\textsc{solo} C$_0$] Peter drinks one$_F$ beer] he will dance]
+\z
+
+\noindent The scale in \REF{ex:41} can be interpreted as the following morphological rules in \REF{ex:48-a}/\REF{ex:48-b} formalizing both the idea that \emph{i} bears unlikelihood presupposition, while \emph{byť jediný} bears two contradictory presuppositions, and the idea that the items compete for insertion. But before I tackle the competition part, let us again consider the details of weak scalar particles formalization. Weak scalar particles like Czech \emph{byť jediný} bear both the unlikelihood presupposition of strong \emph{i} and the likelihood presupposition formalized as the feature \textsc{solo}.
+The contradictory presuppositions of \emph{byť jediný} explain its limited distribution. While \textsc{even} in \REF{ex:46} scopes over an entailment reversing operator, \textsc{solo} scopes under it and consequently both presuppositions can be satisfied. Note as well, that this explains the degraded acceptability of \REF{ex:49}. There is no entailment reversing operator over which \textsc{even} would scope and the conflicting presuppositions of the two features (\textsc{solo} and \textsc{even}) clash with each other necessarily. The prejacent cannot be both less likely and more likely than its alternatives (in any context).
+
+
+\ea\label{ex:47} \ea\label{ex:48-a}[\textsc{even}] $\leftrightarrow$ \textit{i}
+\ex\label{ex:48-b} [\textsc{even}][\textsc{solo}] $\leftrightarrow$ \textit{byť jediný}
+\z
+\z
+
+\ea[\#]{\label{ex:49}\gll Petr včera přečetl byť jedinou knížku.\\
+Petr yesterday read even one book\\
+\glt Intended: `Petr read just one book yesterday.'}
+\z
+
+\subsubsection{Scalar particles and competition}\label{scalar-particles-and-competition}
+
+The morphological rules in \REF{ex:48-a}/\REF{ex:48-b} do not explain the restricted distribution of \emph{i} on their own (recall that \emph{i} avoids weak contexts like \REF{ex:39}). But in the current state of formalization, we predict that an ungrammatical sentence like \REF{ex:50-a} would get assigned a correct LF like \REF{ex:50-b}. Such LF could in principle be spelled out as a sentence containing \emph{i}. The LF \REF{ex:50-b} would produce a sensible presupposition of \textsc{even} because it scopes over the entailment reversing operator (the antecedent of the conditional). In such a situation, the weakest scalar expression entails all the other contextual alternatives and becomes less likely than the alternatives.
+
+
+\ea\ea[\#]{\label{ex:50-a} \gll Jestli Petr vypije i jedno$_F$ pivo, tak bude tančit.\\
+if Petr drink even one beer then will dance\\
+\glt Intended: `If Petr drinks even one beer he will dance.'}
+\ex[]{\label{ex:50-b} [\textsc{even} C$_3$] [[if \sout{[\textsc{even} C$_3$]} Petr drinks one$_F$ beer] he will dance]}
+\z
+\z
+
+
+\noindent But such a spell-out ignores the scale \(\langle\)\emph{i, byť jediný}\(\rangle\) where the elements \textsc{compete} with each other for insertion. This is quite a frequent situation in linguistics where competition between elements dictates their distribution. There are many possible formalizations of the old intuition that only the most specific item can be inserted and eventually blocks insertion of less specific competitors (called Panini's Principle by many, see \citealt{booij2012grammar} among others). Crnič uses \citeposst{heim1991articles} Maximize Presupposition reformulation of the Panini's Principle. But I will rely on a neo-Gricean approach essentially following \citet{krifka1995semantics} and his approach to NPIs (both approaches are well suited for working with competing items differing only in terms of non-at-issue meaning). In the case at hand: there is a competing LF like \REF{ex:51} which is more feature-specific (and would be spelled out as a sentence containing \emph{byť jediný}):
+
+\ea\label{ex:51}[\textsc{even} C$_3$][[if \sout{[\textsc{even} C$_3$]} [\textsc{solo}] Peter drinks one$_F$ beer] he will dance]
+\z
+
+\noindent There is only one more presupposition of \REF{ex:51} than in the LF \REF{ex:50-b}: it is triggered by \textsc{solo} in its base position and requires its prejacent (drinking one beer) to be more likely than contextual alternatives (drinking \(n>1\) beers). Both presuppositions (\textsc{even} and \textsc{solo}) of \REF{ex:51} and the \textsc{even} presupposition of \REF{ex:50-b} are satisfied in natural contexts. Moreover, the assertion impact of both LFs is the same, so the structures denote contextually equivalent propositions. Via the usual neo-Gricean reasoning: a speaker communicating \REF{ex:50-b} would indicate that she is not in a position to assert \REF{ex:51} but as \REF{ex:51} and \REF{ex:50-b} are contextually equivalent, we arrive to a contradiction caused by the competition of elements for insertion. But a speaker communicating \REF{ex:51} does not indicate anything about the non-assertability of \REF{ex:50-b}, since \emph{byť jediný} (the spell-out of the features in \REF{ex:51}) is logically stronger and its assertion entails the logically weaker alternative (\emph{i}). Put simply: if contextually more feature-specific \emph{byť jediný} can be inserted, it blocks the insertion of the feature-poorer \emph{i}. This doesn't happen in the case of strong contexts like \REF{ex:37} though. The \textsc{solo} component of \emph{byť jediný} would produce a contradictory presupposition there. Consequently, \emph{byť jediný} and \emph{i} do not compete for insertion in contexts like that.
+
+\subsubsection{Scalar particles and negation}\label{scalar-particles-and-negation}
+
+Recall that we have distinguished three classes of weak \emph{even} SP: (i) nondiscriminating (English \emph{even}), (ii) weak particles requiring non-upward-monotonic environments (Czech \emph{byť jediný} or Polish \textit{chociaż/cho\.{c}/cho\.{c}} `just'), and finally (iii) weak scalar particles limited to the immediate scope of negation. Crnič formalizes the distinction between the negation requiring particles (like Czech \emph{ani} or Polish \textit{ani}) and weak particles like \emph{byť jediný} via a \textsc{formal uninterpretable feature} (following essentially \citealt{zeijlstra2004sentential} and \citealt{penka2005negative}).%
+\footnote{Thanks to one of the reviewers for suggesting that Czech and Polish \textit{ani} and Czech \textit{byť jediný}/Polish \textit{chociaż/cho\.{c}/cho\.{c}} do not behave differently in this respect.} For Czech the morphological rules and corresponding scale would be as in \REF{ex:52} (similar to \citeposst{Crnic2011} analysis of Slovenian \emph{tudi} and \emph{niti}).
+
+\ea\label{ex:52} \ea\label{ex:53-a} [\textsc{even}][\textsc{solo}] $\leftrightarrow$ \textit{byť jediný}
+\ex\label{ex:53-b} [\textsc{even}][\textsc{solo}]\textsubscript{[{uNEG]}} $\leftrightarrow$ \textit{ani}
+\ex\label{ex:53-c} $\langle$\textit{byť jediný, ani}$\rangle$
+\z
+\z
+
+\noindent This neatly explains the limited occurrence of \emph{ani} type of scalar particles to (in the majority of cases) sentences with negated predicates (but see \citealt{dovcekal2016experimentala,docekaldotlacilsubedinb} for qualifications, especially concerning neg-raising contexts). Moreover, it explains some cases of \emph{byť jediný} incompatibility with negation; Crnič shows this ``avoid negation'' constraint in the following Slovenian sentence.
+
+
+\ea[\#]{\label{ex:54} \gll Janez ni prebral tudi ene$_F$ knjige.\\
+Janez not read even one book\\
+\glt `John did not read even one book.'\hfill (Slovenian; \citealt[139]{Crnic2011})}
+\z
+
+\noindent The direct translation of \REF{ex:54} into Czech sounds distinctly odd, and there are other cases of \emph{byť jediný} type of scalar particles which are incompatible with negation (see \citealt[chap. 5]{Crnic2011} for German, Spanish and Greek data). The blocking is also familiar in Slavic competition of indefinites (or free choice items) and neg-words (see \citealt{pereltsvaig2004negative}). Moreover, the ``avoid negation'' rule follows the same logic of competition induced above to explain the blocking of strong scalar particles by weak ones. This led Crnič to postulate the following typological implicational relation, which is supposed to be operative in all negative concord languages.
+
+\eanoraggedright\label{ex:55} \textit{Implicational relation for weak scalar particles}\\
+There is a scalar particle that may only be weak and that only occurs in the immediate scope of negation in the language. $\rightarrow$ No other weak scalar particle that may only be weak occurs in the immediate scope of negation in the language.\hfill (after \citealt[131]{Crnic2011})
+\z
+
+\largerpage[-1]
+\noindent But even if the generalization is linguistically reasonable and supported by the data above, I have serious doubts about its validity. First, let us look at the empirical facts. It is easy to find many natural occurrences of both Czech \emph{byť jediný} and Slovenian \emph{tudi} weak scalar particles in negated sentences. Consider \REF{ex:56} and \REF{ex:57}.
+
+\ea\label{ex:56}\ea \gll Nemají byť jediný věšák na kabáty.\\
+\textsc{neg}.have even one stand for coats\\
+\glt `They lack even one coat-stand.'
+\ex \gll Nikomu ze soutěžících nepoložil byť jedinou otázku.\\
+\textsc{neg}.person from competitors \textsc{neg}.ask even one question\\
+\glt `He didn't ask any competitor even one question.'
+\ex \gll Nikdy by se neodvážily byť jediným slovem projevit svou nespokojenost.\\
+\textsc{neg}.time \textsc{sbjv} \textsc{refl} \textsc{neg}.dare even one word manifest their discontent\\
+\glt `They didn't dare by even one word to manifest their discontent.'\smallskip
+\z
+\hfill (Czech; examples from the Czech National Corpus; \citealt{kren-etal20})
+\z
+
+\ea\label{ex:57}\gll Ni izpustil tudi ene same dirke.\\
+\textsc{neg} pass even one single race\\
+\glt `He didn't pass even one race.'\hfill (Slovenian; Lanko Marušič, p.c.)
+\z
+
+\noindent Even if it is true that in some configurations negating \emph{byť jediný} type of weak scalar particles leads to unacceptability, there is definitely no general ban on negating weak scalar particles even in negative concord languages like Czech or Slovenian (against \citepossalt{Crnic2011} typological rules as \REF{ex:55}). There are, of course, many possible explanations why the putative blocking between the items on scale \REF{ex:52} does not happen in cases like \REF{ex:56} or \REF{ex:57}. A proper investigation of this issue lies beyond the scope of this chapter, though, but I will at least hint at one probable solution. As observed already by \citet{kadmon1993any} for certain usages of \emph{any} and further scrutinized by \citet{Crnic2011,alonso2016all} for weak \emph{even} carries in many contexts peculiar semantics which is usually termed settle for less (see also \sectref{some-problems-of-purely-semantic-theories}).
+
+Let me demonstrate the semantics on example in \REF{ex:58}. The example has the following meaning ingredients: (i) the speaker of the sentence would prefer to buy more than one ticket; (ii) but he settled for one ticket. Slavic b-NPIs like Czech \emph{byť jediný} (or Slovenian \emph{tudi}) can have a settle-for-less reading, at least in some contexts. But this is not a general feature of weak scalar particles; compare \REF{ex:59} with a-NPI \emph{ani} \REF{ex:59}, which is compatible with a speaker who did not care about how many tickets he bought at the end, \emph{ani} would be strange in a settle-for-less context. Consequently, at least some Slavic languages with b-NPIs seem to carry the settle-for-less semantics, unlike weak a-NPIs.%
+\footnote{One of the anonymous reviewers notices that if \textit{byť jediný} in examples like \REF{ex:56} can be substituted with the a-NPI \textit{ani} without any meaning difference, the competition story offered in \sectref{short-note-on-concessive-scalar-particles} would be weakened. Intuitions of Czech native speakers I consulted support the subtle difference discussed in this section, although (for obvious reasons) it is not easy to demonstrate them with \REF{ex:56}. Nevertheless, the difference can be made more visible in the following scenario: imagine a man who always wanted to stay a bachelor without children; in such a context, he can say \textit{Vyšlo to, nemám ani jedno dítě} `It worked. I don't have even one child' (a-NPI) but to say \textit{Vyšlo to, nemám byť jediné dítě}  `It worked. I don't have even one child' (b-NPI) is conceived by native speakers as incoherent.}
+
+\ea\ea\label{ex:58} \gll Nakonec jsem nekoupil byť jediný lístek.\\
+finally \textsc{aux} \textsc{neg}.bought even one ticket\\
+\glt `At the end, I didn't buy even one ticket.'
+\ex\label{ex:59} \gll Nakonec jsem nekoupil ani jeden lístek.\\
+finally \textsc{aux} \textsc{neg}.bought even one ticket\\
+\glt `At the end, I bought not even one ticket.'
+\z\z
+
+\subsubsection{Short note on concessive scalar particles}\label{short-note-on-concessive-scalar-particles}
+
+In the previous section, we observed that Slavic b-NPIs (unlike a-NPIs) could carry the settle-for-less meaning. The main idea of explaining the lack of blocking between \emph{ani} and \emph{byť jediný} under negation would be the following: it seems reasonable that b-NPIs (\emph{byť jediný}) can spell out a semantics unavailable for a-NPIs (\emph{ani}); if they do, like in \REF{ex:58}, they are not less specific than a-NPIs, and the usual blocking is gone. In cases like \REF{ex:54} used by Crnič, there is no plausible settle-for-less semantic component, which would be spelled out by b-NPIs and blocking kicks in. In other words, I claim that weak b-NPIs sometimes behave like concessive scalar particles. But to get this idea working, we have to make a short detour to proper concessive particle territory.
+
+\textsc{Concessive scalar particles} are expressions like Greek \emph{esto}, Spanish \emph{aunque sea}, \emph{siquiera}, Slovenian \emph{magari} and Czech \emph{alespoň}. They occur in downward entailing contexts, in questions, and in some modal contexts. Moreover, there is a partial overlap of concessive scalar particles with weak scalar particles.%
+\footnote{As one of the anonymous reviewers notes, there are approaches to sub-types of NPIs that resemble the reasoning in the current section. One such example is \citet{rullmann_two_1996}, where two different types of Dutch NPIs are described via two different theoretical approaches. The first via the scalar theory of \textit{any} from \citet{lee_any_1994} and the second via the non-scalar, domain-widening approach to \textit{any} from \citet{kadmon1993any}. Despite some common properties, the approach in this section is different from \citet{rullmann_two_1996} since both concessive and weak scalar particles are described as scalar.}
+Consider desire predicates like \emph{want} in Czech \REF{ex:60-a}.
+% Note that both items (\emph{byť jedenkrát} and \emph{alespoň jedenkrát}) are glossed with \emph{at least} (contrast this with \REF{ex:40} where \emph{byť jediný} was glossed as \emph{even one}). And finally, both weak and concessive scalar particles are ungrammatical under doxastic/epistemic predicates as \emph{think, know}: in \REF{ex:60-c} and in the grammatical sentence \REF{ex:60-a} (in the scope of the desire predicate) their associate is low on the pragmatic scale (this is a necessary, not sufficient condition though: it is low even in the example \REF{ex:60-c}, but the example is still ungrammatical).%
+Note that in \REF{ex:60} I translate both items (\textit{byť jedenkrát} and \textit{alespoň jedenkrát}) as ‘at least once’, while in \REF{ex:40} \textit{byť jediný} is translated as ‘just one’, which corresponds to the ‘even one’ semantics discussed below.\footnote{Both weak scalar particles and concessive particles are grammatical as well in the scope of desire predicates and positive emotive factives like in \REF{ex:60-b}. And as one anonymous reviewer correctly remarks, this is a non-trivial problem since \textit{glad} is not SDE  and desire predicates like \textit{want} are Strawson upward entailing (see \citealt{von1999npi}). \citet[section 4.2.5]{Crnic2011} offers a technical solution to this problem which (in bare essentials) rests on the free choice interpretation of concessive scalar particles and its exhaustification interpretation leading to a non-entailing set of alternatives. Discussing Crnič's solution would lead us too far away from the goals of the current chapter, but all the details of Crnič's analysis should carry on to the cases of Czech concessive particles in contexts like \REF{ex:60-b}. 
+
+
+\ea\label{ex:60-b} \gll Petr je rád, že \minsp{\{} byť jedenkrát / alespoň jednou\} navštívil Grónsko.\\
+Petr is glad that {} even once {} at.least once visited Greenland\\
+\glt `Petr is glad that he visited Greenland at least once.'
+\z
+
+}
+
+\ea\label{ex:60}\ea[]{\label{ex:60-a}\gll Petr chce, aby Karel navštívil Grónsko \minsp{\{} byť jedenkrát / alespoň jedenkrát\}.\\
+Petr wants that  Karel visited Greenland {} at.least once {} at.least once\\
+\glt `Petr wants Karel to visit Greenland at least once.'}
+\ex[*]{\label{ex:60-c}\gll Petr ví, že Karel navštívil Grónsko  \minsp{\{} byť jedenkrát / alespoň jednou\}.\\
+Petr knows that Karel visited Greenland {} at.least once {} at.least once\\
+\glt Intended: `Petr knows that he visited Greenland at least once.'}
+\z
+\z
+
+\noindent So far, we have discussed only the properties which are shared both by weak and concessive scalar particles. But there is an obvious difference between them: concessive scalar particles are additive, so they contribute a meaning of multiplicity, unlike the weak scalar particles (even if the additive presupposition can be masked in some contexts). The difference between them can be clearly observed in some contexts where concessive scalar particles are licensed but weak particles are not, see \REF{ex:61}. The core meaning of \REF{ex:61} is the necessary condition: obtaining \(n \geq 1\) scout badges is \textit{sine qua non} for participating in a scout camp. This means that earning 2, 3, or more scout badges is even more positive; the additive component stems from the concessive scalar particle \emph{alespoň}.
+
+\newpage
+\ea\label{ex:61}\gll \minsp{(} Abys mohl jet na skautský tábor), musíš získat \minsp{\{\#} byť jediného / alespoň jednoho\} bobříka.\\
+{} in.order.to be.able participate in scout camp have.to obtain {} even one {} at.least one beaver\\
+\glt `(For you to be able to participate in a scout camp) you have to obtain even one / at least one scout badge.'
+\z
+
+
+\noindent Based on the observations above, I postulate that Slavic b-NPIs (Slavic \emph{byť jediný}, Slovenian \emph{tudi}) can realize some of the concessive scalar particles' meaning. More specifically, I will use the feature formalization of concessive particles from \citet[109]{Crnic2011}, below as \REF{ex:62}. There are two components of {[}\textsc{at-least}{]}: (i) the familiar presupposition part: the prejacent has to be more likely than all its alternatives (this part is shared with the presupposition of \textsc{solo}, see \REF{ex:43}); (ii) the assertive meaning (different both from \textsc{even} and \textsc{solo} since both \textsc{even} and \textsc{solo} are vacuous in at-issue meaning; see \REF{ex:42} and \REF{ex:43}): there is at least one alternative to the prejacent which is at most likely and is true (can be the prejacent itself). Let us see the working of the formalization demonstrated for the adversative predicate \emph{regret} in \REF{ex:63}. For Czech \emph{alespoň}, I postulate a morphological rule in \REF{ex:64}. There are two presuppositions in \REF{ex:63}: (i) the scalar presupposition triggered by \textsc{at-least} -- it is more likely to visit Greenland once than \(n>1\) times; (ii) the scalar presupposition of \textsc{even} -- because \emph{regret} is SDE, the weak associate becomes strongest (if somebody regrets that he visited Greenland once, he regrets that he visited it \(n>1\) times). Because both presuppositions in \REF{ex:63} are satisfied in natural contexts, \emph{alespoň} can be inserted. The additive multiplicity part of the at-issue contribution is in the scope of the adversative predicate, so correctly not projecting, unlike the presupposition part of \textsc{at-least}. But recall that \REF{ex:63} is the LF of \REF{ex:60-a} where both \emph{alespoň} and \emph{byť jedenkrát} were acceptable with the same interpretation. This then shows that, at least in some cases, the b-NPI can spell out features like \REF{ex:64}.
+
+\ea\label{ex:62}\sib{\textsc{at-least}}$^{g,c}$\\${}=\lambda C.\lambda p:\forall q \in C[p \neq q \rightarrow q \triangleleft_c p]. \lambda w.\exists q\in C[q \triangleleft_c p \wedge q(w)=1]$\\\hfill \citet[109]{Crnic2011}
+\z
+
+\ea\label{ex:63}[\textsc{even} C$_2$][Petr regrets [that [\textsc{at-least} C$_0$] he visited Greenland once$_F$]]
+\z
+
+\ea\label{ex:64} [\textsc{even}][\textsc{at-least}] $\leftrightarrow$ \textit{alespoň} 
+\z
+
+\noindent And if b-NPIs can spell out \textsc{at-least} features, we get the formal implementation of the idea from the beginning of the current section. Consider modified morphological rule for \emph{byť jediný} in \REF{ex:69-a} and repeated morphological rule for \emph{ani} in \REF{ex:69-b}. In terms of features, the competition between the two items is then in equilibrium. Both items realize the same number of features; neither of them is more specific, stronger, and blocking the other. That explains the occurrences of b-NPIs under negation in examples like \REF{ex:56} -- when b-NPIs realize the same number of features as a-NPIs, they can be inserted even in the immediate scope of negation. In cases like \REF{ex:54}, the blocking works as proposed by \citet[chap. 5]{Crnic2011}. Of course, proper scrutiny of the proposed leak in the generalization \REF{ex:55} is beyond the scope of this chapter, but I hope to find more supporting data in future work.
+
+\ea\label{ex:69} \ea\label{ex:69-a} [\textsc{even}][\textsc{solo}][\textsc{at-least}] $\leftrightarrow$ \textit{byť jediný}
+\ex\label{ex:69-b} [\textsc{even}][\textsc{solo}]\textsubscript{[uNEG]} $\leftrightarrow$ \textit{ani}
+\z
+\z
+
+
+\noindent The empirical claims concerning Czech scalar particles and the features they realize are summarized in \tabref{tab:CzechFeatureTable}. In \sectref{application-of-crniux10s-theory-to-czech-npis}, I tried to show how the pragmatic theory in the style of Crnič can be applied to Czech weak and strong scalar particles. The complications we observed in the case of Czech scalar particles are due to the interaction with negation and the competition of the items for insertion. 
+
+\begin{table}
+\begin{tabular}{ll}
+\lsptoprule
+Czech expression & features                            \\ \midrule
+\textit{i}          & {[}\textsc{even}{]}\smallskip                          \\
+\textit{byť jediný} & {[}\textsc{even}{]}{[}\textsc{solo}{]}\smallskip                \\
+\textit{byť jediný} & {[}\textsc{even}{]}{[}\textsc{solo}{]}{[}\textsc{at-least}{]}\smallskip  \\
+\textit{alespoň}    & {[}\textsc{even}{]}{[}\textsc{at-least}{]}    \smallskip        \\
+\textit{ani}        & {[}\textsc{even}{]}{[}\textsc{solo}{]}\textsubscript{[uNEG]} \\
+\lspbottomrule
+\end{tabular}
+\caption{Table of features for Czech scalar particles}
+\label{tab:CzechFeatureTable}
+\end{table}
+
+\noindent Generally, the point of \sectref{pragmatic-theories} was to introduce the pragmatic mechanism of NPI licensing. It followed the seminal work of \citet{krifka1995semantics} where the licensing of NPIs was rethought from the standard semantic downward entailing explanation to a pragmatic theory. In particular, the description of Czech scalar particles was formalized in terms of an \textit{even}-based theory of NPI licensing, following \citet{Crnic2011} (where more details and also references to other literature can be found). As was stated at the beginning of this section, the pragmatic turn, where the environments licensing NPIs are basically characterized via the logical requirements on the focus alternatives for the prejacent, can be cashed out in different frameworks, one widely adopted being \citet{Chierchia2013}. See also \citet{gajic18} for its application to Slavic data. The pragmatic explanation should be viewed as a continuation of the semantic theories, %
+with which it shares the core idea that NPI licensing is a matter of semantic strength (or entailment patterns; see \REF{ex:44}).
+% taking from them the main thrust of explanation coming from the right entailment pattern (recall that in probability can be translated to entailment, as stated in \REF{ex:44}). 
+Moreover, the pragmatic theory offers more flexibility and also a handle on non-monotonic licensing of NPIs (see again \citealt{Crnic2011} for details).
+
+\section{Conclusion}
+
+In this chapter, I summarized syntactic (\sectref{syntactic-approach-of-progovac}), semantic (\sectref{semantic-theories}), and pragmatic theories (\sectref{pragmatic-theories}) of (not only) Slavic negative polarity items and scalar particles. I summarized the history of ideas in formal Slavistics pertaining to the description and explanation of Negative Polarity Items (and scalar particles). The chapter has shown how a better understanding of Slavic polarity-dependent expressions improves our understanding of the division of labor between syntax, semantics, and pragmatics. In \sectref{application-of-crniux10s-theory-to-czech-npis}, I applied the pragmatic theory of NPIs to Czech data. 
+
+There seems to be a general tendency in the research on NPIs to move from syntactic and semantic theories to pragmatic ones; the move started with \citet{krifka1995semantics}. The pragmatic theories are more flexible and can account for much more data than the syntactic and semantic ones. On the other hand, there is new research on the syntax/semantics interface of NPIs; see influential work of \citet{barker2018negative} a.o. Barker's theory seems to be supported experimentally \citep{alexandropoulou2020there} and is one of the few theories of NPIs that can naturally handle NPIs licensing in non-monotonic environments. So, while the general trend is treating NPIs pragmatically, ignoring the syntactic and semantic approaches would be futile.  
+
+However, on the empirical side of the debates, following the pragmatic theories can bring many insights into the nature of NPIs and their licensing. Hopefully, the chapter will help to ignite more research on Slavic NPIs and scalar particles, especially in the light of pragmatic theories and experimental research. 
+% It would be great if Slavic NPIs and their pragmatic treatment would become a hot topic in formal linguistics, as in the 1990s with their syntactic and semantic descriptions.
+
+\section*{Acknowledgements}
+The work on this chapter benefited from discussions and correspondence with many people. First, I would like to thank the three anonymous reviewers. Their comments and hints helped the chapter to be more thorough and insightful. Next, I would like to thank people who read my chapter and gave me comments and ideas, namely Hana Strachoňová and Iveta Šafratová. Last, I am very grateful to Berit and Radek, the editors, for their patience and help.
+
+
+\section*{Abbreviations}
+
+\begin{tabularx}{.5\textwidth}{@{}lX@{}}
+\textsc{acc}&{accusative}\\
+\textsc{aux}&{auxiliary}\\
+\textsc{comp}&{complementizer}\\
+\textsc{de}&{downward entailing}\\
+\textsc{fut}&{future}\\
+\textsc{neg}&negation\\
+
+
+
+% \textsc{even}&{unlikelihood scalar presupposition}\\
+% \textsc{at-least}&{scalar inference (also) in at-issue}\\
+\end{tabularx}%
+\begin{tabularx}{.5\textwidth}{@{}lX@{}}
+\textsc{npi}&{negative polarity item}\\
+\textsc{q}&question particle\\
+\textsc{refl}&{reflexive}\\
+\textsc{sbjv}&{subjunctive}\\
+\textsc{sde}&{Strawson downward entailing}\\
+\textsc{sg}&singular\\
+% \textsc{neg-body}&neg-word for persons\\
+
+% \textsc{solo}&{likelihood scalar presupposition}\\
+% \textsc{$_uNEG$}&{uninterpretatble syntactic negative feature}\\
+\end{tabularx}
+
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
+
+\end{document}

@@ -1,0 +1,291 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.22078569}
+
+\author{Berit Gehrke\orcid{0000-0002-6315-9532}\affiliation{Humboldt-Universität zu Berlin} and Radek Šimík\orcid{0000-0002-4736-195X}\affiliation{Charles University}}
+% replace the above with you and your coauthors
+% rules for affiliation: If there's an official English version, use that (find out on the official website of the university); if not, use the original
+% orcid doesn't appear printed; it's metainformation used for later indexing
+
+%%% uncomment the following line if you are a single author or all authors have the same affiliation
+% \SetupAffiliations{mark style=none}
+
+%% in case the running head with authors exceeds one line (which is the case in this example document), use one of the following methods to turn it into a single line; otherwise comment the line below out with % and ignore it
+%\lehead{Šimík, Gehrke, Lenertová, Meyer, Szucsich \& Zaleska}
+% \lehead{Radek Šimík et al.}
+
+\title{The semantics of Slavic languages: An introduction}
+% replace the above with your paper title
+%%% provide a shorter version of your title in case it doesn't fit a single line in the running head
+% in this form: \title[short title]{full title}
+\abstract{In this volume, we bring together researchers who have had a consistent interest in doing formal semantic research based on the material of Slavic languages. Over the past thirty years or so, the research in Slavic formal semantics has experienced a steady growth in quantity and quality. Nowadays, there are dozens of %senior and young 
+formal semanticists in the field, producing prominently published research. We believe that it is the right time to bring Slavic semanticists together and produce a strong volume that will not just summarize what has been achieved, but also move the research in the field forward.
+
+\keywords{Slavic, semantics}
+}
+
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[1]%%chapternumber
+}{}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+Formal approaches to natural language semantics go back to the early 1970s, but the study of crosslinguistic semantics, as well as the semantics of individual languages other than English gained momentum only in the 1980s and 1990s.
+% include Rivero's 1975 work on the semantics of the Spanish NP
+Among the exceptionally early birds was Anna Szabolcsi and her work on the semantics of topic-focus articulation in Hungarian \citep{szabolcsi81,szabolcsi83}. Later examples include Veneeta Dayal's work on Hindi (cor)relativization and other wh-constructions \citep{srivastav91a,Dayal1996}, Molly Diesing's work on indefinites in German \citep{diesing92} and Helen de Hoop's in some sense related 1992 dissertation on weak and strong case and its role for scrambling in Dutch \citep[published as][]{dehoop96}, Maria Bittner's work on Inuit or Yoruba \citep{bittner94}, Roberto Zamparelli's research on DPs at the syntax-semantics interface \citep{zamparelli95}, Lisa Matthewson's investigation into Salish determiners and quantifiers \citep{matthewson96}, or Veerle Van Geenhoven's work on the semantics of incorporation in West Greenlandic \citep{geenhoven98}. Concerning Slavic languages, there is Ljiljana Progovac's work on %Serbo-Croatian 
+negative polarity \citep{Progovac1993a}, Hana Filip's work on %Czech 
+aspect and eventuality types \citep{filip93,filip96a}, or Roumyana Pancheva's work on tense/aspect \citep{Izvorski1997} and wh-constructions \citep[e.g.,][]{izvorski98}.
+
+%{\color{red}[so maybe also Helen de Hoop's early 90s dissertation which also dealt with Dutch NP semantics (and syntax), Henriette de Swart's early 90s disseration on adverbs of quantification]}\\
+
+Since the advent of the 21st century, the field has witnessed a remarkable increase in the interest in crosslinguistic semantics and it is no longer uncommon that semantic investigations of once less-studied languages, including Slavic languages, have a great impact on the whole field of formal semantics and neighboring fields. An example of this is Olga \citeposst{Borik2006} \emph{Aspect and reference time}, which deals with the semantics of the Russian (im)perfective and which boasts 484 citations on Google Scholar (as of November 2025). %\footnote{We list the most cited Slavic semantic research at the end of this document.} 
+Major semantic conferences (e.g. \emph{Semantics and Linguistic Theory, Sinn und Bedeutung}) routinely host crosslinguistic talks or talks focused on single less-studied languages. New crosslinguistic semantics conferences have been established in both Europe (\emph{The Semantics of African, Asian and Austronesian Languages}) and America (\emph{Semantics of Under-Represented Languages in the Americas}). Finally, semantic papers constitute an integral part at conferences that are devoted specifically to the linguistics of Slavic languages (e.g. \emph{Formal Description of Slavic Languages} in Europe, \emph{Formal Approaches to Slavic Linguistics} in North America). It is this thriving tradition that this volume grows out of and that it contributes to.
+
+The chapters in the volume constitute a combination of a synthetic overview and an analytical contribution or case study, whereby the space dedicated to the two individual parts varies depending on the topic and each author's approach. The goal of the overview part is to summarize the existing research in the pertinent area of Slavic semantics and to explain how it fits into the context of general formal semantic research. Unlike in classical research papers, the overview part can go well beyond what is necessary for understanding the novel analysis and can -- in some cases -- even be conceived as a self-contained contribution. This way, we provide a venue for contents that would otherwise not find its way into standard research publications but which we believe to be of great value to the linguistics community.
+
+The volume fulfills a number of goals: (i) to summarize existing analyses and theories, (ii) to provide a representative bibliographic overview of the relevant literature, (iii) to demonstrate what Slavic data and theories built upon them have to offer to the general linguistic discourse, and (iv) to provide a novel theoretical and/or empirical contribution in the pertinent area. The volume is of interest to a broad readership -- Slavic as well as general linguistic scholars, experienced researchers as well as advanced undergraduate or postgraduate students. Individual contributions can serve as background reading to topical seminars.
+
+There are a number of general properties of the volume which we consider important and worth highlighting. On the one hand, the volume covers areas of semantics in which Slavic languages have traditionally or more recently played an important role in the general formal semantic discourse, including aspect (see the contributions by Gehrke, Mueller-Reichau, Tatevosov), event structure (Tatevosov), genericity (Filip), tense (Grønn), %case alternations, 
+information structure (partially touched upon in the contributions by Borik and Tomaszewicz), %quantifier scope, 
+negation and NPIs (Do\v{c}ekal), (in)definiteness and specificity (Borik, Geist), or bare NP semantics (Borik)%, or degree constructions
+. On the other hand, there are chapters that touch upon traditional semantic topics that have not received much attention in their application to Slavic languages, such as focus particles (Tomaszewicz), %the only references I know here for Slavic are Zanon on Russian only and a new paper by Spellerberg. Advances 2022, on Bulgarian only, also, even), 
+questions (\v{S}imík), imperatives (Stegovec), %generic sentences (Filip), %although there was also a bit in her paper with Carlson, from the 90s), 
+numerals (Wągiel), or passives (Gehrke).
+
+All the chapters have solid empirical grounding and, where applicable, the authors emphasize the existing empirical generalizations. The use of state-of-the-art empirical methods, including corpus and experimental research, were encouraged, but not required. Although the focus of the volume lies on semantics, authors were free (and in some cases encouraged) to discuss the pertinent semantic issues in the context of any relevant interface, especially morphosyntax and pragmatics. Finally, among all the Slavic languages, Russian has received -- by a wide margin -- the most attention. Although we realize that our power in this respect is limited, we intended to do our best to improve on this situation. Authors were encouraged to include cross-Slavic comparisons and to write -- especially in the analytical part -- about Slavic languages that are less well studied. In the end, the chapters in this volume discuss data from the following Slavic languages: Bosnian/Croatian/Montenegrin/Serbian (BCMS), and more specifically Croatian and Serbian, Bulgarian, Czech, Macedonian, Polish, Resian, Russian, Slovak, Slovenian, Upper Sorbian, and Ukrainian.  %languages in this volume now: RUSSIAN (Borik, Tatevosov, Mueller-Reichau, Gehrke, Geist, Simík, Wagiel; Stegovec: a few examples), UKRAINIAN (Simík: a few examples, Grønn - not cross-Slavic though but taking for granted that it is the same as most other Slavic languages, with a Russian hat on); CZECH (Filip, Simík, Docekal, Wagiel, Gehrke, Tomaszewicz: 2 examples, Stegovec: a few examples, Geist: a few examples), POLISH (Tomaszewicz, Wagiel, Simík: a few examples, some in Gehrke; Stegovec: a few examples; very little: Filip -- but no examples and no cross-Slavic comparison, just taken for granted that it must be the same as Czech, without any example), SLOVAK (Tomaszewicz: 3 examples, Filip -- but no examples and no cross-Slavic comparison, just taken for granted that it must be the same as Czech, without any example; Geist: a few examples), Colloquial Upper SORBIAN (Gehrke, but just a couple examples from the literature -- general without examples 10 different Slavic languages, as discussed in the literature; Geist: one example); BULGARIAN (Geist has quite a bit on Bg; Grønn, Tomaszewicz: a few examples), REZIAN (Geist: one few example), SLOVENIAN (Stegovec), BCMS (Wagiel, Tomaszewicz: a few examples; Simík: a few Serbian examples; Grønn: some Croatian - not cross-Slavic though but taking for granted that it is the same, Stegovec: a few examples), MACEDONIAN (Simík: a few examples, Stegovec: a few examples)
+
+\section{Topical areas covered by the chapters in this volume, and beyond}
+
+The initial goal of the volume was to cover all traditional areas of research in formal semantics and to give equal room to the different Slavic language groups (South, West, East). In the end we managed to cover many areas, but not all, and due to some authors' withdrawing from the project, the language coverage is unfortunately slightly skewed towards the North Slavic languages (i.e. West and East). Table \ref{tab:GS:authors} contains the list of authors that contributed to this volume, in alphabetical order, along with the title of their chapter.
+
+\begin{table}
+    \centering
+    \begin{tabularx}{\textwidth}{lX}
+    \lsptoprule
+         \textsc{Author}&\textsc{Chapter title} \\\midrule
+         Olga Borik &Bare nominals and definiteness in Russian\smallskip
+         \\
+         Mojmír Dočekal&Negative polarity items in Slavic\smallskip
+         \\
+         Hana Filip&Genericity and habituality in Czech\smallskip
+         \\
+         Berit Gehrke &Cross-Slavic aspect, passives and temporal definiteness\smallskip\\
+         Ljudmila Geist&Indefiniteness and specificity in Slavic languages\smallskip\\
+         Atle Grønn&Tense in Slavic\smallskip
+         \\
+         Olav Mueller-Reichau&The morphosemantics of Russian aspect\smallskip
+         \\
+         Radek Šimík &Polar question semantics and bias:
+          Lessons from Slavic/Czech\smallskip
+         \\
+        Adrian Stegovec&Lessons from Slovenian imperatives\smallskip
+         \\
+         Sergej Tatevosov&Event structure and derivational morphology:
+         A few reflections on the system of Russian\smallskip
+         \\
+         Barbara Tomaszewicz&Family of exclusives in Polish\smallskip
+         \\
+         Marcin Wągiel&Numerals and their kin: The view from Slavic 
+         \\
+    \lspbottomrule     
+    \end{tabularx}
+    \caption{Authors and chapter titles}
+    \label{tab:GS:authors}
+\end{table}
+
+In what follows we list the core areas of interest, include a selected bibliography, and, where applicable, indicate why Slavic languages are interesting or suitable for investigating the particular area.
+
+\subsection{The nominal domain}
+
+\subsubsection{Bare noun phrases} Most Slavic languages are articleless languages and as such have a wide distribution of bare (determinerless) noun phrases. While there are many syntactic papers concentrating on the question whether or not one should postulate an empty D for the use of bare nominals in various Slavic languages, in particular in argument position (see, e.g., \citealt{Boskovic2007}, \citealt{Koylu2021}, or \citealt{Dayal2026} for recent surveys that go beyond Slavic), there is less work that focuses on the semantics of such nominals, and until only very recently all existing work was on Russian. While \citet{Pereltsvaig2006} is one of the first to also include semantic considerations in her discussion of ``small nominals'' in Russian, the semantics of Russian bare NPs is also discussed explicitly e.g. in \citet{geist10,kaganperel11a,kaganperel11b,muellerreichau15,borik16,simikdemian20,Borik.etal2020,seres20,seresborik21}. The semantics of Polish bare noun phrases is investigated experimentally in \citet{simik-demian21} and there are corpus investigations into bare NPs in Czech %a corpus investigation of Czech bare NPs can be found in 
+\citep{simik-burianova20}, Russian in contrast with Hindi and Mandarin \citep[][]{liusalt,liu+SALT}, as well as a comparison between Macedonian, Polish, and Russian \citep[][]{Borik.etal2025}. Further issues related to the lack of (overt) functional elements in the nominal domain concern the semantics of number \citep{ionin_matushansky2006composition}, specificity \citep{Geist2008}, kind reference \citep{mueller11,Kwapiszewski.Fuellenbach21}, or superlative semantics (see \sectref{gs:sec:adj}).
+
+\textcitetv{chapters/02_borik} provides an overview of the readings that bare nominals can have in Russian (definite, indefinite, generic) and also outlines factors that facilitate one over the other reading, such as word order, topic position, predicate type, sentence type. In the second part of the chapter, she addresses different theories of definiteness, zooming in on the uniqueness approach. She shows that Russian (singular) bare nouns do not presuppose uniqueness, even in contexts in which they are intuitively interpreted as definite, and this leads her to argue that all bare nouns (in argument position) in Russian should receive a quantificational analysis in terms of indefinites. This does not, however, preclude that there cannot be other types of definiteness with bare nouns (e.g. anaphoric definiteness), or that non-bare nouns (e.g. demonstratives, possessives) do not express semantic definiteness. 
+
+\subsubsection{(In)definiteness, pronouns, determiners, quantifiers%\dots
+} Many Slavic languages boast a~rich repertoire of indefinite pronouns and determiners, often wh-based \citep[cf.][]{Haspelmath1997}. These indefinites fall into various categories, including negative concord indefinites, polarity, free choice, or dependent indefinites, (non-)specific indefinites, and epistemic indefinites. The literature in this area is relatively rich and includes studies on Bulgarian \citep{izvorski94,%geist13,
+Koev2017}, Czech \citep{Docekal2011,simik15,Strachonova2016}, Polish \citep{Blaszczak2001,blaszczak03}, Russian \citep{Pereltsvaig2000,pereltsvaig04,pereltsvaig08,yanovich05,yanovich08,Geist2008,Kagan2011,Ionin2013, Marti.Ionin2019}, BCMS \citep{Progovac1993a,gajic16a}, and Slovak \citep{Richtarcikova2015}. 
+
+The semantics of Slavic demonstratives is explored in \citet{simik16,Simik2021} (Czech) and \citet{arsenijevic18} (Serbian). Work on the semantics of personal pronouns and issues of pronominal anaphora and binding is not very well represented, although see \citet{podobryaevivlieva08} or \citet{vassilieva-larson05}. \citet{Butschety2025} explores the semantics of the so-called plural pronoun construction, where a plural pronoun is combined with a comitative phrase, whose denotation is ``included'' in the denotation of the pronoun (e.g., literally, `We with Pete will go home' with the truth conditions of `Pete and I will go home.'). Quantification is explored from a theoretical point of view (on the basis of Slovenian, among other languages) by \citet{zivanovic07}; subatomic quantification with part-whole structures are explored in part-whole structures in \citet{wagiel21}; proportional quantification, in particular percentage expressions are addressed in \citet{gehrkewagiel}; quantifier scope and its interaction with information structure is studied by \citet{ionin02, antonyukdiss, ionin-luchkina18} (Russian), \citet{godjevac} (BCMS),  \citet{abelsgrabska} (Polish). \citet{Docekal.Simik2021} explore the semantics of binominal quantifiers in Czech.
+
+Apart from Bulgarian and Macedonian, which have nominal suffixes assumed to grammatically mark definiteness, primarily addressed in the syntactic literature \citep[for recent discussion, see][]{Rudin2021}, other Slavic languages lack articles.\footnote{Sorbian is arguably near to having a definite article grammaticalized. For Lower Sorbian, see \citet{Pankau2021}; for Upper Sorbian, see \citet{Scholze2012}. To the best of our knowledge, there is no formal semantic account of Sorbian definite articles or demonstratives.} However, there is discussion on `one' occupying different positions in different Slavic languages when it comes to the grammaticalization path from a numeral to an indefinite article \citep[see, e.g.,][]{Hwaszcz.Kedzierska2018,Seres2024,Molinari2025}. For example, while Russian `one' primarily serves the function of marking specificity \citep[see also][]{Ionin2013}, Bulgarian `one' behaves like an indefinite marker in a wider variety of contexts \citep[see, e.g.,][]{geist13,Gorishneva2013,gorishneva16}.
+
+\textcitetv{chapters/06_geist} addresses indefiniteness and specificity in various Slavic languages, distinguishing between two types of specificity: epistemic and scopal. Investigating three different types of indefinite pronouns in Russian, she shows how they are sensitive to these different types of specificity, and she provides an overview of different theoretical approaches to the semantics of such pronouns in Russian. In the second part of the chapter, she compares epistemic indefinites in Bulgarian, Czech, Russian, and Slovak, discusses the relative emergence of ‘one’ as an indefinite article in Bulgarian, Croatian, Macedonian, Polish, and Resian, and provides a case study on the emergence of the indefinite article in Russian.
+
+\subsubsection{Adjectives, degree semantics, gradability}\label{gs:sec:adj} Slavic languages often exhibit a morpho(phono)logical difference between two adjective forms, often called short and long. BCMS has been of particular interest as the short--long distinction, found with attributive adjectives only, has been claimed to have impact on the referential properties of the NP it is contained, in that the long form has been argued to correlate with definiteness or with specificity; see \citet{aljovic02,trenkic04,stankovic15}, among others. In contrast, in Russian the short--long form distinction is only found with predicative adjectives, and has often been associated with the stage- vs. individual-level distinction, although a direct correlation has also been called into question \citep[see, e.g., discussion in][]{geist10adj}. 
+
+The dependence on a judge in determining the standard for comparison in adjectives is addressed in \citet{bylininadiss}, who also takes into account Russian data (in comparison to other data). \citet{goncharov15} investigates adjectival intensification in Russian. The semantics of adjectives and their nominal use is addressed by \citet{king18} for Slovak. Slavic comparative constructions have been studied by \citet{pancheva06,ionin-matushansky13}. The superlative has received attention as well \citep[see e.g.][]{stateva03}, also for its interaction with focus and NP/DP-syntax, which turns out to be particularly interesting due to the articleless nature of many Slavic languages; see \citet{zivanovic07,zivanovic08,boskovic-gajewski11,pancheva-tomaszewicz12,tomaszewicz15}. \citet{Docekal2025} studies the semantics of equative constructions and its relevance to the licensing of negative concord items.
+
+%{\color{red}[Krasikova still missing / I was trying to add something for Krasikova but her webpage doesn't work and I could not find other useful information]}
+
+% \begin{comment}
+% maybe we can add a bit more here, since we don't have a paper dedicated to this topic -- I could do that at some point.
+% \end{comment}
+
+\subsubsection{Phi-features} The semantics of phi-features, including person, number, and gender, in pronouns, nouns, or agreement, received relatively little attention. The relevance of number agreement with coordinated subjects for scalar implicatures (in Russian) is explored in \citet{ivlieva12a, ivlieva12b,ivlievadiss}. The semantics of person features in Russian is briefly addressed in \citet{podobryaev17} and the semantics of gender in BCMS in \citet{murphy-etal18}. %{\color{red}There is more on the syntax, but this also has effects on the semantics - we should check the slides of Ivana and Branko again}
+
+% \begin{comment}
+% maybe we can add a bit more here, since we don't have a paper dedicated to this topic -- Berit: I added a summary of what I know about gender in Slavic (but it is too much, and it is mostly morphosyntax); I don't know any literature on the semantics of number and person (in Slavic), but we could add a couple of sentences on Ivlieva and Podobryaev (hm ...)
+%
+% %suggestion for gender:
+% Most of the literature on gender in Slavic languages is concerned with its morphosyntax; however, even in this domain it is common to acknowledge a distinction between, on the one hand,  ``semantic'' or ``natural'' gender (``notional'' gender in \citealt{mcconnellginet13}), and ``grammatical'' gender, on the other hand, due to mixed agreement patterns (extensively described in \citealt{corbett79} et seq.). For example, so-called hybrid nouns in Russian, such as \textit{vrač'} `doctor' or \textit{direktor} `director', come in only one form, which is grammatically masculine, but can be used to refer to male, female, or non-binary doctors/directors. However, the agreement of adjectives and predicates with such nouns can (but does not have to; see Corbett's agreement hierarchy) signal if the referent is female, see \REF{ex:GS:hybrid} \citep[from][]{matushansky13} \citep[see also][]{steriopolo18,privizentseva24}.
+%
+% \ea\label{ex:GS:hybrid}
+% \ea
+% \gll Vrač prišla. \\
+% doctor.\textsc{msg} arrived.\textsc{fsg}\\\hfill(Russian)
+% \glt `The doctor (female) has arrived.'
+% \ex
+% \gll Naša vrač -- umnica.\\
+% our.\textsc{fsg} doctor.\textsc{msg} {} clever.person\\
+% \glt `Our doctor (female) is very clever.
+% \z
+% \z
+%
+% \noindent Another class of human-denoting nouns that cause mixed agreement, but now only in the plural domain, are nouns like \textit{vladika} `bishop' in BCMS \citep[][]{puskar18}. While in the singular domain, only masculine agreement is acceptable, in the plural domain both masculine and feminine agreemenet is possible \REF{ex:GS:vladika} \citep[from][276]{puskar18}.
+%
+% \ea\label{ex:GS:vladika}
+% \ea[]
+% {\gll Star-i vladika me ju juce posetio-$\varnothing$.\\
+% old-\textsc{msg} bishop me is yesterday visit.\textsc{prt-msg}\\\hfill (BCMS)
+% \glt `The old bishop visited me yesterday.'}
+% \ex[*]
+% {\gll Star-a vladika me ju juce posetil-a.\\
+% old-\textsc{fsg} bishop me is yesterday visit.\textsc{prt-fsg}\\}
+% \ex[]
+% {\minsp{\{} Star-e / Star-i\} vladike me ju juce \minsp{\{} posetil-e / posetil-i\}.\\
+% {} old-\textsc{fpl} {} old-\textsc{mpl} bishop.\textsc{pl} me are yesterday {} visit.\textsc{prt-fpl} {} visit.\textsc{prt-mpl}\\
+% \glt `The old bishops visited me yesterday.'}
+% \z
+% \z
+%
+% \noindent Number also plays a role in another domain in which mixed agreement arises, this time even with inanimate nouns, namely with conjoined noun phrases in, e.g., BCMS, Czech, and Slovenian, when the conjuncts do not match in (grammatical and/or semantic) gender \citep[see][]{alsinaarsenijevic,willer+16,puskar17,kucerova18}. This is illustrated in \REF{ex:GS:conjagr} \citep[from][188f.]{willer+16}.
+%
+% \ea\label{ex:GS:conjagr}
+% \gll \minsp{\{} Podražili /  Podražile\} so se knjige in peresa.\\
+% {} become.more.expensive.\textsc{mpl} {} become.more.expensive.\textsc{fpl} \textsc{aux.pl} \textsc{refl} books.\textsc{fpl} and pens.\textsc{fpl}\\\hfill (Slovenian)
+% \glt `Books and pens have become more expensive.'
+% \z
+%
+% \noindent A research question explored in these works is whether or not there is always closest conjunct agreement in such cases, and also whether gender and number are independent systems \citep[see, e.g.,][]{arsenijevicgracanin,arsenijevicmitic}.
+%
+% None of these works delve deeper into semantic issues. To our knowledge, \citet{yanovich12} is the only work that explores the semantics/pragmatics of gender features in a Slavic language (Russian). In particular, he questions the standard presuppositional analysis of gender features on pronouns showing that they display unexpected projection behavior. For example, in \REF{ex:GS:yano}, the gender feature should project, yielding a grammatical sentence, but the example is out.
+%
+% %čšž
+% \ea[*]
+% {\gll Esli by \minsp{[} syn korolevy]$_2$ byl ženskogo pola, to ona$_2$ byla by umna.\\
+% if \textsc{subj} {} son queen.\textsc{gen} was.\textsc{m} female.\textsc{gen} gender.\textsc{gen} then she was.\textsc{f} \textsc{subj} smart.\textsc{f}\\\hfill (Russian)
+% \glt Intended: `If [the queen's son]$_2$ were female, then she$_2$ would be smart.'}\label{ex:GS:yano}
+% \z
+%
+% \noindent \citeauthor{yanovich12} proposes that gender features are rather indexical presuppositions \citep[in the sense of][]{cooper83}, which only appear with (pro)nouns referring to humans, including  hybrid nouns of the type in \REF{ex:GS:hybrid}. In this context, he posits the ``real gender'' constraint in \REF{ex:GS:realgender}.
+%
+% \ea \textsc{The ``real gender'' constraint}\\
+% The gender feature on a gendered anaphoric pronoun (referring to a human) corresponds to the \textit{real gender} of the pronoun's referent.\\
+% \textit{Real gender} is taken by speakers to be an intrinsic property of human individuals. When an individual has two different gender properties at different indices, speakers use the property which they consider ``the real one''.\label{ex:GS:realgender}
+% \z
+%
+% %\citeauthor{corbett79} agreement hierarcy
+% %{corbett79,mcconnellginet13,alsinaarsenijevic,matushansky13,willer+16,prazmowska16,puskar17,kucerova18, steriopolo18,privizentseva24}. mixed agreement patterns: hybrid agreement, closest conjunct agreement
+%
+% %number also in conjunct agreement: \citep[][]{arsenijevicgracanin,arsenijevicmitic}
+% \end{comment}
+\subsubsection{Plurality, countability, numerals%\dots
+} Plurality and various related issues have recently received attention in the works of \citet{wagiel15a}, \citet{grimm-docekal21}, or \citet{Butschety2025}. The semantics of various types of numerals, numeral-like determiners, or countability-related affixes is studied by \citet{ionin_matushansky2006composition,docekal12,wagiel15,wagiel20,wagiel21,docekal-wagiel18,Khrizman21,Geist.etal2023}.
+
+\textcitetv{chapters/13_wagiel} provides a general cross-linguistic overview of the uses of simple and complex numerals, such as ordinals, multiplicatives, taxonomic and group numerals. In the second part of the chapter, he provides a morpho-semantic analysis of label numerals in Slavic, illustrated with examples from BCMS, Bulgarian, Czech, Polish, Slovak, Slovenian, and Russian. He argues that the arithmetical use of such numerals is basic, while the quantificational and label uses are derived. 
+
+\subsubsection{Case alternations} Some Slavic languages exhibit systematic case alternations, particularly the alternation between the nominative and the instrumental in the predicative position, and the alternation between the accusative and the genitive in object (and in some cases also subject) position, in negative, intensional, or quantificational contexts. Literature on genitive of negation or quantification includes \citet{pereltsvaig99,partee-borschev02,partee-borschev04,kagan07,kagan13,Khrizman2014,geist15} (Russian) and \citet{Husic.Renans2022} (BCMS). Literature on predicative instrumental, which partially overlaps with the literature on bare nominals mentioned above, includes \citet{filip01,Filip2005} on Czech, and \citet{Pereltsvaig2006,geist08a,bogatyreva11,bogatyreva-espinal14} on Russian. \citeposst{kagan20} monograph discusses a range of issues including the semantics of datives. An attempt at a more comprehensive account of the syntax and semantics of Russian cases can be found in \citet{zimmermann2003}.
+
+% \begin{comment}
+% maybe we can add a bit more here, since we don't have a paper dedicated to this topic -- Berit could do that on genitive of negation and case inside PPs, but not on other case alternations.
+% \end{comment}
+\subsubsection{Prepositional phrases} The syntax-semantics interface of Slavic prepositions (and their corresponding prefixes) is explored more recently in \citet{Biskup2019}. \citet{Romanova2007} addresses the syntax (and semantics) of Russian prepositions, \citet{Gehrke2008} the semantics and syntax of Russian and Czech prepositions (and their corresponding prefixes) in the description of motion events, also in comparison with other European languages.
+
+
+
+\subsubsection{Nominalizations}
+
+Nominalizations do not primarily constitute a formal semantic topic, but they are of relevance for the lexicon-syntax interface, and particular in the discussion of Slavic languages, deverbal nominalizations have been investigated to explore the role aspect morphology plays in event structure and for aspect semantics, and how much of the event structure (in addition to the argument structure) and aspect information of the underlying verb is preserved in such nominalizations. \citet{Schoorlemmer1995,schoorlemmer98} addresses Russian nominalizations and shows that diagnostics to distinguish between simple event nominals, complex event nominals, and result nominals, can also be extended to Russian, whereas \citet{zimmmermann2002} spells out the syntax and semantics of Russian process nominalizations. \citet{Tatevosov2011}, in turn, uses the observation that Russian nominalizations contain morphology typically associated with aspect (particular prefixes and suffixes) but lack aspect semantics, as an argument for dissociating the two and in favor of his proposal that grammatical aspect is syntactically high (where it sits cross-linguistically), whereas the morphemes in question are low and contribute to event structure (see also \citetv{chapters/11_tatevosov} and \sectref{sec:GS:aktionsart}). This line of research is further elaborated on and extended to Czech in \citet{biskup23adv}, who points out differences between Czech and Russian in whether nominalization can contain Aspect (AspP) (Czech) or not (Russian; see also \citealt{Schoorlemmer1995}). The implications of such differences for the general semantics of aspect in these two languages, and the question whether grammatical aspect in Russian (but not in Czech) interacts closely with finiteness, is explored in \citet{gehrkeadv23}.
+
+\subsection{The verbal and clausal domain}
+
+\subsubsection{Aktionsart, event structure, aspect}\label{sec:GS:aktionsart} Given that all Slavic languages grammaticalize the distinction between perfective and imperfective and have a rich inventory of verbal affixes that make some (direct or indirect) contribution to event structure and aspect, Slavic languages form a substantial part of the literature on aspect semantics as a whole. There is influential work on the semantics of aspect in terms of partial vs. total events, also in interaction with the semantics of nominal arguments (in particular incremental themes) \citep{filip93,Filip1999}, or in terms of relations between temporal intervals \citep{Klein1994,Klein1995,borik02,Borik2006,gronndiss,gronn15,Tatevosov2011,Tatevosov2015b,altshuler14}. Related to this, there are a number of works that are devoted to the semantics and syntax of verbal affixes   \citep{filip03,Filip2005,mlynarczyk04,souckova04,arsenijevic06,tatevosov08pref,gehrkelagb,Gehrke2008,zaucerdiss,Kagan15,zinovadiss,Biskup2019,Biskup2025,Naumov2020,Docekal.etal2023,Karagjosova2024}, or the use of imperfective forms in (seemingly) semantically perfective contexts \citep{gronndiss,gronn15,Altshuler2012,muellerkrat,muellerreichau15,alvestad14,Borik.Gehrke2018,klimek22,gehrketrueipf}. There are also important differences in the use of aspectual forms across Slavic languages; see, e.g., \citet{Dickey2000} for an empirical overview of differences between ten Slavic languages in the use of aspect in various contexts. There are only few formal-semantic approaches that address these differences, and they do so only for a limited set of contexts \citep[][]{alvestad14,Mueller-Reichau2018a,mueller23,gehrke22,klimek22}. The interaction between the aspect of attitude predicates and the factivity of their complements is explored -- mainly on the basis of Polish -- in \citet{Zuchewicz2018,Zuchewicz2020}.
+
+% \begin{comment}
+%     Add \citet{zimmermann2014} somewhere (Reciprocity expressions)
+% \end{comment}
+
+
+\textcitetv{chapters/11_tatevosov} takes as a point of departure the well-known observation that (im)perfective semantics does not come with a uniform morphological marking on the verb, and he continues his research program that dissociates aspect semantics from aspect morphology \citep[][]{Tatevosov2011,Tatevosov2015b}. In his chapter, he diligently maps Russian aspect morphology in simple imperfectives, perfectives, and secondary imperfectives, to event structure, arguing that morphological complexity coincides with event structural complexity. In the second part of the chapter, he provides a typology of lexical prefixes, which relate to result states, event-structurally. He argues that lexical prefixes can be divided into two groups, depending on whether the verb upon prefixation maintains its lexical semantic core or undergoes a semantic shift. In the former case, the prefixes are further divided based on their argument structure, into monadic and dyadic ones. Monadic prefixes can be argument-sharing or not, and when they are, they can be restrictive with respect to the possible result states they denote, or not. 
+
+Also \textcitetv{chapters/08_muellerreichau} assumes that aspect semantics is to be dissociated from aspect morphology. After providing a thorough overview of different theoretical approaches to the semantics of aspect in Slavic (primarly, but not exclusively Russian), he advocates for only one null aspectual operator in Russian. This operator is argued to be concerned with state change and to express default aspect, based on the morphological input it gets. He then spells out a detailed account of how the mapping from aspect morphology to aspect semantics is mediated via this aspectual operator, employing the framework of Discourse Representation Theory. 
+
+\textcitetv{chapters/05_gehrke} addresses cross-Slavic differences in the use of aspect, primarily focusing on the differences between Czech and Russian, as discussed in the (mostly descriptive) literature. She exemplifies the differences in four contexts: sequences of events, habitual (or what \citetv{chapters/04_filip} calls generic) contexts, the historical present, and general-factual contexts. A new context of investigation is added, namely the domain of passives (reflexive and participial passives); for example, it is shown that while Russian past passive participles are derived predominantly from perfective verbs, whereas there are morphological and semantic restrictions on such derivations from imperfectives (see also \citealt{Borik.Gehrke2018}), we regularly find both imperfective and perfective past passive participles in Czech, expressing the aspect semantics we also find in other contexts. A summary of the (few) existing formal-semantic approaches to capturing cross-Slavic differences in aspect use is provided. Since all of them employ some notion of temporal definiteness (or sometimes also specificity), the chapter concludes with outlining a research program to explore parallels between individuals, events, and times regarding definiteness. 
+
+\subsubsection{Tense} Among the various possible topics in the domain of Tense, some that are of particular relevance to Slavic languages include perfect meanings, also in comparison to perfect meanings in non-Slavic languages, e.g. the semantics of the perfect in Bulgarian \citep{Izvorski1997,iatridou01} or also perfect meanings associated with past passive participles in Russian \citep{Paslawska.Stechow2003}. Further topics include sequence of tense in Russian \citep{babyonyshev-matushansky06,Khomitsevich2007,gronn_stechow2010}, the concept of (in)definite tense in Russian (and more generally) \citep{gronn15}, the semantics of future tense in Polish \citep{blaszczak-etal12}, as well as temporal adverbs in embedded contexts \citep{vostrikova18}.
+
+\textcitetv{chapters/07_gronn} provides an overview of issues relating to the semantics of tense in Slavic languages, illustrated with examples from Bulgarian, Croatian, and Ukrainian, also providing insights into the history of Slavic tense semantics. He spells out a formal semantics for the Ukrainian tense system that takes into account the role of aspect as well. In the second part of his chapter, he addresses the semantics of temporal auxiliaries used in future and perfect tenses, with a particular focus on Bulgarian, also addressing evidentiality. Primarily based on data from Ukrainian and Polish, he furthermore addresses subordinate tense, e.g. in complements and adjuncts, and he concludes the chapter with a discussion of relative tense and sequence of tense phenomena. 
+
+\subsubsection{Generic sentences} 
+
+Generic sentences, such as \textit{Cats meow} or \textit{Mina rides her bicycle to school}, are often discussed as topics pertaining to aspect or tense, or both. Generic statements are aspectually stative, and in some Slavic languages (e.g. Russian), this leads to the predominant use of the imperfective aspect, so that one could get the impression that one function of the imperfective could be to describe generic statements. However, generic statements can also be made with perfective verbs, even more so in other Slavic languages; see, for instance, \citet{Filip.Carlson1997,muellerreichau17} for discussion of West Slavic languages. 
+
+\textcitetv{chapters/04_filip} argues that genericity, expressed in generic sentences, is a grammatical category in its own right, distinct from both aspect and tense. She investigates the generic marker \textit{-va-} in Czech, which enforces a generic interpretation of the verb it is attached to and is assumed to function the same in Polish and Slovak. She shows that \textit{-va-} shares many commonalities with the null generic \textsc{gen}-operator but is more restricted than it, since it can only be used in a subset of generic sentences; one restriction, for instance, is that it requires the event in question to have been instantiated (what Filip calls the actualization requirement). She furthermore addresses the question whether a unified semantics for generic sentences, which she views as desirable, is possible, or whether one needs to posit subtypes, with the possibility that \textit{-va-} could represent one such type.
+
+\subsubsection{Negation} Negation has received attention especially due to its interaction with negative polarity and negative concord phenomena \citep{Progovac1993a,Blaszczak2001,gajic16a}. An in-depth recent investigation of Czech negation, including its interactions with polarity, aspect, or wh-questions, can be found in \citet{docekal15}. \citet{Docekal2020,Docekal2025} explores the licensing of negative polarity and negative concord items in Czech, based on experimental evidence. \citet{Safratova2020} presents an experimental investigation of the interaction of negation and comparatives in Czech. The semantics and pragmatics of negation in polar questions is investigated in \citet{Stankova.Simik2025}.
+
+\citet{chapters/03_docekal} provides an overview of three general approaches to NPIs (syntactic, semantic, pragmatic), illustrating them with examples from Slavic languages (Czech, BCMS, Polish, Slovenian), among others. He then offers a pragmatic account of Czech scalar NPIs with a meaning component that corresponds to the contribution of `even', building on the theory of \citet{Crnic2011}. Cross-linguistically, there are three types of scalar particles (weak, strong, concessive), and he illustrates these types with Slavic examples. 
+
+\subsubsection{Mood, modality, propositional attitudes, evidentiality, imperatives, and related issues} Modality also plays a role in the interaction with other phenomena already mentioned above, such as the evidential/epistemic inferences of the present perfect in Bulgarian \citep{Izvorski1997}, ability readings of Czech imperfectives \citep{docekal-kucerova09}, or modal superlatives \citep{goncharov15}. \citet{alvestad14} investigates various Slavic languages in the way they differ in aspect choice in imperatives. %A cross-Slavic perspective is also taken in Igor Yanovich's research project `Modal systems in the historical Slavic languages: formal semantics, micro-variation, language change and language contact' (2018--2022). 
+\citet{stegoveckaufmann} analyze Slovenian imperatives, concentrating on their embeddability. Bulgarian tense, mood, epistemic modality, and evidentiality are analyzed in \citet{smirnova11,Koev2017a,Goncharov.Irimia2020}, or \citet{Karagjosova2021}. \citet{mocnik18,mocnikdiss} addresses epistemic modality and propositional attitudes in Slovenian. The Russian subjunctive in the context of related mood and tense phenomena is discussed in \citet{zimmermann2016}. \citet{Arsenijevic2021} provides a semantic analysis of five subordinate clause types -- conditional, counterfactual, concessive, causal, and purposive -- which crucially relies on the idea that they are all a type of relative clause, a so-called situation relative.
+% \begin{comment}
+%     Add Arsenijevic on conditionals... (Advances)
+% \end{comment}
+
+\textcitetv{chapters/10_stegovec} provides an overview of forms and functions of imperatives across Slavic languages (illustrated mostly with data from BCMS, Russian, Serbian, Slovenian). He then focuses on embedded imperatives in Slovenian and argues that they are also semantically imperative. He shows that other Slavic languages, such as BCMS, Czech, Macedonian, Polish, lack embedded imperatives. He also addresses surrogative imperatives in Slovenian, and concludes the chapter with discussing consequences of the empirical investigation into Slovenian for the semantic analysis of imperatives in general.
+
+\subsubsection{Questions and relatives} Slavic questions, relatives, and more generally wh-constructions have received plenty of attention primarily in the syntactic literature, but some progress has been made in formal semantics as well. \citet{izvorski96,izvorski98,panchevaizvorski00} deals extensively with Bulgarian/Slavic modal existential wh-constructions, correlatives, free relatives, and related wh-constructions. \citet{zimmermann2008} analyzes Russian questions with \textit{kakoj} and \textit{čto za} `which/what kind of'. The semantics of (multiple) wh-questions is explored in \citet{simik10} (Czech) and \citet{Simeonova2025} (South Slavic). Slavic languages have played a central role in Šimík's analyses of modal existential wh-constructions \citep{simik11,simik13} and ever free relatives \citep{simik18}. The semantics/pragmatics of (alleged) wh-scope marking in Russian wh-questions received attention in \citet{korotkova12}. The meaning of Slavic polar questions and polar question particles is investigated in \citet{Korotkova2023} (Russian) or \citet{Oikonomou.Ilic2023,Todorovic2024} (Serbian) from a theoretical perspective, in \citet{Mitkovska.etal2024} (Macedonian), \citet{Simeonova.Kamali2024} (Bulgarian), or \citet{Onoeva.Stankova2025} (Czech and Russian) from a corpus perspective, and in \citet{Jordanoska.Meertens2021} (Macedonian), \citet{Stankova.Simik2025} (Czech) or \citet{Repp.Geist2025} (Russian) from an experimental perspective. The meaning of Slavic response particles (especially `yes' and `no') received attention in \citet{GruetSkrabalova2015} (Czech), \citet{Esipova2021} (Russian), and more recently also experimentally in \citet{Geist.Repp2023} (Russian) and \citet{Hrdinkova.Simik2025} (Czech).
+
+\textcitetv{chapters/09_simik} investigates the interpretation of polar questions in Czech, also focusing on different types of bias (epistemic, evidential, preferential) such questions can have. He provides an overview of cross-Slavic differences in encoding polar questions, discussing data from Macedonian, Polish, Russian, Serbian, Slovak, Slovenian, Ukrainian, and Upper Sorbian, and outlines the bias profile for two Slavic languages, Czech and Serbian. In the second part of the chapter, he spells out a semantic account of negative polar questions, also addressing pleonastic negation and particles appearing in such questions, such as Czech \textit{náhodou} `by (any) chance', or the question particles \textit{(da) li} in Bulgarian, Macedonian, Russian, and Serbian.  
+
+\subsubsection{Connectives} There is no large body of literature on the semantics of Slavic connectives (conjunctions and disjunctions). The pragmatics of some Russian connectives (e.g. `but') has been studied by Katja Jasinskaja \citep{Jasinskaja.Zeevat2008,jasinskaja-zeevat09,jasinskaja10}. The phenomenon of ``hybrid coordination'' (e.g. coordination of subject and object) in Russian is studied by \citet{paperno12}. A decomposition-based view of conjunction and disjunction, partly based on South Slavic data (in the context of Indo-European and diachronic development), is found in \citet{mitrovic-sauerland14}. A semantic, strong NPI-view of the Serbian \textit{ni-}disjunction is defended in \citet{gajic16,gajic18,gajic_2022}.
+
+% \begin{comment}
+% maybe we can add a bit more here, since we don't have a paper dedicated to this topic -- Berit does not know anything about this, so maybe Radek?
+% \end{comment}
+\subsection{Pragmatics, discourse, and information structure}
+
+\subsubsection{Information structure} Information structure has been an essential topic in Slavic linguistics (see, e.g., \citealt{Junghanns2002}), and contributions within the field of formal semantics also exist. A recent survey of information structure in Slavic languages (with no specific focus on semantics, however) can be found in \citet{jasinskaja16}. The semantics of givenness and its relation to word order (scrambling) and prosody (deaccenting) is investigated in \citet{kucerova07,kucerova12,simikwierzba15}. Focus has received much attention in the syntactic literature (especially regarding focus-related scrambling; cf. \citealt{boskovic09a}). Relevant semantic work on focus and focus sensitivity includes the contributions of \citet{simik09c} and \citet{kimmelman09} on monoclausal cleft-like structures in Czech and Russian, respectively, and recent work of \citet{tomaszewicz13,tomaszewicz13a,tomaszewicz15} on focus-association and focus-sensitive particles in Polish (and Bulgarian). The semantics and pragmatics of Slavic (\textit{\.{e}})\textit{to}-clefts is explored in \citet{kimmelman09,Yerbalanov.philippova2023,Shipova2023} (Russian), \citet{simik09c} (Czech), and \citet{Tajsner2018} (Polish), and of predicate clefts in \citet{karagjosova+15} (Bulgarian). The interaction of information structure and quantifier scope is studied e.g. by \citet{ionin-luchkina18}, and the interaction of information structure and aspect is addressed in \citet{gronndiss,alvestad14,Borik.Gehrke2018}.
+
+\textcitetv{chapters/12_tomaszewicz} addresses the semantics and pragmatics of four exclusives in Polish: \textit{tylko, zaledwie}, and \textit{dopiero} are argued to have direct English counterparts (\textit{only}, \textit{merely}, temporal \textit{only}, respectively), whereas \textit{aż} lacks a direct counterpart and can sometimes be translated by \textit{only}, sometimes by \textit{even}. She identifies the conditions and contexts in which these exclusives appear and spells out a formal account that captures their semantics and pragmatics and highlights the commonalities and differences between one another, as well as with \textit{only}. Some space is also dedicated to word order and focus projection behavior of the Polish exclusives, in comparison to English and German `only'. The chapter concludes with a brief comparison of the Polish exclusives to similar words in BCMS, Bulgarian, Czech, and Slovak. 
+
+% \begin{comment}
+% there is also a new article in Advances 2022 by Spellerberg on focus particles in Bulgarian, and also focus-association with only discussed by Zanon 2023 (both are maybe more about syntax though)
+% \end{comment}
+\subsubsection{Discourse particles} The pragmatics of Russian discourse particles and conjunctions (additive, adversative) is explored by \citet{Jasinskaja.Zeevat2008,jasinskaja-zeevat09,jasinskaja10}. Contrastive discourse particles like \textit{to} or \textit{že} in Russian are studied by \citet{mccoy01, hagstrommccoy, mccoy17}. The pragmatics and discourse properties of the Czech particle \textit{že} are addressed in \citet{gruetskrabalovaze} and \citet{kaspar17}. Judging from the description of Serbian \textit{bre} in \
+\citet{miskovic}, it also seems to be a contrastive discourse particle, but there is no formal account. Rich inventories of %``German-style'' 
+discourse particles are described for Czech \citep{Nekula1996}, Russian \citep{zybatow}, and South Slavic \citep[][]{dedaic}, but formally oriented literature on their semantics and pragmatics is missing.
+
+\section{Conclusion}
+
+We hope to have demonstrated above that formal semantics of Slavic languages has grown to become a thriving field with plenty of junior and senior researchers contributing regularly to the analysis of a wide variety of empirical domains. Despite our comprehensive approach to covering the relevant bibliography, it turned out to be impossible to be completely exhaustive. The field is undergoing a steady growth and we have clearly reached a point where it becomes very difficult to keep track of everything.\footnote{A fun fact: 10 of our citations are from before 1990s, 24 from 2000s, 54 from 2010s, and 43 from 2020s, suggesting a $100+\%$ growth every decade.} We apologize to everybody whose work we failed to include, despite its relevance.
+
+We wish Slavic semantics and Slavic semanticists a lot of new and exciting discoveries and fruitful years ahead.
+
+\section*{Acknowledgments}
+We are grateful to the contributors of the volume who read (parts of) this introductory chapter and took time to comment on it, specifically Mojmír Dočekal, Hana Filip, and Atle Grønn. Any misinterpretation or omission is solely our own responsibility.
+
+\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}

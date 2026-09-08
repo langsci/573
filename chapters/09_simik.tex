@@ -1,0 +1,835 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.22078585}
+
+\author{Radek Šimík\orcid{0000-0002-4736-195X}\affiliation{Charles University}}
+% \author{anonymized for review\affiliation{affiliation}}
+% replace the above with you and your coauthors
+% rules for affiliation: If there's an official English version, use that (find out on the official website of the university); if not, use the original
+% orcid doesn't appear printed; it's metainformation used for later indexing
+
+%%% uncomment the following line if you are a single author or all authors have the same affiliation
+\SetupAffiliations{mark style=none}
+
+%% in case the running head with authors exceeds one line (which is the case in this example document), use one of the following methods to turn it into a single line; otherwise comment the line below out with % and ignore it
+% \lehead{Šimík, Gehrke, Lenertová, Meyer, Szucsich \& Zaleska}
+% \lehead{Radek Šimík et al.}
+
+\title{Polar question semantics and bias: Lessons from Slavic/Czech}
+% replace the above with your paper title
+%%% provide a shorter version of your title in case it doesn't fit a single line in the running head
+% in this form: \title[short title]{full title}
+\abstract{This chapter is concerned with the semantics and pragmatics of polar questions, i.e. questions which solicit a `yes' or `no' answer. It provides a survey of the main empirical and theoretical issues surrounding polar questions while concentrating on Slavic languages, and especially Czech. My main goals are (i) to provide an accessible introduction into the area of polar question meaning and bias, building primarily on evidence from Czech, (ii) to provide an overview of how polar questions are formally encoded in different Slavic languages, and (iii) to provide an analysis of Czech negative polar questions, with special attention paid to so-called outer (aka ``pleonastic'') negation and to the particle \textit{náhodou} lit. `by chance'.
+
+\keywords{polar questions, bias, particles, negation, word order, Czech}
+}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[9]%%chapternumber
+}{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}\label{sim:sec:pre-intro}
+
+Polar questions, like \textit{Does Jane play golf?}, are utterances which solicit a `yes' or `no' response from the addressee (e.g. \textit{Yes / (Yes,) She does (play golf)}). Despite the apparent simplicity of these constructions, polar questions represent a lively research topic in all areas of grammar -- from prosody and morphosyntax to semantics and pragmatics. Polar questions are vital for our understanding of direct and indirect speech acts and have sparked controversies about how speech acts should be represented in the grammar. The function of polar questions is rarely simply to ask a question (indicate the way in which one is ignorant) in order to solicit an answer from the addressee (become knowledgeable); in addition, polar questions often convey the speaker's attitude towards one or both of the possible answers. These attitudes are called biases and have a crucial impact on the ways in which polar questions are formally encoded.
+
+This chapter is primarily about the semantics and pragmatics of polar questions in Slavic languages. Slavic polar questions represent an empirical area which is largely unexplored -- at least within formal approaches to natural language meaning -- and is at the same time very rich in the variety of formal means used for expressing such questions. In addition to prosodic strategies, which are to a varying extent present in all the Slavic languages, some Slavic languages resort to word order alternations (subject--verb/auxiliary inversion), others to particles (clause-initial or encliticized), and yet others to some combination of the two. This immediately raises the question of how these strategies are mapped to meaning -- whether to the core question meaning (asking and soliciting a response) or to the various biases.
+
+Since formal-semantic work on Slavic polar questions has only just begun to gain momentum, this chapter is less of a survey of existing accounts and more of an incentive for future research. My goals are (i) to provide an accessible introduction into the area of polar question meaning and bias, building primarily on evidence from Czech, in comparison to other Slavic languages, as well as better-studied languages such as English, (ii) to provide an overview of how polar questions are formally encoded in different Slavic languages, and (iii) to provide an analysis of Czech negative polar questions, with special attention paid to so-called outer (aka ``pleonastic'') negation and to the particle \textit{náhodou} lit. `by chance'.
+
+The chapter is organized as follows. In \sectref{sim:sec:intro} the notion of a polar question is introduced in more detail, building on Czech data, and is contrasted with related notions and constructions such as alternative questions, wh-questions, or embedded interrogatives. \sectref{sim:sec:bias} concentrates on the notion of question bias. Using novel data patterns from Czech, it illustrates the core strategies of encoding bias (esp. negative or declarative polar questions) and briefly sketches the main (competing) approaches to modelling biases in formal semantics and pragmatics. The strategies of encoding polar questions in Slavic languages are discussed in \sectref{sim:sec:slavic}, where I also discuss existing formal-semantic and recent empirical work on Slavic polar questions. The section contributes novel data from a diverse set of Slavic languages (collected via informal elicitation from native-speaker linguists) and focuses on the default (unbiased) forms of polar questions. My analysis of Czech polar questions with outer negation and with the particle \textit{náhodou} is presented in \sectref{sim:sec:czech}. The main take-home message from this part of the chapter is that outer negation in Czech -- and potentially Slavic more generally -- has a significantly more underspecified meaning -- and a correspondingly broader distribution -- than their kin in better-studied languages, esp. English and German. \sectref{sim:sec:concl} presents some conclusions.
+
+\section{Polar questions and related constructions}\label{sim:sec:intro}
+
+A \textsc{polar question} (PQ), also called a ``yes--no question'', is an utterance which invites the addressee to provide one of two answers -- either an affirmative (`yes') or a negative (`no').\footnote{The meaning of response particles is a closely related topic which goes beyond the scope of this chapter. For some recent work on Slavic languages, see \citet{Esipova2021,Geist.Repp2023,Hrdinkova.Simik2025}.} A PQ is exemplified by \REF{sim:ex:pq1-cz}, an example from Czech, in which PQs commonly involve a combination of verb-initial word order (see \citealt{Stankova2023} and the discussion of example \REF{sim:ex:cz-inter} below) and a dedicated utterance-final intonation contour (either rising or rise-falling; \citealt{Danes1957,Veronkova2002}).\footnote{Unless stated otherwise, all examples are in Czech and English, and the meaning and felicity of all the Czech examples is supplied by the author. The author is aware that there is speaker variation and takes the acceptability/felicity/interpretation judgements to be hypotheses about a more reliable and replicable state of affairs.} As opposed to a \textsc{statement}, exemplified in \REF{sim:ex:ass-cz}, it does not have truth conditions, i.e. it cannot be judged as true or false. Ever since \citet{Hamblin1973}, the most common way of modelling the lack of truth conditions in questions is to give them the denotation of the set of propositions which constitute the question's possible answers. The PQ in \REF{sim:ex:pq1-cz} would thus denote the set \REF{sim:ex:pq-denot1}/\REF{sim:ex:pq-denot1x}, or, for brevity's sake, \REF{sim:ex:pq-denot1a}.\footnote{A \textsc{proposition} is standardly defined as a function that characterizes the set of possible worlds in which it is true, whence \REF{sim:ex:pq-denot1x}.}$^,$\footnote{Accessible introductions to (the theories of) question semantics include \citet{Hagstrom2003} and \citet{Cross.Roelofsen2014}.}
+
+\ea\label{sim:ex:pq1-cz-all}\ea\gll Snížila digitalizace počet úředníků?\label{sim:ex:pq1-cz}\\
+decreased digitization.{\NOM} number.{\ACC} officials.{\GEN}\\
+\glt `Has digitization decreased the number of officials?'
+\ex\gll Digitalizace snížila počet úředníků.\label{sim:ex:ass-cz}\\
+digitization.{\NOM} decreased number.{\ACC} officials.{\GEN}\\
+\glt `Digitization has decreased the number of officials.'
+\z\z
+
+\ea \citet{Hamblin1973}-style denotation of \REF{sim:ex:pq1-cz}\label{sim:denot-pq-hamblin}
+\ea \{`digitization has decreased the number of officials',\\
+~`digitization has not decreased the number of officials'\}\label{sim:ex:pq-denot1}
+\ex $\{\lambda w[$digitization has decreased the number of officials in $w]$,\\
+~$\lambda w[$digitization has not decreased the number of officials in $w]$\}\label{sim:ex:pq-denot1x}
+\ex $\{p,\neg p\}$\label{sim:ex:pq-denot1a}
+\z\z
+
+\noindent Polar questions need to be distinguished from two other major types of question -- \textsc{wh-questions}, exemplified in \REF{sim:ex:wh-cz}, and \textsc{alternative questions}, exemplified in \REF{sim:ex:altq2-cz} and \REF{sim:ex:altq1-cz}. Unlike PQs, wh- and alternative questions typically involve falling intonation and generally cannot be answered by plain response particles (such as \textit{ano} `yes' or \textit{ne} `no'). In addition, wh-questions obligatorily exhibit a wh-word or phrase (\textit{jak moc} `how much' in \REF{sim:ex:wh-cz}) and alternative questions an exclusive disjunction (\textit{nebo} `or' in \REF{sim:ex:altq2-cz}/\REF{sim:ex:altq1-cz}). Like PQs, wh- and alternative questions solicit an answer from the addressee, lack truth conditions, and are typically modelled by means of sets of propositions. The set denoted by wh-questions, \REF{sim:denot-wh}, is systematically tied to the denotation of the wh-phrase, often has a cardinality larger than 2, and can in principle be infinite; alternative questions denote a set whose cardinality matches the number of explicitly mentioned disjuncts, which happens to be 2 in both \REF{sim:ex:altq2-cz} and \REF{sim:ex:altq1-cz}; cf. \REF{sim:denot-altq2} and \REF{sim:denot-altq1}, respectively.
+
+\ea\ea \gll Jak moc snížila digitalizace počet úředníků?\label{sim:ex:wh-cz}\\
+how much decreased digitization.{\NOM} number.{\ACC} officials.{\GEN}\\
+\glt `How much did digitization decrease the number of officials?'
+\ex \gll Snížila digitalizace počet úředníků významně, nebo zanedbatelně?\label{sim:ex:altq2-cz}\\
+decreased digitization.{\NOM} number.{\ACC} officials.{\GEN} significantly or negligibly\\
+\glt `Has digitization decreased the number of officials significantly or negligibly?'
+\ex\gll Snížila digitalizace počet úředníků, nebo ne?\label{sim:ex:altq1-cz}\\
+decreased digitization.{\NOM} number.{\ACC} officials.{\GEN} or not\\
+\glt `Has digitization decreased the number of officials or not?'
+\z\z
+
+\ea \citet{Hamblin1973}-style denotation of wh- and alternative questions
+\ea \{`digitization has decreased the number of officials by \qty{10}{\percent}',\\ ~`digitization has decreased the number of officials by \qty{20}{\percent}',\\
+~`digitization has decreased the number of officials by \qty{30}{\percent}',\\
+~\dots\}\label{sim:denot-wh}
+\ex \{`digitization has decreased the number of officials significantly',\\
+~`digitization has decreased the number of officials negligibly'\}\label{sim:denot-altq2}
+\ex \{`digitization has decreased the number of officials',\\
+~`digitization has not decreased the number of officials'\}\label{sim:denot-altq1}
+\z\z
+
+\noindent The identity of \REF{sim:denot-pq-hamblin} and \REF{sim:denot-altq1} -- the denotations of the PQ \REF{sim:ex:pq1-cz} and the alternative question \REF{sim:ex:altq1-cz}, respectively -- indicates the limits of a \citeauthor{Hamblin1973}-style semantics for modelling the meaning of the two question types. Given that PQs and alternative questions differ not only in formal, but also in meaning-related respects (related to exhaustivity and discourse-pragmatic factors; see \citealt{Bolinger1978,Biezma2009,Biezma.Rawlins2012}), their semantics, or at least pragmatics, must be different in some way. As will be discussed in \sectref{sim:sec:modelling-bias-biez-rawl}, differences between alternative and polar questions have motivated modifications to a \citeauthor{Hamblin1973}-style semantics of polar questions.
+
+The insufficient specification -- or perhaps underspecification -- of \citeposst{Hamblin1973} semantics is further evident from the fact that the PQ in \REF{sim:ex:pq1-cz} is semantically indistinguishable from its negated counterpart \REF{sim:ex:npq1-cz}. Assuming, for the sake of the argument, that \REF{sim:ex:npq1-cz} involves canonical negation (see below for more discussion), its semantics is captured in \REF{sim:ex:npq-denot1}, and more schematically in \REF{sim:ex:npq-denot2}, which, building on the axioms of propositional logic and set theory, highlights the identity with \REF{sim:ex:pq-denot1a}. This identity is an oversimplification: above and beyond posing a question (whose meaning could well be captured by \REF{sim:ex:npq-denot1}/\REF{sim:ex:npq-denot2}), negative PQs are known to convey a bias -- or even more biases of a different kind -- towards one of the two possible answers. The notion of bias and the kinds of context that negative PQs can appear in will be discussed in detail in \sectref{sim:sec:bias}.
+
+\ea\label{sim:ex:npq1-cz-all}\ea \gll Nesnížila digitalizace počet úředníků?\label{sim:ex:npq1-cz}\\
+\NEG.decreased digitization.{\NOM} number.{\ACC} officials.{\GEN}\\
+\glt `Hasn't digitization decreased the number of officials?'
+\ex \{`digitization has not decreased the number of officials',\\
+~`it is not the case that digitization has not decreased the number of\\ ~officials'\}\label{sim:ex:npq-denot1}
+\ex $\{\neg p,\neg\neg p\}=\{\neg p,p\}=\{p,\neg p\}$\hfill = \REF{sim:ex:pq-denot1a}\label{sim:ex:npq-denot2}
+\z\z
+
+\noindent Negative PQs are not the only questions that are considered biased. Bias also characterizes \textsc{declarative polar questions} (\citealt{Gunlogson2002}; henceforth also referred to as \textsc{DeclPQ}s) -- utterances which solicit answers, lack truth conditions, and typically have a PQ-dedicated intonation, but at the same time exhibit a declarative (morpho)syntax, as illustrated in \REF{sim:ex:decl-pq}, an example with a canonical SVO word order. Given their core meaning, declarative PQs represent yet another type of utterance which can be assigned the \citeauthor{Hamblin1973}-style semantics above. And again, this meaning does not capture the added value of declarative PQs, namely their specific bias profile \citep{Gartner.Gyuris2017}.
+
+\ea\gll Digitalizace \minsp{\{} snížila / nesnížila\} počet úředníků?\label{sim:ex:decl-pq}\\
+digitization.{\NOM} {} decreased {} \NEG.decreased number.{\ACC} officials.{\GEN}\\
+\glt `Digitization \{has / hasn't\} decreased the number of officials?'
+\z
+
+\noindent Declarative PQs stand in formal and semantic/pragmatic opposition to \textsc{interrogative polar questions} (henceforth also \textsc{InterPQ}s), which exhibit dedicated interrogative (morpho)\-syntax, such as verb-first in Czech (see \REF{sim:ex:pq1-cz}) or the interrogative particle \textit{li} in Bulgarian (\citealt{Rivero1993,Rudin.etal1999}; see \sectref{sim:sec:slavic}), and are -- or at least can be -- construed as unbiased (neutral).
+
+A brief digression on the form of Czech interrogative polar questions is in order. It is common to assume that Czech does not have a dedicated interrogative grammatical form and that it encodes polar questions by intonation alone (see e.g. \citealt{Veronkova2002}; but cf. \citealt{Stankova2023} or the feature GB260 of Grambank, \citealt{Skirgard.etal2023}, which draws on \citealt{Naughton2005}). This conviction rests on the observation that verb-initial clauses can function both as statements and as questions and are thus not indicative of interrogativity; see \REF{sim:ex:vinit} (final punctuation is intentionally left out). Nevertheless, this observation is limited: as is clear from \REF{sim:ex:vinit-subj}, if the subject is overt, a verb-initial root clause can only be construed as a question. For this reason, all the Czech examples in this chapter involve an overt subject.\footnote{The generalization is actually even more complex than that. Verb-initial root clauses with an overt subject can be construed as statements (i) if the subject is focused and, at the same time, (ii) if there is no other non-pronominal constituent than the subject. To the best of my knowledge, these morphosyntactic constraints have yet to receive proper attention in the literature.}
+
+\ea\label{sim:ex:cz-inter}\ea\gll Viděla tam svého syna\label{sim:ex:vinit}\\
+saw.{\SG.\FEM} there {\REFL.\POSS} son.{\ACC}\\
+\ea[\ding{51}]{`She saw her son there.'}
+\ex[\ding{51}]{`Did she see her son there?'}
+\z
+\ex\gll Viděla tam Hana svého syna\label{sim:ex:vinit-subj}\\
+saw.{\SG.\FEM} there Hana.{\NOM} {\REFL.\POSS} son.{\ACC}\\
+\ea[\ding{55}]{~`Hana saw her son there.'}
+\ex[\ding{51}]{`Did Hana see her son there?'}
+\z\z\z
+
+\noindent Coming back to our main discussion: If there are declarative (polar) questions, are there also ``interrogative statements''? That is, are the grammatical form of a sentence and its \textsc{illocutionary force} in principle independent of one another? What comes close to ``interrogative statements'' are \textsc{rhetorical polar questions} \citep{Biezma.Rawlins2017}. As illustrated in (\ref{sim:ex:pq-rhe}A), a PQ can indeed be used rhetorically, i.e. without soliciting an answer or in fact conveying the answer itself. The rhetorical meaning can be, but does not have to be supported by particles, such as \textit{snad} in (\ref{sim:ex:pq-rhe}A).\footnote{An in-depth corpus study of the particles \textit{snad} and \textit{náhodou} in PQs is available in \citet{Chodounska.etal2025}.} Also, the rhetorical reading does not need any specific intonational support. That the PQ below can have the force of a statement is supported by the felicity of the continuation in (\ref{sim:ex:pq-rhe}B).
+
+\ea\begin{xlist}
+\exi{A:}{\gll Snížila \minsp{(} snad) digitalizace počet úředníků?\label{sim:ex:pq-rhe}\\
+decreased {} \textsc{snad} digitization.{\NOM} number.{\ACC} officials.{\GEN}\\
+\glt `Has digitization decreased the number of officials?' / `Digitization hasn't decreased the number of officials, as you surely know.'}
+\exi{B:}{\gll Máte pravdu.\\
+have.2{\SG}.\textsc{hon} truth.{\ACC}\\ 
+\glt `You're right. [It didn't.]'}
+\end{xlist}
+\z
+
+\noindent Finally, let us note that there are interrogative clauses which lack any illocutionary force whatsoever. These are called \textsc{embedded polar interrogatives} (also known as ``embedded'' or ``indirect polar questions'') and are illustrated by \REF{sim:ex:ei1}. Embedded polar interrogatives are introduced by dedicated complementizers, such as \textit{jestli} or \textit{zda} `whether' in Czech, and are selected by responsive predicates (embedding declarative or interrogative clauses; e.g. `know', `find out') or rogative predicates (embedding only interrogative clauses; e.g. `wonder', `ask').\footnote{Predicates which only embed declarative clauses (e.g. \textit{hope}) are called anti-rogative; for recent discussion and references, see \citet{Theiler.etal2019,Uegaki.Sudo2019}.} According to \citeposst{Karttunen1977} influential proposal, embedded interrogatives denote the set of true answers (i.e. not all possible answers, as argued by \citealt{Hamblin1973}).\footnote{For an approach in terms of possible worlds partition and its empirical consequences, see \citet{Groenendijk.Stokhof1984}.} In the case of polar interrogatives, this corresponds to the singleton set containing the true answer -- either affirmative or negative. The logical forms in \REF{sim:denot-ei} capture the truth conditions of \REF{sim:ex:ei}, relying on \citeposst{Dayal1996} idea that embedded interrogatives denote a definite description of the proposition which corresponds to the true answer. The version of \REF{sim:ex:ei} with \textit{nevěděl} `{\NEG}.knew' is true iff there is a unique true proposition in the set \{$\lambda w[$digitization has decreased the number of officials in $w]$, $\lambda w[$digitization hasn't decreased the number of officials in $w]$\} ($\{p,\neg p\}$ for short) and Mirek didn't know the proposition; see \REF{sim:denot-ei-a}. The version with \textit{zajímalo} `wondered' can be derived from the previous one by decomposing the attitude predicate into `want to know'; \REF{sim:denot-ei-b}.
+
+\ea\label{sim:ex:ei}\ea\gll\minsp{\{} Mirek nevěděl / Mirka zajímalo / {\dots} \},\\
+{} Mirek.{\NOM} {\NEG}.knew.{\SG.\MASC} {} Mirek.{\ACC} interested.{\SG.\NEUT} {} {}\\
+\glt `Mirek didn't know / Mirek wondered / \dots'
+\ex\gll \minsp{\{} jestli / zda\} digitalizace \minsp{(} ne-\minsp{)} snížila počet úředníků.\label{sim:ex:ei1}\\
+{} whether {} whether digitization {} {\NEG} decreased number.{\ACC} officials.{\GEN}\\
+\glt `whether digitization has(n't) decreased the number of officials.'
+\z\z
+
+\ea \label{sim:denot-ei}\ea$\neg\textsc{know}\big(w_0\big)\big(\textsc{Mirek}\big)\big(\iota q\,q(w_0)=1\wedge q\in\{p,\neg p\}\big)$\label{sim:denot-ei-a}
+\ex$\textsc{want to know}\big(w_0\big)\big(\textsc{Mirek}\big)\big(\iota q\,q(w_0)=1\wedge q\in\{p,\neg p\}\big)$\label{sim:denot-ei-b}
+\z\z
+
+\noindent In summary, polar questions are utterances which solicit `yes' or `no' answers. They do not have truth conditions themselves, but are systematically related to them via their possible or true answers, which -- collected in a set -- constitute their denotation. Polar questions must be distinguished from related constructions, esp. wh-, alternative, or rhetorical questions. In this chapter, I concentrate on polar questions (including their different forms, e.g. interrogative vs. declarative, positive vs. negative), to some extent on embedded polar interrogatives, but leave other question types aside.
+
+\section{Bias in polar questions}\label{sim:sec:bias}
+
+\subsection{Basic notions}\label{sim:sec:bias-basic}
+
+By posing a (non-rhetorical) polar question (PQ), the speaker solicits an answer from the addressee. This is modelled by the set-of-propositions denotation of (polar) questions: the speaker does not contribute information, but rather highlights the kind of information that he is missing. By putting forth a set of propositions, he offers the addressee an issue to be resolved -- referred to as the (current) question under discussion (\citealt{Roberts1996}/\citeyear{Roberts2012}; \citealt{Farkas.Bruce2010}) -- and expects her to supply the information needed.\footnote{For ease of pronominal reference, I treat the speaker as a male and the addressee as a female.}
+
+Plain information-seeking of this kind, however, is not always -- and perhaps even \textit{mostly not} -- the only motivation for asking a PQ (\citealt{vanRooy.Safarova2003,AnderBois2019,Repp.Geist2025}; among many others). One frequently discussed case involves a situation where the speaker asks a PQ because, on the one hand, he holds a prior belief that $p$, but this belief has recently been put into doubt by evidence that $\neg p$. Asking a PQ denoting $\{p,\neg p\}$ can thus be motivated by resolving two conflicting (contradictory) sources of information -- the speaker's private \textsc{epistemic bias} and the contextual and public \textsc{evidential bias} (\citealt{Sudo2013}, building on \citealt{Ladd1981,Buring.Gunlogson2000,Romero.Han2004}; a.o.).\footnote{This terminological distinction, introduced by \citet{Sudo2013}, is currently the most popular one, including in the literature on Slavic PQs (see, e.g., \citealt{Korotkova2023,Stankova2023,Repp.Geist2025}). Oppositions used in the same or a similar sense include speaker vs. addressee bias \citep{Rudin2022}, speaker vs. contextual bias \citep{Northrup2014}, and speaker vs. evidential bias \citep{Onoeva.Stankova2025}. Bias has also often been referred to as ``presumption'', and biased questions as ``presumptive questions'' (e.g. \citealt{Rakic1984}).}
+
+It has been argued that the speaker's intention (called \textsc{question concern} by \citealt{Repp.Geist2025}) to double-check the epistemic or the evidential bias can motivate the use of different PQ grammatical forms or particles. The use of high vs. low negation in English PQs (\textit{Aren't you Swedish?} vs. \textit{Are you not Swedish?}) or the use of the particles \textit{razve} vs. \textit{neuželi} in Russian PQs are cases in point: the former devices have been claimed to double-check the epistemic or evidential bias, while the latter are supposed to be specialized for double-checking the evidential bias \citep{Romero.Han2004,Repp2013,Romero2015,Repp.Geist2025}.
+
+Not all PQs are posed with the primary aim of resolving the issue $\{p,\neg p\}$ or a conflict between two information sources each pointing to a different state of affairs ($p$ vs. $\neg p$). These -- what we could call \textsc{polarity-seeking} PQs (a term from \citealt{Esipova.Romero2023}) and \textsc{conflict-resolving} PQs, respectively -- can be contrasted with \textsc{explanation-seeking} PQs (\citealt{Tomioka.Kim2014,Esipova.Romero2023}; see also \citealt{Korotkova2023}).\footnote{Explanation-seeking questions correspond to what \citet{Logvinova2022} calls ``inference-based questions'', following \citet{Bolinger1978} and \citet{Mehlig1991}.} An explanation-seeking PQ puts forth a proposition $p$ (in the form of a question) as a possible explanation (cause) of an observed effect. If, for instance, Max does not show up for a planned meeting, it could be that he is sick $(p)$, had other, unexpected obligations $(q)$, or got stuck in a traffic jam $(r)$. Asking \textit{Is he sick?} in this scenario contributes not primarily to resolving the issue $\{p,\neg p\}$ but to resolving the issue $\{p,q,r,{\dots}\}$, which corresponds to the causal question \textit{Why did Max not show up?}\footnote{As an anonymous reviewer noticed, this begs the question whether explanation-seeking PQs are not more on a par with wh-questions than with PQs. My answer is that they have properties of both question types. Besides raising an issue corresponding to a why-question (a property of wh-questions) and at the same time proposing a possible answer (a property of PQs), responding with a plain `no' to an explanation-seeking PQ (as opposed to a polarity-seeking one) does not provide a complete (exhaustive) answer -- leaving the issue $\{q,r\}$ unresolved -- and is therefore felt not to be cooperative. (This corresponds to a response like `Dave didn't' in reaction to the wh-question `Who came?'.)\label{sim:fn:expla-wh}} Explanation-seeking PQs count as evidentially biased (Max's absence being the evidence at issue), but do not necessarily convey prior epistemic bias.\footnote{An anonymous reviewer wonders whether the presence of evidential bias without epistemic bias is equated with the explanation-seeking nature of a PQ. I would indeed hypothesize so. For a more detailed discussion, see \sectref{sim:sec:bias-cz}.\label{sim:fn:evid-expla}} Explanation-seeking PQs are briefly discussed in \sectref{sim:sec:inton-rus} in connection with accent-placement in Russian PQs.
+
+Finally, information-seeking is also not the primary concern in situations in which PQs are used to convey requests (\textit{Would you pass me the knife?}), offers (\textit{Do you want a glass of water?}), suggestions (\textit{Shall we go to the movies?}), or the like. In these cases, resolving the issue $\{p,\neg p\}$ is closely tied to a subsequent action performed by the addressee, speaker, or both (i.e. a ``perlocution''; \citealt{Austin1962}). In contrast to explanation-seeking PQs, requests and offers are typically not accompanied by evidential bias, but may involve a speaker's private bias, which could be called \textsc{preferential bias}, expressing a preference, hope, or in some cases dispreference/fear that the prejacent of the question ($p$) is true and will have a corresponding extra-linguistic effect.\footnote{The newly introduced term \textsc{preferential bias} builds on \citeposst{Uegaki.Sudo2019} term ``preferential predicate'', which is intended to cover the corresponding attitude predicates (`hope', `fear', etc.). In \citeposst{Sudo2013} approach, the preferential bias would be considered a subtype of the broadly conceived epistemic bias (together with bouletic or deontic bias; see also \citealt{Reese.Asher2010}).}
+
+In what follows, I provide some basic illustrations of how bias correlates with formal properties, especially word order and negation. For a more comprehensive and exhaustive approach to bias, building on \citeposst{Sudo2013} epistemic vs. evidential distinction and on the idea that a bias can either be oblitatorily present, obligatorily absent, or optionally present, see esp. \citet{Gartner.Gyuris2017}. A recent survey on biased polar questions can be found in \citet{Romero2024}.
+
+\subsection{Expressing bias: the case of Czech}\label{sim:sec:bias-cz}
+
+An unbiased PQ is hard to come by. To this end, \citet{Repp.Geist2025} claim that ``there is no such thing as a truly neutral [polar] question'' (p. 112).\footnote{\citet{Zimmerling2023} holds an opposing view, namely that ``[u]nbiased polar questions are possible and widespread'' and that bias, understood as the speaker's considering $p$ more likely than $\neg p$ (or conversely), is only ``encoded lexically or by morphosyntax or prosody'' (p. 120).} As observed by \citet{Buring.Gunlogson2000}, even a plain positive PQ is biased against negative contextual evidence. Uttering \textit{Is it sunny?} in a situation where the addressee has entered the house wearing a dripping raincoat is infelicitous. It is blocked by more suitable forms, such as \textit{Is it raining?}, \textit{Is it not sunny?}, or the corresponding declarative PQs -- \textit{It is raining? / It is not sunny?}, all of which are more suitable to reflect the evidence pointing to rain. In this subsection, I will show how PQ polarity (negative/NPQ vs. positive/PPQ) and word order (interrogative/\textsc{InterPQ} vs. declarative/\textsc{DeclPQ}) interact to produce different bias patterns in Czech.
+
+Example \REF{sim:ex:bias1} shows that in the absence of any prominent evidential or epistemic bias, Czech makes use of an interrogative PPQ. It should be pointed out that the expectation that Marek cleaned the third floor, stemming from the cleaning plan, shared between both discourse participants, and one that could be considered a case of deontic bias (what should be the case according to the plan), does not license any one of the PQ forms that are more specific than the default \textsc{InterPPQ}.\footnote{The ``cleaning'' examples that follow make use of the verb \textit{uklidit} `clean.{\PFV}' or \textit{uklízet} `clean.{\IPFV}'. If the imperfective is used, it is in the ``general-factual'' sense, i.e. one that is compatible with a telicity/completedness inference (see \citealt{gronndiss,muellerhab,Mueller-Reichau2018a}, \citetv{chapters/08_muellerreichau}, \citetv{chapters/05_gehrke}). I invite any Czech reader to switch the (im)perfective forms of the verb whenever they consider the alternative more suitable.}
+
+\eanoraggedright \textit{Scenario:} On a busy day, two hotel cleaning service coordinators (A and B), sitting in their office, are taking note of the progress made thus far. A is about to make a tick for the whole third floor, which Marek was responsible for. B is informed about the progress. A asks:\label{sim:ex:bias1}
+\ea[]{\gll Uklidil Marek třetí patro?\\
+cleaned Marek third floor\\\hfill \textsc{InterPPQ}
+\glt `Has Marek cleaned the third floor?'}
+\ex[\#]{\gll Neuklidil Marek třetí patro?\\
+{\NEG}.cleaned Marek third floor\\\hfill \textsc{InterNPQ}
+\glt `Hasn't Marek cleaned the third floor?'}
+\ex[\#]{\gll Marek \minsp{(} ne-) uklidil třetí patro?\\
+Marek {} {\NEG} cleaned third floor\\\hfill \textsc{DeclPQ}
+\glt `Marek has(n't) cleaned the third floor?'}
+\z\z
+
+\noindent In \REF{sim:ex:bias2} the speaker (A) is privately epistemically biased 
+towards the positive prejacent (that Marek also cleaned the third floor). Until A's question, the addressee (B) had not been aware of this bias. Moreover, there is no shared evidential bias for either $p$ or $\neg p$. In this scenario, A can use an \textsc{InterPPQ} or \textsc{InterNPQ}; a \textsc{DeclPQ} sounds infelicitous, irrespective of its polarity.\footnote{Declarative PQs can be used if they are motivated by information-structural considerations; see the discussion around example \REF{sim:ex:decl-is}.} Intuitively, the epistemic bias is communicated more prominently in \textsc{InterNPQ} than in \textsc{InterPPQ}. Suppose that, in fact, Marek has not cleaned the third floor. In that case, B could interpret the \textsc{InterPPQ} as suggesting that A holds a false belief that Marek had both the second and the third floor in his regular cleaning plan. The \textsc{InterNPQ}, on the other hand, quite clearly gives away the implication that A considers it likely that Marek cleaned the third floor not on the basis of the regular plan, but on the basis of more specific information available to A. The negation thus contributes an extra modal/epistemic inference which goes beyond the stereotypical and shared expectation of what could have happened. Finally, it should be noted that the positive epistemic bias of the \textsc{InterNPQ} does not have to be matched by a negative evidential bias. In other words, no conflict between biases is required for the licensing of Czech \textsc{InterNPQ}s. This is in line with the experimental results on Czech reported in \citet{Stankova2023}, and with the properties of high negation in other languages (\citealt{Ladd1981,Buring.Gunlogson2000,Romero.Han2004,Hartung2009,Gyuris2017,Domaneschi.etal2017}).\footnote{An anonymous reviewer wonders whether the stress on \textit{třetí} `third' (instead of the default stress on \textit{patro} `floor') interacts with the bias profile in any way. I do not think so. It merely conveys that the background -- cleaning another floor than the third one -- is salient in the context. The epistemic bias is derived from the prejacent, not the background or the focus alternatives.}
+
+\eanoraggedright \textit{Scenario:} On a busy day, two hotel cleaning service coordinators (A and B), sitting in their office, are taking note of the progress made thus far. A is about to make a tick for the whole third floor. Marek was responsible for the second floor (and he cleaned that), but earlier that day A asked Marek if he could also exceptionally take care of the third floor. B was not informed about A's request to Marek. B is informed about the progress. A asks:\label{sim:ex:bias2}
+\ea[]{\gll Uklízel Marek i \textsc{třetí} patro?\\
+cleaned Marek also third floor\\\hfill \textsc{InterPPQ}
+\glt `Has Marek cleaned the third floor too?'}
+\ex[]{\gll Neuklízel Marek i \textsc{třetí} patro?\\
+{\NEG}.cleaned Marek also third floor\\\hfill \textsc{InterNPQ}
+\glt `Hasn't Marek cleaned the third floor too?'}\label{sim:ex:bias2b}
+\ex[\#]{\gll Marek \minsp{(} ne-) uklízel i \textsc{třetí} patro?\\
+Marek {} {\NEG} cleaned also third floor\\\hfill \textsc{DeclPQ}
+\glt `Marek has(n't) cleaned the third floor too?'}\label{sim:ex:bias2c}
+\z\z
+
+\noindent The felicity of the \textsc{InterNPQ} is reminiscent of what has been observed for outer negation in English or German (\citealt{Ladd1981,Buring.Gunlogson2000,Romero.Han2004,Repp2013}; a.o.). At this point, it should be noted that the formal repertoire of negative PQs is richer in English (and German) than it is in Czech. In English, negation in \textsc{InterPQs} can either be preposed together with the auxiliary, see \REF{sim:ex:high}, or it can occupy its base position, \REF{sim:ex:low}. I follow \citet{AnderBois2019} (among others) in referring to this distinction as \textsc{high} vs. \textsc{low negation}. This formal distinction is complemented by a meaning-related or ``functional'' distinction -- \textsc{outer} vs. \textsc{inner negation} -- see \REF{sim:ex:inner-outer}, and argued to be diagnosed by the use of negative polarity items (NPIs; e.g. \textit{either}, diagnosing inner negation) or positive polarity items (PPIs; e.g. \textit{too}, diagnosing outer negation).\footnote{The widely entertained idea that English high negation is ambiguous between the outer and inner reading \citep{Ladd1981,Romero.Han2004,Repp2013,Romero2015} has recently been contested; see \citet{Sailor2013,AnderBois2019,Goodhue2022}. See also \citet[809]{Quirk.etal1985}, who report a register difference: high negation is preferred in spoken language, while low negation is rather formal. (My thanks to \citealt[141]{Mitkovska.Buzarovska2024} for this piece of information.)}$^,$\footnote{I apply the term ``function'' to the outer vs. inner property of negation as a convenient way of remaining agnostic as to what exactly constitutes the difference -- whether it is syntax, semantics, pragmatics, or some combination of these. Similarly, I do not wish to go deeply into the (non-)licensing of NPIs or PPIs in (negative) PQs. \citet{Stankova2023,Stankova.Simik2025} follow \citet{Repp2006} in analyzing outer negation as fundamentally different from classical propositional negation (see \citetv{chapters/03_docekal}), which in turn leads to the non-licensing of NPIs (and compatibility with PPIs); see also \sectref{sim:sec:modelling-bias-comm}. For alternative accounts of NPI \mbox{(non-)}li\-censing in (N)PQs, see, e.g., \citet{vanRooy2003,Nicolae2013,Trinh2023}. An anonymous reviewer points out that the non-licensing of NPIs (and ``rescuing'' of PPIs) could also be due to a ``flip-flop'' effect (which is more general and not specific to PQs), whereby two stacked NPI licensors (in our case the Q operator and the negation) lead to NPI anti-licensing (see, e.g., \citealt{Homer2021}). A deeper discussion of NPIs and PPIs in (negative) PQs goes beyond the scope of this chapter.\label{sim:fn:npi-licensing}}
+
+\ea \textit{The form of negation in English interrogative PQs}
+\ea \textit{Hasn't} Max cleaned the third floor?\hfill\textsc{high neg}\label{sim:ex:high}
+\ex \textit{Has} Max \textit{not} cleaned the third floor?\hfill\textsc{low neg}\label{sim:ex:low}
+\z\z
+
+\ea \textit{The function of negation in English interrogative PQs}\label{sim:ex:inner-outer}
+\ea \textit{Hasn't} Max cleaned the third floor \textit{too}?\hfill\textsc{outer neg}\label{sim:ex:outer}
+\ex \textit{Hasn't} Max cleaned the third floor \textit{either}?\hfill\textsc{inner neg}\label{sim:ex:inner}
+\ex \textit{Has} Max \textit{not} cleaned the third floor \{\textit{either}/\#\textit{too}\}?\hfill\textsc{inner neg}\label{sim:ex:inner.low}
+\z\z
+
+\noindent In Czech and Slavic languages more generally, negation is prefixed or procliticized on the verb. Since an utterance becomes interrogative by preposing the verb in Czech, negation is necessarily preposed too. There is thus no high vs. low difference in Czech \textsc{InterNPQ}s. The closest one can get to replicating the high vs. low difference is by using interrogative vs. declarative PQs. When it comes to the outer vs. inner status, \citet{Stankova2023} provided experimental evidence (from naturalness ratings) that interrogative NPQs primarily involve outer negation, while declarative NPQs are in principle ambiguous between inner and outer negation (with a preference for the former). The semantic status of the negation was diagnosed by indefinite determiners, contrasting the PPI \textit{nějaký} `some' and the negative concord item (NCI) \textit{žádný} `any/no'; example \REF{sim:ex:cz-inner-outer} provides an illustration of this pattern, with the judgement corresponding to the experimental findings of \citet{Stankova2023}.
+
+\ea \textit{The function of negation in Czech PQs}\label{sim:ex:cz-inner-outer}
+\ea\gll Nekoupila si Linda \minsp{\{} \textit{nějakou} / \minsp{?} \textit{žádnou}\} knížku?\\
+{\NEG}.bought {\REFL} Linda {} \textsc{det.ppi} {} {} \textsc{det.nci} book\\\hfill\textsc{outer}
+\glt `Didn't Linda buy a book?'
+\ex\gll Linda si nekoupila \textit{nějakou} knížku?\\
+Linda {\REFL} {\NEG}.bought \textsc{det.ppi} book\\\hfill\textsc{outer}
+\glt `Linda didn't buy a book?'
+\ex\gll Linda si nekoupila \textit{žádnou} knížku?\\
+Linda {\REFL} {\NEG}.bought \textsc{det.nci} book\\\hfill\textsc{inner}
+\glt `Linda didn't buy a book?'
+\z\z
+
+\noindent Let me conclude this brief digression by noting that, despite its absence in Czech, the high vs. low negation contrast might well be present in interrogative PQs in those Slavic languages in which verb position is not the only interrogative strategy; a good example of that is Serbian (see \sectref{sim:sec:slavic}).
+
+We have thus far seen that Czech \textsc{InterNPQ}s correlate with the presence of the speaker's private epistemic bias and noted that in this respect Czech matches the behaviour of high negation PQs in English.\footnote{In \sectref{sim:sec:czech} I will show that this is not a \textit{necessary} property of Czech \textsc{InterNPQ}s. See also the discussion of example \REF{sim:ex:bias4}.} The scenario in example \REF{sim:ex:bias3} introduces a conflict between two biases: the speaker's epistemic bias for $p$ and an evidential bias for $\neg p$. The latter stems from B's information that Marek cleaned the second floor in conjunction with the stereotypical expectation that he would clean a single floor. Since the second and third floor are contrasted here, \textit{třetí} `third' carries the nuclear accent in A's question. As \REF{sim:ex:bias3} shows, this type of conflict-resolving PQ is necessarily negated, but the choice of the interrogative vs. declarative strategy is not crucial. The presence of evidential bias thus makes the \textsc{DeclPQ} strategy available. Intuitively, there is a slight pragmatic difference between the interrogative and the declarative strategy: the \textsc{InterNPQ} is concerned (using \citepossalt{Repp.Geist2025} terminology) about the speaker's positive epistemic bias and the \textsc{DeclNPQ} about the evidence, i.e. about what B reports. This matches what has been reported for English high vs. low negation: the former double-checks the epistemic bias, the latter the evidential bias \citep{Romero.Han2004,Repp2013}.\footnote{I add that example \REF{sim:ex:bias3a} would be felicitous if the additive particle \textit{i} `also' preceded \textit{třetí} `third' and/or the question started with the (additive) conjunction \textit{a} `and'. The intuition is that in that case, the speaker would disregard his concern about the evidence (he simply accepts it as a fact not to be questioned) and ask a plain information-seeking question (conveying a weak epistemic bias for the positive prejacent) about the third floor.\label{sim:fn:disregard-evidential}}
+
+\eanoraggedright \textit{Scenario:} On a busy day two hotel cleaning service coordinators (A and B), sitting in their office, are taking note of the progress made. B informs A that Marek has finished cleaning the second floor. A is slightly surprised as he believed that Marek was responsible for the third floor and it's common for one person to take care of a single floor. A asks:\label{sim:ex:bias3}
+\ea[\#]{\gll Uklízel Marek \textsc{třetí} patro?\\
+cleaned Marek third floor\\\hfill \textsc{InterPPQ}
+\glt `Has Marek cleaned the third floor?'\label{sim:ex:bias3a}}
+\ex[]{\gll Neuklízel Marek \textsc{třetí} patro?\\
+{\NEG}.cleaned Marek third floor\\\hfill \textsc{InterNPQ}
+\glt `Hasn't Marek cleaned the third floor?'}
+\ex[\#]{\gll Marek uklízel \textsc{třetí} patro?\\
+Marek cleaned third floor\\\hfill \textsc{DeclPPQ}
+\glt `Marek has cleaned the third floor?'}
+\ex[]{\gll Marek neuklízel \textsc{třetí} patro?\\
+Marek {\NEG}.cleaned third floor\\\hfill \textsc{DeclNPQ}
+\glt `Marek hasn't cleaned the third floor?'}
+\z\z
+
+\noindent A different pattern emerges when one considers a case with evidential bias but no prior epistemic bias (or at least no prior bias the speaker would intend to convey). Scenario \REF{sim:ex:bias4} involves a situation-based evidential bias for $p$. The bias arises as a plausible explanation for the observed effect, namely the earbud found on the floor. In other words, the PQs under \REF{sim:ex:bias4} are explanation-seeking questions in the sense introduced in \sectref{sim:sec:bias-basic}.\footnote{The explanation -- that Marek cleaned the third floor -- is a plausible answer to the implicit question that the finding gives rise to, namely `How can an earbud like the ones Marek has have appeared here?'} The first thing to observe is that the change in the polarity of the evidential bias -- from $\neg p$ in \REF{sim:ex:bias3} to $p$ in \REF{sim:ex:bias4} -- correlates with the change in the polarity of the \textsc{DeclPQ}; in \REF{sim:ex:bias4}, only \textsc{DeclPPQ} is available, matching the evidential bias for $p$.\footnote{Note that despite the \textsc{DeclNPQ}'s capacity to express outer negation (see the discussion around example \REF{sim:ex:cz-inner-outer}), the \textsc{DeclNPQ} in \REF{sim:ex:bias4-d} is clearly not on a par with \REF{sim:ex:bias4-b}. This matches the experimental results reported in \citet{Stankova2023}, who shows that the polarity of \textsc{DeclPQ}s matches the polarity of the evidential bias irrespective of the inner vs. outer distinction.} What is striking is that the scenario licenses, or in fact prefers, the use of negation in interrogative PQs: the \textsc{InterNPQ} feels more appropriate than \textsc{InterPPQ}. In other words, an \textsc{InterNPQ} is not specialized in conveying prior epistemic bias; if such a bias is absent (or not intended to be expressed), it is also compatible with expressing an evidential bias which corresponds to the suspected explanation of an observed effect. As indicated by the translation of \REF{sim:ex:bias4-b} (with thanks to Daniel Goodhue, p.c.), English does not use negation in this case, suggesting that the distribution (and meaning) of Czech \textsc{InterNPQ}s is broader than that of English high negation PQs. In \sectref{sim:sec:czech} we will see more examples where high negation is not licensed in English, but its correlate in Czech (\textsc{InterNPQ}) is.
+
+\eanoraggedright \textit{Scenario:} Two hotel cleaning service coordinators (A and B) are walking around the hotel and inspecting the progress made. A has no idea about the cleaning plan for today (esp. who is responsible for what), only B does. When on the third floor, A and B find an earbud that A suspects belongs to Marek, one of the cleaners. A asks:\label{sim:ex:bias4}
+\ea[\#]{\gll Uklízel Marek třetí \textsc{patro}?\\
+cleaned Marek third floor\\\hfill \textsc{InterPPQ}
+\glt Intended: `Has Marek cleaned the third floor?'\label{sim:ex:bias4a}}
+\ex[]{\gll Neuklízel Marek třetí \textsc{patro}?\\
+{\NEG}.cleaned Marek third floor\\\hfill \textsc{InterNPQ}
+\glt `Has Marek cleaned the third floor?'\label{sim:ex:bias4-b}}
+\ex[]{\gll Marek uklízel třetí \textsc{patro}?\\
+Marek cleaned third floor\\\hfill \textsc{DeclPPQ}
+\glt `Marek has cleaned the third floor?'}
+\ex[\#]{\gll Marek neuklízel třetí \textsc{patro}?\\
+Marek {\NEG}.cleaned third floor\\\hfill \textsc{DeclNPQ}
+\glt `Marek hasn't cleaned the third floor?'\label{sim:ex:bias4-d}}
+\z\z
+
+\noindent The data discussed so far are consistent with the generalization that \textsc{DeclPQ}s are specialized for conveying evidential bias (\citealt{Buring.Gunlogson2000,Gunlogson2002}; a.o.). There are circumstances, however, in which Czech declarative PQs are completely unbiased. This is exemplified in \REF{sim:ex:decl-is}, where the urge to place the contrastive topic \textit{Marek} (which contrasts with \textit{Lucie} by virtue of the preceding conversation of A and B) utterance-initially outweighs the need for verb movement.\footnote{With its free word order \citep{jasinsimik}, Czech (or Slavic more generally) is especially prone to information-structure-related word order manipulations. In their spoken-corpus study on Czech, \citet{Onoeva.Stankova2025} report a significant correlation between evidential bias and \textsc{DeclPQ}s, but still, there are a great number of \textsc{DeclPQ}s which \citet{Onoeva.Stankova2025} categorized as free of evidential bias. I hypothesize that bias-free \textsc{DeclPQ}s involve a marked information structure.}
+
+\eanoraggedright \textit{Scenario:} On a busy day, two hotel cleaning service coordinators (A and B), sitting in their office, are taking note of the progress made thus far. B is informed about the progress. After a brief chat about two new cleaners who have just joined the team -- Lucie and Marek -- A wants to take note of the final two floors and wonders who (Lucie or Marek) cleaned which floor (second or third). A starts by asking:\label{sim:ex:decl-is}
+\ea[?]{\gll Uklidil Marek \textsc{třetí} patro?\\
+cleaned Marek third floor\\\hfill \textsc{InterPPQ}
+\glt `Has Marek cleaned the third floor?'}
+\ex[\#]{\gll Neuklidil Marek \textsc{třetí} patro?\\
+{\NEG}.cleaned Marek third floor\\\hfill \textsc{InterNPQ}
+\glt `Hasn't Marek cleaned the third floor?'}
+\ex[]{\gll Marek uklidil \textsc{třetí} patro?\\
+Marek cleaned third floor\\\hfill \textsc{DeclPPQ}
+\glt `Marek has cleaned the third floor?'}
+\ex[\#]{\gll Marek neuklidil \textsc{třetí} patro?\\
+Marek {\NEG}.cleaned third floor\\\hfill \textsc{DeclNPQ}
+\glt `Marek hasn't cleaned the third floor?'}
+\z\z
+
+\noindent A comparable effect obtains in Czech wh-questions. While Czech is predominantly a wh-movement language -- placing its wh-word clause-initially in wh-questions \citep{Veselovska2021} -- this strong tendency can be overridden if the question involves a contrastive topic (cf. \citealt{Bobaljik.Wurmbrand2015}). The difference between informa\-tion-structure-induced unbiased declarative PQs and declarative wh-questions is that the former strongly prefer the declarative syntax, while in the latter, the declarative syntax is optional.
+
+\eanoraggedright \textit{Scenario:} On a busy day, two hotel cleaning service coordinators (A and B), sitting in their office, are taking note of the progress made thus far. B is informed about the progress. She just informed A that Lucie cleaned the second floor. Now B wonders which floor Marek cleaned.\label{sim:ex:decl-is-wh}
+\ea[]{\gll A které patro uklidil \textsc{Marek}?\\
+and which floor cleaned Marek\\
+\glt `And which floor did Marek clean?'}
+\ex[]{\gll A Marek uklidil \textsc{které} patro?\\
+and Marek cleaned which floor\\
+\glt `And Marek cleaned which floor?'}
+\z\z
+
+\noindent In summary, I have shown that most PQs are not neutral information-seeking questions, but rather express an additional bias towards one (or both) of the alternatives which constitute the question meaning. The bias is either tied to the speaker's (prior) beliefs -- the epistemic bias -- or to the properties of the context or situation -- the evidential bias. Two grammatical means are instrumental in conveying bias: negation, and the form (interrogative vs. declarative) of the PQ. I have shown that, in general, declarative PQs give rise to an evidential bias for the proposition which corresponds to the prejacent of the question. This bias can be suppressed in favour of other factors which prefer declarative syntax, in particular information-structural ones. In interrogative PQs, negation typically gives rise to a positive epistemic bias, esp. the speaker's prior belief that $p$. This bias can additionally be in conflict with an evidential bias for $\neg p$. Finally, I have shown that negation in Czech interrogative PQs is also licensed in the absence of prior belief, in particular in explanation-seeking questions.
+
+In \sectref{sim:sec:slavic} and \sectref{sim:sec:czech}, I will discuss another productive way of expressing bias, namely particles, such as the Russian \textit{razve} \citep{Korotkova2023,Repp.Geist2025}.\footnote{Question tags, which often complement declarative PQs (\textit{It's raining, isn't it?}), are not discussed in this chapter.}
+
+\subsection{Modelling bias}\label{sim:sec:modelling-bias}
+
+We have seen that a question like \REF{sim:ex:jana} conveys (i) that the speaker would like to resolve the issue of whether Jana went by bus or not, \REF{sim:ex:jana-a} (see \sectref{sim:sec:intro}), (ii) that there is situational or contextual evidence that Jana did not go by bus, \REF{sim:ex:jana-b}, and (iii) that the speaker expected (had a prior belief) that Jana would go by bus \REF{sim:ex:jana-c} (see \sectref{sim:sec:bias-basic}--\sectref{sim:sec:bias-cz}).
+
+\ea\gll Jana nejela autobusem?\label{sim:ex:jana}\\
+Jana.{\NOM} {\NEG}.went bus.{\INS}\\\hfill\textsc{DeclNPQ}
+\glt `Jana didn't go by bus?'
+\ea \textit{Basic meaning:} \{`Jana went by bus', `Jana didn't go by bus'\}\label{sim:ex:jana-a}
+\ex \textit{Evidential bias:} `Jana didn't go by bus'\label{sim:ex:jana-b}
+\ex \textit{Epistemic bias:} `Jana went by bus'\label{sim:ex:jana-c}
+\z\z
+
+\noindent How are these meaning components encoded in the form of the question? Are they a conventional part of the meaning or do they arise as a result of conversational dynamics (i.e. as a conversational implicature)? If the former, should they be modelled as a presupposition or a conventional implicature? These questions are subject to ongoing lively debate which I cannot do justice to here (see \citealt{Romero.Han2004,Repp2013,Northrup2014,,Trinh2014,Trinh2023,Krifka2015,Romero2015,AnderBois2019,Goodhue2022}; a.o.). I will limit myself to sketching out the most common analytical strategies and arguments put forth in favour of them.
+
+\subsubsection{Semantic approaches}\label{sim:sec:modelling-bias-biez-rawl}
+
+Building on the intuition that PQs are inherently biased (cf. \citepossalt{Repp.Geist2025} ``[\dots] there is no such thing as a truly neutral question''), \citet{Biezma.Rawlins2012} (with an early precedent in \citealt{Roberts1996}) proposed that a PQ does not denote the set of its possible answers \citep{Hamblin1973} or a possible worlds partition \citep{Groenendijk.Stokhof1984}, but just the singleton set containing the question prejacent. The clearly irreducible fact that PQs raise an issue, i.e. that they imply a non-singleton set of propositions under consideration, is encoded in a presupposition contributed by the question operator Q; see \REF{sim:denot:biezma-rawlins}.
+
+\ea \sib{Q [Jana.{\NOM} {\NEG}.went bus.{\INS}]}$^c=\{\lambda w[\text{Jana didn't go by bus in }w]\}$\label{sim:denot:biezma-rawlins}\\
+defined only if\hfill (${}=\{\neg p\}$)
+\ea $\{\neg p\}\subseteq\text{SalientAlts}(c)$, and\label{sim:denot:biezma-rawlins-a}
+\ex $\vert\{\neg p\}\cup\text{SalientAlts}(c)\vert>1$\label{sim:denot:biezma-rawlins-b}\\
+\hfill (adapted from \citealt[392]{Biezma.Rawlins2012})
+\z\z
+
+\noindent\citet{Biezma.Rawlins2012} motivate this semantics for PQs by a systematic comparison with alternative questions (see \sectref{sim:sec:intro}). Alternative questions (`Did Jana go by bus or not?') lay out the two alternatives explicitly and, as it were, on an equal footing \citep{Bolinger1978,vanRooy.Safarova2003}. Moreover, they involve an obligatory disjunction (`or'), which is assumed to collect alternatives in a set \citep{Alonso-Ovalle2006}. PQs, on the other hand, only explicitly mention a single alternative, which is typically biased (i.e. not equal with its polar alternative). They also often involve no overt morphology (such as the disjunction `or') indicating the presence of non-trivial (non-singleton) alternatives. The presupposition of a PQ brought about by the Q-operator -- \REF{sim:denot:biezma-rawlins-a}/\REF{sim:denot:biezma-rawlins-b} -- states that the singleton set denoted by the question is a subset of a non-singleton set of contextually salient alternatives. This set will often correspond to the standard Hamblin-style meaning of a PQ ($\{p,\neg p\}$), but -- or so I conjecture -- it can also correspond to another (implicit) question under discussion, as in explanation-seeking PQs discussed in \sectref{sim:sec:bias-basic}.
+
+\citepossts{Biezma.Rawlins2012} analysis thus provides a good starting point for modelling some biased PQ types. However, a comprehensive account of a more representative sample of the various bias types is, to the best of my knowledge, missing. I would also like to point out that Slavic languages might provide valuable grounds for further exploration of \citet{Biezma.Rawlins2012}, as many of them involve a question particle which is morphologically identical or at least related to a disjunction (cf. \textit{li} in Bulgarian; \textit{czy} in Polish; see \citealt{Logvinova2022} and \sectref{sim:sec:slavic}). Following up on \citeauthor{Biezma.Rawlins2012}' logic, one could expect these questions to have the classical Hamblin-style denotation, be unbiased, and hence more on a par with alternative questions.\footnote{What remains an open issue in \citepossts{Biezma.Rawlins2012} analysis is the exact contribution of the final rising intonation. Nevertheless, if \citeauthor{Biezma.Rawlins2012} have reasons not to unify the rising contour with the abstract Q morpheme, one could entertain the idea that rising intonation conveys the lack of speaker commitment to the truth of the PQ prejacent (see, e.g., \citealt{Gunlogson2003,Gunlogson2008,Malamud.Stephenson2015,Rudin2022}).}
+
+Another type of approach in which question bias is intimately tied to question semantics has been developed in the framework of inquisitive semantics \citep{Ciardelli.etal2013,Ciardelli.etal2019} by \citet{Farkas.Roelofsen2017} and \citet{AnderBois2019}, among others. The core idea of inquisitive semantics is that propositions are endowed with two kinds of meaning -- informative and inquisitive content. Statements containing disjunctions such as \textit{Jana went by bus or by train} primarily provide new information, but at the same time explicitly raise the issue concerning which means of transport Jana used. The former meaning component is informative, the latter is inquisitive. In questions, the situation is reversed: what is at issue is the inquisitive content; this, however, does not rule out the potential relevance of the informative content. Following this logic, \citet{Farkas.Roelofsen2017} argue that declarative PQs raise the issue $\{p,\neg p\}$, but at the same time convey the speaker's commitment to (bias for) the informative content corresponding to the question's prejacent, called the ``highlighted'' alternative by \citet{Farkas.Roelofsen2017}. \citet{AnderBois2019} adopts this framework and develops a particular analysis of a broader range of biased question types. Within Slavic semantics, inquisitive semantics has been applied to Serbian PQs by \citet{Todorovic2023} (see \sectref{sim:sec:slavic}).
+
+\subsubsection{Commitment operators}\label{sim:sec:modelling-bias-comm}
+
+The phenomenon of high/outer negation (see \sectref{sim:sec:bias-cz}) and various PQ-related particles has led researchers to enrich the structure and conventional meaning components of PQs. The core idea of this type of approach, first explicitly formulated in \citet{Romero.Han2004} and later refined in \citet{Repp2006,Repp2009,Repp2013}, \citet{Romero2015}, \citet{Krifka2015,Krifka2017}, and others, is that what is at issue while uttering PQs is not just the propositional contents of the PQ prejacent (a set of possible worlds), but the degree to which the speaker and potentially addressee are committed to the truth of that content. Very informally, by asking whether $p$, the speaker does not (only) ask whether $p$ is true, but how certain the addressee is that $p$ should be added to the \textsc{common ground} (CG) -- the set of propositions corresponding to the mutual beliefs of the discourse participants \citep{Stalnaker1978}.
+
+The two main operators entertained in this type of analysis are \citeposst{Romero.Han2004} \textsc{verum}, expressing strong commitment to $p$, and \citeauthor{Repp2006}'s (\citeyear{Repp2006,Repp2009,Repp2013}) \textsc{falsum}, expressing the lack of commitment to $p$; see \REF{sim:denot:verum-falsum}.\footnote{\citet{Romero2015} and \citet{Frana.Rawlins2019} have proposed that the commitment-related proposition is not at issue (in the technical sense; see \citealt{Simons.etal2011}), i.e. either a presupposition \citep{Frana.Rawlins2019} or a ``common ground-management content'' (\citealt{Romero2015}, building on \citealt{Repp2013}).} In syntactic terms, these operators are ``sandwiched'' between the propositional contents of the utterance (TP, or possibly a lower projection within CP) and the force of the utterance. If the force hosts the question operator, the result will be a PQ which wonders not about $p$ (or $\neg p$) directly, but about the addressee's certainty as to whether $p$ belongs (or does not belong) to the common ground.\footnote{The operators under discussion are not limited to questions -- they can also be used in statements; see, e.g., \citet{Gutzmann.Castroviejomiro2011,Romero2015}.}
+
+\ea\label{sim:denot:verum-falsum}
+\ea \sib{\textsc{verum}}${}=\lambda p\lambda w\forall w'\in\cnst{epi}_x(w)[\forall w''\in\cnst{conv}_x(w')[p\in\text{CG}_{w''}]]$
+\ex \sib{\textsc{falsum}}${}=\lambda p\lambda w\forall w'\in\cnst{epi}_x(w)[\forall w''\in\cnst{conv}_x(w')[p\not\in\text{CG}_{w''}]]$\smallskip\\
+(where $x$ is resolved to the addressee in a question; $\cnst{epi}_x(w)$ is the set of worlds compatible with what $x$ knows in $w$ and $\cnst{conv}_x(w)$ the set of worlds compatible with the conversation goals of $x$ in $w$; $\text{CG}_w$ is the common ground in $w$)
+\z\z
+
+\noindent \citeauthor{Repp2006}'s idea was that outer negation spells out \textsc{falsum}, yielding the denotation \REF{sim:denot:hnq-repp} for \REF{sim:ex:hnq-repp}.
+
+\ea\ea\gll Nejela Jana autobusem?\label{sim:ex:hnq-repp}\\
+{\NEG}.went Jana.{\NOM} bus.{\INS}\\
+\glt `Didn't Jana go by bus?'
+\ex $\{\mathcal{P},\neg\mathcal{P}\}$\label{sim:denot:hnq-repp}\\
+(where $\mathcal{P}=\lambda w\forall w'\in\cnst{epi}_{\cnst{addr}(c)}(w)[\forall w''\in\cnst{conv}_{\cnst{addr}(c)}(w')$\\$[\lambda w[\text{Jana went by bus in }w]\not\in\text{CG}_{w''}]]$ and $c$ is the utterance context)
+\z\z
+
+\noindent The use of \textsc{falsum} has two main benefits. First, it provides a natural account of the inability of outer negation to license negative polarity items (or negative concord items) within the proposition: there simply is no logical negation within $p$. Second, it goes some way towards modelling the bias profile of high negation PQs by making the \textit{absence} of $p$ in the common ground at issue. This naturally comes about if the falsity of $p$ is contextually salient (evidential bias for $\neg p$) and, given that by asking about it the speaker expresses a concern about that falsity, he thereby implies (implicates) his epistemic bias for $p$. This pragmatic derivation of the bias profile of outer negation questions comes close to what \citet{Goodhue2022} assumes for bias more generally, namely that it is a result of conversational dynamics (i.e. a conversational implicature; see \sectref{sim:sec:goodhue}). Yet it is fair to state that this is not what \citeauthor{Repp2009} (or the others following her) assumed; \citet[243]{Repp2013}, for instance, stipulates the bias profile of outer negation PQs separately (in terms of ``discourse conditions''; cf. \citepossalt{Gutzmann2015} ``use-conditions''), and does not attempt to derive it from the semantics of \textsc{falsum}. Besides this problem, the \textsc{verum/falsum}-based approach offers no immediate account of other types of bias profiles, including cases where the positive epistemic bias is not accompanied by a negative evidential bias (see \citealt{Goodhue2022} and the discussion of example \REF{sim:ex:bias2} above).
+
+For an application of the \textsc{verum/falsum}-based approach to Slavic languages, see \citet{Stankova2023,Repp.Geist2025}.
+
+\subsubsection{Conversational approach}\label{sim:sec:goodhue}
+
+\citet{Goodhue2022} has come up with a radically different approach to deriving the positive epistemic bias in English high negation PQs (corresponding to Czech \textsc{InterNPQs}).\footnote{\citet{Goodhue2022} argues (following \citealt{Sailor2013,AnderBois2019}) that high negation PQs are always outer negation PQs.} He argues that the bias is a conversational implicature derived by negating the speaker's ignorance about the truth of both polar alternatives, which in turn is implied by the use of positive PQs. In other words, if the speaker were ignorant about both $p$ and $\neg p$, it would be more useful to use a positive PQ because it would guarantee a more informative answer (if the answer happened to be negative). If the speaker uses a high negation PQ instead, it implicates that he is not ignorant, or, in other words, that he is biased. The reason why he is biased towards the positive rather than negative alternative is the unbalanced nature of the partition denoted by a high negation PQ \citep{Romero.Han2004,Krifka2017}.
+
+\citet{Goodhue2022} builds on \citet{Romero.Han2004} in that he treats high/outer negation as negation scoping over a high epistemic operator, which he identifies with the illocutionary operator \textsc{assert} (see, e.g., \citealt{Meyer2013}), understood in terms of doxastic necessity/belief relativized to the addressee.\footnote{High negation PQs thus inolve two illocutionary operators -- \textsc{assert} and Q, with high negation sandwiched between the two ($\text{Q}>\neg>\textsc{assert}$).} A high negation PQ then denotes the set $\{\neg\cnst{dox}_a p,\cnst{dox}_a p\}$ (where $\cnst{dox}_a p$ is to be read as `the addressee believes that $p$'). The denotation of the corresponding positive PQ, or rather the set of possible addressee's assertions of answers is $\{\cnst{dox}_a p,\cnst{dox}_a \neg p\}$.\footnote{\citet{Goodhue2022} assumes that the denotation of positive PQs does not involve the speech act layer; it only denotes $\{p,\neg p\}$, which, however, does not afford entailment relations between the members of the positive and high negation PQs. See \citet{Goodhue2022} for discussion.\label{sim:fn:goodhue-pos}} The negative alternative in positive PQs ($\cnst{dox}_a \neg p\approx$ `the addressee believes that $\neg p$') is thus semantically stronger than the corresponding negative alternative in high negation PQs ($\neg\cnst{dox}_a p\approx$ `the addressee doesn't believe that $p$'). This strength relation, together with the unbalanced nature of the partition involved in high negation PQs, generates the implicature that the speaker believes the positive alternative.
+
+\section{Polar questions in Slavic languages}\label{sim:sec:slavic}
+
+Despite their considerable genealogical closeness, Slavic languages have developed a broad range of strategies for forming polar questions -- both cross-lin\-guistically and intra-linguistically. What factors underlie this cross- and intra-linguistic variation? What are the semantics and pragmatics of the individual strat\-e\-gies? What are the implications for the general theory of polar question meaning? These questions largely remain open. In what follows, my goals are rather modest, namely (i) to concisely characterize the variation, and (ii) to survey the existing research in the area of Slavic PQ (formal) semantics and pragmatics.
+
+\subsection{Default PQ strategies}\label{sim:sec:default}
+
+I have shown in \sectref{sim:sec:intro} and \sectref{sim:sec:bias} that a neutral information-seeking PQ is in fact quite hard to come by. Even simple questions like \textit{Is it raining?} can be and often are biased. In an attempt to identify the default (unbiased) strategy of forming a PQ, some authors \citep{Farkas.Roelofsen2017,AnderBois2019} have resorted to ``quiz scenarios'' -- scenarios in which the speaker's primary concern is to provide no clue whatsoever as to which one of the polar alternatives is true, and in which an answer is solicited from the addressee. While the speaker typically knows the true answer, he acts as though he were completely ignorant. This makes the quiz scenario a good tool for diagnosing default PQ strategies. In the course of the discussion, we will see that some PQ strategies are neutral in the sense of not conveying a bias, but are obligatorily information-seeking and hence are not suitable in the quiz scenario. This will motivate a richer semantic structure of these PQ strategies.
+
+The scenario assumed for all the PQs in this subsection is formulated in \REF{sim:scen:default}.
+
+\ea \textit{Scenario for questions \REF{sim:ex:just-cz} to \REF{sim:ex:just-rus}:} A TV quiz moderator asks the following polar question, expecting a simple `yes' or `no' answer.\label{sim:scen:default}
+\z
+
+\noindent The Czech example \REF{sim:ex:just-cz} demonstrates that the only felicitous way of asking a PQ in the scenario \REF{sim:scen:default} is the \textsc{InterPPQ}, i.e. a verb-initial PQ with an affirmative form of the verb. Given the discussion in \sectref{sim:sec:bias-cz}, I take this result to be a certain sanity check proving that quiz questions are indeed a good way to identify unbiased PQ strategies. My intuitions about the alternative strategies -- \REF{sim:ex:just-cz-b} and \REF{sim:ex:just-cz-c} -- confirm the expectation that they are infelicitous because they convey a bias (epistemic and evidential, respectively), which is clearly inappropriate in the given scenario.\footnote{For reasons of space, I will gloss all the variants only when this is necessary for a proper understanding of the examples. The glosses for the unglossed examples can be easily reconstructed from those that are glossed. The negative morpheme in Slavic is \textit{ne/nie/nje} and is prefixed or procliticized on the verb or the auxiliary.}
+
+\ea \label{sim:ex:just-cz}
+\ea[]{\gll Dožil se císař Justinián I. 80 let?\label{sim:ex:just-cz-a}\\
+lived.to {\REFL} emperor Justinian I 80 years\\\hfill\textsc{InterPPQ}
+\glt `Did Emperor Justinian I live up to 80 years?'}
+\ex[\#]{Nedožil se císař Justinián I. 80 let?\hfill\textsc{InterNPQ}\label{sim:ex:just-cz-b}}
+\ex[\#]{Císař Justinián I. se (ne)dožil 80 let?\hfill\textsc{DeclPQ}\label{sim:ex:just-cz-c}}
+\z\z
+
+\noindent There are three other Slavic languages that behave like Czech in that they involve obligatory verb or auxiliary movement across the subject in the default PQ: Slovak, \REF{sim:ex:just-slvk}, Upper Sorbian, \REF{sim:ex:just-sor}, and Slovenian, \REF{sim:ex:just-slvn}. As in Czech, adding negation is reported to trigger positive epistemic bias, and declarative questions involve evidential bias. Slovak and Upper Sorbian seem to be identical to Czech in all relevant respects; the only notable difference is that Upper Sorbian fronts an auxiliary rather than the lexical verb. Slovenian optionally uses the clause-initial question particle \textit{ali}. I further note that \textit{ali} is reported to be incompatible with \textsc{DeclPQ}s, \REF{sim:ex:just-slvn-decl}, independently of the context of use. The fact that \textit{ali} is available in the default PQ in Slovenian is potentially significant because Slovenian also has two other clause-initial PQ particles -- \textit{a} (\citealt[165]{Greenberg2006}; \citealt[153]{Stegovec2017}) and \textit{kaj} (lit. `what'; Adrian Stegovec, p.c.) -- the former of which is considered neutral, and yet they are reported not to be appropriate in the quiz PQ. It is an open issue which factor this boils down to, whether register (\textit{a} is colloquial, \textit{ali} belongs to a higher register), semantics (the use of \textit{a} implies actual information-seeking), or the presence of a weak bias.\footnote{An analogous intuition is reported for the Serbian \textsc{je+li} strategy; see \REF{sim:ex:just-ser}. If semantics is at stake (i.e. information-seeking necessary), one could hypothesize that the particles (\textit{a/kaj} in Slovenian and \textit{je+li} in Serbian) incorporate an implicit predicate `wonder' (with the speaker as the attitude holder), as in performative approaches to question semantics \citep{Lewis1970,Krifka2023}, which would account for the information-seeking character of the question. See \sectref{sim:sec:anal-prelim} for an analysis along these lines.\label{sim:fn:slvn.ser}}
+
+\ea\label{sim:ex:just-slvk}
+\ea[]{\gll Dožil sa cisár Justinián 80 rokov?\\
+live.to {\REFL} emperor Justinian 80 years\\\hfill\textsc{InterPPQ}
+\glt `Did Emperor Justinian I live up to 80 years?'}
+\ex[\#]{Nedožil sa cisár Justinián 80 rokov?\hfill\textsc{InterNPQ}}
+\ex[\#]{Cisár Justinián sa (ne)dožil 80 rokov?\hfill\textsc{DeclPQ}\\
+\hfill (Slovak; Ivana Dragonová, p.c.)}
+\z\z
+
+\ea \label{sim:ex:just-sor}
+\ea[]{\gll Je kejžor Justinian Wulki 80 lět wordował?\\
+is.{\AUX} emperor Justinian Great 80 years become\\\hfill\textsc{InterPPQ}
+\glt `Did Emperor Justinian I live up to 80 years?'}
+\ex[\#]{Njeje kejžor Justinian Wulki 80 lět wordował?\hfill\textsc{InterNPQ}}
+\ex[\#]{Kejžor Justinian Wulki (nje)je 80 lět wordował?\hfill\textsc{DeclPQ}\\
+\hfill (Upper Sorbian; Katja Brankačkec, p.c.)}
+\z\z
+
+\ea\label{sim:ex:just-slvn}
+\ea[]{\gll \minsp{(} Ali) Je cesar Justinijan doživel 80 let?\\
+{} \textsc{ali} is.{\AUX} emperor Justinian lived.to 80 years\\\hfill\textsc{InterPPQ}
+\glt `Did Emperor Justinian I live up to 80 years?'}
+\ex[\#]{\gll \minsp{(} Ali) Ni cesar Justinijan doživel 80 let?\\
+{} \textsc{ali} {\NEG}.is.{\AUX} emperor Justinian lived.to 80 years\\\hfill\textsc{InterNPQ}}
+\ex[\#]{(*Ali) Cesar Justinijan \{je/ni\} doživel 80 let?\hfill\textsc{DeclPQ}\\\hfill (Slovenian; Adrian Stegovec, p.c.)\label{sim:ex:just-slvn-decl}}
+\z\z
+
+\noindent Ukrainian and Polish employ the clause-initial particles \textit{čy} and \textit{czy,} respectively; see \REF{sim:ex:just-ukr} and \REF{sim:ex:just-pol}.\footnote{Belarusian employs the particle \textit{ci,} with comparable properties (see \citealt{Logvinova2022}); \textit{ci} is also used in Yiddish \citep[181]{Sadock.Zwicky1985}.} This particle is obligatory in our quiz PQ. The relative position of the verb and the subject is reported to be immaterial in Ukrainian (cf. \REF{sim:ex:just-ukr-a} and \REF{sim:ex:just-ukr-b}) and preferably canonical (SV) in Polish.\footnote{\citet[26]{Logvinova2022} reports that if a Ukrainian PQ is explanation-seeking (in her terminology: ``inference-based''), then only the SV order is available. A similar tendency is found in Polish.} Adding negation or leaving out \textit{čy} in Ukrainian leads to infelicity in the quiz scenario. What is worth noting is that Polish is reported to allow for a negative PQ in the quiz scenario, as long as the PQ is introduced by \textit{czy}. \REF{sim:ex:just-pol-b} thus exemplifies a quiz question asking about Justinian not living up to 80 years old. Declarative PQs in Polish (without \textit{czy}) are grammatical, but infelicitous in the quiz scenario because of evidential bias; \REF{sim:ex:just-pol-c}. A verb-initial PQ in \REF{sim:ex:just-pol-d} is reported to be unacceptable (cf. the corresponding Czech example \REF{sim:ex:just-cz-a}). Verb-initiality is possible in principle, but not if the verb moves across an overt subject (Dorota Klimek-Jankowska, p.c.; see also the discussion around example \REF{sim:ex:cz-inter} above).
+
+\ea\label{sim:ex:just-ukr}
+\ea[]{\gll Čy dožyv    imperator    Justynian  Velykyj   do 80   rokiv?\label{sim:ex:just-ukr-a}\\
+\textsc{cy} lived  emperor     Justinian    Great     to  80               years\\\hfill\textsc{cyPPQ}
+\glt `Did Emperor Justinian I live up to 80 years?'}
+\ex[]{Čy imperator    Justynian  Velykyj dožyv   do 80   rokiv?\hfill\textsc{cyPPQ}\label{sim:ex:just-ukr-b}}
+\ex[\#]{Čy ne dožyv   imperator    Justynian  Velykyj do 80   rokiv?\hfill\textsc{cyNPQ}}
+\ex[\#]{Čy imperator    Justynian  Velykyj ne dožyv   do 80   rokiv?\hfill\textsc{cyNPQ}}
+\ex[\#]{Imperator    Justynian  Velykyj (ne) dožyv do 80   rokiv?\hfill\textsc{DeclPQ}\\
+\hfill (Ukrainian; Anastasiia Vyshnevska, p.c.)}
+\z\z
+
+\ea\label{sim:ex:just-pol}
+\ea[]{\gll Czy Justynian I Wielki dożył wieku 80 lat?\\
+\textsc{czy} Justinian I Great live.to age 80 years\\\hfill\textsc{czyPPQ}
+\glt `Did Emperor Justinian I live up to 80 years?'}
+\ex[]{\gll Czy Justynian I Wielki nie dożył wieku 80 lat?\label{sim:ex:just-pol-b}\\
+\textsc{czy} Justinian I Great {\NEG} live.to age 80 years\\\hfill\textsc{czyNPQ}
+\glt `Did Emperor Justinian I not live up to 80 years?'}
+\ex[\#]{Justynian I Wielki (nie) dożył wieku 80 lat?\hfill\textsc{DeclPQ}\label{sim:ex:just-pol-c}}
+\ex[*]{\{Dożył / Nie dożył\} Justynian I Wielki wieku 80 lat?\label{sim:ex:just-pol-d}\\
+\hfill (Polish; Dorota Klimek-Jankowska, p.c.)}
+\z\z
+
+\noindent Serbian, having word order alternations and multiple particles at its disposal, exhibits a rich inventory of PQ strategies \citep{Rakic1984,Todorovic2023}.\footnote{The intonation of Serbian PQs was investigated by \citet{Nakic.Browne1975}.} According to Neda Todorović (p.c.), the only strategy fully natural in the quiz scenario involves the clause-initial particle \textit{da} combined with the clitic \textit{li} (optionally reduced to \textit{l'}) and a positive form of the verbal complex; see \REF{sim:ex:just-ser-a}.\footnote{This appears to be at odds with occasional reports that the \textsc{da+liPQ} strategy is a more ``emphatic'' version of the plain \textsc{liPQ} strategy, in which \textit{li} is preceded by a fronted auxiliary/verb \citep{Browne1971,Rakic1984}.} The competing strategy using the particle \textit{je} instead of \textit{da}, \REF{sim:ex:just-ser-b}, considered as neutral/unbiased in \citet{Todorovic2023}, is reported to be colloquial and probably only information-seeking (see footnote \ref{sim:fn:slvn.ser}). Negative and declarative PQs give rise to biases and are thus inappropriate in the quiz scenario. 
+
+\ea\label{sim:ex:just-ser}
+\ea[]{\gll Da li je Justinijan I/Veliki doživeo 80. godinu?\label{sim:ex:just-ser-a}\\
+\textsc{da} \textsc{li} is.{\AUX} Justinian I/Great lived.to 80 years\\\hfill\textsc{da+liPPQ}
+\glt `Did Emperor Justinian I live up to 80 years?'}
+\ex[\#]{\gll Je l' \minsp{(} je) Justinijan I/Veliki doživeo 80. godinu?\label{sim:ex:just-ser-b}\\
+\textsc{je} \textsc{li} {} is.{\AUX} Justinian I/Great lived.to 80 years\\\hfill\textsc{je+liPPQ}
+\glt `Did Emperor Justinian I live up to 80 years?'}
+\ex[\#]{\gll Nije li Justinijan I/Veliki doživeo 80. godinu?\\
+{\NEG}.is.{\AUX} \textsc{li} Justinian I/Great lived.to 80 years\\\hfill\textsc{HighNPQ}
+\glt `Didn't Emperor Justinian I live up to 80 years?'}
+\ex[\#]{Je l' Justinijan I/Veliki nije doživeo 80. godinu?\hfill\textsc{LowNPQ}}
+\ex[\#]{Justinijan I/Veliki (ni)je doživeo 80. godinu?\hfill\textsc{DeclPQ}\\
+\hfill (Serbian; Neda Todorović, p.c.)}
+\z\z
+
+\noindent Macedonian quiz PQs are preferably introduced by the particle \textit{dali}. Quiz PQs introduced by this particle can even be negative, without giving rise to a bias (see \REF{sim:ex:just-mac-a}), a situation that is reminiscent of Polish (see above). The verb-fronting strategy combined with the particle \textit{li} is claimed to be less formal, but also possible in the quiz scenario, unless the verb is negated, in which case the PQ is reported to acquire positive epistemic bias; see \REF{sim:ex:just-mac-b}. The fact that \textit{li} can be used in quiz PQs is surprising in light of existing claims (see, e.g., \citealt{Rudin.etal1999}) that \textsc{liPQ}s in Macedonian are pragmatically marked; see \sectref{sim:sec:variation-li} for more discussion. Macedonian, unlike Russian or Bulgarian (see below), also allows verb-first PQs without the particle \textit{li.} These are, however, reported to be too colloquial to be natural in a quiz scenario; see \REF{sim:ex:just-mac-c}. Also in this case, negation contributes positive epistemic bias and is thus unnatural in the given scenario.\footnote{Given the availability of verb fronting in Macedonian PQs, one could wonder whether the verb can also front in \textsc{daliPQ}s. While the order V-\textit{dali}-S is reported to be plainly ungrammatical, the order \textit{dali}-V-S is available. As opposed to \textsc{liPQ}s and \textsc{v1PQ}s, where verb fronting is arguably related to interrogativity, verb fronting in \textsc{daliPQ}s appears to be information-structurally motivated. One argument for that is that \textit{dali}-V-S PQs involve subject-focus (contrasting alternative subjects), which would follow under the assumption that the verb fronts altruistically (i.e. in order to render the subject focused; see \citealt{Arnaudova2001} for this type of analysis applied to the closely related Bulgarian). Another argument is that \textit{dali}-\textsc{neg}-V-S, i.e. \textsc{daliNPQs} with verb fronting, do not necessarily give rise to any bias in our quiz scenario and could thus be felicitously used when the contestant is asked about the life spans of different famous people. I am grateful to Liljana Mitkovska and Eleni Bužarovska for providing these crisp intuitions.} Besides \textit{dali} (and \textit{li}), Macedonian has other PQ-initial particles at its disposal, particularly \textit{zar} and \textit{neli.} These, however, are reported to be completely inappropriate in PQs, as they convey strong biases; see \citet{Mitkovska.Buzarovska2024} for recent discussion.
+
+\ea\label{sim:ex:just-mac}
+\ea[]{\gll Dali Justinijan Veliki \minsp{(} ne) doživeal 80-godišna vozrast?\\
+\textsc{dali} Justinian Great {} \textsc{neg} lived.to 80-yearly age\\\hfill\textsc{daliPQ}
+\glt `Did Emperor Justinian I (not) live up to 80 years?'\label{sim:ex:just-mac-a}}
+\ex[]{\gll \minsp{(\#} Ne) Doživeal li Justinijan Veliki 80-godišna vozrast?\\
+{} \textsc{neg} lived.to \textsc{li} Justinian Great 80-yearly age\\\hfill\textsc{liPQ}
+\glt `Did Emperor Justinian I live up to 80 years?'\label{sim:ex:just-mac-b}}
+\ex[\#]{\{(Ne) Doživeal\} Justinijan Veliki 80-godišna vozrast?\hfill\textsc{v1PQ}\label{sim:ex:just-mac-c}}
+\hfill (Macedonian; Liljana Mitkovska, Eleni Bužarovska, p.c.)
+\z\z
+
+\noindent Bulgarian and Russian quiz PQs make use of the particle \textit{li} immediately preceded by the verb; see \REF{sim:ex:just-bul} and \REF{sim:ex:just-rus}.\footnote{See \citet{Simeonova.Kamali2024} for a comparison between Bulgarian \textit{li} and the clause-initial \textit{dali}. Although Serbian \textit{da li} is felicitous in quiz questions, Bulgarian \textit{dali} is not, as it incorporates a `wondering' component and has a rhetorical flavour.} Adding negation triggers epistemic bias, making the question infelicitous in the quiz scenario. PQs without \textit{li} and with declarative order are reported not to be felicitous.\footnote{\citet{Zimmerling2023} questions the Russian judgement and provides example \REF{sim:ex:zimmerl} as evidence that \textsc{IntonPQ}s are felicitous in quiz scenarios.
+
+\ea \textit{Quiz scenario:} The professor asks the student during an exam.\label{sim:ex:zimmerl}\\
+\gll A \minsp{$\nearrow$} vse gadjuki jajceživorodjaščie?\\
+\textsc{ptcl} {} all vipers ovoviviparous\\
+\glt $\langle$What about ovoviviparous snakes:$\rangle$ `Are all vipers ovoviviparous?'\\\hfill (Russian; \citealt[119]{Zimmerling2023}; glosses added by RŠ)
+\z
+
+\noindent Judging by the angle-bracketed prequel to the translation, the PQ in \REF{sim:ex:zimmerl} has a marked information structure. More specifically, the polarity focus which is at issue in the PQ (being or not being ovoviviparous) is accompanied by the topical quantifier \textit{vse gadjuki} `all vipers', which introduces an additional layer of contrast (either all vs. just some, or all vipers vs. other kinds of snakes). The contrastively-topical reading of the subject is further enhanced by the particle \textit{a}, which is dedicated to encoding contrastive topic--focus structures \citep{Jasinskaja.Zeevat2008}. For these reasons, I conjecture that in Russian, just as in Czech (see the discussion around example \REF{sim:ex:decl-is}), information structure can motivate the use of the declarative word order even in the absence of any bias.} Despite the superficial similarity of the two languages, there are important differences. First, while \textit{li} in Russian is preceded by a single constituent (which happens to be the verb in \REF{sim:ex:just-rus-a}, but can also be the focus; see \citealt{King1994,Franks.King2000}), Bulgarian \textit{li} always encliticizes to the \textit{focused} constituent (which happens to be the verb in \REF{sim:ex:just-bul-a}), which can in turn be preceded by a \textit{topical} constituent (\citealt{Izvorski.etal1997,Rudin.etal1997,Rudin.etal1999}; cf. also \citealt{Dukova-Zheleva2010,Jordanoska.Meertens2021} for relevant discussion on Macedonian).
+The notion of topicality involved here is arguably quite weak or underspecified; in our example, \textit{Justinian} is not, for instance, contrastively topicalized (Vesela Simeonova, p.c.).\footnote{Placing the subject after \textit{li} is in principle possible, but dispreferred in the given scenario.} Another difference concerns the (apparently) declarative PQs in examples (c). While in Bulgarian, \REF{sim:ex:just-bul-c} is arguably a run-of-the-mill \textsc{DeclPQ}, triggering the expected evidential bias, in Russian, \REF{sim:ex:just-rus-c} is normally considered a default unbiased PQ, whose question force is conveyed by a dedicated pitch accent pattern \citep{Ode1989,Meyer2004,Meyer.Mleinek2006}, something I reflect by calling this type \textsc{intonation PQs} (\textsc{IntonPQ}).\footnote{For a discussion of how \textsc{IntonPQ}s could be distinguished from \textsc{DeclPQ}s in Russian, see \citet{Meyer2004}. There are indications (present in the hitherto unpublished work \citealt{Esipova.Romero2023}) that \textsc{IntonPQ}s with prosodic prominence placed elsewhere than on the verb share some characteristics (esp. evidential bias) with \textsc{DeclPQ}s; see \sectref{sim:sec:inton-rus} for some discussion.\label{sim:fn:inter-decl-rus}} Its infelicity in the quiz scenario could thus be on a par with the infelicity reported for Slovenian \textit{a-}PQs and Serbian \textit{je l'-}PQs: one could conjecture that Russian \textsc{IntonPQ}s are not biased, but inherently information-seeking.\footnote{The hypothesized unbiased nature of \textsc{IntonPQ}s is supported by the spoken corpus research of \citet{Onoeva.Stankova2025}, whose random sample of 500 PQ occurrences includes only 6 instances of \textsc{liPQ}s, and the majority of PQs (338) were annotated as unbiased by the authors.} This conjecture is, however, probably not on the right track, as \textsc{IntonPQ}s can also be used rhetorically \citep{Esipova.Romero2023}.
+
+\largerpage
+\ea\label{sim:ex:just-bul}
+\ea[]{\gll Justinian doživjava li do 80-godišna v\u{u}zrast?\label{sim:ex:just-bul-a}\\
+Justinian lives \textsc{li} to 80-yearly age\\\hfill\textsc{liPPQ}
+\glt `Did Emperor Justinian I live up to 80 years?'}
+\ex[\#]{Justinian ne doživjava li do 80-godišna v\u{u}zrast?\hfill\textsc{liNPQ}}
+\ex[\#]{Justinian (ne) doživjava do 80-godišna v\u{u}zrast?\hfill\textsc{DeclPQ}\label{sim:ex:just-bul-c}\\
+\hfill (Bulgarian; Vesela Simeonova, p.c.)}
+\z\z
+
+\ea\label{sim:ex:just-rus}
+\ea[]{\gll Dožil li Justinian Velikij do 80 let?\label{sim:ex:just-rus-a}\\
+lived.to \textsc{li} Justinian Great to 80 years\\\hfill\textsc{liPPQ}
+\glt `Did Emperor Justinian I live up to 80 years?'}
+\ex[\#]{Ne dožil li Justinian Velikij do 80 let?\hfill\textsc{liNPQ}}
+\ex[\#]{Justinian Velikij dožil do 80 let?\hfill\textsc{IntonPQ}\label{sim:ex:just-rus-c}\\
+\hfill (Russian; Maria Onoeva, Mariia Razguliaeva, p.c.)}
+\z\z
+
+\noindent In summary, Slavic languages exhibit a variety of formal means of marking a default PQ: from interrogative word order (Czech, Slovak, Upper Sorbian, Slovenian, Macedonian), through utterance-initial particles (Slovenian, Serbian, Polish, Ukrainian, Macedonian), to a verb-attached particle (Bulgarian, Russian, Macedonian). Moreover, we have seen some preliminary evidence that quiz PQs are sometimes formally distinguished from genuine information-seeking (but argu\-ably still unbiased) PQs, either by the use of a different particle (Slovenian, Serbian) or by the use of an altogether different strategy (Russian). Where (the correlate of) high negation is available (cf. Ukrainian), the positive epistemic bias tends to be reported; where declarative PQs are available (cf. Russian and Ukrainian), we see a correlation with evidential bias.
+
+\subsection{Analyses of Slavic PQ semantics and bias}
+
+The study of formal semantics and bias in Slavic PQs is only just emerging, although in some cases semantic and pragmatic aspects of Slavic PQs have caught the attention of descriptive linguists and philologists. In this section, I will briefly report on the main areas of interest and the progress made thus far.
+
+\subsubsection{Some preliminaries}\label{sim:sec:anal-prelim}
+
+Although morphosyntax is not my focus, it is worth pointing out some basic facts and assumptions about this aspect of Slavic PQs, at least in so far as these are relevant for the (compositional) semantics. As I showed in \sectref{sim:sec:default}, many Slavic languages make use of a particle in their interrogative PQs, in particular \textit{li} or its cognates (used in Russian, Bulgarian, Macedonian, Serbian; cf. also Slovenian \textit{ali}) and \textit{čy} or its cognates (Ukrainian, Belarusian, Polish).\footnote{Languages with no particle (in root questions) involve interrogative verb or auxiliary movement (Czech, Slovak, Upper Sorbian).} It is unanimously assumed that the \textit{li} particle is an interrogative complementizer, which either lowers onto the verb \citep{Rivero1993} or -- and more likely so -- stays in its left-peripheral position, where it hosts a preceding constituent, which is either head-adjoined (if it is an auxiliary or verb) or located in SpecCP (if it is a phrasal constituent); see \citet{Izvorski.etal1997,Rudin.etal1997,Rudin.etal1999,Schwabe2004}; cf. \citeposst{Dimitrova2020} analogous account in terms of the Pol projection. I am not aware of any generative syntactic literature dedicated to the interrogative \textit{čy} (or its cognates), but the null hypothesis seems to be that it is also located in C (cf. \citealt{Hansen.etal2016}).\footnote{Bartosz Wiland (p.c.) draws my attention to the fact that \textit{čy} is morphologically related to `what' (cf. Polish \textit{czym} `what.{\INS}'). If \textit{čy} is a wh-word of sorts (cf. also Slovenian clause-initial PQ particle \textit{kaj} `what' and \citepossalt{Han.Romero2004} wh-word-style analysis of the English \textit{whether}; see also \citealt{Haegeman2012}), it would motivate its SpecCP (rather than C) status, which in turn might explain its clause-initial positioning.} What is significant is that both \textit{li} and \textit{čy} are also employed (i) in embedded interrogatives and (ii) as disjunctions (see \citealt{Logvinova2022} for a systematic overview and references and \citealt{Arsenijevic2009} and \citealt{Mitrovic2021} for theoretical and diachronic implications). Both of these facts suggest that while the particles may be analyzed as having set-forming semantics \citep{Alonso-Ovalle2006,Mitrovic2021}, they do not necessarily carry question-related illocutionary force.  The set-forming semantics (following \citealt{Alonso-Ovalle2006}) is sketched in \REF{sim:denot:li-cy}, and the result it should produce when applied to a proposition is given in \REF{sim:denot:li-cy-q}.\footnote{In languages with no overt particle (Czech, Slovak, Upper Sorbian), C is hypothesized to host a covert Q, to which V adjoins by head movement.} I leave aside the issue of how exactly the polar alternative to the IP `rain' is supplied in the schematic example below. There is suggestive evidence that (polarity) focus is involved.\footnote{The idea that the Q operator (here hosted by the interrogative C head) is focus-sensitive is not new; see, e.g., \citet{Beck2006}.} This aligns with the observation that what precedes \textit{li} in languages that have it (e.g. Russian or Bulgarian) is focus, whether polarity focus (realized as the auxiliary or verb, corresponding to a possible short answer) or constituent focus \citep{Rudin.etal1997,Izvorski.etal1997}. See \citet{Han.Romero2004} and \citet{Dimitrova2020} for a related analysis.
+
+\ea\ea\sib{α li/čy β}${}=\{\alpha,\beta\}$\label{sim:denot:li-cy}
+\ex\sib{[\textsubscript{CP} li/čy/Q [\textsubscript{IP} rain]]}${}=\{\lambda w[\textsc{rain}(w)],\lambda w[\neg\textsc{rain}(w)]\}$\label{sim:denot:li-cy-q}
+\z\z
+
+\noindent It should be noted that \textit{li} and \textit{čy} might be precisely the alternatives-introduc\-ing elements that \citet{Biezma.Rawlins2012} failed to find in English PQs. As discussed in \sectref{sim:sec:modelling-bias-biez-rawl}, the non-existence of an overt disjunction-like element in English was one of \citepossts{Biezma.Rawlins2012}  arguments against a \citeauthor{Hamblin1973}-style semantics for PQs. Since this argument does not hold for (most) Slavic languages, and since the PQs discussed in \sectref{sim:sec:default} can be completely unbiased (used in quiz scenarios), there is good reason to stick to \citeposst{Hamblin1973} semantics for Slavic default PQs.\footnote{\citeposst{Hamblin1973} semantics is defended for both \textsc{liPQ}s and \textsc{IntonPQ}s in Russian by \citet{Zimmerling2023}.}
+
+I further note that \citepossts{Biezma.Rawlins2012} analysis of PQs in terms of singleton sets containing just the question prejacent might well be the right model for declarative questions. As we saw in \sectref{sim:sec:default}, declarative questions do not contain an overt Q particle (or a movement to one). Adopting \citeauthor{Biezma.Rawlins2012}' logic, we can assume that polar alternatives are not collected into a set in this case. Rather, a single alternative is under discussion -- the one that is evidentially biased for -- with any other relevant alternatives being just pragmatically supplied.
+
+I finish this subsection by putting forth a hypothesis about the grammatical forms which entail information-seeking (and hence are incompatible with the quiz scenario), in particular the Serbian \textsc{je+liPQ} strategy, the Slovenian \textsc{aPQ} strategy, and possibly the Russian \textsc{IntonPQ} strategy. These forms are hypothesized to map to the logical form in \REF{sim:denot:info-seek}, based on \REF{sim:denot:li-cy-q}. More specifically, the structure in \REF{sim:denot:li-cy-q} is selected by a covert attitude predicate whose semantics corresponds to the semantics of `wonder', which in turn can be modelled as `want to know' (see the discussion of example \REF{sim:ex:ei} in \sectref{sim:sec:intro}). Since the quiz master is not genuinely interested to know whether $p$ (in fact, he knows whether $p$), the logical form in \REF{sim:denot:info-seek} is not suitable for quiz PQs.
+
+\ea\sib{[\textsc{wonder} [\textsubscript{CP} Q [\textsubscript{IP} rain]]]}$^c=\textsc{want to know}\big(w_0\big)\big(\cnst{spkr}(c)\big)\big(\iota q\,q(w_0)=1\wedge q\in\{\lambda w[\textsc{rain}(w)],\lambda w[\neg\textsc{rain}(w)]\}\big)$\label{sim:denot:info-seek}
+\z
+
+\noindent In what follows, I briefly discuss existing formal semantic analyses of various aspects of Slavic PQs. I also include the discussion of the results of selected empirical studies about Slavic PQs.
+
+\subsubsection{Bias profiles of PQs in selected Slavic languages}\label{sim:sec:bias-slavic}
+
+\citeposst{Todorovic2023} work on Serbian offers probably the most comprehensive view of bias profiles of different kinds of PQs in Slavic languages, building on the tradition of \citet{Ladd1981}, \citet{Buring.Gunlogson2000}, \citet{Romero.Han2004}, \citet{Sudo2013}, \citet{Gartner.Gyuris2017}, and providing an analysis within the framework of inquisitive semantics, following \citet{AnderBois2019}.\footnote{For an earlier treatment of Serbian PQs, reflecting formal literature, see \citet{Rakic1984}.} \tabref{sim:tab:todorovic} summarizes \citeposst{Todorovic2023} results. The finding that \textsc{da+liPPQ}s are limited to neutral contexts resonates with the quiz scenario investigation in \sectref{sim:sec:default}; the distribution of \textsc{je+li}PPQs, on the other hand, is broader: they can also be used in scenarios with positive epistemic or evidential bias. PPQs are found to be incompatible with negative biases. With NPQs, low NPQs are found to have a broader distribution than high NPQs. The latter are claimed to be available only for the purpose of a resolution of the conflict between positive epistemic bias and negative evidential bias. This goes counter to the traditional observation for English, where high NPQs can also be used with neutral evidential bias (called ``suggestion'' scenarios); see also \sectref{sim:sec:czech} and the discussion of example \REF{sim:ex:bias2}.
+
+\begin{table}
+    \centering
+    \begin{tabularx}{.8\textwidth}{clCCC}
+    \lsptoprule
+    &&\multicolumn{3}{c}{\textsc{epistemic bias}}\\
+    &&positive&neutral&negative\\\cmidrule(lr){3-5}
+    \parbox[t]{2mm}{\multirow{6}{*}{\rotatebox[origin=c]{90}{\textsc{evidential bias~~~~}}}}&\multirow{2}{*}{positive}&&\textsc{je+liPPQ}\linebreak\xspace\smallskip&\\\cmidrule(lr){3-5}
+    &\multirow{2}{*}{neutral}&\textsc{je+liPPQ}&\textsc{da+liPPQ}\linebreak\textsc{je+liPPQ}\smallskip&LNPQ\\\cmidrule(lr){3-5}
+    &\multirow{2}{*}{negative}&LNPQ\linebreak HNPQ&LNPQ&\\\lspbottomrule
+    \end{tabularx}
+    \caption{Bias profile for Serbian positive polar questions (PPQ; for subtypes, see \sectref{sim:sec:default}), high negation polar questions (HNPQ), and low negation polar questions (LNPQ) according to \citet{Todorovic2023}}
+    \label{sim:tab:todorovic}
+\end{table}
+
+\begin{table}
+    \centering
+    \begin{tabularx}{.8\textwidth}{clCCC}
+    \lsptoprule
+    &&\multicolumn{3}{c}{\textsc{epistemic bias}}\\
+    &&positive&neutral&negative\\\cmidrule(lr){3-5}
+    \parbox[t]{2mm}{\multirow{6}{*}{\rotatebox[origin=c]{90}{\textsc{evidential bias~~~~}}}}&\multirow{2}{*}{positive}&&\textsc{DeclPPQ}\linebreak\textsc{InterNPQ}\smallskip&\textsc{DeclPPQ}\\\cmidrule(lr){3-5}
+    &\multirow{2}{*}{neutral}&\textsc{InterPPQ}\linebreak \textsc{InterNPQ}\smallskip&\textsc{InterPPQ}\linebreak\textsc{DeclPPQ}*\smallskip&\\\cmidrule(lr){3-5}
+    &\multirow{2}{*}{negative}&\textsc{DeclNPQ}\linebreak\textsc{InterNPQ}&\textsc{DeclNPQ}&\\\lspbottomrule
+    \end{tabularx}
+    \caption{Bias profile for Czech polar questions (based on \citealt{Stankova2023} and the discussion in \sectref{sim:sec:bias-cz}); *conditioned by information structure (see discussion around example \REF{sim:ex:decl-is})}
+    \label{sim:tab:czech}
+\end{table}
+
+\citet{Stankova2023} (see also \citealt{Stankova.Simik2025}) ran naturalness rating experiments with the aim of tapping into the interactions between evidential bias (epistemic bias was not manipulated), type of negation (outer vs. inner), and different PQ strategies in Czech (interrogative vs. declarative PQs). In line with existing claims for English, \citeauthor{Stankova2023} found that only \textsc{DeclPQ}s require matching evidential bias in order for them to be natural (cf. discussion around \REF{sim:ex:decl-is}); \textsc{InterPQ}s -- whether positive or negative -- are insensitive to evidential bias, which, however, does not mean that they are incompatible with it. \citet{Stankova2023} further found that \textsc{InterNPQ}s, i.e. negative PQs with a fronted verb, map to outer negation, which is diagnosed by the inability to license negative concord items (NCIs), whereas the corresponding \textsc{DeclNPQ}s are compatible with both inner and outer negation readings (although the former is preferred). Importantly, the inner vs. outer negation reading, which \citet{Stankova2023} models in terms of \citeauthor{Repp2006}'s (\citeyear{Repp2006}, et seq.) \textsc{verum} (scoping over propositional negation) vs. \textsc{falsum} (see \sectref{sim:sec:modelling-bias-comm}), has no impact on the bias profile: both inner and outer negation \textsc{DeclPQ}s require negative evidence for naturalness. The existing findings -- combining the experimental results of \citet{Stankova2023} and the present investigation (\sectref{sim:sec:bias-cz}) -- are summarized in \tabref{sim:tab:czech} (glossing over details).
+
+\citet{Chirpanlieva.etal2025} adapted \citeposst{Stankova2023} experiment to Russian and Polish. In Russian the authors compared \textsc{liNPQ}s with \textsc{IntonNPQ}s.\footnote{The stimuli were written, so intonation was not controlled for. The authors' assumption was that participants apply default PQ-prosody in silent reading.} They found that all NPQs in Russian were more natural if the evidence was neutral; i.e. negative evidence is not only not required, but even dispreferred in Russian NPQs. The preference for neutral evidence was stronger in \textsc{liPQ}s than in \textsc{IntonPQ}s. The negation was found to be preferentially outer rather than inner in both types of PQs, although the effect was much stronger in \textsc{liPQ}s than in \textsc{IntonPQ}s. In Polish, the authors compared \textsc{czyNPQ}s with \textsc{DeclNPQ}s. They discovered that evidential bias interacts with the type of negation: while inner negation is more or less inert to the presence or absence of negative bias, outer negation is more naturally combined with neutral evidence. This interaction, or more precisely the preference for neutral evidence, is more pronounced in \textsc{czyNPQ}s than in \textsc{DeclNPQ}s, although only numerically so. In summary, we see a clear cross-Slavic difference between Czech on the one hand and Russian and Polish on the other. Only in Czech do we see evidence for ``English-style'' declarative NPQs, correlating with the presence of negative evidential bias. What superficially looks like a declarative NPQ in Russian and Polish (characterized by declarative word order and the lack of interrogative particles) can easily be accompanied by a lack of negative evidence.
+
+\citet{Onoeva.Stankova2025} conducted a corpus study with the aim of investigating the correlations between biases and different PQ strategies in Russian and Czech. They found that \textsc{liPQ}s are very rare in spoken Russian -- only 6 out of 500 randomly selected PQ occurrences were \textsc{liPQ}s; the rest were \textsc{IntonPQ}s. For Russian, the authors found no significant correlations between different PQ formal factors (word order, negation, the presence of tags) and the PQs' bias profiles. There were only a handful of PQ occurrences with various non-default particles (\textit{razve, neuželi, čto li}); the instances found largely confirm their reported semantics, such as a prominent epistemic bias for the negation of the prejacent with \textit{razve} (see \sectref{sim:sec:razve}). For Czech, the authors found a significant correlation between \textsc{DeclPQ}s and evidential bias and between the presence of tags and epistemic bias.
+
+\subsubsection{Accent placement in Russian \textsc{IntonPQ}s}\label{sim:sec:inton-rus}
+
+
+Russian \textsc{IntonPQ}s -- PQs with a declarative word order in which question meaning is conveyed exclusively prosodically (see \citealt{Ode1989,Meyer.Mleinek2006}) -- exhibit variation with respect to accent placement and the final prosodic contour: while neutral \textsc{IntonPQ}s exhibit rising pitch accent on the verb (with the H peak delayed, when compared to contrastive accent employed in declaratives; see \citealt{Meyer.Mleinek2006}) and typically a low final tone, biased PQs can exhibit (low) pitch accent on a different constituent, such as the object, followed by a high final tone; see \REF{sim:ex:accent}.
+
+\ea\label{sim:ex:accent}\ea\gll Nina sda\textsc{la}\textsubscript{L+H*} \.{e}kzamen\textsubscript{L--L\%}?\label{sim:ex:accent-a}\\
+Nina passed exam\\
+\glt `Did Nina pass the exam?'
+\ex\gll Nina sdala \.{e}k\textsc{za}\textsubscript{L*}men\textsubscript{H--H\%}?\label{sim:ex:accent-b}\\
+Nina passed exam\\
+\glt `Did Nina pass the exam?' / `Nina passed the exam?'\\\hfill (Russian; adapted from \citealt{Esipova.Romero2023})
+\z\z
+
+\noindent\citet{Esipova.Romero2023} argue that both types of PQ above denote the \citeauthor{Hamblin1973}-set \{`Nina passed the exam', `Nina didn't pass the exam'\}, but \REF{sim:ex:accent-b} in addition indicates the existence of a superordinate question under discussion to which the question prejacent (`Nina passed the exam') is a possible answer. (The superordinate question implies the relevance of additional polar questions [or their prejacents], such as `Did Nina win the lottery?') In other words, \citet{Esipova.Romero2023} argue that non-default accent placement gives rise to explanation-seeking questions, which in turn convey evidential bias (see \sectref{sim:sec:bias-basic}). The utterance in \REF{sim:ex:accent-b} would thus be felicitous in scenario \REF{sim:ex:accent-sce}, putting forth a possible answer (in the form of a PQ) to the contextually salient superordinate question under discussion (QUD) in \figref{sim:fig:accent-qud}. Notice that this makes PQs like \REF{sim:ex:accent-b} functionally close to \textsc{DeclPQ}s in English and other Slavic languages.\footnote{Something else to note is that pitch accent on the object in \textsc{IntonPQ}s need not indicate a narrow focus on the object (cf. \citealt{Meyer.Mleinek2006}). In scenario \REF{sim:ex:accent-sce}, the accent on \textit{\.{e}kzamen} `exam' in \REF{sim:ex:accent-b} represents broad or at least VP focus, implicitly contrasting `pass the exam' with `win a lottery', etc.}
+
+\ea \textit{Scenario:} Nina was due to take an exam. I just saw her cheering in the hallway.\label{sim:ex:accent-sce}
+\z
+
+\begin{figure}
+    \centering
+    \begin{forest}
+        [Why is Nina cheering?
+            [Did Nina pass the exam?] [Did Nina win the lottery?] [\dots]
+        ]
+    \end{forest}
+    \caption{Questions under discussion relevant for uttering \REF{sim:ex:accent-b} in scenario \REF{sim:ex:accent-sce}}
+    \label{sim:fig:accent-qud}
+\end{figure}
+
+Neutral PQs such as \REF{sim:ex:accent-a} are ``root questions'' (in the terminology of \citealt{Esipova.Romero2023}) in the sense that they lack a superordinate QUD.
+
+\subsubsection{Russian \textit{razve} and its kin in other Slavic languages}\label{sim:sec:razve}
+
+Besides having a rich cross- and intra-linguistic repertoire of PQ strategies (see \sectref{sim:sec:default}), Slavic languages are also known for possessing particles specialized in conveying various biases. Probably the best-studied among these is the Russian particle \textit{razve}, which roughly corresponds to the English \textit{really}, but differs from it at least in that it is only licensed in polar questions, albeit only in \textsc{IntonPQ}s (and potentially \textsc{DeclPQ}s, if these can be reliably distinguished; cf. \citealt{Meyer2004}), not \textsc{liPQ}s; see \REF{sim:ex:razve-a}. \citet{Repp.Geist2025} and \citet{Korotkova2023}, who recently approached \textit{razve} from a formal-semantic perspective, agree with the traditional insight that \textit{razve} ``indicate[s] moderate surprise or doubt concerning the situational evidence'' for the question prejacent (\citealt{Apresjan1980,Rathmayr1985,Baranov1986,Bulygina.Smelev1987,Matko2014}; quoted from \citealt{Repp.Geist2025}: 110). This mirative (`surprise') or dubitative (`doubt') flavour corresponds to what I called a conflict-resolving PQ in \sectref{sim:sec:bias-basic}, whose purpose is to resolve a conflict between evidential bias for $p$ (the question prejacent) and the speaker's prior epistemic bias for $\neg p$ (formulated as `I thought that\dots' in \REF{sim:ex:razve} and below).
+
+\ea\label{sim:ex:razve}\ea\gll Razve vy govorite po-russki?\label{sim:ex:razve-a}\\
+\textsc{razve} you speak Russian\\
+\glt `Do you (really) speak Russian? [I thought that you didn't.]'
+\ex\gll Razve u vas net kota?\\
+\textsc{razve} at you {\NEG}.be cat\\
+\glt `Do you (really) not have a cat? [I thought that you would have one.]'\\
+\hfill (Russian; adapted from \citealt{Korotkova2023})
+\z\z
+
+\noindent\citet{Repp.Geist2025} build on \citet{Repp2006,Repp2009,Repp2013} and, although they do not provide an explicit compositional semantics of \textit{razve,} they suggest that \textit{razve} is a ``semantic epistemic operator that is compatible with \textsc{falsum} and with \textsc{verum}'' \citep[133]{Repp.Geist2025}; see the simplified logical forms in \REF{sim:lf:repp-geist} (\REF{sim:lf:repp-geist-c} is added by me for completeness).
+
+\ea\label{sim:lf:repp-geist}\ea {[Q [\textsc{falsum} \textit{razve} $p$]]\hfill\textsc{outer neg PQ}}
+\ex {[Q [\textsc{verum} \textit{razve} $\neg p$]]\hfill\textsc{inner neg PQ}}
+\ex {[Q [\textsc{verum} \textit{razve} $p$]]\hfill\textsc{positive PQ}\label{sim:lf:repp-geist-c}\\\hfill (adapted from \citealt{Repp.Geist2025}: 133)}
+\z\z
+
+\noindent \citeposst{Repp.Geist2025} crucial insight is that \textit{razve} is compatible with both outer and inner negation, which amounts to saying that when associated with a negative PQ, \textit{razve} can double-check both the negative and the positive alternative -- something that the authors call ``question concern'' (cf. \sectref{sim:sec:bias-basic}). The evidence for the compatibility with both kinds of negation is that both the weak NPI \textit{ešč\"{e}} `yet' and the PPI \textit{uže} `already' are licensed in the scope of the negation in PQs with \textit{razve}; see \REF{sim:ex:razve-npi-ppi}. NPIs are assumed to be licensed by inner negation; PPIs are only compatible with outer negation.
+
+\ea\label{sim:ex:razve-npi-ppi}\ea\gll Razve \textit{ešč\"{e}} ne skazal?\label{sim:ex:razve-npi}\\
+\textsc{razve} yet {\NEG} said\\\hfill\textsc{inner neg}
+\glt `Haven't you told it to me yet? [I thought that you had.]'\\\hfill (A. I. Slapovskij, \textit{Bolšaja kniga peremen / Volga,} 2010)
+\ex\gll Razve ty \textit{uže} ne vytaščila menja iz prošlogo?\label{sim:ex:razve-ppi}\\
+\textsc{razve} you already {\NEG} dragged me out.of past\\\hfill \textsc{outer neg}
+\glt `Haven't you dragged me out of the past already? [I thought you that you had.]'\hfill (Gennadij Praškevič, Aleksandr Bogdan, \textit{Čelovek ``Č'',} 2001)\\\hfill (Russian; adapted from \citealt{Repp.Geist2025}: 112)
+\z\z
+
+\noindent It is notable that the bias profile of \textit{razve} NPQs stays constant irrespective of whether \textsc{verum} ($\approx$ inner negation) or \textsc{falsum} ($\approx$ outer negation) is used: they presuppose negative evidential bias and convey positive epistemic bias.\footnote{This aligns with \citeposst{Stankova2023} experimental findings for Czech \textsc{DeclNPQ}s, which are natural in contexts that presuppose negative evidence, irrespective of whether the negation is outer or inner.} The rationale behind this is that \textsc{falsum} is prompted by evidence for the falsity of $p$ (while being concerned about the corresponding epistemic bias, i.e. the truth of $p$; paraphrasable as `Is it really not the case that $p$?') and \textsc{verum} by evidence for the truth of $\neg p$ (while being ``concerned'' about the evidential bias, i.e. the truth of $\neg p$; paraphrasable as `Is it really the case that $\neg p$?'). \citet{Repp.Geist2025} further argue that \textit{razve} is different from \textit{neuželi} in that the latter lexicalizes \textsc{verum} and is thus only compatible with inner negation (cf. \citealt{Bulygina.Smelev1987}).
+
+\largerpage
+\citet{Korotkova2023} proposes a more nuanced approach to \textit{razve.} She does not challenge the claim that the use of \textit{razve} aims at resolving the evidential vs. epistemic conflict, but she notices that \textit{razve} is picky about the relation between the evidence that constitutes the bias and the prejacent of the PQ. In particular, \textit{razve} is only licensed if the prejacent is a likely and mutually shared abductive inference drawn from the evidence. An \textsc{abductive inference} \citep{Douven2021} is an inference from an observed effect (the presence of a mouse) to its cause or best explanation (the absence of a cat); see \REF{sim:ex:razve-korotk-a}. In \REF{sim:ex:razve-korotk-b}, \textit{razve} is not licensed because the absence of mice is not a likely explanation for the absence of a cat (effect/evidence).
+
+\begin{exe}
+\ex
+\begin{xlist}
+\ex \textit{Scenario:} I am over at your house in a village and see a mouse. I ask:\label{sim:ex:razve-korotk-a}
+\exi{}[]{\gll \textit{Razve} u vas net kota?\\
+\textsc{razve} at you {\NEG}.be cat\\
+\glt `Do you not have a cat? [I thought that you would, like every village house.]'\\
+\textit{Background assumption (likely mutual):} The absence of cats is a very plausible explanation for the presence of mice.}
+\ex \textit{Scenario:} I am over at your house in a village and ask where your cat is. You tell me you don’t have one. My next question is:\label{sim:ex:razve-korotk-b}
+\exi{}[\#]{\gll \textit{Razve} u vas net myšej?\\
+\textsc{razve} at you {\NEG}.be mice\\
+\glt `Do you not have mice? [I thought that you would, like every village house.]'\\
+\textit{Background assumption (unlikely mutual):}
+The absence of mice is a very plausible explanation for the absence of cats.\\\hfill (Russian; adapted from \citealt{Korotkova2023})}
+\end{xlist}
+\end{exe}
+
+\noindent\citet{Korotkova2023} also proposes a compositional treatment of \textit{razve}, building on \citepossts{Biezma.Rawlins2012} analysis in which PQs denote singleton sets.\footnote{See also my suggestion in \sectref{sim:sec:anal-prelim} that this might be an appropriate analysis for (Slavic) \textsc{DeclPQ}s, to which \textit{razve} PQs are arguably related.} She argues that the singleton-based analysis accounts for some core properties of \textit{razve} PQs, such that \textit{razve} cannot be used in embedded interrogatives (which make obligatory use of \textit{li}) or that it cannot be used in wh-interrogatives.
+
+A particle like \textit{razve} is not a rare find in Slavic languages (see \citealt{Logvinova2022} for a survey). Particles with a similar meaning include the Ukrainian and Belarusian \textit{xiba}, Polish \textit{czy\.{z}(by)}, Bulgarian \textit{nima} \citep{Tisheva2003}, Macedonian \textit{zar} \citep{Englund1977,Mitkovska.Buzarovska2024}, Czech \textit{co(ž)pak} \citep{Nekula1996,Sebestova.Mala2016,Stankova2023}, and Serbian \textit{zar} \citep{Rakic1984,Piper2005,Todorovic2023}. I am not aware of formal-semantic studies dedicated to these particles. Their precise semantic and pragmatic properties and their potential affinity to the Russian \textit{razve} are thus yet to be explored.
+
+\subsubsection{Variation in the semantics/pragmatics of \textit{(da)li}}\label{sim:sec:variation-li}
+
+In \sectref{sim:sec:default} we saw that the particle \textit{li} is used in default PQs in a number of Slavic languages, either in isolation (Bulgarian, Russian, Macedonian) or in combination with \textit{da} (Serbian \textit{da li}, Macedonian \textit{dali}). Despite the superficial similarity of these particles, existing literature suggests that we should be cautious about equating them.
+
+Macedonian \textit{li,} in contrast to Bulgarian (or Russian) \textit{li,} has been reported to be infelicitous in neutral questions, as it is supposed to convey surprise \citep{Rudin.etal1999,Lazarova-Nikovska2003} or a negative answer expectation \citep{Englund1977}; both of these properties received experimental support in \citet{Jordanoska.Meertens2021} (who, however, concentrated primarily on \textit{li} preceded by constituents other than the verb). \citet{Rudin.Rudin2022} provided further independent support for a qualitative distinction between Bulgarian and Macedonian PQ strategies. They argue that while in Bulgarian, question semantics is conveyed by \textit{li} (see \sectref{sim:sec:anal-prelim}), in Macedonian it is conveyed by question intonation. The consequence is that Macedonian rising intonation is specifically question-related, while Bulgarian rising intonation only conveys a lack of speaker commitment, but not necessarily question force, as it can also be used, for instance, in imperatives (cf. \citealt{Rudin2022}). It should be noted that the claims about non-neutrality of the Macedonian \textit{li} are in obvious contrast to the data presented in \sectref{sim:sec:default}, where \textit{li} (preceded by the finite verb) was elicited as one of the strategies for expressing an unbiased quiz PQ. My consultants (Liljana Mitkovska and Eleni Bužarovska) hypothesize that the apparent contradiction could be due to register: the most common strategy in colloquial Macedonian is arguably the particle-free intonation strategy \citep{Englund1977,Rudin.Rudin2022} and the \textit{li}-strategy is rather infrequent and formal. In and of itself, this cannot explain the intuition that \textit{li} expresses surprise or negative answer expectation. Russian may serve as another member of a minimal pair in this case, where \textit{li} is also rather formal and infrequent \citep{Onoeva.Stankova2025}, but is not reported to give rise to pragmatic implications.
+
+The particle \textit{dali} is also subject to cross-Slavic variation. While Macedonian \textsc{daliPQ}s and Serbian \textsc{da+liPQ}s are neutral (\sectref{sim:sec:default}; see also \citealt{Jordanoska.Meertens2021} and \citealt{Todorovic2023}), Bulgarian \textsc{daliPQ}s incorporate a `wondering' component and typically have a rhetorical flavour in the sense that they do not necessarily solicit a response \citep{Simeonova.Kamali2024}.
+
+I conclude that there is a puzzling cross-Slavic microvariation in the domain of PQ particles which awaits deeper investigation.
+
+\section{Czech negative polar questions and \textit{náhodou}}\label{sim:sec:czech}
+
+In \sectref{sim:sec:bias-cz}, and particularly in the discussion of example \REF{sim:ex:bias4}, I noted that Czech \textsc{InterNPQ}s, i.e. interrogative (verb-initial) negative PQs, have a broader distribution than their English counterparts (high negation PQs): they can convey positive epistemic bias (and are compatible with negative evidential bias), but they can likewise convey positive \textit{evidential} bias, at least in the absence of any epistemic bias. In this section, I discuss more data that bear evidence of an even broader distribution of Czech \textsc{InterNPQ}s and which suggest a reconsideration of the semantics and pragmatics of Czech (and potentially Slavic) ``high negation''. What I will also bring into the discussion is the particle/adverb \textit{náhodou} lit. `by (any) chance', which, under its question particle guise, is licensed by outer negation (\citealt{Zanon2023} reports the same for Russian \textit{slučaem/slučajno} `by chance').
+% Potentially: see also \citet{Onoeva.Simik2024}
+It is therefore a good diagnostic of outer negation, which is the kind of negation I wish to investigate.
+
+\subsection{Basic data and proposal}
+
+The set of examples in \REF{sim:ex:nahodou} illustrates the basic properties of inner/outer negation and \textit{náhodou}. Examples \REF{sim:ex:nahodou-a}/\REF{sim:ex:nahodou-b} show (i) that negation in statements always has the inner reading -- it licenses NCIs, but not PPIs in its scope -- and (ii) that the adverb \textit{náhodou} can occur in statements, but if it does, it has the canonical meaning, covered by concepts like `accidentally' or `incidentally'.\footnote{Additionally, it can be used as a focus-sensitive adversative particle pragmatically akin to \textit{ale} `but'. Although this function of \textit{náhodou} in statements is arguably related to its question-particle function, I leave it aside for reasons of space.} Relying on the NCI/PPI-based test, example \REF{sim:ex:nahodou-c} shows that Czech \textsc{InterNPQ}s primarily involve outer negation and only marginally inner negation (see \citealt{Stankova2023} for experimental evidence; see also the discussion around example \REF{sim:ex:cz-inner-outer}). Example \REF{sim:ex:nahodou-d} shows that once \textit{náhodou} is added to the \textsc{InterNPQ}, the NCI \textit{žádné} becomes completely ungrammatical; in other words, \textit{náhodou} requires outer negation. Finally, example \REF{sim:ex:nahodou-e} shows that \textit{náhodou} -- under its particle guise -- is not licensed in positive PQs.\footnote{This is supported by corpus data (all corpus findings reported from this point on were gathered using the SYN v11 corpus of the Czech National Corpus; \citealt{Kren.etal2022}). Of 100 random occurrences of \textit{náhodou} in PQs, all involved negation; of the 6 indefinite pronoun/determiners, all were PPIs (diagnosing outer negation). Of 100 random occurrences of \textit{náhodou} in embedded interrogatives, all involved negation; all of the 14 indefinites were PPIs.\label{sim:fn:corpus}}
+
+\ea\label{sim:ex:nahodou}\ea[]{\gll Max \minsp{(} \textit{náhodou}) nemá \minsp{\{\#} nějaké / žádné\} námitky.\label{sim:ex:nahodou-a}\\
+Max {} by.chance {\NEG}.has {} \textsc{det.ppi} {} \textsc{det.nci} objections\\\hfill\textsc{statement}
+\glt (Intended:) `(Incidentally,) Max doesn't have any objections.'}
+\ex[]{\gll Max \minsp{(} \textit{náhodou}) má \minsp{\{} nějaké / \minsp{*} žádné\} námitky.\label{sim:ex:nahodou-b}\\
+Max {} by.chance has {} \textsc{det.ppi} {} {} \textsc{det.nci} objections\\\hfill\textsc{statement}
+\glt (Intended:) `(Incidentally,) Max has some objections.'}
+\ex[]{\gll Nemá Max \minsp{\{} nějaké / \minsp{?} žádné\} námitky?\label{sim:ex:nahodou-c}\\
+{\NEG}.has Max {} \textsc{det.ppi} {} {} \textsc{neg.nci} objections\\\hfill\textsc{InterNPQ}
+\glt `Doesn't Max have some/any objections?'}
+\ex[]{\gll Nemá Max \textit{náhodou} \minsp{\{} nějaké / \minsp{*} žádné\} námitky?\label{sim:ex:nahodou-d}\\
+{\NEG}.has Max by.chance {} \textsc{det.ppi} {} {} \textsc{neg.nci} objections\\\hfill\textsc{InterNPQ}
+\glt `Does Max have some objections, by any chance?'}
+\ex[*]{\gll Má Max \textit{náhodou} nějaké námitky?\label{sim:ex:nahodou-e}\\
+has Max by.chance \textsc{det.ppi} objections\\\hfill\textsc{InterPPQ}
+\glt Intended: `Does Max have some objections, by any chance?'}
+\z\z
+
+\noindent The hypothesis to entertain upon witnessing these data is to say that \textit{náhodou} is licensed by \citeauthor{Repp2006}'s (\citeyear{Repp2006}, et seq.) \textsc{falsum} (see \sectref{sim:sec:modelling-bias-comm}); indeed, the existence of \textit{náhodou} could even be considered a striking piece of evidence in favour of the very existence of \textsc{falsum}. While I consider this idea to be on the right track, I will show that, in line with the broader distribution of Czech \textsc{InterNPQ}s, the semantics of \textsc{falsum} (or, more neutrally said, high negation) is qualitatively different in Czech (and potentially Slavic) than what was proposed for English and German.
+
+The proposed lexical entry for the Czech \textsc{falsum} (or, more neutrally high/outer negation) is provided in \REF{sim:denot:falsum-cz}. The operator is defined if the attitude holder $g(1)$ (resolved to the speaker in matrix questions) considers it possible that the (positive) prejacent is true; if defined, it selects the prejacent $p$ and returns the proposition characterizing the set of worlds $w$ in which $p$ is not part of the common ground.\footnote{Modelling the epistemic implication as a presupposition may turn out to be inaccurate. The ``presupposition'' can certainly be new information to the addressee (hinting at its status as a conventional implicature of sorts; \citealt{Romero2015,Korotkova2023}); at the same time, however, it can be attributed to a linguistically expressed attitude holder (which in turn hints at local presupposition accommodation). I leave this issue for future research.} \REF{sim:denot:falsum-cz} differs from \citeposst{Repp2006} \textsc{falsum} (see \sectref{sim:sec:modelling-bias-comm}) in the following ways: (i) it conveys a weak commitment (epistemic possibility rather than belief), (ii) the commitment is not necessarily tied to the speaker (or addressee), but possibly also to linguistically expressed attitude holders (see below), (iii) the commitment is not at issue (as in \citepossalt{Romero2015} update of \citeauthor{Repp2006}'s semantics), and (iv) the commitment is not conventionally tied to conversational goals (in fact, a conversation might not even be at stake, as in embedded interrogatives).
+
+\ea\sib{\textsc{falsum}$^{\textsc{cz}}_1$}$^g(p)=\lambda w:\exists w'\in\cnst{epi}_{g(1)}(w)[p(w')=1]\,.\,p\not\in\text{CG}_w$\label{sim:denot:falsum-cz}
+\z
+
+\noindent Assuming that \textsc{falsum} scopes under the alternatives-generating Q particle, the meaning of \REF{sim:ex:nahodou-c}/\REF{sim:ex:nahodou-d} is thus as in \REF{sim:ex:ne-meaning}.
+
+\ea \sib{\REF{sim:ex:nahodou-c}/\REF{sim:ex:nahodou-d}} is defined if the speaker considers it possible (and relevant) [that Max has some objections = $p$]. If defined, then\label{sim:ex:ne-meaning}\\
+\sib{\REF{sim:ex:nahodou-c}/\REF{sim:ex:nahodou-d}}${}=\{\lambda w[p\not\in\text{CG}_w],\lambda w[p\in\text{CG}_w]\}$
+\z
+
+\noindent Space does not permit an explicit formal account of \textit{náhodou}. I hypothesize, though, that its function is to ``loosen'' the default stereotypical ordering source \citep{Kratzer1991} of the epistemic modal contributed by \textsc{falsum} so as to include more remote (less likely) possibilities in the quantification domain of the modal. Being an (optional) domain widener modifying an existential quantifier, it comes with a requirement that the resulting proposition is stronger than the alternative without widening \citep{Kadmon.Landman1993,krifka1995semantics}. I hypothesize that the strengthening comes about via the negation contributed by \textsc{falsum}: ruling out the truth of a proposition in less likely worlds entails its ruling out in more likely (stereotypical) worlds (but not conversely). The idea that \textit{náhodou} is an ordering source modifier / domain widener is supported by my native speaker intuition about the subtle meaning difference between a PQ with and without \textit{náhodou.} In \REF{sim:ex:nahodou-domain}, by using \textit{náhodou}, the speaker invites the addressee to consider even less evident signs of her husband's sleeping problems. The addressee's negative response (the one that is at issue) will then give the speaker more confidence that $p$ indeed does not belong to the common ground than if he asked the corresponding PQ without \textit{náhodou.}\footnote{This intuition is indirectly supported by corpus data. Of 100 random occurrences of embedded polar interrogatives with \textit{náhodou,} 19 were embedded by \textit{napadnout} `cross one's mind', a predicate expressing a sudden idea, suggestion, or suspicion, whose validity or relevance is up for discussion or verification; I take this to match the loosened ordering source (exploring potentially unlikely scenarios). Of 94 random occurrences of negative embedded polar interrogatives without \textit{náhodou}, only 3 (\qty{3.2}{\percent}) were embedded by \textit{napadnout}.\label{sim:fn:nahodou}}
+
+\ea\gll Netrpí váš manžel \minsp{(} náhodou) nespavostí?\label{sim:ex:nahodou-domain}\\
+{\NEG}.suffers your husband {} \textsc{nahodou} insomnia\\
+\glt `Does your husband suffer from insomnia (by any chance)?'
+\z
+
+\noindent In the next section, I will go through some evidence that supports the proposed analysis of Czech high negation.
+
+\subsection{Evidence}
+
+The assumption that the epistemic bias expressed is weak and does not have to amount to belief (as assumed for epistemic bias in, e.g., English; see \sectref{sim:sec:bias}) but rather just to epistemic possibility receives support by the significantly broader distribution of \textsc{InterNPQ}s in Czech. I use examples and data collected from the Czech National Corpus (see footnote \ref{sim:fn:corpus}); see \REF{sim:ex:functions-ne}. The scenarios are my brief summaries of the preceding context; the ``context'' in \REF{sim:ex:functions-ne-hope} is a translation of the preceding utterance. All the examples in \REF{sim:ex:functions-ne} contain \textit{náhodou} (which testifies the outer status of negation), but would also be felicitous without it, without any major meaning difference.
+
+\eanoraggedright\label{sim:ex:functions-ne}
+\begin{xlist}
+\ex \textit{Scenario:} The speaker finds the addressee alone in a restaurant; he had expected the addressee to be with company, playing cards, as usual on that day.\label{sim:ex:functions-ne-bel}
+\exi{}[]{\gll Nehráváte dneska náhodou karty?\\
+{\NEG}.play.2{\PL} today \textsc{nahodou} cards\\
+\glt `Don't you play cards today? [I'm convinced that you normally do.]'}
+\ex\textit{Scenario:} The addressee shows sign of unease; the speaker is wondering about the cause:\label{sim:ex:functions-ne-expl}
+\exi{}[]{\gll Nejsi náhodou s outěžkem, děvče?\\
+{\NEG}.are \textsc{nahodou} with burden girl\\
+\glt `Are you pregnant, by any chance, girl? [I think that you might be.]'}
+\ex \textit{Scenario:} The speaker and addressee are contemplating a solution to a complicated situation. At once the speaker proposes a source of inspiration by asking:\label{sim:ex:functions-ne-rel}
+\exi{}[]{\gll Nečetlas náhodou Deník Anny Frankové?\\
+{\NEG}.read.2{\SG} \textsc{nahodou} Diary.{\ACC} Anne Frank.{\GEN}\\
+\glt `Have you read Anne Frank's Diary by any chance? [It will be relevant for what I want to say now.]'}
+\ex \textit{Context:} I'd like to ask Marlene about it.\label{sim:ex:functions-ne-hope}
+\exi{}[]{\gll Nemáte na ni náhodou aktuální telefonní číslo?\\
+{\NEG}.have.2 on her \textsc{nahodou} current phone number\\
+\glt `Do you happen to have her phone number? [I hope you do.]'}
+\end{xlist}
+\z
+
+\noindent Example \REF{sim:ex:functions-ne-bel} shows that Czech outer negation is compatible with the speaker's prior belief (often in combination with conflicting evidential bias) -- the prototypical use of high negation in English (see also \sectref{sim:sec:bias-cz}). Although this meaning is not conventionally expressed by the Czech \textsc{falsum}, I take it to be consistent with it (possibility is compatible with necessity if the possibility expression -- here \textsc{falsum\textsuperscript{cz}} -- has no necessity competitor; \citealt{Deal2011}). Example \REF{sim:ex:functions-ne-expl} is a case of explanation-seeking -- with supporting situational evidence, but without any prior or present belief. The speaker simply considers it possible -- based on what she takes to be evidence -- that the addressee is pregnant (see also the discussion of \REF{sim:ex:bias4} above). Example \REF{sim:ex:functions-ne-rel} could be called a ``relevance PQ'': by asking about $p$ (here: `having read Anne Frank's Diary'), he suggests that $p$ is relevant for further discussion. Example \REF{sim:ex:functions-ne-hope} represents another relatively frequent type: the speaker considers it possible that the addressee has her phone number and at the same time hopes that this might be the case.\footnote{Together, the four types exemplified make up \qty{94}{\percent} of all the uses of \textsc{InterNPQ}s with \textit{náhodou}, with the following distribution: belief \qty{14}{\percent}, explanation-seeking \qty{40}{\percent}, relevance \qty{20}{\percent}, hope \qty{20}{\percent} (based on 100 random occurrences).}
+
+Offers represent a specific category of \textsc{InterNPQ} use. They involve outer negation, as is evident by the use of PPIs and speaker-related bias, but \textit{náhodou} is unavailable in them; \REF{sim:ex:offer}.\footnote{See \citet{Chodounska.etal2025} for experimental evidence supporting the intuition.\label{sim:fn:chodounska1}} If \textit{náhodou} is included, the PQ ceases to be an offer and changes to a factual question. I hypothesize that this might have to do with the kind of modal base that \textit{náhodou} can modify. I leave open the question of what examples like \REF{sim:ex:offer} tell us about outer negation in Czech and whether they are consistent with the analysis proposed above.
+
+\ea\gll Nedáš si se mnou \minsp{(\#} náhodou) něco k obědu?\label{sim:ex:offer}\\
+{\NEG}.give.2{\SG} {\REFL} with me {} \textsc{nahodou} something.\textsc{ppi} for lunch\\
+`Will you join me for lunch?'
+\z
+
+\noindent Czech outer negation is not limited to matrix PQs; it is frequently attested in embedded polar interrogatives (EPIs).\footnote{In a random sample of 63 EPIs, 22 (\qty{35}{\percent}) have a negative predicate. Of the 22, 21 arguably involve outer negation (judging by the felicity of adding \textit{náhodou}).\label{sim:fn:embedded}} In Czech EPIs, outer negation is not encoded by verb fronting, as the initial position is taken up by the polar interrogative complementizer \textit{jestli}. Nevertheless, it can be easily diagnosed by the availability of PPIs, the particle \textit{náhodou}, and the inability to license NCIs. The corpus example \REF{sim:ex:epi-a} contains both a PPI and \textit{náhodou}; the example in \REF{sim:ex:epi-b} does not, but, as indicated, \textit{náhodou} could easily be added without any significant difference in meaning. Finally, the example in \REF{sim:ex:epi-c} shows that upon using inner negation (diagnosed here not by a polarity item, but by the strong negative evidential bias -- bias to `not wanting kids'), \textit{náhodou} is ruled out.
+
+\eanoraggedright\label{sim:ex:epi}
+\begin{xlist}
+\ex\gll \minsp{[} Hjonmi] kontrolovala, jestli náhodou někdo nepřibíhá za ní\label{sim:ex:epi-a}\\
+{} Hjonmi controlled whether \textsc{nahodou} someone.\textsc{ppi} {\NEG}.run after her\\
+\glt `Hjonmi was checking whether there's anybody running after her'
+\ex\gll taťka měl [\dots] pochybnosti, jestli to \minsp{[} náhodou] není riskantní\label{sim:ex:epi-b}\\
+dad had {} doubts whether it {} \textsc{nahodou} {\NEG}.is risky\\
+\glt `daddy was worried whether it is risky / that it could be risky'
+\ex \textit{Scenario:} The speaker, a hospitalized patient, engages in a risky behavior, threatening her own health. She reports:\label{sim:ex:epi-c}
+\exi{}[]{\gll Doktorka se mě ptala, jestli \minsp{[\#} náhodou] nechci mít děti, nebo co.\\
+doctor {\REFL} me asked whether {} \textsc{nahodou} {\NEG}.want.1{\SG} have kids or what\\
+\glt `The doctor asked me whether I don't want to have kids, or what.'}
+\end{xlist}
+\z
+
+\noindent What is important is that embedded outer negation encodes bias which is not tied to the speaker, but rather to the attitude holder. The truth conditions of \REF{sim:ex:epi-a} can thus be captured as in \REF{sim:denot:epi}, resorting to the simplifciation that the matrix predicate \textit{kontrolovala} denotes `want to know' (see \sectref{sim:sec:intro}). The denotation presupposes that Hjonmi considered the positive prejacent, i.e. that somebody is running after her, possible (or, even remotely possible -- the contribution of \textit{náhodou}) and is true iff Hjonmi wanted to know the true answer to the question whether somebody running after her is part of the common ground or not. In this case, the attitude holder is alone in the situation and hence the common ground reduces to Hjonmi's own epistemic state.
+
+\ea\sib{\REF{sim:ex:epi-a}} is defined in an evaluation world $w_0$ if $\exists w\in\cnst{epi}_{\textsc{Hjonmi}}(w_0)\big[\exists x[\textsc{run towards}(w)(x,\textsc{Hjonmi})]\big]$; if defined, then\label{sim:denot:epi}\\
+\sib{\REF{sim:ex:epi-a}}${}=\lambda w\big[\textsc{want to know}\big(w\big)\big(\textsc{Hjonmi}\big)\big(\iota q\,q(w)=1\wedge{}$\\
+\tabto{3cm}$q\in\{\lambda w[p\not\in\text{CG}_w],\lambda w[p\in\text{CG}_w\}]\big)\big]$,\\
+where $p=\lambda w\exists x\big[\textsc{run towards}(w)(x,\textsc{Hjonmi})\big]$
+\z
+
+\noindent The contribution of outer negation in embedded contexts is further evident from the contrast between the corpus example \REF{sim:ex:deed-a} -- a positive EPI -- and its modification \REF{sim:ex:deed-b} -- a negative EPI. While \REF{sim:ex:deed-a} is natural in a situation where the police officer reacts to a question or statement suggesting that the criminal deed under discussion was racially motivated -- a case of positive evidential bias with no obligatory implication tied to the attitude holder -- \REF{sim:ex:deed-b} requires no evidential bias, but conveys a weak epistemic bias of the attitude holder (the police officer). This bias is conveyed in order to indicate that it is a possibility to be seriously considered and explored.
+
+\ea\label{sim:ex:deed}\ea\gll Nevíme, jestli šlo o rasově motivovaný čin.\label{sim:ex:deed-a}\\
+{\NEG}.know.{1\PL} whether went about racially motivated deed\\
+\glt `We don't know whether it was a racially motivated deed.'
+\ex\gll Nevíme, jestli \minsp{(} náhodou) nešlo o rasově motivovaný čin.\label{sim:ex:deed-b}\\
+{\NEG}.know.{1\PL} whether {} \textsc{nahodou} {\NEG}.went about racially motivated deed\\
+\glt `We don't know whether it could have been a racially motivated deed.'
+\z\z
+
+\noindent The predicates which embed outer negation EPIs are typically verbs of asking (\qty{30}{\percent}), verbs of finding out by direct observation such as `look', `listen', or `verify' (\qty{26}{\percent}), and verbs of pondering such as `think', `(not) know', or `hesitate' (\qty{30}{\percent}). All outer negation EPIs embedded under these predicates exhibit biases comparable to the ones described for matrix contexts (see the discussion of examples \REF{sim:ex:functions-ne}) and also allow for productive use of \textit{náhodou} (although the particle occurs only in \qty{6}{\percent} of cases in the random sample of 100 occurrences of negative EPIs). 
+
+Just like in \textsc{InterNPQ}s, \textit{náhodou} is infelicitous in reported offers; \REF{sim:ex:offer-emb}.\footnote{The judgement reflects my personal intuition. \citeposst{Chodounska.etal2025} experiments did not confirm this infelicity. (Cf. footnote \ref{sim:fn:chodounska1}.)} This is because, by hypothesis, offers involve a non-epistemic modal base.
+
+\ea\gll Loni mi volal, jestli bych s ním \minsp{[\#} náhodou] nezazpíval tu písničku na předávání Cen Anděl [\dots]\label{sim:ex:offer-emb}\\
+last.year me called whether {\SBJV}.1{\SG} with him {} \textsc{nahodou} {\NEG}.sing {\DEM} song at ceremony Prizes Angel\\
+\glt `Last year he called me (to ask) whether I'd sing the song with him at the Angel Prizes ceremony [\dots]'
+\z
+
+\noindent To sum up, the productive and functionally analogous use of outer negation in embedded interrogatives lends support to the analysis proposed above, in which the epistemic component of the \textsc{falsum} operator is relativized to an attitude holder and not just the speaker or addressee.
+
+\section{Conclusion}\label{sim:sec:concl}
+
+This chapter has surveyed the basic semantic and pragmatic properties of polar questions and, to a lesser extent, embedded polar interrogatives, with a focus on Slavic data. I have attempted to show that Slavic facts might be vital for a deeper understanding of polar question semantics and pragmatics and, more generally, of a formal-semantic theory of speech acts.
+
+I have shown that Slavic languages make use of a variety of strategies for encoding polar questions. Despite some important emerging generalizations, I have also discussed the fact that the properties of one and the same particle can differ substantially in two closely related languages; this concerns esp. the particles \textit{li} and \textit{dali} in Bulgarian vs. Macedonian. All in all, most of the strategies for encoding polar questions are still poorly understood from a semantic or even a morphosyntactic perspective. 
+
+My investigation into default or neutral (unbiased) polar questions has uncovered a hitherto neglected contrast between quiz polar questions and information-seeking questions. This contrast suggests that some neutral polar questions do incorporate a `wondering' component in their conventional semantic make-up while others do not; only the latter can be used in a quiz, where no genuine `wondering' (about the truth of the prejacent) takes place. It remains to be seen whether the contrast between quiz and information-seeking polar questions is rooted in semantics, as I have suggested, or in register (e.g. formal vs. informal).
+
+I have shown that Czech outer negation has a significantly broader distribution than its kin in English or German. I have proposed a modification of \citeauthor{Repp2006}'s (\citeyear{Repp2006} et seq.) \textsc{falsum}-based analysis to account for the broad distribution. The modification is not meant as a replacement of \citeauthor{Repp2006}'s original account; rather, it is supposed to reflect what I believe to be a genuine cross-linguistic variation in the semantic properties of outer negation. Although there are indications that other Slavic languages might be similar to Czech in this respect (see, e.g., \citealt[147]{Mitkovska.Buzarovska2024}, who claim that Macedonian high negation PQs ``imply some speaker's belief about $p$ ranging \textit{from very weak to quite strong}'', emphasis mine), a detailed investigation is missing. This clearly represents highly fruitful grounds for further investigation. The use of outer negation in constructions beyond (polar) questions is another important direction for future inquiry. In Czech, for instance, outer negation with very similar properties (including the licensing of the particle \textit{náhodou}) occurs in conditionals (cf. \citealt{Romero2015}), purpose clauses, and some types of embedded declarative clauses.
+
+Finally, I have touched upon the issue of particles specialized in expressing biases. There is some new and promising work on the Russian particle \textit{razve} (see \citealt{Korotkova2023,Repp.Geist2025}), but most particles that exist in other Slavic languages and are akin to \textit{razve} remain understudied within formal semantics. Moreover, there are many other particles with quite different semantic properties which are awaiting proper investigation. In this chapter, I have taken the first step towards a better understanding of the semantics and pragmatics of the Czech particle \textit{náhodou.}
+
+\section*{Abbreviations}
+
+\begin{tabularx}{.5\textwidth}{@{}lQ}
+\textsc{1}&first person\\
+\textsc{2}&second person\\
+\textsc{acc}&accusative\\
+\textsc{aux}&auxiliary\\
+\textsc{dem}&demonstrative\\
+\textsc{det}&determiner\\
+\textsc{f}&feminine\\
+\textsc{gen}&genitive\\
+\textsc{hon}&honorific\\
+\textsc{ins}&instrumental\\
+\textsc{m}&masculine\\
+\textsc{n}&neuter\\
+\end{tabularx}%
+\begin{tabularx}{.5\textwidth}{lQ@{}}
+\textsc{nci}&negative concord item\\
+\textsc{neg}&negation\\
+\textsc{nom}&nominative\\
+\textsc{npi}&negative polarity item\\
+\textsc{pl}&plural\\
+\textsc{poss}&possessive\\
+\textsc{ppi}&positive polarity item\\
+\textsc{ptcl}&particle\\
+\textsc{refl}&reflexive\\
+\textsc{sbjv}&subjunctive\\
+\textsc{sg}&singular\\
+&\\ % this dummy row achieves correct vertical alignment of both tables
+\end{tabularx}
+
+\section*{Acknowledgments}
+The research was supported by the Czech Science Foundation (GAČR) via project 21-31488J. I am very grateful to the following colleagues (ordered alphabetically) for their invaluable feedback and/or data: Katja Brankačkec, Eleni Bužarovska, Ivana Dragonová, Ilaria Frana, Ljudmila Geist, Daniel Goodhue, Dorota Klimek-Jankowska, Natasha Korotkova, Liljana Mitkovska, Sophie Repp, Catherine Rudin, Vesela Simeonova, Adrian Stegovec, Neda Todorović, Tue Trinh, Anastasiia Vyshnevska, Bartosz Wiland, Jacek Witkoś, and Anton Zimmerling. Special thanks go to the members of the project \textit{Modelling the question--statement opposition in Slavic languages} (a GAČR--DFG collaboration), to whom I am grateful for the opportunity to learn about this fascinating topic, namely: Roland Meyer, Maria Onoeva, Anna Staňková, Mariia Razguliaeva, Kateřina Hrdin\-ková, Michaela Chodounská, Adéla Koštejnová, Michael Andrle, and Mihaela Chirpanlieva. Finally, I would like to thank the three anonymous reviewers of this chapter, as well as Tim Morgan, for careful proofreading. Any remaining problems and errors are my own responsbility.
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+
+\end{document}

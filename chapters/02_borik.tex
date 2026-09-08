@@ -1,0 +1,1233 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.22078571}
+
+\author{Olga Borik\orcid{0000-0003-1255-5962}\affiliation{Universidad Nacional de Educación a Distancia}}
+% replace the above with you and your coauthors
+% rules for affiliation: If there's an official English version, use that (find out on the official website of the university); if not, use the original
+% orcid doesn't appear printed; it's metainformation used for later indexing
+
+%%% uncomment the following line if you are a single author or all authors have the same affiliation
+\SetupAffiliations{mark style=none}
+
+%% in case the running head with authors exceeds one line (which is the case in this example document), use one of the following methods to turn it into a single line; otherwise comment the line below out with % and ignore it
+% \lehead{Šimík, Gehrke, Lenertová, Meyer, Szucsich \& Zaleska}
+% \lehead{Radek Šimík et al.}
+
+\title{Bare nominals and definiteness in Russian}
+% replace the above with your paper title
+%%% provide a shorter version of your title in case it doesn't fit a single line in the running head
+% in this form: \title[short title]{full title}
+\abstract{This article is devoted to the semantics of bare nominals (primarily bare singulars) and their interpretation in Russian, a language with no articles. After an extensive empirical overview of the distribution and interpretation of Russian bare nominals,  I turn to a more detailed overview of definiteness as a semantic notion, eventually narrowing down the discussion to the theory of uniqueness. Possible semantic analyses of Russian bare nominals perceived as definite will be reviewed. One of the most important theoretical claims that is defended in this chapter is the absence of uniqueness presupposition with Russian (singular) bare nominals seemingly interpreted as definite, which has major repercussions for an adequate semantic account of Russian bare nominals. I will also briefly show that demonstratives and possessives do not present any threat to the absence of uniqueness claim.
+
+\keywords{bare nominals, definiteness, uniqueness, Russian}
+}
+
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[2]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+% Just comment out the input below when you're ready to go.
+% \input{example-osl.tex}
+
+\section{Introduction}
+\label{intro}
+
+The discussion of bare nominals (henceforth BNs) and their possible theoretical analyses has been a popular topic in the formal semantic literature over the last decades. The literature, however,  has mostly been focusing on those cases and those languages where bare nominals are rather an exception than a rule (cf. \citealt{stvandiss} for English, \citealt{munnschmitt05, munnschmitt20} for Brasilian Portuguese, \citealt{doron03} for Hebrew, \citealt{borthen03} for Norwegian, \citealt{espinalmcnally11} for Spanish and Catalan, \citealt{LazaridouAlexandropoulou13} for Greek, \citealt{deswart15} for Dutch, English and French), although there have been exceptions, most notably \citet{dayal04, dayal11} and \citet{munnschmitt20}, who discussed the semantic properties of bare nominals in languages without articles. 
+
+This article will be devoted to bare singular NPs and their interpretation in Russian, a language with no articles. However, the reader should not be led to believe that all languages without articles are predicted to behave the same with respect to the interpretation of BNs. In fact, there is evidence to the contrary, as has recently been argued by \citet{Liu.etal2023, liusalt}. Slavic languages do exhibit some variation both with respect to the use of BNs and with respect to the distribution of some (in)definiteness markers like \textit{one} \citep[see][]{Weiss2004, Geist2013, Hwaszcz.Kedzierska2018, czardybon21, Simik2021}, not to mention Bulgarian and Macedonian, which have overt definite articles \citep[]{Tomić2006, Rudin2021}. Broader cross-linguistic studies can also give surprising results with respect to languages well outside the Slavic family, e.g. Mandarin, Hindi, or Hebrew, as recently reported in \citet{Liu.etal2023, Borik.etal2025, liusalt}. Thus, the behaviour of BNs, and especially bare singulars (BSs) in Russian discussed in this chapter is just one of the patterns, which does not have to be replicated in all languages without articles.
+
+In what follows, I will first give a rather broad empirical overview of the distribution and interpretation of Russian BNs in \sectref{overview} and describe the conditions and contexts where a BN can get a generic, a definite or an indefinite reading. After that, I will move on to a more detailed discussion of one of the interpretations available for BNs: a definite reading. After a brief survey of theoretical approaches to definiteness in \sectref{howmanydef}, we narrow down the discussion to the theory of uniqueness in \sectref{uniqueness} and examine possible semantic analyses of Russian BNs perceived as definite within the uniqueness theory of definiteness in \sectref{analysesRU}. One of the most important empirical claims that will be defended in this chapter is the absence of uniqueness presupposition with Russian BNs interpreted as definite (\sectref{absenceofuniqueness}) which will have major repercussions for a possible semantic account of the Russian facts, as discussed in \sectref{interimconclusions}. I will also show that demonstratives and possessives do not pose any threat to the absence of uniqueness claim in \sectref{markeddef} and summarise and conclude in \sectref{conclusions}. 
+
+\section{Bare nominals in Russian: an empirical overview}
+\label{overview}
+
+It is not surprising that, in the absence of an article system, BNs in Russian render all types of interpretations generally available for nominals in natural languages. This section will provide an empirical overview of the distribution and interpretation of BNs in Russian, as well as discuss some possible constraints on the interpretation that Russian BNs seem to exhibit. 
+
+To begin with, Russian BNs can appear both in predicate and argument position. In predicate position, BNs can render interpretations that appear to be identical, or at least comparable, to bare, indefinite and definite nominals in languages with articles. Those parallels are illustrated in the examples below.\footnote{All examples are in Russian or English, unless indicated otherwise.}
+
+\ea 
+\ea Dolphins are \textit{fish}. 
+\ex My sister is \textit{a manager}. 
+\ex John is \textit{the author of this book}. 
+\z
+\z
+
+\ea
+\ea
+\gll {Del'fin --} \.{e}to \textit{ryba}. \\
+dolfin this fish \\
+\glt `Dolphins are fish.'
+\ex 
+\gll Moja {sestra --} \textit{mened\v{z}er}. \\
+my sister manager \\
+\glt `My sister is a manager.'
+\ex 
+\gll {Vasja  --} \textit{avtor'} \textit{\.{e}toj} \textit{knigi}. \\
+Vasja  author this.\textsc{gen} book.\textsc{gen}\\
+\glt `Vasja is the author of this book.'
+\z
+\z
+
+\noindent In this chapter, I will not go into the details of the semantic analyses proposed for NPs in predicate position. It suffices to say that in a classical (by now) theory of type shifting based on \citeposst{partee87} proposal, the denotation of NP can shift from a predicate type {$\langle e,t \rangle$} to an individual of type {$e$} or a quantifier type {$\langle \langle e,t \rangle, t \rangle$}. Combined with one of the approaches to the denotation of copula \textit{be}, the type shifting theory opens up various options to account for the behaviour of nominal predicates and arguments. In this chapter, I will only consider nominal arguments and leave out the discussion of (in)definiteness in predicate position, although to the best of my knowledge there is no articulated proposal for the semantics of predicative nominals in languages without articles, so this niche should eventually be filled.\footnote{There is, however, a considerable body of literature on the interpretation of predicative nominals in relation to their case, Nominative or Instrumental (see, for instance, \citealt{pereltsvaig01, geist08a}, to mention just a few). No connections to (in)definiteness have been made or suggested in this literature, with an exception of \citet{bogatyreva14}, who claims that instrumental predicative nominals are weakly referential.} 
+
+As for argument position, BNs in Russian do not really have any distributional restrictions per se, which is what we intuitively expect in a language without articles. In particular, BNs appear freely as subject and direct or prepositional objects, with a full range of interpretations available for arguments, although some interpretations appear to be constrained to or preferred for certain argument positions, as we will discuss in more detail below. In the rest of this section, I will discuss BNs in subject and object position, leaving aside prepositional BN arguments, as they do not exhibit any additional relevant properties that are not present in other types of arguments. The empirical overview below is organised by grouping together various types of interpretations, the main division line being drawn between a generic/kind vs. an individual object interpretation. 
+
+\subsection{Generic/kind BNs} \label{kinds}
+
+Both morphologically singular and plural bare nominal phrases in Russian can have a generic reference \citep[see][]{chierchia98, doron03, dayal04}, as exemplified in (\ref{sgkind}) and (\ref{plkind}):\footnote{This discussion is limited to a generic/kind interpretation of nominal phrases. There are other well-known means of expressing genericity. For a broader overview, the reader is referred to \citet{krifkaetal}. \textcitetv{chapters/04_filip} discusses a verbal marker of genericity in Czech.}
+
+\ea \label{sgkind}
+\ea 
+\gll\textit{Kit}  naxoditsja	na 	grani  	is\v{c}eznovenija. \label{kit} \\
+whale.\textsc{nom.sg} is.found 	on 	verge 	extinction.\textsc{gen} \\
+\glt`The whale is on the verge of extinction.'
+\ex
+\gll \textit{Poezd} kak 	sredstvo 	peredvi\v{z}enija 			o\v{c}en'	udoben. \label{poezd} \\
+train.\textsc{nom.sg} 	as 		means 			transportation.\textsc{gen} very 		convenient.\textsc{sg} \\
+\glt `The train as a means of transportation is very convenient.'
+\z
+\z
+
+\ea \label{plkind}
+\ea 
+\gll \textit{Kity}  	naxodjatsja		na 	grani  	is\v{c}eznovenija. \\
+whale.\textsc{nom.pl}  	are.found 			on 	verge 	extinction.\textsc{gen} \\ 
+\glt `Whales are on the verge of extinction.'
+\ex 
+\gll \textit{Poezda} kak 	sredstvo 	peredvi\v{z}enija 			o\v{c}en' 	udobny. \label{poezda} \\
+train.\textsc{nom.pl} 	as 		means 			transportation.\textsc{gen} very 		convenient.\textsc{pl} \\
+\glt`Trains as a means of transportation are very convenient.'
+\z
+\z
+
+\noindent In contrast to Russian, in a language with overt determiners like English, the nominals corresponding to the subject in (\ref{sgkind}) will be expressed by means of a definite generic \citep[cf.][]{carlson77} or the singular generic \citep[cf.][]{chierchia98}, that is \textit{the whale} or \textit{the train}, as illustrated in (\ref{whale}). On the other hand, English also allows bare plurals to refer to kinds. This is shown in (\ref{whales}). \citet{borikespinal15} propose a term \textsc{definite kind} in relation to a kind referring singular in (\ref{whale}) and reserve the term \textit{generic} for plurals exemplified in (\ref{whales}). 
+
+\ea \label{genericenglish}
+\ea\textit{The whale} is on the verge of extinction.\label{whale}
+\ex \textit{Whales} are on the verge of extinction. \label{whales}
+\z
+\z
+
+\noindent A common background assumption that seems to be supported by experimental evidence \citep[see][]{ioninetal11} is that plural generics are more frequent and less restricted. The observation that singular generics as in (\ref{whale}) are more restricted in their distribution goes back to \citet{carlson77}, which is probably the most influential approach to kind reference to date. Carlson assumes that the two generic expressions in (\ref{genericenglish}) refer to the same ontological object, namely, a kind, as opposed to an entity. However, a definite generic, in Carlson's terminology, can only be used to refer to well-established kinds \citep[see also][]{krifkaetal}. 
+
+%One of the well-known examples that illustrate the restriction is given in (\ref{wellestablished}) for English \citep[taken from][p.69]{krifkaetal}:
+
+%\ea \label{wellestablished}
+%\ea The Bengal tiger is dangerous.\label{bengalitiger}
+%\ex $\#$The wounded tiger is dangerous. \label{wondedtiger}
+%\z
+%\z
+
+%\noindent Since in our natural environment it is not customary to classify types of tigers by having or not having been wounded and/or to attribute any common status to this classification, the example in (\ref{wondedtiger}) sounds bizarre in a standard situation. However, contextual manipulation can render a DP such as \textit{the wounded tiger} acceptable with a generic meaning, just like \textit{the Bengal tiger} \citep[cf.][]{dayal04,krifkaetal, borikespinal15}. This means that the well-established kind restriction is not linguistic (semantic) in nature, but should rather be attributed to the encyclopaedic knowledge of conversation participants, their shared cultural and social conventions, and their conceptualization of reality by means of various classificational criteria .
+
+The claim that generic expressions in (\ref{whale}) and (\ref{whales}) refer to the same ontological object has been challenged by \citet{borikespinal15} for Spanish and by \citet{seres20} for Russian. \citet{borikespinal15} claim that at least in Spanish, definite kind expressions of the type \textit{el b\'{u}ho} in (\ref{buho}) denote the kind or species itself \citep[cf.][]{jespersen27}, while plural subjects, which are also definite in Spanish, as illustrated in (\ref{buhos}), ``refer to a (maximal) sum of representatives of the kind, but do not name the kind itself'' \citep[see][170]{borikespinal15}. 
+
+\ea
+\ea \gll El b\'{u}ho \minsp{\{} es  com\'{u}n / est\'{a}  por  todas  partes /  desaparece r\'{a}pidamente /  {a menudo}  es  inteligente\}. \label{buho}\\
+the  owl {} is common {}  is at all parts {} disappears rapidly {} often is intelligent \\
+\glt `The owl is \{common / widespread / quickly disappearing / often intelligent\}.'
+\ex \gll Los  búhos  \minsp{\{} son  comunes / est\'{a}n  por  todas  partes / desaparecen  r\'{a}pidamente /  {a menudo}  son  inteligentes\}. \label{buhos}\\
+the owls {} are common {}  are at all parts {}  disappear rapidly {} often are intelligent \\
+\glt `Owls are \{common / widespread / quickly disappearing / often intelligent\}.'\\\hfill (Spanish; \cite[][171]{borikespinal15} )
+\z
+\z
+
+\noindent As has already been mentioned, the term \textsc{definite kinds} is proposed by \citet{borikespinal15} for kind referring nominals exemplified in (\ref{buho}). The proposed analysis derives definite kinds by applying an iota operator directly to the denotation of a noun, which is assumed to denote properties of kinds \citep[cf.][]{mcnallyboleda04, dobrovieoliveira08, espinal10, espinalmcnally11}. A definite entity interpretation arises if Number intervenes: Number is defined as a semantic instantiation operator that applies to properties of kinds (the denotation of a common noun) and yields properties of objects \citep[cf.][]{deprez05}. Crucially, definite kinds are numberless in \citeposst{borikespinal15} analysis.\footnote{This is just a brief summary of the analysis proposed by \citet{borikespinal15}, the reader is referred to the original paper for a detailed justification of this particular theoretical proposal.}
+
+As for plural generic expressions as the one exemplified in (\ref{buhos}) above, \citet{borikespinal15} argue that in Spanish, a generic reading for definite plural subject arguments is treated more like an epiphenomenon: this reading is derived by an intensionalizing operator $^{\wedge}$ applied to the definite description, i.e., $^{\wedge}\iota$, an operation that is triggered only when the nominal expression is in argument position of a kind- or an individual-level predicate (henceforth also k-/i-level), largely following the analysis of \citet{chierchia98} for Romance. 
+
+To sum up, \citet{borikespinal15} attribute two different semantic analyses to the two types of generic expressions in (\ref{buho}) and (\ref{buhos}), the former being analysed as referring to a kind entity itself, and the latter being conceptualised as intensionalized definite plural expression referring to a maximal set of individual entities satisfying the descrptive content of a noun. From the ontological point of view, hence, morphologically singular and plural expressions refer to essentially different types of entities. \citet{borikespinal15} suggest that this analysis reflects two different conceptual strategies that human beings use to refer to kinds: one is a direct kind reference and another is reference to a kind via its instantiations. 
+
+The analysis presented above has been applied to Russian in \citet{borikespinal19}, \citet{seres20} and \citet{borikespinal20}. While the interested reader is referred to the original sources for the details of the respective analyses, I outline the empirical coverage of these works. Definite kind expressions, apart from subject position of kind-level predicates exemplified in (\ref{kit}) above, include modified kinds in (\ref{amurtiger}) (see \citealt{borikespinal19, borikespinal20}) and are also found in definitional generic sentences in (\ref{kaban}), as well as in the object position of \textit{invent}-type predicates in (\ref{ipad}) (see \citealt{seres20}), as illustrated below: 
+
+\ea \label{defkindsR}
+\ea \gll \textit{Amurskij} 	\textit{tigr} 	zanesen	 v Krasnuju 	knigu. \label{amurtiger}\\			
+amur 		tiger 	registered 	in Red 			book\\
+\glt `The Siberian tiger is registered in the IUCN Red list.'
+\ex \gll {\textit{Kaban}  --} \.{e}to dikaja svinja. \\
+wild.boar.\textsc{nom.sg}  that wild swine.\textsc{nom.sg} \label{kaban}\\
+\glt `The wild boar is the wild swine.'
+\ex \gll Steve Jobs izobr\"{e}l \textit{iPad}. \label{ipad}\\
+Steve Jobs  invented iPad.\textsc{acc.sg} \\
+\glt `Steve Jobs invented the iPad.'
+\z
+\z
+
+\noindent As for plural generics, according to \citet{seres20}, they are found in subject position of kind-level and individual level predicates. With individual level predicates, a generic interpretation arises only if a sentence is interpreted as characterising, i.e., ascribing an essential, characterising property to a subject in the absence of any spatiotemporal anchoring, as illustrated below: 
+
+\ea \label{plsubjR}
+\ea \label{widespread} \gll \textit{Sobaki} \v{s}iroko rasprostraneny.  \\ 
+dogs wide spread \\\hfill \textsc{gen, k-level}
+\glt `Dogs are wide spread'
+\ex \gll \textit{Sobaki} lajut. \label{lajut}  \\
+dogs bark \\\hfill  \textsc{gen, i-level}
+\glt `Dogs bark.'
+\ex \gll  \textit{Sobaki} lajut vo dvore. \label{lajutvodvore}  \\
+dogs bark in yard \\\hfill \textsc{indiv, i-level}
+\glt `Some/The dogs are barking in the yard.'
+\z 
+\z
+
+\noindent Note that the counterpart of (\ref{widespread}) with a singular subject \textit{sobaka} `dog.\textsc{sg}' would sound strange, as \textit{widespread} is a distributive kind-level predicate that requires plurality of its argument \citep{chierchia98}. In (\ref{lajut}) and (\ref{lajutvodvore}), the generic interpretation of the whole sentence comes from a predicate and is presumably due to a \textsc{gen} operator (see \citealt{krifkaetal} for sentence-level genericity). The only difference between (\ref{lajut}) and (\ref{lajutvodvore}) is the presence of a locative prepositional phrase which immediately renders a generic reading of the subject \textit{sobaki} `dogs' impossible. Singular subjects are possible in both cases, but the interpretation of (\ref{lajut}) would be then comparable to the English \textit{A dog barks}, wheareas (\ref{lajutvodvore}) would just be a statement about an individual definite or indefinite dog. 
+
+BNs with a kind interpretation bear an intimate connection to the notion of definiteness, which will be discussed in detail in \sectref{definiteness}. In particular, it is common to derive a kind (a definite kind, in the terminology of \citealt{borikespinal15}) reading of \textit{the whale} from example (\ref{whale}) by means of an iota operator, which is also responsible for a ``regular'' definite interpretation in formal approaches, as proposed, for instance by \citet{chierchia98,dayal04}. \citet{borikespinal15} also employ an iota operator in their analysis of definte kinds, which they apply to Russian in \citet{borikespinal19, borikespinal20}. All these proposals will require adjustments in the light of the claims that will be made in \sectref{definiteness}, so we will come back to this issue in \sectref{interimconclusions}. To proceed with the empirical part, we will now turn to an overview of BNs with an individual/object reference in Russian in relation to their position in a sentence. 
+
+\iffalse
+Plural generic nominals rarely (if at all) appear as postverbal subjects: 
+
+\ea  \gll $\#$Na grani is\v{c}eznovenija naxodjatsja \textit{tigry}. \label{postverbalsubR} \\
+on verge extinction.\textsc{gen} are.found tigers \\
+\glt Intended: 'Tigers are on the verge of extinction.'
+\z
+
+\noindent In object position, a generic interpretation of bare plurals arises, according to \citet{seres20}, only with psychological verbs with experiencer subject like \textit{hate} \citep[cf.][]{belettirizzi88}, and in the absence of any spatiotemporal specification or anaphoric references: 
+
+\ea \gll  
+Ja nenavi\v{z}u sobak. \label{nenavizhusobak} \\
+I hate dogs.\textsc{acc} \\
+\glt 'I hate dogs.'
+\z
+
+\noindent Thus, as \citet{seres20} argues, a generic interpretation of bare plural nominals in Russian is determined by contextual factors: the type of predicate, the absence of spatiotemporal anchoring or anaphoric links are the crucial factors that allow for a generic interpretation, which is achieved by pragmatic strengthening mechanisms that apply to a semantically indefinite nominal. The reader is referred to \citet{seres20} for the details of the analysis, but for our purposes it is important to emphasise that the existing analyses of kind referring nominals in Russian \citep{borikespinal19, borikespinal20, seres20} make a crucial difference between the semantic and syntactic composition of a definite kind expressions exemplified in (\ref{defkindsR}) and plural expressions with generic reference exemplified in (\ref{plsubjR}) and (\ref{nenavizhusobak}). In particular, definite kinds are argued to be the default way to express D-level genericity \citep[cf.][]{krifkaetal}, a reading that refers to the kind itself and is directly constrained by the syntactic and semantic structure of the nominal itself. Generic nominals, however, acquire this interpretation due to specific contextual factors and not due to the internal structure of a nominal. Semantically, their syntactic and semantic representation is similar to the one of nominals referring to pluralities of individuals. 
+\fi 
+
+\subsection{(In)definite BNs and word order}
+
+If a bare nominal refers to an individual object, rather than to a class or a kind, it seems that, at least in Russian, it can get both a definite and an indefinite reading, although there are some factors that appear to constrain the apparent freedom of interpretation. One such factor, probably the most discussed and well known one, is word order and hence we will now look at the effects of linear position of a nominal on its interpretation. 
+
+In the descriptive literature on Russian, it has often been pointed out that the following correlation holds: preverbal BNs tend to be interpreted as definite, whereas postverbal ones usually get an indefinite reading \citep[cf.][]{pospelov70, fursenko70, chvany73, king95}. Examples in (\ref{kniga}), modelled on \citeposst{kramsky72} examples from Czech, illustrate this effect:
+
+\ea \label{kniga}
+\ea \gll Kniga			le\v{z}it	na	stole.\\
+book.\textsc{nom} 	lies	on	table.\textsc{loc}\\
+\glt `The book is on the table.'
+\ex \gll Na stole le\v{z}it	kniga.\\
+On	table.\textsc{loc} 	lies	book.\textsc{nom}\\
+\glt `There is a book on the table.'
+\z
+\z
+
+%Such a pattern, observed in Russian, where a preverbal subject is interpreted as definite and a postverbal subject as indefinite, has been claimed to be universal \citep{leiss07}.
+%\footnote{It has been also argued (\citealt{simik-burianova20}) that definiteness of bare nominals in Slavic is affected not by the relative (i.e., preverbal vs. postverbal) position of this nominal in a clause, but by the absolute (i.e., clause initial vs. clause final) position.}  
+\noindent A similar correlation between distribution and interpretation has been reported for other articleless languages, such as Mandarin, where preverbal bare nominals are interpreted only as generic or definite, while postverbal bare nominals can be interpreted as either indefinite or definite or generic \citep{chengsybesma14}. In fact, the correlation ``preverbal--definite'' and ``postverbal--indefinite'' has even been claimed to be universal \citep{leiss07}.
+Thus, at least at first impression, the contrast between definite and indefinite readings of nominals can be perceived, understood and even encoded in a language without articles.  This observation is supported by the literature: a common wisdom seems to be that languages without articles can express definiteness distinctions by other means, despite the absence of an article system. 
+
+However, perceived definiteness of preverbal nominals may result from an interplay of various factors, one of which is topicality. In \sectref{BNtopics}, I will discuss possible constraints on the interpretation of BNs in sentence initial position, which is usually assumed to be a position for topics in Russian \citep[see, for instance,][]{geist10, jasinskaja16}.\footnote{This, however, does not mean that a ``topic position'' in a strictly syntactic sense is necessarily postulated for Russian. What I understand by a ``topic position'' is simply the leftmost position (in a linear sense) in a sentence. If there is a topic in the leftmost position of a sentence, it does not entail (at least in my view) the presence of a specific syntactic projection associated with Topic in syntactic structure.} Several other studies have raised the question of whether preverbal vs. postverbal linear position of a nominal also plays a role in its interpretation: a corpus study for Czech by \citet{simik-burianova20} and an experimental study for Russian by \citet{Borik.etal2020}, \citet{seresetal}, which will be discussed in \ref{BNpreverbal}.  %and \ref{BNpostverbal} we will look at those analysis in more detail.
+
+
+\subsubsection{BNs in topic position} \label{BNtopics}
+
+It is well known that information structural principles can impose various constraints and conditions on the interpretation of nominal arguments (as well as other elements of a sentence). Russian belongs to a group of so-called ``free word order'' languages, which means that changes in the order of constituents, when permitted, do not influence the syntactic function of affected elements but rather the information structural properties of a sentence. It has often been suggested in classical descriptive and functional literature that word order alternations in Slavic languages are determined by information structure \citep[see][i.a.]{mathesius38, sgall72, hajicova74, isacenko76, yokoyama87, Comrie1981}.\footnote{For a broader discussion of factors that can influence the word order in Slavic languages see \citet{jasinsimik}.} 
+
+Topicality, one of the main notions of information structure \citep[see, for instance,][]{krifka08}, is particularly relevant for a discussion of referential properties of nominal phrases. Although the concept of topicality has been around for many years and its relevance for linguistics is not a subject of any considerable debate, there are still many ways in which topics are understood. For concreteness, only sentential topics will be discussed here. A sentential or aboutness topic is what a sentence is about, following \citet{reinhart81} and \citet{endriss09}, among many others. The following example taken from \citet[20]{endriss09} can provide an elementary illustration of a sentential topic in the sense adopted here. 
+
+\ea
+\ea Yesterday, Clarissa visited Dena. \label{clarissa}
+\ex Yesterday, Dena was visited by Clarissa.  \label{dena}
+\z
+\z
+
+\noindent The sentence in (\ref{clarissa}) is naturally understood as saying something about Clarissa, whereas (\ref{dena}) is rather a statement about Dena. In this sense, \textit{Clarissa} is a topic of (\ref{clarissa}) and \textit{Dena} is a topic of (\ref{dena}). 
+
+For Russian, both preverbal subjects and objects are considered topics when they appear in sentence initial position \citep[cf.][]{jasinskaja16}. As illustrated in the examples below, both subject (see (\ref{tolya})) and object (see (\ref{varenje})) can also be left-dislocated, a construction that is considered to be a reasonable, although not a clear-cut diagnostic for topichood \citep[see][]{reinhart81}.
+
+\ea
+\ea \gll	Tolya v\v{c}era 				razgovarival s 				Anej. \label{tolya} \\
+		Tolya.\textsc{nom} yesterday 	talked.\textsc{ipfv} 			with	Anja.\textsc{instr} 	\\
+\glt	`Tolya talked to Anya yesterday.' 
+\ex \gll \v{C}to		kasaetsja	Toli, 		to 		on	v\v{c}era 			razgovarival s 				Anej.\\
+		what 	concerns 	Tolya 	that	he	yesterday	talked.\textsc{ipfv} 			with	Anya \\
+\glt `As for Tolya, he talked to Anya yesterday.'
+\z
+\z
+
+\ea
+\ea \gll	Varen'e	ja	v\v{c}era 			s''jel. \label{varenje} \\
+		jam.\textsc{acc}			I 		yesterday 	ate.\textsc{pfv}	\\	
+	\glt `I ate the jam yesterday.'
+\ex \gll \v{C}to 		kasaetsja	varen'a, to 		ja	ego v\v{c}era 				s''jel.\\
+		what 	concerns 	jam 				that I 		it 		yesterday ate.\textsc{pfv} \\
+\glt `As for the jam, I ate it yesterday.'
+\z
+\z
+
+\noindent The connection between definiteness and topicality is based on a descriptive generalization that is accepted in a lot of semantic literature on topics in general: elements that appear in topic position can only be strongly referential, i.e., of type {$e$}, and hence either definite or specific indefinite \citep[see, for instance][]{reinhart81, erteshir98, portneryabushita01, endriss09}, where specificity is understood as having a particular referent and being of type {$e$}. An appealing intuitive idea behind this generalisation is that if the nominal topic does not refer to any entity, it  cannot serve as an aboutness topic because then there is no entity to be talked about.\footnote{\label{fn:leonetti}Some examples from various Romance languages have been brought up in the literature to show that a topicalized left dislocated element can, in fact, be interpreted non-specifically. The following examples from \citet{leonetti10} illustrate the point for Spanish (\ref{vinos}) and Italian (\ref{libri}): 
+
+\ea 
+\ea \gll 	Buenos	vinos, \minsp{(} los) 							hay 								en	Castilla. \label{vinos} \\
+		good 			wines {} \textsc{cl.masc.pl} 	have.\textsc{pres.3sg}  	in 	Castille \\
+\glt `There are good wines in Castille.'
+\ex \gll Libri 		in	inglese,	\minsp{(} li 								/ 	ne) 					pu\`{o} 	trovare		al 	 secondo		piano.  \label{libri}\\
+	books 	in 	English {} \textsc{cl.masc.pl} {} \textsc{cl.part}		can.\textsc{pres.3sg}  	find			on.the	second 	floor \\
+\glt `English books can be found on the second floor.'
+\z
+\z
+
+\noindent As suggested by \citet{leonetti10}, non-specific or weak indefinites topics do exist, although are highly restricted. 
+In general, the examples above illustrate that the correlation between topic and definiteness and/or topic and referentiality is not a strict dependency but rather a strong tendency.}
+
+As far as Russian is concerned,  it has been suggested that BNs in Russian that appear in preverbal subject position are subject to an indefiniteness constraint. The restriction is proposed and extensively discussed by \citet{geist10}, who gives the following example to illustrate the phenomenon:
+
+%\exg. 
+%V komnate bylo    neskol'ko malen'kih		detej, 		mal'\v{c}ikov 	i 		 devo\v{c}ek. \label{deti} \\
+%				in room        were  several     small        children 		boys 				and 	girls \\
+%				'There were several small children in the room.'
+
+\ea
+\begin{xlist}
+\exi{a.}{\textit{Context:} I saw a boy and a girl. \label{devochkadef}}
+\exi{}[]{\gll Devo\v{c}ka vo\v{s}la  v  dom.\\
+girl.\textsc{nom}    came into  house.	 \\
+\glt `The girl entered the house.'}
+\exi{b.}{\textit{Context:} The door opened and\dots \label{devochkaindef}}
+\exi{}[*]{\gll Devo\v{c}ka vo\v{s}la v dom. \\
+girl.\textsc{nom}    came into house.\\
+\glt Intended: `A girl entered the house.'\hfill \citep[193, ex. (5)]{geist10}}
+\end{xlist}
+\z
+
+\noindent In these examples, the sentences in brackets set a context, which induces a definite interpertation of \textit{devo\v{c}ka} `girl' in (\ref{devochkadef}a), and an indefinite one in (\ref{devochkaindef}b). In the second case a bare singular nominal is not acceptable in the intended indefinite reading. To convey this meaning, the subject can either be explicitly marked with one of the indefinite determiners (actualizers, in \citeposst{Paduceva1985} terminology) available in Russian, as illustrated in (\ref{odnadevochka}), or appear postverbally, as in (\ref{devochkapost}):\footnote{See \citet{Ionin2013} for arguments that unstressed \textit{odin} `one' is a specificity marker in Russian.} 
+
+\ea \label{odnadevochka}
+\textit{Context:} The {door opened} and\dots\\
+{\gll \minsp{\{} Odna / kakaja-to\} devo\v{c}ka vo\v{s}la v dom.  \\
+{} one {} some girl came into house \\
+\glt `A / Some girl entered the house.'}
+\z
+
+\ea \label{devochkapost} \textit{Context:} The door opened and\dots\\
+{\gll V dom vo\v{s}la devo\v{c}ka. \\
+into house came girl \\
+\glt `A girl entered the house.'\hfill \citep[193, ex. (6)]{geist10}}
+\z
+
+\noindent However, as \citet{geist10} also notices, in other cases a preverbal subject can be interpreted indefinitely, as illustrated in (\ref{rebenok}): 
+
+\ea \textit{Context:} {Why is it} {so noisy?}\\
+\gll Reb\"{e}nok pla\v{c}et. \label{rebenok}\\
+child is.crying \\
+\glt `A child is crying.' \hfill \citep[194, ex. (7)]{geist10}
+\z
+
+\noindent After carefully considering the empirical data, \citet{geist10} arrives at a conclusion that it is not pre- or postverbal position per se that restricts the indefinite interpretation of BNs, but the topic-comment structure. Thus, in thetic sentences, which are sentences without a topic/comment division like (\ref{rebenok}), a bare nominal that appears preverbally can be interpreted as indefinite, whereas the indefinite interpretation is excluded for bare NPs that are aboutness topics, as in (\ref{devochkaindef}). 
+
+To explain the data, \citet{geist10} adopts as a starting point the generalization according to which a topic of a sentence has to be strongly referential, i.e., either definite or specific indefinite. Given that indefinite BNs in Russian seem to be banned from topic position, Geist suggests that this restriction can be explained by the absence of a \textit{specific} indefinite interpretation in BNs in Russian. Non-specific (weakly referential) indefinites cannot be aboutness topics (although see footnote~\ref{fn:leonetti} for exceptions in other languages), as witnessed by (\ref{devochkaindef}). If BNs, indeed, cannot render a specific indefinite interpretation in Russian, they cannot be topics. Hence, only BN with a definite interpretation are acceptable aboutness topics in Russian. 
+
+\citeposst{geist10} analysis sets a milestone in research on BNs in articleless languages as it is one of the few careful, systematic and thorough studies of possible constraints on their interpretation in Russian. However, despite the undeniable relevance and value of Geist's proposal, I have two objections to it, both of which are based on a more careful and extended examination of the empirical data. The first one is that indefinite BNs do actually appear as aboutness topics in sentence initial position, albeit (possibly) not very frequently.\footnote{Frequency is an intuitive guess here, no specific frequency study has been done for this work. See, however, \citet{simik-burianova20} for a corpus study in Czech, which reveals that indefinite BNs, although existent, are very infrequent in sentence initial position (which is not necessarily a topic position). I think it would be safe to assume that Russian and Czech would not show significant differences in this respect.} The second objection is based on examining the behaviour of bare singular nominals in object position and showing that they do, in fact, get a specific reading in typical ambiguity contexts. 
+
+As for the first point, I provide an example below that is very similar to Geist's example (\ref{devochkaindef}) discussed above. My example is taken from from the ruTenTen corpus, 
+available through Sketch Engine \citep[][]{kilgarriff2014sketch}.\footnote{I am grateful to Daria Seres for her collaboration in obtaining these data. The Russian ruTenTen corpus is available here: \url{https://www.sketchengine.eu/rutenten-russian-corpus/}.}
+
+\ea\gll 
+Odna\v{z}dy v maje mesjace, v pasxal'nye dni my priexali v detskij prijut. ... Ja sprosil detej: \minsp{``} \v{C}em vas obradoval segodnja Gospod'?" \textit{Odin} \textit{mal'\v{c}ik} skazal: \minsp{``} Ja utrom prosnulsja i poblagodaril Gospoda za to, \v{c}to on prigotovil nam etot den'." On obradovalsja, \v{c}to opjat' uvidel svet. \textit{Devo\v{c}ka} vspomlina: \minsp{``} Ja uvidela segodnja aista." \textit{Drugaja} \textit{devo\v{c}ka} rasskazala: \minsp{``} A ja segodnja babu\v{s}ku uvidela vo sne." \label{pasxa} \\
+once in may month in Easter days we arrived in children orphanage. {} I asked children {} what you make.happy today Lord one boy said {} I in.morning woke.up and thanked Lord for that what he prepared us this day he got.excited that again saw light girl remembered {} I saw today stork other girl told {} and I today grandmother saw in dream \\
+\glt `Once we went to an orphanage in may around Easter. ... I asked the children: ``How did the Lord make you happy today?" One boy said: ``I woke up in the morning and gave thanks to the Lord for the fact that he had given this day to us." He was excited to see the light again. A girl remembered: ``I saw a stork today." Another girl said: ``And I saw my grandmother in my dream."\,'
+\z
+
+\noindent This is a rather long example but I would like to draw the reader's attention to the BNs in italics. The first one, \textit{odin mal'\v{c}ik} `one boy', appears with an indefinite marker \textit{one}, just as predicted by Geist's account. However, the first occurrence of \textit{devo\v{c}ka} `girl' can only have an indefinite reading, witnessed by the fact that in the next line \textit{drugaja devo\v{c}ka} `another girl' is successfully used, hence it is obvious that there is more than one girl in the relevant group of children. This is, hence, a clear instance of an indefinite BN that occurs in a sentence initial position as aboutness topic. The example is not exceptional, as a corpus search yields quite a few sentences with an indefinite bare singular nominal in sentence initial position, like, for instance, (\ref{sluzaschij}):
+
+\ea \label{sluzaschij} \gll 
+\textit{Slu\v{z}as\v{c}ij} pri\v{s}el na rabotu na pjat minut ran'\v{s}e. Ego posadili za \v{s}piona\v{z}. \textit{Drugoj} \textit{slu\v{z}as\v{c}ij} pri\v{s}el na pjat minut poz\v{z}e. Ego posadili za sabota\v{z}.\\
+clerk came on work on five minutes earlier him imprisoned for espionage other clerk came on five minutes later him imprisoned for sabotage \\
+\glt `A/One clerk came to work five minutes earlier. He was imprisoned for espionage. Another clerk came to work five minutes later. He was imprisoned for sabotage.'
+\z
+
+\noindent Just like in the case of (\ref{pasxa}), it should be obvious that the only available interpretation for the BN \textit{slu\v{z}as\v{c}ij} `clerk' in (\ref{sluzaschij}) is an indefinite one, which contradicts the conclusion that indefinite bare nominals are ruled out from sentence initial position.\footnote{Ljudmila Geist (p.c.) notes that (\ref{sluzaschij}) is not necessarily an example with an aboutness topic. I think it is, although it might be less obvious than in the case of (\ref{pasxa}). In any case, we both agree that a more extensive corpus study is needed where topichood is controlled for.} Our corpus search provides a few examples where a bare, non-modified singular nominal appears in sentence initial position and can only have an indefinite interpretation. This empirical fact, together with the scope argument developed below, suggests that we should reassess the generalisation put forth in \citet{geist10} and look for an alternative theoretical explanation.
+
+One question that invites itself with respect to the Russian data discussed above is how can examples like (\ref{devochkaindef}) and (\ref{pasxa}) or (\ref{sluzaschij}) coexist in the same language.\footnote{In my own native judgment, (\ref{devochkaindef}) is not really ungrammatical but still rather odd. Nevertheless, the difference in acceptability of (\ref{pasxa}) and (\ref{devochkaindef}) needs to be explained, although if the contrast is weaker, then the explanation does not necessarily have to be stated as a strict rule, but can rather be formulated as a tendency or a (strong) preference.} Even though I will not provide an elaborate and/or detailed answer to this question, I would like to offer some tentative explanation which can hopefully be properly worked out (or properly ruled out) in the future. The key observation, I believe, lies in the fact that although Russian lacks articles, it does use specificity markers for indefinites, as was illustrated in (\ref{odnadevochka}), repeated below: 
+
+\ea
+\gll \minsp{\{} Odna / kakaja-to\} devo\v{c}ka vo\v{s}la v dom. \\
+ {} one {} some girl came into house\\
+\glt `A / Some girl entered the house.'
+\z
+
+\noindent Elements like \textit{odna} `one' or \textit{kakaja-to} `some' are used to explicitly mark specificity of the referent of a nominal expression. Although, unlike articles in English, they are never obligatory, native speakers might have a strong preference to use them, especially in those contexts where only strongly referential nominals are allowed, like in sentence initial topic position, or in any other context where it might be crucial to disambiguate a BN. Specificity markers are the only elements in the nominal domain, apart from demonstratives, which will be discussed in \sectref{demonstratives} below, that explicitly set the referential status of a nominal, so it is natural that speakers prefer to use them in the contexts where they are most useful. The contrast between a bare indefinite, which is ambiguous between a definite and an indefinite interpretation, as opposed to an indefinite with a specificity marker seems to be best described in terms of (strong) preference rather than a difference in grammaticality, so a formal account of this phenomenon might call for mechanisms similar to the ones adopted in optimality theory. 
+
+%Thus, although \citeposst{geist10} results set the scene for all the subsequent formally oriented research on (in)definiteness in - at least - Slavic languages, and despite the undeniable relevance and value of the proposal, it seems that, empirically, the observations made in that paper reflect rather a - possibly strong - tendency than a clear-cut generalisation. 
+
+Let me now move to the second objection, which concerns the availability of a specific interpretation for indefinite BNs in Russian. I remind the reader that the claim defended in \citet{geist10} is that BN objects are necessarily weak, i.e., always have a narrow scope. Geist formulates the following descriptive generalisation about the available interpretations for BN objects in Russian: 
+
+\eanoraggedright\label{scope} \textit{Scope behaviour of bare indefinite NPs in Russian:}\\
+Bare indefinite NPs have narrow scope and cannot scope out of syntactic islands.\hfill\citep[][212, ex. (61)]{geist10}
+\z
+
+\noindent I will narrow down the discussion below to bare singular (BS) objects and argue that they can, in fact, have both a narrow and a wide scope reading in Russian and hence behave as proper full fledged indefinites. In other words, they exhibit the same properties as the English indefinite nominals with the indefinite article \textit{a} (\textit{a}-indefinites). But let us first have a look at the example that Geist provides to support the claim in (\ref{scope}) \citep[see][211--212]{geist10}: 
+
+\ea \gll 
+D\v{z}on 	xo\v{c}et 	\v{z}enit'sja 	na 	francu\v{z}enke. \label{frenchwoman}\\
+John 	wants 	marry 	on 	French.woman.\textsc{prep} \\
+\glt `John wants to marry a French woman.'
+\z
+ 
+\noindent According to \citet{geist10}, the prepositional object \textit{francu\v{z}enke} `French woman' in (\ref{frenchwoman}) cannot scope out of the opaque context created by the intensional verb \textit{xo\v{c}et} (wants), so the sentence would be incompatible with a continuation like `He met her last summer', which would require a specific/referential interpretation of the indefinite object. On the other hand, a continuation like `But he doesn't know any French women yet' is fine, as in this case the indefinite object has a weak quantificational reading. A specific (or referential) interpretation of bare singluar objects can only be triggered by a specificity marker, as in (\ref{specfrenchwoman}). In that case, as illustrated by the example, the continuation `He met her last summer' is fully acceptable.
+
+\ea \label{specfrenchwoman} \gll 
+ D\v{z}on 	xo\v{c}et 	\v{z}enit'sja 	na 	odnoj francu\v{z}enke. On poznakomilsja s nej pro\v{s}lym letom.\\
+John 	wants 	marry 	on 	one French-woman he met with her last summer \\
+\glt `John wants to marry a French woman. He met her last summer.'
+\z
+
+\noindent  	
+A closer look at the data, however, presents some complications for the empirical generalisation of \citet{geist10}. Consider the following example:  
+
+\iffalse
+\ea \gll 
+Vasja xo\v{c}et 	\v{z}enit'sja na sostojatel'noj 	\v{z}ens\v{c}ine 	s 	trexkomnatnoj 	kvartiroj v 	centre Moskvy \label{trexkomnatnaja}\\
+Vasja wants 	marry  on wealthy 	woman 	with 	three-bedroom 	flat in 	center Moscow \\
+\glt `Vasja wants to marry a wealthy woman with a three bedroom flat in the center of Moscow.'
+\z 
+
+\noindent It can be argued that the first intuition concerning the interpretation of the bare singular object in (\ref{trexkomnatnaja}) is that it has a narrow scope and the sentence means that any wealthy woman would do. However, given a particular context, for instance the one in (\ref{trexkomnatnajaseq}), a specific interpretation easily becomes more prominent: 
+
+\ea \label{trexkomnatnajaseq}
+Look at this lucky bastard. He's been sleeping on his friends' couches for two years and now we find out that Vasja \textit{wants to marry a wealthy woman with a three bedroom flat in the center of Moscow}. 
+\z
+
+\noindent Given this context, it is highly unlikely that Vasja still has no candidate in mind. %The most likely interpretation is that there is a specific woman and Vasja wants to marry her. 
+But if this is the case, the object has a specific reading, which means that 
+%the semantic properties of the object itself do not block a specific indefinite interpretation, and 
+the semantic representation of the object nominal in (\ref{trexkomnatnaja}) has to be similar to the representation of \textit{a}-indefinites. 
+
+A possible objection that can be brought up at this point is that the example in (\ref{trexkomnatnaja}) features a modified nominal and it is an empirical fact that modification facilitates a specific interpretation, although the reasons for it, to the best of my knowledge, remain mysterious. In fact, \citet{geist10} provides several examples to illustrate that Russian is no exception to the rule and modified singular nominals in Russian can, indeed, be interpreted specifically. To rule out this objection,  
+\fi 
+
+\ea \label{grant}
+\ea \gll
+Vasja ne polu\v{c}il grant \minsp{(} xotja 	zajavlenije 	bylo sostavleno 	o\v{c}en'	xoro\v{s}o). \label{granta}\\
+ Vasja not received grant {} although 	application 	was composed 		very 		well\\
+\glt `Vasja did not get a grant, although the application was written very well.'		 	  
+\ex \gll
+Vasja ne polu\v{c}il grant \minsp{(} \.{e}to 	den'gi 		iz 			drugogo 	proekta).   \label{grantb}\\
+Vasja not received grant {} this money 		from 	 another 		project\\
+\glt `Vasja did not get a grant, the money comes from a (different) project.'
+\z
+\z
+
+\noindent The examples in (\ref{grant}) illustrate scope ambiguity of a BS object not in an opaque context, but with respect to another scopal element, namely, negation. The first context favours a specific interpretation, as we are clearly talking about one specific grant that Vasja has applied for. In this case the existential operator associated with the indefinite object scopes out of negation (i.e., $\exists$~\textgreater~\textsc{neg}). In the second case, a grant is understood as a possible source of funding and hence does not have to be specific, which means that it takes a narrow scope with respect to negation (i.e., \textsc{neg}~\textgreater~$\exists$). Thus, a BS object \textit{grant} `grant' can be interpreted either specifically, as in (\ref{granta}), or as a weak non-specific indefinite, as in (\ref{grantb}), and the BS object in (\ref{grant}) exhibits exactly the same pattern with respect to scope as a canonical \textit{a}-indefinite in English.  
+
+An objection that could be raised with respect to (\ref{granta}) is that the object nominal in this sentence is definite. But the truth is, it does not have to be definite. Although \textit{grant} in (\ref{granta}) can be interpreted as something contextually identifiable, familiar and possibly unique in the given context, it can also be successfully used in a context that induces an indefinite reading, for instance (\ref{grantcont}) below: 
+
+\eanoraggedright It is the first time that Vasja applied for funding and only his close friend among his colleagues knew about that. Seeing that Vasja looks gloomy one day, one colleague asks that friend: `What's the matter with him?' The friend replies: `Vasja did not get a grant... although the application was written very well.' \label{grantcont}
+\z
+%\eanoraggedright It is the first time that our lab got a chance to apply for various sources of funding, including university grants, ministry grants and sponsor grants. Mary got three grants approved. But \textit{Vasja did not get a grant, although the application was written very well}. \label{grantcont}
+%\z
+
+\noindent This context clearly facilitates an indefinite interpretation of \textit{grant} in (\ref{granta}), it is a classical case of a new discourse referent, which would be rendered by an indefinite article in English (using a definite \textit{the grant} would probably lead to a presupposition failure in this context). The context promotes a specific reading, as this is a grant that Vasja has applied for, not just any grant. 
+
+To sum up, we have seen that bare singular indefinites in object position in Russian behave like full fledged indefinites. In particular, they can scope out of opaque contexts and show scopal ambiguity with respect to other scope taking operators like negation, the type of behaviour typical for \textit{a}-indefinites in English. This argument underlies an important objection to \citeposst{geist10} proposal based on the claim that indefinite BNs in Russian cannot get a specific reading. The argument will also be of crucial importance later in the discussion of a definiteness hypothesis for the interpretation of BNs in Russian (see \sectref{defhypothesis}). For now, we conclude that at least indefinite BSs are similar to the English \textit{a}-indefinites, as they show the same scopal ambiguities. Indefinite BNs can also appear in sentence initial position as witnessed by the examples from corpus discussed above, although not all examples with BNs as aboutness topics are equally acceptable (see also next section), the fact that still needs an explanation. However, the restriction on BNs in topic position is not absolute and can possibly be explained by the fact that BNs compete with and lose to those indefinites which are overtly marked for specificity,  which makes their referential status explicit and hence allow them to appear in topic position more freely. 
+
+As was pointed out at the beginning of this section, there is a common belief that the interpretation of BNs in Russian depends on their position in a sentence. We have by now reviewed the claim that BNs that appear in sentence initial position as aboutness topics can only be interpreted as definite. We have seen that there is a strong tendency to associate topicality with definiteness in Russian, just like in the majority of other languages, with or without articles, but this tendency cannot be formulated in strong definitional terms: it is not the case that topicality is a sufficient condition for definiteness. In the next section, we will review another proposal, which associates (in)definiteness with pre- or post-verbal position in a sentence, independently of topicality. 
+
+%PS: Add something about topicalized objects 
+
+\subsubsection{BNs in preverbal position} \label{BNpreverbal}
+
+Studies of the effects of word order on the interpretation of nominal phrases in Russian and other Slavic languages usually consider two factors. One is the influence of the information structure notions like topic on the (in)definiteness of BNs, something that we discussed in the previous section. Another factor is the linear position of a nominal constituent with respect to the verb and a possible influence of this position on the range of available readings for a BN in question. The predictions are mostly made for preverbal nominals, as postverbal position, as documented in the literature, imposes very few restrictions on the interpretation of BNs (see \citealt{brun01, simik-burianova20} for further references). As for preverbal position, \citet{czardybonetal14} recently claimed, based on a corpus experiment conducted for Polish data, that preverbal position increases the probabily of definiteness. However, as pointed out by \citet{simik-burianova20}, the study did not differentiate between sentence initial and preverbal position, so the results that they report can just as well be explained by the likelihood of definiteness in sentence initial position, as discussed in the previous section.  \citet{simik-burianova20} themselves insist that a dependency can be established between sentence initial (absolute, in their terms) position and definiteness, but pre- or postverbal position does not have a significant influence on the interpretation of BNs. However, \citet{seresetal} and \citet{Borik.etal2020} report the results of an experiment conducted for Russian, where the link between definiteness and preverbal position reemerges as a possible factor for definitness, so we will review this experiment in more detail. 
+
+In the experimental study reported in \citet{Borik.etal2020, seresetal}, 120 native speakers of Russian were asked to judge the acceptability of sentences containing pre- and postverbal bare nominals in two types of contexts, definiteness- and indefiniteness-suggesting contexts. To induce a definite reading, anaphoric or bridging contexts have been used. The empirical coverage was limited to subjects of stage-level intransitive verbs. The main conclusion drawn from the experiment is that linear word order in Russian cannot be considered the means to either encode or express definiteness and indefiniteness of BNs. The study, however, confirms a clear correlation between linear position and interpretation of bare nominals, in the sense that preverbal bare subjects are mostly interpreted definitely and postverbal subjects indefinitely. Another result that has been reported is that some (not all) indefinite preverbal subjects are judged as acceptable by native speakers. 
+
+%The experiment was designed as an Acceptability Judgement Test (AJT) with a scale from 1 (not acceptable) to 4 (fully acceptable). The survey was administered on-line using the SurveyMonkey software. The items were presented to participants visually and acoustically, so as to avoid a possible change in the interpretation due to intonation, as it has been claimed in the literature that if a preverbal noun receives a nuclear accent, it may be interpreted indefinitely (Pospelov, 1970; Jasinskaja, 2014, among others). Potentially, the effect of intonation or, in particular, stress may be stronger than the word order restriction described above. In the reported experiment, however, the variation in judgment caused by intonation was reasonably excluded, as all the experimental items were recorded with the usual, most neutral intonation contour used for statements in Russian (intonation contour 1, cf. \citealt{bryzgunova77}). This intonation contour is characterized by a flat, level pitch before the stressed syllable of the intonational nucleus, i.e., the stressed syllable of the most informative word in a sentence. In our examples, the stress was always on the last word of a sentence.
+
+%All the experimental items contained a bare subject nominal in a preverbal or postverbal position. All predicates were stage-level, according to \citeposst{carlson77} classification, expressed by an intransitive verb. The experiment was conducted with bare \textit{plural} nominals, although a reasonable expectation is that the effects found in the course of the experiment will be manifested in the case of singular nominals as well. The experimental sentences were presented in a brief situational context, which suggested either novelty (associated with indefiniteness) or familiarity (associated with definiteness) of the subject. A total of 48 items were presented to participants: 16 definiteness-suggesting (8 preverbal \& 8 postverbal) + 16 indefiniteness-suggesting (8 preverbal \& 8 postverbal) experimental scenarios and 16 fillers. The average answer time was 22 minutes. 
+
+These are some examples of the experimental items that have been used: 
+
+\ea \textit{Preverbal subject in an indefiniteness-suggesting context}: \\
+\.{E}to \v{z}e pustynja, \.{e}to samaja nastoja\v{s}\v{c}aja pustynja. V \.{e}toj mestnosti do six por ne bylo ni odnogo \v{z}ivogo su\v{s}\v{c}estva. No na pro\v{s}loj nedele \textit{pticy} prileteli.\\
+`This is a desert, a real desert. In this area there has never been a living creature. But last week birds came (lit. birds came flying).'
+\z
+
+\pagebreak
+\ea \textit{Postverbal subject in an indefiniteness-suggesting context}:\\
+\v{C}to-to strannoe stalo proisxodit? v na\v{s}ej kvartire. V kuxne vsegda bylo o\v{c}en' \v{c}isto, nikogda ne bylo ni odnogo nasekomogo. No nedelju nazad obnaru\v{z}ilis' \textit{tarakany}. \\
+`Strange things started happening in our flat. It has always been very clean in the kitchen, there has never been a single insect. But a week ago cockroaches were found (lit. found themselves cockroaches).'
+\z
+
+\ea \textit{Preverbal subject in a definiteness-suggesting context}:\\
+Kogda Katja i Boris vernulis' iz otpuska, oni obnaru\v{z}ili, \v{c}to ix dom ograblen. Pervym delom Katja brosilas' v spal'nju i proverila seif. Ona uspokoilas'. \textit{Dragocennosti} le\v{z}ali na meste.\\
+`When Katja and Boris came back from holidays, they found out that their house had been burgled. First of all, Katja rushed into the bedroom and checked the safe. She calmed down. The jewelries were still there (lit. jewelries lay in place).'
+\z
+
+\ea \textit{Postverbal subject in a definiteness-suggesting context}:\\
+O\v{z}ivlenije spalo, publika potixon'ku potjanulas' domoj. ``Po\v{c}emu vse uxodjat?" -- sprosil Mi\v{s}a. ``Gonki zakon\v{c}ilis'. V gara\v{z}i vernulis' \textit{ma\v{s}iny}.''\\
+`The agitation declined, the public slowly started going home. ``Why is everybody leaving?" Mi\v{s}a asked. ``The race has finished. The cars have returned to their garages." (lit. to garages returned cars).'
+\z
+
+\noindent The target nominal is always the one of the last sentence, marked here in italics. As can be seen from these contexts, the target BNs do not have to be topics, so topicality was considered as a factor that might influence the interpretation of a BN. The results of the experiment are presented in the \figref{fig:experiment}.
+
+	\begin{figure}[!htb]
+	\center{\includegraphics[width=0.6\textwidth]{figures/experiment.pdf}}
+	  \caption{\centering \label{fig:experiment} Average perceived acceptability of the experimental sentences}
+	\end{figure}
+
+First of all, we see in the graph a rather strong preference for interpreting preverbal NPs definitely and postverbal NPs indefinitely. This is the main result of the study that seems to confirm the relevance of pre-/postverbal position for the interpretation of a BN. However, there is no clear one-to-one correspondence, which is also to be expected and which suggests that  linear position per se cannot be considered a means of expressing (in)definiteness. The correlation between a linear position and interpretation is, in fact, a reasonably strong tendency but it remains a tendency. This result is in agreement with the results of previous experimental work on Slavic languages \citep[cf.][]{czardybonetal14, simik-burianova20} and with descriptive literature on Slavic world order. The results show that preverbal nominal subjects are much more likely to be interpreted as definites. However, indefinites are not rare in this position either and their acceptability is reasonably high. 
+
+One of the important question that this experimental study brings up relates to a long standing debate in the literature of what definiteness actually means in semantic terms (see \sectref{definiteness} for further discussion). In the experiment presented above, \citet{seresetal} and \citet{Borik.etal2020} followed \citet{Farkas2002} in assuming that the familiarity and the uniqueness approaches to definiteness could converge. In particular, as has already been pointed out, BNs in definiteness-suggesting contexts are anaphorically (directly or indirectly) linked to a referent in the preceding discourse. This makes all the experimental items fully legitimate candidates for semantically definite nominals because they are familiar to the speaker. However, this also means that all BNs in definiteness-suggesting contexts are \textit{given}, so the question that offers itself is whether the results of the experiment are influenced by the givenness status of the tested items. 
+
+Givenness is a category related, although not equivalent to definiteness. An element is given if there is an antecedent for it in a preceding discourse, so givenness is an information-structural category that is also closely related to anaphoricity. Any constituent of a sentence can have a status of given, including, of course, nominal arguments. 
+The relationship between definiteness and givenness is not straightforward: in principle, both definite and indefinite arguments can be either given or new. For instance, any contextually unique definite mentioned for the first time is new (e.g., \textit{The UV is very high today}, or \textit{The head of the department just called me}), whereas any anaphoric definite is given. Crucially, however, the given/new status seem to correlate with stress: deaccentuation and word order are common ways to indicate givenness of a certain constituent \citep[cf.][]{krifka08}.  As for Slavic languages, \citet{simikwierzba15} present a thorough study of the interaction between givenness, word order and stress in Czech. 
+
+In the Russian experiment discussed here a stress factor was controlled for in the sense that all example sentences were recorded with a neutral intonation, flat pitch, and a phrasal stress at the end of a sentence. Hence, all preverbal items (in definiteness and indefiniteness contexts) were unstressed and postverbal items (in definiteness and indefiniteness contexts) were stressed only when they also appeared in a sentence final position. It might be that givenness is the factor that had a certain influence on the acceptability judgments in the experiment, especially in the case of nominals in postverbal position in definiteness contexts, because the speakers might be less willing to accept a post-verbal stressed given nominal. However, stress considerations should not considerably alter the results of acceptability of BNs in preverbal position, so the conclusion that preverbal non-topic position still increases the likelihood of definiteness still holds. 
+
+Needless to say, the interaction of definiteness, anaphoricity, givenness and stress is the area that still needs to be thoroughly and carefully explored and Slavic languages, including Russian, present fruitful ground for further experimental work on the topic. Stress might be a particularly important factor for the availability of an indefinite interpretation in BNs, as it has been noticed in the literature that stressed indefinites become more acceptable in preverbal position. More experimental work in this area should be on the research agenda of Slavicists, and I hope that it will shed light on various puzzles of nominal interpretation in the future. 
+
+To sum up, this section was dedicated to the empirical overview of Russian BNs with the focus on word order as a factor that has been claimed to influence the availability/likelihood of (in)definite interpretation of BNs in Russian. I have discussed the interpretation of BNs in topic position and in pre/postverbal position and have hopefully shown that both sentence initial position and preverbal position increase the probability of a definite interpretation of BNs. It is important to emphasise that this tendency is only valid for ``real'' BNs: once the referential status of a nominal is marked in some way (by a modifier, a specificity marker, etc.), its linear position does not affect its referential status. Importantly, we have also seen that indefinite nominals are not fully excluded from either sentence initial/topic position or from preverbal position, so the reported dependencies between definiteness and the position of a BN should be empirically treated as -- possibly strong -- tendencies. With this result in mind, we will now move on to an in-depth discussion of one of the interpretation of Russian BNs, namely, a definite one. We will start by a brief theoretical overview of theories of definiteness (\sectref{definiteness}) and the consequences and predictions that one of these theories, namely, a uniqueness theory, makes for a possible semantic analysis of BNs in Russian (\sectref{analysesRU}). 
+
+%This seems to be a match made in heaven: a general concensus is that BNs in subject position tend to be interpreted as definites. Various examples will be analysed and it will be shown that indeed, BNs in subject position can be interpreted (or so it seems) as definites. The section will discuss the role of topicality and whether the informational status of a sentence (thetic (i.e., without topic) vs. categorical) plays a role in the availability of an (in)definte interpretation of a subject. Further discussion of definite subjects will be postponed until section 4.4. 
+
+%\subsubsection{BNs in postverbal position} \label{BNpostverbal} 
+
+
+%As for indefinite BNs in object position, apart from the very obvious observation that they exist, there will be a brief mention that their semantic properties have been debated. In particular, it has been argued both that they can only be `weak', i.e., take the narrowest possible scope with respect to other operators, and that they can, in fact, take both narrow and wide scope. Once again, the reader will be referred to Ljudmila's section for details. 
+
+%It will also be shown in this section that aspect plays an important role in establishing a precise interpretation of a BN object. It remains debated whether aspect influences (and if yes, to what extent) the interpretation of BN subjects. 
+
+
+\section{Definiteness} \label{definiteness}
+
+Definiteness is one of the most debated and most fascinating topics in the semantic literature as it touches upon some very fundamental questions of natural language semantics, such as reference and referential properties of nominal phrases. A typical and perhaps the most familiar way to express definiteness in a languages is by means of articles. English uses a definite (\textit{the}) and an indefinite (\textit{a}) article to mark definiteness and indefiniteness on count nominal phrases. Many languages have asymmetrical article systems, where only a definite (Hebrew or Burgarian) or only an indefinite (Persian or Turkish) article is used. Finally, there are many languages which do not use any articles at all, Russian and the majority of other Slavic languages are among those. Thus, there is a lot of variation in the expression of definiteness and indefiniteness across languages (for typological overviews, see \citealt{dryer05, dryer13, givon78}), but from a semantic viewpoint the most relevant question to be asked is whether the grammatical category of definiteness has a uniform semantics across languages, independently of the way definiteness is expressed or marked. The question is far from trivial, despite the fact that the affirmative answer is often taken for granted or at least assumed to be a null hypothesis. A related theoretical question is, of course, what an adequate theoretical representation of definiteness would be and how many definiteness theories we need to adequately represent a wide range of empirical data related to definiteness and indefiniteness. While we are still in the search for convincing answers to both questions, I would say that the recent interest for languages without articles in relation to definiteness can lead to significant advances in the semantics theories of definiteness and related categories. This section will provide a brief overview of the most common types of definite nominal phrases in \ref{howmanydef}, and the semantic theories that have been proposed to account for definiteness, with a special focus on the uniqueness theory of definiteness in \ref{uniqueness}. For a detailed discussion of indefiniteness, the reader is referred to \textcitetv{chapters/06_geist}.
+
+\subsection{How many types of definiteness?} \label{howmanydef}
+
+This section will give a brief overview of semantic theories of definiteness. We will begin with the most familiar uniqueness and a familiarity theories, but will also mention less mainstream approaches, such as \citet{heusinger13} or \citet{lobner85}. The main goal of this section is to remind the reader about the main points that those approaches try to make, whereas a more detailed discussion can be found in the vast literature on the issue. 
+
+To begin with, let us look at some examples of definite nominals in English, where definiteness is expressed by means of articles. Definite NPs have various uses, the most typical of which are the following: situational definites in (\ref{sitdef}), anaphoric definites in (\ref{anaphdef}), cases of bridging in (\ref{bridge}) \citep{clark75}, and weak definites in (\ref{weakdef}):\footnote{For much more detailed empirical descriptions see \citet{hawkins78} or \citet{lyons99}.} 
+
+
+\ea 
+It's so hot in the room. Could you open the window, please? \label{sitdef}
+\z
+
+\ea
+I saw a man in the street. The man was tall, slim and elegantly dressed. \label{anaphdef}
+\z
+
+\ea
+I'm reading an interesting book. The author is Russian. \label{bridge}
+\z 
+
+\ea
+Every morning I listen to the radio. \label{weakdef}
+\z
+
+\noindent A uniqueness theory of definiteness that originates in \citet{frege92} and \citet{russell05} treats a (singular) define description as having a unique referent, i.e. there is only one object that fits the corresponding description. The uniqueness part of the meaning of a definite description is usually assumed to be presuppositional, as was famously argued by \citet{strawson50} and more recently by \citet{elbourne13}, hence the term \textsc{uniqueness presupposition} commonly used in formal semantic literature on definiteness. The uniqueness theory is a well-articulated, clear and precise formal semantic approach that takes situational definites exemplified in (\ref{sitdef}) to be prototypical definites. 
+
+However, this characterisation of definites is clearly too idealistic for natural languages, as can be illustrated even by our example above: in (\ref{sitdef}) the window referred to by the definite NP does not have to be the only window in the room or in the house. Moreover, it is not even very likely to be a unique window-object in a given situation, but it has to be the one that both the speaker and the hearer are able to uniquely identify. This brings us to the rule of domain restriction, which seems to be an unavoidable amendment to the uniqueness theory: a uniqueness condition has to be restricted by the relevant situation in which a definite description has to have a uniquely identifiable referent.
+
+Another approach takes the anaphoric uses of definites as in (\ref{anaphdef}) as default and is based on different discourse properties of definite and indefinite descriptions. This is a familiarity approach, developed by \citet{kamp81} and \citet{Heim1982}. The main idea that lies behind this approach is that each nominal phrase represents a discourse referent, but in the case of indefinite nominals the correspondent discourse referent is new, whereas the referent of a definite description has to be identified with the one previously introduced. The theory is simple and elegant, which makes it intuitively very appealing. Moreover, it makes the semantic description of definite and indefinite nominal phrases fit nicely into a general discourse representation theory and connects it to anaphora resolution mechanisms \citep[][]{Kamp1993}. However, situational uses of definites that constitute one of the core cases of definites, can only be accounted for with additional assumptions. 
+
+Needless to say, there have been attempts to unify both theories to capture as many uses of definite nominals as possible. \citet{Farkas2002} introduces the notion of determined reference to ``capture what is common to anaphoric and unique reference" \citep[221]{Farkas2002}. Determined reference simply means that the value assigned to the variable introduced by a definite NP is fixed: there is no choice of entities that can satisfy the descriptive content of a definite nominal. Definite descriptions, according to \citet{Farkas2002}, always have a determined reference, although it can be achieved in different ways: a definite nominal can have a unique referent in a context or it can refer anaphorically. 
+
+Another approach that unifies situational and anaphoric definites is \citet{lobner85}, although L\"{o}bner's theory of definiteness is not based on uniqueness,
+%\footnote{In fact, \citet{lobner85} explicitly rejects the uniqueness condition for definites as}
+but on a broader notion of ``non-ambiguity'' of reference. \citet{lobner85} distinguishes between semantic and pragmatic definiteness, the unambiguous reference for the latter type being fully dependent on a particular situation. This group hence includes both situational and anaphoric definites, which renders the property of uniqueness as a special case of unambiguous reference. Semantic definites for L\"{o}bner are relational nominals like \textit{the son of a famous actor} or \textit{the author} from (\ref{bridge}) above. Those definites have unambiguous reference ``due to general constraints" \citep[see][229]{lobner85}.
+
+The uniqueness property and the uniqueness theory of definiteness is also questioned in \citet{heusinger97, vonHeusinger2002, heusinger13}, who suggests that the concept of \textsc{salience} should be central to definiteness. In von Heusinger's proposal, nominal referents are ordered along the salience hierarchy, and the context crucially contributes to this ordering. The NP with the most salient referent in a given situation is marked as definite. The hierarchy is constantly changing and different referents can become salient with a slight change of a discourse situation or a speaker's intention. Salience is a fairly intuitive notion and can relatively easily capture all the main uses of definites illustrated above in (\ref{sitdef}) to (\ref{weakdef}).\footnote{Perhaps with the exception of weak definites, which form a very peculiar class of definites.} The concept of salience, however, is very difficult to formalise, and the attempt made in \citet{heusinger13} to use choice functions as a formal tool to represent definiteness, leaves it unclear how to differentiate between definites and specific indefinitenes, which have traditionally been given a choice function analysis \citep[see][]{Reinhart1997, Winter1997}.                                                          
+Finally, in the case of weak definites in (\ref{weakdef}), there is no requirement for the definite DP to have a single referent. One of the proposals that can be found in the literature, namely, \citet{aguilarzwarts14}, treats weak definites as kind nominals.
+
+This relatively brief overview of the main approaches to definiteness forms a basis for a more detailed discussion of a definiteness theory based on the property of uniqueness in the next section. As has already been pointed out, the uniqueness theory is perhaps the best understood one among formal theories and, despite the fact that there are some very well known exceptions to the uniqueness theory, it is still the one that most formal semanticists adopt while dealing with definiteness. The discussion of the main approaches to BN semantics in Russian, which will be presented in \sectref{analysesRU} will also rest on the main assumptions and postulates of the uniqueness theory, which justifies a more detailed overview of this theory provided in the next subsection. 
+
+\subsection{Definiteness as uniqueness} \label{uniqueness}
+
+Let me begin this section by reminding the reader about the intuition that underlies the uniqueness approach to definiteness. Consider first an indefinite NP in (\ref{a mouse}) and a definite one in (\ref{the mouse}): 
+
+\ea 
+\ea \label{a mouse}I've just heard a mouse squeak.
+\ex \label{the mouse} I've just heard the mouse squeak.
+\z
+\z
+
+\noindent The common intuition is that (\ref{the mouse}) can only be uttered successfully if the nominal phrase \textit{the mouse} has a contextually unique and identifiable referent. In contrast, (\ref{a mouse}) is felicitous if there is at least one referent for the indefinite nominal \textit{a mouse}. The intuition appears to be very robust among all the native speakers of English and many other languages with definite articles. This intuition is fundamental for the theory of uniqueness. % which is traced back to \citeposst{russell05} seminal work on descriptions. 
+
+%the sentence of the type (\ref{def}) is represented as (\ref{russelldef}): 
+
+%\ea 
+%\ea \label{def} The F is G.
+%\ex \label{russelldef} $\exists x[Fx \  \& \  \forall y (Fy\rightarrow x = y)\  \& \ Gx] $ 
+%\z
+%\z
+
+%\noindent With this representation, definite descriptions are treated as quantifiers and incorporate a uniqueness condition into their semantics (i.e., $ \forall y (Fy \rightarrow x=y)$ in (\ref{russelldef}). Uniqueness presupposes the existence of exactly one entity in the extension of the NP that satisfies the descriptive content of this NP, therefore, uniqueness entails existence. 
+
+In \citeposst{russell05} theory of definite descriptions, the uniqueness of the referent of a definite description is part of the assertion. This means that the famous example of Russell's in (\ref{kingoffrance}) comes out as false under the Russellian account. 
+
+\ea
+The king of France is bald. \label{kingoffrance}
+\z
+
+\noindent \citet{strawson50} argued that Russell was attributing wrong truth conditions to (\ref{kingoffrance}). In particular, following the ideas of \citet{frege92}, Strawson suggested that the uniqueness condition should be treated as part of the presupposition associated with the definite description and this is the most accepted view nowadays. This means that a definite description presupposes existence and uniqueness of the referent and when this presupposition fails, the sentence cannot be judged as either true or false. Thus, (\ref{kingoffrance}) is interpreted as neither true nor false, as there is no such entity that could (in our world and relative to the present) satisfy the description of being the king of France, but the uniqueness of the king of France is still presupposed in this example.
+
+Formally, semantic definiteness in argument position is standardly associated with the semantic contribution of the definite article itself, represented by the $\iota$ (iota) operator.\footnote{With the exception of \citet{coppockbeaver15}, which will be discussed right below.} The iota operator shifts the denotation of a common noun from type {$\langle e,t \rangle$} to type {$e$}, i.e., from a predicate type to an argument type \citep[see][998]{Heim2011}, and thus, denotes a function from predicates to individuals \citep{frege79, lobner85, elbourne05, elbourne13, Heim2011}. Predicative uses of definites can either be derived from argumental ones \citep{partee87, winter01} or taken as basic \citep{grafffara01,coppockbeaver15}. 
+
+The meaning of the definite article can be represented as in (\ref{the}):
+
+\ea \label{the}
+$\llbracket\text{the}\rrbracket = \lambda{P}:\exists x \forall y [P(y)\leftrightarrow x = y].  \iota x.P(x)$,\\
+where $\iota x$ abbreviates `the unique $x$ such that'. \hfill\citep[][998]{Heim2011}
+\z 
+
+%Existence under attack in \citet{coppockbeaver15}. 
+
+%On the basis of this type of examples, which exemplify what is typically called 'situational definiteness', it is assumed that singular definite descriptions show the property of uniqueness \citep{russell05}, which is most often considered to be part of the presupposition associated with definite nominals (\citealt{frege79}; \citealt{strawson50}). 
+
+\noindent Plural definite NPs naturally violate the presupposition of uniqueness. In this case uniqueness is reformulated as maximality (\citealt{sharvy80}; \citealt{link83}), i.e. reference to a maximal individual in the domain, which is picked out by the definite article.
+
+The uniqueness approach to definiteness is given a different twist in \citeposst{coppockbeaver15} proposal. Crucially assuming the predicative uses of definite descriptions to be the basic ones, they differentiate between definiteness and determinacy, the two notions that are formally dissociated in their model. A nominal phrase is determinate if it has an individual denotation and semantically, this is the contribution of the iota operator. Definiteness in their proposal is contributed by the definite article and semantically only conveys a uniqueness presupposition. Contrary to more common proposals, in \citeposst{coppockbeaver15} analysis definiteness does not signal or require existence. This property of definites can be witnessed, as \citet{coppockbeaver15} argue, by predicative uses of definites where it becomes clear that existence is not required by the definite article \textit{per se}. Argumental definites do require existence, but this is an effect of the type shifting operator (the iota operator in this case). 
+
+Without going into the intricacies of \citeposst{coppockbeaver15} non-trivial argumentation about existence presuppositions, the most important and the most relevant contribution of their proposal for our purposes can be summarised as follows. First, this is a proposal that clearly and explicitly differentiates between the semantic contribution of the definite article and the semantic contribution of the iota operator. Second, in argument position the overall semantic effect of definiteness marking will be the same as in more conventional proposals \citep[cf.][]{partee87, winter01, elbourne05, Heim2011}, as the contributions of the iota operator and the definite article coincide in this case.  
+
+
+%\noindent The meaning of the definite article, represented in (\ref{ex:20}), shows the property of uniqueness \citep{Russell1905}, which is considered to be a presupposition associated with definite nominals (\citealt{Frege1879}; \citealt{Strawson1950}) 
+%and not part of the assertion as presented in . 
+%If one compares an indefinite NP in (\ref{ex:21a}) with a definite one in (\ref{ex:21b}), it is clear that (\ref{ex:21b}) is about a contextually unique mouse, while (\ref{ex:21a}) may have more than one possible referent.
+
+%\ea 
+%\ea \label{ex:21a} I've just heard \textit{a mouse} squeak.
+%\ex \label{ex:21b}
+%I've just heard \textit{the mouse} squeak.
+%\z \z
+
+%\noindent Uniqueness presupposes the existence of exactly one entity in the extension of the NP satisfying the description, therefore, uniqueness entails existence 
+%presupposition.
+%\footnote{Again, with the notable exception of \citeposst{Coppock.Beaver2015} proposal.}  Thus, \citeposst{Russell1905} famous example \textit{`The king of France is bald.'} can be interpreted as neither true nor false, as there is no such entity that would (in our world and relative to the present) satisfy the description of being the king of France, but the existence and the uniqueness of the king of France are still presupposed in this example.
+
+%Another important approach to definiteness found in the literature is based on the notion of familiarity (\citealt{Christophersen1939}; \citealt{Heim1982}). According to this approach, the referent of the definite description is known to both the speaker and the addressee. This common knowledge may arise from the previous mention of the referent (familiarity) (\citealt{Heim1982}) but also from a more general shared knowledge of the participants of communication (cf. identifiability in \citealt{Lyons1999}).\footnote{Uniqueness and presupposition of existence are also related to shared knowledge, which is crucial in order to single out the referent (Hawkins 1978). }  Definites are assumed to pick out an already existing referent from the discourse, whereas indefinites introduce new referents (see \citet{Heim1982} and \citet{Kamp1981} for more details).
+
+%The two approaches to definiteness are not mutually exclusive, and familiarity can be derived from uniqueness in some approaches (for instance, \citealt{Coppock.Beaver2015}). 
+
+The above-mentioned concepts related to definiteness (i.e. uniqueness, existence, maximality) have all been postulated in relation to languages with articles and therefore, in one way or another, are associated with the presence of the definite article on the nominal. The relevant question that arises when one faces a language without articles is whether the expressions perceived as definite in such a language would give rise to the same effects as the definite nominals marked with overt articles. 
+
+From a theoretical perspective, there are several possible answers to this question. The first one is based on attributing definiteness effects such as uniqueness or maximality to the presence of the article itself. In this case, the uniqueness of a definite description, be it asserted or presupposed, will follow directly from the semantics of the definite article, as in classical uniqueness/type-shifting theories \citep[e.g.,][]{frege92, russell05, partee87}. We expect that languages without articles do not show the same type of definiteness effects as languages with overt articles, simply because the former do not have any lexical element that would make the same semantic contribution as a definite article. 
+%\footnote{This approach is fully compatible with the indefiniteness hypothesis that we present in \sectref{sec:definiteness-effects}.}
+
+Another option is to follow \citeposst{chierchia98} and \citeposst{dayal04} influential proposals that claim that articleless languages use the same inventory of type shifting operators with the only difference that these operators are not lexicalized.\footnote{See \sectref{defhypothesis} for a more detailed discussion of \citet{dayal04}.} Crucially, the semantic contribution of such operators remains the same, whether or not an operator is lexicalized in a given language. Thus, if the iota operator is responsible for deriving a definite interpretation of nominal arguments in both English and Russian, the predictions are clear: the uniqueness effects associated with definite descriptions in English should also exist in Russian. However, the empirical facts that will be discussed below, in particular in \sectref{absenceofuniqueness}, seem to indicate that the perceived definiteness in Russian does not give rise to the same semantic effects as in English, which, in principle, argues against the Chierchia/Dayal type of analysis.
+ 
+%Finally, another possible approach to definiteness in articleless languages can Since their analysis clearly distinguishes between the uniqueness presupposition contributed by the definite article and determinacy, i.e. an e-type denotation, contributed by the iota operator, the prediction concerning languages without articles is fairly clear: given that the article is absent, we should not expect to find any uniqueness effects in what appears a definite nominal, although its individual denotation and existence will follow from the type shifting operator that applies to argumental nominals also in languages without articles.
+
+%In the next section, we will discuss these options in more detail and check the predictions of different definiteness theories based on uniqueness against the empirical data from Russian. 
+ %We then proceed to} argue that the perceived definiteness effects in the use of bare nominals in Russian should rather be analysed as pragmatic in nature.
+ 
+ %Then we would expect the same semantic effects to arise from the application of, for instance, a iota shift, whether this shift is lexicalized or not. 
+
+As a side note, I would also like to point out that I do not associate the iota operator with any particular syntactic projection or any particular syntactic head. Thus, the question about a possible syntactic structure of referential bare nominals in Russian and, in particular, the presence or absence of the D-layer, is not straightforwardly connected to whether or not a language employs a certain semantic operator to derive its arguments. The iota operator, should it exist, does not straightforwardly entail any syntactic projection, because the function of this operator (namely, to derive expressions of type ${e}$) is semantically defined and whether or not all expressions of this type should have the same syntactic structure across languages or within a language is an independent question.
+
+
+\section{Possible semantic analyses of BNs in Russian} \label{analysesRU}
+
+In this section, I will discuss possible theoretical accounts of the semantics of BNs in Russian. Adopting a uniqueness theory of definiteness as a point of departure, I will argue that, 
+unlike in English or other languages with articles, there is no uniqueness/maximality presupposition carried by Russian BNs that are perceived as definites. Among different implementations of the uniqueness approach to definiteness we will discuss the following proposals. \sectref{defhypothesis} will be devoted to the influential proposal by \citet{dayal04}, according to which BNs in languages without articles can get either a definite or a kind interpretation. I will refer to this claim as the \textsc{definiteness hypothesis}. In \sectref{ambindef}, we proceed to check the predictions and implications of an ambiguity approach based on \citet{chierchia98}, which claims that BNs are semantically ambiguous between a definite and an indefinite reading, and contrast it with the indefiniteness hypothesis of \citet{Heim2011}, which claims that BNs in languages like Russian are semantically indefinite. The empirical argument against uniqueness that I develop in \sectref{absenceofuniqueness} will, as I argue, favour \citeposst{Heim2011} theoretical approach to BNs and the section will conclude with the general discussion of possible implications that the Russian data can have for theoretical accounts of definiteness.  
+
+%This claim is in accordance with the classical view \citep{partee87} that uniqueness/maximality is something that is actually associated with or contributed by the definite article itself, and not by an iota operator, as proposed by \citet{chierchia98}, \citet{dayal04}, \citet{coppockbeaver15}.
+
+\subsection{A definiteness hypothesis} \label{defhypothesis}
+
+\citet{dayal04} presents an influential proposal that determines the universal principles of type shifting in languages with and without articles, and proposes a hierarchy of type shifting operators. Drawing on the selection of empirical data from Hindi, Russian and Mandarin Chinese, she claims that BNs in languages without articles can have either a definite or a kind interpretation, but cannot be \textit{bona fide} indefinites. She builds her theory mostly on \citeposst{chierchia98} well-known proposal for kind reference, assuming, among other things, that English bare plurals directly refer to kinds and get an indefinite interpretation only in those contexts where it can be derived from their kind interpretation via Derived Kind Predication (DKP) rule  \citep[cf.][364]{chierchia98}. 
+
+Applying these principles to languages without articles, Dayal argues that an indefinite interpretation of bare plurals in these languages is also derived from the underlying kind interpretation, whereas bare singluars simply cannot be \textit{bona fide} indefinites, as the DKP rule is explicitly defined only for plural properties.\footnote{In \citeposst{chierchia98} proposal, this restriction reflects the fact that in English, bare singulars virtually do not exist \citep[although see][for exceptions]{stvandiss, deswart15} and the kind interpretation of definite singulars is subject to a different complex semantic mechanism, whereas bare plurals directly refer to kinds. This last claim is challenged in \citet{borikespinal15}.} Thus, Dayal concludes that all bare nominals in languages without articles get either a kind or a definite reading derived by applying corresponding semantic type shifting operators, i.e., a $^{\cap}$ operator that yields a kind interpretation when applied to plural properties, and an $\iota$ operator that yields a definite interpretation when applied to singular or plural properties. This motivates the proposed ranking of semantic type shifters where an existential quantifier associated with an indefinite interpretation ranks lower than an iota and a down operator. 
+
+In order to support her claims, \citet{dayal04} first shows that there is a crucial difference in the interpretation of bare singular vs. plural subjects in languages like Hindi or Russian, illustrated in the following examples:
+
+\ea 
+\ea[\#]{\label{mouseHI} \gll
+caroN taraf cuuha hai \\ 
+four ways mouse is \\
+\glt `The mouse/A particular mouse (the same one) is everywhere.'}
+\ex[]{\label{miceHI} \gll
+caroN taraf cuuhe haiN  \\
+four ways mice are \\
+\glt `There are mice (different ones) everywhere.'\\\hfill({Hindi}; \citealt[395]{dayal04})}
+\z
+\z
+
+\ea
+\ea[\#]{\label{sobaka} \gll
+Sobaka byla vesde  \\  
+dog was everywhere \\
+\glt `The dog/A particular dog (the same one) was everywhere.'}
+\ex[]{\label{sobaki} \gll
+Sobaki byli vesde  \\
+dogs were everywhere \\
+\glt `There were dogs (different ones) everywhere.'\\\hfill{(Russian; \citealt[395]{dayal04})}}
+\z
+\z
+
+\noindent The contrast illustrated above is attributed to the fact that singular subjects in (\ref{mouseHI}) and (\ref{sobaka}) can only get a definite reading, yielding therefore an implausible interpretation of `the (same) mouse/dog was everywhere'. In the case of plural subjects, this interpretation does not arise. 
+Note, however, that the examples above are based on \citet{carlson77}, who used the corresponding English examples to illustrate one of the several differences that can be observed between singular and plural indefinites in English. \citeposst{carlson77} original examples are given in (\ref{carldog}): 
+
+\ea \label{carldog}
+\ea A dog is everywhere. \label{adog}
+\ex Dogs are everywhere. \label{dogs}\hfill\citep[13, ex. (26)--(27)]{carlson77}
+\z
+\z
+
+\noindent In Carlson's judgment, (\ref{adog}) ``has only an absurd reading, one which means that there is some omnipresent dog" (ibid.). This means that the infelicity of the corresponding Russian example in (\ref{sobaka})  does not provide any evidence for the presence of definiteness in Russian: a singular indefinite in English creates exactly the same effect, as illustrated by (\ref{adog}). Hence, at least for Russian, the contrast between (\ref{sobaka}) vs. (\ref{sobaki}) does not constitute any evidence in favour of a definite interpretation of the subject in (\ref{sobaka}). Neither does it rule out an indefinite interpretation of the subject \textit{sobaka} `dog' in (\ref{sobaka}). All the above examples, including the English (\ref{adog}) and (\ref{dogs}), only illustrate the contrast between singular and plural indefinite subjects in distributive sentences.
+
+\citet{dayal04} does not discuss the interpretation of bare singulars in object position, as empirical facts for Hindi are complicated by the fact that object bare nominals are/can be pseudo-incorporated \citep[cf.][]{dayal11, dayal15}. In Russian, however, pseudo-incorporated objects, if they exist at all (see \citealt {mueller15, seres20} for some discussion), are not really the most common type of objects, so object BNs should not \textit{a priori} be excluded from consideration. Another issue with limiting the discussion to subject position is that BNs in preverbal subject position can also be topics, at least in Russian (see \sectref{BNtopics}), and it is well known that topics tend to be interpreted as definite. This tendency can seriously blur the overall empirical picture, as a definite (or, rather, a definite-like) interpretation of preverbal bare nominals might arise due to informational structure considerations and not necessarily due to their semantic definiteness. Given this, it becomes almost necessary to examine the behaviour of object nominals in a language that does not require bare objects to be pseudo-incorporated. 
+
+As \citet{geist10} shows, bare singular objects \textit{can}, in principle, be indefinite, even if their interpretation, as argued, is limited to weak indefiniteness. This fact is not predicted or expected in \citeposst{dayal04} approach, due to the fact that an indefinite interpretation in languages without articles, according to Dayal, can only be derived from a kind interpretation. A semantic mechanism for this ``derived'' indefinite interpretation does exist for bare plurals (the DKP rule discussed above), but crucially not for bare singulars, at least not without any serious modification of the DKP rule. The empirical data discussed by \citet{geist10}, thus, constitute a first piece of evidence against the definiteness hypothesis. 
+
+Moreover, as I have argued above, the objection can be made much stronger. The reader should recall the scope argument from \sectref{BNtopics}, which shows that singular BNs in object position, just like \textit{a}-indefinites in English, display scope ambiguities with respect to other scopal elements and in opaque contexts. Let me repeat the crucial example that I used in \sectref{BNtopics} as an objection to \citeposst{geist10} hypothesis that indefinite singular BNs cannot have a specific interpretation. The example is repeated in (\ref{granta1}): 
+
+\ea \label{granta1} \gll 
+Vasja ne polu\v{c}il grant \minsp{(} xotja 	zajavlenije 	bylo sostavleno 	o\v{c}en'	xoro\v{s}o).\\
+ Vasja not received grant {} although 	application 	was composed 		very 		well\\
+\glt `Vasja did not get a grant, although the application was written very well.'		 	  
+\z
+
+\noindent In this example, the context favours a specific interpretation of a bare singular object \textit{grant} `grant', as we are clearly talking about one specific grant that Vasja has applied for. Hence, the existential operator associated with the indefinite object scopes out of negation, yielding the interpretation of `there is a grant that Vasja did not get', with a wide scope of the indefinite object. The conclusion to be drawn is that singular BNs in object position in Russian behave like proper indefinites with different scope possibilities. This, in turn, means that the definiteness hypothesis as it is set out in \citet{dayal04} cannot be maintained as the empirically adequate one for Russian BNs. 
+
+\iffalse
+  This ambiguity is also illustrated in the following example: 
+
+\ea
+\ea \gll Vasja 	ho\v{c}et	 	\v{z}enit'sja 	na 	kinozvezde, no 	ne 	mo\v{z}et 	najti 	podhodjas\v{c}uju.\\
+ Vasja		wants 	marry		on		movie-star, but 	not 	can 	find 	suitable\\
+\ex \gll no 	my 	eje 	es\v{c}e 	ne 	videli.\\
+but 	we 	her 	yet 		not 	saw \\
+\glt `Vasja wants to marry a movie star? ?but cannot find a suitable one / but we haven't met her yet.'
+\z\z
+ 
+As shown in (3), a BSg indefinite in an opaque context (i.e., in a complement clause of a propositional attitude verb) can have two readings, which correspond to two different interpretations of the sentence. One reading, illustrated in (3a), is called opaque, in which case the indefinite is interpreted within the scope of the main verb. A transparent reading in (3b) is the one where the indefinite is outside the scope of the main verb. In this latter case, the indefinite is interpreted as referential, or specific, while in (3a) is it a purely quantificational indefinite. The illustrated ambiguity is a classical test for specific and non-specific (existential) readings of indefinite noun phrases in English and, as (3) illustrates, Russian BSg indefinites are not really different from their English counterparts in allowing both readings.\footnote{Native speakers of various Slavic languages report the same judgment: an indefinite bare singular nominal is scopally ambiguous with respect to other quantifiers and can have both opaque and transparent readings in prepositional attitude contexts. Speakers of Polish, Serbian and Slovenian confirmed this in an informal discussion during my classes at the EGG 2023 summer school.} 
+\fi
+
+Even though the scope properties of bare singular indefinites constitute a crucial argument in favour of their indefinite status, there are some other types of examples that would be difficult to explain should the definiteness hypothesis be adopted. For instance, BNs are perfectly acceptable in distributive contexts, as illustrated in (\ref{v dome}):
+
+\ea \label{v dome} \gll  
+V ka\v{z}dom  dome 	igral 	rebenok.  \\ 
+in every  house	played	child.\textsc{nom} \\
+\glt `A child (a different one) was playing in every house.'
+\z
+
+\noindent In sentence (\ref{v dome}), a nominal phrase cannot be interpreted as either a kind, or a definite. As for a kind interpretation, morphologically singular kinds generally cannot facilitate access to individuals \citep[cf.][]{krifkaetal} and hence cannot distribute, so a kind interpretation is ruled out in this example. A definite interpretation, on the other hand, would lead to an implausible reading that there is a unique child, such that it is playing in every house. This is, however, not the interpretation that this sentence naturally obtains. Hence, \textit{rebenok} (child), has to be indefinite. Dayal's crucial examples for the absence of an indefinite interpretation with bare singulars in Russian are also based on distributive contexts,  but, as (\ref{v dome}) illustrates, distributive sentences do not rule out singular indefinites on a regular basis. 
+
+Finally, let us look at yet another canonical indefinite environment, i.e., existential there sentences. The Russian counterpart of \textit{there}-sentences in English are formed by fronting a locative phrase, as in (\ref{kover}): 
+
+\ea \label{kover} \gll 
+V komnate le\v{z}al  kover. \\
+in room			lied 		carpet \\
+\glt `There was a carpet in the room.'
+\z
+
+\noindent In this example, singular BN \textit{kover} `carpet' can only be interpreted as an indefinite, given the context. 
+
+Another piece of evidence that shows that BNs in Russian can be interpreted indefinitely is based on the examples where the same BN is used twice with different referents: 
+
+\ea \label{ucenyj} \gll
+U\v{c}enyj vsegda pojmet u\v{c}enogo, da\v{z}e esli oni rabotajut v sover\v{s}enno raznyx oblastjax nauki. \\
+scientist always understand.\textsc{pfv.pres} scientist even though they work in absolutely different areas science.\textsc{gen}\\
+\glt `A scientist will always understand (another) scientist, even if they work in completely different areas.'
+\z
+
+\noindent In (\ref{ucenyj}), two occurrences of \textit{u\v{c}enyj/u\v{c}enogo} `scientist' differ in case, but in terms of interpretation, they do not lead to the oddness that would be expected with two definite NPs with the same descriptive content, as below:\footnote{\citet{dayal04}
+    notes that examples like (\ref{tiger}) are unacceptable, and I agree with her judgement, but the status of (\ref{tiger}) is probably due to the individual denotation \citep[][]{lobner85}, rather than to definiteness.
+    \ea[\#]{\gll V \.{e}toj kletke tigr spit i tigr est. \label{tiger}\\
+    in this cage tiger sleeps and tiger eats \\
+    \hfill \citep[][411]{dayal04}}
+    \glt{}
+    \z\vspace*{1em}
+}
+
+\ea \# The scientist will always understand the scientist. 
+\z
+
+%interpretation: the sentence does not have a reading where a scientist only understands him/herself. 
+
+The most reasonable conclusion to be drawn about the interpretation of BNs \textit{u\v{c}enyj} and \textit{u\v{c}enogo} in \REF{ucenyj} is that both BNs are interpreted as (non-specific) indefinites. 
+
+Finally, yet another argument against the definiteness hypothesis rests on the following difference between English and Russian: 
+
+\ea	
+\ea \label{thewheel} {I bought a new car.  $\#$The wheel} broke down immediately. \\
+		{(cf. The motor broke down.)} \\
+\ex \label{koleso} \gll Ja 	v\v{c}era 				kupil 			novuju 	ma\v{s}inu.  V pervyj 	\v{z}e	den' spustilo koleso.\\
+		I 			yesterday 	bought 	new 				car 			 in first 	\textsc{ptcl}  day deflated wheel \\
+  \glt `I bought a new car yesterday. I got a flat tire on the very first day.'
+\z
+\z
+
+\noindent The contrast between (\ref{thewheel}) and (\ref{koleso}) above shows that in those contexts where it would be odd to use a definite NP in English, a BN in Russian is nevertheless perfectly acceptable. Even thought BN \textit{koleso} `wheel' in (\ref{koleso}) is in the final (postverbal) position, the word order considerations do not affect Dayal's predictions. This example illustrates the absense of full parallelism between the English definite and the Russian BN in bridging contexts and this contrast would be difficult to explain in Dayal's theory. 
+
+Thus, we have seen plenty of evidence that singular BNs in Russian freely appear in typical indefinite environments and, moreover, exhibit scopal ambiguities just as bona fide indefinites in English. We can therefore conclude that BNs do function as proper full-fledged indefinites and the definiteness hypothesis advocated by \citet{dayal04} will have considerable obstacles in handling the interpretation of BNs in Russian.\footnote{Similar conclusions have been reached for Russian in \citet{Borik.etal2025, Liu.etal2023} and \citet{liusalt}, studies based on parallel translation corpora that include empirical data from Russian, Hindi and Mandarin, among other languages.}
+
+\subsection{An ambiguity vs. an indefiniteness hypothesis}
+\label{ambindef}
+
+Since the definiteness hypothesis for Russian bare nominals cannot be maintained, we are left to decide between the two remaining hypotheses: the one based on ambiguity and the one that takes bare nominals to be indefinite. In a sense, the ambiguity approach is the default one for languages without articles, also in descriptive grammars, that often state that the interpretation of a bare nominal can be either definite or indefinite depending on the context \citep[][]{geist10}. Formally, the ambiguity hypothesis explicitly or implicitly follows from some type shifting approaches, for instance, \citet{chierchia98}. Since formal theories have the undeniable advantage of making clear predictions, in what follows I will base my considerations on \citeposst{chierchia98} approach. 
+
+In \citeposst{chierchia98} theory of nominal reference, Russian and English belong to the same typological group of languages as far as the semantics of nominals is concerned: both languages have a mass/count distinction and their nominals can be of two basic types, argumental [+arg] or predicative [+pred]. Both languages apply type shifting operators like $\exists$, $\iota$ and $^{\cap}$ to derive a required nominal type in a given context. However, the first two operators are lexicalized in English (as \textit{a} and \textit{the}, respectively), hence their application is restricted in such a way that they cannot apply covertly \citep[Blocking principle;][360]{chierchia98}. The $^{\cap}$ operator, however, is not overtly realised in English and hence can be applied covertly, but only to pluralities. The latter restriction is inherent to the  $^{\cap}$ operator and holds for all languages. 
+
+In Russian, there is the same inventory of available operators, but, unlike in English, none of the type shifting operators are lexicalised. This means that all the operators apply freely, with the only restriction that the $^{\cap}$ operator only applies to pluralities. Hence, bare nouns are semantically ambiguous: bare singulars can have a definite or an indefinite interpretation and bare plurals are three-way ambiguous between a kind, a definite and an indefinite reading. 
+
+While \citet{chierchia98} mentions Russian only very briefly, appealing to the necessity of a scrutinous study of possible interpretations of BN in languages without articles, one explicit prediction made by this approach is that Russian bare count nominals with an indefinite interpretation should have the same scopal properties as indefinite singulars in English \citep[][362]{chierchia98}. This prediction is fully supported by the data, as was argued in \ref{BNtopics}. Apart from that, we can infer that in Chierchia's model, both $\exists$ and $\iota$ operators are available for BNs in argument position.\footnote{We will abstract away from the $^{\cap}$ operator for the current purposes.} Since the semantic contribution of the type shifters is presumably universal, we expect definite nominals in English and BNs with a definite interpretation in Russian to show the same semantic effects, in particular, to give rise to presupposition of uniqueness associated with the iota operator. 
+
+Another proposal relevant for this section is an indefiniteness hypothesis of \citet{Heim2011}, which rests on the idea that a definite interpretation in general is the result of a pragmatic strengthening mechanism involved in establishing the referential status of a nominal. The idea is based on the observation that in (\ref{cats}) below, the sentence in (a) entails the one in (b), but not the other way around. 
+
+\ea \label{cats}
+\ea The mat belongs to the cat upstairs. \label{the cat}
+\ex The mat belongs to a cat upstairs. \label{a cat}
+\z
+\z
+
+\noindent The interpretation of both definite and indefinite nominals is construed with a covert restrictor, whose function is to limit the number of elements that satisfy the descriptive content of the nominal to those that are considered relevant in a given situation. The narrower restrictor is the only one compatible with a definite interpretation. Indefinites, on the other hand, are compatible with any type of restrictor, a narrower, a broader or no restrictor at all. In the case of a narrower restrictor, however, the definite expression has to be used because it is a pragmatically stronger alternative, which is only compatible with this type of restrictor. Therefore, if the speaker uses (\ref{a cat}), the hearer concludes that it is the only statement the speaker can commit to under the circumstances (given that we follow the Grice's maxim of quantity) and hence infers that the stronger statement in (\ref{the cat}) is false or its presuppositions are not satisfied.\footnote{\citet{coppockbeaver15} also suggest a pragmatic mechanism to account for the definite/indefinite contrast in predicative nominals. Their proposal is based on Maximize Presupposition (MP!), a pragmatic principle introduced by \citet{Heim1991} which urges speakers to presuppose as much as possible.}
+
+The above reasoning applies to languages that have both a definite and an indefinite article, where only the former is in fact used to convey a narrower domain restriction. In languages without articles like Russian, the above mechanism is simplified significantly since one and the same type of nominal phrase, namely, a bare nominal, is compatible with all possible domain restrictions. Semantically, a BN is indefinite and since there is no competing expression for the narrower domain restrictor, indefinite BNs will also be compatible with a (contextually triggered) narrower domain restrictor, resulting in a definite interpretation. Thus, if the contextual factors favour a narrower domain restriction, the nominal phrase will be interpreted as definite, but crucially, this interpretation will be implied rather then derived by hard-core semantic mechanisms like type shifting. 
+
+The two approaches discussed here have not really been carefully explored and thoroughly checked against the data of languages without articles. The predictions they make seem to be the following. Given that the ambiguity approach derives definiteness semantically by means of an iota type shift, which is expressed by the definite article in English and not lexicalised in Russian, we expect the same definiteness effects to be present in both English and Russian, since the semantics of the type shifting operator should be language independent. In particular, Russian BNs with a definite interpretation are expected to give rise to uniqueness presupposition, just like their English counterparts. 
+ 
+The indefiniteness approach, on the other hand, would not make any predictions with respect to uniqueness for bare nominals in Russian. The difference between a definite and an indefinite interpretation in this approach is accounted for by different domain restrictors, and hence Russian bare nominals are compatible with both a narrow and a broader domain restrictor, their interpretation is derived by contextual factors that determine the domain restriction. In the case of a narrower restrictor, the uniqueness is implied, but not presupposed. 
+
+%It should also be pointed out that not all semantic approaches based on type shifting and uniqueness make the same predictions with respect to Russian as \citeposst{chierchia98} theory outlined before. The crucial point seems to lie in what exactly is assumed to be the source of uniqueness. In \citeposst{chierchia98} approach it is the iota operator that incorporates the semantics of uniqueness presupposition. In more traditional approaches, such as \citet{partee87} and successors, the semantics of the iota operator is the same as the semantics of the definite article itself, in other words, their contribution is not distinguished. Those approaches do not seem to predict uniqueness for Russian bare nominals, as in the absence of a definite article like \textit{the} we do not expect any semantic effects associated with it. On the other hand, in \citeposst{coppockbeaver15} approach, which very carefully distinguishes between the contribution of the iota shift and the contribution of the definite article itself, the uniqueness is attributed to the definite article, hence Russian bare nominals, once again, are predicted not to exhibit any uniqueness effects. 
+
+Thus, the difference between an ambiguity vs. an indefiniteness hypothesis applied to Russian boils down to whether BNs in Russian convey a uniqueness presupposition in their definite use. The question is empirical and the argument developed in the next section affects only those theories that predict uniqueness presuppositions to hold for Russian BNs. 
+%So the argument is not against the uniqueness approach in general, but against the specific implementation of uniqueness based on the lexicalisation (vs. non-realisation) of a specific type shifting operator. 
+
+%This is also the most simple and straightforward answer because according to the ?uniqueness?-based theories (when uniqueness is either asserted, cf. Russell 1905, or presupposed, cf. Frege 1892, Strawson 1950, Heim 2011), it is the definite article itself that expresses the uniqueness condition. If the definite article is missing, no uniqueness effects are expected, as in \citet{coppockbeaver15}. 
+
+%HOWEVER:Should you postulate an ?empty? the with the same semantics as the English the in languages without articles (Chierchia 1998, Dayal 2004), there is a problem because the uniqueness effects do now seem to exist where they are expected: 
+
+
+%CONCLUSIONS: 
+%Those semantic theories that postulate an ?empty? article with the same semantics as the in English seem to make the wrong predictions. 
+%?Semantic? definiteness exhibited by, for instance, definite descriptions in English vs. ?pragmatic? definiteness as implicature exhibited in, for instance, Russian. 
+
+
+\subsection{An empirical argument for the absence of uniqueness in Russian} \label{absenceofuniqueness}
+
+%My work in progress (which will hopefully be less in progress by february) \& experimental evidence. 
+
+%Once again, the question that we are trying to answer in this section is whether Russian bare nominals with a definite interpretation or, in other words, Russian bare nominals which are perceived and intuitively interpreted as definites, give rise to uniqueness effects. This is an empirical question, which constitutes an argument for or against theoretical approaches that predict uniqueness for definite bare nominals in languages without articles similar to those that we observe in definite nominals in languages with articles like, for instance, English. 
+
+To check the predictions that the two approaches discussed in the previous section make for Russian, we will compare two sets of examples, one from English and another one from Russian, and compare the relevant interpretive effects in both languages. To narrow down our empirical coverage, we only look at singular bare preverbal subjects, considering them the strongest candidates for definiteness, due to their position and a default definite-like interpretation that they receive in native speakers' judgments.\footnote{The expectation is that for any other type of BN (a plural BN or/and a BN in object position) the relevant examples will be much easier to construct, as the indefinite interpretation will always be available.} The data presented in this section partially comes from \citet{seresborik21}, where the same argument was first developed and discussed. Let us first have a look at the English examples: 
+ 
+\ea \label{thedirector}
+The director of our school appeared in a public show. $\#$The other / $\#$Another director of our school{\dots}
+\z
+\ea \label{adirector}
+A director of our school appeared in a public show. The other / Another director of our school{\dots}
+\z
+\noindent In example (\ref{thedirector}), the subject of the first sentence is definite: it is marked by a definite article, semantically derived by the ${\iota}$ operator and has a strong uniqueness presupposition that cannot be cancelled, as witnessed by unacceptability of suggested continuations. The only possible interpretation of the second sentence in (\ref{thedirector}) would be `the other director of the other school', which would not violate the presupposition of uniqueness of the definite description \textit{the director of our school} from the first sentence. However, any continuation with \textit{our school} in the second part of (\ref{thedirector}) is impossible. 
+
+In (\ref{adirector}), on the other hand, the first subject is indefinite and does not give rise to any uniqueness effects. In this case, as the example illustrates, it is possible to conceive the interpretation `another director of the same school', even though it might require some adjustment. The two examples thus clearly illustrate the effects created by the uniqueness presupposition of a definite description.
+%, with an indefinite NP.
+
+Now let us have a look at similar data from Russian. 
+
+\ea \label{direktor}
+\ea \gll 
+Direktor		na\v{s}ej	\v{s}koly			pojavilsja	v	tok-\v{s}ou. \label{direktora}\\
+director.\textsc{nom}	our.\textsc{gen}	school.\textsc{gen} 	appeared	in 	talkshow \\
+\glt `The director of our school appeared in a talkshow.' \\
+\ex \gll
+Drugoj	direktor \minsp{(} na\v{s}ej	\v{s}koly)		vystupil	na	radio. \label{direktorb} \\
+other director.\textsc{nom} {} our.\textsc{gen}	school.\textsc{gen} spoke	on radio.\textsc{loc}\\
+\glt `The other director (of our school) spoke on the radio.'
+\z
+\z
+
+\noindent The Russian example in (\ref{direktora}) taken in isolation seems to be equivalent to the first part of the English example in (\ref{thedirector}), in the sense that the nominal phrase `(the) director of our school' in both cases is interpreted as definite and, thus, the default interpretation of the expression is the uniquely identifiable director in a given context in both languages. The question is, however, whether this interpretation is semantically encoded in both languages. If what appears to be a definite nominal in Russian is also associated with the uniqueness presupposition, just like a definite description in English, the effects of violating this presupposition should be comparable to those observed in the English example (\ref{thedirector}). Should we find the same type of uniqueness effects both in English and in Russian, we can conclude that the same semantic operator, namely, the $\iota$ operator, is responsible for deriving definiteness in both languages. In search for an answer, we turn to (\ref{direktorb}).
+
+Crucially, we observe a substantial difference in the interpretation of example (\ref{thedirector}) on the one hand, and example (\ref{direktor}), on the other hand. In particular, the subject in (\ref{direktorb}) can be interpreted as `another director of the same school', as opposed to the English example in (\ref{thedirector}). This means that there seem to be no uniqueness presupposition associated with the subject `director of our school' in (\ref{direktora}). Examples (\ref{vrac}) and (\ref{avtor}) show the same effect, i.e., there seems to be no uniqueness presupposition associated with bare nominals that are perceived as definite. In the examples below, the judgments are given for `another doctor of the same patient' and `another author of the same essay', respectively.
+
+\ea \label{vrac} \gll
+Vra\v{c}			pri\v{s}el	tol'ko		k	ve\v{c}eru.	Drugoj	vra\v{c}				prosto	pozvonil.   \\
+doctor.\textsc{nom}	came only 		to	evening 	other   	doctor.\textsc{nom}		simply 	called\\
+\glt `One doctor came only towards the evening. Another doctor simply called.'
+\z
+\ea \label{avtor} \gll
+Avtor	\.{e}togo		o\v{c}erka		polu\v{c}il	Pulitcerovskuju	premiju. Drugoj	avtor				da\v{z}e	ne		byl	upomjanut.\\
+ author.\textsc{nom} this		essay.\textsc{gen} 	received Pulitzer prize.\textsc{acc} other		author.\textsc{nom}	 	even	not	was	mentioned\\
+\glt `One author of this essay got a Pulitzer prize. The other/another author was not even mentioned.'
+\z
+ 
+\noindent Taking into consideration the English and Russian data discussed in this section, we can conclude that the mechanism that yields a definite interpretation for bare nominals in Russian is crucially different from the mechanism that derives definiteness in English. If both definite descriptions in English and bare singulars in Russian perceived as definites were derived by the same semantic operation, we would expect the same semantic effects associated with definite expressions in both languages. The data, however, show that uniqueness effects are, indeed, very prominent with definite nominals in English, but seem to be absent in Russian. This means
+%these results are unexpected. It seems 
+that what we call a definite interpretation in Russian is of a different nature. In particular, there is no violation of a uniqueness presupposition in the Russian examples discussed in this section, unlike in (\ref{thedirector}) in English.
+
+Rather, the effects that we observe in (\ref{thedirector}) vs. (\ref{direktor}) can be explained as a difference between presupposition and implicature: unembedded presuppositions (the case of (\ref{thedirector})) are not cancellable, whereas unembedded implicatures (the case of (\ref{direktor})) are \citep[see, for instance,][]{beavergeurts14}.  A real presupposition violation in Russian can be illustrated by the following examples with factive predicates (`know', `be glad', etc.). The continuations in (\ref{Tolja1})--(\ref{Tolja2}) are clearly unacceptable, whereas in examples (\ref{direktor})--(\ref{avtor}) above only some pragmatic adjustment is needed. 
+
+\ea  \label{Tolja1} \gll
+Tolja		znaet,	\v{c}to		Anja		zavalila	\.{e}kzamen.	\minsp{\#} Ona	polu\v{c}ila 	otli\v{c}no. \\
+Tolja.\textsc{nom} knows that 	Anja.\textsc{nom}	failed 		exam.\textsc{acc} {} she 	got 		excellent.\\
+\glt `Tolja knows that Anja failed her exam. $\#$She got an `excellent'.'
+\z
+\ea  \label{Tolja2} \gll
+Tolja		ne		znaet, \v{c}to 		Anja 		zavalila	\.{e}kzamen. \minsp{\#} Ona	polu\v{c}ila	otli\v{c}no. \\
+Tolja.\textsc{nom}  not	knows that 	Anja.\textsc{nom}	failed 		exam.\textsc{acc} {} she	got 		excellent.\\
+\glt `Tolja doesn't know that Anja failed her exam. $\#$She got an `excellent'.'
+\z
+
+\noindent The effect of presupposition violation in the examples above is completely different from the effect of cancelling an implicature of uniqueness of bare nominals in Russian. Ideally, the two effects should be compared experimentally, either by an acceptability judgment task or by measuring the response time in each of the cases. For now, the only experimental data available for Russian are reported in \citet{simikdemian20}, who show the absence of uniqueness (with singulars) or maximality (with plurals) effects with bare nominals in Russian, including those nominals that appear in sentence initial position. 
+
+\citeposst{simikdemian20} series of experiments are designed to check whether uniqueness/maximality is conveyed by definite descriptions in German and bare nominals in Russian. The experiment was based on the so-called ``covered box'' design, where the participants are presented with two pictures turned face down, one of which flips open after the participant has listened to a short audio message describing some situation. The ``open'' picture accurately depicted the described situation apart from one critical condition. In case of definite descriptions, the uniqueness/maximality condition was the critical one and the depicted situation contradicted the uniqueness/maximality conveyed by the corresponding definite description in the audio message. The task that the participants faced was to choose which one of the two pictures (the open one or the closed one) represented the situation correctly. The closed card was never displayed, so the participants basically had to judge whether the open card fully corresponds to a given situation or if there should be a better, more faithful depiction of the same situation. The participants were warned that there is only one ``correct'' option/card. 
+
+The experiment showed that in German, a language with a definite article, definite descriptions do indeed convey uniqueness and maximality, as expected, although the uniqueness condition appears to be weaker than expected.\footnote{The reader is referred to the original paper for detailed results and discussion.}
+%Thus, only in \qty{42}{\percent} of the did the participants select the expected picture (the covered one), whereas in the remaining \qty{58}{\percent} participants accepted situations where uniqueness/maximality was violated. 
+In Russian, however, the uniqueness/maximality effects were not found at all, independently of the grammatical number of the nominals (singular vs. plural), their position in a sentence (sentence initial vs. non-initial position) or prosody (stressed vs. unstressed nominals). The results of the experiments conducted by \citet{simikdemian20} are striking and show very convincingly that none of the approaches that predict uniqueness/maximality for bare nominals in Russian is supported by experimental data. 
+
+Interestingly, \citet{simikdemian20} also conducted a series of experiments testing sensitivity to various presuppositions and inferences (exhaustivity, scalar implicatures, cardinality inferences with \textit{both} or \textit{two} etc.), using the same experimental design as for maximality/uniqueness. The results of those experiments clearly show that Russian speakers are highly sensitive to presupposition violation. In fact, there was barely any difference between German and Russian participants in this respect, as in both groups the participants made the correct and expected choice (i.e., the covered picture) in about \qty{90}{\percent} of the cases. Thus, the experiments fully confirm the conclusions reached on the basis of the data discussed above: Russian bare nominals do not give rise to uniqueness effects, as the contextually imposed definite interpretation can be easily overruled in Russian. True presupposition violations are very clearly manifested and judged as virtually unacceptable by a large percentage of speakers.
+
+In addition to the data and the experiments discussed above, it should be pointed out that corpus data also support the conclusions of this section. As was discussed in \sectref{BNtopics}, examples of a BN in initial position followed by the same lexical nominal specified by `another' are also found in corpus data. The reader is referred back to examples (\ref{pasxa}) and (\ref{sluzaschij}). 
+
+A different type of a corpus study is reported in \citet{Liu.etal2023, Borik.etal2025, liusalt}. These papers present an analysis of the distribution of nominal phrases across definite and indefinite contexts in various languages, including Russian, based on a parallel translation corpus.\footnote{For a more detailed discussion of the translation corpus methodology see \citet{LeBruyn.et.al2022a,LeBruyn.deSwart2022}.} The translation corpus used for the study was built on the first chapter of J. K. Rowling's \textit{Harry Potter and the Philosopher's Stone}, a novel written in English and translated into many languages. It is shown that Russian can be considered a truly articleless language that freely allows BNs to take on definite and indefinite readings across domains. Thus, the study also confirms the main claims made in this section: Russian freely uses BNs in contexts where English uses indefinite NPs. Another conclusion of this corpus study is that not all languages without articles necessarily show the same distributional patterns of BNs across contexts: the differences between Russian, Hindi and Mandarin are discussed in detail in \citet{Liu.etal2023}.
+
+%Below I provide another example, also extracted from RuTenTen corpus, which contain an unmodified preverbal noun in a context that strongly favours uniqueness. However, as the story continues, possible uniqueness effects are easily overruled without creating any inconsistency or discrepancy in the overall interpretation:
+
+%\ea \gll Na ego glazax ubili molodogo i krasivogo byka. \textit{Mjasnik} zanes kin\v{z}al nad ego \v{s}eej i udaril. Byk kak podko\v{s}ennyj upal na brjuxo, nelovko perevalilsja na bok i sudoro\v{z}no zabil nogami. \textit{Drugoj mjasnik} navalilsja na nego s protivopolo\v{z}noj storony, prignul ego golovu k zemle i pererezal gorlo. \\
+%on his eyes killed.\textsc{pl} young\textsc{acc} and beautiful\textsc{acc} bull.\textsc{acc} butcher lifted dagger over his neck and hit bull as knocked.down fell on belly awkwardly turned on side and convulsively hit legs another butcher fell on him with opposite side bent his head at ground and cut throat \\
+%\glt `They slaughtered a young and beautiful bull in front of his eyes. A butcher lifted the dagger and hit the bull in the neck. The bull fell on its belly as if it was knocked down, awkwardly rolled onto its side and started kicking convulsively. Another butcher attacked him from the other side, bent his head to the ground and cut his throat.' 
+%\z
+%\exg. Odna\v{z}dy v maje mesjace, v pasxal'nye dni my priexali v detskij prijut. \.{E}to byla vtoraja polovina dnja, i u\v{z}e mo\v{z}no bylo govorit' o podarkax Bo\v{z}iix za segodnja\v{s}nij den'. Ja sprosil detej: "\v{C}em vas obradoval segodnja Gospod'?" Odin mal'\v{c}ik skazal: "Ja utrom prosnulsja i poblagodaril Gospoda za to, \v{c}to on prigotovil nam \.{e}tot den'." 
+%\textit{Devo\v{c}ka} vspomnila: "Ja uvidela segodnja aista." \textit{Drugaja devo\v{c}ka} rasskazala: "A ja segodnja babu\v{s}ku uvidela vo sne." \\
+%once in may month in Easter days we came in children shelter this was second half day.\textsc{gen} and already possible was talk about presents of.God for today day I asked children.\textsc{acc} what.\textsc{dat} you.\textsc{acc} made.happy today God one boy said I in.morning woke.up and thanked God for that what he prepared us this day girl remembered I saw today stork.\textsc{acc} other girl told and I today grandma.\textsc{acc} saw in sleep \\
+%'Once in may, some time around Easter we came to children's shelter. This was the second half of the day, and we could already talk about God's presents of the day. I asked the children: 'How did God make you happy today?" One boy said: "I woke up this morning and thanked God for giving us this day." A girl remembered: "I saw a stork today." Another girl said: "And I dreamt about my grandmother."
+%\noindent In this example, the bare nominal in italic (\textit{mjasnik} 'butcher') tends to be interpreted definitely if the discourse stops when the corresponding sentence ends. A continuation of the example overrides the definiteness effects created by the BN, which illustrates that BNs do not necessarily convey uniqueness presupposition. 
+
+To sum up, the data discussed in this section all firmly point to a conclusion that there is no uniqueness effects associated with BNs in Russian. In the next section I will conclude the discussion of definiteness in Russian by examining a number of theoretical implications that these empirical data seem to suggest.  
+
+%\ex.
+%\a. The author of this book gave an interview . $\#$The other author/#the second author/another author appeared in a TV show. \\
+%\b. Avtor 	etoj knigi dal 		intervju 		odnoj 	gazete. 			Drugoj avtor 	vystupil    na radio. \\
+%		author 	this book gave 	interview 	one.\textsc{dat} newspaper.\textsc{dat} 	other 	author 	appeared on radio.
+
+%?	a default interpretation of the first sentence: unique author
+%?	a continuation can easily override this interpretation
+
+%?	  Uniqueness is an inference. 
+
+
+\subsection{Definiteness and uniqueness in Russian: interim conclusions} \label{interimconclusions}
+
+The most important results of this section so far can be summarised in two points. First, there is ample empirical evidence that BNs in Russian behave like \textit{a}-indefinites in English: they appear in the same contexts and exhibit the same scopal ambiguities. Second, there is no strict correspondence between definite descriptions in English and bare nominals perceived as definites in Russian. In particular, a careful analysis of Russian BNs let us conclude that there is no uniqueness presupposition associated with those nominals, whereas their definite counterparts in English do, indeed, give rise to strong uniqueness effects. Moreover, those uniqueness effects in English, when detected, cannot be cancelled in non-embedded contexts, which is a typical feature of presupposed content. 
+
+These results strongly suggest that approaches to BN semantics based on covert type shift operations (like, for instance, \citealt{chierchia98} and \citealt{dayal04}) will not successfully handle Russian data if not substantially modified. The claim can presumably be extended to other languages without articles that behave similar to Russian with respect to the absence of uniqueness effects in BNs.  In other words, we do have a very good reason to believe that the differences between definite descriptions in a classical sense and bare nominals perceived as definites lie deeper than just the surface realisation of the corresponding article and should be properly reflected in their semantic representation. 
+
+This, of course, does not imply that all languages without articles should necessarily behave the same (see \citealt{Liu.etal2023} and \citealt{liusalt}). The differences in definiteness marking between languages with articles are widely attested (for instance, \textit{la literatura} `the literature' in Spanish vs. \textit{literature} in English), so there is no a priori reason to believe that all bare nominals in languages without articles show a semantically uniform behaviour. Thus, \citeposst{dayal04} proposal might be a perfect account for Hindi data, but should not be blindly transferred to any other language without articles without an in-depth analysis of the relevant empirical facts, as argued in \citet{Liu.etal2023}. Of course, the opposite is true as well: if there are no uniqueness effects associated with bare singular nominals in Russian, bare nominals of some other language might very well yield uniqueness. 
+
+The results reported here do not mean that there is no definiteness in Russian at all, either. The argument developed in this section has to do only with the uniqueness theory of definiteness and its possible extension to articleless languages. We have established that bare nominals in Russian do not bear any uniqueness effects, but that does not mean that they do not express anaphoric definiteness or saliency \citep[cf.][]{heusinger97, heusinger13}, or are not determinate in the sense of \citet{coppockbeaver15}. Which of these properties can be associated with BNs whose interpretation is -- in some sense -- definite is a fascinating research question which deserves an accurate and precise answer. There is much to be done. For now, we can be fairly sure that if there is a category of definiteness in Russian, then it cannot be successfully characterised in familiar uniqueness/maximality terms. 
+
+From a theoretical viewpoint, the question that arises is which of the existing theoretical approaches would be better equipped to model the interpretation of bare nominals in Russian. Future research might still have a significant impact on a possible answer, but we may begin by sorting out the options. Let us assume that BNs in Russian denote properties (following \citealt{chierchia98}, among many others), as there is not much reason to believe otherwise. Assuming the type-shifting approach to nominal reference with \citet{partee87}, this means that nominal arguments need to undergo a type shift to be used in argument position. Which type shifting operators need to be postulated for languages like Russian? In particular, is there an iota shift in Russian? 
+
+At this stage, the answer to the last question seems to be negative. To the best of my knowledge, there is no account that does not attribute uniqueness to the iota operator. As has already been pointed out, classical approaches to type shifting, like \citet{partee87}, do not distinguish between the semantic contribution of the $\iota$ operator and the definite article itself, so their prediction seems to be fairly straightforward: if there is no definite article, there is no iota operator and no uniqueness effects. Lexicalization theories based on \citet{chierchia98, dayal04} do postulate an iota shift for articleless languages and hence predict uniqueness for bare nominals with a definite-like interpretation, the prediction that has just been argued to be incorrect. The predictions that \citet{coppockbeaver15} make for articleless languages are not entirely clear and seem to hinge on a pending question of whether indefinite nominals have a determinate interpretation or not \citep[cf.][424]{coppockbeaver15}. \citet{coppockbeaver15} also define $\iota$ as an operator that yields uniqueness, but the only other operator that they assume is the existential type shift, which does not derive determinate (i.e., type $e$) interpretations. Russian bare nominals can definitely be determinate, that is, have an individual denotation, but at the same time, cannot be derived by the $\iota$ operator that denotes uniqueness. Hence, what we need is an operator that derives determinate indefinites, exactly the one that is missing in \citeposst{coppockbeaver15} analysis. 
+
+Perhaps the best candidate to handle the Russian data so far is the indefiniteness hypothesis proposed by \citet{Heim2011}. The proposal is that all bare nominals in articleless languages are inherently indefinite, as was explained in \sectref{ambindef}, and definiteness effects are achieved by pragmatic strengthening mechanisms. Following \citet{Heim2011}, I propose that for any bare nominal phrase in Russian, an indefinite interpretation is the only one derived semantically. Although a formal semantic analysis for bare nominals in Russian remains to be developed, we can make a first step by assuming that there are two semantic mechanisms involved in the derivation of indefinites in Russian, just like in other languages \citep[cf.][]{Reinhart1997}: existential quantification and a choice function, as defined in (\ref{indef}) below:
+
+\ea \label{indef}
+\ea $\exists x [P(x) \wedge Q(x)]$
+%\sib{the} $= \lambda P:\exists x \forall y [P(y)\leftrightarrow x = y]. \iota x.P(x)$,\\
+\ex $ f\textsubscript{CH}[{x: P(x)}] $ \label{choice}
+\z
+\z
+
+\noindent Quantificational indefinites are considered to be non-referential, whereas a choice function analysis could account for those cases where an indefinite refers to a (specific) individual. The representation in (\ref{choice}) is based on the choice function analysis of specific indefinites \citep[cf.][]{Reinhart1997, Winter1997, kratzer98a} and states that there is a function \textit{f} that is a choice function and, applied to a predicate $P$, yields a member satisfying this property. A full formal analysis of bare nominals in Russian will need to determine how precisely the labour is divided between the two mechanisms (or, perhaps, just one mechanism suffices, as proposed by \citealt{Winter1997}), whereas we can conclude this section by stating that the perceived definiteness of Russian BNs, under the indefiniteness hypothesis presented here, must be of a pragmatic nature. In practice, this means that there is no need to postulate an iota operator for Russian. Note that \citet{Simik2021} makes a similar proposal for Czech BNs: in his analysis, argument BNs are treated as referential expressions of type $e$ derived from the basic predicate denotation by a Skolemized choice funcion. \citet{Simik2021} also argues that BNs have the property of inherent uniqueness, which is derived as a property of a resource situation. Crucially, in \citeposst{Simik2021} analysis BNs do not carry any presupposition of uniqueness. 
+
+\citet{seresborik21} argue that there are at least three factors that are responsible for triggering definiteness effects in Russian: ontological uniqueness, topichood, and anaphoricity. The interpretation of bare nominals in topic position was already discussed in \sectref{BNtopics} and anaphoric definiteness in Russian is an open field of research, which is impossible to embrace within the limits of this chapter.\footnote{Although see \citet{Borik.etal2020, seresetal} for some data concerning anaphoricity.} As for ontological uniqueness, this term is used to refer to those objects which are perceived as unique by default in the current situation/world, such as \textit{the earth, the sun, the moon}, etc. in English.\footnote{In \citeposst{lobner85} terms, these nominals are ``semantically unique'' and in \citeposst{Simik2021} terms they are ``inherenly unique''.} In Russian, those unique objects are usually referred to by bare singular nominals, as illustrated in (\ref{solnce}):
+
+\ea \label{solnce}  \gll 
+Solnce		svetit. \\
+sun.\textsc{nom}		is.shining\\
+\glt `The sun / \#a sun is shining.'
+\z
+\noindent In this case, uniqueness is conveyed not so much by the definite article, but by the descriptive content of a nominal phrase itself. For instance, when we want to use an expression with the noun \textit{sun}, a usual case is that we want to refer to the sun of our solar system, which is a unique object. In this case the definite article in English does not contribute but rather reflects the uniqueness of the object in the actual world. If we use \textit{sun} with an indefinite article in English, we would overrule the assumption that we are talking about the sun of our solar system. In Russian, both options are compatible with the BN in (\ref{solnce}), so that this case is essentially not different from examples like (\ref{direktor}) discussed in \sectref{absenceofuniqueness}.  
+
+Note that if we cast doubts on the necessity of the iota operator in Russian, we have to specifically mention another type of nominal interpretation, namely, the kind reading. In \sectref{kinds} it was stated that the analyses of singular kinds (or definite kinds) usually rely on the iota operator for semantic representation. I would suggest that kinds can, in principle, be handled like ontologically unique objects (see \citealt{Simik2021} for a similar idea). Note that kinds in English obligatorily appear with the definite article, just like ontologically unique nouns like \textit{sun}. Any other type of determiner would give rise to a different interpretation, cancelling the uniqueness of the object or kind that we are referring to. The function of the definite article \textit{the} is the same with kinds and with ontologically unique nouns: the article simply marks a unique referent. In the absence of articles, the unique interpretation arises as a result of the descriptive content of the noun. 
+
+In sum, I have argued that definiteness effects that can be associated with some uses of Russian bare nominals should not be encoded in their semantic representation. I have also proposed that the indefiniteness hypothesis by \citet{Heim2011} seems to be better equipped to model the behaviour of bare nominals in Russian and makes correct empirical predictions, unlike uniqueness approaches postulating a (covert) $\iota$ (iota) operator for a representation of those bare nominals that exhibit a definite-like interpretation in Russian.
+
+In general, definite nominals is a very broad class that includes not only definite descriptions, but also proper names, demonstratives, personal pronouns and possessive constructions, which are all regarded as definite \citep[cf.][]{lyons99}. So far, the scope of the discussion of the Russian data has been restricted to BNs in Russian whose interpretation is intuitively similar to the interpretation of definite descriptions in English. The next section will extend the empirical coverage of the chapter to include demonstratives and possessive constructions. 
+
+\section{Marked definiteness: demonstratives and possessives in Russian} \label{markeddef}
+
+
+Demonstrative and possessive constructions are often discussed in the definiteness literature \citep[cf.][etc.]{hawkins78, lyons99} because semantically, these constructions seem to somehow incorporate definiteness. In this section, I will briefly describe some general proposals in the literature regarding a semantic analysis of demonstratives and possessives in terms of definiteness and examine the repercussions of these proposals for the corresponding Russian data. It will be shown that neither demonstratives nor possessives in Russian seem to pose an immediate threat to the hypothesis put forward and defended in the previous section: the absence of definiteness/uniqueness in Russian BNs. 
+
+\subsection{Demonstratives} \label{demonstratives}
+
+There is a strong tendency to associate \textit{canonical} demonstrative nominal phrases like the one in (\ref{dog}) with definite descriptions \citep[cf.][]{lyons99, elbourne08, simik16}: 
+
+\ea \label{dog}
+This dog [pointing at some dog] looks dangerous. 
+\z
+
+\noindent In this example, the demonstrative pronoun \textit{this} is quite similar in meaning and can probably even be substituted by the definite article \textit{the}: the demonstrative pronoun combined with the nominal \textit{dog} restricts its denotation to a (unique) individual dog identifiable in the context. There is, however, a whole class of demonstrative constructions that do not seem to fit this description. One example is given below: 
+
+\ea 
+This John Blake might be the smartest guy in the whole universe but boy, is he annoying!
+\z
+
+\noindent Unlike in the previous example, in this case the demonstrative does not restrict the denotation of the descriptive content to a unique individual or shift the meaning of its complement to an individual denotation, as it combines with a proper name. Rather, it contributes an emphatic pragmatic meaning, or some sort of evaluation, the meaning described by \citet{lakoff74} as \textsc{affective}. 
+
+Both uses exist in Russian and other Slavic languages (see \citealt{simik16} for Czech), as exemplified below: 
+
+\ea
+\ea \gll	Posmotri 	na 	\.{e}tu kartinu, 	kakaja 	krasota! \\
+look 	on	this painting 	what 	beauty \\
+\glt `Look at this painting [pointing at some painting in a museum], what a beauty!'
+\ex \gll \.{E}ta Irina, 	novaja sekretar\v{s}a \v{s}efa, 		o\v{c}en'  mne 	 ne ponravilas'. \\
+this Irina 		new 	secretary 	boss.\textsc{gen} very 	me.\textsc{dat} not like.\textsc{refl} \\
+\glt `I really didn't like this Irina, a new secretary of the boss.'
+\z
+\z
+
+\noindent Affective demonstratives will not concern us here, despite their many intriguing properties, as the case that is directly relevant to the discussion of uniqueness in the previous section is really a canonical use of demonstratives. 
+
+Going back to canonical demonstratives exemplified in (\ref{dog}), there are formal analyses that capitalize on their definiteness and the uniqueness of the referent of a demonstrative description. For instance, \citet{elbourne08} states that demonstrative nominals do not receive any denotation in a context if there is no unique individual that satisfy the corresponding description \citep[][26]{elbourne08}. Consequently, uniqueness forms an integral part of his analysis of demonstratives which integrate the definiteness semantics by means of employing an iota operator in the semantic representation of demonstratives. 
+
+However, certain crucial differences between demonstrative and definite descriptions have not gone unnoticed either. \citet{roberts02} points out the following difference between the two classes of NPs: 
+
+\ea
+\ea[]{\label{that chair}
+You [nodding to Mary] sit in that chair [pointing at chair \textit{a}], and you [nodding to Jonathan] sit in that chair [pointing at chair \textit{b}].}
+\ex[\#]{\label{the chair}
+You (nodding to Mary) sit in the chair [pointing at chair \textit{a}], and\newline you (nodding to Jonathan) sit in the chair [pointing at chair \textit{b}].}
+\z\z
+
+\noindent The examples illustrate that a deictic demonstrative description is appropriate in a context with more than one potential referent if accompanied by a gesture, as in (\ref{that chair}), whereas a definite description is clearly unacceptable in the same situation. This fundamental difference underlies a range of linguistic analyses which are, to a bigger or lesser extent, built on \citeposst{kaplan89} original idea that the semantic treatment of demonstratives should rely on an additional referential means, something like \textsc{demonstration}. 
+
+This additional component finds its way into a syntactic (and semantic) structure associated with demonstrative nominal phrases in recent literature \citep[e.g.][]{elbourne08, simonenko13, simik16}: 
+
+\ea 	\label{demstructure}
+[Dem [Det [NP]]] 
+\z
+
+\noindent Semantically, the structure in (\ref{demstructure}) reflects two crucial components of the complex meaning of a demonstrative: a relational/anaphoric/demonstrative component encoded by Dem and a definite component encoded by Det. In most formal analyses, the Det component is represented by the familiar iota operator, the same that derives a uniquely referring individual expression in the case of definite descriptions.\footnote{Even though this structure is semantically motivated, the additional question that it poses for Slavic languages is the presence of a DP layer which is not commonly assumed or adopted in Slavic syntax. For a recent overview, see \citet{geist21}.} 
+
+\iffalse
+The literature \citep[see, especially][]{elbourne08} has convincingly argued that canonical demonstratives do indeed have an individual denotation, just like definite descriptions. This can be easily illustrated using the tests proposed by \citet{lobner85} for \textit{e}-type entities. Moreover, \citet{lyons99} claims that demonstrative constructions imply definiteness, hence demonstratives are necessarily definite \citep[see][21]{lyons99}. 
+
+
+First of all, neither definites nor demonstratives can be directly negated, unlike quantified expressions: 
+
+\ex. 
+\a. *Not the child is playing.
+\b.	*Not that child is playing.
+\c.	Not every child is playing. 
+\d. 	Not many chilren are playing. 
+
+Secondly, a conjunction of P(x) and not P(x) leads to a contradiction for statements containing individuals but not quantified expressions: 
+
+\ex. 
+\a. 	$\#$The girl is tall and the girl is not tall.
+\b. $\#$That girl[pointing at Mary] is tall and that girl[pointing at Mary] is not tall.
+\c. A girl is tall and a girl is not tall.
+\d.  Several girls are tall and several girls are not tall. 
+
+\fi
+
+The scope of this chapter cannot be extended to include a detailed and theoretically comprehensive discussion of the semantics of demonstratives, but I think that one question directly relevant to the discussion in this chapter should nevertheless be addressed. This question is whether demonstratives presuppose uniqueness of their referent. 
+%Recent formal analyses, for instance, \citet{elbourne08, simonenko13, simik16}, build the uniqueness of a referent into a formal definition of a demonstrative, as has already been pointed out. 
+
+Without looking into technical details, the point that I would like to make is the following. It seems to me that uniqueness in the case of definite descriptions and uniqueness in the case of demonstratives is not of the same nature. Whether I say \textit{Look at this/that book!} or \textit{Look at the book!}, I am, indeed, referring to one single individual representative of the \textit{book}-class, but the referent of \textit{this/that book} is not semantically unique in the same sense as the referent of the definite description \textit{the book}. For instance, I can use the expression with a demonstrative while looking at the books on the bestsellers stand in a bookstore (and pointing at the relevant book at the same time, perhaps), but a definite description would sound odd in this context \citep[cf.][]{roberts02}. In Russian, in the same type of situation, a demonstrative (or any other nominal modifier) is almost required, as a bare nominal can only be successfully used if accompanied by some sort of gesture or other identifying information, otherwise the immediate reaction would be \textit{Which book?}
+
+If the uniqueness of a referent is not satisfied in the case of a definite description, this definite description cannot be successfully used in the corresponding context. However, in the case of demonstratives the individual referred to does not have to be unique, the speaker \textit{makes} it unique by singling it out from the rest of the individuals that satisfy the descriptive content of the NP. As a result, the demonstrative expression will refer uniquely but this uniqueness seems to have a different \textit{source} than the uniqueness of a definite description. 
+
+This reasoning is general and applies to demonstrative nominals in both English and Russian. If this line of argumentation is on the right track, no specific argument against uniqueness of Russian demonstratives needs to be developed. This also means that if we want to use the structure in (\ref{demstructure}) to represent the syntax and the semantics of a demonstrative NP, then perhaps the semantic operator that corresponds to Det should not be the same as the one used in definite descriptions, as the great majority of analyses, including \citet{roberts02, wolter06, elbourne08} suggest.  
+
+Postulating the $\iota$ operator in the semantic representation of demonstratives raises some questions concerning the Russian facts discussed in \sectref{analysesRU}. In particular, if the indefiniteness hypothesis turns out to be the correct one for representing bare nominals in Russian, it might be the case that the $\iota$ operator is redundant for Russian, unless it is demonstrated that this operator is needed for other types of nominals, not bare nominals.\footnote{See \citet{Simik2021} for a proposal based on the indefiniteness hypothesis.} Then, for instance, if Det in (\ref{demstructure}) is adopted for Russian, it should correspond to some other semantic operator, different from $\iota$. But once this turns out to be an option for Russian, why should we expect Det to be exclusively associated with $\iota$ in English and other languages? 
+
+To sum up, the point that I have tried to make in this section is of a more general nature and does not draw so much on Russian data: I have questioned that uniqueness properties of a definite description and of a demonstrative nominal are of the same nature and should be attributed to the same semantic operator. I tentatively suggest that the answer to this question is negative. It would be wrong to claim that the differences in referential properties of definite and demonstrative descriptions have not been tackled in the literature. Different solutions that have been proposed include modifying the notion of uniqueness (cf. ``informational uniqueness'' of \citealt{roberts02}), postulating different contextual domain restrictions for definite vs. demonstratives \citep[e.g.,][]{wolter06} or differentiating between inherent (pragmatically presuppositional) vs. accidental (presuppositional) uniqueness \citep{Simik2021}. To this, I would add that another option should be explored: the one that does not include semantic/presuppositional uniqueness for the analysis of demonstratives at all. 
+
+%Lyons (1999:21):
+%The position I adopt here is that a demonstrative signals that the identity of the referent is immediately accessible to the hearer, without the inferencing often involved in interpreting simple definites. This may be because the work of referent identification is being done for the hearer by the speaker, for example by pointing to the referent. [..] This suggests a necessary connection between [+ Dem] and [+ Def], the former implying the latter. I take demonstratives, then, to be necessarily definite.
+
+					
+%Elbourne (2008:26): Demonstratives are individual concepts. 			
+%To be precise, the individual concept is the smallest function that takes a situation s and maps it to the unique individual z (if there is such an individual) such that z satisfies the NP-property in s [...]; if there is no such unique individual at the circumstance of evaluation, the whole DP will receive no denotation there, as explained earlier in section 2.2. Overall, then, complex demonstratives are individual concepts, just like definite descriptions and pronouns.	
+	 
+
+\subsection{Possessives} \label{possessives}
+
+It is often suggested in the literature that at least some possessive descriptions are definite. For English Saxon genitives, i.e., those expressions that begin with a possessive pronoun or with a genitive nominal phrase expressing a possessor (e.g., \textit{Peter's house}), it is common to postulate (or to implicitly assume) a hidden \textit{the} in the semantic analyses \citep[cf.][]{parteeborschev03, viknerjensen02}. This position is countered by \citet{peterswesterstahl13}, who argue that possessive are not definite, and \citet{coppockbeaver15}, who argue that Saxon genitives are (typically) determinate, but are not marked for definiteness. 
+
+In Russian, there are two types of possessive constructions exemplified in (\ref{rusposs}): 
+
+\ea \label{rusposs} 
+\ea \gll 	portret 				Peti \label{postnomposs}\\
+		portrait.\textsc{nom} 	Petja.\textsc{gen} \\
+        \glt `the portret of Petja'
+\ex \gll 	Petin 	portret \label{prenomposs}\\ 
+		Petja.\textsc{poss.adj} 	portrait.\textsc{nom} \\
+\glt `Petja's portrait'
+\z
+\z
+\noindent The construction in (\ref{prenomposs}) is restricted to proper names, pronouns, kinship terms, professions/titles, or animal names, which are grammatically and semantically singular \citep{babyonyshev97} and often compared to the English Saxon genitive. Two relevant properties of prenominal possessors in (\ref{prenomposs}) have been noticed and mentioned in the literature. 
+
+%(22) 	a. 	no¸ka 	stola 
+%		leg.NOM.SG 	table.GEN 		
+%	b. 	*stolova/stolina 	no¸ka
+%		table.POSS.FEM.SG. leg.NOM.SG 	
+
+The first one is that they exhibit an agreement pattern similar to demonstratives but not to regular adjectives, as illustrated in (\ref{vanindom}):
+
+%\ea	\label{vanin}
+\ea 	\label{vanindom} \gll 
+\.{e}tot-$\emptyset$	Vanin-$\emptyset$			krasiv-yj dom-$\emptyset$ \\
+this-\textsc{m.sg.nom} 	Vanya.\textsc{poss-m.sg.nom} 	beautiful-\textsc{m.sg.nom} house-\textsc{m.sg.nom}\\
+\glt `this beautiful house of Vanya's'							 
+%\ex \label{vaninakniga} \gll 
+%\.{e}t-u 	Vanin-u 			krasivu-ju knig-u  \\
+%this-\textsc{f.sg.acc}  	Vanya-\textsc{poss.f.sg.acc}  beautiful-%\textsc{f.sg.acc} book-\textsc{f.sg.acc} \\
+%\glt `this beautiful book of Vanya's'
+%\z
+\z
+\noindent As can be seen in the example, a ``proper'' adjective in Russian marks agreement with the head noun by means of a special ending (\textit{-yj} in (\ref{vanindom}) %and \textit{-ju} in (\ref{vaninakniga})
+), whereas both demonstratives and possessives lack this ending. Supposedly, the presence of the ending signals a proper adjectival status of the agreeing element, and the absence of it indicates that the properties of the agreeing expression combine adjectival and nominal characteristics. 
+
+Another characteristic of prenominal possessors is that they introduce a referent that can serve as an antecedent for a reflexive pronoun. Possessive adjectives do not exhibit this property: 
+
+\ea 	
+\ea[]{\gll sosedkin$_{i}$		rasskaz 	o 	svoix$_{i}$ 	problemax \\
+	neighbour.\textsc{poss.m.sg.nom} 	story.\textsc{m.sg.nom} about 	self.\textsc{pl.prep} problem.\textsc{pl.prep} \\
+\glt `the neigbour's story about their own problems'}
+\ex[*]{\gll 	{sosedskij$_{i}$}  		rasskaz 	o 	svoix$_{i}$ 				problemax \\
+	neighbour.\textsc{m.sg.nom}	story.\textsc{m.sg.nom} 	about 	self.\textsc{pl.prep} 	problems.\textsc{pl.prep} \\
+\glt Intended: `the neighbour's story about their own problems'}
+\z
+\z
+\noindent On the basis of these two properties, \citet{babyonyshev97} proposed that prenominal possessors in Russian should be treated as D-elements, since they are reminiscent of demonstratives and have referential properties of their own. 
+
+However, it is likely that the agreement pattern of possessors has an independent explanation and the referential properties of possessors are not that robust. As for agreement, both demonstratives and possessive adjectives with the suffix \textit{-in} in Russian, like \textit{Vanin} and \textit{sosedkin} in the examples above, belong to a so-called \textsc{mixed} type and fully coincide with proper (long) adjective forms in all cases except for Nominative and Accusative \citep[][]{VojejkovaXologilova2022}, as illustrated below: 
+
+\ea \label{vanincases}
+\ea 	\label{vaninNOM} \gll 
+\.{e}tot Vanin		krasiv\textit{yj} dom \\
+this.\textsc{m.sg.nom} 	Vanya.\textsc{poss.m.sg.nom} 	beautiful.\textsc{m.sg.nom} house.\textsc{m.sg.nom}\\
+\glt `this beautiful house of Vanya's'		
+\ex \label{vaninDAT} \gll
+\.{e}t\textit{omu} Vanin\textit{omu} krasiv\textit{omu} dom\textit{u}\\
+this\textsc{m.sg.dat} 	Vanya.\textsc{poss.m.sg.dat} 	beautiful.\textsc{m.sg.dat} house.\textsc{m.sg.dat}\\
+\glt `(to) this beautiful house of Vanya's'		
+\z
+\z 
+
+\iffalse
+adjectives, as opposed to other agreeing elements like demonstratives and possessives, in their so-called ``long'' form, the form that is always used in prenominal position, historically incorporate a demonstrative pronoun that shows up as the ending of an adjective, as illustrated in \tabref{borik:tab:1}: 
+
+\begin{table}[!ht]
+\centering
+\caption{Pronominal and adjectival conjugation}
+
+\begin{tabularx}{.6\textwidth}{lXX}
+\lsptoprule
+\textsc{Case} & \textsc{3pers.sg.masc} &  new.\textsc{sg.masc}   \\\midrule
+
+	\textsc{nom}	&		on-$\emptyset$ 	&	novyj-$\emptyset$\smallskip\\
+	\textsc{acc}	&	e-go &	novo-go\smallskip\\
+	\textsc{gen}  &	e-go	&	novo-go\smallskip\\
+	\textsc{dat} & e-mu & novo-mu\smallskip\\
+	\textsc{instr} & im & nov-ym\smallskip\\
+	\textsc{prep} & (o) nj-om & (o) nov-om \\
+ \lspbottomrule
+
+\end{tabularx}
+\label{borik:tab:1}
+\end{table}
+
+If, however, an adjective is used in predicative position, where both a long form and a short form can be used, we can see that the short form of an adjective bears exactly the same agreement morphology as the demonstrative pronoun and as a possessive adjective in the same predicate position. Neither of the two predicative elements are marked for case in (\ref{platje}). A short form is, hence, the one that does not incorporate a 3rd person pronominal ending and does not bear case marking: 
+
+\ea \label{platje}
+\ea \gll  \.{E}to 			platje 					krasivo. \\
+this.\textsc{n.sg.nom}	dress.\textsc{n.sg.acc} 	 beautiful.\textsc{n.sg} \\
+\glt `This dress is beautiful.'
+\ex \gll \.{E}to 			platje 					Vanino. \\
+this.\textsc{n.sg.nom}	dress.\textsc{n.sg.nom} 	mother.\textsc{poss.n.sg} \\
+\glt `This dress is mother's.'
+\z
+\z
+\noindent Thus, the agreement pattern of prenominal possessives has to do with factors that are orthogonal to their position, as witnessed by (\ref{platje}). 
+\fi
+
+\noindent As for the second property, i.e., the referential status of prenominal possessors, \citet{trugman07} points out that they do not always introduce a referent. In fact, she makes a distinction between referential possessives in (\ref{tufli}) and modificational possessives that do not introduce any referent in (\ref{sredstva}): 
+
+\ea
+\ea \label{tufli} \gll 	babu\v{s}kiny 					tufli 		\\
+	grandma.\textsc{poss.pl.nom}  	shoes.\textsc{pl.nom} \\
+\glt `grandma's shoes'	
+\ex \label{sredstva} \gll 	babu\v{s}kiny 					sredstva  \\
+	grandma.\textsc{poss.pl.nom} 	remedy.\textsc{pl.nom} \\
+\glt `folk remedies'
+\z
+\z
+\noindent To sum up, neither of the two characteristic properties of prenominal possessives can form basis for any solid generalisation concerning their syntactic status and their structural position within the nominal phrase.\footnote{See \citet{gepner21} for similar conclusions.}
+
+As for the definiteness status of possessives, \citet{coppockbeaver15} argue for English that possessive descriptions are not marked for definiteness, although they typically have individual reference and hence are determinate. In particular, \citet{coppockbeaver15} show that possessives do not encode (weak) uniqueness presupposition, whereas definite descriptions do. They base their main arguments on predicative uses of possessives and show that they lack the uniqueness requirements on the basis of the following examples:\footnote{The argument is more complex for the possessives in argument position.} 
+
+\ea  
+\ea Is that your bicycle? \label{bicycle-a}
+\ex Is that the bicycle you own? \label{bicycle-b}
+\z
+\z
+
+\ea \label{rebicylcle}
+Yes, and that one there is also mine. 
+\z
+
+\noindent The sentence in (\ref{rebicylcle}) cannot be a felicitous answer to (\ref{bicycle-b}), which contains a definite description that imposes the uniqueness requirement. However, it can be successfully used as an answer to (\ref{bicycle-a}), which contains a possessive instead of a definite description. If possessives required uniqueness, just as definite descriptions do, we would expect that (\ref{rebicylcle}) would not be acceptable as an answer to either (\ref{bicycle-a}) or to (\ref{bicycle-b}). 
+
+%\ex. 	
+%\a. 	This is Jane's work, and so is that.
+%\b. 	$\#$This is the work that Jane did, and so is that.
+
+In the case of Russian, it is fairly easy to show that possessive descriptions with prenominal genitive in Russian do not show any uniqueness effects. Consider the following example: 
+
+\ea \label{Rusposs}
+\ea 	\label{maminportret-a} \gll 
+V ka\v{z}doj komnate 	na\v{s}ego 	doma 			visit 		mamin 	portret. \\
+		in every	room	 our.\textsc{gen} 	house.\textsc{gen} 	hangs 	mom.\textsc{poss.m.sg.nom}	portrait \\
+        \glt `There is a portrait of mom in every room of our house.'
+\ex \label{maminportret-b} \gll
+Mamin portret visit 		v ka\v{z}doj komnate na\v{s}ego 		doma. 	 \\	
+		mommy.\textsc{poss.m.sg.nom} 	portrait hangs in every		room			our.\textsc{gen} 	house.\textsc{gen} \\
+\glt `A portrait of mom is hanging in every room of our house.'
+\z
+\z
+
+\noindent Both examples in (\ref{Rusposs}) would get an implausible interpretation should the possessive nominals yield uniqueness effects: the sentences would have to state that the same portrait was hanging in every room of the house. However, no such oddness is observed in either of the examples, the natural interpretation that arises is that every room of the house contains a different portrait of the same person. Due to the differences in word order, which cannot be easily reflected in the translation, the interpretation of the possessive phrase in (\ref{maminportret-b}) is intuitively  ``more definite'' than the one in (\ref{maminportret-a}) due to the initial position of \textit{mamin portret} in the second sentence. Despite the position, none of the possessive nominals encode uniqueness and hence we can conclude that possessive phrases in Russian do not pose any threat to the absence of uniqueness hypothesis developed in the previous section. 			
+
+\section{Conclusions} \label{conclusions}
+
+Despite the fact that Russian does not have articles, the contrast between definite, indefinite, and generic interpretations of BNs are still perceptible to the native speakers. This is true for other articleless languages as well, so the question of how to model the interpretations of BNs in languages without articles is an important linguistic question. 
+
+This chapter includes two parts: a broader empirical overview of the interpretive possibilities of BNs in Russian, and a comprehensive theoretical discussion of one of the possible interpretations of BNs, namely, the definite reading. In the first (empirical) part, I have shown that, pretty much in accordance with reasonable expectations, BNs in Russian can get a generic, definite or indefinite reading in argument position and discussed some factors that give rise to or facilitate a particular interpretation, in particular, word order and topichood. We have seen that for a generic reading, the type of predicate, the position in a sentence (pre- vs. post-verbal for subjects), the type of a sentence (characterising vs. episodic) are among the crucial factors that facilitate this interpretation. I have also discussed a linear position as a factor for obtaining an (in)definite interpretation, and one of the most important generalizations concerning a constraint on an indefinite interpretation for Russian BNs in topic position proposed in \citet{geist10}. I have shown that BNs in Russian do show scope ambiguity, just like English indefinite nominals, hence a specific indefinite interpretation of BNs in Russian cannot be excluded \textit{a priori}. % on common grounds.
+
+The second part of the chapter discussed the relation between BNs and definiteness, both from a theoretical and from an empirical perspective. I have argued that BNs in Russian cannot be treated as definite descriptions and provided various arguments against the semantic definiteness of those nominals. In particular, I have shown that Russian BNs which appear to be interpreted definitely do not give rise to uniqueness presupposition, unlike their definite counterparts in English, and hence should not be modelled in the same way as definite nominals in languages with articles. The absence of uniqueness presupposition with those BNs whose interpretation at first sight appear to be definite raises a fundamental question about a possible semantic analysis of BNs in articleless languages. In this chapter, I proposed that an indefiniteness hypothesis as sketched by \citet{Heim2011} appears to be the best fit for the Russian data discussed here. 
+
+This, however, does not necessarily mean that there is no definiteness in Russian. The only point that this chapter defends is that a uniqueness based theory of definiteness, depending on its specific implementation, makes incorrect predictions for Russian. There might be other types of definite nominals in Russian, those whose semantics do not have to be modelled based on uniqueness effects. Anaphoric definite BNs, for instance, exist in both Russian and other languages without articles. There might be other types of definite nominals whose semantics do not have to be modelled by means of the iota operator that conveys a uniqueness presupposition. 
+
+A lot remains to be done. A detailed, motivated and empirically adequate semantic analysis of BNs in Russian and other articleless languages is still to be developed. My hope is that this chapter lays the groundwork for developing such an analysis by providing empirical generalizations and arguments that have so far received little (in relative terms) attention in the literature. 
+
+
+\section*{Abbreviations}
+
+\begin{tabularx}{.5\textwidth}{@{}lQ}
+\textsc{3}&third person\\
+\textsc{acc}&accusative\\
+\textsc{inf}&infinitive\\
+\textsc{m}&masculine\\
+\textsc{nom}&nominative\\
+\end{tabularx}%
+\begin{tabularx}{.5\textwidth}{lQ@{}}
+\textsc{prs}&present tense\\
+\textsc{ptcp}&participle\\
+\textsc{refl}&reflexive\\
+\textsc{sg}&singular\\
+&\\ % this dummy row achieves correct vertical alignment of both tables
+\end{tabularx}
+
+\section*{Acknowledgments}
+I am grateful to the reviewers of this chapter for their valuable comments and suggestions, and to the editors of this volume for their endless patience, as well as their dedication and investment in this volume. All errors are mine. At the time of writing this chapter I was profiting from the financial support of the Spanish MINECO grant
+PID2020–112801GB–100. 
+
+
+
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
+\end{document}

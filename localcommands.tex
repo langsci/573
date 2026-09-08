@@ -1,0 +1,226 @@
+% \newcommand*{\orcid}{}
+
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\makeatother
+
+\newcommand{\togglepaper}[1][0]{
+   \bibliography{../localbibliography}
+   \papernote{\scriptsize\normalfont
+     \theauthor.
+     \titleTemp.
+     To appear in:
+     E. Di Tor \& Herr Rausgeberin (ed.).
+     Booktitle in localcommands.tex.
+     Berlin: Language Science Press. [preliminary page numbering]
+   }
+   \pagenumbering{roman}
+   \setcounter{chapter}{#1}
+   \addtocounter{chapter}{-1}
+}
+
+\newbool{bookcompile}
+\booltrue{bookcompile}
+\newcommand{\bookorchapter}[2]{\ifbool{bookcompile}{#1}{#2}}
+
+\AtBeginDocument{\nogltOffset} %removes extra spacing before trans line in examples - SPECIFIC TO OPEN SLAVIC LINGUISTICS, PREVIOUSLY AGREED UPON
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      File: langsci-osl.sty
+%%    Author: Radek Simik and Language Science Press (http://langsci-press.org)
+%%      Date: 2019-02-18
+%%   Purpose: This file contains macros for the Open Slavic Linguistics at Language Science Press series and is included 
+%%            into langscibook.cls
+%%  Language: LaTeX
+%%   Licence: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% FIXING GRAY
+
+\definecolor{lsDOIGray}{cmyk}{0,0,0,0.45}
+
+% PACKAGES REQUIRED
+
+\RequirePackage{relsize}
+\RequirePackage{stmaryrd}
+\RequirePackage{array}
+\RequirePackage{tabularx}
+
+% % KEYWORDS
+
+% \newcommand{\keywords}[1]{\noindent\textbf{Keywords:} {#1}}
+
+% SEMANTICS MACROS - GENERAL FOR ALL PAPERS
+
+\newcommand{\sib}[1]{$\llbracket${#1}$\rrbracket$} % = semantic interpretation brackets; puts text into double square brackets
+\newcommand{\stb}[1]{\langle{#1}\rangle} % = semantic type brackets; puts stuff into semantic type brackets; necessary to use in the form $\st{}$
+\newcommand{\cnst}[1]{\textsf{\relsize{-1}\MakeUppercase{#1}}} %creates sans-serif small-caps, used for typesetting logical constants which have no other appropriate symbols (such as Greek letters)
+
+% MINUS HSPACE MACRO
+
+\newcommand{\minsp}[1]{#1\hspace{-2.5pt}} % use for non-glossed elements in glossed examples (typically stars, brackets, slashes, ...)
+
+% CITATION MACROS
+
+\newcommand{\citeposst}[1]{\citeauthor{#1}'s (\citeyear{#1})} % produces Chomsky's (1995)
+\newcommand{\citeposstpg}[2]{\citeauthor{#1}'s (\citeyear[#2]{#1})} % produces Chomsky's (1995: page)
+\newcommand{\citepossalt}[1]{\citeauthor{#1}'s \citeyear{#1}} % produces Chomsky's 1995
+\newcommand{\citepossaltpg}[2]{\citeauthor{#1}'s \citeyear[#2]{#1}} % produces Chomsky's 1995: page
+
+% BARPLOT
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} 
+\newcommand{\barplot}[5]{%
+  \begin{tikzpicture}
+    \begin{axis}[
+	xlabel={#1},  
+	ylabel={#2}, 
+	axis lines*=left, 
+        width  = {#3\textwidth},
+	height = .3\textheight,
+    	nodes near coords, 
+	xtick=data,
+	x tick label style={},  
+	ymin=0,
+	symbolic x coords={#4},
+	]
+	\addplot+[ybar,lsRichGreen!80!black,fill=lsRichGreen] plot coordinates {
+	    #5
+	}; 
+    \end{axis} 
+  \end{tikzpicture} 
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 04_filip %%%
+
+% \newcommand{\mC}[1]{\multicolumn{1}{c}{#1}} % multicolumn with a single column; ALREADY DEFINED
+
+\usetikzlibrary{arrows, arrows.meta}
+\usetikzlibrary{positioning, decorations, 
+                decorations.pathreplacing, calligraphy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 08_muellerreichau %%%
+
+\captionsetup[subfigure]{subrefformat=simple,labelformat=simple}
+\renewcommand\thesubfigure{(\alph{subfigure})}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 09_simik
+
+\newcommand{\citepossts}[1]{\citeauthor{#1}' (\citeyear{#1})} % produces Rawlins' (2008)
+\newcommand{\citepossalts}[1]{\citeauthor{#1}' \citeyear{#1}} % produces Rawlins' 2008
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 10_stegovec
+
+\newcommand{\poscite}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+
+%extra commands
+\newcommand{\fst}{\textsc{1p}}
+\newcommand{\snd}{\textsc{2p}}
+\newcommand{\trd}{\textsc{3p}}
+\newcommand{\refl}{\textsc{refl}}
+\newcommand{\excl}{\textsc{excl}}
+\newcommand{\incl}{\textsc{incl}}
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\dl}{\textsc{dl}}
+\newcommand{\fem}{\textsc{f}}
+\newcommand{\masc}{\textsc{m}}
+\newcommand{\neut}{\textsc{n}}
+\newcommand{\ImpCl}{IMPERATIVE}
+
+
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\forestset{M/.style={
+		for tree={s sep=5mm, inner sep=0.5pt, l=5mm,
+			calign=fixed edge angles,
+			calign primary angle=-65,
+			calign secondary angle=65},
+	},
+	Mid/.style={
+		for tree={s sep=0mm, inner sep=0pt, l=0mm,
+			calign=fixed edge angles,
+			calign primary angle=-62.5,
+			calign secondary angle=62.5},
+	},
+	word/.style={before typesetting nodes={content=\emph{##1}},
+		no edge,l=0,for parent={l sep=0}},
+	feat/.style={before typesetting nodes={content={{[}##1{]}}},
+		no edge,l=0,for parent={l sep=0}},
+	feat2/.style={before typesetting nodes={content={##1}},
+		no edge,l=0,for parent={l sep=0}},
+	llap/.style={
+		tikz+={%
+			\edef\forest@temp{\noexpand\node[\option{node options},
+				anchor=base east,at=(.base east)]}%
+			\forest@temp{#1\phantom{\option{environment}}};
+		}
+	},
+	rlap/.style={
+		tikz+={%
+			\edef\forest@temp{\noexpand\node[\option{node options},
+				anchor=base west,at=(.base west)]}%
+			\forest@temp{\phantom{\option{environment}}#1};
+		}
+	}
+}
+
+\makeatletter
+\newcommand{\coloruline}[2]{%
+	\newcommand\temp@reduline{\bgroup\markoverwith
+		{\textcolor{#1}{\rule[-0.5ex]{2pt}{0.4pt}}}\ULon}%
+	\temp@reduline{#2}%
+}
+
+\newcommand{\coloruuline}[2]{%
+	\UL@protected\def\temp@uuline{\leavevmode \bgroup
+		\UL@setULdepth
+		\ifx\UL@on\UL@onin \advance\ULdepth2.8\p@\fi
+		\markoverwith{\textcolor{#1}{\lower\ULdepth\hbox
+				{\kern-.03em\vbox{\hrule width.2em\kern1\p@\hrule}\kern-.03em}}}%
+		\ULon}%
+	\temp@uuline{#2}%
+}
+
+\newcommand{\coloruwave}[2]{%
+	\UL@protected\def\temp@uwave{\leavevmode \bgroup 
+		\ifdim \ULdepth=\maxdimen \ULdepth 3.5\p@
+		\else \advance\ULdepth2\p@ 
+		\fi \markoverwith{\textcolor{#1}{\lower\ULdepth\hbox{\sixly \char58}}}\ULon}
+	\font\sixly=lasy6 % does not re-load if already loaded, so no memory drain.
+	\temp@uwave{#2}%
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%
+%%% 13_wagiel %%%
+
+\newcommand\irregularcircle[2]{% radius, irregularity
+  \pgfextra {\pgfmathsetmacro\len{(#1)+rand*(#2)}}
+  +(0:\len pt)
+  \foreach \a in {10,20,...,350}{
+    \pgfextra {\pgfmathsetmacro\len{(#1)+rand*(#2)}}
+    -- +(\a:\len pt)
+  } -- cycle
+}
+
+
+% IF POSSIBLE, CAN WE USE THIS SETTING JUST FOR 13_wagiel?
+
+% \forestset{
+% default preamble={for tree={s sep=10mm, inner sep=0, l=0}},
+% fairly nice empty nodes/.style={
+%         delay={where content={}{shape=coordinate,
+%               for siblings={anchor=north}}{}},
+% for tree={s sep=4mm}},
+% }

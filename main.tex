@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%     Language Science Press Master File       %%%
+%%%              edited volumes                  %%%
+%%%         follow the instructions below        %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Everything following a % is ignored
+% Some lines start with %. Remove the % to include them
+
+\documentclass[output=book,collection
+%             ,colorlinks, citecolor=brown
+            % ,draft
+%             ,draftmode
+		  ]{langscibook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% put all additional commands you need in the
+% following files. If you do not know what this might
+% mean, you can safely ignore this section
+
+\input{localmetadata.tex}
+\input{localpackages.tex}
+\input{localhyphenation.tex}
+\input{localcommands.tex}
+\addbibresource{localbibliography.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Frontmatter                      %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \includeonly{chapters/13_wagiel}
+\begin{document}
+\maketitle
+\frontmatter
+% %% uncomment if you have preface and/or acknowledgements
+
+\currentpdfbookmark{Contents}{name} % adds a PDF bookmark
+{\sloppy\tableofcontents}
+
+%% sections without authors
+\include{chapters/preface}
+\includepaper{chapters/filip-intro}
+%\include{chapters/acknowledgments} I excluded it
+
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Chapters                         %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\includepaper{chapters/01_gehrke-simik}
+\includepaper{chapters/02_borik}
+\includepaper{chapters/03_docekal}
+\includepaper{chapters/04_filip}
+\includepaper{chapters/05_gehrke}
+\includepaper{chapters/06_geist}
+\includepaper{chapters/07_gronn}
+\includepaper{chapters/08_muellerreichau}
+\includepaper{chapters/09_simik}
+\includepaper{chapters/10_stegovec}
+\renewcommand{\lsChapterFooterSize}{\footnotesize}
+\includepaper{chapters/11_tatevosov}
+\renewcommand{\lsChapterFooterSize}{\small}
+\includepaper{chapters/12_tomaszewicz}
+\includepaper{chapters/13_wagiel}
+% copy the lines above and adapt as necessary
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Backmatter                       %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% There is normally no need to change the backmatter section
+\input{backmatter.tex}
+\end{document}

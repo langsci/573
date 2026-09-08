@@ -1,0 +1,1373 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.22078581}
+
+\author{Atle Grønn\orcid{0000-0003-3875-5487}\affiliation{University of Oslo}}
+
+%%% uncomment the following line if you are a single author or all authors have the same affiliation
+\SetupAffiliations{mark style=none}
+
+\title{Tense in Slavic}
+
+\abstract{This chapter gives an overview of the topics in Slavic tense which have generated most interest in the semantic linguistic community. Data from most Slavic languages are considered. The introduction identifies some of the main issues through selected data from Ukrainian, Croatian, and Bulgarian. \sectref{sec:2} traces the history of Slavic tense semantics with focus on the formalisation of the temporal domain -- the interaction of tense and aspect in a compositional system. 
+
+The last two sections provide a more detailed account of what we take to be the main theoretical challenges in Slavic tense semantics: the role of temporal auxiliaries, notably the \textsc{bud}-future and the \textsc{be}-perfect (\sectref{sec:3}) and subordinate tense from complement tense to adjunct tense (\sectref{sec:4}). This last part centers around the role of so-called relative tenses in non-sequence-of-tense-languages.
+
+\keywords{temporal auxiliaries, perfect, subordinate tense, complement tense, adjunct tense}
+}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[7]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+% Just comment out the input below when you're ready to go.
+% \input{gronn-slavic-tense.tex}
+
+\section{Introduction}\label{gronn:intro}
+
+On the classic Jakobsonian view \citep{jakobson32} -- that Russian tense can be reduced to $\pm l$ (the past tense morpheme) -- everything is simple. It is up to the (im)perfective aspect to decide whether the non-past receives a present or future interpretation.
+
+Indeed, no account of tense semantics in Slavic can ignore aspect, the other temporal category in the verbal domain. However, even if there is some truth to  Jakobson's  privative opposition for Russian, where the presence of the morpheme \textit{l} in a way always produces a relative past interpretation, other Slavic languages have a richer inventory of temporal auxiliaries, something which significantly complicates this picture. A brief glance into what kind of challenging data we find in Slavic will be given below in this informal introduction through parallel translations  from three sample languages (Ukrainian, Croatian, and Bulgarian). 
+
+The history of formal approaches to tense at the syntax-semantics interface  in Slavic is quite recent. When did it all start? What is the core of a compositional semantics for tense and aspect in Slavic? This is the topic of \sectref{sec:2}, which presents a standard formalisation of tense in Ukrainian matrix clauses. 
+
+Next, \sectref{sec:3} is devoted to existing analyses of temporal auxiliaries, both in the future (e.g. in Polish) and the perfect (e.g. in Macedonian, Bosnian-Croatian-Montenegrin-Serbian/BCMS, Bulgarian, and Ukrainian). And, finally, \sectref{sec:4} addresses the issue of tense in complex sentences and the theoretical status of Slavic languages as traditionally being classified as non-sequence-of-tense-languages (non-\textsc{sot}), languages with the so-called relative tenses. An important distinction must be made between complement tense (non-\textsc{sot} in Slavic with shifted tense) and adjunct tense, where tense is often (but not always) semantically independent of the matrix tense.
+
+Some of the major differences  in the temporal domain between Germanic (here: English) and Slavic (here: Ukrainian, Croatian, and Bulgarian) can be illustrated with the following complex sentence:\footnote{Whenever no source is given for an example, it is constructed by me with help from my consultants.}
+
+
+\ea\label{gr:ex:complex}
+\ea\label{gr:ex:eng1} When I \textit{met} Maria, she
+ \textit{had} just \textit{told} the guy whom she \textit{would} \textit{marry} that she \textit{would} \textit{have} children only after she \textit{had} \textit{finished} university. 
+\ex\label{ag:ex:ukr1}\gll 
+%Коли я познайомився з Марією, вона щойно сказала своєму хлопцеві, з яким збиралася одружитися, що вона матиме дітей тільки після того як закінчить університет
+Koly ja zustriv Mariju, vona
+ščojno skazala xlopcevi, z jakym zbyralasja odružytysja, ščo  matyme ditej til'ky pislja toho, jak zakinčyt' universytet.\\
+when I meet.\textsc{pfv.pst} Maria she just say.\textsc{pfv.pst} guy with whom intend.\textsc{ipfv.pst} marry.\textsc{pfv.inf} \textsc{comp} have.\textsc{ipfv.fut} children only after that how end.\textsc{pfv.prs} university \\\hfill (Ukrainian) 
+  \ex\label{ag:ex:cr1}\gll Kad sam upoznao Mariju, upravo je  bila rekla tipu za kojeg će se udati da će imati djecu tek nakon što bude završila fakultet.\\ 
+  when be.\textsc{prs.aux.1sg} meet.\textsc{pfv.ptcp} Maria  just is.\textsc{prs.aux}   be.\textsc{ptcp.aux}  say.\textsc{pfv.ptcp} guy with whom want.\textsc{prs.aux} \textsc{refl} marry.\textsc{pfv.inf} \textsc{comp} want.\textsc{prs.aux} have.\textsc{ipfv.inf} children only after \textsc{comp} will.\textsc{prs.aux} end.\textsc{pfv.ptcp} university \\   \hfill   (Croatian) 
+ \ex\label{ag:ex:bu1}\gll Kogato sreštnax Marija, tja tăkmo beše kazala na čoveka za kogoto štjala da se omăži, če tja šte ima deca samo sled kato zavărši universitet.
+ %Когато срещнах Мария (2020), тя тъкмо беше казала на човека за когото щяла да се омъжи (2022), че тя ще има деца само след като завърши университет (2025)
+ \\ 
+  when meet.\textsc{pfv.pst} Maria she just be.\textsc{pst.aux}   say.\textsc{pfv.ptcp} to guy with whom want.\textsc{ipfv.ptcp} \textsc{comp}          \textsc{refl}  marry.\textsc{pfv.inf} \textsc{comp} she want.\textsc{prs.aux} have.\textsc{ipfv.inf} children only after \textsc{comp} ends.\textsc{pfv.fut} university
+ \\   \hfill   (Bulgarian) 
+ \z\z
+The English tense system is characterised by the use of temporal auxiliaries that shift the reference time backwards (\textit{had told, had finished}) or forwards (\textit{would marry, would have children}). 
+
+A Slavic language like Ukrainian \REF{ag:ex:ukr1} can do without any auxiliaries in the same context. Croatian and Bulgarian, on the other hand, display a rich variety of temporal auxiliaries, as summed up in \tabref{tab:aux}.\footnote{TAC in \tabref{tab:aux} abbreviates temporal adverbial clause.}
+
+\begin{table}
+\caption{Temporal constructions in English vs. three Slavic languages based on \REF{gr:ex:complex}}
+\label{tab:aux}
+ \begin{tabularx}{1\textwidth}{lXXXX} %.77 indicates that the table will take up 77% of the textwidth
+  \lsptoprule
+           & English & Ukrainian & Croatian  & Bulgarian \\
+  \midrule
+  when-TAC   &   \textit{met}  &    \textit{zustriv}  &    \textit{sam upoznao}      & \textit{sreštnax}\\
+  matrix  &   \textit{had told} &   \textit{skazala}  & \textit{je bila rekla}     & \textit{beše kazala}\\
+  relative  & \textit{would}  & \textit{zbyralasja}  & \textit{će}  & \textit{štjala da}  \\ 
+  complement & \textit{would}  & \textit{matyme} &  \textit{će}  &  \textit{šte}  \\
+  after-TAC & \textit{had finished} & \textit{zakinčyt'} & \textit{bude završila} & \textit{zavărši} \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+
+Both Croatian and Bulgarian have a past perfect in the highest matrix clause in \REF{gr:ex:complex}. While Bulgarian with a past aorist ($\approx$ perfective) \textsc{be}-auxiliary and a participle (\textit{beše} \textit{kazala}) is quite similar to English  (\textit{had} \textit{told}), modulo the consistent difference in Slavic \textsc{be} vs. Germanic \textsc{have}, the Croatian variant is remarkable with the \textsc{be}-auxiliary being itself in the form of a present perfect (\textit{je} \textit{bila} $\approx$ \textit{is} \textit{been}).
+
+Similarly, the Croatian sentence also has a present perfect form in the \textsc{when}-clause (\textit{sam} \textit{upoznao}). This use of present perfect as a simple past is unexpected from an English point of view, but well-known from many languages, e.g. German and French (or Czech).
+
+Croatian and Bulgarian, furthermore, share a compound future construction with the auxiliary formed from a verb with the meaning `want' -- \textit{će} and \textit{šte}, respectively, in the present form.\footnote{The `desire' component in the etymology of the auxiliary is semantically bleached, perhaps not unlike the English forward shifter \textit{will}.} We see that Croatian also has a special  ``future 2'' composed with the \textsc{be}-auxiliary and a participle (\textit{bude} \textit{završila}). This construction can, in subordinate clauses, replace an imperfective or perfective with a future interpretation. The latter is  what we find in Ukrainian (\textit{zakinčyt'}) and Bulgarian (\textit{zavărši}).
+
+These brief remarks clearly demonstrate the need to further look into the role of auxiliaries in the tense system, notably versions of the compound (composite, complex, analytic) future and various shades of the perfect. This is what we will do in \sectref{sec:3}.
+
+Do the temporal auxiliaries mean the same thing in English and Slavic? Almost, but not completely.  A remarkable perfect meaning is found in Bulgarian, the so-called \textsc{evidential} perfect. This form is exemplified in \REF{ag:ex:bu1}, where the participle of the forward shifter \textit{štjala} `wanted' occurs without the auxiliary \textit{e} `is' in the 3rd person singular. The absence of the auxiliary (only possible in the 3rd person) signals unequivocally an evidential interpretation, indicating that the speaker reports information he has received from Maria. We will return to this phenomenon found in Bulgarian in \sectref{sec:3}.
+
+The next  point to highlight in \REF{gr:ex:complex} is the significant discrepancy in embedded tense forms between the English sentence and the Slavic counterparts. 
+Slavic languages are famously non-sequence-of-tense languages. Compared to the rather ad hoc \textsc{sot} rules we find in English (e.g. past tense agreement everywhere in \REF{gr:ex:eng1}), Slavic has a simpler and cleaner system with what is traditionally referred to as \textsc{relative tense}.
+
+
+The use of relative tenses is most consistent in complements under attitude verbs (Ukrainian: \textit{skazala,} \textit{ščo...} `said that'), the most well-studied construction. Thus, the simple relative future \textit{matyme} `will have' in the Ukrainian example \REF{ag:ex:ukr1} shifts the embedded reference time forward.  Similarly, in Croatian and Bulgarian the present tense marking on the future auxiliaries  \textit{će} `wants' in \REF{ag:ex:cr1}  and \textit{šte} `wants' in \REF{ag:ex:bu1} denotes Maria's subjective now in the past, while the auxiliary itself lexically encodes the forward shift (future interpretation) of the prejacent verb (\textit{imati}/\textit{ima} `have'). 
+
+However, embedded tenses behave differently in different syntactic environments. Note that the relative clause in \REF{ag:ex:ukr1} and \REF{ag:ex:bu1} contains a (deictic) past tense, just as in English. For the deeply embedded temporal adverbial clause (\textit{after} \textit{she} \textit{had} \textit{finished}), we are back to relative tense in Slavic with a semantic future (morphological present) perfective in \REF{ag:ex:ukr1} and \REF{ag:ex:bu1}, and a compound (relative) future in \REF{ag:ex:cr1}.
+
+In \sectref{sec:4}, we will  discuss existing accounts of subordinate tense, possibly the hottest topic in Slavic tense at the present moment. 
+Before embarking on the challenges presented by compound and subordinate tenses, we will next in \sectref{sec:2}  look at (mostly) simple tenses in (mostly) matrix clauses.
+
+
+\section{Formal approaches to tense}\label{sec:2}
+What characterises a formal approach to the semantics of tense? The main virtue of a formal approach is that it makes a clear distinction between mor\-phol\-o\-gy/syn\-tax (form) on the one hand and semantics (interpretation) on the other. In Slavic linguistics, this distinction is sometimes blurred. We read about past tense (or, say, perfective aspect), but it is not always  clear what the author has in mind: past tense morphology or past tense interpretation? 
+
+The distinction is crucial for a \textsc{compositional} approach to tense (and aspect). This enterprise is potentially a strong point of Slavic linguistics, since  both tense (semantically referring to external time on some time axis) and aspect (semantically referring to  event internal temporality) are typically encoded explicitly in the morphology. We can therefore build a transparent compositional system in the temporal domain, where each semantic ingredient ideally corresponds to a piece of morphology.
+
+On the standard view, semantic tense in matrix clauses relates the speaker's temporal focus, what is normally called the \textsc{reference time},  to the speech time. The anchoring of tense to the speech time is called \textsc{deictic} tense. The semantics of aspect, on the other hand, is concerned with the internal temporal structure of the event, e.g. whether the event time is included or not in the reference time. 
+
+
+
+\subsection{A brief history of time}
+
+The idea that the reference time is the glue that connects aspect and tense was popularised for Russian in \citet{Klein1995}, where the reference time is called the time of assertion. However, Wolfgang Klein was not explicit about the syntax of logical form, the compositional semantics. Although he criticised the traditional ``impressionistic" approaches to Slavic tense and aspect, his own influential analysis is not really formal, but a mere translation from Russian to some meta language, whose status is unclear.\footnote{There is a rich literature of non-formal analyses of Slavic tense and aspect. Most of these works are primarily concerned with aspect. A broad, more general perspective on temporality, with numerous lucid observations, is found in \citet{paduceva96}.}
+In Klein's work, \textsc{past} encodes the relation that the time of assertion precedes the time of utterance (\textsc{t-ast} $\prec$ \textsc{t-ut}), while aspect, say \textsc{pfv}, encodes the relation that the time of assertion includes the time of situation (\textsc{t-sit} $\subseteq$ \textsc{t-ast}).\footnote{Klein's ``situation time'' is the time at which the situation described by the (verbal) predicate takes place. In event-based approaches, this notion is replaced by the event time, as we will do below.}
+
+
+Interestingly, the first formal approach to aspect in Slavic was formulated a few years earlier in \citet{Krifka1992} with examples from Czech:
+
+\ea \ea\label{krifka:pf}\gll 
+ John snědl rybu.\\
+John eat.\textsc{pfv.pst} fish\\
+\glt `John ate fish.' \hfill (Czech)
+\ex\label{krifka:prog} \gll John jedl rybu když Mary vztoupila.\\
+John eat.\textsc{ipfv.pst} fish when Mary enter.\textsc{pfv.pst}\\
+\glt `John was eating fish when Mary entered.' \hfill (Czech)
+\z\z
+Manfred Krifka assumed that the (im)perfective
+operator has scope over the complex verbal event predicate (the VP or sentence radical). He introduced two operators which modify the event description, hence functions  of type $\stb{\stb{v,t},\stb{v,t}}$ from sets of events to sets of events:\footnote{We use the following primitive semantic types: $e$ -- individuals; $i$ -- times; $v$ -- events/states; $s$ -- worlds; $t$ -- truth values. We assume an intensional semantics with a world parameter $w$ and an assignment function $g$. For readability of the formulae, we will skip these indices and other details not pertaining to our discussion of tense proper.}
+
+\ea \ea \sib{\textsc{ipfv}}${}=\lambda P. \lambda e' \exists e [P(e) \, \& \,
+e' \sqsubseteq e] $ \hfill\citep[47]{Krifka1992}  
+\ex\label{krifka-pf}  \sib{\textsc{pfv}}${}=\lambda P \lambda e  [P(e) \,
+\& \, \cnst{Quantized}(P)] $ \hfill\citep[50]{Krifka1992}
+\z\z
+This is a partitive, non-temporal analysis of the imperfective/progressive aspect, which gives us access to subevents of the VP-event. The perfective aspect is also given a non-temporal analysis.\footnote{\cnst{Quantized} is a property of predicates which encodes the idea that the event is completed, has a set terminal point. For more on aspect and event structures, see \textcitetv{chapters/11_tatevosov}.}
+
+So, what about time and tense? Krifka confirms, in an email on February 28, 2022, that he did not go beyond aspect in his early work. ``I think that I assumed that tense would outscope aspect, but it was not the point of the paper.” 
+
+In a purely syntactic approach to Russian tense and aspect, \citet{yadroff96} proposed that tense indeed outscopes aspect. This is now universally accepted in the field. We will see below how such a system works in practice for Ukrainian.
+
+One reason Krifka neglected tense (apart from the fact that his aspectual analysis, unlike \citealt{Klein1995}, was non-temporal) was maybe because he focused on matrix clauses, and there is no a priori reason to believe that Slavic tense behaves differently from, say, English. What we know about matrix tense in English holds in general for tense in natural languages.
+
+In the theoretical literature, consensus has been reached on certain general points.
+Thus, it can be shown that the old Montagovian system, where tenses shift the \textsc{evaluation time} merely in the meta-language (through the manipulation of a single index) is empirically inadequate. We need to talk about times in the object language, see e.g. \citet{Kusumoto2005}.
+
+Here is a complicated natural example which illustrates this point:\footnote{(J.K. Rowling, \textit{Harry Potter and the Philosopher's Stone}), Parasol corpus data \citep{parasol}.}
+
+\ea\ea  His twin called after him to hurry up, and he must have done so, because a second later, he had gone. \hfill (English)
+\ex\label{later-bul}\gll Bliznakăt mu izvika sled nego da pobărza i toj javno beše bărzal, zaštoto sekunda po-kăsno be izčeznal.\\
+twin him shout.\textsc{pfv}.\textsc{pst} after him \textsc{comp} hurry.\textsc{pfv}.\textsc{prs} and he clearly be.\textsc{pst}.\textsc{aux} hurry.\textsc{ipfv}.\textsc{ptcp} because
+ second later be.\textsc{pst}.\textsc{aux} disappear.\textsc{pfv}.\textsc{ptcp} \\\hfill (Bulgarian)
+%Близнакът му извика след него да побърза и той явно беше бързал , защото секунда по-късно бе изчезнал . 
+\z\z
+There is no way to account for anaphoric temporal expressions like \textit{po-kăsno} `later' in natural language if one cannot keep track of  times encountered earlier in the discourse.  These times should definitely be represented at \textsc{lf} (logical form). The example \REF{later-bul} is not chosen arbitrarily, since it illustrates nicely how compound tenses like the Bulgarian pluperfect interact with temporal adverbials, a topic we will return to in \sectref{sec:3}.\footnote{As pointed out by my Bulgarian consultants, the adverbial \textit{javno} `clearly' gives an additional evidential flavour to the perfect in \REF{later-bul}.} 
+
+ Given that times and tenses should be represented syntactically at \textsc{lf}, we probably want to work with structures like in    \figref{fig:move} or \figref{fig:feat}. Both trees take the syntax-semantics interface in the temporal domain seriously, albeit in different ways. 
+
+\begin{figure}[ht]
+% the [ht] option means that you prefer the placement of the figure HERE (=h) and if HERE is not possible, you prefer the TOP (=t) of a page
+% \centering
+    \begin{forest}
+    for tree={s sep=1cm, inner sep=0, l=0}
+    [TP
+        [\textsc{now}
+        ]
+        [TP$'$
+            [\textsc{past}
+                [-l, name=t]
+            ]
+            [AspP
+                [\textsc{pfv}
+                    [sn-, name=pf]
+                ]
+                [VP
+                    [John \sout{sn}-ěd-\sout{l} rybu, roof, name=full-v]
+                        ]
+                    ]
+                ]
+            ]
+    \draw[->,overlay] (full-v) to[out=south west, in=south, looseness=1.1] (pf);
+    \draw[->,overlay] (full-v) to[out=south west, in=south, looseness=1.3] (t);
+    % the overlay option avoids making the bounding box of the tree too large
+    % the looseness option defines the looseness of the arrow (default = 1)
+    \end{forest}
+    \vspace{2ex} % extra vspace is added here because the arrow goes too deep to the caption; avoid such manual tweaking as much as possible; here it's necessary
+    \caption{Movement account of \REF{krifka:pf}}
+    \label{fig:move}
+\end{figure}
+
+\begin{figure}[ht]
+    \begin{forest}
+    for tree={s sep=1cm, inner sep=0, l=0}
+    [TP
+        [\textsc{now}$_{\textnormal{[i-pres]}}$
+        ]
+        [TP$'$
+            [\textsc{past}$_{\textnormal{[i-past]}}$, name=t]
+            [AspP
+                [\textsc{pfv}$_{\textnormal{[i-pfv]}}$, name=pf]
+                [VP
+                    [J snědl$_{\textnormal{[u-past, u-pfv]}}$ rybu, roof,  name=full-v 
+                    ]
+                        ]
+                    ]
+                ]
+            ]
+    \draw[->,overlay] (t) to[out=south west, in=south, looseness=1.1] (full-v);
+    \draw[->,overlay] (pf) to[out=south west, in=south, looseness=1.4] (full-v);
+    \end{forest}
+    \vspace{4ex} % extra vspace is added here because the arrow goes too deep to the caption;
+    \caption{Feature account of \REF{krifka:pf}}
+    \label{fig:feat}
+\end{figure}
+
+
+In practice, the movement theory in \figref{fig:move} is often tacitly assumed in the literature; see for instance \citet{gronndiss} and \textcitetv{chapters/08_muellerreichau}. It captures the idea that semantic tenses and aspects have their own projections and are not interpreted at the verb. A past (or future) interpretation arises with the corresponding morphology, which moves to TP$'$, where it gets a semantic interpretation (as an operator/temporal quantifier or temporal pronoun). In the last step, the semantic past is anchored to the evaluation time, which we can treat as a covert pronoun \textsc{now} of type $i$.  
+
+Alternatively, as in  \figref{fig:feat}, \textsc{past} and \textsc{pfv} are abstract semantic operators (with interpretable features) which license the corresponding morphology on the verb in a certain checking relation. A feature checking theory for Russian tense and aspect -- from interpretable to uninterpretable features -- is adopted in 
+\citet{Mezhevich2008} and \citet{gronn_stechow2012}.
+
+A full analysis of Slavic tense and aspect must in any case rely on certain abstract (covert) semantic operators. A clear example is the imperfective interpretation (from a null suffix)  of the bare Czech verb form {\textit{jedl}} `$\approx$ was eating' in \REF{krifka:prog}. The morphological perfective present in Slavic also requires an abstract \textsc{fut} at \textsc{lf} since there is no overt future suffix in Slavic perfectives.
+
+We have still not said much about what a semantic \textsc{past} (or \textsc{fut}) should look like, i.e. the denotation of \sib{\textsc{past}}  in \figref{fig:move} and \figref{fig:feat}.
+There are two  competing approaches on the market: quantificational tenses (adopted in \sectref{sec:2.2} and onward) vs.  referential tenses.
+
+The two theories come in various flavours. A simple view of the referential approach is to think of past/future tenses as denoting a temporal pronoun {\textit{then}} of type $i$, which picks out a salient past/future time. 
+
+The referential/anaphoric approach is due to Barbara Partee, who proposed the following analogy between tenses and pronouns: ``I will argue that the
+tenses have a range of uses which parallels that of the pronouns, including a
+contrast between deictic (demonstrative) and anaphoric use, and that this range
+of uses argues in favour of representing the tenses in terms of variables and not
+exclusively as sentence operators'' \citep[601]{Partee1973}. 
+
+Although her influence on the development of formal semantics in Slavic linguistics is incalculable,  due to her regular teaching in Moscow for many years, she has never worked on tense in Russian or any other Slavic language. Her conjecture in \citet{Partee1973} was that morphological tense, e.g. {\textit{-ed}} in English or {\textit{-v/-la}} in Ukrainian, could have a pronominal (referential) semantics, while temporal auxiliaries (see \sectref{sec:3}) typically have a quantificational semantics as existential time shifters ($\exists t...$).
+We note for the record that nobody has sought to explain the difference between morphological future tenses in Slavic (e.g. Ukrainian \textit{matime} `will have' in \REF{ag:ex:ukr1} above) and periphrastic future tenses (alternative construction in Ukrainian: \textit{bude} \textit{mati} \textit{ditej} `will have children') in terms of this dichotomy. 
+
+The anaphoric flavour of tenses can be captured in the quantificational approach with a contextual domain restriction, a variable $C$. Some of the more elaborate quantificational and referential tense theories may ultimately be simply notational variants of each other, or maybe we need both denotations co-existing in one single system in order to account for different phenomena, as  argued in \citet{Groenn2015}. Are there any language-specific, Slavic-internal, reasons to choose one approach over the other?
+
+For Slavic, I am only aware of one non-trivial empirical argument put forward for the existence of referential tenses in a static system, i.e. when we consider tenses only at the sentence level.\footnote{See \citet{Groenn2015} for a contextual, dynamic (as opposed to static) approach to tense and aspect.} \citet{sharvit13} argues that Polish must have a referential past tense on the basis of examples from \textsc{before}-adjuncts: 
+
+\ea\label{pol-bef}\gll
+Ania przyszła na przyjęcie \minsp{[} zanim Marcin przyszedł.]\\
+Ania come.\textsc{pfv.pst} to party {} before Marcin come.\textsc{pfv.pst}\\
+\glt `Ania came to the party before Marcin came.' \hfill (Polish; \cite[2]{sharvit13})
+\z
+\citet{sharvit13} makes a valid point that the complement of the temporal preposition/connective should denote a definite time. This is transparent in Polish: \textit{za-nim} `before that (time)'. Accordingly, she claims (with sophisticated arguments), there is no  place for a quantificational past in the adjunct, and the past must receive a referential interpretation. Hence, Polish (and also English) has a referential past.\footnote{According to \citet{sharvit13}, this distinguishes Polish from Japanese, which has a quantificational past, and therefore can never use a past in \textsc{before}-adjuncts.}
+
+However, in \citet{gronn_stechow2012} we argue that temporal adjuncts in Slavic have even more structure than assumed by \citet{sharvit13}. For instance, Ukrainian/Polish \textit{pislja} \textit{toho,} \textit{jak} (cf. \REF{ag:ex:ukr1})/\textit{po} \textit{tym,} \textit{jak} `after that how' points to a temporal abstraction (\textit{jak} `how'). In \citet{gronn_stechow2012}, we suggest a way in which this allows us to have a quantificational deictic past inside the \textit{jak}-`how'-clause while keeping the idea that \textsc{before/after} takes a definite time as input, see also \sectref{sec:4} below.
+
+It is time now, however, to present a fully explicit compositional and truth-conditional account of tense and aspect in Slavic. For historical reasons I will choose Ukrainian data to illustrate the general architecture.
+
+\subsection{A compositional tense semantics for Ukrainian}\label{sec:2.2}
+
+The insights of  \citet{Klein1995} were soon to be developed into a coherent compositional theory. For non-Slavic languages, this enterprise was first carried out in \citet{kratzer98} (with a referential semantics for \textsc{past}), while the first compositional account for Slavic is probably due to \citet{stechow99}, an unpublished paper that started circulating before the new millennium. 
+
+Arnim von Stechow, who like Krifka and Klein was not a Slavicist, had been Angelika Kratzer's and Irene Heim's teacher of semantics in Konstanz in the late 1970s. His mother was Ukrainian, and he was therefore eager to look at the Slavic data when he established contact with Alla Paslawska, a professor of German from Lviv.
+
+Their point of departure is the following simple sentence:
+
+\ea\label{ukr1}\gll
+Vona posnidala.\\
+she eat.breakfast.\textsc{pfv}.\textsc{pst}\\
+\glt `She ate breakfast.' \hfill (Ukrainian; \cite{stechow99})
+\z
+The exact location of semantic tense and aspect in the syntax is not an issue which needs to bother the semanticists. What is important is the relative hierarchy of the categories (tense above aspect), their semantic type and  interpretation.
+
+The aspectual operator is in \citet{stechow99} a function from an event description, a VP of type $\stb{v,t}$, to a predicate of times, a set of times of type $\stb{i,t}$. On this view, aspect closes off the event argument ($\exists e$) and relates the run time of the event $e$ to a reference time $t$:\footnote{The condition $e \subseteq t$ could be more transparently written as $\tau(e) \subseteq t$, where $\tau$ is a function that gives us the temporal trace of $e$. I will ignore this detail below.}
+
+\ea
+ \sib{po-$_{\stb{\stb{v,t},\stb{i,t}}}$}${}=\lambda P_{\stb{v,t}} \lambda t. \exists e  [P(e) \,
+\& \, e \subseteq t] $ \hfill (perfective aspect) 
+\z
+The value of the reference time (Klein's assertion time) comes from tense (often in combination with temporal adverbials).\footnote{\citet{stechow99} contains also the first discussion of the contribution of temporal adverbials like {\textit{včora}} `yesterday' and negation in the compositional architecture.} Past (or future) tense thus takes a predicate of times as input (the type of AspP, after aspect has done its job) and returns another predicate of times.  Times are partially ordered by the relation $\prec$ `before' and $\succ$ `after'.\footnote{In fact, the analysis in \citet{stechow99} is somewhat more complicated since the authors wanted to capture the so-called perfect readings in Ukrainian ({\textit{(will) have P}}), readings which -- with the exception of the pluperfect -- are not in any obvious way morpho-syntactically encoded in this language. In the influential paper \citep{Paslawska.Stechow2003}, the same idea was also applied to Russian, see \textcitetv{chapters/08_muellerreichau} for a discussion.  However, at the doctoral disputation in Oslo of \citet{gronndiss}, von Stechow (p.c.) rejected this part of his earlier analysis, most notably the idea that perfective morphology in East Slavic could be ambiguous between a semantic perfective operator and a semantic perfect operator. I will therefore ignore this aspect of the analysis.}
+
+
+\ea\label{relpa}  \sib{-l$_{\stb{\stb{i,t},\stb{i,t}}}$}${}=\lambda P_{\stb{i,t}}\lambda t.\exists t' [P(t') \, \& \, t' \prec t]$   \hfill (relative past)
+\z
+On this view, the past tense is inherently relative. It can end up being deictic, but need not if it occurs embedded in a subordinate clause. The reference time, which is involved in the aspectual relation, gets existentially closed by tense ($\exists t'$), hence this is a quantificational approach.\footnote{In their published work on Russian a few years later  \citep{Paslawska.Stechow2003}, the authors switched to a referential tense, apparently without any deeper motivation. Indeed, the choice between a quantificational and referential semantics for past tense is often rather arbitrary.} 
+
+We want to end up with the following truth conditions: There is an event $e$ of her eating breakfast and a time $t$ before now, such that $e$ is completed at $t$. Above the \textsc{past} operator, we therefore insert (by default)  the covert pronoun \textsc{now} of type $i$, denoting the speech time, a  distinguished variable $s$*. We finally get an \textsc{lf} which ends in a truth value of type $t$, cf. \REF{truth-po} and \figref{fig:po}.
+
+\ea\label{truth-po} 
+$ \, \exists e \exists t [\textsc{she eats breakfast}(e) \, \& \, t \prec s$*$ \, \& \, e \subseteq t]$
+\z
+
+\begin{figure}[ht]
+% the [ht] option means that you prefer the placement of the figure HERE (=h) and if HERE is not possible, you prefer the TOP (=t) of a page
+% \centering
+    \begin{forest}
+    for tree={s sep=1cm, inner sep=0, l=0}
+    [TP$_{t}$
+        [\textsc{now}$_{i}$
+        ]
+        [TP$'$$_{\stb{i,t}}$
+            [\textsc{past}$_{\stb{\stb{i,t},\stb{i,t}}}$
+                [-l, name=t]
+            ]
+            [AspP$_{\stb{i,t}}$ 
+                [\textsc{pfv}$_{\stb{\stb{v,t},\stb{i,t}}}$
+                    [po-, name=pf]
+                ]
+                [VP$_{\stb{v,t}}$
+                    [vona \sout{po}-snida-\sout{l}a, roof, name=full-v]
+                        ]
+                    ]
+                ]
+            ]
+    \draw[->,overlay] (full-v) to[out=south west, in=south, looseness=1.1] (pf);
+    \draw[->,overlay] (full-v) to[out=south west, in=south, looseness=1.1] (t);
+    % the overlay option avoids making the bounding box of the tree too large
+    % the looseness option defines the looseness of the arrow (default = 1)
+    \end{forest}
+    \vspace{2ex} % extra vspace is added here because the arrow goes too deep to the caption; avoid such manual tweaking as much as possible; here it's necessary
+    \caption{Composition of \REF{ukr1}}
+    \label{fig:po}
+\end{figure}
+
+
+For comparison with the synthetic perfective past in \REF{ukr1} let us also introduce a synthetic imperfective future \REF{ukr2}, where the two temporal relations involved are reversed.\footnote{Ukrainian has a rich system of future grams. The imperfective synthetic future analysed here is unusual in Slavic. According to \citet{danylenko2011}, the synthetic future is derived from an underlying East Slavic periphrastic construction with  \textit{mati}. However, contrary to what one might expect, \textit{mati} in this construction was not the \textsc{have}-auxiliary, but a de-inceptive imperfective auxiliary with the meaning `to take'.}
+
+ 
+
+\ea \ea\label{ukr2}\gll Ja perepysuvatymu stattju.\\ 
+I rewrite.\textsc{ipfv}.\textsc{fut} article \\
+\glt `I will rewrite the article.' \hfill (Ukrainian; \cite{stechow99})
+\ex\label{ukr2-1} $  \exists e \exists t [\textsc{I rewrite the article}(e) \, \& \, t \succ s$*$ \, \& \, t \subseteq e]$
+\z \z
+
+\ea \ea
+   \sib{uv$_{\stb{\stb{v,t},\stb{i,t}}}$}${}=\lambda P_{\stb{v,t}} \lambda t. \exists e  [P(e) \,
+\& \, t \subseteq e] $ \hfill (imperfective aspect) 
+\ex\label{mu}    \sib{mu$_{\stb{\stb{i,t},\stb{i,t}}}$}${}=\lambda P_{\stb{i,t}} \lambda t. \exists t' [ P(t') \, \& \, t' \succ t]$ \hfill (relative future) 
+\z\z
+
+
+
+\begin{figure}[ht]
+% the [ht] option means that you prefer the placement of the figure HERE (=h) and if HERE is not possible, you prefer the TOP (=t) of a page
+% \centering
+    \begin{forest}
+    for tree={s sep=1cm, inner sep=0, l=0}
+    [TP$_{t}$
+        [\textsc{now}$_{i}$
+        ]
+        [TP$'$$_{\stb{i,t}}$
+            [\textsc{fut}$_{\stb{\stb{i,t},\stb{i,t}}}$
+                [-mu, name=t]
+            ]
+            [AspP$_{\stb{i,t}}$
+                [\textsc{ipfv}$_{\stb{\stb{v,t},\stb{i,t}}}$
+                    [uv-, name=pf]
+                ]
+                [VP$_{\stb{v,t}}$
+                    [ja perepys-\sout{uv}-aty\sout{mu} stattju, roof, name=full-v]
+                        ]
+                    ]
+                ]
+            ]
+    \draw[->,overlay] (full-v) to[out=south west, in=south, looseness=1.1] (pf);
+    \draw[->,overlay] (full-v) to[out=south west, in=south, looseness=1.1] (t);
+    % the overlay option avoids making the bounding box of the tree too large
+    % the looseness option defines the looseness of the arrow (default = 1)
+    \end{forest}
+    \vspace{2ex} % extra vspace is added here because the arrow goes too deep to the caption; avoid such manual tweaking as much as possible; here it's necessary
+    \caption{Composition of \REF{ukr2}}
+    \label{fig:mu}
+\end{figure}
+
+The compositionality in \figref{fig:mu} is straightforward. For matrix sentences, we always assume that the evaluation time (the highest tense) is the speech time, which is available here in the final step in the calculations of the truth conditions through a covert pronoun \textsc{now}.
+ 
+Thus, following most contemporary work in tense semantics, we should carefully separate the ``lower'' reference time (i.e.~the assertion, predication or topic time) from the ``higher'' evaluation time (i.e.~the perspective time, temporal anchor or temporal centre).  
+The \textsc{past} and \textsc{future} tenses encode relations between the reference time and the evaluation time.
+The present tense, on the other hand, is  not necessarily analysed as relational. In \sectref{sec:4} below on embedded tenses, I will argue for a particular view of the present tense in Slavic.
+
+The tenses and aspects discussed above are transparent in the sense that the morphology (suffix or prefix) points to the interpretation (an operator). However, we should also mention the following case which is found in most Slavic languages:
+
+\ea\label{ukr3}\gll Vona posnidaje.\\
+she eat.breakfast.\textsc{pfv}.\textsc{prs} \\
+\glt `She will eat breakfast.' \hfill (Ukrainian)
+\z
+A perfective with present tense morphology is coerced here into having a future tense
+interpretation. Hence, at \textsc{lf}, we assume the presence of an operator \textsc{fut} with the same semantics as  \REF{mu} above,  the mirror image of a semantic \textsc{past}. 
+
+The reason for this coercion into the future is common knowledge among Slavic semanticists: The present tense denotes the utterance time $s$*, a very short interval, in fact a moment. However, the perfective aspect introduces the inclusion relation $e \subseteq s$*, which does not make sense semantically. No event is small enough to be included in the utterance time.\footnote{Cf. also \citet{todorovic15} on the future interpretation of perfective aspect with present tense morphology in Serbian.} 
+ 
+
+\section{Compound tenses: Temporal auxiliaries}\label{sec:3}
+
+The main semantic function of temporal auxiliaries is to shift the reference time of the prejacent verb (participle or infinitive) forward or backward. They are genuine quantifiers over times of the type $\stb{\stb{i,t},\stb{i,t}}$.
+
+Typical forward (future) shifters are the auxiliaries {\textit{b{ę}dzie}}/\textit{bude} in Polish/ Ukra\-inian and \textit{šte}/\textit{će} in Bulgarian/Croatian. 
+Macedonian has a backward shifter of the Germanic/Romance type, namely {\textit{ima}} `have', but the characteristic Slavic auxiliary, both in the compound future and perfect, is `be'.
+
+The semantic status of the perfect {\textsc{be}}-auxiliary is rather unclear in many Slavic languages -- as it may sometimes be semantically empty -- and its morpho-syn\-tac\-tic representation is also often reduced, a ``truncated perfect''. In East Slavic languages like Ukrainian the perfect auxiliary has disappeared altogether in the present tense and the {\textit{v-}} or {\textit{l}}-participle has been reinterpreted as a general past tense.
+ 
+
+Consider the following architecture:
+\ea\label{ex3XX}
+Template for compound tenses: \\
+{[}{\textsubscript{TP}} Tense [{\textsubscript{shifter}} Forward/Backward [{\textsubscript{AspP}} Aspect [\textit{v}P]]]]
+\z
+ It follows from \REF{ex3XX} that 
+temporal shifters are tensed
+and therefore come with their own verbal morphology. Thus, Polish/Ukrainian {\textit{b{ę}dzie}}/\textit{bude}, which is often called a ``future'' tense, is formally a present tense with a lexical semantics as a forward (future) shifter. 
+
+Furthermore, the temporal auxiliaries subcategorise for a complement of a particular kind, a participle or infinitive. There is some variation from construction to construction, from language to language, with not always predictable semantic effects. 
+
+There is also the question of whether the various compound tenses in some or several Slavic languages can have a more  subtle semantics than simply shifting the reference time back and forth. Bulgarian stands out in this respect, and we will discuss below the seminal work of \citet{Izvorski1997} and \citet{pancheva03}, who happen to be the same person working on the Bulgarian perfect  before and after marriage.
+
+\subsection{Periphrastic future}\label{pfut}
+The temporal auxiliaries of the stem \textit{bud-} `will'  change the reference time of the prejacent to a future time in various Slavic languages. No Slavic language seems to have an equivalent forward shifter in the past (cf. English \textit{would}), since the corresponding stem  \textit{byl-} is either a past existential verb, a past copula or, in some languages, a past shifter (pluperfect).
+
+\citet{stechow99} provide the following pair for the periphrastic imperfective future in Ukrainian, where the first one is standard and the second dialectal.
+
+\ea
+\ea\label{bud-i}\gll Ja budu vidviduvaty svoho dida.\\
+I will.\textsc{prs} visit.\textsc{ipfv}.\textsc{inf} my grandpa \\
+\glt
+`I will visit my grandpa.' \hfill (Ukrainian)
+\ex\label{bud-l}\gll 
+Ja budu vidviduvala svoho dida.\\
+I will.\textsc{prs} visit.\textsc{ipfv}.\textsc{ptcp} my grandpa \\
+\glt
+`I will visit my grandpa.' \hfill (dialectal Ukrainian)
+\z\z
+The authors note that \REF{bud-l} with a past participle does not license a semantic backshifting. \citet[13]{blaszczak14} make the same remark for the ``tenseless'' participle under the {\textit{(b{ę}d-)}}-auxiliary in Polish. Recall also the Croatian periphrastic with a perfective participle \textit{bude završila} in \REF{ag:ex:cr1}.  Despite the  morphological similarities, none of these \textit{bud-}variants  correspond semantically to the Germanic future perfect of the type: {\textit{I will}} \textit{have} \textit{visited} \textit{him}.\footnote{In Bulgarian, with the future-like \textsc{want}-auxiliary, the future perfect is, in principle, acceptable: 
+
+\ea\label{futperf}\gll
+%Докато пристигнеш, (и) вече ще съм посетил дядо 
+Dokato pristigneš, i ve{č}e šte săm posetil djado. \\
+until come.\textsc{pfv}.\textsc{prs.2sg} and already want.\textsc{prs}.\textsc{aux} be.\textsc{prs.1sg}.\textsc{aux} visit.\textsc{pfv}.\textsc{pst} grandpa\\
+\glt `Before you come, I will already have visited grandpa.' \hfill (Bulgarian)
+\z}
+
+In fact, \REF{bud-i} with an infinitive prejacent and \REF{bud-l} are completely synonymous, indicating that the subcategorisation feature of \textit{bud-} is semantically inert.\footnote{A reviewer correctly points out that there is more to say about the aspectual marking on the prejacent. Why does the auxiliary in Ukrainian or Polish subcategorise for the imperfective aspect? Unfortunately, I do not have a good answer, at least not a short one.} 
+The coexistence of two synonymous future {\textit{bud-}}constructions is puzzling.
+
+As discussed extensively in \citet{whaley00}, the 
+complement is always the {\textit{l}}-participle  in South Slavic languages, while in North Slavic  the verbal complement is infinitival with imperfective marking. Polish, Kashubian, and Ukrainian dialects are exceptional in allowing for both variants.
+
+Are there any semantic differences between the  periphrastic future and the synthetic perfective present (semantically coerced into a future) apart from the overtly marked aspectual distinctions?
+Consider the formalization of the Ukrainian auxiliary given in
+\citet{stechow99}:
+
+\ea\label{bud-sem}  \sib{bud-}${}=\lambda P_{\stb{i,t}} \lambda t. \exists t' [ P(t') \, \& \, t' \mid\succ t]$ \hfill (extended relative future) 
+\z
+We can interpret $t' \mid\succ t$ as meaning that $t'$  is an interval which has $t$ as its left boundary (a kind of extended now towards the future). The semantics given in \REF{bud-sem} anticipates later work on Polish.
+
+According to \citet[2]{blaszczak14},  ``Notions such as ‘plan’, ‘prearrangement’, ‘holding true at the moment 
+of speaking’ play a crucial role in an explanation of {[...]} the 
+use/meaning {[}of the periphrastic future{]}.''  We can try to combine this insight for Polish with 
+the formula for Ukrainian in \REF{bud-sem}. My very sketchy truth conditions are given in \REF{ex14}, based on \REF{polfut}.
+
+\ea \ea\label{polfut}\gll Jan b{ę}dzie jad{ł} obiad.\\
+Jan will.\textsc{prs}.\textsc{aux} eat.\textsc{ipfv}.\textsc{ptcp}  lunch \\
+\glt ‘Jan will eat / will be eating lunch.’ \hfill (Polish; \cite{blaszczak14})
+
+\ex\label{ex14}
+$\exists t \exists e [t \mid\succ s$*$ \, \& \, \textsc{Jan eats lunch}(e) \, \& \, e\bigcirc t \, \& \, \cnst{plan}(\textsc{Jan},e,\textsc{lb}(t))]$
+\z\z
+
+In words: The event $e$ of Jan's eating lunch overlaps with the reference time $t$ (the most general imperfective temporal relation). Jan has a plan at the left boundary \textsc{lb} of the reference time, i.e. at the utterance time $s$*, of carrying out $e$. 
+ 
+However, \citet[2]{blaszczak14} presumably have in mind something   different, since they claim that the future reference ``can be reduced to one basic fact, namely: in all these constructions 
+there is a perfective present tense element. The role of the perfective aspect is  to forward-shift the reference time and to locate it (right) after the 
+speech time, hence deriving the future time reference.''
+
+Their claim is that the {\textit{bud-/}} \textit{b{ę}d-}stem   is perfective.\footnote{This view is controversial and explicitly contested in \citet{pitsch15}.} If we take this alleged perfectivity  to be inchoative, denoting the transition into an  event/state in the future, we could explain why the infinitival complement   must carry the imperfective aspect, as imperfective marking on infinitives under phasal verbs is characteristic of Slavic aspect. But in absence of any formal proposal along these lines, I will not go further into this hypothesis. The traditional view is that the \textsc{be}-auxiliary in Slavic is aspectually inert.
+
+ The formula in \REF{bud-sem} does not say anything about aspect. The input to the operator, the prejacent, is a predicate of times, which already contains all the aspectual information (both participles and infinitives are marked for aspect in Slavic).
+
+ A topic which has not been properly investigated is the behaviour of compound tenses in embedded contexts. Consider the periphrastic future in a  relative clause under a past matrix verb:
+
+ \ea\label{akvapark}\gll
+U misti vidkryly novyj akvapark, jakyj bude pracjuvaty  ščonedili.\\
+in city open.\textsc{pfv}.\textsc{pst.pl} new aquapark which will.\textsc{prs}.\textsc{aux} work.\textsc{ipfv}.\textsc{inf} every.Sunday \\
+\glt `In our city, they opened a new aquapark, which will be open on Sundays.'\\\hfill (Ukrainian)
+\z
+ Given an analysis of \textit{bud-} as a relative future, one might expect 
+a forward-shifting (future in the past) of the relative clause. But this is not what we get. The sentence can only mean that the aquapark will be open on Sundays \textit{after} the speech time.
+
+So we see that \textit{bud-} with its present tense morphology gets a purely deictic interpretation, and gives us a reference time strictly after $s$*. This fact goes against the established wisdom in Slavic linguistics that Slavic has  relative tenses. I will return to this point in \sectref{sec:4}.
+
+One final point concerns the modality of the future. Above, we have assumed that there is one actual future, the mirror image of the past. Such an analysis may work for {\textit{bud-}}/\textit{b{ę}d-}, depending on the researcher's metaphysical position. 
+
+However, the Bulgarian \textsc{want}-auxiliary, \textit{šte} in \REF{ag:ex:bu1} above,
+has a stronger modal flavour  
+and remains invariant
+throughout the 
+whole present tense paradigm.
+According to \citet[102]{Migdalski2006}, the auxiliary is a modal generated above tense.
+All the same, even a modal must be anchored in time. It should be interesting to examine the temporal profile of \textit{šte} (and Croatian \textit{će}, cf. \REF{ag:ex:cr1}) in embedded contexts.\footnote{There is a lot of subtle variation to be discovered. For instance, my Croatian consultant strongly preferred the present tense version \textit{će} in the relative clause in \REF{ag:ex:cr1}  under a matrix past, where my Bulgarian and Ukrainian consultants used a past modal-temporal auxiliary.}
+
+\subsection{The perfect}
+\label{sec:3.2}
+
+Most contemporary approaches to the syntax-semantics interface of European languages assume a
+structure as in \REF{ex3-arch}, where tense, perfect and aspect are represented as functional heads.\footnote{See \citet{todorovic16} for a  syntactically oriented discussion.}
+
+\ea\label{ex3-arch}
+Temporal template for the perfect: \\
+{[}{\textsubscript{TP}} Tense [{\textsubscript{PerfP}} Perfect [{\textsubscript{AspP}} Aspect [\textit{v}P]]]]
+\z
+With the exception of Russian, most Slavic languages motivate this  three-way distinction between tense, perfect, and aspect. The auxiliary comes in two versions; the {\textsc{have}}-perfect, which we find in Macedonian (and English), and the {\textsc{be}}-perfect. The latter clearly derives from a copula-construction.   The auxiliary selection in contemporary Indo-European languages is not in any obvious way correlated with semantic (temporal) effects, but several authors report syntactic differences between {\textsc{have-}} and {\textsc{be-}}perfects, cf. \citet{iatridou01} and \citet{Migdalski2006}.
+
+The semantic operator associated with the perfect modifies the reference time. As with the periphrastic future in the previous section, the perfect arguably has the type $\stb{\stb{i,t},\stb{i,t}}$. A natural  parallel with the future suggests that the higher tense layer provides the temporal anchoring of the future/perfect auxiliary. At the syntax-semantics interface, this can be achieved in at least two ways: Either the morphological tense on the auxiliary moves to TP, or an abstract semantic tense in TP licenses the morphological tense feature on the auxiliary in PartP, cf. the discussion above of the two strategies in  \figref{fig:move} vs. \figref{fig:feat}. 
+
+A nice and uncontroversial point is that aspect in Slavic can play a crucial role in distinguishing between the different perfect meanings in languages with an overt auxiliary and aspect marking on the participle. This was first demonstrated and formally accounted for in \citet{pancheva03} for Bulgarian, which we will see below.
+
+\subsubsection{General past vs. real perfect}
+
+In Ukrainian, the present tense auxiliary has disappeared and the participle is reinterpreted as a general past \REF{prus}. For Czech, a similar situation obtains in the 3rd person \REF{pch1}, but in  the 1st (and 2nd) person, the auxiliary is still present, correlating with pro-drop and syntactically occurring in the second position, cf. \REF{pch2} and \REF{pch3}.
+
+\ea\ea\label{prus}\gll
+%Вчора я з'їв рибу
+Včora ja zjiv rybu.\\
+yesterday I eat.\textsc{pfv}.\textsc{pst} fish\\
+\glt `Yesterday I ate up the fish.' \hfill (Ukrainian)
+\ex\label{pch1}\gll 
+Včera John snědl rybu. \\
+yesterday John eat.\textsc{pfv}.\textsc{pst} fish\\
+\glt `Yesterday John ate up the fish.' \hfill (Czech, 3rd person)
+\ex\label{pch2}\gll 
+Včera jsem snědl rybu.\\
+yesterday be.\textsc{prs.1sg}.\textsc{aux}   eat.\textsc{pfv}.\textsc{ptcp} fish \\
+\glt `Yesterday I ate up the fish.' \hfill (Czech, 1st person)
+\ex\label{pch3}\gll 
+Snědl jsem rybu.\\
+eat.\textsc{pfv}.\textsc{ptcp} be.\textsc{prs.1sg}.\textsc{aux} fish \\
+\glt `I ate up the fish.' \hfill (Czech, 1st person)
+\z\z
+Czech appears to be a language where 
+ the auxiliary merely points to phi-feature distinctions and is
+reanalysed as a person and number marker. In some Slavic languages, this semantic impoverishment of the auxiliary corresponds 
+to their morphological reduction from auxiliaries to clitics (cf. \REF{pch3}) and further to affixes \citep[47]{Migdalski2006}.
+We can analyse the auxiliary in \REF{pch2}/\REF{pch3} as semantically empty, as an identity function without any temporal semantics. 
+
+Compare the general past interpretation above with a clear case of a real perfect, a pluperfect in Ukrainian:
+
+\ea\label{ukrpp}\gll Vona bula posnidala.\\
+she be.\textsc{pst}.\textsc{aux} eat.breakfast.\textsc{pfv}.\textsc{ptcp}\\
+\glt `She had eaten breakfast.’\hfill (dialectal Ukrainian)
+\z
+Note first that the {\textit{will-bud}}-parallel between English and Slavic in the future construction (with present morphology on the auxiliary) does not carry over to {\textit{would}} vs. {\textit{bul-}}. When the  auxiliary is marked with past tense, it remains a forward shifter in English, but not in Slavic.
+
+The pluperfect  in Ukrainian invites a compositional analysis with two semantic layers of past. The auxiliary subcategorises for a participle, which is informally often called a ``past participle''. The highest \textsc{past} at \textsc{lf} is obviously linked to  the past marking on the auxiliary {\textit{bula}}. But which piece of morphology corresponds to the backward-shifting of the \textsc{perfect} operator? 
+
+There are two possible answers.
+ In their early work, \citet[18]{stechow99} claim that the second backward-shifting in the construction is due to the {\textit{l-}}participle of \textit{posnidala}: ``Die Präteritumsmorphologie des Partizips besetzt T2 und bringt uns in die
+Vorvorzeitigkeit.''\footnote{``The past morphology of the participle occupies T2 and brings us to the past of the past.''} (T2 is the lower temporal layer, while T1 is the higher tense in their system.)
+
+However, this is not the only possible analysis. \citet[146f.]{whaley00} notes that those Slavic languages which can use the {\textit{l-}}participle in the periphrastic future (notably Polish and Ukrainian) also have the pluperfect construction with the same participial form.\footnote{It should be noted that the pluperfect is not commonly used in contemporary Ukrainian and Polish. Most of my consultants do recognise the construction, although they would hardly use the pluperfect themselves. According to Krzysztof Migdalski (p.c.), he mostly uses the Polish pluperfect (actively) in conditional/modal contexts, but he (passively) accepts archaic usages of the pluperfect in other contexts.} She takes this as evidence for treating the {\textit{l-}}participle as unmarked for tense and semantically empty.
+ She contrasts this with Russian, a language which does not have a pluperfect, where the {\textit{l-}}participle is the carrier of past morphology with a corresponding past tense interpretation.
+
+So, on Whaley's view, both sources of semantic pastness in the Ukrainian pluperfect  stem from the auxiliary: the past marking {\textit{-l}} in {\textit{bula}} and the lexical meaning of the temporal auxiliary {\textit{bu-}} as  a backwards shifter. If the temporal shift is done by the auxiliary (and not the participle), we get a nice parallel with the compound future, where the forward shift clearly comes from {\textit{bud-}} (and not the embedded infinitive/participle).\footnote{A reviewer agrees with this point and finds it strange that \citet{stechow99} treat the \textit{l}-participle as a semantic backward-shifter in \REF{ukrpp} and as semantically empty in the future construction in \REF{bud-l}.} 
+
+
+However, the arguments remain inconclusive. \citet{iatridou01} argue with respect to the location of the perfect operator that we must distinguish between \textsc{have} and \textsc{be}-perfects. This is what we will do next.   
+
+\subsubsection{The \textsc{have}-perfect}
+
+The {\textit{ima}}--\textit{have}-perfect in Macedonian and Kashubian  is the exception in Slavic \citep{Migdalski2006}. In \citet{iatridou01} and \citet{gronn_stechow2020} the temporal  auxiliary \textsc{have} is analysed as a temporal quantifier of type $\stb{\stb{i,t},\stb{i,t}}$. On its most simple anteriority reading,  \textsc{have}
+is simply the mirror image of \textsc{will} -- it shifts the reference time backwards:
+
+
+\ea\label{im}  \sib{ima/have} ${}=\lambda P_{\stb{i,t}} \lambda t. \exists t' [ P(t') \, \& \, t' \prec t]$ \hfill    (\textsc{have} as anteriority) 
+\z
+The temporal auxiliary contributes  the same semantics as the
+relative past discussed in \REF{relpa} above. However, there is a difference in the morphological features. The auxiliary comes with tense morphology (here: present tense) which requires the presence at \textsc{lf} of a higher semantic tense (here: \textsc{now}).
+
+Being located between aspect and tense, the perfect can be seen as a sort of second, embedded tense \citep{iatridou01} that takes a set of times as input and returns a set of times. Schematically and informally, the composition goes as follows \citep[285]{pancheva03}:
+
+\begin{itemize}
+\item Viewpoint aspect: from event time to  reference time.
+\item Perfect: from  reference time to  reference time.
+\item  Tense: from  reference time to  speech time. 
+\end{itemize}
+
+
+Let us look at the analysis of a concrete example from Macedonian. The participle under \textit{ima} invariably appears in the neuter singular:
+
+\largerpage
+\ea\ea\label{mac}\gll Petar ja ima završeno taa rabota.\\
+Petar it have.\textsc{prs}.\textsc{aux} finish.\textsc{pfv}.\textsc{ptcp} that work \\
+\glt
+`Petar has finished that work.' \hfill (Macedonian; \cite[129]{Migdalski2006})
+\ex
+{[}{\textsubscript{TP}} \textsc{now}[{\textsubscript{PerfP}} ima [{\textsubscript{AspP}} \textsc{pfv} [{\textsubscript{VP}} Petar finished work]]]] 
+\z\z
+Importantly, the perfect scopes over viewpoint aspect (here: \textsc{pfv}).
+The denotation of AspP, which is the input to the temporal shifter {\textit{ima}}, is thus:
+
+\ea \label{asp-ant-mac}
+\sib{AspP}${}=\lambda t \exists  e[e \subseteq t \, \& \, \textsc{Petar finish work}(e)] $
+\z
+Applying {\textit{ima}} to AspP in \REF{asp-ant-mac} gives us:
+
+\ea
+$\lambda t' \exists  t \exists  e[e \subseteq t \, \& \, \textsc{Petar finish work}(e) \, \& \, t \prec t'] $
+\z
+In the next step, $t'$ is equated to the speech time s* and we get the final truth-conditions for the sentence:
+
+\ea\label{tc-mac}
+$\exists t \exists  e [e \subseteq t \, \& \, \textsc{Petar finish work}(e) \, \& \, t \prec s$*$]$
+\z
+
+\noindent The anteriority reading is  available for the perfect in the right context (for instance in the pluperfect), but it is questionable  whether a relative past as in \REF{im}  can account for all the perfect interpretations available in a given language \citep{gronn_stechow2020}.
+One could object that \REF{tc-mac} does not  capture the result state interpretation which is arguably present in \REF{mac}. 
+
+From the examples provided in \citet{Migdalski2006}, the  \textit{ima}-`have'-perfect in Macedonian and Kashubian seems to display the same range of perfect meanings found in other European languages, notably the resultative, experiential and universal. The distinction between the three readings is largely determined on the basis of  the aspectual morphology/interpretation, hence the perfective marking on the participle in 
+\REF{mac} is responsible for the result state inference.
+In this respect, the inventory of perfect readings in Macedonian appears to be similar to the more common {\textsc{be-}}perfect in other Slavic languages which we will review in more detail  below.
+
+
+
+
+
+\subsection{The \textsc{be}-perfect} 
+
+Several Slavic languages make use of the {\textsc{be}}-auxiliary in the perfect. However, it is often claimed that in, say, BCMS, the present perfect is used as the general narrative past 
+tense, without the characteristic perfect readings 
+\citep[47]{Migdalski2006}. I will therefore mostly focus on Bulgarian below, a language where the perfect shows a great variety of semantic readings with a corresponding elaborate morpho-syntax.
+
+As noted above,
+\citet{iatridou01} argue that {\textsc{have}} and {\textsc{be}}-perfects  should be represented by two different structures. They provide data from reduced relative clauses in Bulgarian to support their view that the {\textsc{be}}-auxiliary  is semantically empty: 
+
+\ea\label{relbul}\gll 
+Zapoznax se s ženata, \minsp{[} napisala knigata].\\
+acquaint.\textsc{pfv.}\textsc{pst.1sg} \textsc{refl} with woman.the {} write.\textsc{pfv}.\textsc{ptcp} book.the\\
+\glt`I met the woman having written the book.' \hfill (Bulgarian)
+\z
+Their point is that in languages with the {\textsc{have}}-perfect, the auxiliary itself expresses the perfect meaning and can therefore never be dropped (cf. English {*}\textit{the} \textit{woman} \textit{written...}).
+So what then gives us the perfect operator in \REF{relbul}? It presumably must come from the only morphology available, namely the {\textit{l}}-participle \textit{napisala} `written', pace \citet{whaley00} and \citet{blaszczak14}.\footnote{See \citet{gronn_stechow2020} for a recent discussion.}
+
+\subsubsection{Different readings and denotations of the perfect}
+A constant challenge for the theories of the perfect is to account for the distribution of the three main readings
+cross-linguistically and language-internally: the \textsc{resultative}, \textsc{experiential} and \textsc{universal} perfects.
+
+The beauty of the Slavic perfect stems from the  overt marking of viewpoint aspect embedded under the perfect. The different temporal inclusion relations of the two aspectual operators  play a decisive role in distinguishing between the resultative and experiential, which are often grouped together in Germanic languages as the so-called ``existential perfect'' in opposition to the universal perfect. 
+
+\citet[295]{pancheva03} used Bulgarian data to show that the experiential and 
+the resultative interpretations should be kept apart, since the distinction has a grammatical basis:
+
+\ea\ea\label{stroil}\gll Ivan e stroil pjasăčna kula. \\
+Ivan be.\textsc{prs}.\textsc{aux} build.\textsc{ipfv}.\textsc{ptcp} sand castle \\
+\glt `Ivan has been building a sandcastle.' \hfill (Bulgarian; ``neutral'' \textsc{ipfv})
+ \ex\label{strojal}\gll Ivan e strojal pjasăčna kula. \\
+Ivan be.\textsc{prs}.\textsc{aux} build.\textsc{ipfv}.\textsc{ptcp} sand castle \\
+\glt
+`Ivan has been building a sandcastle.' 
+\hfill (Bulgarian; imperfect)
+\ex\label{postroil}\gll Ivan e postroil pjasăčna kula. \\
+Ivan be.\textsc{prs}.\textsc{aux} build.\textsc{pfv}.\textsc{ptcp} sand castle \\
+\glt
+`Ivan has built a sandcastle.'
+\hfill (Bulgarian; \textsc{pfv})
+\z\z
+
+\noindent The participles in the two first examples, a bare imperfective (a simplex form with an imperfective $\emptyset$-suffix) and an imperfect stem, respectively, cannot receive a resultative interpretation. The resultative must be encoded through a perfective participle ({\textit{postroil}}), as in \REF{postroil}. Only in the latter case can the speaker follow up with `and now he will destroy it'.
+
+The experiential--universal distinction can further be accounted for along the lines of \citet{gronndiss}:  The imperfect(ive) in Slavic is ambiguous between different inclusion relations: The canonical imperfective relation $t \subseteq e$ produces the universal reading in a perfect tense setting, while the complete event interpretation $e \subseteq t$ results in an experiential reading.\footnote{The experiential reading is much discussed in Slavic linguistics mostly outside the perfect, namely with respect to the factual imperfective in the simple/general past. The factual imperfective displays a whole range of complete event interpretations, see \citet{Groenn2015}, \textcitetv{chapters/05_gehrke}, and \textcitetv{chapters/08_muellerreichau} for a recent discussion (mostly on Russian).} We will show how the different readings can be derived compositionally below.
+
+A merit of \citet{pancheva03} is that she could propose a uniform overall structure for the perfect, where  additional grammatical components, notably aspect, make it possible to derive the three distinct readings. Her analysis is 
+ couched in the \textsc{extended now}-framework of \citet{Dowty1979}, abbreviated \textsc{xn}.
+The \textsc{xn}-interval and the \textsc{perfect} operator (of type $\stb{\stb{i,t},\stb{i,t}}$ as before) are defined as follows \citep{gronn_stechow2020}:
+
+\ea\ea
+\cnst{xn}$(t,t'):=t'$ is a final subinterval of $t$.
+\ex\label{xndef} \sib{\textsc{perf-xn}}${}=\lambda P_{\stb{i,t}} \lambda t'. \exists t[P(t) \, \& \, $\cnst{xn}$(t,t')]$ \hfill  (extended now-perfect) 
+\z\z
+
+\largerpage
+The semantic contribution of this perfect is  to introduce the \textsc{xn}-interval
+(the perfect time span) at which the temporal predicate is true.
+ The crucial difference from  the anteriority approach in \REF{im}
+above is that the \textsc{xn}-interval $t$, the perfect time span, does not properly precede the higher
+tense $t'$, i.e. the speech time $s$* in a present perfect, but includes it. The underlying event is therefore said to be true also at the utterance time.
+
+\largerpage
+
+A consequence of the analysis in \REF{xndef} is that modification by adverbials such as \textit{yesterday} is predicted to be ruled out. An interval which includes the utterance time, such as \textsc{xn}, cannot itself be included in yesterday: $t\subseteq$ \textsc{yesterday} \& \cnst{xn} $(t,s$*$)$ is contradictory since it says that the utterance time is included in yesterday. 
+
+
+\ea\ea\label{it-yest}\gll Lo avete udito ieri. \\ 
+ it have.\textsc{prs}.\textsc{aux.2pl} hear.\textsc{ptcp} yesterday\\ \hfill (Italian)
+ \ex\label{cr-yest}\gll To ste juče čuli. \\ that be.\textsc{prs}.\textsc{aux.2pl} yesterday hear.\textsc{pfv}.\textsc{ptcp}\\\hfill (BCMS)
+\ex\label{bu-yest}\gll Nali čuxte včera.  \\
+right hear.\textsc{pfv}.\textsc{pst.2pl} yesterday \\\hfill (Bulgarian)
+ \ex\label{yest} You heard it yesterday. \hfill(English)
+\z\z
+A pattern emerges that suggests a contrast between Italian/BCMS and Bulgarian/English (*\textit{have heard}). The former allow a past adverbial in a present perfect. If we assume that the present perfect is interpreted as a general past in these languages, and we use the anteriority denotation in \REF{im}, we can straightforwardly account for the acceptance of the adverbial in the structure.
+
+A simple analysis of
+temporal adverbials like \textit{yesterday} is the following:
+
+\ea \label{ex25}Predicate format of positional temporal adverbials, type $\stb{i,t}$: \\
+\sib{juče/včera}${}=\lambda t.t \subseteq$ \textsc{yesterday}
+\z
+We further assume a standard version of \textsc{predicate} \textsc{modification} so that positional adverbials (predicates of times) can restrict the tense or perfect operator \citep{gronn_stechow2020}. BCMS (and Italian) can now be analysed as follows, where the adverbial modifies AspP of type $\stb{i,t}$ and the auxiliary \textit{ste} is simply a relative/general past:
+
+\ea\ea
+{[}{\textsubscript{TP}} \textsc{now}$_{i}$ [{\textsubscript{PerfP}} ste$_{\stb{\stb{i,t},\stb{i,t}}}$  [juče$_{\stb{i,t}}$] [{\textsubscript{AspP}} \textsc{pfv}$_{\stb{\stb{v,t},\stb{i,t}}}$ [{\textsubscript{VP}} čuli$_{\stb{v,t}}$]]]] 
+\ex $\exists t[t \prec s$*$ \, \& \, t \subseteq \textsc{yesterday} \, \& \, \exists e[e
+\subseteq t \, \& \, \textsc{you hear}(e)]]$
+\z\z
+We note that Bulgarian  in the same context \REF{bu-yest} uses the aorist ($\approx$ perfective past)  and English uses a simple past  \REF{yest}. A natural hypothesis is that the present perfect in these languages has an \textsc{xn}-denotation, as in \REF{xndef}, and therefore cannot co-occur with \textit{včera}/\textit{yesterday}.
+
+\citet[232]{Izvorski1997} indeed shows that the  Bulgarian present perfect only allows modification by such adverbials in the special evidential form (without the auxiliary):
+\ea\ea\gll 
+ Te sa došli \minsp{(??} včera).\\ 
+they be.\textsc{prs}.\textsc{aux} come.\textsc{pfv}.\textsc{ptcp} {} yesterday \\ 
+\glt Intended: `They have come yesterday.' \hfill (Bulgarian, perfect) 
+\ex\gll Te  došli včera. \\
+they come.\textsc{pfv}.\textsc{ptcp}  yesterday \\
+\glt `They apparently came yesterday.' \hfill (Bulgarian, evidential perfect) 
+\z\z
+ We will return to the evidential perfect below. For more on the present perfect puzzle, see  \citet{panchevastechow04} and \citet{gronn_stechow2020}.
+
+ 
+\subsubsection{Resultative perfect}
+\largerpage
+The  resultative reading  obtains when an event in the (typically recent) past brings about a  result state which holds at the evaluation time. Due to the current relevance of the event at the utterance time (in the present perfect), the resultative reading obtains only with the perfective aspect in Slavic, here exemplified with Serbian:\footnote{Parasol corpus data (Umberto Eco, \textit{The Name of the Rose}) from \citet{gronn_stechow2020}.} 
+
+\ea\ea\label{body}  Where have you buried the poor body? \hfill (English)
+\ex\label{body-cr}\gll Gde ste sahranili jadno telo? \\
+where be.\textsc{prs}.\textsc{aux} bury.\textsc{pfv}.\textsc{ptcp} poor body \\\hfill (Serbian) 
+\z\z
+In Slavic languages, this reading is compatible with both the conservative relative past semantics and an \textsc{xn}-semantics for the perfect. In the first case,  we end up with the temporal relations $e \subseteq t \, \& \, t \prec s$*, while with the \textsc{xn}-configuration we get $e \subseteq t \, \& \, $\cnst{xn}$ (t, s$*). In both cases, there is a subinterval of $t$ that contains a VP-eventuality. Hence,
+the event is completed before the utterance time and its resultant state  obtains at the utterance time (given reasonable pragmatic considerations).
+
+In the presence of certain temporal modifiers of the perfect time span, the \textsc{xn}-approach may be preferable, cf.  the following example.\footnote{Parasol corpus data (Mixail Bulgakov, \textit{The Master and Margarita}) from \citet{gronn_stechow2020}.}
+
+\ea\ea\label{bulgxn}
+ Since the good people disfigured him, he has become cruel and hard.\\\hfill (English)
+\ex\label{bulgxn-ru}\gll S tex por kak dobrye ljudi izurodovali ego, on stal žestok i čerstv. \\
+from those times \textsc{comp} good people disfigure.\textsc{pfv}.\textsc{pst} him he become.\textsc{pfv}.\textsc{pst} cruel and hard  \\ \hfill (Russian)
+\ex\label{bulgxn-bu}\gll Otkato dobri xora sa go obezobrazili, e stanal žestok i koravosărdečen. \\
+since good people be.\textsc{prs}.\textsc{aux} him disfigure.\textsc{pfv}.\textsc{pst} be.\textsc{prs}.\textsc{aux} become.\textsc{pfv}.\textsc{ptcp} hard and cruel  \\ \hfill (Bulgarian)
+\ex\label{bulgxn-cr}\gll Od tog vremena kako su ga dobri ljudi unakazili, on je postao okrutan i bezdušan. \\
+since those times \textsc{comp} be.\textsc{prs}.\textsc{aux} him  good people disfigure.\textsc{pfv}.\textsc{pst} he be.\textsc{prs}.\textsc{aux} become.\textsc{pfv}.\textsc{pst} hard and cruel  \\ \hfill (Croatian) 
+\z\z  
+%SERBIAN 1 AND 2: Otkako su ga dobri ljudi unakazili , postao je surov i bezosećajan . 	-- Otkad su ga dobri ljudi nagrdili , postao je surov i bezdušan .
+What interests us here are the translations. Since there is no perfect in modern Russian (Bulgakov's original), the verbs in the matrix and temporal clause of \REF{bulgxn-ru} carry both perfective aspect and past tense morphology.
+
+The {\textsc{since}}-clause gives us a set of times \textit{after} and \textit{including} a definite time (the complement of the temporal preposition). This is  transparent in Croatian \textit{od} \textit{tog} \textit{vremena} \textit{kako} `from those times when'. We will see in \sectref{sec:4} how we compositionally derive temporal adverbial clauses in Slavic. Let us for now just call the definite time which is input to \textit{od} `since', for $\phi$.
+
+The importance of \textsc{since}-clauses for the perfect is that they provide the left boundary (\textsc{lb}) of \textsc{xn}, as in the formalisation in \REF{xn-perf2}. The formula is intended to capture the construction in Slavic, except for the  Russian original. 
+
+\ea\label{xn-perf2}\ea
+{[}{\textsubscript{TP}} \textsc{now}$_{i}$ [{\textsubscript{XN}} je$_{\stb{\stb{i,t},\stb{i,t}}}$ [od$_{\stb{\stb{i},\stb{i,t}}}$ $\phi_{i}$] [{\textsubscript{AspP}} \textsc{pf}$_{\stb{\stb{v,t},\stb{i,t}}}$ [{\textsubscript{VP}} postao$_{\stb{v,t}}$]]]] 
+\ex $\exists t  [\cnst{xn}(t,s$*$) \, \& \, \cnst{lb}(t,\phi) \, \& \, \exists e[e \subseteq t \, \& \, \textsc{become cruel}(e)]]$
+\z\z
+
+
+\subsubsection{Experiential perfect}
+Experiential perfects signal the existence of at least one past eventuality. The underlying VP can be  telic or atelic. For telic VPs  in languages like English, it is  difficult to come up with  criteria that would separate the experiential from the resultative. 
+However, in Slavic, the resultative-experiential distinction is grammaticalised and should follow from a proper theory of aspect.
+
+\citet[297f.]{pancheva03} illustrates the contrast through (in)compatibility with 
+various adverbials:
+
+\ea\gll
+Maria e \minsp{\{} pristignala / \minsp{*} pristigala\} sega. \\
+Maria be.\textsc{prs}.\textsc{aux} {} arrive.\textsc{pfv}.\textsc{ptcp} {} {} arrive.\textsc{ipfv}.\textsc{ptcp} now \\ \glt
+`Maria has arrived now.' \hfill (Bulgarian)
+\z
+The adverbial {\textit{sega}} `now' forces the resultative reading and is only compatible with perfective aspect.
+
+\ea\gll
+Maria e \minsp{\{} pristigala / \minsp{*} pristignala\} v polunošt i predi.\\
+Maria be.\textsc{prs}.\textsc{aux} {} arrive.\textsc{ipfv}.\textsc{ptcp} {} {} arrive.\textsc{pfv}.\textsc{ptcp} in midnight and earlier\\
+\glt
+`Maria has arrived at midnight before as well.' \hfill (Bulgarian)
+\z
+The indefinite existential quantification over times  {\textit{predi}} `before' is, on the contrary, only compatible with the imperfective aspect and produces an experiential reading. 
+
+The simplest account of these data is to assume that the imperfective has a complete event interpretation $e \subseteq t$ in complementary distribution with the perfective.\footnote{The analysis in \citet{pancheva03} is slightly more complicated since she assumes that Bulgarian has three aspects with three different temporal inclusion relations. We ignore her so-called ``neutral aspect'' here, since imperfect(ive) and neutral participles have a similar semantic effect with respect to the perfect construction.}
+One characteristic reading of the so-called (general-)factual Slavic imperfective -- in past tense and elsewhere -- is precisely related to indefinite-existential event quantification \citep{Groenn2015}.\footnote{See also \citet{gronndiss}, \textcitetv{chapters/05_gehrke}, and \textcitetv{chapters/08_muellerreichau}.}
+
+These data further invite a  pragmatic account along two lines: aspectual competition (\textsc{pfv} vs. \textsc{ipfv}; \citealt{gronndiss}) and tense competition (present perfect vs. other past tenses available in the language; \citealt{zhao22}). 
+
+\subsubsection{Universal perfect}
+
+The \textsc{xn}-theory of the perfect was designed by \citet{Dowty1979} to account for the universal reading in English, so there is no surprise that the theory is well suited to handle the universal perfect also in Slavic.
+
+Here are two characteristic examples from Bulgarian:
+
+\ea\ea\gll
+  Marija vinagi e običala Ivan. \\
+Maria always be.\textsc{prs}.\textsc{aux} love.\textsc{ipfv}.\textsc{ptcp} Ivan\\ 
+\glt
+`Maria has always loved Ivan.' \hfill (Bulgarian; \cite[172]{iatridou01})
+\ex\gll Ivan cjala sutrin e stroil pjasăčna kula. \\
+Ivan all morning be.\textsc{prs}.\textsc{aux} build.\textsc{ipfv}.\textsc{ptcp} sand castle \\
+\glt
+`Ivan has been building a sandcastle all morning.'\\ \hfill (Bulgarian; \cite[296]{pancheva03})\\
+\z\z
+The key to the universal reading is the imperfective interpretation of the participle in combination with an adverbial whose denotation includes the utterance time (\textit{vinagi} `always', \textit{cjala} \textit{sutrin} `all morning').
+
+The imperfective has its canonical meaning $t \subseteq e$ in this construction, hence does not present the eventuality 
+as completed at the reference time $t$ $(=\textsc{xn})$. Since the eventuality (state) holds at a superinterval of $t$, it necessarily continues beyond the right boundary of the \textsc{xn}-interval, that is beyond the utterance time $s$*.
+
+A convenient outcome of this analysis is that it accounts for the universal reading
+ independently of the meaning of the perfect itself \citep{pancheva03}. 
+In this light, let us look at the universal--existential-distinction -- the so-called U vs. E-readings -- in Slavic.\footnote{Parasol corpus data (J.K. Rowling, \textit{Harry Potter and the Philosopher's Stone}) from \citet{gronn_stechow2020}.}
+
+
+\ea\ea \label{owl2}  The nation's owls have been behaving very unusually today. \hfill (English)   
+\ex\label{owl-sc}\gll {[}...] su se naše nacionalne sove danas ponašale vrlo neobično. \\ {} be.\textsc{prs}.\textsc{aux} \textsc{refl} our national owls today behave.\textsc{ipfv}.\textsc{ptcp} very unusually  \\ \hfill (BCMS)
+\ex\label{owl-bu}\gll {[}...] dnes sovite v stranata sa projavili mnogo stranno povedenie. \\  {} today owls.the in country.the be.\textsc{prs}.\textsc{aux} show.\textsc{pfv}.\textsc{ptcp} very strange  behaviour \\ \hfill (Bulgarian)
+\z\z
+
+\noindent The two corpus translations are truth-conditionally not equivalent. Only the BCMS translation in \REF{owl-sc}, with an imperfective participle, conveys the universal reading of the English original. The Bulgarian translation \REF{owl-bu} with the perfective participle instantiates an existential-resultative reading.
+Let us see how this is captured by the theory outlined above.
+
+The adverbial \textit{dnes}/\textit{danas} `today' modifies \textsc{xn} by restricting the interval to the time of the utterance day which precedes and includes the speech time.  It must accordingly scope above aspect and below the perfect, which existentially closes off \textsc{xn}. For the U-reading we have an imperfective aspectual relation below {\textit{today}}, forcing  the owl's unusual behaviour to continue to hold at the utterance time. For both English (-{\textit{ing}} in \REF{owl2}) and BCMS, this aspect is overtly marked. 
+
+In the Bulgarian E-reading of \REF{owl-bu},  the embedded perfective predicate is said to hold at some subinterval of \textsc{xn}, i.e. the owls misbehave only for some time during the part of today that precedes the utterance time. This is a proper past interpretation due to a slightly inaccurate translation of the continuous interpretation in the English original.
+
+
+ Here are the relevant truth-conditions, spelled out with event(ualities) and viewpoint aspect:
+
+\ea\ea 
+$  \exists  t  [\cnst{xn}(t,s$*$) \, \& \, t \subseteq \,\textsc{today} \,\&\, \exists e[\textsc{owls' behaviour}(e) \,   \& \, t \subseteq e$]]   \\\hfill (U-reading)
+\ex 
+$  \exists  t   [\cnst{xn}(t,s$*$) \, \& \, t \subseteq\textsc{today} \,\&\, \exists e[\textsc{owls' behaviour}(e) \,   \& \, e \subseteq t$]]  \\\hfill (E-reading)
+\z\z
+It follows from this account that the universal reading of the present perfect is predicted to compete with a simple present tense. 
+How this competition unfolds is an open issue in Slavic, but the patterns below suggest that this issue deserves further attention:\footnote{Parasol corpus data (J.K. Rowling, \textit{Harry Potter and the Philosopher's Stone}) from \citet{gronn_stechow2020}.}
+
+
+\ea\ea \label{been} How long  have I  been  in here? \hfill (English U-perfect)
+\ex\gll
+Ot kolko vreme săm tuk? \\
+from how.much time be.\textsc{prs.1sg} here \\ \hfill (Bulgarian present tense)
+\ex\gll
+Koliko sam već ovde? \\
+how.long be.\textsc{prs.1sg} already here \\
+\hfill (Serbian present tense)
+\z\z
+%От колко време съм тук? 
+%
+The English original has a present perfect with a durative measure adverbial {\textit{how long}} and the underlying VP must hold both at the utterance time and for some time extending backwards into the past, but the Slavic corpus translations both prefer a simple present for this scenario, cf. \citet{gronn_stechow2020}. I am not aware of any accounts of the semantics of the present tense in Slavic which could shed light on this issue. 
+
+\subsubsection{Past perfect}
+The past perfect (pluperfect)  consists of two nested layers of ``pastness'': The semantic
+ past associated with the past tense morphology of the auxiliary and, depending on the author (as we saw above), either a backward-shifting operator lexically expressed by the auxiliary or a past operator originating with the participle. 
+
+The good old anteriority theory (relative past) in \REF{im} also seems to account straightforwardly  for past \textsc{be}-perfects, as shown in \citet{gronn_stechow2020}.
+In interaction with the two past layers, temporal adverbials may  create an ambiguity, as illustrated here for Bulgarian with the auxiliary in the aorist past:\footnote{The pluperfect is quite rare in contemporary BCMS, hence we once more draw on data from Bulgarian.}
+
+\ea\label{ex34}\gll
+Marija beše došla v 6 časov.\\
+Mary be.\textsc{pfv}.\textsc{pst}.\textsc{aux} leave.\textsc{pfv}.\textsc{ptcp} at six o'clock\\ 
+\glt `Mary had left at six o'clock.'\hfill (Bulgarian)
+\z
+
+\noindent In the formulae, we assume for simplicity that the perfect operator originates somehow with the \textsc{be}-auxiliary. I am here only committed to the semantic types, not the labelling of syntactic categories.
+
+\ea
+  \label{ex34a} {[}\textsc{now}$_{i}$ [$_{it}$ \textsc{past}$_{\stb{it},\stb{it}}$ [$_{it}$ $\lambda_{1}$ $\textsc{at 6}(t_{1})$] [$_{it}$ \textsc{be}$_{\stb{it},\stb{it}}$ 
+[$_{it}$ \textsc{pfv}$_{\stb{vt},\stb{it}}$ [$_{vt}$  \textsc{leave}]]]]] \newline
+($\exists t \prec s$*$)\, t \, \textsc{at 6 o'clock} \, \& \, (\exists t' \prec t)(\exists e) \, \textsc{Mary 
+leaves}(e) \, \& \, e \subseteq t' $
+\z
+
+\ea
+  \label{ex34b} {[}\textsc{now}$_{i}$ [$_{it}$ \textsc{past}$_{\stb{it},\stb{it}}$ [$_{it}$ \textsc{be}$_{\stb{it},\stb{it}}$ [$_{it}$ $\lambda_{1}$ \textsc{at 6}$(t_{1})$] 
+ [$_{it}$ \textsc{pfv}$_{\stb{vt},\stb{it}}$ [$_{vt}$ \textsc{leave}]]]]] \newline
+($\exists t \prec s$*$)(\exists t' \prec t)\, t' \, \textsc{at 6 o'clock} \, \& \, (\exists e) \, \textsc{Mary 
+leaves}(e) \, \& \, e \subseteq t' $
+\z
+
+\noindent The adverbial of type $\stb{i,t}$ can modify either the higher (tense) time or the lower (perfect) time.
+\REF{ex34a} is a past-time modification: the leaving is before six. \REF{ex34b} is a
+perfect-time modification: the leaving is at six. 
+
+Typically, the context disambiguates the adverbial. Thus, in the following authentic example, 
+we obviously have a low temporal adverbial which modifies the perfect time span at which the state holds.\footnote{RuN-Euro corpus data \citep{run} (Ernest Hemingway, \textit{The Old Man and the Sea}) from \citet{gronn_stechow2020}.}
+
+\ea\ea \label{forty}   In the first forty days a boy  had been  with him. \hfill (English)
+\ex\gll Prez părvite četirideset dni be vzimal edno momče săs sebe si. \\
+in first.the forty days be.\textsc{pfv}.\textsc{pst}.\textsc{aux} take.\textsc{ipfv}.\textsc{ptcp} a boy with him \textsc{refl} \\
+\hfill (Bulgarian)
+\z\z
+
+\noindent The Slavic perfect is a rich field, and we cannot do justice to all possible tense combinations. \citet[98]{Migdalski2006} provides examples with a 
+ double participle construction in BCMS and
+Bulgarian.\footnote{Recall the Croatian \textit{je} \textit{bila} \textit{rekla} `had said' in \REF{ag:ex:cr1}.} In the pair of sentences below, the temporal auxiliary is itself in the perfect:
+
+\ea\ea\label{double}\gll
+Ja sam bio pročitao knjigu.\\ 
+I be.\textsc{prs}.\textsc{aux.1sg} be.\textsc{aux}.\textsc{ptcp}  read.\textsc{pfv}.\textsc{ptcp}  book  \\
+\glt
+`I had finished reading the book.' \hfill (BCMS)
+\ex\label{evdouble}\gll
+Az săm bil četjal knigata.\\ 
+I be.\textsc{prs}.\textsc{aux.1sg} be.\textsc{aux}.\textsc{ptcp}  read.\textsc{ipfv}.\textsc{ptcp}   book.the \\ \glt
+`I am said to have been reading the book.' \hfill (Bulgarian) 
+\z\z
+
+\noindent The constructions in the two languages are similar on the surface, but the meaning is different. The BCMS example \REF{double} is semantically a standard pluperfect as discussed above, while the Bulgarian construction in \REF{evdouble}  is an evidential perfect. This brings us to the  next section.
+
+
+\subsubsection{Evidential perfect}
+
+The evidential perfect is also known as the indirect perfect or the inferential/ renarrated/unwitnessed mood, hence the peculiar translation of \REF{evdouble} above as  `I am said to have been reading the book'. The speaker has only indirect evidence for the event. Another typical translation could be `I had apparently read the book'.
+
+The evidential perfect is found in Bulgarian and Macedonian.  As for Macedonian,  the presence in the tense system of the \textsc{have}-auxiliary {\textit{ima}}, as we saw above \REF{im}, changes the distribution of the \textsc{be}-perfect. The \textsc{have}-perfect is gradually taking over the traditional
+functions of the \textsc{be}-perfect to such an extent that only the evidential functions remain for the
+latter, according to \citet{graves00} and \citet{lindstedt00}.
+
+The situation is different in Bulgarian where the traditional \textsc{be}-perfect happily coexists with the evidential perfect. In the 3rd person  the two paradigms are formally distinct, with  pragmatic/semantic effects:
+
+\ea\gll
+Ajnstajn \minsp{(\#} e) posetil Prinstăn. \\
+Einstein {} be.\textsc{prs}.\textsc{aux} visit.\textsc{pfv.}\textsc{ptcp} Princeton \\ \glt
+`Einstein apparently visited Princeton.’ 
+\hfill (Bulgarian; \cite[233]{Izvorski1997})
+\z
+
+\noindent In the standard present perfect, the auxiliary \textit{e} `is' must be used. However, in both English and Bulgarian, the so-called Einstein-sentences sound bad in the present perfect since Einstein is dead and should not be ascribed any present perfect-like properties at the utterance time (often referred to as a ``life-time effect'' of the present perfect). Still, in the 3rd person, the perfect participle can be used in the Einstein-scenario {\textit{without}} the auxiliary. In this case, the sentence receives some kind of hearsay interpretation and is perfectly fine with Einstein as the subject.
+
+Thus, certain pragmatic and/or semantic restrictions of the standard perfect disappear in the evidential construction. Still, the two constructions on the surface share a common core (the \textit{l}-participle), and they are formally indistinguishable in the 1st and 2nd persons. Semantically, the two constructions appear to have in common the idea that a past event is evaluated from a  distance, either through its current result state (the temporal perfect) or through  the speaker's second-hand information or reasoning  at the utterance time (the evidential perfect) \citep{gvozdanovic1995}.  
+
+In Izvorski's (Pancheva's) influential study, the first formal account of this phenomenon in Bulgarian, she tried to unify the temporal present perfect (direct evidence) and the epistemic evidential perfect (indirect evidence) in a Kratzerian framework \citep[225]{Izvorski1997}.
+
+Her  formalisation of the evidential perfect as a universal epistemic modal splits into two parts (here simplified):
+\ea
+Assertion: $p$ is necessary in view of the speaker's knowledge state. 
+\\ Presupposition: The speaker has indirect evidence for $p$. \\ 
+\z
+  
+\noindent To bring about a parallel with the temporal perfect, she assumes an analysis of the latter as a resultative stativiser.\footnote{As discussed in \citet{gronn_stechow2020}, this is a common strategy in the perfect literature. However, in her later work \citep{pancheva03}, as we saw above, Izvorski/Pancheva prefers another approach to analyse the temporal perfect, viz. the \textsc{xn}-theory.} The reasoning goes as follows:
+
+The present perfect in the \textsc{temporal} domain asserts that the consequent state of a past eventuality, \cnst{cs}$(e)$, holds at the utterance time of the speaker. This supposedly echoes the evidential perfect in the \textsc{modal} domain which asserts that the proposition $p$ holds in (all) the worlds epistemically accessible for the speaker.
+
+Furthermore,
+the present perfect in the \textsc{temporal} domain does not entail that the underlying eventuality $e$ holds at the utterance time of the speaker. And, in a similar vein,
+the evidential perfect in the \textsc{modal} domain does not entail that the proposition $p$ is true in the world of the speaker \citep[226]{Izvorski1997}. 
+
+The parallel above breaks down at one place, namely in the universal quantification over epistemically accessible worlds (the present perfect does not involve universal temporal quantification). 
+
+Izvorski's  analysis raises many questions, and she concludes:
+``Further formalization is needed {[}...{]}
+Still, I believe that even formulating these questions is an 
+important step towards our better understanding of the links between temporal and 
+modal categories" \citep[235]{Izvorski1997}. And 30 years later, evidentiality is indeed a hot topic in semantics. 
+
+The ``evidential perfect'' may turn out to be a misnomer, and the parallels with the temporal perfect seem to be more or less abandoned in  contemporary work, such as  \citet{Koev2017a}, who also argues against a modal account of the Bulgarian evidential marker.
+\citet{koev2011} claims that evidential marking in fact entails the scope proposition:
+
+\ea\label{koev}\gll
+Ivan celunal Marija.\\
+Ivan kiss.\textsc{pfv}.\textsc{ptcp} 
+Maria \\
+\glt
+‘(I was told that) Ivan kissed Maria.’
+\hfill (Bulgarian; \cite[116]{koev2011})
+\z
+Pace \citet{Izvorski1997}, a sentence like \REF{koev} allegedly entails that Ivan kissed Maria. Thus, the evidential is no longer a modal. Instead \citet{koev2011} develops a purely temporal account. The temporal ontology is enriched with a new concept: the \textsc{learning event}, i.e. the event/time when the speaker acquired the relevant evidence for the claim. A paraphrase of \REF{koev} which reflects this idea, is: ‘Ivan kissed Maria, as I learned later.’ \citep[124]{koev2011}. The learning event is after the described event, but still before  the speech event. The radical new idea is that the overall \textsc{pst}-marking in the construction (through the \textit{l}-participle) is linked to the pastness of the overt event with respect to the covert learning event.
+
+In \citet{Smirnova2013}, a temporal analysis of the learning time was developed further in a combined temporal-modal account of the Bulgarian evidential. 
+In his own later work,
+\citet{Koev2017a} proposed a purely pragmatic account. The learning event is still central to his analysis, but evidentiality is here derived through pragmatic implicatures. 
+
+In a recent study, 
+\citet{Karagjosova2021} challenges earlier classifications of the data, and shows that more fine-grained interpretations of evidential marking in Bulgarian (e.g. mirativity) also depend on factors such as the choice of aorist vs. imperfect stems of the participle, often ignored in the previous accounts. 
+
+I conclude that there is much activity and little consensus in the research community concerning evidentiality in Bulgarian. This is exciting news for those who want to delve into the Bulgarian paradigms.
+
+
+\section{Subordinate tense}\label{sec:4}
+
+Subordinate tense is  a vast topic. The main question it raises is under which conditions the embedded tense is semantically and/or syntactically dependent on matrix tense. When the subordinate tense is independent, it is interpreted with respect to the speech time $s$* and behaves (more or less) like a standard matrix tense.
+
+A central issue is the dichotomy between \textsc{sequence-of-tense} (\textsc{sot}) languages and  non-sequence-of-tense (\textsc{non-sot}) languages. It is generally assumed that the Slavic languages belong to the latter group. In fact, Russian is the language par excellence used in general linguistics to illustrate \textsc{non-sot}. The literature has mostly focused on accounting for the phenomenon of \textsc{sot} in English, which from a compositional point of view is challenging  since it seems to violate the expected one-to-one correspondence between form and meaning.
+
+\subsection{Complement tense}
+Consider a standard example with an embedded stative predicate under an \textsc{attitude} verb:
+
+\ea\ea\label{ukr-att}\gll
+Zlata skazala, ščo  Porošenko je prezydentom.\\
+Zlata say.\textsc{pfv}.\textsc{pst} \textsc{comp} Porošenko be.\textsc{prs} president
+ \\\hfill (Ukrainian)
+\ex\label{eng-att} Zlata said that Porošenko was president. \hfill (English)
+\z\z
+Both constructions -- ``present-under-past'' in Ukrainian and ``past-under-past'' in English --  receive a simultaneous interpretation, but Ukrainian  apparently represents the most natural form--meaning mapping since both the matrix past of the \textit{verbum dicendi} and the embedded present tense  in \REF{ukr-att}   are interpreted locally, within their own clause.
+ 
+ 
+This difference between Germanic \textsc{sot}-languages (English) and Slavic \textsc{non-sot}-languages (Ukrainian) is tentatively illustrated in  \figref{fig:sot}.    
+
+
+  \begin{figure}[ht]
+  \centering
+     \begin{picture}(400,100)
+
+    \put(10,85){\textsc{past} Zlata skazala ščo (Zlata's \textsc{now}) Porošenko je prezydentom.  }
+ 
+	    \put(23,65){\line(1,0){53}} 	
+    \put(23,65){\line(0,1){13}} 
+    \put(76,65){\line(0,1){13}}     
+    \put(247,65){(local tenses; Ukr.)}
+\put(160,65){\line(1,0){70}} 	
+    \put(160,65){\line(0,1){13}} 
+    \put(230,65){\line(0,1){13}} 
+
+  \put(10,30){	 \textsc{past} Zlata said that Porošenko was president. }
+	    \put(23,10){\line(1,0){141}} 	
+    \put(23,10){\line(0,1){13}} 
+    \put(72,10){\line(0,1){13}} 
+    \put(164,10){\line(0,1){13}} 
+    \put(247,10){(tense agreement; Eng.)}
+\end{picture}    
+\caption{Local tenses vs. tense agreement -- schematic analysis of \REF{ukr-att}/\REF{eng-att}}
+   \label{fig:sot} 
+\end{figure}   
+
+This contrast in complement tense  was given  a semantically motivated explanation – the \textsc{sot-parameter} -- in \citet{gronn_stechow2010}. 
+In  English, tense morphology is not in a one-to-one relation with semantics due to temporal agreement: the past tense morphology (\textit{was}) in the complement  is semantically void and somehow agrees  with the past tense in the matrix. This phenomenon  requires a special mechanism, such as feature transmission from a higher tense operator into a non-local binding domain \citep{gronn_stechow2010}. But this problem posed by  \textsc{sot}-languages need not concern us here.
+
+ In \textsc{non-sot}-languages, tense morphology and tense semantics work locally in tandem.
+ In  Ukrainian, an embedded past under a matrix past will therefore produce a backward-shifted interpretation: 
+
+\ea\label{ukr-att-p}\gll
+Myxajlo skazav, ščo  Porošenko buv prezydentom.\\
+Myxajlo say.\textsc{pfv}.\textsc{pst} \textsc{comp} Porošenko be.\textsc{pst} president \\
+\glt `Myxajlo said that Porošenko had been president.' \hfill (Ukrainian)  
+\z
+
+\begin{figure}[ht]
+  \centering
+     \begin{picture}(400,50)
+
+    \put(10,30){\textsc{past} Myxajlo skazav ščo (Myxajlo's \textsc{now}) Porošenko \textsc{past} buv prezydentom.}
+ 
+	    \put(22,10){\line(1,0){66}} 	
+    \put(22,10){\line(0,1){13}} 
+    \put(88,10){\line(0,1){13}}     
+\put(263,10){\line(1,0){21}} 	
+    \put(263,10){\line(0,1){13}} 
+    \put(284,10){\line(0,1){13}} 
+    
+\end{picture}    
+\caption{Backward-shifting of the past in Ukrainian -- schematic analysis of \REF{ukr-att-p}}
+   \label{fig:sot2} 
+\end{figure}   
+
+Similar data are of course found everywhere in Slavic, cf. a minimal pair from Polish:
+
+\ea\ea\label{pol-att-pres}\gll
+Ania powiedziała, że Marcin płacze.
+\\ Ania say.\textsc{pfv}.\textsc{pst} \textsc{comp} Marcin cry.\textsc{ipfv}.\textsc{prs} \\ 
+\glt `Ania said that Marcin was crying.' \hfill
+(Polish; \cite[86]{kusumoto99}) 
+\ex\label{pol-att-past}\gll
+Ania powiedziała, że Marcin płakał
+\\ Ania say.\textsc{pfv}.\textsc{pst} \textsc{comp} Marcin cry.\textsc{ipfv}.\textsc{pst} \\ 
+\glt `Ania said that Marcin had been crying.' \hfill
+(Polish; \cite[86]{kusumoto99}) 
+\z\z
+In the discussion of \textsc{sot} vs. \textsc{non-sot}, most semanticists  agree on the role played by the attitude verb, whose lexical semantics can be assumed, for our purposes, to be the same for all languages. Importantly, the intensional attitude embeds a temporal proposition. Accordingly, the complex type of attitude verbs is
+$\stb{s\stb{i,t},i\stb{e,t}}$ \citep{gronn_stechow2010}:
+
+\ea\label{lewis}
+ \sib{skazav/powiedziała/said}${}=\lambda w \lambda P_{\stb{s,\stb{i,t}}} \lambda t \lambda y. \newline
+\forall w_{1}
+\forall t_{1}
+[(w_{1},t_{1})$ is compatible with everything $y$ believes of $(w,t)$ in $w$ at time $t \rightarrow P(w_{1})(t_{1})] $ 
+ \z
+The  semantics of these verbs involves quantification over time--world pairs, the time and world the attitude holder (matrix subject) locates herself at, her belief times/worlds. We can think of these times as the attitude holder's \textsc{subjective now}.\footnote{The formula in \REF{lewis} ignores for simplicity the event variable  associated with the \textit{verbum dicendi}.}
+
+A temporal proposition (the complement clause) is then the input to the attitude verb. It follows from the semantic types that the highest time of the embedded clause must be a temporal abstract, i.e. $\lambda$-bound.
+ Let us examine in more detail the compositionality involved.  
+
+ We start with the easy case, the backward-shifting in \REF{ukr-att-p} and \REF{pol-att-past}. We assume that the embedded past has the semantics we defined earlier for a relative past  in Ukrainian, cf. \REF{relpa} above. The TP$'$ after application of \REF{relpa} in \figref{fig:po} in \sectref{sec:2.2} has almost the right semantic type: We just have to abstract over the world parameter, which we have ignored so far since we have not been concerned with intensionality.
+ 
+
+ 
+ So, after the application of the relative past inside the embedded clause, we get \REF{tp-poro}. 
+ 
+ \ea\label{tp-poro}
+\sib{TP$'_{\stb{s,it}}$}${}=\lambda w \lambda t. 
+ \exists e \exists t' [\textsc{Porošenko is president}(e)\, $in$ \, w \, \& \, t' \prec t \, \& \, t' \subseteq e]$
+ \z
+ When we saturate all the arguments of \REF{lewis} (the embedded temporal proposition in \REF{tp-poro}, matrix tense and the matrix subject), we end up with the truth-conditions in \REF{lewisx}.
+ 
+\ea\label{lewisx}
+ \sib{\REF{ukr-att-p}}${}=\lambda w   \exists t [t \prec s$*$ \, \& \,
+\forall w_{1}
+\forall t_{1}
+[(w_{1},t_{1})$ is compatible with everything Myxajlo believes of $(w,t)$ in $w \, $at$ \,{}t \rightarrow \newline 
+\exists e \exists t_{2} [\textsc{Porošenko is president}(e) \, $in$ \, w_{1} \, \& \,  t_{2} \prec t_{1} \, \& \, t_{2} \subseteq e)]
+] $ 
+ \z
+Informally, we tend to think that the embedded reference time precedes the reference time or event time of the saying. However, this is not what happens, and our formulae capture this correctly. The embedded time $t_{2}$ precedes the shifted evaluation time $t_{1}$, viz. Myxajlo's subjective now.
+This point is crucial for the theory developed in my works with von Stechow. We will soon see why.
+ 
+% With this in place, \citep{gronn_stechow2010} formulated the first part of the SOT-parameter:\textit{A language L is an} {SOT} \textit{language if and only if} \newline (i) verbal quantifiers of L transmit temporal features in their semantic binding domain. 
+
+
+\subsection{Relative present?}\label{rel-pres-sec}
+How do we account for our initial Ukrainan example \REF{ukr-att} and the similar one in Polish \REF{pol-att-pres}? Characteristically for \textsc{non-sot}, we have a simultaneous interpretation with an embedded present.
+
+The standard solution is the introduction   of a semantic \textsc{relative} \textsc{present} in the complement at \textsc{lf}, cf. \citet{ogihara96}, \citet{kusumoto99}, \citet{schlenker99},  \citet{Ogihara.Sharvit2012},  
+\citet{sharvit13},  \citet{vostrikova18}, and others.
+In \citet[133]{gronn_stechow2010}, we assumed the simplest format for this relative present:
+
+\ea\label{grs:55}	Relative present (to be revised!) \\
+	\sib{\textsc{pres}}${}= \lambda P_{\stb{i,t}}  \lambda t. P(t)$ 
+\z
+Semantically \textsc{pres} is identity, i.e. void.  
+ The trivial relative present merely serves the purpose   of allowing the embedded clause to have present tense morphology and effortlessly inherit the reference time of the matrix. The result is a simultaneous interpretation.
+
+But here comes a problem. If a language has the \textsc{pres} in \REF{grs:55}, we expect the relative present to be used everywhere when a simultaneous interpretation is needed, e.g. in the tense of the complement in \REF{ukr-att}, but not only there. Japanese is indeed  a language with such a relative present, see \citet{ogihara96} and \citet{kusumoto99}. But what about Slavic?
+
+Some partly forgotten, challenging data were  brought to the attention of the research community in handouts and talks by Natalia Kondrashova in the early 1990s, cf. \citet{Kondrashova1999}. Here is a Ukrainian version of the problematic data:
+
+
+%Марійка зустріла людину яка плакала Марійка зустріла людину, яка плаче
+
+\ea\label{rel-papa}\gll
+Marijka zustrila ljudynu, jaka  \minsp{\{\#} plače / plakala\}.\\
+Maria meet.\textsc{pfv}.\textsc{pst} person who {} cry.\textsc{ipfv}.\textsc{prs} {} cry.\textsc{ipfv}.\textsc{pst} \\ 
+\glt
+ ‘Maria met a man who cried.' \hfill (Ukrainian)
+\z
+We want to express the simultaneity of the two reference times: the crying is simultaneous with the meeting. The configuration with an embedded relative present makes perfect sense semantically, but the present morphology is  blocked in the relative clause. (It can only have a deictic interpretation: `Mary met in the past somebody who is crying \textit{now}'.) Instead, both Slavic and English have to use a past-under-past in extensional  relative clauses.
+
+In \citet{gronn_stechow2012}, we abandoned the relative present  in \REF{grs:55}.
+We wanted to capture the observation that 
+embedded present morphology with a simultaneous, dependent interpretation is licensed only in intensional contexts, e.g. under attitude verbs. 
+These facts have also been noted  by \citet{schlenker99} and others, but the question remains how a general tense theory for Slavic can be set up so that it avoids overgeneration. 
+
+\citet{babyonyshev-matushansky06} introduced a syntactic shifting condition: 
+
+\eanoraggedright A shifted indexical is licensed by a c-commanding attitude report predicate.\hfill \citep{babyonyshev-matushansky06} 
+\z
+On this view, the present tense in Slavic is semantically a shiftable \textsc{indexical} 
+referring either to the utterance time or the time of the reported 
+attitude/speech act (with the additional syntactic requirement above). 
+ In the feature account of \citet{gronn_stechow2012}, we added a new clause  to the \textsc{sot}-parameter: 
+ 
+\eanoraggedright Intensional temporal quantifiers of \textsc{SOT}-languages do not
+license present tense morphology. \citep{gronn_stechow2012}
+\z
+By contraposition, Slavic languages are non-\textsc{sot} and intensional temporal quantifiers (e.g. \textit{skazav/powiedziała} `said' in \REF{lewis}) {license} present tense morphology in the complement clause.
+
+In \sectref{sec:deep}, we will see how the principles established in \citet{babyonyshev-matushansky06} and
+\citet{gronn_stechow2012} can be generalised to account for true relative tenses such as the past and future. 
+
+
+\subsection{Competing accounts}
+All the authors mentioned in the previous section acknowledge the importance of the \textsc{sot}-dichotomy, but there also exists  a quite recent, alternative approach, developed in \citet{Altshuler16}. This theory is fundamentally different from \citet{gronn_stechow2012} in most thinkable ways, as illustrated in  \tabref{tab:altgro}. For comparison we consider a past-under-past, cf. \REF{ukr-att-p} above.
+
+
+\begin{table}
+\caption{Why past-under-past is backshifted in Slavic complements.}
+\label{tab:altgro}
+ \begin{tabularx}{1\textwidth}{lYYYY} %.77 indicates that the table will take up 77% of the textwidth
+  \lsptoprule
+           & \citet{gronn_stechow2012} & \citet{Altshuler16}  \\
+  \midrule
+  \textsc{sot}-parameter (Eng. vs. Rus.)  & \ding{51} &    \ding{55} \\   
+  Semantic explanation   & \ding{51} &    \ding{55}  \\
+  Relative present (Rus.)  & \ding{55} & \ding{51}   \\ 
+  Pragmatic explanation   & \ding{55} &  \ding{51} \\
+  Conclusion  & Russian is \textsc{non-sot}  & Cessation implicature of \textsc{past} in Russian  \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+ The point of departure for the alternative account is an old idea formulated by, among others, \citet{Klein1995}.
+Klein pointed out that a past imperfective/stative, which in our notation produces the two conditions $t \prec s$*$ \; \& \; t \subseteq e$, does not semantically encode any information about whether or not the eventuality also obtains at or after the utterance time. All we know is that the time we are focusing on, the assertion time (reference time), is included in the temporal trace of the event/state in question, but the pure semantics remains silent about the state of affairs obtaining after the assertion time. 
+
+Daniel Altshuler develops this idea further. Arguably, the use of a present tense is semantically more informative if the eventuality actually obtains at the utterance time (or, in Slavic, at the local evaluation time). Hence, if the speaker uses the alternative past tense, the hearer will pragmatically infer that a semantic present should be false. Accordingly, the interpretation of the clause is strengthened to a proper past eventuality. What interests us here, is how this reasoning plays out in embedded clauses.
+Now comes the point where \citet{Altshuler16} and \citet{gronn_stechow2012} radically depart in their respective analyses, although the authors agree on the data.
+
+According to Altshuler, Russian, unlike English, has a purely relative present (the standard view disputed by Grønn/von Stechow). In English, the present tense is always deictic, referring to the utterance time, and therefore unavailable in complements under past attitudes. This in turn means that an embedded English past does not compete with the present form and is not strengthened to a proper past interpretation of the eventuality. An embedded past in English can therefore be interpreted as more or less simultaneous with the matrix past.
+
+In Russian, however,  the viable alternative to the past, viz. the relative present, triggers a pragmatic competition between the two forms also in embedded contexts. Here, the relative present  would pick out the attitude holder's subjective now. Accordingly, the past is strengthened to a backshifted past under a past attitude verb. This pragmatic effect is called a \textsc{cessation} \textsc{implicature}. In Altshuler's own words, ``properties of the present tense in a given language will effect whether or not an embedded
+past tense triggers a cessation implicature” \citep[135f.]{Altshuler16}.\footnote{A recent experimental study of cessation implicatures in Polish 
+casts doubts on associating \textsc{(non-)sot} phenomena with implicatures \citep{mucha2023}. 
+}
+
+ \subsection{\textit{de re} past in Slavic}
+Given the relative past interpretation of a past-under-past in Slavic complement tense (say, under \textit{verba} \textit{dicendi}), constructions like the following are puzzling:
+
+\ea\ea\label{perc-ukr}\gll
+Darina bačyla, jak Mykola plakav.\\
+Darina see.\textsc{ipfv}.\textsc{pst} how Mykola cry.\textsc{ipfv}.\textsc{pst} \\
+\glt `Darina saw that Mykola was crying.' \hfill (Ukrainian)
+\ex\label{b} There was a crying $e$ by Mykola in the past \& Darina saw $e$ in the past. 
+\ex \label{grs:78}
+$(\exists t \prec s$*$)(\exists e)[t \subseteq e \, \& \,
+ \textsc{crying}(\textsc{Mykola}, e)]\, \&$ \newline  $  (\exists t_{1} \prec s$*$)(\exists e_{1})[t_{1}  \subseteq e_{1} \, \& \,
+ \textsc{see}(\textsc{Darina},e_{1},e)]$ \\ \hfill \citep{gronn_stechow2010}
+\z\z
+
+\noindent Despite the embedded past, the sentence is interpreted as \textsc{direct perception}, hence  the event perceived is simultaneous with the act of perception. 
+Arguably, the complementizer {\textit{jak}} `how' (in combination with the past)  is used to encode  direct perception of the matrix subject, although the embedded past event is reported from the \textsc{perspective} \textsc{of the} \textsc{speaker}.
+The latter observation means that the event is described by the speaker independently of the  subject's belief state. The matrix perception verb is therefore not an attitude verb in the context of \REF{perc-ukr}.
+
+In \REF{b}/\REF{grs:78}
+the event description in the complement is  accordingly brought to a transparent \textit{de re} position with respect to the seeing-predicate.
+Since the two past tenses are independent of each other, the analysis cannot explicitly encode simultaneity. 
+Such cases of a (pseudo-)simultaneous past-under-past do not therefore  show that Slavic has  \textsc{sot}, pace \citet{altshuler04} and \citet{Altshuler2008}.\footnote{For more on perception verbs in Russian, including a discussion of indirect perception and present tense complements, see \citet{Khomitsevich2007} and \citet{gronn23}.}
+
+For simultaneous interpretations of past-under-past with attitude verbs proper, the same \textit{de re} strategy is also available according to \citet{vostrikova18}, who addresses the interaction of Russian complement tense with temporal adverbials:
+
+\ea\label{vos}\gll
+V 2016 Tanja skazala, čto togda Putin byl prezidentom.\\
+in 2016 Tanja say.\textsc{pfv}.\textsc{pst} that then Putin be.\textsc{pst} president\\
+\glt ‘In 2016 Tanja said that Putin was the president of Russia then.’\\\hfill (Russian; \cite{vostrikova18})
+\z
+
+\noindent The author shows that {\textit{togda}} `then' patterns with an embedded past, while {\textit{sej\-čas}} `now' in the complement only cooccurs with the present tense.
+The explanation for the first case, exemplified in \REF{vos}, is that both the adverbial, the indexical shifter {\textit{togda}} `then', and the complement tense must be interpreted \textit{de re}, as independent of the matrix tense: 
+``{\textit{togda}} carries a presupposition that the time intervals it picks are not equal to
+the evaluation time. This presupposition is strong enough to
+make {\textit{togda}} incompatible with the relative present, however, at the same time weak enough to be
+compatible with the simultaneous reading of past-under-past. The reason for this
+is that the simultaneous reading of past-under-past in Russian is derived via a \textit{de re} construal and the meaning resulting from this construal does not require that
+the two intervals are equal, it is enough for them to simply overlap.'' \citep[475]{vostrikova18}
+
+
+\subsection{Tense in adjuncts}\label{sec:deep}
+A theory of subordinate tense  has to distinguish between complement tense and adjunct tense, where the latter includes both relative clauses and temporal adverbial clauses. A non-deictic, shifted embedded present (or past, future) is normally blocked in Slavic adjuncts under a past matrix verb, which suggests that adjunct tense in Slavic, unlike complement tense, is mostly independent of the matrix, hence deictic \citep{kubota11}.
+
+The temporal organisation in Slavic adjuncts is thus fairly simple since  tense (semantics and morphology) operates locally, with adjunct and  matrix tense being independent of each other. 
+Still, consider once more this past-under-past, repeated from above:
+
+\ea\label{rel-papa1}\gll
+Marijka zustrila ljudynu, jaka   plakala.\\
+Maria meet.\textsc{pfv}.\textsc{pst} person who cry.\textsc{ipfv}.\textsc{pst} \\ 
+\glt
+ ‘Masha met a man who (had) cried.' \hfill (Ukrainian)
+\z
+In fact, \REF{rel-papa1} is ambiguous with respect to the temporal relation between the relative clause and the matrix. A deictic past in the relative clause predicts the ambiguity: If all we know is that the time of the crying is before the speech time, the crying can be before (in principle even after) or overlapping with the meeting.
+The deictic analysis only requires the adjunct tense to precede the speech time.
+
+As pointed out by a reviewer, the deictic analysis predicts that a past adjunct could be forward-shifted with respect to the  matrix event.\footnote{The marriage must still be before the speech time in \REF{rev-pol}.} This prediction is borne out:
+
+\ea\label{rev-pol}\gll
+Poznał kobietę, która została jego żoną.\\
+meet.\textsc{pfv}.\textsc{pst.m.sg} woman who become.\textsc{pfv}.\textsc{pst} his wife\\
+\glt `He met a woman who became his wife.'
+\hfill (Polish; reviewer's example)
+\z
+
+\noindent In \citet{gronn_stechow2012}, we entertain the possibility that the highest tense in the adjunct is \textsc{anaphoric}, a temporal pronoun Tpro ($\approx$ \textit{then}). For \REF{rev-pol}, we would still have to say that Tpro is bound by the deictic \textsc{now}.
+However, Tpro allows us in principle to account for the backward-shifting in \REF{rel-papa1} (cf. the English pluperfect) by binding Tpro to a temporal variable of the matrix clause (the reference time for the matrix meeting), while still having a local precedence relation $t \prec$ Tpro in the adjunct.
+
+Note that even if Tpro  is the evaluation time of the adjunct, the embedded past is still accounted for locally. This seems to be an absolute constraint for embedded Slavic tense, a defining characteristic of being \textsc{non-sot}.
+
+However, an unrestricted Tpro overgenerates, so the safest solution is to treat extensional adjuncts such as
+\REF{rel-papa1} and \REF{rev-pol}
+as deictic. In the latter case, the tense has to be deictic (either through a default/covert pronoun \textsc{now} or Tpro coindexed with matrix \textsc{now}). This being said, 
+for adjunct tense embedded   under attitudes and modals we definitely need something like Tpro \citep{gronn_stechow2012}.  We argue that the highest tense in the adjunct must be  \textsc{anaphoric} in most intensional contexts.  
+
+Concerning relative clauses, they have type $\stb{e,t}$. This means that the highest tense in a relative clause cannot be a temporal abstraction ($\lambda t$) as in complement clauses \citep{kusumoto99}. Hence,  intensional temporal quantifiers in a matrix clause do not quantify over the evaluation time of a relative clause, but the highest tense in the relative clause may still be anaphorically bound by a time in the matrix.
+In fact, it turns out that Tpro in a deeply embedded intensional context in Russian (and presumably in Slavic in general) is always bound by the modalised evaluation time of the matrix \citep{gronn24}.
+
+Here is a relevant Russian example of a shifted \textit{budet} `will' in a deeply embedded relative clause: 
+
+\ea\label{ogir5}\gll Vanja podumal, čto Maša rodit syna, u kotorogo
+budut golubye glaza kak i u otca.\\
+Vanja think.\textsc{pfv}.\textsc{pst} \textsc{comp} Masha give.birth.\textsc{pfv}.\textsc{prs} son by whom be.\textsc{prs} blue eyes like and by father
+\\ \glt
+ `John thought that Mary would give birth to a son who had blue eyes like his father.' \hfill(Russian; \cite{gronn_stechow2012})
+\z
+The adjunct tense in \REF{ogir5} cannot be deictic since Mary may never have a child  in our world, and if she indeed had a boy with blue eyes, it could have been before the speech time. Accordingly,  the
+interpretation of the deeply embedded adjunct is not dependent on the speaker’s speech
+time, but on the subjective now of the attitude holder (Vanja). 
+The final truth conditions given below
+ ignore aspects/events and work only with times for perspicuity. 
+
+\ea  $\lambda w.(\exists t \prec s^{*})$ John thinks in $w$ at $t \, [\lambda w_{1} \lambda t_{1}. (\exists t_{2} \succ t_{1})(\exists x)$ \newline {[}Mary gives birth to $x$ in $w_{1}$ at $t_{2} \, \& \, $boy$(x) \, \& \newline (\exists t_{3} \succ t_{1}) {[}x \, $has blue eyes at $t_{3}$ in $w_{1}]]]$
+\z
+The first crucial point is that the input to the attitude verb \textit{podumal} `thought' is a temporal proposition of the form $\lambda w_{1} \lambda t_{1}...$, while the forward-shifter \textit{budet} in the embedded adjunct gives us  $\exists t_{3} \succ \, $Tpro$_{i}$. Tpro$_{i}$ can only be bound by Vanja's subjective now, that is $t_{1}$. If we bind Tpro$_{i}$ to $t_{2}$, the time of the birth, we violate the constraint saying that the possible binders for Tpro$_{i}$ are \textsc{now} or a \textsc{modalised} evaluation time \citep{gronn24}. But we also get the truth conditions wrong because we then say that the boy will not be born with blue eyes, but will only get  blue eyes after birth (\#$\, t_{3} \succ t_{2})$.
+
+
+The reasoning above applies to other cases of a modalised matrix and other types of adjuncts, such as temporal adverbial clauses.
+Thus, the higher intensional context provides a temporal perspective for the embedded clauses in \REF{svad}:\footnote{RuN-Euro parallel corpus data  from \citet{gronn_stechow2012}.} 
+
+
+\ea \ea \label{svad}	
+	The wedding would take place in May, before the cargo boats headed south.  
+ \hfill (English)
+\ex\label{svadru}\gll	Svad'ba dolžna byla sostojat'sja v mae, do togo, kak karbasy ujdut na jug. \\
+wedding must be.\textsc{pst} take.place.\textsc{ipfv}.\textsc{inf} in May before that   how ships go.\textsc{pfv}.\textsc{prs} to south \\
+\hfill (Russian)
+\z\z
+The entire \textit{do togo, kak}-`before'-construction is embedded under the necessity modal. The construction leaves it open whether the wedding -- and/or departure of the boats -- took place at all. Furthermore, the departure of the boats could have been before the speech time. Thus, the embedded semantic future (morphology: perfective present) cannot be deictic, but must be bound.
+
+The  forward-shift is with respect to the time of the matrix modal. Here I simply give the truth conditions for the interested reader:\footnote{I must refer  to \citet{gronn_stechow2012} for a discussion of the internal semantic composition of temporal adverbial clauses in Russian (\textit{do/posle} \textit{togo} \textit{kak}... `before/after that how...') and their counterparts in other Slavic languages.}
+
+\ea
+\sib{\REF{svadru}}${}= \lambda w.(\exists t  \prec s^{*})[(\forall w_{1})(\forall t_{1})[\cnst{accessible}_{w,t}(w_{1}, t_{1}) \rightarrow  [\textsc{wedding takes place}(w_{1})(t_{1}) \,
+\& \, t_{1} \prec$ the earliest $t_{2}: (\exists t_{3} \succ t_{1})[ \, t_{3} = t_{2} \, \&  \, \textsc{boats leave}(w_{1},t_{3})]]]]$\\\hfill \citep{gronn_stechow2012}
+\z
+The important thing to note is that the relative future interpretation of the adjunct translates into $\exists t_{3} \succ$ Tpro$_{i}$. Following the discussion above, Tpro must be bound by the perspective time of the modal, hence $\exists t_{3} \succ t_{1}$.
+
+In \citet{gronn24}, I argue that
+the phenomenon of \textsc{relative tense} in Russian (Slavic) is always dependent on intensionality. The evaluation time of the embedded tense is shifted to the modalised perspective of the matrix.
+
+So the ``problem'' discussed in \sectref{rel-pres-sec} concerning the status of a relative present in Slavic is 
+ more general: Whenever a so-called relative tense interpretation is found in Slavic (or at least in Russian) -- be that past, future or present -- there is a perspective shift from the embedded tense to a very specific modalised time in the matrix.
+
+\section{Conclusion}
+\label{sec:5}
+
+The study of Slavic tense in formal semantics does not have a long history, mainly because of the dominant role played by aspect in  Slavic grammar. It is difficult to give a proper semantics for tense in Slavic without also proposing a full formal analysis of Slavic aspect.
+
+The future seems bright in the sense that there are many interesting topics for Slavic tense semanticists to work on. We need a better understanding of the data in individual Slavic languages, notably concerning  compound tenses (temporal auxiliaries) and  complex sentences (subordinate tense), the two main areas of research which I have focused on here. A question naturally occurs at this point: How do temporal auxiliaries in various Slavic languages behave in subordinate tenses? 
+
+ Ideally, the notational practices and frameworks used should be more uniform in order to enhance comparison between different accounts. Some of the issues ahead, questions which I have merely alluded to in the presentation above, will only be resolved in close interaction with the research community outside Slavic linguistics, e.g. questions such as  referential vs. quantificational tense, the integration of temporal adverbials of various sorts in the temporal calculus, the issue of  cross-sentential temporal anaphora, the role of pragmatic competition (e.g. for the perfect vs. past/present), the role of temporal features (interpretable/uninterpretable) at the syntax-semantics interface.
+
+ What will always keep  semanticists busy is the study of \textsc{tame} (tense, aspect, mood, and evidentiality) and how these categories/grams interact in the verbal domain. Here I have focused on a formal account of tense with a  superficial but hopefully consistent view on aspect. There is, however, much more to be said about tense in interaction with mood and evidentiality in Slavic. 
+
+
+
+
+%\ea\label{sim:ex:german-verbs}\gll Hans \minsp{\{} schläft / schlief / \minsp{*} schlafen\}.\\
+%Hans {} sleeps {} slept {} {} sleep.\textsc{inf}\\
+%\glt `Hans \{sleeps / slept\}.'
+%\z
+
+
+%If you want to indicate the language and/or the source of the example, place this on the right margin of the translation line. Schematic information about relevant linguistic properties of the examples should be placed on the line of the example, as indicated below.
+
+%\ea\label{sim:ex:bailyn}\gll \minsp{[} Ėtu knigu] čitaet Ivan \minsp{(} často).\\
+%{} this book.{\ACC} read.{\PRS.3\SG} Ivan.{\NOM} {} often\\\hfill O-V-S-Adv
+%\glt `Ivan reads this book (often).'\hfill (Russian; \citealt[4]{Bailyn2004})\z
+
+
+
+\section*{Abbreviations}
+
+\begin{tabularx}{.5\textwidth}{@{}lQ}
+\textsc{1}&first person\\
+\textsc{2}&second person\\
+\textsc{aux}&auxiliary\\
+\textsc{comp}&complementizer\\
+\textsc{fut}&future tense\\
+\textsc{inf}&infinitive\\
+\textsc{ipfv}&imperfective aspect\\
+\textsc{pfv}&perfective aspect\\
+\textsc{m}&masculine\\
+\end{tabularx}%
+\begin{tabularx}{.5\textwidth}{lQ@{}}
+\textsc{pl}&plural\\
+\textsc{prs}&present tense\\
+\textsc{pst}&past tense\\
+\textsc{ptcp}&participle\\
+\textsc{refl}&reflexive\\
+\textsc{sg}&singular\\
+\textsc{sot}&sequence of tense\\
+\textsc{tac}&temporal adverbial clause\\
+\textsc{xn}&extended now\\
+%&\\ % this dummy row achieves correct vertical alignment of both tables
+\end{tabularx}
+
+\section*{Acknowledgments}
+I am grateful to the reviewers and editors for their generous comments. I thank my consultants Irena Altarac-Romano (BCMS), Kjetil Rå Hauge (Bulgarian), Božo Kolov (Bulgarian), Krzysztof Migdalski (Polish), Ljiljana Šarić (Croatian), as well as my numerous friends and teachers of Ukrainian, notably Natali Žytova, Inesa, and Zorjana. A special thanks to Irena Altarac-Romano for proofreading the manuscript.
+
+\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}
